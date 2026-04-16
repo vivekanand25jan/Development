@@ -1,0 +1,41 @@
+
+body .ui-slider {
+	width:180px;
+	height:23px;
+	margin:0 auto;
+	position:relative;
+	background-color:transparent;
+	background-image:url(sprite_historical_bg.gif) !important;
+	background-repeat:repeat-x;
+	background-position:0 -663px;
+	box-shadow:none;
+	border:0
+}
+body .ui-slider .ui-slider-handle {
+	position:absolute;
+	height:19px;
+	width:15px;
+	top:0;
+	left:0;
+	margin-left:-7px;
+	background:url(a.png) no-repeat !important;
+	cursor:pointer;
+	z-index:1;
+	border:0
+}
+body .ui-slider .ui-slider-range {
+	position:absolute;
+	background:#dee5eb;
+	opacity:0;
+	filter:alpha(opacity=30);
+	width:100%;
+	height:100%;
+	left:0
+}
+body .ui-slider-disabled .ui-slider-handle {
+	opacity:0.5;
+	filter:alpha(opacity=50)
+}
+#price_slider_max_handle {
+	left:178px
+}

@@ -1,0 +1,3598 @@
+.wego-clearfix {
+	zoom:1
+}
+.wego-clearfix:before {
+	display:table;
+	content:""
+}
+.wego-clearfix:after {
+	display:table;
+	content:"";
+	clear:both
+}
+.wego-align-left, .wego-rtl .wego-align-right {
+	text-align:left
+}
+.wego-align-right, .wego-rtl .wego-align-left {
+	text-align:right
+}
+.wego-align-center {
+	text-align:center
+}
+.wego-airline {
+	border:1px solid #dddddd;
+	width:80px;
+	height:30px;
+	display:block;
+	margin-bottom:10px
+}
+.wego-small-flag {
+	padding:0 !important;
+	display:inline-block;
+	width:16px;
+	height:11px;
+	border:2px solid #dddddd;
+	background:url(http://www.wego.com/hotels/images/countrysite/small-flags.png) no-repeat;
+	vertical-align:bottom;
+	font-size:0
+}
+.wego-small-flag-XX {
+	background-position:0 0
+}
+.wego-small-flag-AD {
+	background-position:-16px 0
+}
+.wego-small-flag-AE {
+	background-position:-32px 0
+}
+.wego-small-flag-AF {
+	background-position:-48px 0
+}
+.wego-small-flag-AG {
+	background-position:-64px 0
+}
+.wego-small-flag-AI {
+	background-position:-80px 0
+}
+.wego-small-flag-AL {
+	background-position:-96px 0
+}
+.wego-small-flag-AM {
+	background-position:-112px 0
+}
+.wego-small-flag-AN {
+	background-position:-128px 0
+}
+.wego-small-flag-AO {
+	background-position:-144px 0
+}
+.wego-small-flag-AR {
+	background-position:-160px 0
+}
+.wego-small-flag-AS {
+	background-position:-176px 0
+}
+.wego-small-flag-AT {
+	background-position:-192px 0
+}
+.wego-small-flag-AU {
+	background-position:-208px 0
+}
+.wego-small-flag-AW {
+	background-position:-224px 0
+}
+.wego-small-flag-AZ {
+	background-position:-240px 0
+}
+.wego-small-flag-BA {
+	background-position:0 -11px
+}
+.wego-small-flag-BB {
+	background-position:-16px -11px
+}
+.wego-small-flag-BD {
+	background-position:-32px -11px
+}
+.wego-small-flag-BE {
+	background-position:-48px -11px
+}
+.wego-small-flag-BF {
+	background-position:-64px -11px
+}
+.wego-small-flag-BG {
+	background-position:-80px -11px
+}
+.wego-small-flag-BH {
+	background-position:-96px -11px
+}
+.wego-small-flag-BI {
+	background-position:-112px -11px
+}
+.wego-small-flag-BJ {
+	background-position:-128px -11px
+}
+.wego-small-flag-BM {
+	background-position:-144px -11px
+}
+.wego-small-flag-BN {
+	background-position:-160px -11px
+}
+.wego-small-flag-BO {
+	background-position:-176px -11px
+}
+.wego-small-flag-BR {
+	background-position:-192px -11px
+}
+.wego-small-flag-BS {
+	background-position:-208px -11px
+}
+.wego-small-flag-BT {
+	background-position:-224px -11px
+}
+.wego-small-flag-BV {
+	background-position:-240px -11px
+}
+.wego-small-flag-BW {
+	background-position:0 -22px
+}
+.wego-small-flag-BY {
+	background-position:-16px -22px
+}
+.wego-small-flag-BZ {
+	background-position:-32px -22px
+}
+.wego-small-flag-CA {
+	background-position:-48px -22px
+}
+.wego-small-flag-CATALONIA {
+	background-position:-64px -22px
+}
+.wego-small-flag-CD {
+	background-position:-80px -22px
+}
+.wego-small-flag-CF {
+	background-position:-96px -22px
+}
+.wego-small-flag-CG {
+	background-position:-112px -22px
+}
+.wego-small-flag-CH {
+	background-position:-128px -22px
+}
+.wego-small-flag-CI {
+	background-position:-144px -22px
+}
+.wego-small-flag-CK {
+	background-position:-160px -22px
+}
+.wego-small-flag-CL {
+	background-position:-176px -22px
+}
+.wego-small-flag-CM {
+	background-position:-192px -22px
+}
+.wego-small-flag-CN {
+	background-position:-208px -22px
+}
+.wego-small-flag-CO {
+	background-position:-224px -22px
+}
+.wego-small-flag-CR {
+	background-position:-240px -22px
+}
+.wego-small-flag-CU {
+	background-position:0 -33px
+}
+.wego-small-flag-CV {
+	background-position:-16px -33px
+}
+.wego-small-flag-CY {
+	background-position:-32px -33px
+}
+.wego-small-flag-CZ {
+	background-position:-48px -33px
+}
+.wego-small-flag-DE {
+	background-position:-64px -33px
+}
+.wego-small-flag-DJ {
+	background-position:-80px -33px
+}
+.wego-small-flag-DK {
+	background-position:-96px -33px
+}
+.wego-small-flag-DM {
+	background-position:-112px -33px
+}
+.wego-small-flag-DO {
+	background-position:-128px -33px
+}
+.wego-small-flag-DZ {
+	background-position:-144px -33px
+}
+.wego-small-flag-EC {
+	background-position:-160px -33px
+}
+.wego-small-flag-EE {
+	background-position:-176px -33px
+}
+.wego-small-flag-EG {
+	background-position:-192px -33px
+}
+.wego-small-flag-EH {
+	background-position:-208px -33px
+}
+.wego-small-flag-ENGLAND {
+	background-position:-224px -33px
+}
+.wego-small-flag-ER {
+	background-position:-240px -33px
+}
+.wego-small-flag-ES {
+	background-position:0 -44px
+}
+.wego-small-flag-ET {
+	background-position:-16px -44px
+}
+.wego-small-flag-EUROPEANUNION {
+	background-position:-32px -44px
+}
+.wego-small-flag-FI {
+	background-position:-48px -44px
+}
+.wego-small-flag-FJ {
+	background-position:-64px -44px
+}
+.wego-small-flag-FK {
+	background-position:-80px -44px
+}
+.wego-small-flag-FM {
+	background-position:-96px -44px
+}
+.wego-small-flag-FO {
+	background-position:-112px -44px
+}
+.wego-small-flag-FR {
+	background-position:-128px -44px
+}
+.wego-small-flag-GA {
+	background-position:-144px -44px
+}
+.wego-small-flag-GB {
+	background-position:-160px -44px
+}
+.wego-small-flag-GD {
+	background-position:-176px -44px
+}
+.wego-small-flag-GE {
+	background-position:-192px -44px
+}
+.wego-small-flag-GF {
+	background-position:-208px -44px
+}
+.wego-small-flag-GH {
+	background-position:-224px -44px
+}
+.wego-small-flag-GI {
+	background-position:-240px -44px
+}
+.wego-small-flag-GL {
+	background-position:0 -55px
+}
+.wego-small-flag-GM {
+	background-position:-16px -55px
+}
+.wego-small-flag-GN {
+	background-position:-32px -55px
+}
+.wego-small-flag-GP {
+	background-position:-48px -55px
+}
+.wego-small-flag-GQ {
+	background-position:-64px -55px
+}
+.wego-small-flag-GR {
+	background-position:-80px -55px
+}
+.wego-small-flag-GS {
+	background-position:-96px -55px
+}
+.wego-small-flag-GT {
+	background-position:-112px -55px
+}
+.wego-small-flag-GU {
+	background-position:-128px -55px
+}
+.wego-small-flag-GW {
+	background-position:-144px -55px
+}
+.wego-small-flag-GY {
+	background-position:-160px -55px
+}
+.wego-small-flag-HK {
+	background-position:-176px -55px
+}
+.wego-small-flag-HM {
+	background-position:-192px -55px
+}
+.wego-small-flag-HN {
+	background-position:-208px -55px
+}
+.wego-small-flag-HR {
+	background-position:-224px -55px
+}
+.wego-small-flag-HT {
+	background-position:-240px -55px
+}
+.wego-small-flag-HU {
+	background-position:0 -66px
+}
+.wego-small-flag-ID {
+	background-position:-16px -66px
+}
+.wego-small-flag-IE {
+	background-position:-32px -66px
+}
+.wego-small-flag-IL {
+	background-position:-48px -66px
+}
+.wego-small-flag-IN {
+	background-position:-64px -66px
+}
+.wego-small-flag-IO {
+	background-position:-80px -66px
+}
+.wego-small-flag-IQ {
+	background-position:-96px -66px
+}
+.wego-small-flag-IR {
+	background-position:-112px -66px
+}
+.wego-small-flag-IS {
+	background-position:-128px -66px
+}
+.wego-small-flag-IT {
+	background-position:-144px -66px
+}
+.wego-small-flag-JM {
+	background-position:-160px -66px
+}
+.wego-small-flag-JO {
+	background-position:-176px -66px
+}
+.wego-small-flag-JP {
+	background-position:-192px -66px
+}
+.wego-small-flag-KE {
+	background-position:-208px -66px
+}
+.wego-small-flag-KG {
+	background-position:-224px -66px
+}
+.wego-small-flag-KH {
+	background-position:-240px -66px
+}
+.wego-small-flag-KI {
+	background-position:0 -77px
+}
+.wego-small-flag-KM {
+	background-position:-16px -77px
+}
+.wego-small-flag-KN {
+	background-position:-32px -77px
+}
+.wego-small-flag-KP {
+	background-position:-48px -77px
+}
+.wego-small-flag-KR {
+	background-position:-64px -77px
+}
+.wego-small-flag-KW {
+	background-position:-80px -77px
+}
+.wego-small-flag-KY {
+	background-position:-96px -77px
+}
+.wego-small-flag-KZ {
+	background-position:-112px -77px
+}
+.wego-small-flag-LA {
+	background-position:-128px -77px
+}
+.wego-small-flag-LB {
+	background-position:-144px -77px
+}
+.wego-small-flag-LC {
+	background-position:-160px -77px
+}
+.wego-small-flag-LI {
+	background-position:-176px -77px
+}
+.wego-small-flag-LK {
+	background-position:-192px -77px
+}
+.wego-small-flag-LR {
+	background-position:-208px -77px
+}
+.wego-small-flag-LS {
+	background-position:-224px -77px
+}
+.wego-small-flag-LT {
+	background-position:-240px -77px
+}
+.wego-small-flag-LU {
+	background-position:0 -88px
+}
+.wego-small-flag-LV {
+	background-position:-16px -88px
+}
+.wego-small-flag-LY {
+	background-position:-32px -88px
+}
+.wego-small-flag-MA {
+	background-position:-48px -88px
+}
+.wego-small-flag-MC {
+	background-position:-64px -88px
+}
+.wego-small-flag-MD {
+	background-position:-80px -88px
+}
+.wego-small-flag-ME {
+	background-position:-96px -88px
+}
+.wego-small-flag-MG {
+	background-position:-112px -88px
+}
+.wego-small-flag-MH {
+	background-position:-128px -88px
+}
+.wego-small-flag-MK {
+	background-position:-144px -88px
+}
+.wego-small-flag-ML {
+	background-position:-160px -88px
+}
+.wego-small-flag-MM {
+	background-position:-176px -88px
+}
+.wego-small-flag-MN {
+	background-position:-192px -88px
+}
+.wego-small-flag-MO {
+	background-position:-208px -88px
+}
+.wego-small-flag-MP {
+	background-position:-224px -88px
+}
+.wego-small-flag-MQ {
+	background-position:-240px -88px
+}
+.wego-small-flag-MR {
+	background-position:0 -99px
+}
+.wego-small-flag-MS {
+	background-position:-16px -99px
+}
+.wego-small-flag-MT {
+	background-position:-32px -99px
+}
+.wego-small-flag-MU {
+	background-position:-48px -99px
+}
+.wego-small-flag-MV {
+	background-position:-64px -99px
+}
+.wego-small-flag-MW {
+	background-position:-80px -99px
+}
+.wego-small-flag-MX {
+	background-position:-96px -99px
+}
+.wego-small-flag-MY {
+	background-position:-112px -99px
+}
+.wego-small-flag-MZ {
+	background-position:-128px -99px
+}
+.wego-small-flag-NA {
+	background-position:-144px -99px
+}
+.wego-small-flag-NC {
+	background-position:-160px -99px
+}
+.wego-small-flag-NE {
+	background-position:-176px -99px
+}
+.wego-small-flag-NF {
+	background-position:-192px -99px
+}
+.wego-small-flag-NG {
+	background-position:-208px -99px
+}
+.wego-small-flag-NI {
+	background-position:-224px -99px
+}
+.wego-small-flag-NL {
+	background-position:-240px -99px
+}
+.wego-small-flag-NO {
+	background-position:0 -110px
+}
+.wego-small-flag-NP {
+	background-position:-16px -110px
+}
+.wego-small-flag-NR {
+	background-position:-32px -110px
+}
+.wego-small-flag-NU {
+	background-position:-48px -110px
+}
+.wego-small-flag-NZ {
+	background-position:-64px -110px
+}
+.wego-small-flag-OM {
+	background-position:-80px -110px
+}
+.wego-small-flag-PA {
+	background-position:-96px -110px
+}
+.wego-small-flag-PE {
+	background-position:-112px -110px
+}
+.wego-small-flag-PF {
+	background-position:-128px -110px
+}
+.wego-small-flag-PG {
+	background-position:-144px -110px
+}
+.wego-small-flag-PH {
+	background-position:-160px -110px
+}
+.wego-small-flag-PK {
+	background-position:-176px -110px
+}
+.wego-small-flag-PL {
+	background-position:-192px -110px
+}
+.wego-small-flag-PM {
+	background-position:-208px -110px
+}
+.wego-small-flag-PN {
+	background-position:-224px -110px
+}
+.wego-small-flag-PR {
+	background-position:-240px -110px
+}
+.wego-small-flag-PS {
+	background-position:0 -121px
+}
+.wego-small-flag-PT {
+	background-position:-16px -121px
+}
+.wego-small-flag-PW {
+	background-position:-32px -121px
+}
+.wego-small-flag-PY {
+	background-position:-48px -121px
+}
+.wego-small-flag-QA {
+	background-position:-64px -121px
+}
+.wego-small-flag-RE {
+	background-position:-80px -121px
+}
+.wego-small-flag-RO {
+	background-position:-96px -121px
+}
+.wego-small-flag-RS {
+	background-position:-112px -121px
+}
+.wego-small-flag-RU {
+	background-position:-128px -121px
+}
+.wego-small-flag-RW {
+	background-position:-144px -121px
+}
+.wego-small-flag-SA {
+	background-position:-160px -121px
+}
+.wego-small-flag-SB {
+	background-position:-176px -121px
+}
+.wego-small-flag-SC {
+	background-position:-192px -121px
+}
+.wego-small-flag-SCOTLAND {
+	background-position:-208px -121px
+}
+.wego-small-flag-SD {
+	background-position:-224px -121px
+}
+.wego-small-flag-SE {
+	background-position:-240px -121px
+}
+.wego-small-flag-SG {
+	background-position:0 -132px
+}
+.wego-small-flag-SH {
+	background-position:-16px -132px
+}
+.wego-small-flag-SI {
+	background-position:-32px -132px
+}
+.wego-small-flag-SK {
+	background-position:-48px -132px
+}
+.wego-small-flag-SL {
+	background-position:-64px -132px
+}
+.wego-small-flag-SM {
+	background-position:-80px -132px
+}
+.wego-small-flag-SN {
+	background-position:-96px -132px
+}
+.wego-small-flag-SO {
+	background-position:-112px -132px
+}
+.wego-small-flag-SR {
+	background-position:-128px -132px
+}
+.wego-small-flag-ST {
+	background-position:-144px -132px
+}
+.wego-small-flag-SV {
+	background-position:-160px -132px
+}
+.wego-small-flag-SY {
+	background-position:-176px -132px
+}
+.wego-small-flag-SZ {
+	background-position:-192px -132px
+}
+.wego-small-flag-TC {
+	background-position:-208px -132px
+}
+.wego-small-flag-TD {
+	background-position:-224px -132px
+}
+.wego-small-flag-TF {
+	background-position:-240px -132px
+}
+.wego-small-flag-TG {
+	background-position:0 -143px
+}
+.wego-small-flag-TH {
+	background-position:-16px -143px
+}
+.wego-small-flag-TJ {
+	background-position:-32px -143px
+}
+.wego-small-flag-TK {
+	background-position:-48px -143px
+}
+.wego-small-flag-TL {
+	background-position:-64px -143px
+}
+.wego-small-flag-TM {
+	background-position:-80px -143px
+}
+.wego-small-flag-TN {
+	background-position:-96px -143px
+}
+.wego-small-flag-TO {
+	background-position:-112px -143px
+}
+.wego-small-flag-TR {
+	background-position:-128px -143px
+}
+.wego-small-flag-TT {
+	background-position:-144px -143px
+}
+.wego-small-flag-TV {
+	background-position:-160px -143px
+}
+.wego-small-flag-TW {
+	background-position:-176px -143px
+}
+.wego-small-flag-TZ {
+	background-position:-192px -143px
+}
+.wego-small-flag-UA {
+	background-position:-208px -143px
+}
+.wego-small-flag-UG {
+	background-position:-224px -143px
+}
+.wego-small-flag-UM {
+	background-position:-240px -143px
+}
+.wego-small-flag-US {
+	background-position:0 -154px
+}
+.wego-small-flag-UY {
+	background-position:-16px -154px
+}
+.wego-small-flag-UZ {
+	background-position:-32px -154px
+}
+.wego-small-flag-VA {
+	background-position:-48px -154px
+}
+.wego-small-flag-VC {
+	background-position:-64px -154px
+}
+.wego-small-flag-VE {
+	background-position:-80px -154px
+}
+.wego-small-flag-VG {
+	background-position:-96px -154px
+}
+.wego-small-flag-VI {
+	background-position:-112px -154px
+}
+.wego-small-flag-VN {
+	background-position:-128px -154px
+}
+.wego-small-flag-VU {
+	background-position:-144px -154px
+}
+.wego-small-flag-WALES {
+	background-position:-160px -154px
+}
+.wego-small-flag-WF {
+	background-position:-176px -154px
+}
+.wego-small-flag-WS {
+	background-position:-192px -154px
+}
+.wego-small-flag-YE {
+	background-position:-208px -154px
+}
+.wego-small-flag-YT {
+	background-position:-224px -154px
+}
+.wego-small-flag-ZA {
+	background-position:-240px -154px
+}
+.wego-small-flag-ZM {
+	background-position:0 -165px
+}
+.wego-small-flag-ZW {
+	background-position:-16px -165px
+}
+.wego-topbar-container .wego-small-flag {
+	border:none;
+	line-height:0;
+	margin-top:-4px;
+	vertical-align:middle
+}
+* html .wego-topbar-container .wego-small-flag {
+	margin-top:12px;
+	margin-bottom:12px
+}
+.wego-medium-flag {
+	padding:0 !important;
+	display:block;
+	border:1px solid #dddddd;
+	float:left;
+	border-radius:3px;
+	width:38px;
+	height:32px;
+	text-indent:-9999px;
+	margin-right:5px;
+	margin-bottom:5px;
+	background:#fff url(http://www.mediawego.com/images/wego/countrysite/medium-flags.png) no-repeat
+}
+.wego-medium-flag:hover {
+	background-color:#ffffcc
+}
+.wego-medium-flag-SG {
+	background-position:0 0
+}
+.wego-medium-flag-AU {
+	background-position:-38px 0
+}
+.wego-medium-flag-ID {
+	background-position:-76px 0
+}
+.wego-medium-flag-MY {
+	background-position:-114px 0
+}
+.wego-medium-flag-XX {
+	background-position:-152px 0
+}
+.wego-medium-flag-PH {
+	background-position:0 -32px
+}
+.wego-medium-flag-IN {
+	background-position:-38px -32px
+}
+.wego-medium-flag-IE {
+	background-position:-76px -32px
+}
+.wego-medium-flag-CA {
+	background-position:-114px -32px
+}
+.wego-medium-flag-ZA {
+	background-position:-152px -32px
+}
+.wego-medium-flag-US {
+	background-position:0 -64px
+}
+.wego-medium-flag-GB {
+	background-position:-38px -64px
+}
+.wego-medium-flag-NZ {
+	background-position:-76px -64px
+}
+.wego-medium-flag-CN {
+	background-position:-114px -64px
+}
+.wego-medium-flag-KR {
+	background-position:-152px -64px
+}
+.wego-medium-flag-VN {
+	background-position:0 -96px
+}
+.wego-container form {
+	margin:0;
+	padding:0
+}
+.wego-container input, .wego-container select, .wego-container textarea {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	display:inline-block;
+	font-size:14px;
+	-webkit-transition-property:border-color, color, background-color, -webkit-box-shadow;
+	-webkit-transition-duration:0.3s;
+	-moz-transition-property:border-color, color, background-color, -moz-box-shadow;
+	-moz-transition-duration:0.3s;
+	transition-property:border-color, color, background-color, box-shadow;
+	transition-duration:0.3s
+}
+.wego-container fieldset {
+	border:0;
+	padding:0;
+	margin:0 0 18px
+}
+.wego-container fieldset legend {
+	font-size:16px;
+	padding:0 0 18px;
+	margin:0
+}
+.wego-form .wego-special {
+	padding:2px 30px;
+	background:transparent url(http://www.wego.com/hotels/images/countrysite/icon-wego-searchbox.png) no-repeat left top
+}
+.wego-rtl .wego-form .wego-special {
+	background-position:right top
+}
+#wego-hotels-searchform .wego-special {
+	background-position:left -26px
+}
+.wego-rtl #wego-hotels-searchform .wego-special {
+	background-position:right -26px
+}
+*>.wego-container label {
+	cursor:pointer;
+	white-space:nowrap
+}
+*>.wego-container label input[type=checkbox], *>.wego-container label input[type=radio] {
+	cursor:pointer
+}
+*>.wego-container label [disabled] {
+	cursor:auto
+}
+.wego-container label small {
+	color:#999999
+}
+.wego-container label.wego-preheading-label {
+	color:#333333;
+	background-color:white;
+	border:1px solid #b7b7b7;
+	border-radius:2px;
+	padding:5px;
+	-webkit-box-shadow:inset 1px 1px 2px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow:inset 1px 1px 2px rgba(0, 0, 0, 0.1);
+	box-shadow:inset 1px 1px 2px rgba(0, 0, 0, 0.1);
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box
+}
+.wego-container input.wego-text, .wego-container input.wego-password {
+	color:#333333;
+	background-color:white;
+	border:1px solid #b7b7b7;
+	border-radius:2px;
+	padding:5px;
+	-webkit-box-shadow:inset 1px 1px 2px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow:inset 1px 1px 2px rgba(0, 0, 0, 0.1);
+	box-shadow:inset 1px 1px 2px rgba(0, 0, 0, 0.1);
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box
+}
+.wego-container select, .wego-container textarea {
+	color:#333333;
+	background-color:white;
+	border:1px solid #b7b7b7;
+	border-radius:2px;
+	padding:5px;
+	-webkit-box-shadow:inset 1px 1px 2px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow:inset 1px 1px 2px rgba(0, 0, 0, 0.1);
+	box-shadow:inset 1px 1px 2px rgba(0, 0, 0, 0.1);
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box
+}
+.wego-container label.wego-preheading-label {
+	overflow:hidden
+}
+.wego-container select {
+	padding:4px;
+	line-height:30px;
+	height:30px
+}
+.wego-container label.wego-preheading-label:focus {
+	border-color:#4e8506;
+	-webkit-box-shadow:inset 1px 1px 2px rgba(0, 0, 0, 0.1), 0 0 2px #9c0;
+	-moz-box-shadow:inset 1px 1px 2px rgba(0, 0, 0, 0.1), 0 0 2px #9c0;
+	box-shadow:inset 1px 1px 2px rgba(0, 0, 0, 0.1), 0 0 2px #9c0
+}
+.wego-container input.wego-text:focus, .wego-container input.wego-password:focus {
+	border-color:#4e8506;
+	-webkit-box-shadow:inset 1px 1px 2px rgba(0, 0, 0, 0.1), 0 0 2px #9c0;
+	-moz-box-shadow:inset 1px 1px 2px rgba(0, 0, 0, 0.1), 0 0 2px #9c0;
+	box-shadow:inset 1px 1px 2px rgba(0, 0, 0, 0.1), 0 0 2px #9c0
+}
+.wego-container textarea:focus {
+	border-color:#4e8506;
+	-webkit-box-shadow:inset 1px 1px 2px rgba(0, 0, 0, 0.1), 0 0 2px #9c0;
+	-moz-box-shadow:inset 1px 1px 2px rgba(0, 0, 0, 0.1), 0 0 2px #9c0;
+	box-shadow:inset 1px 1px 2px rgba(0, 0, 0, 0.1), 0 0 2px #9c0
+}
+.wego-container input.wego-error, .wego-container textarea.wego-error {
+	border-color:red
+}
+.wego-container input.wego-text[disabled], .wego-container input.wego-password[disabled] {
+	color:#888888;
+	background-color:#eeeeee
+}
+.wego-container select[disabled], .wego-container textarea[disabled] {
+	color:#888888;
+	background-color:#eeeeee
+}
+.wego-container input.wego-placeholder, .wego-container textarea.wego-placeholder, .wego-container input:-moz-placeholder, .wego-container textarea:-moz-placeholder, .wego-container input::-webkit-input-placeholder, .wego-container textarea::-webkit-input-placeholder {
+color:#888888
+}
+.wego-container .wego-help-text {
+	color:#888888;
+	font-size:12px
+}
+.wego-form-footer {
+	text-align:right;
+	margin:10px 10px 0
+}
+.wego-rtl .wego-form-footer {
+	text-align:left
+}
+.wego-dual-form .wego-form-footer {
+	text-align:right;
+	margin:10px 0 0
+}
+a.wego-button, input.wego-button, button.wego-button {
+	font-size:12px;
+	font-weight:bold;
+	display:inline-block;
+	line-height:17px;
+	vertical-align:middle;
+	padding:8px 12px;
+	border-radius:4px;
+	border:1px solid #dd8605;
+	text-shadow:0 1px rgba(0, 0, 0, 0.5);
+	color:white;
+	background-color:#ffa513;
+	background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #feb123), color-stop(100%, #ff9a02));
+	background-image:-webkit-linear-gradient(top, #feb123, #ff9a02);
+	background-image:-moz-linear-gradient(top, #feb123, #ff9a02);
+	background-image:-ms-linear-gradient(top, #feb123, #ff9a02);
+	background-image:-o-linear-gradient(top, #feb123, #ff9a02);
+	background-image:linear-gradient(top, #feb123, #ff9a02);
+	text-transform:uppercase;
+	-webkit-box-shadow:inset 1px 1px rgba(255, 255, 255, 0.3), 1px 1px 2px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow:inset 1px 1px rgba(255, 255, 255, 0.3), 1px 1px 2px rgba(0, 0, 0, 0.3);
+	box-shadow:inset 1px 1px rgba(255, 255, 255, 0.3), 1px 1px 2px rgba(0, 0, 0, 0.3);
+	-webkit-transition-property:color, border-color;
+	-webkit-transition-duration:0.3s;
+	-moz-transition-property:color, border-color;
+	-moz-transition-duration:0.3s;
+	transition-property:color, border-color;
+	transition-duration:0.3s
+}
+a.wego-button:visited, input.wego-button:visited, button.wego-button:visited, a.wego-button:hover, input.wego-button:hover, button.wego-button:hover, a.wego-button:focus, input.wego-button:focus, button.wego-button:focus {
+	border-color:#9b5e03;
+	color:white
+}
+a.wego-button:active, input.wego-button:active, button.wego-button:active {
+	background-color:#ff9a02;
+	background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff9a02), color-stop(100%, #feb123));
+	background-image:-webkit-linear-gradient(top, #ff9a02, #feb123);
+	background-image:-moz-linear-gradient(top, #ff9a02, #feb123);
+	background-image:-ms-linear-gradient(top, #ff9a02, #feb123);
+	background-image:-o-linear-gradient(top, #ff9a02, #feb123);
+	background-image:linear-gradient(top, #ff9a02, #feb123)
+}
+a.wego-button-search, input.wego-button-search, button.wego-button-search, a.wego-button-search:active, input.wego-button-search:active, button.wego-button-search:active {
+	padding-left:40px;
+	background-image:url(http://www.wego.com/hotels/images/countrysite/btn-search.png);
+	background-position:10px center;
+	background-repeat:no-repeat
+}
+.wego-rtl a.wego-button-search, .wego-rtl input.wego-button-search, .wego-rtl button.wego-button-search, .wego-rtl a.wego-button-search:active, .wego-rtl input.wego-button-search:active, .wego-rtl button.wego-button-search:active {
+	padding-right:40px;
+	padding-left:12px;
+	background-position:90% center
+}
+a.wego-button-loading, input.wego-button-loading, button.wego-button-loading {
+	background-image:url(http://www.wego.com/hotels/images/countrysite/search-loader.gif);
+	background-position:15px center;
+	background-repeat:no-repeat;
+	text-shadow:none;
+	color:#9c5c02
+}
+a.wego-blue-button, input.wego-blue-button, button.wego-blue-button {
+	font-size:12px;
+	font-weight:bold;
+	display:inline-block;
+	line-height:17px;
+	vertical-align:middle;
+	padding:8px 12px;
+	border-radius:4px;
+	border:1px solid #385591;
+	text-shadow:0 1px rgba(0, 0, 0, 0.5);
+	color:white;
+	background-color:#4166b4;
+	background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #456dc2), color-stop(100%, #3e60a7));
+	background-image:-webkit-linear-gradient(top, #456dc2, #3e60a7);
+	background-image:-moz-linear-gradient(top, #456dc2, #3e60a7);
+	background-image:-ms-linear-gradient(top, #456dc2, #3e60a7);
+	background-image:-o-linear-gradient(top, #456dc2, #3e60a7);
+	background-image:linear-gradient(top, #456dc2, #3e60a7);
+	text-transform:uppercase;
+	-webkit-box-shadow:inset 1px 1px rgba(255, 255, 255, 0.1), 1px 1px 2px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow:inset 1px 1px rgba(255, 255, 255, 0.1), 1px 1px 2px rgba(0, 0, 0, 0.3);
+	box-shadow:inset 1px 1px rgba(255, 255, 255, 0.1), 1px 1px 2px rgba(0, 0, 0, 0.3);
+	-webkit-transition:border-color 0.3s;
+	-moz-transition:border-color 0.3s;
+	transition:border-color 0.3s
+}
+a.wego-blue-button:hover, input.wego-blue-button:hover, button.wego-blue-button:hover, a.wego-blue-button:focus, input.wego-blue-button:focus, button.wego-blue-button:focus {
+	border-color:black;
+	color:white
+}
+a.wego-blue-button:active, input.wego-blue-button:active, button.wego-blue-button:active {
+	background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #3e60a7), color-stop(100%, #456dc2));
+	background-image:-webkit-linear-gradient(top, #3e60a7, #456dc2);
+	background-image:-moz-linear-gradient(top, #3e60a7, #456dc2);
+	background-image:-ms-linear-gradient(top, #3e60a7, #456dc2);
+	background-image:-o-linear-gradient(top, #3e60a7, #456dc2);
+	background-image:linear-gradient(top, #3e60a7, #456dc2)
+}
+.wego-form h2 {
+	color:#638824
+}
+.wego-form .wego-radios {
+	font-size:12px
+}
+.wego-form input.wego-text {
+	width:95%
+}
+.wego-form li {
+	margin:0 0 8px;
+	clear:left
+}
+.wego-form ul {
+	zoom:1
+}
+.wego-form ul:before {
+	display:table;
+	content:""
+}
+.wego-form ul:after {
+	display:table;
+	content:"";
+	clear:both
+}
+.wego-form ul li.wego-stacked {
+	font-size:12px;
+	float:left;
+	clear:none;
+	margin:0 10px 8px 0;
+*display:inline
+}
+.wego-rtl .wego-form li {
+	clear:right
+}
+.wego-rtl .wego-form ul li.wego-stacked {
+	float:right;
+	margin:0 0 8px 10px
+}
+.wego-form ul li.wego-stacked input.wego-text, .wego-form ul li.wego-stacked input.wego-password {
+	width:100%;
+*width:92%
+}
+.wego-form ul li.wego-stacked select, .wego-form ul li.wego-stacked textarea {
+	width:100%;
+*width:92%
+}
+.wego-form ul li.wego-stacked-m {
+	width:150px
+}
+.wego-form ul li.wego-stacked-l {
+	width:162.5px
+}
+.wego-form ul li.wego-stacked-xl {
+	width:335px
+}
+.wego-form ul li.wego-stacked-s {
+	width:105px
+}
+.wego-dual-form form {
+	display:inline-block;
+	width:320px;
+	vertical-align:top;
+*display:inline;
+	zoom:1
+}
+.wego-dual-form input.wego-text {
+	width:100%;
+*width:97%
+}
+.wego-dual-form .wego-divider {
+	display:inline-block;
+	background:white;
+	margin-top:5px;
+	width:5px;
+	text-align:center;
+	vertical-align:top;
+	color:#cccccc;
+*display:inline;
+	zoom:1;
+	display:none
+}
+form.wego-form {
+	margin:0 0 0 6px
+}
+.wego-dual-form form.wego-form {
+	margin:0
+}
+.wego-container .wego-green-form {
+	background:none;
+	border:none;
+	padding:0;
+	margin:10px 0 0 0;
+	margin-bottom:20px;
+	-webkit-box-shadow:none;
+	-moz-box-shadow:none;
+	box-shadow:none
+}
+.wego-homepage .wego-green-form {
+	margin-bottom:40px
+}
+.wego-container .wego-dual-form {
+	padding:0
+}
+.wego-green-form form.wego-form {
+	margin:0;
+	position:relative;
+	padding:14px;
+	border:3px solid #76a433;
+	border-radius:6px;
+	background:white;
+	-webkit-box-shadow:0 0 15px #9c9c9c;
+	-moz-box-shadow:0 0 15px #9c9c9c;
+	box-shadow:0 0 15px #9c9c9c;
+	-webkit-transition:background-color 0.3s;
+	-moz-transition:background-color 0.3s;
+	transition:background-color 0.3s
+}
+.wego-dual-form form.wego-form {
+	padding:14px
+}
+.wego-dual-form #wego-flights-searchform {
+	margin-right:17px
+}
+.wego-rtl .wego-dual-form #wego-flights-searchform {
+	margin-left:17px;
+	margin-right:0
+}
+.wego-green-form form.wego-form-inactive {
+	background:#e9e9e9;
+	border-color:#9c9c9c;
+	-webkit-box-shadow:inset 0 1px 2px #f7f7f7;
+	-moz-box-shadow:inset 0 1px 2px #f7f7f7;
+	box-shadow:inset 0 1px 2px #f7f7f7
+}
+.wego-green-form form.wego-form-inactive:hover {
+	background:#f7f7f7;
+	border-color:silver
+}
+.wego-green-form form.wego-form-inactive label.wego-preheading-label {
+	background-color:#fafafa
+}
+.wego-green-form form.wego-form-inactive input.wego-text, .wego-green-form form.wego-form-inactive input.wego-password {
+	background-color:#fafafa
+}
+.wego-green-form form.wego-form-inactive select, .wego-green-form form.wego-form-inactive textarea {
+	background-color:#fafafa
+}
+.wego-form fieldset, .wego-dual-form #wego-flights-searchform fieldset {
+	margin-bottom:0
+}
+#wego-flights-searchform fieldset {
+	margin-bottom:44px
+}
+.wego-dual-form form.wego-form .wego-search-flip {
+	width:26px;
+	height:26px;
+	display:block;
+	position:absolute;
+	right:-7px;
+	top:-7px;
+	background:url(http://www.wego.com/hotels/images/countrysite/bkg-search-flip.png) no-repeat right top
+}
+.wego-green-form form.wego-form-inactive .wego-search-flip {
+	display:none
+}
+.wego-triptype-field {
+	overflow:hidden;
+	font-size:12px
+}
+.wego-triptype-field span {
+	color:#888888;
+	display:inline-block;
+	zoom:1;
+	margin-right:10px
+}
+.wego-triptype-field label {
+	display:inline-block;
+	zoom:1;
+	margin-right:10px
+}
+.wego-triptype-field .wego-roundtrip-field {
+	background:url(http://www.wego.com/hotels/images/countrysite/bkg-triptype.png) no-repeat top right;
+	padding-right:20px
+}
+.wego-triptype-field .wego-oneway-field {
+	background:url(http://www.wego.com/hotels/images/countrysite/bkg-triptype.png) no-repeat bottom right;
+	padding-right:20px
+}
+.wego-nodate-field {
+	font-size:12px;
+	margin:8px 0 0
+}
+.wego-form-footer input {
+	margin-bottom:5px
+}
+.wego-form .wego-datepicker input {
+	background-image:url(http://www.wego.com/hotels/images/countrysite/bkg-datepicker.png);
+	background-repeat:no-repeat;
+	background-position:center right
+}
+.wego-rtl .wego-form .wego-datepicker input {
+	background-position:6px center
+}
+.wego-container .wego-bookingwiz {
+	padding:8px 12px;
+	border:none;
+	margin-bottom:0
+}
+.wego-container .wego-bookingwiz small {
+	display:none
+}
+.wego-dual-form .wego-bookingwiz {
+	background:#eeeeee;
+	margin:15px -14px -14px;
+	border-top:1px solid #dddddd;
+	border-top-right-radius:0;
+	border-top-left-radius:0;
+	padding:12px;
+*zoom:1
+}
+.wego-dual-form .wego-form-inactive .wego-bookingwiz {
+	background:#dddddd;
+	border-top:1px solid #cccccc
+}
+.wego-bookingwiz-label {
+	padding:0 0 5px;
+	color:#999999
+}
+.wego-section-preheading {
+	position:relative
+}
+.wego-section-preheading .wego-magic-search-button {
+	position:absolute;
+	right:10px;
+	top:-15px;
+	background:url(http://www.wego.com/hotels/images/countrysite/magic-search.png) no-repeat left top;
+	width:36px;
+	height:36px;
+	display:block;
+	text-indent:-9999px
+}
+.wego-section-preheading .wego-magic-search-button:hover {
+	background-position:left bottom
+}
+#wego-preheading-from, #wego-preheading-to {
+	width:240px;
+	margin-right:11px;
+	text-align:left;
+	margin-top:2px;
+	display:block;
+	float:left
+}
+.wego-container {
+	width:1100px;
+	margin:0 auto;
+	zoom:1
+}
+.wego-container:before {
+	display:table;
+	content:""
+}
+.wego-container:after {
+	display:table;
+	content:"";
+	clear:both
+}
+.wego-container .wego-sidebar {
+	width:320px;
+	margin:0;
+	padding:20px 0;
+	float:left;
+*display:inline
+}
+.wego-rtl .wego-container .wego-sidebar {
+	float:right
+}
+.wego-container .wego-content {
+	float:right;
+	width:730px;
+	margin:0;
+	padding:20px 0;
+*display:inline
+}
+.wego-rtl .wego-container .wego-content {
+	float:left
+}
+.wego-content .wego-section {
+	margin:0 0 40px;
+	zoom:1
+}
+.wego-content .wego-sub-section {
+	border-bottom:1px dashed #cccccc;
+	padding:0 0 10px 3%;
+	margin:0 0 5px;
+	position:relative
+}
+.wego-content .wego-section-unstyled {
+	border:none;
+	margin:0
+}
+.wego-content .wego-section .wego-topright {
+	position:absolute;
+	right:2%;
+	top:10px
+}
+.wego-sidebar .wego-section {
+	margin:0 0 20px
+}
+.wego-container .wego-section-preheading {
+	text-align:right
+}
+.wego-section-box {
+	background:white;
+	border:1px solid #cccccc;
+	border-radius:6px;
+	padding:16px
+}
+.wego-sidebar .wego-section-box {
+	padding:12px
+}
+.wego-container .wego-section-bottom {
+	margin:0 -13px -13px;
+	background:white;
+	border:1px solid #cccccc;
+	padding:12px;
+	background:#eeeeee;
+	border-radius:6px;
+	-webkit-box-shadow:inset 0 1px 2px white;
+	-moz-box-shadow:inset 0 1px 2px white;
+	box-shadow:inset 0 1px 2px white;
+	border-top-left-radius:0;
+	border-top-right-radius:0
+}
+.wego-sidebar .wego-section-bottom {
+	margin:0 -13px -13px
+}
+.wego-content .wego-section-bottom {
+	margin:-48px 2px 0 2px;
+	position:relative;
+	z-index:1;
+	border:1px solid #76a433;
+	border-top-color:#cccccc
+}
+.wego-content .wego-section-box {
+	box-shadow:0 0 6px #dddddd
+}
+.wego-container .wego-section-inner {
+	border:1px solid #eeeeee;
+	border-radius:6px;
+	background-color:#f7f7f7;
+	padding:12px;
+	margin:0 0 8px
+}
+.wego-section-highlight {
+	position:relative;
+	border:1px solid #ffc9a1;
+	border-radius:6px;
+	box-shadow:0 0 6px #cccccc;
+	position:relative;
+	padding:10px 45px;
+	background:#fffbd0 url(/flights/images/countrysite/icon-highlight.gif) no-repeat 12px center
+}
+.wego-content .wego-section-highlight {
+	margin-bottom:20px
+}
+.wego-content .wego-section-highlight p {
+	font-size:13px;
+	margin:0;
+	padding:0;
+	line-height:18px
+}
+.wego-content .wego-section-highlight-nav {
+	display:block;
+	position:absolute;
+	right:10px;
+	top:10px;
+	overflow:hidden;
+	background:url(/flights/images/countrysite/arrows-highlight.png) no-repeat bottom;
+	width:34px;
+	height:20px
+}
+.wego-content .wego-section-highlight-nav a {
+	display:block;
+	float:left;
+	width:17px;
+	height:20px;
+	text-indent:-9999px
+}
+.wego-content .wego-section-highlight-nav .wego-arrow-prev {
+	background:url(/flights/images/countrysite/arrows-highlight.png) no-repeat left top
+}
+.wego-content .wego-section-highlight-nav .wego-arrow-next {
+	background:url(/flights/images/countrysite/arrows-highlight.png) no-repeat right top
+}
+.wego-content .wego-section-highlight-nav .wego-disabled {
+	background-image:none;
+	cursor:default;
+	pointer-events:none
+}
+.wego-container .wego-2col {
+	zoom:1
+}
+.wego-container .wego-2col:before {
+	display:table;
+	content:""
+}
+.wego-container .wego-2col:after {
+	display:table;
+	content:"";
+	clear:both
+}
+.wego-container .wego-2col ul {
+	width:45%;
+	margin:0 2% 0 3%;
+*margin:0 1% 0 2%;
+	float:left
+}
+.wego-container .wego-2col ul.wego-unstyled {
+	width:45%;
+	margin:0 2% 0 3%;
+*margin:0 1% 0 2%;
+	float:left
+}
+.wego-container .wego-2col table {
+	width:45%;
+	margin:0 2% 0 3%;
+*margin:0 1% 0 2%;
+	float:left
+}
+.wego-popover-content .wego-dropdown-subsection .wego-2col {
+	overflow:hidden;
+	width:480px;
+	position:relative
+}
+* html .wego-popover-content .wego-dropdown-subsection .wego-2col ul {
+	width:200px
+}
+.wego-dropdown-subsection .wego-2col ul {
+	width:48%;
+	margin:0 2% 0 0;
+	float:left
+}
+.wego-rtl .wego-dropdown-subsection .wego-2col ul {
+	margin:0 0 0 2%
+}
+.wego-container .wego-3col {
+	zoom:1
+}
+.wego-container .wego-3col:before {
+	display:table;
+	content:""
+}
+.wego-container .wego-3col:after {
+	display:table;
+	content:"";
+	clear:both
+}
+.wego-container .wego-3col ul {
+	float:left
+}
+.wego-container .wego-3col ul.wego-unstyled {
+	float:left
+}
+.wego-container .wego-content .wego-3col ul {
+	width:30%;
+	margin:0 2% 0 0
+}
+.wego-container .wego-content .wego-3col ul.wego-unstyled {
+	width:30%;
+	margin:0 2% 0 0
+}
+.wego-container .wego-col-2 {
+	vertical-align:top
+}
+.wego-container .wego-col-2 .wego-col {
+	vertical-align:top;
+	width:47%;
+	margin-right:5%;
+	display:inline-block;
+*display:inline;
+	zoom:1
+}
+.wego-rtl .wego-container .wego-col-2 .wego-col {
+	margin-left:5%;
+	margin-right:0
+}
+.wego-container .wego-col-2 .wego-last-col {
+	margin-right:0
+}
+.wego-rtl .wego-container .wego-col-2 .wego-last-col {
+	margin-left:0
+}
+.wego-container .wego-col-3 {
+	vertical-align:top
+}
+.wego-container .wego-col-3 .wego-col {
+	vertical-align:top;
+	width:31%;
+	margin-right:2%;
+	display:inline-block;
+*display:inline;
+	zoom:1
+}
+.wego-container .wego-col-3 .wego-last-col {
+	margin-right:0
+}
+.wego-container .wego-3col table {
+	width:30%;
+	margin:0 2% 0 3%;
+	float:left
+}
+.wego-container .wego-figure {
+	float:left;
+	position:relative;
+	display:block
+}
+.wego-container .wego-figure img {
+	vertical-align:bottom
+}
+.wego-container .wego-figure .wego-figcaption {
+	position:absolute;
+	width:90%;
+	padding:0;
+	color:white;
+	background:black;
+	background:rgba(0, 0, 0, 0.7);
+	line-height:26px;
+	padding:0 5%;
+	bottom:0;
+	left:0;
+	display:block;
+	font-weight:bold
+}
+.wego-container a.wego-figure .wego-figcaption {
+	cursor:pointer
+}
+.wego-month-list {
+	width:45%;
+	margin:0 2% 0 3%;
+*margin:0 1% 0 2%;
+	float:left
+}
+.wego-container .wego-content .wego-2col .wego-month-list ul {
+	float:none;
+	width:auto;
+	margin:0;
+	display:block;
+	padding:0;
+	background:#fff url(/flights/images/countrysite/bkg-month-list.gif) repeat-y left top;
+	border:1px solid #cccccc;
+	border-bottom:none
+}
+.wego-container .wego-content .wego-2col .wego-disabled ul {
+	background:#eeeeee;
+	border-color:#dddddd
+}
+.wego-month-list li {
+	list-style:none;
+	display:inline
+}
+.wego-month-list ul li label {
+	display:block;
+	padding:2px 8px 2px 10px;
+	border-bottom:1px solid #cccccc;
+	overflow:hidden
+}
+.wego-container .wego-content .wego-2col .wego-disabled p strong {
+	color:#cccccc
+}
+.wego-container .wego-content .wego-2col .wego-disabled ul li label {
+	color:#cccccc;
+	border-color:#dddddd
+}
+.wego-container .wego-content .wego-2col .wego-disabled ul li label small {
+	color:#cccccc
+}
+.wego-month-list ul li label input {
+	display:block;
+	float:left;
+	margin-right:20px;
+	margin-top:5px;
+	padding:5px
+}
+.wego-month-list ul li label .wego-month-currency {
+	float:right;
+	color:#333333
+}
+.wego-container .wego-content .wego-2col .wego-disabled ul li label .wego-month-currency {
+	color:#cccccc;
+	text-shadow:none
+}
+.wego-month-list ul li label.wego-lighten {
+	background:#eeeeee;
+	color:#999999
+}
+.wego-month-list ul li label.wego-lighten .wego-month-currency {
+	color:#999999
+}
+.wego-month-list ul li label.wego-selected {
+	background:#62a804 url(/flights/images/countrysite/bkg-month-list-selected.gif) repeat-y left top
+}
+.wego-month-list ul li label.wego-selected:hover {
+	background:#62a804 url(/flights/images/countrysite/bkg-month-list-selected.gif) repeat-y left top
+}
+.wego-container .wego-content .wego-2col .wego-disabled ul li label.wego-selected {
+	background:#dddddd
+}
+.wego-container .wego-content .wego-2col .wego-disabled ul li label.wego-selected:hover {
+	background:#dddddd
+}
+.wego-month-list ul li label.wego-selected {
+	color:#ffffcc
+}
+.wego-month-list ul li label.wego-selected small {
+	color:#ffffcc
+}
+.wego-month-list ul li label.wego-selected:hover {
+	color:#ffffcc
+}
+.wego-month-list ul li label.wego-selected:hover small {
+	color:#ffffcc
+}
+.wego-month-list ul li label.wego-selected .wego-month-currency {
+	color:white;
+	text-shadow:1px 1px 0 #3e6b03
+}
+.wego-month-list ul li label:hover {
+	background:#ffe url(/flights/images/countrysite/bkg-month-list-hover.gif) repeat-y left top
+}
+.wego-content .wego-airfares-summary {
+	clear:both;
+	border-top:1px dashed #dddddd;
+	margin-top:30px;
+	padding:10px 3%;
+	overflow:hidden
+}
+.wego-airfares-summary span {
+	display:block
+}
+.wego-airfares-summary span span {
+	display:inline
+}
+.wego-airfares-total {
+	width:auto;
+	clear:none;
+	float:right;
+	text-align:right;
+	padding:5px 15px
+}
+.wego-airfares-total strong {
+	font-size:22px;
+	letter-spacing:-1px
+}
+.wego-airfares-summary .wego-button {
+	float:right;
+	margin-top:5px
+}
+.wego-content .wego-tab-content .wego-2col {
+	margin-bottom:30px
+}
+.wego-content .wego-tab-content .airline_group {
+	margin-top:0;
+	margin-bottom:30px
+}
+.wego-content .airline_group table.wego-table-list {
+	margin-bottom:0
+}
+.wego-content table.wego-table-list img {
+	vertical-align:bottom
+}
+.wego-content .wego-airport-list table.wego-table-list td {
+	height:auto;
+	border:none
+}
+.wego-content .wego-directory-list {
+	margin-top:5px;
+	margin-bottom:10px
+}
+.wego-airport-details {
+	overflow:hidden
+}
+.wego-airport-details-map {
+	width:360px;
+	height:280px;
+	background:#eeeeee;
+	border:1px solid #dddddd;
+	float:left;
+	margin-bottom:20px
+}
+.wego-airport-details .wego-table-list {
+	float:left;
+	margin:0 0 0 20px;
+	padding:0;
+	list-style:none;
+	width:340px
+}
+.wego-container .wego-airport-details table.wego-table-list td {
+	border:none
+}
+.wego-airport-details .wego-table-list td {
+	vertical-align:top
+}
+.wego-container .wego-airport-details table.wego-table-list td {
+	height:auto;
+	padding:0 0 10px
+}
+.wego-container .wego-airport-details table.wego-table-list .wego-table-label {
+	color:#999999;
+	width:90px
+}
+.wego-container .wego-airport-details .wego-airfares-summary {
+	padding:10px 0;
+	margin:0;
+	border:none
+}
+.wego-container .wego-airport-details .wego-airfares-summary .wego-button {
+	float:left
+}
+.wego-airline-details .wego-table-list {
+	margin:0;
+	padding:0;
+	list-style:none
+}
+.wego-container .wego-airline-details table.wego-table-list td {
+	border:none
+}
+.wego-airline-details .wego-table-list td {
+	vertical-align:top
+}
+.wego-container .wego-airline-details table.wego-table-list td {
+	height:auto;
+	padding:0 0 10px
+}
+.wego-container .wego-airline-details table.wego-table-list .wego-table-label {
+	color:#999999;
+	width:180px
+}
+#wego-month-selector, #wego-calendar-selector {
+	position:relative
+}
+#wego-month-selector {
+	margin-top:20px
+}
+#wego-month-selector .wego-2col {
+	margin-bottom:10px
+}
+#wego-month-selector .wego-depart-month {
+	width:95%
+}
+.wego-month-trip-type, .wego-calendar-trip-type {
+	position:absolute;
+	right:0;
+	top:0
+}
+.wego-month-trip-type {
+	overflow:hidden;
+	font-size:12px
+}
+.wego-month-trip-type span {
+	color:#888888;
+	display:inline-block;
+	zoom:1;
+	margin-right:10px
+}
+.wego-month-trip-type label {
+	display:inline-block;
+	zoom:1;
+	margin-right:10px
+}
+.wego-month-trip-type .wego-roundtrip-field {
+	background:url(/flights/images/countrysite/bkg-triptype.png) no-repeat top right;
+	padding-right:20px
+}
+.wego-month-trip-type .wego-oneway-field {
+	background:url(/flights/images/countrysite/bkg-triptype.png) no-repeat bottom right;
+	padding-right:20px
+}
+#wego-month-selector .wego-airfares-summary {
+	display:block;
+	margin-bottom:10px;
+	margin-top:10px;
+	border:none
+}
+.wego-airline-image {
+	display:block;
+	padding:0 15px 15px;
+	float:right
+}
+.wego-container .wego-airlines-deeplink h3 {
+	margin:15px 0 15px
+}
+.wego-container .wego-airlines-deeplink img {
+	border:1px solid #dddddd;
+	vertical-align:bottom;
+	float:left;
+	display:block;
+	margin-right:10px;
+	background:white
+}
+.wego-container .wego-airlines-deeplink table.wego-table-list td {
+	border-bottom:1px dashed #dddddd;
+	padding:5px;
+	line-height:30px;
+	font-size:14px;
+	background-image:url(/flights/images/countrysite/icon-search.png);
+	background-position:top right;
+	background-repeat:no-repeat
+}
+.wego-container .wego-airlines-deeplink table.wego-table-list td:hover {
+	background-color:#ffffee;
+	background-position:bottom right
+}
+.wego-google-maps {
+	border:1px solid #dddddd
+}
+.wego-airline-selector {
+	float:right;
+	margin-bottom:10px
+}
+.wego-container .wego-airfares-list {
+	clear:both
+}
+.wego-container .wego-airfares-list ul {
+	border:1px solid white;
+	list-style:none;
+	margin:0;
+	padding:0;
+	overflow:hidden
+}
+.wego-container .wego-airfares-list ul.wego-airfares-fixed {
+	height:279px
+}
+.wego-container .wego-airlines-funnel ul.wego-airfares-fixed {
+	height:279px
+}
+.wego-container .wego-airfares-list ul.wego-airfares-fixed:hover {
+	border-color:#dddddd;
+	overflow:auto
+}
+.wego-container .wego-airfares-list li {
+	border-bottom:1px dashed #dddddd;
+	padding:2px 10px 2px 5px;
+	overflow:hidden
+}
+.wego-rtl .wego-container .wego-airfares-list li {
+	padding:2px 5px 2px 10px
+}
+.wego-container .wego-airfares-list li:hover {
+	background:#ffffee
+}
+.wego-container .wego-airfares-list a:hover span {
+	color:#003399
+}
+.wego-container .wego-airfares-list li .wego-book-direct {
+	display:none
+}
+.wego-container .wego-airfares-list li img {
+	vertical-align:bottom
+}
+.wego-container .wego-airfares-list li .wego-amount {
+	float:right;
+	display:block;
+	text-align:right;
+	font-weight:bold;
+	font-size:14px;
+*margin-top:-24px
+}
+.wego-rtl .wego-container .wego-airfares-list li .wego-amount {
+	float:left;
+	text-align:left
+}
+.wego-container .wego-airfares-list a .wego-small {
+	color:#333333;
+	font-size:11px
+}
+.wego-format-content {
+	overflow:hidden
+}
+.wego-accordion-handle {
+	font-size:18px;
+	color:#222222;
+	display:block;
+	border-radius:5px;
+	background:#ddd url(/flights/images/countrysite/arrow-accordion.png) no-repeat 10px center;
+	border:1px solid #cccccc;
+	text-decoration:none;
+	padding:10px 15px 10px 42px;
+	margin:5px 0;
+	-webkit-box-shadow:inset 0 1px 1px white;
+	-moz-box-shadow:inset 0 1px 1px white;
+	box-shadow:inset 0 1px 1px white;
+	text-shadow:1px 1px 0 white
+}
+.wego-container a.wego-active {
+	color:#335700;
+	cursor:default;
+	border-color:#5c9d04;
+	background:#9c0 url(/flights/images/countrysite/arrow-accordion-selected.png) no-repeat 10px center;
+	-webkit-box-shadow:inset 0 1px 2px #ade900;
+	-moz-box-shadow:inset 0 1px 2px #ade900;
+	box-shadow:inset 0 1px 2px #ade900;
+	text-shadow:1px 1px 0 #ade800
+}
+.wego-container a.wego-active:hover {
+	color:#335700;
+	cursor:default;
+	border-color:#5c9d04;
+	background:#9c0 url(/flights/images/countrysite/arrow-accordion-selected.png) no-repeat 10px center;
+	-webkit-box-shadow:inset 0 1px 2px #ade900;
+	-moz-box-shadow:inset 0 1px 2px #ade900;
+	box-shadow:inset 0 1px 2px #ade900;
+	text-shadow:1px 1px 0 #ade800
+}
+.wego-container .wego-destination-box {
+	padding:0 15px;
+	overflow:hidden;
+	height:260px
+}
+.wego-accordion .wego-destination-box {
+	padding:15px;
+	display:none
+}
+.wego-container .wego-destination-box .wego-destination-primary {
+	width:360px;
+	float:left;
+	margin:0 0 10px;
+	padding:0
+}
+.wego-container .wego-destination-box .wego-destination-primary .wego-figure {
+	margin-bottom:10px
+}
+.wego-container .wego-destination-box .wego-destination-primary .wego-small {
+	display:inline;
+	line-height:16px
+}
+.wego-container .wego-destination-box ul.wego-destination-others {
+	float:right;
+	width:320px;
+	border:1px solid #dddddd;
+	overflow:hidden;
+	height:254px;
+	list-style:none;
+	margin:0;
+	padding:0
+}
+.wego-container .wego-destination-box ul.wego-destination-others:hover {
+	overflow:auto
+}
+.wego-container .wego-destination-box ul.wego-destination-others li {
+	border-bottom:1px dashed #dddddd;
+	padding:10px;
+	overflow:hidden
+}
+.wego-container .wego-destination-box ul.wego-destination-others li h4 {
+	line-height:1.2em
+}
+.wego-container .wego-destination-box ul.wego-destination-others li img {
+	float:left;
+	margin-right:10px
+}
+.wego-container .wego-destination-box ul.wego-destination-others sup, .wego-container .wego-destination-box ul.wego-destination-others sub {
+*zoom:1
+}
+.wego-container .wego-destination-box .wego-small {
+	display:block;
+	line-height:14px
+}
+.wego-container .wego-destination-box ul.wego-destination-others li a {
+	line-height:16px
+}
+.wego-container .wego-destination-box ul.wego-destination-others li a.wego-small {
+	line-height:18px
+}
+.wego-top-hotels {
+	overflow:hidden
+}
+.wego-top-hotels div {
+	float:left;
+	clear:both;
+	width:140px;
+	height:140px;
+	border:1px solid #dddddd;
+	margin-top:10px;
+	margin-left:10px;
+	position:relative;
+	overflow:hidden;
+*display:inline
+}
+.wego-rtl .wego-top-hotels div {
+	float:right;
+	margin-right:10px;
+	margin-left:0
+}
+.wego-top-hotels div img {
+	width:140px;
+	height:auto;
+	display:block
+}
+.wego-top-hotels div .wego-small {
+	position:absolute;
+	width:120px;
+	color:white;
+	background:black;
+	background:rgba(0, 0, 0, 0.7);
+	padding:5px 10px;
+	line-height:14px;
+	bottom:0;
+	left:0;
+	display:block
+}
+.wego-top-hotels table.wego-table-list {
+	margin-top:8px;
+	margin-left:170px;
+	width:560px;
+*float:left;
+*margin-left:15px
+}
+.wego-rtl .wego-top-hotels table.wego-table-list {
+	margin-left:0;
+	margin-right:170px;
+*float:right;
+*margin-right:15px
+}
+.wego-top-hotels table.wego-table-list thead a {
+	font-size:14px;
+	color:#333333
+}
+.wego-top-hotels table.wego-table-list thead a:hover {
+	color:#003399
+}
+.wego-sidebar .wego-fastdeals-box {
+	display:none
+}
+.wego-container a.wego-close {
+	display:block;
+	width:18px;
+	height:18px;
+	text-indent:-9999px;
+	background:url(/flights/images/countrysite/bkg-close.png) no-repeat left top;
+	text-decoration:none;
+	color:#e18239;
+	position:absolute;
+	top:10px;
+	right:10px
+}
+.wego-container a.wego-close:hover {
+	display:block;
+	width:18px;
+	height:18px;
+	text-indent:-9999px;
+	background:url(/flights/images/countrysite/bkg-close.png) no-repeat left top;
+	text-decoration:none;
+	color:#e18239;
+	position:absolute;
+	top:10px;
+	right:10px
+}
+.wego-content .wego-datewise h2 {
+	line-height:20px;
+	padding-bottom:10px;
+	margin-bottom:0
+}
+.wego-content .wego-datewise h2 strong {
+	color:#4d8506
+}
+.wego-content .wego-datewise h2 .wego-small {
+	letter-spacing:0;
+	display:block
+}
+.wego-content .wego-datewise-builder {
+	background:#f7f7f7 url(/assets/countrysite/bkg-datewise.png) no-repeat right bottom;
+	padding:10px 15px;
+	overflow:hidden
+}
+.wego-content .wego-datewise-builder label {
+	display:block;
+	float:left;
+	font-size:11px
+}
+.wego-content .wego-datewise-builder select {
+	margin-top:1px;
+	margin-right:15px;
+	display:block;
+	width:200px
+}
+.wego-content .wego-datewise-builder .wego-button {
+	margin-top:16px
+}
+@media all and (max-width: 1220px) {
+.wego-container {
+width:990px
+}
+.wego-container .wego-sidebar {
+width:240px;
+margin:0
+}
+.wego-container .wego-ad-mrec {
+display:none
+}
+.wego-sidebar .fb_iframe_widget iframe {
+width:230px !important;
+margin-left:-12px !important
+}
+.wego-container .wego-content {
+margin:0
+}
+}
+ul.wego-list {
+	padding:0;
+	margin:0
+}
+ol.wego-list {
+	margin:0;
+	padding:0 15px
+}
+ul.wego-list li {
+	list-style:none;
+	color:#666666;
+	font-size:11px;
+	padding:5px;
+	border-bottom:1px dashed #cccccc
+}
+ol.wego-list li {
+	list-style:inside decimal;
+	color:#666666;
+	font-size:11px;
+	padding:5px;
+	border-bottom:1px dashed #cccccc
+}
+ul.wego-list li:before, ul.wego-list li:after {
+	display:table;
+	content:""
+}
+ol.wego-list li:before, ol.wego-list li:after {
+	display:table;
+	content:""
+}
+ul.wego-list li:after, ol.wego-list li:after {
+	clear:both
+}
+ul.wego-list li span, ol.wego-list li span {
+	color:#333333;
+	font-size:14px
+}
+ul.wego-list li a, ol.wego-list li a {
+	font-size:14px
+}
+ul.wego-list li em, ol.wego-list li em {
+	color:#333333;
+	font-size:14px;
+	float:right;
+	font-style:normal
+}
+ul.wego-inline-list {
+	margin:0 0 18px;
+	padding:0
+}
+ul.wego-inline-list li {
+	display:inline;
+	padding-right:2%
+}
+ul.wego-inline-list li.wego-selected {
+	display:inline;
+	padding-right:2%
+}
+ul.wego-inline-list li.wego-selected a {
+	font-weight:bold
+}
+.wego-container ul.wego-list-thumbs {
+	margin:0;
+	padding:0
+}
+.wego-list-thumbs:before {
+	display:table;
+	content:""
+}
+.wego-list-thumbs:after {
+	display:table;
+	content:"";
+	clear:both
+}
+.wego-list-thumbs li {
+	list-style:none;
+	border:1px solid #dddddd;
+	background:white;
+	box-shadow:0 0 6px #cccccc;
+	width:150px;
+	float:left;
+	margin-right:20px;
+	padding:5px
+}
+.wego-list-thumbs img {
+	width:150px;
+	height:140px;
+	display:block;
+	margin-bottom:5px
+}
+.wego-list-thumbs strong {
+	line-height:18px
+}
+.wego-list-thumbs span {
+	font-size:13px;
+	display:block;
+	line-height:18px
+}
+.wego-list-thumbs span small {
+	line-height:18px
+}
+.wego-list-thumbs a {
+	display:block;
+	line-height:18px;
+	font-size:11px
+}
+.wego-topbar {
+	color:white;
+	background-color:#4e8506;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:14px;
+	height:35px;
+	line-height:35px;
+	border-bottom:1px solid #3d6907;
+	-webkit-box-shadow:0 1px white;
+	-moz-box-shadow:0 1px white;
+	box-shadow:0 1px white
+}
+.wego-topbar:before {
+	display:table;
+	content:""
+}
+.wego-topbar:after {
+	display:table;
+	content:"";
+	clear:both
+}
+#wego-new-deal-selector {
+	background-color:#333333;
+	color:#CCCCCC;
+	font-size:11px;
+	text-align:center;
+	padding:8px 0;
+	font-family:Verdana, Arial, Helvetica, sans-serif
+}
+.wego-new-deal-selector-container {
+	width:1100px;
+	margin:auto;
+	position:relative
+}
+#wego-new-deal-selector .close {
+	color:#ffffff;
+	font-weight:bold;
+	float:right
+}
+#wego-new-deal-selector .close img {
+	margin-bottom:-3px
+}
+#wego-new-deal-selector a {
+	color:#ffffff;
+	text-decoration:none;
+	cursor:hand
+}
+#wego-new-deal-selector .white {
+	color:#fff
+}
+#wego-new-deal-selector .orange {
+	color:#FFCC66;
+	font-weight:bold
+}
+#wego-new-deal-selector .orange-light {
+	font-weight:bold;
+	color:#FFFFCC
+}
+.wego-topbar-container {
+	width:1100px;
+	margin:auto;
+	height:35px;
+	line-height:35px;
+	position:relative;
+	font-size:12px
+}
+.wego-topbar-container h1 {
+	margin:0;
+	padding:0;
+	position:relative
+}
+.wego-topbar-container a {
+	text-shadow:0 2px 1px rgba(0, 0, 0, 0.5);
+	color:white;
+	text-decoration:none;
+	font-weight:bold;
+	-webkit-transition:all 0.3s;
+	-moz-transition:all 0.3s;
+	transition:all 0.3s
+}
+.wego-topbar-container a:hover, .wego-topbar-container a:visited {
+	color:white;
+	text-decoration:none;
+	font-weight:bold;
+	-webkit-transition:all 0.3s;
+	-moz-transition:all 0.3s;
+	transition:all 0.3s
+}
+.wego-topbar-container h1 a {
+	display:block;
+	float:left;
+	margin:0 18px 0 0;
+	width:46px;
+	background:#9c0 url(http://www.wego.com/hotels/images/countrysite/icon-wego.png) no-repeat center center;
+	text-indent:-9999px;
+	-webkit-box-shadow:1px 1px 4px #376005;
+	-moz-box-shadow:1px 1px 4px #376005;
+	box-shadow:1px 1px 4px #376005
+}
+.wego-rtl .wego-topbar-container h1 a {
+	float:right;
+	margin:0 0 0 18px
+}
+.wego-topbar-container ul.wego-nav {
+	display:inline;
+	margin:0;
+	padding:0;
+	float:left;
+	list-style:none
+}
+.wego-topbar-container ul.wego-nav .wego-nav-item.deals a {
+	background:url(http://www.mediawego.com/images/deals/img-new-green.png) no-repeat 100% 12px;
+	padding-right:27px;
+	margin-right:15px
+}
+.wego-rtl .wego-topbar-container ul.wego-nav {
+	float:right
+}
+.wego-topbar-container ul.wego-secondary-nav {
+	font-size:11px;
+	position:absolute;
+	top:0;
+	right:0
+}
+.wego-rtl .wego-topbar-container ul.wego-secondary-nav {
+	left:0;
+	right:auto
+}
+.wego-topbar-container ul.wego-secondary-nav a {
+	font-weight:normal
+}
+.wego-topbar-container ul.wego-secondary-nav a span {
+	font-weight:normal
+}
+.wego-topbar-container ul li {
+	display:inline
+}
+.wego-topbar-container ul li a {
+	display:block;
+	float:left;
+	padding:0 18px
+}
+.wego-rtl .wego-topbar-container ul li a {
+	float:right
+}
+.wego-topbar-container ul li a.wego-dropdown {
+	padding-right:20px;
+	padding-left:10px;
+	background:url(http://www.wego.com/hotels/images/countrysite/arrow-topbar.png) no-repeat right 16px;
+	outline:0
+}
+.wego-rtl .wego-topbar-container ul li a.wego-dropdown {
+	background-position:7px 16px;
+	padding-right:10px;
+	padding-left:20px
+}
+.wego-topbar-container ul li.wego-nav-block {
+	display:block;
+	float:left;
+	padding:0 0 0 18px;
+	color:#5c9d03;
+	vertical-align:middle
+}
+.wego-rtl .wego-topbar-container ul li.wego-nav-block {
+	float:right;
+	padding:0 18px 0 0
+}
+.wego-topbar-container ul li.wego-nav-block em {
+	font-style:normal;
+	color:#ade800
+}
+.wego-topbar-container ul li.wego-nav-block a {
+	display:inline;
+	float:none;
+	padding:0;
+	color:white
+}
+.wego-topbar-container ul li.wego-nav-block a:hover {
+	background-color:transparent;
+	text-decoration:underline
+}
+.wego-topbar-container ul li.wego-nav-block img.wego-profile {
+	width:23px;
+	height:23px;
+	border:1px solid #5c9d03;
+	margin-top:-5px;
+	vertical-align:middle
+}
+.wego-topbar-container ul li.wego-selected a {
+	color:#99cc00;
+	text-shadow:0 0 0;
+	background-color:transparent;
+	border-top:3px solid #99cc00;
+	line-height:30px
+}
+.wego-topbar-container ul li.wego-selected a:hover {
+	color:#99cc00;
+	text-shadow:0 0 0;
+	background-color:transparent;
+	border-top:3px solid #99cc00;
+	line-height:30px
+}
+.wego-topbar-container ul li a.wego-active, .wego-topbar-container ul li a:hover, .wego-topbar-container ul li a:focus {
+	color:white;
+	background-color:#699325
+}
+.wego-topbar-container ul li a * {
+	line-height:inherit
+}
+.wego-topbar-container ul.wego-secondary-nav a.wego-login-facebook {
+	font-family:"lucida grande", tahoma, verdana, arial, sans-serif;
+	font-size:10px;
+	font-weight:bold;
+	border:1px solid #184a7a;
+	background:#5b7fa8 url(http://www.wego.com/hotels/images/countrysite/facebook-login-button-small.png) no-repeat 0 0;
+	margin:0 5px;
+	display:inline-block;
+	overflow:hidden;
+	text-shadow:none;
+	zoom:1;
+	height:16px;
+	vertical-align:middle
+}
+* html .wego-topbar-container ul.wego-secondary-nav a.wego-login-facebook {
+	margin-top:8px;
+	padding-bottom:1px
+}
+.wego-topbar-container ul.wego-secondary-nav a.wego-login-facebook:hover {
+	background-color:#5b7fa8;
+	text-decoration:none
+}
+.wego-topbar-container ul.wego-secondary-nav a.wego-login-facebook span {
+	border-top:1px solid #839dbd;
+	margin:0 0 0 17px;
+	padding:0 5px;
+	height:15px;
+	line-height:15px;
+	font-weight:bold;
+	display:inline-block;
+	zoom:1;
+	cursor:pointer;
+	vertical-align:top
+}
+.wego-bottombar {
+	color:white;
+	background-color:#4e8506;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:14px;
+	height:35px;
+	line-height:35px;
+	border-bottom:1px solid #3d6907;
+	-webkit-box-shadow:0 1px white;
+	-moz-box-shadow:0 1px white;
+	box-shadow:0 1px white
+}
+.wego-bottombar:before {
+	display:table;
+	content:""
+}
+.wego-bottombar:after {
+	display:table;
+	content:"";
+	clear:both
+}
+.wego-bottombar-container {
+	width:1100px;
+	margin:0 auto;
+	height:35px;
+	line-height:35px;
+	position:relative;
+	font-size:11px
+}
+.wego-bottombar-container a {
+	text-shadow:0 2px 1px rgba(0, 0, 0, 0.5);
+	color:white;
+	text-decoration:none;
+	font-weight:normal;
+	-webkit-transition:all 0.3s;
+	-moz-transition:all 0.3s;
+	transition:all 0.3s
+}
+.wego-bottombar-container a:hover, .wego-bottombar-container a:visited {
+	color:white;
+	text-decoration:none;
+	font-weight:normal;
+	-webkit-transition:all 0.3s;
+	-moz-transition:all 0.3s;
+	transition:all 0.3s
+}
+.wego-bottombar .wego-bottombar-container ul.wego-nav {
+	display:inline;
+	margin:0;
+	padding:0;
+	list-style:none
+}
+.wego-bottombar-container ul li {
+	display:inline
+}
+.wego-bottombar-container ul li a {
+	display:block;
+	float:left;
+	padding:0 14px
+}
+.wego-rtl .wego-bottombar-container ul li a {
+	float:right
+}
+.wego-bottombar-container ul li a:hover {
+	color:white;
+	background-color:#699325
+}
+.wego-bottombar-container ul li a * {
+	line-height:1em
+}
+.wego-bottombar-container ul li span {
+	float:right;
+	color:#a7c283
+}
+.wego-rtl .wego-bottombar-container ul li span {
+	float:left
+}
+.wego-seo-footer {
+	border-top:1px solid #222222;
+	background:#333333;
+	padding:12px
+}
+.wego-seo-footer p {
+	margin:0;
+	padding:0;
+	text-align:center;
+	font-size:11px;
+	line-height:20px;
+	color:#999999
+}
+.wego-seo-footer p a {
+	color:#cccccc;
+	text-decoration:none
+}
+.wego-seo-footer p a:visited {
+	color:#cccccc;
+	text-decoration:none
+}
+.wego-seo-footer p a:hover {
+	color:white;
+	text-decoration:underline
+}
+@media all and (max-width: 1220px) {
+.wego-topbar-container, .wego-bottombar-container {
+width:990px
+}
+}
+ul.wego-tabs {
+	width:100%;
+	border-bottom:1px solid #cccccc;
+	margin:0;
+	padding:0 0 0 5px
+}
+.wego-tabs:before {
+	display:table;
+	content:""
+}
+.wego-tabs:after {
+	display:table;
+	content:"";
+	clear:both
+}
+.wego-tabs li {
+	list-style:none;
+	display:inline !important
+}
+.wego-tabs li.wego-label {
+	color:#999999;
+	display:block;
+	float:left;
+	padding:0 15px;
+	line-height:35px
+}
+.wego-rtl .wego-tabs li.wego-label {
+	float:right
+}
+.wego-tabs li a {
+	outline:0;
+	color:#333333;
+	margin-bottom:-1px;
+	margin-right:4px;
+	float:left;
+	padding:1px 10px 0;
+	line-height:35px;
+	border:1px solid #cccccc;
+	background-color:#f5f5f5;
+	font-size:13px;
+*position:relative
+}
+.wego-rtl .wego-tabs li a {
+	float:right
+}
+.wego-tabs li a:hover {
+	background-color:white
+}
+.wego-tabs li.wego-selected a {
+	color:#e5a03e;
+	background-color:white;
+	border-bottom-color:white;
+	border-top:2px solid #79a302;
+	padding-top:0;
+	pointer-events:none
+}
+.wego-tabs li a img {
+	margin:10px 0;
+	vertical-align:middle;
+	background-color:white
+}
+ul.wego-tabs-basic {
+	margin:0;
+	padding:0
+}
+.wego-tabs-basic li {
+	list-style:none;
+	display:inline !important
+}
+.wego-tabs-basic li.wego-selected {
+	list-style:none;
+	display:inline !important
+}
+.wego-tabs-basic li a {
+	outline:0;
+	padding:2px 8px;
+	display:inline-block;
+	zoom:1;
+	border-radius:6px
+}
+.wego-tabs-basic li.wego-selected a {
+	color:white;
+	background-color:#4e8506;
+	pointer-events:none
+}
+ul.wego-tabs-compact {
+	margin:0;
+	padding:8px;
+	background-color:#eeeeee;
+	border-radius:6px
+}
+.wego-tabs-compact li {
+	list-style:none;
+	display:inline !important
+}
+.wego-tabs-compact li.wego-selected {
+	list-style:none;
+	display:inline !important
+}
+.wego-tabs-compact li a {
+	outline:0;
+	padding:2px;
+	display:inline-block;
+	zoom:1;
+	border-radius:3px;
+	font-size:12px;
+	margin:1px 0;
+	border:1px solid #dddddd;
+	background-color:white;
+	line-height:1em;
+	box-shadow:0 1px 1px #e0e0e0;
+	-moz-box-shadow:0 1px 1px #e0e0e0;
+	-webkit-box-shadow:0 1px 1px #e0e0e0
+}
+.wego-tabs-compact li a:hover {
+	color:black;
+	border-color:#dd8605
+}
+.wego-tabs-compact li a img {
+	vertical-align:middle
+}
+.wego-tabs-compact li.wego-selected a {
+	background-color:#ffffcc;
+	border-color:#dd8605;
+	color:black;
+	box-shadow:0 1px 3px #cccccc;
+	-moz-box-shadow:0 1px 3px #cccccc;
+	-webkit-box-shadow:0 1px 3px #cccccc
+}
+.wego-content .wego-tabs-section .wego-tab-content, .wego-content .wego-tabs-section .wego-tabs-content {
+	display:none
+}
+.wego-content .wego-tabs-section .wego-selected {
+	display:block
+}
+.wego-content .wego-tab-content {
+	padding:15px 0 0
+}
+.wego-content .wego-tabs-content {
+	padding:15px 0
+}
+.wego-container .wego-breadcrumbs {
+	font-size:75%
+}
+ul.wego-map-nav {
+	padding-bottom:7px;
+	position:relative;
+	z-index:100
+}
+ul.wego-map-nav li {
+	padding-bottom:10px
+}
+ul.wego-map-nav li a {
+	text-align:center
+}
+ul.wego-map-nav li.wego-selected {
+	background:transparent url(http://www.wego.com/hotels/images/countrysite/map-nav-highlight.gif) no-repeat center bottom
+}
+p.wego-glossary-list {
+	margin:15px;
+	padding:15px;
+	text-align:center;
+	font-size:16px;
+	letter-spacing:3px;
+	background:#eeeeee;
+	border-radius:6px
+}
+.wego-popover {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight:normal;
+	line-height:18px;
+	color:#666666;
+	background-color:white;
+	position:absolute;
+	border:1px solid #999999;
+	-webkit-box-shadow:0px 3px 5px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow:0px 3px 5px rgba(0, 0, 0, 0.4);
+	box-shadow:0px 3px 5px rgba(0, 0, 0, 0.4);
+	z-index:1000;
+	border-radius:6px;
+	overflow:hidden
+}
+.wego-popover * {
+	font-family:Verdana, Arial, Helvetica, sans-serif
+}
+.wego-popover .wego-popover-header h2 {
+	font-size:11px
+}
+.wego-popover-hidden {
+	position:absolute !important;
+	clip:rect(1px 1px 1px 1px);
+	clip:rect(1px, 1px, 1px, 1px);
+	top:0;
+	left:-9999px
+}
+.wego-rtl .wego-popover-hidden {
+	left:auto;
+	right:-9999px
+}
+a.wego-popover-close {
+	display:block;
+	width:18px;
+	height:18px;
+	text-indent:-9999px;
+	background:url(http://www.wego.com/hotels/images/countrysite/bkg-close.png) no-repeat left top;
+	text-decoration:none;
+	color:#e18239;
+	position:absolute;
+	top:10px;
+	right:10px
+}
+a.wego-popover-close:hover {
+	display:block;
+	width:18px;
+	height:18px;
+	text-indent:-9999px;
+	background:url(http://www.wego.com/hotels/images/countrysite/bkg-close.png) no-repeat left top;
+	text-decoration:none;
+	color:#e18239;
+	position:absolute;
+	top:10px;
+	right:10px
+}
+.wego-rtl a.wego-popover-close {
+	left:10px;
+	right:auto
+}
+.wego-popover-header {
+	padding:5px 40px 5px 10px;
+	border-bottom:1px solid #eeeeee;
+	box-shadow:0px 1px 8px rgba(0, 0, 0, 0.1)
+}
+.wego-rtl .wego-popover-header {
+	padding:5px 10px 5px 40px
+}
+.wego-popover-header h2 {
+	font-size:14px;
+	line-height:26px;
+	margin:0;
+	padding:0;
+	border:0;
+	font-weight:normal;
+	color:#666666
+}
+.wego-popover-content {
+	padding:10px
+}
+.wego-popover-content h3 {
+	margin:0 0 8px;
+	padding:0;
+	font-weight:normal;
+	color:#e18239;
+	font-size:14px
+}
+.wego-popover-content a {
+	color:#003399;
+	text-decoration:none
+}
+.wego-popover-content a:hover, .wego-popover-content a:focus {
+	color:#003399
+}
+.wego-popover-content ul, .wego-popover-content ol {
+	padding:0;
+	margin:0 0 8px
+}
+.wego-popover-content li {
+	display:inline
+}
+.wego-popover-content li a {
+	padding:4px 8px;
+	display:block;
+	text-decoration:none;
+	color:#666666
+}
+.wego-popover-content li a:hover {
+	color:white;
+	background-color:#4e8506
+}
+.wego-popover-topbar .wego-popover-content ul, .wego-popover-topbar .wego-popover-content ol {
+	font-size:11px
+}
+.wego-popover-topbar .wego-popover-content ul li a, .wego-popover-topbar .wego-popover-content ol li a {
+	padding:2px 8px
+}
+.wego-popover-topbar .wego-popover-content ul li a:hover, .wego-popover-topbar .wego-popover-content ol li a:hover {
+	color:#666666;
+	background-color:#ffffcc
+}
+.wego-popover-topbar .wego-popover-content ul li.wego-selected a, .wego-popover-topbar .wego-popover-content ol li.wego-selected a {
+	color:black;
+	font-weight:bold
+}
+.wego-popover-content .wego-2col {
+	width:390px;
+	margin-bottom:10px
+}
+.wego-popover-content .wego-2col .wego-col {
+	vertical-align:top;
+	width:190px;
+	display:inline-block;
+*display:inline;
+	zoom:1
+}
+.wego-container table {
+	width:100%;
+	margin:0 0 18px;
+	padding:0;
+	border-collapse:collapse;
+	font-size:14px;
+	border:0
+}
+.wego-container table th, .wego-container table td {
+	padding:4px 0 5px;
+	line-height:18px;
+	vertical-align:middle;
+	border:0
+}
+.wego-container table th {
+	text-align:left
+}
+.wego-rtl .wego-container table th {
+	text-align:right
+}
+.wego-container table th.wego-align-left {
+	text-align:left
+}
+.wego-container table th.wego-align-right {
+	text-align:right
+}
+.wego-rtl .wego-container table th.wego-align-right {
+	text-align:left
+}
+.wego-container table.wego-table-dashed thead th {
+	border:0;
+	text-align:center
+}
+.wego-container table th.wego-align-center {
+	text-align:center
+}
+.wego-container table.wego-table-dashed th {
+	font-weight:normal;
+	color:#888888;
+	font-size:12px;
+	padding:10px 5px;
+	border-bottom:1px dashed #dddddd
+}
+.wego-container table.wego-table-dashed td {
+	font-size:12px;
+	padding:10px 5px;
+	border-bottom:1px dashed #dddddd
+}
+.wego-container table.wego-table-list th {
+	padding:2px 0 3px
+}
+.wego-container table.wego-table-list td {
+	padding:2px 0 3px
+}
+.wego-container table.wego-table-list td.wego-decimal {
+	font-size:11px;
+	width:12px;
+	color:#666666;
+	padding:2px 10px 0 3px
+}
+.wego-container table.wego-table-list th small {
+	font-weight:normal;
+	vertical-align:bottom
+}
+.wego-container table.wego-table-list tfoot td {
+	text-align:right;
+	font-size:11px
+}
+.wego-container table.wego-table-list .wego-label-right {
+	font-size:11px;
+	text-align:right
+}
+.wego-rtl .wego-container table.wego-table-list .wego-label-right {
+	text-align:left
+}
+.wego-container table.wego-table-list td.wego-align-right {
+	width:96px
+}
+.wego-container {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight:normal;
+	line-height:20px;
+	color:#222222
+}
+.wego-container a {
+	color:#003399;
+	text-decoration:none;
+	-webkit-transition-property:color, background-color, opacity;
+	-webkit-transition-duration:0.3s;
+	-moz-transition-property:color, background-color, opacity;
+	-moz-transition-duration:0.3s;
+	transition-property:color, background-color, opacity;
+	transition-duration:0.3s
+}
+.wego-container a:hover {
+	color:#003399
+}
+.wego-container a.wego-selected {
+	color:black
+}
+.wego-container a.wego-link-special {
+	font-size:11px;
+	color:#333333
+}
+.wego-container a.wego-link-special strong {
+	color:#003399;
+	font-size:14px;
+	font-weight:normal
+}
+.wego-container p {
+	margin:0 0 9px
+}
+.wego-container ul, .wego-container ol {
+	padding:0;
+	margin:0 0 18px 25px
+}
+.wego-container ul ul, .wego-container ul ol {
+	margin-bottom:0
+}
+.wego-container ol ol, .wego-container ol ul {
+	margin-bottom:0
+}
+.wego-container ul {
+	list-style:disc
+}
+.wego-container ol {
+	list-style:decimal
+}
+.wego-container li {
+	line-height:22px
+}
+ul.wego-unstyled {
+	margin:0;
+	list-style:none
+}
+.wego-container h1, .wego-container h2, .wego-container h3, .wego-container h4, .wego-container h5, .wego-container h6 {
+	font-weight:bold;
+	margin:0
+}
+.wego-container h1 {
+	margin-bottom:36px;
+	font-size:24px;
+	line-height:36px;
+	letter-spacing:-1px
+}
+.wego-container h2 {
+	font-size:18px;
+	line-height:36px;
+	letter-spacing:-1px
+}
+.wego-container h2 span, .wego-container h2 a {
+	color:black;
+	text-decoration:none
+}
+.wego-container h3 span, .wego-container h3 a {
+	color:black;
+	text-decoration:none
+}
+.wego-container h2 a:hover, .wego-container h3 a:hover {
+	color:#003399
+}
+.wego-container h2 span, .wego-container h3 span {
+	font-weight:normal
+}
+.wego-container h2 a span:hover, .wego-container h2 a:hover {
+	color:#003399
+}
+.wego-container h3 {
+	line-height:36px
+}
+.wego-container h3 a span:hover, .wego-container h3 a:hover {
+	color:#003399
+}
+.wego-container h4, .wego-container h5, .wego-container h6 {
+	line-height:36px
+}
+.wego-container h3 {
+	font-size:16px
+}
+.wego-container h4, .wego-container h5 {
+	font-size:14px
+}
+.wego-container h6 {
+	font-size:13px;
+	color:#777777;
+	text-transform:uppercase
+}
+.wego-container .wego-content .wego-section h3 {
+	font-weight:normal
+}
+.wego-container h1.wego-special, .wego-container h2.wego-special, .wego-container h3.wego-special, .wego-container h4.wego-special, .wego-container h5.wego-special, .wego-container h6.wego-special, .wego-container strong.wego-special, .wego-container b.wego-special, .wego-container em.wego-special, .wego-container i.wego-special {
+	color:#4e8506
+}
+.wego-container strong.wego-warning, .wego-container em.wego-warning {
+	font-style:normal;
+	font-weight:normal;
+	color:#990000
+}
+.wego-container .wego-sidebar strong.wego-warning {
+	display:block
+}
+.wego-sidebar h3 {
+	font-size:15px
+}
+.wego-sidebar .wego-section-box h3 {
+	line-height:1em;
+	padding-bottom:12px;
+	border-bottom:1px dashed #cccccc;
+	margin:0 0 12px
+}
+.wego-content h2 {
+	line-height:1em;
+	padding-bottom:12px;
+	border-bottom:1px dashed #cccccc;
+	margin:0 0 16px
+}
+.wego-container code, .wego-container pre {
+	padding:0 3px 2px;
+	font-family:Monaco, "Andale Mono", "Courier New", monospace;
+	font-size:12px
+}
+.wego-container code {
+	background-color:#fee9cc;
+	padding:1px 3px
+}
+.wego-container pre {
+	background-color:#f5f5f5;
+	display:block;
+	padding:17px;
+	margin:0 0 18px;
+	line-height:18px;
+	font-size:12px;
+	border:1px solid #cccccc;
+	border:1px solid rgba(0, 0, 0, 0.15);
+	white-space:pre;
+	white-space:pre-wrap;
+	word-wrap:break-word
+}
+.wego-container h1.wego-page-header {
+	background:#98cb00;
+	border:1px solid #5c9d03;
+	border-radius:5px;
+	-webkit-box-shadow:inset 1px 1px 2px #ade800;
+	-moz-box-shadow:inset 1px 1px 2px #ade800;
+	box-shadow:inset 1px 1px 2px #ade800;
+	font-size:18px;
+	padding:5px 15px;
+	color:#335700;
+	text-shadow:1px 1px 0 #ade800
+}
+.wego-container .wego-section-inner, .wego-container .wego-sidebar {
+	font-size:12px;
+	line-height:18px
+}
+.wego-container .wego-directory h4 a {
+	color:black
+}
+.wego-container .wego-directory h4 a:hover {
+	color:#003399
+}
+.wego-content .wego-directory h3 {
+	font-weight:normal;
+	color:#333333
+}
+.wego-directory .wego-3col {
+	padding:5px 0
+}
+.wego-directory ul.wego-unstyled li a.wego-selected {
+	cursor:default;
+	color:black;
+	font-weight:normal
+}
+.wego-directory ul.wego-unstyled li.wego-selected a {
+	cursor:default;
+	color:black;
+	font-weight:normal
+}
+.wego-directory ul.wego-unstyled li.wego-selected a .wego-small {
+	cursor:default;
+	color:black;
+	font-weight:normal
+}
+.wego-directory ul.wego-unstyled li a .wego-small {
+	color:#333333
+}
+.wego-container .wego-directory .wego-sub-section h3 {
+	padding-bottom:0
+}
+.wego-container .wego-directory .wego-sub-section h3 a {
+	color:#333333
+}
+.wego-directory ul.wego-unstyled li a .wego-small {
+	color:#333333
+}
+.wego-container .wego-directory h2 {
+	margin-bottom:0
+}
+.wego-container .wego-directory .wego-section-unstyled {
+	border-bottom:1px dashed #dddddd
+}
+.wego-container .wego-directory .wego-tab-content {
+	border-bottom:none
+}
+.wego-homepage .wego-container .wego-directory .wego-sub-section li a {
+	color:#333333;
+	font-size:11px
+}
+.wego-container .wego-directory .wego-directory-tabs {
+	background:#eeeeee
+}
+.wego-container .wego-directory .wego-ui-tabs {
+	padding-top:16px;
+	padding-bottom:8px;
+	margin-bottom:0
+}
+.wego-homepage .wego-container .wego-directory .wego-ui-tabs li a {
+	font-size:14px;
+	color:#003399;
+	font-weight:normal
+}
+.wego-homepage .wego-container .wego-directory .wego-sub-section a strong {
+	font-size:14px;
+	color:#003399;
+	font-weight:normal
+}
+.wego-homepage .wego-container .wego-directory .wego-sub-section li.wego-selected a {
+	color:#333333;
+	font-weight:bold
+}
+.wego-airfares-summary .wego-disabled {
+	color:#cccccc
+}
+p.wego-airline-letters {
+	margin:15px;
+	padding:15px;
+	text-align:center;
+	font-size:16px;
+	letter-spacing:3px;
+	background:#eeeeee;
+	border-radius:6px
+}
+.wego-container .wego-small, .wego-container .wego-small-link {
+	font-size:11px
+}
+.wego-container .wego-directory-list .wego-small {
+	color:#333333
+}
+.wego-content .wego-sub-section h3 {
+	padding-top:5px;
+	padding-bottom:5px
+}
+.wego-depart-calendar-info, .wego-return-calendar-info {
+	color:#666666
+}
+#wego-month-selector div.wego-disabled ul {
+	height:335px;
+	border-bottom:1px solid #cccccc
+}
+#wego-month-selector .wego-airfares-total, #wego-month-selector .wego-month-button {
+	display:none
+}
+.wego-depart-month-info, .wego-return-month-info {
+	font-size:11px
+}
+.wego-depart-month-info strong, .wego-return-month-info strong, .wego-depart-calendar-info strong, .wego-return-calendar-info strong {
+	font-weight:normal;
+	color:black
+}
+.wego-airfares-total strong {
+	color:#335700
+}
+.wego-table-list .wego-small {
+	color:#333333
+}
+.wego-table-list .wego-small-link {
+	color:#003399
+}
+.wego-show-more {
+	display:block;
+	display:none;
+	clear:both;
+	margin:5px 10px 0 20px;
+	float:left
+}
+.wego-container .wego-tabs-content table {
+	margin-bottom:5px
+}
+.wego-container .wego-tabs-content .wego-show-more {
+	margin:0
+}
+.wego-seo-footer p.wego-toggle-mobile {
+	padding:15px
+}
+.wego-toggle-mobile a {
+	color:#eeeeee
+}
+
+.wego-container .wego-content {
+	margin-top:-130px
+}
+.wego-header {
+	padding:24px 0;
+	display:block;
+	height:82px;
+	position:relative;
+	width:260px
+}
+.wego-header a {
+	display:block;
+	padding:0;
+	margin:0 50px 0 10px;
+	width:210px;
+	height:82px;
+	position:absolute;
+	top:13px
+}
+.wego-rtl .wego-header a {
+	margin:0 10px 0 50px
+}
+.wego-header a img {
+	border:none;
+	display:block
+}
+.wego-header a strong {
+	position:absolute;
+	left:120px;
+	font-weight:normal;
+	bottom:-14px;
+	color:#4e8506;
+	font-size:16px;
+	display:block;
+	width:150px;
+	text-align:left
+}
+@media all and (max-width: 1220px) {
+.wego-header a {
+margin:0 15px 0 10px
+}
+}
+.wego-footer {
+	background:#eeeeee;
+	border-top:1px solid #dddddd;
+	-webkit-box-shadow:inset 1px 1px 2px white;
+	-moz-box-shadow:inset 1px 1px 2px white;
+	box-shadow:inset 1px 1px 2px white
+}
+.wego-footer-container {
+	width:1100px;
+	margin:0 auto;
+	padding:15px 0 20px;
+	zoom:1
+}
+.wego-footer-container:before {
+	display:table;
+	content:""
+}
+.wego-footer-container:after {
+	display:table;
+	content:"";
+	clear:both
+}
+.wego-footer-container h3 {
+	color:#666666;
+	font-weight:normal
+}
+.wego-footer-container p {
+	font-size:13px;
+	color:#333333;
+	line-height:18px
+}
+.wego-footer-container p a {
+	color:#003399;
+	text-decoration:none
+}
+@media all and (max-width:1220px) {
+.wego-footer-container {
+width:990px
+}
+}
+.wego-footer-section {
+	width:45%;
+	float:left;
+	margin:0 12px;
+*display:inline;
+	zoom:1
+}
+.wego-rtl .wego-footer-section {
+	float:right
+}
+.wego-medium-flags {
+	list-style:none;
+	margin:15px 0;
+	padding:0
+}
+.wego-medium-flags:before {
+	display:table;
+	content:""
+}
+.wego-medium-flags:after {
+	display:table;
+	content:"";
+	clear:both
+}
+.wego-medium-flags li {
+	display:inline
+}
+.wego-powered-sites {
+	background:#fff url(http://www.mediawego.com/images/wego/countrysite/wego-powered-sites2.png) no-repeat 15px 15px;
+	margin-top:15px;
+	border:1px solid #cccccc;
+	border-radius:6px;
+	padding:16px;
+	width:412px;
+	height:119px
+}
+.wego-powered-sites:before {
+	display:table;
+	content:""
+}
+.wego-powered-sites:after {
+	display:table;
+	content:"";
+	clear:both
+}
+.wego-powered-sites li {
+	display:none
+}
+.wego-popover-content .wego-small-flags {
+	list-style:none;
+	margin:0;
+	padding:0;
+	width:480px
+}
+.wego-popover-content .wego-small-flags:before {
+	display:table;
+	content:""
+}
+.wego-popover-content .wego-small-flags:after {
+	display:table;
+	content:"";
+	clear:both
+}
+.wego-popover-content .wego-small-flags li {
+	display:inline
+}
+.wego-popover-content .wego-small-flags li a {
+	display:inline-block;
+	margin-bottom:5px;
+	font:0/0 a;
+	text-shadow:none;
+	color:transparent;
+*zoom:1;
+*overflow:hidden;
+*line-height:99px
+}
+.wego-country-sites-footer {
+	clear:both;
+	overflow:hidden;
+	margin:0 15px 15px
+}
+.wego-country-sites-region {
+	float:left;
+	width:150px;
+	margin-right:15px
+}
+.wego-rtl .wego-country-sites-region {
+	float:right;
+	margin-right:0;
+	margin-left:15px
+}
+.wego-country-sites-region-2col {
+	width:300px
+}
+.wego-country-sites-region h4 {
+	font-size:11px
+}
+.wego-country-sites-region .wego-small-flags {
+	list-style:none;
+	margin:0;
+	padding:0;
+	float:left;
+	width:150px
+}
+.wego-rtl .wego-country-sites-region .wego-small-flags {
+	float:right
+}
+.wego-country-sites-region .wego-small-flags li a {
+	text-indent:0;
+	font-size:11px;
+	text-decoration:none;
+	color:#333333
+}
+body.wego_v2 {
+	background:none
+}
+body.wego_v2 .wego-header {
+	padding:24px 0px 15px
+}
+body.wego_v2 .wego-container {
+	position:relative;
+	width:990px
+}
+body.wego_v2 .wego-topbar {
+	margin-bottom:25px
+}
+body.wego_v2 .wego-topbar-container {
+	width:990px
+}
+body.wego_v2 .wego-topbar-container h1 a {
+	background:url(http://www.wego.com/hotels/images/countrysite/wego-logo-full.jpg) no-repeat scroll center center #9c0;
+	height:50px;
+	width:125px
+}
+body.wego_v2 .wego-bottombar-container {
+	width:990px
+}
+body.wego_v2 .wego-footer-container {
+	width:990px
+}
+body.wego_v2 .wego-footer-container h3 {
+	font-size:19px;
+	margin:18px 0
+}
+body.wego_v2 #breadcrumb {
+	margin:10px 5px;
+	font-size:11px
+}
+body.wego_v2 #breadcrumb strong {
+	font-weight:normal
+}
+body.wego_v2 #breadcrumb h1 {
+	display:inline;
+	font-weight:normal
+}
+.addthis_toolbox {
+	left:0;
+	top:115px;
+	border-radius:0 8px 8px 0;
+	border:1px solid #ddd;
+	border-width:1px 1px 1px 0;
+	padding:5px 3px 5px 0;
+	width:60px
+}
+@media all and (max-width: 1120px) {
+.addthis_toolbox {
+display:none
+}
+}

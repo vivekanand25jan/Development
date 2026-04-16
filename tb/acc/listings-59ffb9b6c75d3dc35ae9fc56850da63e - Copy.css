@@ -1,0 +1,4201 @@
+html {
+	color:#000;
+	background:#FFF
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+	margin:0;
+	padding:0
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0
+}
+fieldset, img {
+	border:0
+}
+address, caption, cite, code, dfn, em, strong, th, var {
+	font-style:normal;
+	font-weight:normal
+}
+li {
+	list-style:none
+}
+caption, th {
+	text-align:left
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size:100%;
+	font-weight:normal
+}
+q:before, q:after {
+	content:''
+}
+abbr, acronym {
+	border:0;
+	font-variant:normal
+}
+sup {
+	vertical-align:text-top
+}
+sub {
+	vertical-align:text-bottom
+}
+input, textarea, select {
+	font-family:inherit;
+	font-size:inherit;
+	font-weight:inherit
+}
+input, textarea, select {
+*font-size:100%
+}
+legend {
+	color:#000
+}
+body {
+	font:13px/1.231 arial, helvetica, clean, sans-serif;
+*font-size:small;
+*font:x-small
+}
+table {
+	font-size:inherit;
+	font:100%
+}
+pre, code, kbd, samp, tt {
+	font-family:monospace;
+*font-size:108%;
+	line-height:100%
+}
+.ui-helper-hidden {
+	display:none
+}
+.ui-helper-hidden-accessible {
+	position:absolute !important;
+	clip:rect(1px 1px 1px 1px);
+	clip:rect(1px, 1px, 1px, 1px)
+}
+.ui-helper-reset {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	line-height:1.3;
+	text-decoration:none;
+	font-size:100%;
+	list-style:none
+}
+.ui-helper-clearfix {
+	zoom:1
+}
+.ui-helper-clearfix:before {
+	content:"";
+	display:table
+}
+.ui-helper-clearfix:after {
+	content:"";
+	display:table;
+	clear:both
+}
+.ui-helper-zfix {
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	position:absolute;
+	opacity:0;
+	filter:Alpha(Opacity=0)
+}
+.ui-state-disabled {
+	cursor:default !important
+}
+.ui-icon {
+	display:block;
+	text-indent:-99999px;
+	overflow:hidden;
+	background-repeat:no-repeat
+}
+.ui-widget-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%
+}
+.ui-widget {
+	font-family:Verdana, Arial, sans-serif;
+	font-size:13px
+}
+.ui-widget .ui-widget {
+	font-size:1em
+}
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+	font-family:Verdana, Arial, sans-serif;
+	font-size:1em
+}
+.ui-widget-content {
+	border:1px solid #aaaaaa;
+	background:#fff url(images/ui-bg_flat_75_ffffff_40x100.png) 50% 50% repeat-x;
+	color:#222222
+}
+.ui-widget-content a {
+	color:#222222
+}
+.ui-widget-header {
+	border:1px solid white;
+	background:#fff url(images/ui-bg_flat_75_ffffff_40x100.png) 50% 50% repeat-x;
+	color:#222222;
+	font-weight:bold
+}
+.ui-widget-header a {
+	color:#222222
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+	border:1px solid white;
+	background:#eee url(images/ui-bg_flat_75_eeeeee_40x100.png) 50% 50% repeat-x;
+	font-weight:normal;
+	color:#666666
+}
+.ui-state-default a {
+	color:#666666;
+	text-decoration:none
+}
+.ui-state-default a:link, .ui-state-default a:visited {
+	color:#666666;
+	text-decoration:none
+}
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+	border:1px solid white;
+	background:#599706 url(images/ui-bg_flat_75_599706_40x100.png) 50% 50% repeat-x;
+	font-weight:normal;
+	color:white
+}
+.ui-state-hover a {
+	color:white;
+	text-decoration:none
+}
+.ui-state-hover a:hover {
+	color:white;
+	text-decoration:none
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+	border:1px solid white;
+	background:#98cb00 url(images/ui-bg_flat_65_98cb00_40x100.png) 50% 50% repeat-x;
+	font-weight:normal;
+	color:white
+}
+.ui-state-active a {
+	color:white;
+	text-decoration:none
+}
+.ui-state-active a:link, .ui-state-active a:visited {
+	color:white;
+	text-decoration:none
+}
+.ui-widget :active {
+	outline:none
+}
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+	border:1px solid white;
+	background:#f0f0f0 url(images/ui-bg_flat_100_f0f0f0_40x100.png) 50% 50% repeat-x;
+	color:black
+}
+.ui-state-highlight a, .ui-widget-content .ui-state-highlight a, .ui-widget-header .ui-state-highlight a {
+	color:black
+}
+.ui-state-error, .ui-widget-content .ui-state-error, .ui-widget-header .ui-state-error {
+	border:1px solid #cd0a0a;
+	background:#fef1ec url(images/ui-bg_flat_95_fef1ec_40x100.png) 50% 50% repeat-x;
+	color:#cd0a0a
+}
+.ui-state-error a, .ui-widget-content .ui-state-error a, .ui-widget-header .ui-state-error a, .ui-state-error-text, .ui-widget-content .ui-state-error-text, .ui-widget-header .ui-state-error-text {
+	color:#cd0a0a
+}
+.ui-priority-primary, .ui-widget-content .ui-priority-primary, .ui-widget-header .ui-priority-primary {
+	font-weight:bold
+}
+.ui-priority-secondary, .ui-widget-content .ui-priority-secondary, .ui-widget-header .ui-priority-secondary {
+	opacity:0.7;
+	filter:Alpha(Opacity=70);
+	font-weight:normal
+}
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled {
+	opacity:0.35;
+	filter:Alpha(Opacity=35);
+	background-image:none
+}
+.ui-icon {
+	width:16px;
+	height:16px;
+	background-image:url(http://www.wego.com/hotels/images/countrysite/jquery/ui/wego/ui-icons_222222_256x240.png)
+}
+.ui-widget-content .ui-icon, .ui-widget-header .ui-icon {
+	background-image:url(http://www.wego.com/hotels/images/countrysite/jquery/ui/wego/ui-icons_222222_256x240.png)
+}
+.ui-state-default .ui-icon {
+	background-image:url(images/ui-icons_666666_256x240.png)
+}
+.ui-state-hover .ui-icon, .ui-state-focus .ui-icon {
+	background-image:url(images/ui-icons_ffffff_256x240.png)
+}
+.ui-state-active .ui-icon {
+	background-image:url(images/ui-icons_454545_256x240.png)
+}
+.ui-state-highlight .ui-icon {
+	background-image:url(images/ui-icons_000000_256x240.png)
+}
+.ui-state-error .ui-icon, .ui-state-error-text .ui-icon {
+	background-image:url(images/ui-icons_cd0a0a_256x240.png)
+}
+.ui-icon-carat-1-n {
+	background-position:0 0
+}
+.ui-icon-carat-1-ne {
+	background-position:-16px 0
+}
+.ui-icon-carat-1-e {
+	background-position:-32px 0
+}
+.ui-icon-carat-1-se {
+	background-position:-48px 0
+}
+.ui-icon-carat-1-s {
+	background-position:-64px 0
+}
+.ui-icon-carat-1-sw {
+	background-position:-80px 0
+}
+.ui-icon-carat-1-w {
+	background-position:-96px 0
+}
+.ui-icon-carat-1-nw {
+	background-position:-112px 0
+}
+.ui-icon-carat-2-n-s {
+	background-position:-128px 0
+}
+.ui-icon-carat-2-e-w {
+	background-position:-144px 0
+}
+.ui-icon-triangle-1-n {
+	background-position:0 -16px
+}
+.ui-icon-triangle-1-ne {
+	background-position:-16px -16px
+}
+.ui-icon-triangle-1-e {
+	background-position:-32px -16px
+}
+.ui-icon-triangle-1-se {
+	background-position:-48px -16px
+}
+.ui-icon-triangle-1-s {
+	background-position:-64px -16px
+}
+.ui-icon-triangle-1-sw {
+	background-position:-80px -16px
+}
+.ui-icon-triangle-1-w {
+	background-position:-96px -16px
+}
+.ui-icon-triangle-1-nw {
+	background-position:-112px -16px
+}
+.ui-icon-triangle-2-n-s {
+	background-position:-128px -16px
+}
+.ui-icon-triangle-2-e-w {
+	background-position:-144px -16px
+}
+.ui-icon-arrow-1-n {
+	background-position:0 -32px
+}
+.ui-icon-arrow-1-ne {
+	background-position:-16px -32px
+}
+.ui-icon-arrow-1-e {
+	background-position:-32px -32px
+}
+.ui-icon-arrow-1-se {
+	background-position:-48px -32px
+}
+.ui-icon-arrow-1-s {
+	background-position:-64px -32px
+}
+.ui-icon-arrow-1-sw {
+	background-position:-80px -32px
+}
+.ui-icon-arrow-1-w {
+	background-position:-96px -32px
+}
+.ui-icon-arrow-1-nw {
+	background-position:-112px -32px
+}
+.ui-icon-arrow-2-n-s {
+	background-position:-128px -32px
+}
+.ui-icon-arrow-2-ne-sw {
+	background-position:-144px -32px
+}
+.ui-icon-arrow-2-e-w {
+	background-position:-160px -32px
+}
+.ui-icon-arrow-2-se-nw {
+	background-position:-176px -32px
+}
+.ui-icon-arrowstop-1-n {
+	background-position:-192px -32px
+}
+.ui-icon-arrowstop-1-e {
+	background-position:-208px -32px
+}
+.ui-icon-arrowstop-1-s {
+	background-position:-224px -32px
+}
+.ui-icon-arrowstop-1-w {
+	background-position:-240px -32px
+}
+.ui-icon-arrowthick-1-n {
+	background-position:0 -48px
+}
+.ui-icon-arrowthick-1-ne {
+	background-position:-16px -48px
+}
+.ui-icon-arrowthick-1-e {
+	background-position:-32px -48px
+}
+.ui-icon-arrowthick-1-se {
+	background-position:-48px -48px
+}
+.ui-icon-arrowthick-1-s {
+	background-position:-64px -48px
+}
+.ui-icon-arrowthick-1-sw {
+	background-position:-80px -48px
+}
+.ui-icon-arrowthick-1-w {
+	background-position:-96px -48px
+}
+.ui-icon-arrowthick-1-nw {
+	background-position:-112px -48px
+}
+.ui-icon-arrowthick-2-n-s {
+	background-position:-128px -48px
+}
+.ui-icon-arrowthick-2-ne-sw {
+	background-position:-144px -48px
+}
+.ui-icon-arrowthick-2-e-w {
+	background-position:-160px -48px
+}
+.ui-icon-arrowthick-2-se-nw {
+	background-position:-176px -48px
+}
+.ui-icon-arrowthickstop-1-n {
+	background-position:-192px -48px
+}
+.ui-icon-arrowthickstop-1-e {
+	background-position:-208px -48px
+}
+.ui-icon-arrowthickstop-1-s {
+	background-position:-224px -48px
+}
+.ui-icon-arrowthickstop-1-w {
+	background-position:-240px -48px
+}
+.ui-icon-arrowreturnthick-1-w {
+	background-position:0 -64px
+}
+.ui-icon-arrowreturnthick-1-n {
+	background-position:-16px -64px
+}
+.ui-icon-arrowreturnthick-1-e {
+	background-position:-32px -64px
+}
+.ui-icon-arrowreturnthick-1-s {
+	background-position:-48px -64px
+}
+.ui-icon-arrowreturn-1-w {
+	background-position:-64px -64px
+}
+.ui-icon-arrowreturn-1-n {
+	background-position:-80px -64px
+}
+.ui-icon-arrowreturn-1-e {
+	background-position:-96px -64px
+}
+.ui-icon-arrowreturn-1-s {
+	background-position:-112px -64px
+}
+.ui-icon-arrowrefresh-1-w {
+	background-position:-128px -64px
+}
+.ui-icon-arrowrefresh-1-n {
+	background-position:-144px -64px
+}
+.ui-icon-arrowrefresh-1-e {
+	background-position:-160px -64px
+}
+.ui-icon-arrowrefresh-1-s {
+	background-position:-176px -64px
+}
+.ui-icon-arrow-4 {
+	background-position:0 -80px
+}
+.ui-icon-arrow-4-diag {
+	background-position:-16px -80px
+}
+.ui-icon-extlink {
+	background-position:-32px -80px
+}
+.ui-icon-newwin {
+	background-position:-48px -80px
+}
+.ui-icon-refresh {
+	background-position:-64px -80px
+}
+.ui-icon-shuffle {
+	background-position:-80px -80px
+}
+.ui-icon-transfer-e-w {
+	background-position:-96px -80px
+}
+.ui-icon-transferthick-e-w {
+	background-position:-112px -80px
+}
+.ui-icon-folder-collapsed {
+	background-position:0 -96px
+}
+.ui-icon-folder-open {
+	background-position:-16px -96px
+}
+.ui-icon-document {
+	background-position:-32px -96px
+}
+.ui-icon-document-b {
+	background-position:-48px -96px
+}
+.ui-icon-note {
+	background-position:-64px -96px
+}
+.ui-icon-mail-closed {
+	background-position:-80px -96px
+}
+.ui-icon-mail-open {
+	background-position:-96px -96px
+}
+.ui-icon-suitcase {
+	background-position:-112px -96px
+}
+.ui-icon-comment {
+	background-position:-128px -96px
+}
+.ui-icon-person {
+	background-position:-144px -96px
+}
+.ui-icon-print {
+	background-position:-160px -96px
+}
+.ui-icon-trash {
+	background-position:-176px -96px
+}
+.ui-icon-locked {
+	background-position:-192px -96px
+}
+.ui-icon-unlocked {
+	background-position:-208px -96px
+}
+.ui-icon-bookmark {
+	background-position:-224px -96px
+}
+.ui-icon-tag {
+	background-position:-240px -96px
+}
+.ui-icon-home {
+	background-position:0 -112px
+}
+.ui-icon-flag {
+	background-position:-16px -112px
+}
+.ui-icon-calendar {
+	background-position:-32px -112px
+}
+.ui-icon-cart {
+	background-position:-48px -112px
+}
+.ui-icon-pencil {
+	background-position:-64px -112px
+}
+.ui-icon-clock {
+	background-position:-80px -112px
+}
+.ui-icon-disk {
+	background-position:-96px -112px
+}
+.ui-icon-calculator {
+	background-position:-112px -112px
+}
+.ui-icon-zoomin {
+	background-position:-128px -112px
+}
+.ui-icon-zoomout {
+	background-position:-144px -112px
+}
+.ui-icon-search {
+	background-position:-160px -112px
+}
+.ui-icon-wrench {
+	background-position:-176px -112px
+}
+.ui-icon-gear {
+	background-position:-192px -112px
+}
+.ui-icon-heart {
+	background-position:-208px -112px
+}
+.ui-icon-star {
+	background-position:-224px -112px
+}
+.ui-icon-link {
+	background-position:-240px -112px
+}
+.ui-icon-cancel {
+	background-position:0 -128px
+}
+.ui-icon-plus {
+	background-position:-16px -128px
+}
+.ui-icon-plusthick {
+	background-position:-32px -128px
+}
+.ui-icon-minus {
+	background-position:-48px -128px
+}
+.ui-icon-minusthick {
+	background-position:-64px -128px
+}
+.ui-icon-close {
+	background-position:-80px -128px
+}
+.ui-icon-closethick {
+	background-position:-96px -128px
+}
+.ui-icon-key {
+	background-position:-112px -128px
+}
+.ui-icon-lightbulb {
+	background-position:-128px -128px
+}
+.ui-icon-scissors {
+	background-position:-144px -128px
+}
+.ui-icon-clipboard {
+	background-position:-160px -128px
+}
+.ui-icon-copy {
+	background-position:-176px -128px
+}
+.ui-icon-contact {
+	background-position:-192px -128px
+}
+.ui-icon-image {
+	background-position:-208px -128px
+}
+.ui-icon-video {
+	background-position:-224px -128px
+}
+.ui-icon-script {
+	background-position:-240px -128px
+}
+.ui-icon-alert {
+	background-position:0 -144px
+}
+.ui-icon-info {
+	background-position:-16px -144px
+}
+.ui-icon-notice {
+	background-position:-32px -144px
+}
+.ui-icon-help {
+	background-position:-48px -144px
+}
+.ui-icon-check {
+	background-position:-64px -144px
+}
+.ui-icon-bullet {
+	background-position:-80px -144px
+}
+.ui-icon-radio-off {
+	background-position:-96px -144px
+}
+.ui-icon-radio-on {
+	background-position:-112px -144px
+}
+.ui-icon-pin-w {
+	background-position:-128px -144px
+}
+.ui-icon-pin-s {
+	background-position:-144px -144px
+}
+.ui-icon-play {
+	background-position:0 -160px
+}
+.ui-icon-pause {
+	background-position:-16px -160px
+}
+.ui-icon-seek-next {
+	background-position:-32px -160px
+}
+.ui-icon-seek-prev {
+	background-position:-48px -160px
+}
+.ui-icon-seek-end {
+	background-position:-64px -160px
+}
+.ui-icon-seek-start, .ui-icon-seek-first {
+	background-position:-80px -160px
+}
+.ui-icon-stop {
+	background-position:-96px -160px
+}
+.ui-icon-eject {
+	background-position:-112px -160px
+}
+.ui-icon-volume-off {
+	background-position:-128px -160px
+}
+.ui-icon-volume-on {
+	background-position:-144px -160px
+}
+.ui-icon-power {
+	background-position:0 -176px
+}
+.ui-icon-signal-diag {
+	background-position:-16px -176px
+}
+.ui-icon-signal {
+	background-position:-32px -176px
+}
+.ui-icon-battery-0 {
+	background-position:-48px -176px
+}
+.ui-icon-battery-1 {
+	background-position:-64px -176px
+}
+.ui-icon-battery-2 {
+	background-position:-80px -176px
+}
+.ui-icon-battery-3 {
+	background-position:-96px -176px
+}
+.ui-icon-circle-plus {
+	background-position:0 -192px
+}
+.ui-icon-circle-minus {
+	background-position:-16px -192px
+}
+.ui-icon-circle-close {
+	background-position:-32px -192px
+}
+.ui-icon-circle-triangle-e {
+	background-position:-48px -192px
+}
+.ui-icon-circle-triangle-s {
+	background-position:-64px -192px
+}
+.ui-icon-circle-triangle-w {
+	background-position:-80px -192px
+}
+.ui-icon-circle-triangle-n {
+	background-position:-96px -192px
+}
+.ui-icon-circle-arrow-e {
+	background-position:-112px -192px
+}
+.ui-icon-circle-arrow-s {
+	background-position:-128px -192px
+}
+.ui-icon-circle-arrow-w {
+	background-position:-144px -192px
+}
+.ui-icon-circle-arrow-n {
+	background-position:-160px -192px
+}
+.ui-icon-circle-zoomin {
+	background-position:-176px -192px
+}
+.ui-icon-circle-zoomout {
+	background-position:-192px -192px
+}
+.ui-icon-circle-check {
+	background-position:-208px -192px
+}
+.ui-icon-circlesmall-plus {
+	background-position:0 -208px
+}
+.ui-icon-circlesmall-minus {
+	background-position:-16px -208px
+}
+.ui-icon-circlesmall-close {
+	background-position:-32px -208px
+}
+.ui-icon-squaresmall-plus {
+	background-position:-48px -208px
+}
+.ui-icon-squaresmall-minus {
+	background-position:-64px -208px
+}
+.ui-icon-squaresmall-close {
+	background-position:-80px -208px
+}
+.ui-icon-grip-dotted-vertical {
+	background-position:0 -224px
+}
+.ui-icon-grip-dotted-horizontal {
+	background-position:-16px -224px
+}
+.ui-icon-grip-solid-vertical {
+	background-position:-32px -224px
+}
+.ui-icon-grip-solid-horizontal {
+	background-position:-48px -224px
+}
+.ui-icon-gripsmall-diagonal-se {
+	background-position:-64px -224px
+}
+.ui-icon-grip-diagonal-se {
+	background-position:-80px -224px
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+	-moz-border-radius-topleft:4px;
+	-webkit-border-top-left-radius:4px;
+	-khtml-border-top-left-radius:4px;
+	border-top-left-radius:4px
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
+	-moz-border-radius-topright:4px;
+	-webkit-border-top-right-radius:4px;
+	-khtml-border-top-right-radius:4px;
+	border-top-right-radius:4px
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
+	-moz-border-radius-bottomleft:4px;
+	-webkit-border-bottom-left-radius:4px;
+	-khtml-border-bottom-left-radius:4px;
+	border-bottom-left-radius:4px
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+	-moz-border-radius-bottomright:4px;
+	-webkit-border-bottom-right-radius:4px;
+	-khtml-border-bottom-right-radius:4px;
+	border-bottom-right-radius:4px
+}
+.ui-widget-overlay {
+	background:#aaa url(images/ui-bg_flat_0_aaaaaa_40x100.png) 50% 50% repeat-x;
+	opacity:0.3;
+	filter:Alpha(Opacity=30)
+}
+.ui-widget-shadow {
+	margin:-8px 0 0 -8px;
+	padding:8px;
+	background:#aaa url(images/ui-bg_flat_0_aaaaaa_40x100.png) 50% 50% repeat-x;
+	opacity:0.3;
+	filter:Alpha(Opacity=30);
+	-moz-border-radius:8px;
+	-khtml-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px
+}
+.ui-autocomplete {
+	position:absolute;
+	cursor:default
+}
+* html .ui-autocomplete {
+	width:1px
+}
+.ui-menu {
+	list-style:none;
+	padding:2px;
+	margin:0;
+	display:block;
+	float:left
+}
+.ui-menu .ui-menu {
+	margin-top:-3px
+}
+.ui-menu .ui-menu-item {
+	margin:0;
+	padding:0;
+	zoom:1;
+	float:left;
+	clear:left;
+	width:100%
+}
+.ui-menu .ui-menu-item a {
+	text-decoration:none;
+	display:block;
+	padding:0.2em 0.4em;
+	line-height:1.5;
+	zoom:1
+}
+.ui-menu .ui-menu-item a.ui-state-hover, .ui-menu .ui-menu-item a.ui-state-active {
+	font-weight:normal;
+	margin:-1px
+}
+
+.ui-widget-content, .ui-widget-header, .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus, .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, .ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight, .ui-state-error, .ui-widget-content .ui-state-error, .ui-widget-header .ui-state-error, .ui-widget-overlay, .ui-widget-shadow {
+	background-image:none !important
+}
+.ui-widget-content {
+	-webkit-box-shadow:0px 3px 5px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow:0px 3px 5px rgba(0, 0, 0, 0.4);
+	box-shadow:0px 3px 5px rgba(0, 0, 0, 0.4)
+}
+.ui-state-active-other a.ui-state-default {
+	background-color:#98cb00;
+	color:white
+}
+body .ui-slider {
+	width:180px;
+	height:23px;
+	margin:0 auto;
+	position:relative;
+	background-color:transparent;
+	background-image:url(http://www.wego.com/hotels/images/sprites/sprite_historical_bg.gif) !important;
+	background-repeat:repeat-x;
+	background-position:0 -663px;
+	box-shadow:none;
+	border:0
+}
+body .ui-slider .ui-slider-handle {
+	position:absolute;
+	height:19px;
+	width:15px;
+	top:0;
+	left:0;
+	margin-left:-7px;
+	background:url(http://www.wego.com/hotels/images/sprites/sprite_historical.gif) no-repeat 0 -44px !important;
+	cursor:pointer;
+	z-index:1;
+	border:0
+}
+body .ui-slider .ui-slider-range {
+	position:absolute;
+	background:white;
+	opacity:0.3;
+	filter:alpha(opacity=30);
+	width:100%;
+	height:100%;
+	left:0
+}
+body .ui-slider-disabled .ui-slider-handle {
+	opacity:0.5;
+	filter:alpha(opacity=50)
+}
+#price_slider_max_handle {
+	left:178px
+}
+.ui-tooltip, .qtip {
+	position:absolute;
+	left:-28000px;
+	top:-28000px;
+	display:none;
+	max-width:280px;
+	min-width:50px;
+	font-size:10.5px;
+	line-height:12px;
+	z-index:15000
+}
+.ui-tooltip-fluid {
+	display:block;
+	visibility:hidden;
+	position:static !important;
+	float:left !important
+}
+.ui-tooltip-content {
+	position:relative;
+	padding:5px 9px;
+	overflow:hidden;
+	border-width:1px;
+	border-style:solid;
+	text-align:left;
+	word-wrap:break-word;
+	overflow:hidden
+}
+.ui-tooltip-titlebar {
+	position:relative;
+	min-height:14px;
+	padding:5px 35px 5px 10px;
+	overflow:hidden;
+	border-width:1px 1px 0;
+	border-style:solid;
+	font-weight:bold
+}
+.ui-tooltip-titlebar+.ui-tooltip-content {
+	border-top-width:0px !important
+}
+.ui-tooltip-titlebar .ui-state-default {
+	position:absolute;
+	right:4px;
+	top:50%;
+	margin-top:-9px;
+	cursor:pointer;
+	outline:medium none;
+	border-width:1px;
+	border-style:solid
+}
+* html .ui-tooltip-titlebar .ui-state-default {
+	top:16px
+}
+.ui-tooltip-titlebar .ui-icon {
+	display:block;
+	text-indent:-1000em
+}
+.ui-tooltip-icon {
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px
+}
+.ui-tooltip-icon .ui-icon {
+	display:block;
+	text-indent:-1000em;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	width:18px;
+	height:14px;
+	text-align:center;
+	text-indent:0;
+	font:normal bold 10px/13px Tahoma, sans-serif;
+	color:inherit;
+	background:transparent none no-repeat -100em -100em
+}
+.ui-tooltip-default .ui-tooltip-titlebar, .ui-tooltip-default .ui-tooltip-content {
+	border-color:#f1d031;
+	background-color:#ffffa3;
+	color:#555555
+}
+.ui-tooltip-default .ui-tooltip-titlebar {
+	background-color:#ffef93
+}
+.ui-tooltip-default .ui-tooltip-icon {
+	border-color:#cccccc;
+	background:#f1f1f1;
+	color:#777777
+}
+.ui-tooltip-default .ui-tooltip-titlebar .ui-state-hover {
+	border-color:#aaaaaa;
+	color:#111111
+}
+.ui-tooltip-light .ui-tooltip-titlebar {
+	border-color:#e2e2e2;
+	color:#454545
+}
+.ui-tooltip-light .ui-tooltip-content {
+	border-color:#e2e2e2;
+	color:#454545;
+	background-color:white
+}
+.ui-tooltip-light .ui-tooltip-titlebar {
+	background-color:#f1f1f1
+}
+.ui-tooltip-dark .ui-tooltip-titlebar {
+	border-color:#303030;
+	color:#f3f3f3
+}
+.ui-tooltip-dark .ui-tooltip-content {
+	border-color:#303030;
+	color:#f3f3f3;
+	background-color:#505050
+}
+.ui-tooltip-dark .ui-tooltip-titlebar {
+	background-color:#404040
+}
+.ui-tooltip-dark .ui-tooltip-icon {
+	border-color:#444444
+}
+.ui-tooltip-dark .ui-tooltip-titlebar .ui-state-hover {
+	border-color:#303030
+}
+.ui-tooltip-cream .ui-tooltip-titlebar {
+	border-color:#f9e98e;
+	color:#a27d35
+}
+.ui-tooltip-cream .ui-tooltip-content {
+	border-color:#f9e98e;
+	color:#a27d35;
+	background-color:#fbf7aa
+}
+.ui-tooltip-cream .ui-tooltip-titlebar {
+	background-color:#f0de7d
+}
+.ui-tooltip-cream .ui-state-default .ui-tooltip-icon {
+	background-position:-82px 0
+}
+.ui-tooltip-red .ui-tooltip-titlebar {
+	border-color:#d95252;
+	color:#912323
+}
+.ui-tooltip-red .ui-tooltip-content {
+	border-color:#d95252;
+	color:#912323;
+	background-color:#f78b83
+}
+.ui-tooltip-red .ui-tooltip-titlebar {
+	background-color:#f06d65
+}
+.ui-tooltip-red .ui-state-default .ui-tooltip-icon {
+	background-position:-102px 0
+}
+.ui-tooltip-red .ui-tooltip-icon, .ui-tooltip-red .ui-tooltip-titlebar .ui-state-hover {
+	border-color:#d95252
+}
+.ui-tooltip-green .ui-tooltip-titlebar {
+	border-color:#90d93f;
+	color:#3f6219
+}
+.ui-tooltip-green .ui-tooltip-content {
+	border-color:#90d93f;
+	color:#3f6219;
+	background-color:#caed9e
+}
+.ui-tooltip-green .ui-tooltip-titlebar {
+	background-color:#b0de78
+}
+.ui-tooltip-green .ui-state-default .ui-tooltip-icon {
+	background-position:-42px 0
+}
+.ui-tooltip-blue .ui-tooltip-titlebar {
+	border-color:#add9ed;
+	color:#5e99bd
+}
+.ui-tooltip-blue .ui-tooltip-content {
+	border-color:#add9ed;
+	color:#5e99bd;
+	background-color:#e5f6fe
+}
+.ui-tooltip-blue .ui-tooltip-titlebar {
+	background-color:#d0e9f5
+}
+.ui-tooltip-blue .ui-state-default .ui-tooltip-icon {
+	background-position:-2px 0
+}
+.ui-tooltip-shadow {
+	-webkit-box-shadow:1px 1px 3px 1px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow:1px 1px 3px 1px rgba(0, 0, 0, 0.15);
+	box-shadow:1px 1px 3px 1px rgba(0, 0, 0, 0.15)
+}
+.ui-tooltip-shadow .ui-tooltip-titlebar, .ui-tooltip-shadow .ui-tooltip-content {
+filter:progid:DXImageTransform.Microsoft.Shadow(Color='gray', Direction=135, Strength=3);
+	-ms-filter:"progid:DXImageTransform.Microsoft.Shadow(Color='gray', Direction=135, Strength=3)";
+	_margin-bottom:-3px;
+.margin-bottom:-3px
+}
+.ui-tooltip-rounded, .ui-tooltip-tipsy, .ui-tooltip-youtube {
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px
+}
+.ui-tooltip-rounded .ui-tooltip-content, .ui-tooltip-tipsy .ui-tooltip-content, .ui-tooltip-youtube .ui-tooltip-content {
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px
+}
+.ui-tooltip-rounded .ui-tooltip-titlebar, .ui-tooltip-tipsy .ui-tooltip-titlebar, .ui-tooltip-youtube .ui-tooltip-titlebar {
+	-moz-border-radius:5px 5px 0 0;
+	-webkit-border-radius:5px 5px 0 0;
+	border-radius:5px 5px 0 0
+}
+.ui-tooltip-rounded .ui-tooltip-titlebar+.ui-tooltip-content, .ui-tooltip-tipsy .ui-tooltip-titlebar+.ui-tooltip-content {
+	-moz-border-radius:0 0 5px 5px;
+	-webkit-border-radius:0 0 5px 5px;
+	border-radius:0 0 5px 5px
+}
+.ui-tooltip-youtube {
+	-webkit-box-shadow:0 0 3px #333333;
+	-moz-box-shadow:0 0 3px #333333;
+	box-shadow:0 0 3px #333333
+}
+.ui-tooltip-youtube .ui-tooltip-titlebar {
+	_margin-bottom:0;
+.margin-bottom:0;
+	background:transparent;
+	background:rgba(0, 0, 0, 0.85);
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#D9000000, endColorstr=#D9000000);
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#D9000000,endColorstr=#D9000000)";
+	color:white;
+	border-color:#cccccc
+}
+.ui-tooltip-youtube .ui-tooltip-titlebar+.ui-tooltip-content {
+	-moz-border-radius:0 0 5px 5px;
+	-webkit-border-radius:0 0 5px 5px;
+	border-radius:0 0 5px 5px
+}
+.ui-tooltip-youtube .ui-tooltip-content {
+	_margin-bottom:0;
+.margin-bottom:0;
+	background:transparent;
+	background:rgba(0, 0, 0, 0.85);
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#D9000000, endColorstr=#D9000000);
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#D9000000,endColorstr=#D9000000)";
+	color:white;
+	border-color:#cccccc
+}
+.ui-tooltip-youtube .ui-tooltip-icon {
+	border-color:#222222
+}
+.ui-tooltip-youtube .ui-tooltip-titlebar .ui-state-hover {
+	border-color:#303030
+}
+.ui-tooltip-jtools {
+	background:#232323;
+	background:rgba(0, 0, 0, 0.7);
+	background-image:-moz-linear-gradient(top, #717171, #232323);
+	background-image:-webkit-gradient(linear, left top, left bottom, from(#717171), to(#232323));
+	border:2px solid #dddddd;
+	border:2px solid #f1f1f1;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	border-radius:2px;
+	-webkit-box-shadow:0 0 12px #333333;
+	-moz-box-shadow:0 0 12px #333333;
+	box-shadow:0 0 12px #333333
+}
+.ui-tooltip-jtools .ui-tooltip-titlebar {
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#717171, endColorstr=#4A4A4A);
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#717171,endColorstr=#4A4A4A)"
+}
+.ui-tooltip-jtools .ui-tooltip-content {
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4A4A4A, endColorstr=#232323);
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#4A4A4A,endColorstr=#232323)"
+}
+.ui-tooltip-jtools .ui-tooltip-titlebar, .ui-tooltip-jtools .ui-tooltip-content {
+	background:transparent;
+	color:white;
+	border:0 dashed transparent
+}
+.ui-tooltip-jtools .ui-tooltip-icon {
+	border-color:#555555
+}
+.ui-tooltip-jtools .ui-tooltip-titlebar .ui-state-hover {
+	border-color:#333333
+}
+.ui-tooltip-cluetip {
+	-webkit-box-shadow:4px 4px 5px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow:4px 4px 5px rgba(0, 0, 0, 0.4);
+	box-shadow:4px 4px 5px rgba(0, 0, 0, 0.4)
+}
+.ui-tooltip-cluetip .ui-tooltip-titlebar {
+	background-color:#87876a;
+	color:white;
+	border:0 dashed transparent
+}
+.ui-tooltip-cluetip .ui-tooltip-content {
+	background-color:#d9d9c2;
+	color:#111111;
+	border:0 dashed transparent
+}
+.ui-tooltip-cluetip .ui-tooltip-icon {
+	border-color:#808064
+}
+.ui-tooltip-cluetip .ui-tooltip-titlebar .ui-state-hover {
+	border-color:#696952;
+	color:#696952
+}
+.ui-tooltip-tipsy {
+	border:0
+}
+.ui-tooltip-tipsy .ui-tooltip-titlebar, .ui-tooltip-tipsy .ui-tooltip-content {
+	_margin-bottom:0;
+.margin-bottom:0;
+	background:transparent;
+	background:rgba(0, 0, 0, 0.87);
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#D9000000, endColorstr=#D9000000);
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#D9000000,endColorstr=#D9000000)";
+	color:white;
+	border:0px transparent;
+	font-size:11px;
+	font-family:"Lucida Grande", sans-serif;
+	font-weight:bold;
+	line-height:16px;
+	text-shadow:0 1px black
+}
+.ui-tooltip-tipsy .ui-tooltip-titlebar {
+	padding:6px 35px 0 10
+}
+.ui-tooltip-tipsy .ui-tooltip-content {
+	padding:6px 10
+}
+.ui-tooltip-tipsy .ui-tooltip-icon {
+	border-color:#222222;
+	text-shadow:none
+}
+.ui-tooltip-tipsy .ui-tooltip-titlebar .ui-state-hover {
+	border-color:#303030
+}
+.ui-tooltip-tipped .ui-tooltip-titlebar, .ui-tooltip-tipped .ui-tooltip-content {
+	border:3px solid #959fa9;
+	filter:none;
+	-ms-filter:none
+}
+.ui-tooltip-tipped .ui-tooltip-titlebar {
+	background:#3a79b8;
+	background-image:-moz-linear-gradient(top, #3a79b8, #2e629d);
+	background-image:-webkit-gradient(linear, left top, left bottom, from(#3a79b8), to(#2e629d));
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#3A79B8, endColorstr=#2E629D);
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#3A79B8,endColorstr=#2E629D)";
+	color:white;
+	font-weight:normal;
+	font-family:serif;
+	border-bottom-width:0;
+	-moz-border-radius:3px 3px 0 0;
+	-webkit-border-radius:3px 3px 0 0;
+	border-radius:3px 3px 0 0
+}
+.ui-tooltip-tipped .ui-tooltip-content {
+	background-color:#f9f9f9;
+	color:#454545;
+	-moz-border-radius:0 0 3px 3px;
+	-webkit-border-radius:0 0 3px 3px;
+	border-radius:0 0 3px 3px
+}
+.ui-tooltip-tipped .ui-tooltip-icon {
+	border:2px solid #285589;
+	background:#285589
+}
+.ui-tooltip-tipped .ui-tooltip-icon .ui-icon {
+	background-color:#fbfbfb;
+	color:#555555
+}
+.ui-tooltip:not(.ie9haxors) div.ui-tooltip-content, .ui-tooltip:not(.ie9haxors) div.ui-tooltip-titlebar {
+filter:none;
+-ms-filter:none
+}
+.ui-tooltip-wego {
+	border-radius:6px;
+	border:1px solid #cccccc;
+	border-bottom-color:#dddddd;
+	background-color:white;
+	-webkit-box-shadow:0 3px 5px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow:0 3px 5px rgba(0, 0, 0, 0.4);
+	box-shadow:0 3px 5px rgba(0, 0, 0, 0.4);
+	max-width:600px
+}
+.ui-tooltip-wego .ui-tooltip-titlebar {
+	padding:5px
+}
+.ui-tooltip-wego .ui-tooltip-content {
+	border:0;
+	background-color:transparent;
+	padding:10px 5px;
+	text-align:center;
+	color:#666666
+}
+.ui-tooltip-wego .ui-tooltip-content h1 {
+	margin:0 0 10px;
+	padding:0 0 5px;
+	border-bottom:1px solid #eeeeee;
+	font-size:16px;
+	text-align:left
+}
+.ui-tooltip-wego .ui-tooltip-content h1 img {
+	vertical-align:middle
+}
+.ui-tooltip-wego .ui-tooltip-content p {
+	margin:0
+}
+.ui-tooltip-wego .ui-tooltip-content img {
+	vertical-align:bottom
+}
+.ui-tooltip-wego .ui-tooltip-content span.wego-amount {
+	color:#335700
+}
+.ui-tooltip-wego .ui-tooltip-content em {
+	display:block;
+	color:#999999;
+	font-size:11px;
+	text-align:center;
+	margin-top:5px
+}
+.ui-tooltip-wego .ui-tooltip-content table {
+	text-align:left
+}
+.ui-tooltip-wego .ui-tooltip-content table th {
+	padding-right:5px;
+	text-align:right
+}
+.ui-tooltip-wego .ui-tooltip-titlebar {
+	font-size:11px;
+	color:#666666;
+	text-align:left;
+	border:0;
+	border-bottom:1px solid #cccccc;
+	background-color:transparent;
+	font-weight:normal;
+	text-align:center
+}
+.ui-tooltip-wego .ui-state-default .ui-tooltip-icon {
+	background-position:-2px 0
+}
+body {
+	background-color:white;
+	color:#333;
+	margin:0 auto
+}
+body, input, textarea, button, th, td {
+	font-family:arial, verdana, helvetica, sans-serif
+}
+h1, h2, h3, h4, h5, h6, strong, legend, label {
+	font-weight:bold
+}
+em {
+	font-style:italic
+}
+a {
+	color:#0072bc
+}
+a:hover {
+	color:#eb8104
+}
+a:visited {
+	color:#06c
+}
+label {
+	cursor:pointer
+}
+.clearfix:after {
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	font-size:0;
+	visibility:hidden
+}
+* html .clearfix {
+	height:1%;
+	overflow:visible
+}
+*+html .clearfix {
+	min-height:1%
+}
+.hide {
+	display:none
+}
+.invisible {
+	visibility:hidden
+}
+.clear {
+	clear:both
+}
+#wg_header {
+	height:87px;
+	margin-bottom:10px;
+	padding:0 5px;
+	background:url(http://www.wego.com/hotels/images/sprites/sprite_historical_bg.gif) repeat-x 0 0
+}
+#wg_header #wg_logo a {
+	float:left;
+	height:86px;
+	width:197px;
+	background:url(http://www.wego.com/hotels/images/sprites/sprite_historical.gif) no-repeat 0 -977px;
+	overflow:hidden;
+	text-indent:-1000px
+}
+.zh-cn #wg_header #wg_logo a {
+	background:url(http://www.mediawego.com/images/wego/v2/wg_logoalt_zh_cn.gif) no-repeat 0 0
+}
+.zh-hk #wg_header #wg_logo a {
+	background:url(http://www.wego.com/hotels/images/wego/info/wg_logoalt.zh-hk.png) no-repeat 0 0
+}
+.zh-tw #wg_header #wg_logo a {
+	background:url(http://www.mediawego.com/images/wego/v2/wg_logoalt_zh_tw.gif) no-repeat 0 0
+}
+#wg_headernav li {
+	float:left;
+	overflow:hidden;
+	height:86px;
+	position:relative
+}
+#wg_headernav li a {
+	display:block;
+	width:78px;
+	padding:65px 0 10px;
+	background:url(http://www.mediawego.com/images/wego/v2/wg_naviconsalt.png) no-repeat 0 0;
+	color:white;
+	font-size:108%;
+	font-weight:bold;
+	text-align:center;
+	text-decoration:none
+}
+#wg_headernav li a.wg_selected {
+	color:#359302
+}
+li#wg_flightsnav a {
+	background-position:0 0
+}
+li#wg_flightsnav a:hover {
+	background-position:0 -172px
+}
+li#wg_hotelsnav a {
+	background-position:-78px 0
+}
+li#wg_hotelsnav a:hover {
+	background-position:-78px -172px
+}
+li#wg_hotelsnav a.wg_selected {
+	background-position:-78px -86px
+}
+li#wg_activitiesnav a {
+	background-position:-156px 0
+}
+li#wg_activitiesnav a:hover {
+	background-position:-156px -172px
+}
+li#wg_packagesnav a {
+	background-position:-312px 0
+}
+li#wg_packagesnav a:hover {
+	background-position:-312px -172px
+}
+li#wg_dealsnav a {
+	background-position:-468px 0
+}
+li#wg_dealsnav a:hover {
+	background-position:-468px -172px
+}
+#wg_footer {
+	clear:both;
+	padding:5px;
+	border-top:1px solid #d3d3d3;
+	color:#959595;
+	font-size:11px
+}
+#wg_footer #wg_footer_links {
+	clear:both;
+	height:13px
+}
+#wg_footer #wg_footer_links ul {
+	color:#359302
+}
+#wg_footer #wg_footer_links ul li {
+	background:url(http://www.wego.com/hotels/images/sprites/sprite_historical.gif) no-repeat 0 -549px;
+	float:left;
+	padding:0 6px
+}
+#wg_footer #wg_footer_links ul li.wg_firstchild {
+	padding-left:0;
+	background:none
+}
+#wg_footer #wg_footer_links ul a {
+	color:#359302;
+	text-decoration:none
+}
+#wg_footer #wg_footer_links ul a:hover {
+	text-decoration:underline
+}
+#wg_footer ul {
+	color:#cccccc
+}
+#wg_footer ul li {
+	display:inline;
+	padding:0 2px
+}
+#wg_footer ul li.wg_firstchild {
+	background:none;
+	padding-left:0
+}
+#wg_footer ul li a {
+	color:#959595;
+	text-decoration:none;
+	padding:10px 0
+}
+#wg_footer ul li a:hover {
+	text-decoration:underline
+}
+#wg_footer #wg_legal {
+	float:right
+}
+#wg_footer #news_links {
+	clear:both
+}
+#wg_footer #news_links #news_links2 {
+	float:right
+}
+#wg_footer p {
+	margin:12px 0
+}
+#wg_footer p a {
+	color:#959595;
+	text-decoration:none
+}
+#breadcrumb {
+	margin:5px 0;
+	font-size:85%
+}
+#breadcrumb strong {
+	font-weight:normal
+}
+#breadcrumb h1 {
+	display:inline;
+	font-weight:normal
+}
+#breadcrumb div.microdata {
+	display:inline
+}
+.pagination, .per_page {
+	margin:0 3px;
+	padding:3px;
+	font-size:85%
+}
+.pagination a, .pagination span.current, .pagination span.disabled, .pagination em, .per_page a, .per_page span.current, .per_page span.disabled, .per_page em {
+	text-decoration:none;
+	margin:2px;
+	padding:2px 5px;
+	border:1px solid #9aafe5;
+	background-color:#fff;
+	color:#2e6ab1;
+	display:inline-block;
+	line-height:1em;
+*zoom:1
+}
+.pagination a:hover, .per_page a:hover {
+	border-color:#2e6ab1;
+	background-color:#bacff5;
+	color:#2e6ab1
+}
+.pagination a:active, .per_page a:active {
+	border-color:#2e6ab1;
+	background-color:#bacff5
+}
+.pagination span.current, .pagination a.current, .pagination em, .per_page span.current, .per_page a.current, .per_page em {
+	border:1px solid #2e6ab1;
+	background-color:#2e6ab1;
+	color:#fff;
+	font-style:normal;
+	font-weight:bold
+}
+.pagination span.disabled, .pagination span.prev, .pagination span.next, .per_page span.disabled, .per_page span.prev, .per_page span.next {
+	margin:2px;
+	padding:2px 5px;
+	border:1px solid #ddd;
+	color:#999
+}
+.pagination a.prev, .pagination a.next, .pagination span.prev, .pagination span.next, .per_page a.prev, .per_page a.next, .per_page span.prev, .per_page span.next {
+	padding:2px 6px
+}
+.ad_placeholder {
+	display:none
+}
+#ads_top {
+	margin:0 0 4px
+}
+#ads_side {
+	text-align:left
+}
+#ads_side div.banner {
+	margin-bottom:8px;
+	text-align:center
+}
+div.leaderboard {
+	text-align:center
+}
+div.afs_ads {
+	background-color:#fcfac2;
+	border:1px dashed #f8ae5c;
+	padding:4px
+}
+#side_ads {
+	margin:0 0 16px
+}
+#side_ads.afs_white {
+	background-color:#f7f7f7;
+	border:1px dashed #cccccc;
+	padding:4px;
+	margin-top:20px
+}
+#bottom_ads {
+	margin:16px 0
+}
+#wg_leaderboard_south {
+	text-align:center;
+	margin:10px 0
+}
+#spotlights_gam {
+	margin:0 0 10px
+}
+#spotlights_gam div.ad_target {
+	float:left;
+	height:180px;
+	padding-left:10px;
+	display:inline;
+	width:180px
+}
+#spotlights_gam #spotlight_1_gam_target.ad_target {
+	padding-left:0
+}
+div#featured_hotels {
+	margin:4px 0 0
+}
+div#featured_hotels div.hotel {
+	background-repeat:no-repeat;
+	background-position:0 0;
+	float:left;
+	height:180px;
+	margin:3px;
+	position:relative;
+	width:180px
+}
+div#featured_hotels div.hotel.image div.summary {
+	background-image:none
+}
+div#featured_hotels div.hotel a {
+	text-decoration:none
+}
+div#featured_hotels div.hotel a.photo {
+	display:block;
+	height:180px;
+	position:relative;
+	width:180px
+}
+div#featured_hotels div.hotel div.summary {
+	background-image:url(http://www.wego.com/hotels/images/spotlight_bg.png);
+	color:white;
+	height:40px;
+	overflow:hidden;
+	padding:4px;
+	position:relative;
+	text-align:right
+}
+div#featured_hotels div.hotel div.summary h6 {
+	color:white;
+	font-size:12px;
+	font-weight:bold;
+	line-height:12px;
+	text-align:left
+}
+div#featured_hotels div.hotel div.summary p.price {
+	bottom:0;
+	font-size:11px;
+	position:absolute;
+	right:4px
+}
+div#featured_hotels div.hotel div.summary p.price span {
+	font-weight:bold
+}
+div#featured_hotels div.hotel div.summary p.price strong {
+	font-size:15px
+}
+div#featured_hotels div.hotel span.publisher {
+	display:none
+}
+div#featured_hotels div.placeholder a {
+	display:block;
+	width:180px;
+	height:180px
+}
+#progress_message {
+	width:960px;
+	margin:10px auto;
+	z-index:9999
+}
+#progress_message .wrapper {
+	z-index:9999;
+	font-size:100%;
+	font-weight:bold;
+	text-align:center
+}
+#progress_message .wrapper .c {
+	color:orange;
+	font-size:108%
+}
+#provider_logos {
+	margin:10px auto;
+	z-index:9999;
+	height:25px
+}
+#provider_logos img {
+	float:left;
+	display:block;
+	margin:0 3px
+}
+#progress_container {
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	background-color:black;
+	color:white;
+	opacity:0.85;
+	z-index:3
+}
+#progress_container .center {
+	bottom:0;
+	width:800px;
+	margin:7px auto;
+	z-index:9999;
+	background-color:white
+}
+#progress_container .center .bar {
+	display:block;
+	width:0px;
+	height:10px;
+	text-indent:-9999px;
+	opacity:1;
+	background:orange url(http://www.wego.com/hotels/images/progress_loader_bg.jpg) repeat-x left top
+}
+html>body div#progress_container {
+	position:fixed
+}
+.js #search_listings div.hotel-rates {
+	display:none
+}
+.js div#search_listings div.rates div.compact {
+	display:block
+}
+.js div#search_listings div.rates div.full {
+	display:none
+}
+.js .hotel .ratings .satisfaction {
+	float:left;
+	position:relative
+}
+.js .hotel .ratings .satisfaction h5 em {
+	cursor:pointer
+}
+.js .hotel .ratings .satisfaction p.score {
+	cursor:pointer
+}
+.js .hotel .ratings .satisfaction div.reviews {
+	display:none;
+	position:absolute;
+	top:20px;
+	left:0;
+	z-index:1
+}
+.js .hotel .ratings .satisfaction div.hint {
+	display:none;
+	position:absolute;
+	top:38px;
+	left:0;
+	z-index:1
+}
+.js #wg_left_inner #filters input.submit {
+	display:none
+}
+.js #wg_left_inner #filters fieldset#wg_districts_filter div.extra_districts {
+	display:none
+}
+.js #wg_left_inner #filters fieldset#wg_districts_filter a.show_all_districts, .js #wg_left_inner #filters fieldset#wg_districts_filter a.show_major_districts {
+	display:block;
+	margin-left:24px;
+	margin-top:5px
+}
+.js #wg_left_inner #filters fieldset#wg_brands_and_chains_filter div.all_brands {
+	display:none
+}
+.js #wg_left_inner #filters fieldset#wg_brands_and_chains_filter a.show_all_brands {
+	display:block
+}
+.js #wg_left_inner #filters fieldset#wg_provider_filter div.collapsible {
+	display:none
+}
+.js #wg_left_inner div.loading p.loading {
+	display:block !important
+}
+.js #wg_left_inner div.loading #wg_filters_form {
+	opacity:0.5 !important;
+	filter:alpha(opacity=50) !important
+}
+.js #progress_container {
+	display:block
+}
+.ac_results {
+	font-size:12px
+}
+#wg_main {
+	float:right;
+	width:785px
+}
+#wg_main #wg_main_middle {
+	float:left;
+	width:560px
+}
+#wg_main #wg_main_right {
+	float:right;
+	width:215px
+}
+.wego-rtl #wg_main {
+	float:left
+}
+.wego-rtl #wg_main #wg_main_middle {
+	float:right
+}
+.wego-rtl #wg_main #wg_main_right {
+	float:left
+}
+#wg_left {
+	float:left;
+	width:205px
+}
+.wego-rtl #wg_left {
+	float:right
+}
+.wg_fixed_center {
+	margin:0 auto;
+	width:1000px;
+	clear:both
+}
+noscript {
+	font-size:92.5%;
+	background:#fff998;
+	color:#7d771c
+}
+.footnote {
+	color:#666666;
+	font-size:11px
+}
+.footnote .key {
+	color:#fd8e32
+}
+.feedback {
+	font-weight:bold;
+	line-height:1.5em
+}
+span.availability {
+	display:block;
+	padding-left:18px;
+	font-size:85%
+}
+span.availability.on_request {
+	background:url(http://www.wego.com/hotels/images/icons/on_request.gif) no-repeat 0 0
+}
+span.availability.instant {
+	background:url(http://www.wego.com/hotels/images/icons/instant.gif) no-repeat 0 0;
+	font-size:85%
+}
+.star {
+	background:url(http://www.wego.com/hotels/images/sprites/sprite_historical.gif) no-repeat 0 -315px;
+	display:block;
+	height:10px;
+	line-height:10px;
+	text-indent:-9999px;
+	overflow:hidden;
+	width:50px
+}
+.wego-rtl .star {
+	-webkit-transform:scaleX(-1);
+	-moz-transform:scaleX(-1);
+	-ms-transform:scaleX(-1);
+	-o-transform:scaleX(-1);
+	transform:scaleX(-1)
+}
+.star_5 {
+	background-position:0 -415px
+}
+.star_4 {
+	background-position:0 -395px
+}
+.star_3 {
+	background-position:0 -375px
+}
+.star_2 {
+	background-position:0 -355px
+}
+.star_1 {
+	background-position:0 -335px
+}
+.star_0, .star_ {
+	display:none;
+	background-position:0 0
+}
+.heart {
+	float:left;
+	display:block;
+	width:80px;
+	height:13px;
+	line-height:15px;
+	margin:3px 0;
+	background-image:url(http://www.wego.com/hotels/images/sprites/sprite_hearts.gif);
+	background-repeat:no-repeat;
+	background-position:0 0;
+	text-indent:-9999px;
+	overflow:hidden
+}
+.wego-rtl .heart {
+	float:right;
+	-webkit-transform:scaleX(-1);
+	-moz-transform:scaleX(-1);
+	-ms-transform:scaleX(-1);
+	-o-transform:scaleX(-1);
+	transform:scaleX(-1)
+}
+.heart_0 {
+	background-position:0 0
+}
+.heart_1 {
+	background-position:0 -15px
+}
+.heart_2 {
+	background-position:0 -30px
+}
+.heart_3 {
+	background-position:0 -45px
+}
+.heart_4 {
+	background-position:0 -60px
+}
+.heart_5 {
+	background-position:0 -75px
+}
+.heart_6 {
+	background-position:0 -90px
+}
+.heart_7 {
+	background-position:0 -105px
+}
+.heart_8 {
+	background-position:0 -120px
+}
+.heart_9 {
+	background-position:0 -135px
+}
+.heart_10 {
+	background-position:0 -150px
+}
+fieldset {
+	text-indent:0;
+	clear:left;
+	position:relative;
+	border:1px solid #e3f4a3;
+	margin:10px 0;
+	padding:10px
+}
+fieldset:after {
+	content:".";
+	clear:both;
+	display:inline-block;
+	display:block;
+	height:0;
+	visibility:hidden
+}
+legend {
+	position:relative;
+	left:-7px;
+	border:1px solid #e3f4a3;
+	padding:2px 5px;
+	color:#8a0
+}
+fieldset>legend {
+	left:0
+}
+label {
+	cursor:pointer
+}
+select, input, textarea {
+	color:#0072bc
+}
+input, textarea {
+	margin-top:3px;
+	padding:3px;
+	border:1px solid #999999
+}
+input:focus, textarea:focus {
+	background-color:#ffc;
+	color:#003f89
+}
+input:hover, textarea:hover {
+	background-color:#ffc
+}
+.flash {
+	border-top:2px solid;
+	border-bottom:2px solid
+}
+.error, .warning, .notice, .spinner {
+	background-position:15px 11px;
+	background-repeat:no-repeat;
+	margin-top:10px;
+	padding:10px 10px 10px 40px
+}
+.error {
+	background-color:#fefaca;
+	background-image:url(http://www.wego.com/hotels/images/icons/wg_alerticon.gif);
+	border-color:#fdb201;
+	color:#626262
+}
+.warning {
+	background-color:#fefaca;
+	background-image:url(http://www.wego.com/hotels/images/icons/wg_alerticon.gif);
+	border-color:#fdb201;
+	color:#626262
+}
+.notice {
+	background-color:#fefaca;
+	background-image:url(http://www.wego.com/hotels/images/icons/tick.gif);
+	border-color:#fdb201;
+	color:#626262
+}
+.spinner {
+	background-color:#fefaca;
+	background-image:url(http://www.wego.com/hotels/images/spinner.gif);
+	border-color:#fdb201;
+	color:#626262
+}
+div.message {
+	position:absolute;
+	top:100px;
+	left:100px;
+	height:100px;
+	width:500px;
+	padding:60px 0 0;
+	background:url(http://www.wego.com/hotels/images/messagebox_bg.png) no-repeat 0 0;
+	color:#666666;
+	font-size:30px;
+	font-weight:bold;
+	text-align:center;
+	text-shadow:0 1px 0 white;
+	z-index:100
+}
+body #expire.message {
+	padding:40px 0 0;
+	height:140px
+}
+body #error {
+	color:#7e0000;
+	font-size:20px;
+	width:460px;
+	padding:60px 20px 0
+}
+#msg_searching {
+	float:left;
+	margin-left:1em;
+	padding:0 5px;
+	background-color:#fef6bc;
+	color:#555555;
+	font-size:92.5%
+}
+#msg_filtered_out {
+	clear:both
+}
+.searched_hotel_name {
+	font-weight:bold
+}
+.validation_error {
+	background-color:#fbe3e4;
+	border-color:#d12f19
+}
+#search_summary {
+	background:url(http://www.wego.com/hotels/images/sprites/sprite_historical_bg.gif) repeat-x 0 -167px;
+	border:1px solid #d3d3d3;
+	margin:0 0 8px
+}
+#search_summary h3 {
+	font-size:15px;
+	margin:0 8px;
+	padding:3px 0
+}
+#search_summary h3 span.params {
+	font-size:14px;
+	font-weight:normal;
+	margin:0 0 0 8px
+}
+#search_summary h3 a {
+	font-size:11px;
+	font-weight:normal;
+	margin:0 0 0 8px;
+	text-decoration:none
+}
+#results_header {
+	padding:10px 0;
+	line-height:22px
+}
+#results_header #results_summary {
+	float:left;
+	padding-left:0.5em;
+	padding-right:0.5em
+}
+#results_header #results_summary .num_results_shown {
+	font-weight:bold;
+	color:#359302
+}
+#results_header #results_summary .num_results_available {
+	font-weight:bold
+}
+#results_header #results_summary a.all {
+	text-decoration:none;
+	color:#626262;
+	cursor:text
+}
+#results_header .pagination {
+	float:left;
+	margin-left:8px;
+	margin-right:0;
+	padding:0
+}
+#results_header .per_page {
+	float:right;
+	padding:0
+}
+.wego-rtl #results_header #results_summary {
+	float:right
+}
+.wego-rtl #results_header .pagination {
+	float:right;
+	margin-left:0;
+	margin-right:8px
+}
+.wego-rtl #results_header .per_page {
+	float:left
+}
+#results_footer {
+	line-height:22px;
+	margin:1em 0
+}
+#results_footer .pagination {
+	float:left;
+	margin-left:0;
+	margin-right:0;
+	padding:0
+}
+#results_footer .per_page {
+	float:right;
+	padding:0
+}
+.wego-rtl #results_footer .pagination {
+	float:right
+}
+.wego-rtl #results_footer .per_page {
+	float:left
+}
+#search_sorter {
+	position:relative;
+	margin-bottom:8px;
+	padding:5px;
+	background-color:#eeeeee;
+	border-top:1px dashed #d3d3d3;
+	border-bottom:1px dashed #d3d3d3;
+	line-height:15px;
+	display:block;
+	font-size:85%;
+	margin-top:1px
+}
+#search_sorter ul.buttons li {
+	float:left
+}
+#search_sorter ul.buttons li strong {
+	display:block;
+	padding:5px 4px 4px 0;
+	color:#333333
+}
+#search_sorter ul.buttons li a {
+	display:block
+}
+#search_sorter #popular_with {
+	position:absolute;
+	right:5px;
+	top:5px;
+	cursor:pointer;
+	padding-right:5px;
+	padding-left:5px
+}
+#search_sorter #popular_with.current {
+	cursor:pointer
+}
+#search_sorter #popular_with.current:hover {
+	-moz-box-shadow:0 2px 0 rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow:0 2px 5px rgba(0, 0, 0, 0.2);
+	box-shadow:0 1px 2px rgba(0, 0, 0, 0.15)
+}
+#search_sorter #popular_with.current:active {
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+	box-shadow:none
+}
+#search_sorter #popular_with a span.downarrow {
+	background:url(http://www.wego.com/hotels/images/downarrow.png) no-repeat right center;
+	padding-right:12px
+}
+#search_sorter .button {
+	background-color:#f3f3f3;
+	background:-webkit-gradient(linear, 0% 40%, 0% 70%, from(#f5f5f5), to(#f1f1f1));
+	background:-moz-linear-gradient(linear, 0% 40%, 0% 70%, from(#f5f5f5), to(#f1f1f1));
+	border:solid 1px #dcdcdc;
+	border-radius:2px;
+	-webkit-transition:border-color 0.218s;
+	-moz-transition:border 0.218s;
+	-o-transition:border-color 0.218s;
+	transition:border-color 0.218s;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+	padding:4px 8px;
+	float:left;
+	font-weight:bold
+}
+#search_sorter .button a {
+	color:#6e6e6e;
+	text-decoration:none
+}
+#search_sorter .button:hover {
+	border-color:#999999;
+	-moz-box-shadow:0 2px 0 rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow:0 2px 5px rgba(0, 0, 0, 0.2);
+	box-shadow:0 1px 2px rgba(0, 0, 0, 0.15)
+}
+#search_sorter .button:hover a {
+	color:#333333
+}
+#search_sorter .button:active {
+	color:black;
+	border-color:#444444
+}
+#search_sorter .button.current {
+	padding-right:10px;
+	text-shadow:0 1px 0 white;
+	border-color:#dcdcdc;
+	border-top:solid 1px #feb364;
+	border-bottom:solid 1px #feb364
+}
+#search_sorter .button.asc {
+	padding-right:4px
+}
+#search_sorter .button.asc a {
+	padding-right:12px;
+	background:url(http://www.wego.com/hotels/images/updown-asc.png) no-repeat right center
+}
+#search_sorter .button.desc {
+	padding-right:4px
+}
+#search_sorter .button.desc a {
+	padding-right:12px;
+	background:url(http://www.wego.com/hotels/images/updown-desc.png) no-repeat right center
+}
+#search_sorter .button.left {
+	-webkit-border-top-right-radius:0;
+	-moz-border-radius-topright:0;
+	border-top-right-radius:0;
+	-webkit-border-bottom-right-radius:0;
+	-moz-border-radius-bottomright:0;
+	border-bottom-right-radius:0;
+	margin:0
+}
+#search_sorter .button.middle {
+	border-radius:0;
+	-webkit-border-radius:0;
+	-moz-border-radius:0;
+	border-left:solid 1px #f3f3f3;
+	margin:0;
+	border-left:solid 1px rgba(255, 255, 255, 0)
+}
+#search_sorter .button.middle:hover, #search_sorter .button.right:hover {
+	border-left:solid 1px #999999
+}
+#search_sorter .button.right {
+	margin:0;
+	-webkit-border-top-left-radius:0;
+	-moz-border-radius-topleft:0;
+	border-top-left-radius:0;
+	-webkit-border-bottom-left-radius:0;
+	-moz-border-radius-bottomleft:0;
+	border-bottom-left-radius:0;
+	border-left:solid 1px #f3f3f3;
+	border-left:solid 1px rgba(255, 255, 255, 0)
+}
+.wego-rtl #search_sorter #popular_with {
+	left:5px;
+	right:auto
+}
+.wego-rtl #search_sorter ul.buttons li {
+	float:right
+}
+.wego-rtl #search_sorter ul.buttons li strong {
+	padding:5px 0 4px 4px
+}
+.wego-rtl #search_sorter .button.left {
+	-webkit-border-top-right-radius:2px;
+	-moz-border-radius-topright:2px;
+	border-top-right-radius:2px;
+	-webkit-border-bottom-right-radius:2px;
+	-moz-border-radius-bottomright:2px;
+	border-bottom-right-radius:2px;
+	-webkit-border-top-left-radius:0;
+	-moz-border-radius-topleft:0;
+	border-top-left-radius:0;
+	-webkit-border-bottom-left-radius:0;
+	-moz-border-radius-bottomleft:0;
+	border-bottom-left-radius:0
+}
+.wego-rtl #search_sorter .button.middle {
+	border-left:1px solid #dcdcdc;
+	border-right:solid 1px #f3f3f3;
+	border-right:solid 1px rgba(255, 255, 255, 0)
+}
+.wego-rtl #search_sorter .button.middle:hover, .wego-rtl #search_sorter .button.right:hover {
+	border-right:solid 1px #999999;
+	border-left:solid 1px #999999
+}
+.wego-rtl #search_sorter .button.right {
+	margin:0;
+	-webkit-border-top-left-radius:2px;
+	-moz-border-radius-topleft:2px;
+	border-top-left-radius:2px;
+	-webkit-border-bottom-left-radius:2px;
+	-moz-border-radius-bottomleft:2px;
+	border-bottom-left-radius:2px;
+	-webkit-border-top-right-radius:0;
+	-moz-border-radius-topright:0;
+	border-top-right-radius:0;
+	-webkit-border-bottom-right-radius:0;
+	-moz-border-radius-bottomright:0;
+	border-bottom-right-radius:0;
+	border-right:solid 1px #f3f3f3;
+	border-right:solid 1px rgba(255, 255, 255, 0);
+	border-left:solid 1px #dcdcdc
+}
+.popular_with_flag {
+	display:inline-block;
+	width:16px;
+	height:11px;
+	background:url(http://www.wego.com/hotels/images/popular_with_flags.png) no-repeat;
+	vertical-align:middle;
+	margin:-4px 5px 0 0
+}
+.popular_with_flag_XX {
+	background-position:top left
+}
+.popular_with_flag_AE {
+	background-position:-32px 0px
+}
+.popular_with_flag_AU {
+	background-position:-208px 0
+}
+.popular_with_flag_BR {
+	background-position:-192px -11px
+}
+.popular_with_flag_CA {
+	background-position:-48px -22px
+}
+.popular_with_flag_CH {
+	background-position:-128px -22px
+}
+.popular_with_flag_CN {
+	background-position:-208px -22px
+}
+.popular_with_flag_DE {
+	background-position:-64px -33px
+}
+.popular_with_flag_ES {
+	background-position:0 -44px
+}
+.popular_with_flag_FR {
+	background-position:-128px -44px
+}
+.popular_with_flag_GB {
+	background-position:-160px -44px
+}
+.popular_with_flag_ID {
+	background-position:-16px -66px
+}
+.popular_with_flag_IN {
+	background-position:-64px -66px
+}
+.popular_with_flag_IT {
+	background-position:-32px -66px
+}
+.popular_with_flag_JP {
+	background-position:-192px -66px
+}
+.popular_with_flag_KR {
+	background-position:-64px -77px
+}
+.popular_with_flag_MY {
+	background-position:-112px -99px
+}
+.popular_with_flag_NL {
+	background-position:0px -88px
+}
+.popular_with_flag_NZ {
+	background-position:-64px -110px
+}
+.popular_with_flag_PH {
+	background-position:-160px -110px
+}
+.popular_with_flag_PL {
+	background-position:-192px -110px
+}
+.popular_with_flag_RU {
+	background-position:-128px -121px
+}
+.popular_with_flag_SE {
+	background-position:-240px -121px
+}
+.popular_with_flag_SG {
+	background-position:0 -132px
+}
+.popular_with_flag_TH {
+	background-position:-16px -143px
+}
+.popular_with_flag_TR {
+	background-position:-128px -143px
+}
+.popular_with_flag_TW {
+	background-position:-176px -143px
+}
+.popular_with_flag_US {
+	background-position:0 -154px
+}
+.popular_with_flag_VN {
+	background-position:-128px -154px
+}
+.popular_with_flag_ZA {
+	background-position:-240px -154px
+}
+.wego-rtl .popular_with_flag {
+	margin:-4px 0 0 5px
+}
+#popular_with_nationalities {
+	font-size:85%;
+	display:none;
+	position:absolute;
+	width:320px;
+	background-color:white;
+	z-index:1;
+	border:solid 1px #dcdcdc;
+	-moz-box-shadow:0 4px 0 rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow:0 4px 5px rgba(0, 0, 0, 0.2);
+	box-shadow:0 2px 4px rgba(0, 0, 0, 0.15)
+}
+#popular_with_nationalities div.col {
+	float:left;
+	width:160px
+}
+#popular_with_nationalities div.col a {
+	color:#6e6e6e;
+	display:block;
+	padding:5px 0 5px 5px;
+	margin:0 5px;
+	border-top:1px solid #dcdcdc;
+	background-position:5px 6px;
+	background-repeat:no-repeat;
+	cursor:pointer
+}
+#popular_with_nationalities div.col a.first {
+	border-top:none
+}
+#popular_with_nationalities div.col a:hover {
+	background-color:#dcdcdc
+}
+.wego-rtl #popular_with_nationalities div.col {
+	float:right
+}
+#search_listings {
+	clear:both;
+	color:#626262
+}
+#search_listings .hotel {
+	width:558px;
+	margin:0 0 6px 0;
+	background-color:white;
+	border:1px solid #d3d3d3
+}
+#search_listings .hotel div.details {
+	clear:both;
+	margin:0
+}
+#search_listings .hotel div.middle_info {
+	float:left;
+	width:334px;
+	margin:6px 0 0
+}
+#search_listings .hotel div.middle_info h3 {
+	margin:0 0 2px;
+	color:#444444
+}
+#search_listings .hotel div.middle_info .vcard {
+	float:left;
+	width:300px;
+	margin:0 0 0 4px;
+	color:#999999
+}
+#search_listings .hotel div.middle_info .vcard .fn {
+	font-size:13px
+}
+#search_listings .hotel div.middle_info .vcard .fn a {
+	color:#666666;
+	text-decoration:none
+}
+#search_listings .hotel div.middle_info .vcard .fn a:hover {
+	text-decoration:underline
+}
+#search_listings .hotel div.middle_info .star {
+	display:inline-block;
+	float:none;
+	margin:2px 0 0 3px
+}
+#search_listings .hotel div.middle_info .adr {
+	color:#acacac;
+	font-size:11px
+}
+#search_listings .hotel div.rank {
+	font-size:11px
+}
+#search_listings .hotel div.rank strong {
+	color:#f8951d;
+	font-size:18px
+}
+#search_listings .hotel div.rank strong span {
+	font-size:14px
+}
+#search_listings .hotel div.rank span {
+	vertical-align:top
+}
+#search_listings .hotel div.ratings {
+	color:#7c7c7c;
+	width:334px;
+	margin:2px 0 0
+}
+#search_listings .hotel div.ratings h5 {
+	font-size:11px
+}
+#search_listings .hotel div.ratings h5 em {
+	color:#0072bc;
+	cursor:pointer;
+	font-style:normal
+}
+#search_listings .hotel div.ratings .satisfaction {
+	float:none;
+	padding:0;
+	width:100%
+}
+#search_listings .hotel div.ratings .satisfaction div {
+	width:100%
+}
+#search_listings .hotel div.ratings .satisfaction h5 {
+	float:left
+}
+#search_listings .hotel div.ratings .satisfaction h5 a {
+	text-decoration:none
+}
+#search_listings .hotel div.ratings .satisfaction p.score {
+	font-size:11px;
+	margin-left:5px
+}
+#search_listings .hotel div.ratings .satisfaction p.score a {
+	vertical-align:top;
+	text-decoration:none
+}
+#search_listings .hotel div.ratings .satisfaction p.score span {
+	color:#626262;
+	margin:0 0 0 3px;
+	vertical-align:top
+}
+#search_listings .hotel div.ratings .satisfaction p.score strong {
+	color:#f7941d;
+	font-size:18px
+}
+#search_listings .hotel div.ratings .satisfaction div.reviews {
+	clear:both;
+	width:236px;
+	margin-bottom:4px;
+	background-color:#fcf9c2;
+	border:1px solid #f7941d;
+	color:#666666;
+	font-size:85%
+}
+#search_listings .hotel div.ratings .satisfaction div.reviews h6 {
+	height:16px;
+	margin-bottom:4px;
+	padding:4px 6px;
+	background-color:#f7941d;
+	color:white
+}
+#search_listings .hotel div.ratings .satisfaction div.reviews h6 strong {
+	display:block;
+	float:left
+}
+#search_listings .hotel div.ratings .satisfaction div.reviews h6 span.total {
+	display:block;
+	float:right
+}
+#search_listings .hotel div.ratings .satisfaction div.reviews p {
+	display:block
+}
+#search_listings .hotel div.ratings .satisfaction div.reviews p.hint {
+	margin:4px 6px;
+	clear:both
+}
+#search_listings .hotel div.ratings .satisfaction div.reviews div.graph {
+	clear:both;
+	position:relative;
+	width:224px;
+	height:14px;
+	margin:4px 6px
+}
+#search_listings .hotel div.ratings .satisfaction div.reviews div.graph strong {
+	display:block;
+	width:50px
+}
+#search_listings .hotel div.ratings .satisfaction div.reviews div.graph div.bar {
+	position:absolute;
+	top:0;
+	left:56px;
+	width:140px;
+	height:12px;
+	line-height:11px;
+	border:1px solid #d3d3d3
+}
+#search_listings .hotel div.ratings .satisfaction div.reviews div.graph div.bar span {
+	display:block;
+	height:12px;
+	background-image:url(http://www.wego.com/hotels/images/sprites/sprite_review_bars_bg.png);
+	background-repeat:repeat-x;
+	background-position:0 0
+}
+#search_listings .hotel div.ratings .satisfaction div.reviews div.graph span.score {
+	position:absolute;
+	top:1px;
+	left:204px
+}
+#search_listings .hotel div.ratings .satisfaction div.reviews div.positive div.bar span {
+	background-position:0 -124px
+}
+#search_listings .hotel div.ratings .satisfaction div.reviews div.positive span.score {
+	color:#70a924
+}
+#search_listings .hotel div.ratings .satisfaction div.reviews div.neutral div.bar span {
+	background-position:0 -62px
+}
+#search_listings .hotel div.ratings .satisfaction div.reviews div.neutral span.score {
+	color:#aeaeae
+}
+#search_listings .hotel div.ratings .satisfaction div.reviews div.negative div.bar span {
+	background-position:0 0
+}
+#search_listings .hotel div.ratings .satisfaction div.reviews div.negative span.score {
+	color:#dc9495
+}
+#search_listings .hotel div.rates .key {
+	vertical-align:top;
+	color:#f8951d
+}
+#search_listings .hotel div.rates .compact {
+	background-color:#f6f6f6
+}
+#search_listings .hotel div.rates .compact h6 {
+	background-color:#ebebeb;
+	font-size:11px;
+	font-weight:normal;
+	position:relative;
+	padding:5px 0 4px 10px
+}
+#search_listings .hotel div.rates .compact h6 a {
+	font-weight:normal;
+	text-decoration:none
+}
+#search_listings .hotel div.rates .compact h6 strong {
+	color:#626262
+}
+#search_listings .hotel div.rates .compact h6 a.all_prices.tiny {
+	text-indent:-9999px;
+	background:url(http://www.wego.com/hotels/images/icons/plusminus.gif) no-repeat 0 0;
+	height:14px;
+	position:absolute;
+	width:14px;
+	left:4px;
+	top:4px
+}
+#search_listings .hotel div.rates .compact h6 a:hover.all_prices.tiny {
+	background:url(http://www.wego.com/hotels/images/icons/plusminus.gif) no-repeat 0 -18px
+}
+#search_listings .hotel div.rates .compact h6 .available_at {
+	margin-top:1px;
+	float:left
+}
+#search_listings .hotel div.rates .compact ol {
+	float:left;
+	font-size:12px;
+	margin:4px 0 0;
+	padding:0 0 0 6px;
+	width:180px
+}
+#search_listings .hotel div.rates .compact ol li {
+	text-decoration:none;
+	float:left;
+	display:block;
+	height:17px;
+	padding:2px 0;
+	width:180px
+}
+#search_listings .hotel div.rates .compact ol li:hover {
+	text-decoration:underline
+}
+#search_listings .hotel div.rates .compact ol li:hover a.provider_id span {
+	text-decoration:underline
+}
+#search_listings .hotel div.rates .compact ol li:hover span.key {
+	text-decoration:none !important
+}
+#search_listings .hotel div.rates .compact ol li.website {
+	position:relative
+}
+#search_listings .hotel div.rates .compact ol li.website img {
+	display:none;
+	width:38px;
+	position:absolute;
+	top:2px;
+	left:-39px
+}
+#search_listings .hotel div.rates .compact ol li.website a.provider_id span {
+	display:inline-block;
+	padding:0 1px;
+	border:1px solid #fbaf5d;
+	background-color:#fdf6a7
+}
+#search_listings .hotel div.rates .compact ol li.website:hover img {
+	display:block
+}
+#search_listings .hotel div.rates .compact ol li a {
+	display:block;
+	float:left
+}
+#search_listings .hotel div.rates .compact ol li a.provider_id {
+	color:#626262;
+	width:120px;
+	background:url(http://www.wego.com/hotels/images/ellipsis.gif) repeat-x 0 5px
+}
+#search_listings .hotel div.rates .compact ol li a.provider_id span {
+	display:inline-block;
+	background-color:#f6f6f6
+}
+#search_listings .hotel div.rates .compact ol li a.price {
+	width:58px
+}
+#search_listings .hotel div.rates .compact ol li a.price .key {
+	font-size:85%
+}
+#search_listings .hotel div.rates .compact.long_curr ol {
+	width:257px
+}
+#search_listings .hotel div.rates .compact.long_curr ol li {
+	width:250px;
+	padding:2px 6px 2px 16px
+}
+#search_listings .hotel div.rates .compact.long_curr ol li.website {
+	position:relative
+}
+#search_listings .hotel div.rates .compact.long_curr ol li.website img {
+	left:-26px
+}
+#search_listings .hotel div.rates .compact.long_curr ol li a.provider_id {
+	width:137px
+}
+#search_listings .hotel div.rates .compact.long_curr ol li a.price {
+	width:110px;
+	margin-left:3px
+}
+#search_listings .hotel div.rates .full {
+	display:block;
+	background-color:#eeeeee;
+	border-top:1px solid #dddddd
+}
+#search_listings .hotel div.rates .full a.compact_prices.tiny {
+	display:block;
+	float:left;
+	width:16px;
+	height:16px;
+	margin-right:3px;
+	background:url(http://www.wego.com/hotels/images/icons/plus-minus.gif) no-repeat 0 -16px;
+	outline:0;
+	text-indent:-9999px
+}
+#search_listings .hotel div.rates .full p.legend {
+	float:right
+}
+#search_listings .hotel div.rates .full table {
+	width:100%
+}
+#search_listings .hotel div.rates .full table col.provider {
+	width:90px
+}
+#search_listings .hotel div.rates .full table col.description {
+	width:260px
+}
+#search_listings .hotel div.rates .full table col.availability {
+	width:80px
+}
+#search_listings .hotel div.rates .full table col.rate {
+	width:auto
+}
+#search_listings .hotel div.rates .full table col.book {
+	width:50px
+}
+#search_listings .hotel div.rates .full table tr th {
+	font-size:11px;
+	font-weight:normal;
+	padding:5px
+}
+#search_listings .hotel div.rates .full table tr .offered_by {
+	display:inline;
+	position:relative;
+	padding-left:17px
+}
+#search_listings .hotel div.rates .full table tr .offered_by a.compact_prices {
+	text-decoration:none
+}
+#search_listings .hotel div.rates .full table tr .offered_by a.compact_prices.tiny {
+	background:url(http://www.wego.com/hotels/images/icons/plusminus.gif) no-repeat 0 -36px;
+	height:14px;
+	position:absolute;
+	left:-1px;
+	top:-1px;
+	width:14px
+}
+#search_listings .hotel div.rates .full table tr .offered_by a:hover.compact_prices.tiny {
+	background:url(http://www.wego.com/hotels/images/icons/plusminus.gif) no-repeat 0 -55px
+}
+#search_listings .hotel div.rates .full table tbody tr:hover td {
+	background-color:#fdf6a8
+}
+#search_listings .hotel div.rates .full table td {
+	padding:4px 4px 4px 8px
+}
+#search_listings .hotel div.rates .full table .odd {
+	background-color:#fff
+}
+#search_listings .hotel div.rates .full table .even {
+	background-color:#e3f1ff
+}
+#search_listings .hotel div.rates .full table .provider img {
+	border:1px solid #d3d3d3
+}
+#search_listings .hotel div.rates .full table .description {
+	font-size:85%
+}
+#search_listings .hotel div.rates .full table .description span.original {
+	color:#999999;
+	padding:0 0 0 8px
+}
+#search_listings .hotel div.rates .full table a.book_small {
+	display:block;
+	width:33px;
+	height:18px;
+	padding:4px 0 0 6px;
+	background:url(http://www.wego.com/hotels/images/go_btn_bg.png) no-repeat right 50%;
+	color:#333;
+	font-weight:bold;
+	text-decoration:none
+}
+#search_listings .hotel div.rates .full table a.book_small:hover {
+	color:#426000
+}
+#search_listings .hotel div.rates .full table a.price strong {
+	text-decoration:underline;
+	font-weight:bold
+}
+#search_listings .hotel div.rates .full table tfoot tr td {
+	font-size:11px;
+	font-weight:normal;
+	padding:5px
+}
+#search_listings .hotel div.rates a.price {
+	color:#666;
+	text-decoration:none
+}
+#search_listings .hotel div.rates a.price strong {
+	color:#388a0a;
+	font-weight:normal
+}
+#search_listings .hotel div.rates a.price strong sup {
+	font-size:9px;
+	font-weight:normal;
+	vertical-align:text-top
+}
+#search_listings .hotel div.rates a.all_prices {
+	font-weight:bold
+}
+#search_listings .hotel .rajakamar_rates {
+	text-align:center;
+	padding-top:5px
+}
+#search_listings .hotel .rajakamar_rates div.rajakamar_rate_item {
+	padding-bottom:10px;
+	padding-left:10px;
+	width:90px;
+	float:left;
+	text-align:center;
+	margin-top:9px
+}
+#search_listings .hotel .rajakamar_rates div.rajakamar_rate_item span.star_text {
+	color:#0072BC;
+	text-decoration:none;
+	font-size:13px;
+	display:inline-block
+}
+#search_listings .hotel .rajakamar_rates div.rajakamar_rate_item span.rajakamar_star {
+	margin:0 0 0 0
+}
+#search_listings .hotel .rajakamar_rates div.rajakamar_rate_item span.price_text {
+	color:#959595;
+	font-weight:normal;
+	font-size:11px;
+	text-decoration:none;
+	vertical-align:middle
+}
+#search_listings .hotel .rajakamar_rates div.rajakamar_rate_item span.wego-rate span.wego-currency {
+	font-weight:bold;
+	vertical-align:top;
+	font-size:110%
+}
+#search_listings .hotel .rajakamar_rates div.rajakamar_rate_item span.wego-rate span {
+	font-size:12px
+}
+#search_listings .hotel .rajakamar_rates div.rajakamar_rate_item span.wego-rate strong {
+	color:#388a0a;
+	font-size:140%
+}
+#search_listings .hotel .rajakamar_rates div.rajakamar_rate_item span.wego-rate strong sup {
+	font-size:9px;
+	font-weight:normal
+}
+#search_listings .hotel .thumbnail {
+	float:left;
+	height:100px;
+	width:100px;
+	margin:6px
+}
+#search_listings .hotel div.description {
+	color:#626262;
+	font-size:11px;
+	padding:0;
+	clear:both
+}
+#search_listings .hotel .best_rate {
+	float:right;
+	text-align:right;
+	width:100px;
+	padding:6px 6px 0 0;
+	background:#fff url(http://www.wego.com/hotels/images/sprites/sprite_historical_bg.gif) repeat-x 0 -482px
+}
+#search_listings .hotel .best_rate:hover a.provider_id {
+	text-decoration:underline
+}
+#search_listings .hotel .best_rate h6 a {
+	color:#f8951d;
+	text-decoration:none
+}
+#search_listings .hotel .best_rate a.provider_id {
+	text-decoration:none;
+	font-size:92.5%
+}
+#search_listings .hotel .best_rate .book_big {
+	background-color:#ffa513;
+	background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #feb123), color-stop(100%, #ff9a02));
+	background-image:-webkit-linear-gradient(top, #feb123, #ff9a02);
+	background-image:-moz-linear-gradient(top, #feb123, #ff9a02);
+	background-image:-ms-linear-gradient(top, #feb123, #ff9a02);
+	background-image:-o-linear-gradient(top, #feb123, #ff9a02);
+	background-image:linear-gradient(top, #feb123, #ff9a02);
+	-webkit-box-shadow:inset 1px 1px rgba(255, 255, 255, 0.3), 1px 1px 2px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow:inset 1px 1px rgba(255, 255, 255, 0.3), 1px 1px 2px rgba(0, 0, 0, 0.3);
+	box-shadow:inset 1px 1px rgba(255, 255, 255, 0.3), 1px 1px 2px rgba(0, 0, 0, 0.3);
+	-webkit-transition-property:color, border-color;
+	-webkit-transition-duration:0.3s;
+	-moz-transition-property:color, border-color;
+	-moz-transition-duration:0.3s;
+	transition-property:color, border-color;
+	transition-duration:0.3s;
+	border-radius:4px;
+	border:1px solid #dd8605;
+	display:-moz-inline-stack;
+	display:inline-block;
+	float:right;
+	width:auto;
+	height:22px;
+	line-height:22px;
+	margin:22px 0 5px;
+	padding:0 8px;
+	color:white;
+	font-size:12px;
+	font-weight:bold;
+	text-align:center;
+	text-decoration:none;
+	text-shadow:0 1px #888888;
+	zoom:1
+}
+#search_listings .hotel .best_rate .book_big:hover {
+	border-color:#9b5e03
+}
+#search_listings .hotel .best_rate .book_big:active {
+	background-color:#ff9a02;
+	background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff9a02), color-stop(100%, #feb123));
+	background-image:-webkit-linear-gradient(top, #ff9a02, #feb123);
+	background-image:-moz-linear-gradient(top, #ff9a02, #feb123);
+	background-image:-ms-linear-gradient(top, #ff9a02, #feb123);
+	background-image:-o-linear-gradient(top, #ff9a02, #feb123);
+	background-image:linear-gradient(top, #ff9a02, #feb123)
+}
+#search_listings .hotel .best_rate .price {
+	color:#666;
+	font-weight:bold;
+	text-decoration:none
+}
+#search_listings .hotel .best_rate .price span {
+	vertical-align:top;
+	font-size:16px
+}
+#search_listings .hotel .best_rate .price span.key {
+	color:#f8951d;
+	font-size:12px
+}
+#search_listings .hotel .best_rate .price strong {
+	color:#388a0a;
+	font-size:174%;
+	line-height:21px
+}
+#search_listings .hotel .best_rate .price strong sup {
+	font-size:14px;
+	font-weight:normal;
+	vertical-align:text-top
+}
+#search_listings .hotel .best_rate .price strong.long_curr {
+	letter-spacing:-2px
+}
+#search_listings .hotel .best_rate .price:hover {
+	text-decoration:none
+}
+#search_listings .hotel .best_rate .price span.rajakamar_price {
+	color:#959595;
+	font-weight:normal;
+	font-size:12px;
+	text-decoration:none;
+	vertical-align:middle
+}
+#search_listings .suppress_satisfaction div.middle_info .vcard {
+	margin:0
+}
+#search_listings .unavailable {
+	background-color:#eee
+}
+#search_listings .unavailable .offer {
+	height:112px !important
+}
+#search_listings .unavailable .warning {
+	padding:0;
+	background:inherit;
+	border:0
+}
+#search_listings .clicked {
+	width:558px;
+	border:1px solid #359302
+}
+#search_listings .searched {
+	border:1px solid #f7941d;
+	display:inline-block;
+	margin:0 0 10px;
+	position:relative
+}
+#search_listings .searched div.hotel {
+	margin:0;
+	border:0
+}
+#search_listings .searched .wego_selected_hotel {
+	position:absolute;
+	top:10px;
+	left:-3px;
+	color:white;
+	background-color:#f7941d;
+	padding:3px 10px;
+	font-size:10px;
+	text-transform:uppercase;
+	line-height:1.4em;
+	box-shadow:0 1px 1px rgba(0, 0, 0, 0.5);
+	text-shadow:0 -1px rgba(0, 0, 0, 0.3);
+	pointer-events:none
+}
+#search_listings .searched img.ribbon {
+	position:absolute;
+	top:0;
+	left:0
+}
+#search_listings .searched div.rates .compact h6 {
+	background-color:#fde3c8
+}
+#search_listings p.searched_hotel_blurb {
+	background:#fcfac2 url(http://www.wego.com/hotels/images/icons/tick.gif) no-repeat 8px 50%;
+	font-weight:bold;
+	padding:0.5em 0.5em 0.5em 28px
+}
+#search_listings p.searched_hotel_footer {
+	padding:0.5em 0.5em 1em 0.5em;
+	font-weight:bold
+}
+#search_listings .details_links {
+	font-size:11px
+}
+#search_listings .details_links a {
+	text-decoration:none
+}
+#search_listings .details_links li {
+	background:url(http://www.wego.com/hotels/images/sprites/sprite_historical.gif) no-repeat 0 -549px;
+	float:left;
+	padding:0 5px 0 6px
+}
+#search_listings .details_links li.wg_firstchild {
+	background:none;
+	padding-left:0
+}
+#search_listings .hotel_name a {
+	color:#333333;
+	font-weight:bold;
+	float:left;
+	margin-right:10px;
+	text-decoration:none
+}
+#search_listings .offer_cutout_box {
+	background:white;
+	margin:15px 0 0;
+	border:4px solid #e0f5fd;
+	padding:0;
+	height:27px;
+	font-size:11px;
+	position:relative;
+	margin:3px
+}
+#search_listings .offer_cutout_box .offer_cutout_box_inner {
+	border:1px solid #bbd5a1;
+	height:20px;
+	padding:4px 1px 1px 0
+}
+#search_listings .offer_cutout_box .scissor {
+	position:absolute;
+	top:-9px;
+	left:-2px
+}
+#search_listings .offer_cutout_box .label {
+	font-weight:bold;
+	padding:6px 15px 6px 20px;
+	color:white;
+	background:url(http://www.wego.com/hotels/images/icons/offers/gradient-green-bg.gif) no-repeat right top;
+	line-height:17px
+}
+#search_listings .offer_cutout_box .title {
+	font-weight:bold;
+	text-decoration:none;
+	padding:4px
+}
+#search_listings .offer_cutout_box .more {
+	position:absolute;
+	top:4px;
+	right:4px
+}
+#search_listings .recent_review {
+	background:url(http://www.wego.com/hotels/images/icons/reviews/quote-left.gif) no-repeat left top;
+	color:#626262;
+	font-size:11px;
+	padding-left:18px
+}
+#search_listings .recent_review span {
+	background:url(http://www.wego.com/hotels/images/icons/reviews/quote-right.gif) no-repeat right top;
+	padding-right:18px
+}
+#search_listings .hotel_offer div.details {
+	margin:0;
+	position:relative
+}
+#search_listings .hotel_offer div.paid_details {
+	margin:0 0 3px
+}
+#search_listings .hotel_offer div.paid_details .phone {
+	margin-left:-3px;
+	padding-left:15px;
+	background:url(http://www.wego.com/hotels/images/icons/offers/phoneicon.gif) no-repeat 1px 1px
+}
+#search_listings .hotel_offer div.offer {
+	background:white;
+	border-left:#5f9f08 dotted 2px;
+	font-size:12px;
+	position:absolute;
+	top:0px;
+	right:0px;
+	height:138px;
+	text-align:left;
+	width:180px
+}
+#search_listings .hotel_offer div.offer .offer_inner {
+	border:8px solid #e0f5fd;
+	height:122px
+}
+#search_listings .hotel_offer div.offer img {
+	left:-12px;
+	position:absolute;
+	top:0px
+}
+#search_listings .hotel_offer div.offer p {
+	margin:0 6px 0 12px
+}
+#search_listings .hotel_offer div.offer .more_details {
+	margin-top:10px
+}
+#search_listings .hotel_offer div.offer .more_details a {
+	text-decoration:none
+}
+#search_listings .hotel_offer div.offer .title {
+	margin-top:6px;
+	color:#5f9f08;
+	font-size:14px;
+	font-weight:bold
+}
+#search_listings .hotel_offer div.offer .content {
+	color:#333333
+}
+#search_listings .hotel_offer div.left_info {
+	float:left;
+	width:112px
+}
+#search_listings .hotel_offer div.left_info .photo {
+	margin-bottom:6px
+}
+#search_listings .hotel_offer div.left_info .all_rates {
+	background:#e1e1e1;
+	color:#0072bc;
+	font-size:11px;
+	margin:6px;
+	padding:3px 0;
+	text-align:center
+}
+#search_listings .hotel_offer div.left_info .all_rates a {
+	text-decoration:none
+}
+#search_listings .hotel_offer div.middle_info {
+	width:250px
+}
+#search_listings .hotel_offer div.middle_info .ratings {
+	width:250px
+}
+#search_listings .hotel_offer div.middle_info .left_info {
+	float:left;
+	width:112px
+}
+#search_listings .hotel_offer div.middle_info .left_info .photo {
+	margin-bottom:6px
+}
+#search_listings .hotel_offer div.middle_info .left_info .all_rates {
+	background:#e1e1e1;
+	color:#0072bc;
+	font-size:11px;
+	margin:6px;
+	padding:3px 0;
+	text-align:center
+}
+#search_listings .hotel_offer div.middle_info .left_info .all_rates a {
+	text-decoration:none
+}
+#search_listings .hotel_offer div.middle_info .best_rate {
+	background:none;
+	bottom:5px;
+	color:#666666;
+	font-size:11px;
+	float:none;
+	padding:0;
+	position:absolute;
+	text-align:left;
+	width:250px
+}
+#search_listings .hotel_offer div.middle_info .best_rate a {
+	display:inline !important
+}
+#search_listings .hotel_offer div.middle_info .best_rate strong {
+	color:#388a0a;
+	font-size:18px;
+	font-weight:bold
+}
+#search_listings .hotel_offer div.middle_info .best_rate span {
+	font-size:12px;
+	font-weight:bold;
+	vertical-align:top
+}
+#search_listings .hotel_offer div.middle_info .best_rate span.from {
+	font-size:11px;
+	font-weight:normal
+}
+#search_listings .hotel_offer div.middle_info .hotel_name {
+	margin:0 0 3px
+}
+.wego-rtl #search_listings .hotel .thumbnail {
+	float:right
+}
+.wego-rtl #search_listings .hotel .no_bg {
+	left:0
+}
+.wego-rtl #search_listings .hotel .best_rate {
+	float:left;
+	padding:6px 0 0 6px;
+	text-align:left
+}
+.wego-rtl #search_listings .hotel .best_rate .book_big {
+	float:left
+}
+.wego-rtl #search_listings .hotel div.middle_info {
+	float:right
+}
+.wego-rtl #search_listings .hotel div.middle_info .star {
+	margin:2px 3px 0 0
+}
+.wego-rtl #search_listings .hotel div.rates .compact ol {
+	float:right;
+	padding:0 6px 0 0
+}
+.wego-rtl #search_listings .hotel div.rates .compact ol li a {
+	float:right
+}
+.wego-rtl #search_listings .searched .wego_selected_hotel {
+	right:-3px;
+	left:auto
+}
+.wego-rtl #search_listings p.searched_hotel_blurb {
+	background-position:99% 50%;
+	padding:0.5em 28px 0.5em 0.5em
+}
+.wego-rtl #search_listings .details_links li {
+	float:right;
+	padding:0 6px 0 5px;
+	background-position:34px -549px
+}
+.wego-rtl #search_listings .details_links li.wg_firstchild {
+	padding-left:5px;
+	padding-right:0
+}
+.wego-rtl #search_listings .hotel_name a {
+	float:right;
+	margin-left:10px;
+	margin-right:0
+}
+.wego-rtl #search_listings .hotel_offer div.offer {
+	right:auto;
+	left:0;
+	border-right:2px dotted #5f9f08;
+	border-left:0;
+	text-align:right
+}
+.wego-rtl #search_listings .hotel_offer div.offer img {
+	left:auto;
+	right:-12px
+}
+.wego-rtl #search_listings .hotel_offer div.left_info {
+	float:right
+}
+.wego-rtl #search_listings .hotel_offer div.middle_info {
+	float:right
+}
+.wego-rtl #search_listings .hotel_offer div.middle_info .best_rate {
+	text-align:right
+}
+#main_tabs {
+	background:url(http://www.wego.com/hotels/images/tabs_border.gif) repeat-x 0 0;
+	font-size:13px;
+	margin:0
+}
+#main_tabs li {
+	float:left;
+	width:104px;
+	height:31px;
+	background:url(http://www.wego.com/hotels/images/sprites/sprite_tabs.gif) no-repeat 0 0
+}
+#main_tabs li a {
+	display:block;
+	height:31px;
+	color:#359302;
+	font-weight:bold;
+	outline:0;
+	text-align:center;
+	text-decoration:none;
+	text-shadow:0 1px 0 white
+}
+#main_tabs li a span {
+	display:block;
+	padding:5px 0 0
+}
+#main_tabs li a span.offers {
+	background:url(http://www.wego.com/hotels/images/icons/offers/scissors-tab-green.png) no-repeat 15px 3px;
+	text-align:right;
+	padding-right:25px
+}
+#main_tabs li.selected {
+	background-position:0 -31px
+}
+#main_tabs li.selected a {
+	background-position:100% -150px;
+	color:white;
+	cursor:text;
+	text-shadow:0 1px 0 rgba(0, 0, 0, 0.3)
+}
+#main_tabs li.selected a span.offers {
+	background:url(http://www.wego.com/hotels/images/icons/offers/scissors-tab-white.png) no-repeat 11px 2px;
+	text-align:right;
+	padding-right:25px
+}
+.wego-rtl #main_tabs li {
+	float:right
+}
+div.click_through_info {
+	padding:0 0.5em
+}
+div.click_through_info h3 {
+	font-size:108%
+}
+div.click_through_info h3 strong {
+	color:#388a0a
+}
+div.click_through_info ul {
+	margin:1em
+}
+div.click_through_info ul h6 {
+	float:left;
+	width:100px;
+	font-weight:normal
+}
+div.click_through_info ul .price {
+	color:#666
+}
+div.click_through_info ul .price strong {
+	color:#388a0a
+}
+div.click_through_info ul .price .key {
+	color:#f8951d
+}
+div.click_through_info div.share ul {
+	margin-top:0
+}
+div.click_through_info div.share ul li {
+	float:left
+}
+div.click_through_info div.share ul li a {
+	display:block;
+	height:20px;
+	width:180px;
+	padding:4px 4px 0 24px
+}
+div.click_through_info div.share ul li a.gcal {
+	background:url(http://www.wego.com/hotels/images/icons/gcal.gif) no-repeat 0 50%
+}
+div.click_through_info div.share ul li a.ycal {
+	background:url(http://www.wego.com/hotels/images/icons/ycal.gif) no-repeat 0 50%
+}
+div.click_through_info div.share ul li a.ical {
+	background:url(http://www.wego.com/hotels/images/icons/ical.gif) no-repeat 0 50%
+}
+div.click_through_info div.share ul li a.facebook {
+	background:url(http://www.wego.com/hotels/images/icons/facebook.gif) no-repeat 0 50%
+}
+div.click_through_info div.share ul li a.mscal {
+	background:url(http://www.wego.com/hotels/images/icons/mscal.gif) no-repeat 0 50%
+}
+div.click_through_info div.share ul li a.email {
+	background:url(http://www.wego.com/hotels/images/icons/email.gif) no-repeat 0 50%
+}
+#change_search {
+	background-color:#aaaaaa;
+	background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #feb123), color-stop(100%, #aaa));
+	background-image:-webkit-linear-gradient(top, #999, #aaa);
+	background-image:-moz-linear-gradient(top, #999, #aaa);
+	background-image:-ms-linear-gradient(top, #999, #aaa);
+	background-image:-o-linear-gradient(top, #999, #aaa);
+	background-image:linear-gradient(top, #999, #aaa);
+	margin:0 0 8px
+}
+#change_search h6 {
+	color:white;
+	cursor:pointer;
+	padding:5px 8px
+}
+#change_search div.collapsible {
+	display:none
+}
+#change_search form {
+	background-color:#f1f1f1;
+	padding:6px
+}
+#change_search form fieldset {
+	border:0;
+	margin:0;
+	padding:0
+}
+#change_search form div.group {
+	margin:8px 0 0
+}
+#change_search form div.group div {
+	float:left;
+	width:96px
+}
+#change_search form div.dates div.first {
+	width:94px
+}
+#change_search form div.dates div.last {
+	padding:0 0 0 6px;
+	width:91px
+}
+#change_search form div.dropdowns {
+	float:left
+}
+#change_search form div.dropdowns div.first {
+	width:52px
+}
+#change_search form div.dropdowns div.last {
+	padding:0 0 0 8px;
+	width:52px
+}
+#change_search form label {
+	display:block;
+	font-size:12px;
+	font-weight:normal
+}
+#change_search form input {
+	border:1px solid #999999;
+	padding:2px 3px;
+	width:187px
+}
+#change_search form input.date {
+	background:#fff url(http://www.wego.com/hotels/images/wego/home/wg_cal.gif) no-repeat right 50%;
+	width:85px
+}
+#change_search form select {
+	display:block;
+	margin:3px 0 0
+}
+#change_search form button {
+	background-color:#ffa513;
+	background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #feb123), color-stop(100%, #ff9a02));
+	background-image:-webkit-linear-gradient(top, #feb123, #ff9a02);
+	background-image:-moz-linear-gradient(top, #feb123, #ff9a02);
+	background-image:-ms-linear-gradient(top, #feb123, #ff9a02);
+	background-image:-o-linear-gradient(top, #feb123, #ff9a02);
+	background-image:linear-gradient(top, #feb123, #ff9a02);
+	-webkit-box-shadow:inset 1px 1px rgba(255, 255, 255, 0.3), 1px 1px 2px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow:inset 1px 1px rgba(255, 255, 255, 0.3), 1px 1px 2px rgba(0, 0, 0, 0.3);
+	box-shadow:inset 1px 1px rgba(255, 255, 255, 0.3), 1px 1px 2px rgba(0, 0, 0, 0.3);
+	-webkit-transition-property:color, border-color;
+	-webkit-transition-duration:0.3s;
+	-moz-transition-property:color, border-color;
+	-moz-transition-duration:0.3s;
+	transition-property:color, border-color;
+	transition-duration:0.3s;
+	border-radius:4px;
+	border:1px solid #dd8605;
+	display:-moz-inline-stack;
+	display:inline-block;
+	color:white;
+	cursor:pointer;
+	float:right;
+	font-size:12px;
+	font-weight:bold;
+	height:21px;
+	margin:24px 0 0;
+	width:auto
+}
+.wego-rtl #change_search form input.date {
+	background-position:3px 50%
+}
+.wego-rtl #change_search form div.group div {
+	float:right
+}
+.wego-rtl #change_search form div.dates div.last {
+	padding:0 6px 0 0
+}
+.wego-rtl #change_search form div.dropdowns {
+	float:right
+}
+.wego-rtl #change_search form button {
+	float:left
+}
+.wego-rtl #change_search.collapsed h6 {
+	background-position:9px -11px
+}
+.wego-rtl #change_search.expanded h6 {
+	background-position:9px 9px
+}
+#change_search.expanded h6 {
+	background:url(http://www.wego.com/hotels/images/sprites/sprite_whitearrow.gif) no-repeat 187px 9px
+}
+#change_search.collapsed h6 {
+	background:url(http://www.wego.com/hotels/images/sprites/sprite_whitearrow.gif) no-repeat 187px -11px
+}
+#wg_left_inner {
+	background:url(http://www.wego.com/hotels/images/sprites/sprite_historical_bg.gif) repeat-x 0 -269px;
+	margin-bottom:0.5em
+}
+#wg_left_inner h6 {
+	padding:5px 8px;
+	background-color:#359302;
+	background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #feb123), color-stop(100%, #73c940));
+	background-image:-webkit-linear-gradient(top, #71c940, #73c940);
+	background-image:-moz-linear-gradient(top, #71c940, #73c940);
+	background-image:-ms-linear-gradient(top, #71c940, #73c940);
+	background-image:-o-linear-gradient(top, #71c940, #73c940);
+	background-image:linear-gradient(top, #71c940, #73c940);
+	border:1px solid #73c940;
+	color:white;
+	margin:0 0 4px
+}
+#wg_left_inner h6 span.show_all {
+	font-weight:normal
+}
+#wg_left_inner h6 a {
+	color:white
+}
+#filters {
+	background-color:#f1f1f1;
+	border:1px solid #d3d3d3;
+	text-shadow:0 1px 0 white
+}
+#filters p.loading {
+	display:none;
+	padding:20px 20px 20px 34px;
+	background:url(http://www.wego.com/hotels/images/wheel_throbber.gif) 20px 14px no-repeat;
+	color:#626262;
+	font-size:138.5%;
+	font-weight:bold;
+	text-align:center
+}
+#filters form {
+	width:auto;
+	margin:0;
+	padding:0;
+	border:0
+}
+#filters fieldset {
+	width:auto;
+	margin:0;
+	padding:2px 2px 10px;
+	clear:none;
+	border:0;
+	border-bottom:1px dotted #d3d3d3
+}
+#filters fieldset#wg_text_filter {
+	margin-top:0
+}
+#filters fieldset#wg_text_filter label {
+	background-color:#e6e6e6;
+	color:#3c8430;
+	display:block;
+	font-size:13px;
+	font-weight:bold;
+	height:21px;
+	line-height:20px;
+	margin:0 0 8px;
+	padding:0 0 0 8px
+}
+#filters fieldset#wg_text_filter em {
+	font-style:normal
+}
+#filters fieldset#wg_text_filter input {
+	border:1px solid #999999
+}
+#filters label {
+	font-size:85%;
+	font-weight:normal
+}
+#filters label * {
+	vertical-align:bottom
+}
+#filters select {
+	color:#333333;
+	font-size:11px;
+	margin:0 5px;
+	width:190px
+}
+#filters h5 {
+	background-color:#e6e6e6;
+	color:#626262;
+	font-size:13px;
+	height:21px;
+	line-height:20px;
+	margin:0 0 8px;
+	padding:0 0 0 8px
+}
+#filters input#text_filter {
+	margin:3px;
+	width:184px
+}
+#filters fieldset#wg_stars_filter label, #filters fieldset#wg_amenity_filter label, #filters fieldset#wg_property_types_filter label, #filters fieldset#wg_brands_and_chains_filter label, #filters fieldset#wg_provider_filter label, #filters fieldset#wg_districts_filter label {
+	display:block;
+	clear:both;
+	margin:0 8px;
+	font-weight:normal
+}
+#filters fieldset#wg_districts_filter label.extra {
+	display:none
+}
+#filters fieldset#wg_stars_filter input, #filters fieldset#wg_amenity_filter input, #filters fieldset input, #filters fieldset#wg_brands_and_chains_filter input, #filters fieldset#wg_provider_filter input, #filters fieldset#wg_districts_filter input {
+	border:none
+}
+#filters fieldset#wg_stars_filter .star, #filters fieldset#wg_amenity_filter .star, #filters fieldset .star, #filters fieldset#wg_brands_and_chains_filter .star, #filters fieldset#wg_provider_filter .star, #filters fieldset#wg_districts_filter .star {
+	float:left;
+	margin:6px 0 0 3px;
+	overflow:hidden
+}
+#filters fieldset#wg_stars_filter .all, #filters fieldset#wg_amenity_filter .all, #filters fieldset .all, #filters fieldset#wg_brands_and_chains_filter .all, #filters fieldset#wg_provider_filter .all, #filters fieldset#wg_districts_filter .all {
+	text-indent:0
+}
+#filters fieldset#wg_districts_filter .all_districts {
+	margin-bottom:0.5em
+}
+#filters fieldset#wg_districts_filter .all_districts.expanded {
+	height:90px;
+	overflow-y:scroll;
+	border:1px inset
+}
+#filters fieldset#wg_districts_filter .all_districts label input {
+	float:left
+}
+#filters fieldset#wg_districts_filter .all_districts label span {
+	display:block;
+	padding:5px 0 0 16px
+}
+#filters fieldset#wg_districts_filter a.show_all_districts {
+	display:none;
+	font-size:12px;
+	line-height:15px;
+	outline:0
+}
+#filters fieldset#wg_stars_filter label {
+	clear:both;
+	height:20px;
+	border-bottom:1px solid #f0f0f0
+}
+#filters fieldset#wg_stars_filter label.all {
+	border:0
+}
+#filters fieldset#wg_stars_filter label.all span.star {
+	background-image:none;
+	height:13px
+}
+#filters fieldset#wg_stars_filter input {
+	float:left
+}
+#filters fieldset#wg_stars_filter .min_rate_per_star {
+	float:right;
+	margin-top:4px;
+	color:#666
+}
+#filters fieldset#wg_stars_filter .min_rate_per_star em {
+	color:#388a0a;
+	font-style:normal
+}
+#filters fieldset#wg_availability_filter label {
+	margin:0 0 0 8px
+}
+#filters fieldset#wg_availability_filter input {
+	border:0
+}
+#filters fieldset#wg_property_types_filter label input, #filters fieldset#wg_amenity_filter label input {
+	float:left
+}
+#filters fieldset#wg_property_types_filter label span, #filters fieldset#wg_amenity_filter label span {
+	display:block;
+	padding:5px 0 0 16px
+}
+#filters fieldset#wg_brands_and_chains_filter .brands_and_chains {
+	margin-bottom:0.5em
+}
+#filters fieldset#wg_brands_and_chains_filter .brands_and_chains label input {
+	float:left
+}
+#filters fieldset#wg_brands_and_chains_filter .brands_and_chains label span {
+	display:block;
+	padding:5px 0 0 16px
+}
+#filters fieldset#wg_brands_and_chains_filter div.expanded {
+	height:150px;
+	overflow-y:scroll;
+	border:1px inset
+}
+#filters fieldset#wg_brands_and_chains_filter a.show_all_brands {
+	display:none;
+	font-size:12px;
+	line-height:15px;
+	outline:0
+}
+#filters fieldset#wg_brands_and_chains_filter a.collapsed {
+	padding-left:18px;
+	background:url(http://www.wego.com/hotels/images/sprites/sprite_historical.gif) no-repeat 0 -161px
+}
+#filters fieldset#wg_brands_and_chains_filter a.expanded {
+	padding-left:18px;
+	background:url(http://www.wego.com/hotels/images/sprites/sprite_historical.gif) no-repeat 0 -177px
+}
+#filters #wg_satisfaction_filter label {
+	background-color:#e6e6e6;
+	color:#3c8430;
+	display:block;
+	font-size:13px;
+	font-weight:bold;
+	height:21px;
+	line-height:20px;
+	margin:0 0 8px;
+	padding:0 0 0 8px
+}
+#filters #wg_display_currency_filter p {
+	text-align:center;
+	font-size:85%;
+	color:#999999
+}
+#filters #wg_display_currency_filter #price_slider_values {
+	margin-bottom:10px;
+	color:#359302
+}
+#filters #wg_satisfaction_filter .heart {
+	margin:0 4px 0 0
+}
+#filters #wg_satisfaction_filter p {
+	color:#626262;
+	font-size:85%
+}
+#filters #wg_satisfaction_filter p .heart {
+	margin:0 4px 0 0
+}
+#filters #wg_satisfaction_filter .slider_value {
+	color:#f8951d;
+	font-size:13px;
+	font-weight:bold
+}
+#filters .collapsed {
+	padding-bottom:2px
+}
+#filters .collapsed h5 {
+	margin:0;
+	padding-left:18px;
+	background:#e6e6e6 url(http://www.wego.com/hotels/images/sprites/sprite_historical.gif) no-repeat 4px -254px;
+	cursor:pointer;
+	text-decoration:underline
+}
+#filters .expanded h5 {
+	padding-left:18px;
+	background:#e6e6e6 url(http://www.wego.com/hotels/images/sprites/sprite_historical.gif) no-repeat 4px -233px;
+	cursor:pointer
+}
+.wego-rtl #filters fieldset#wg_stars_filter input {
+	float:right
+}
+.wego-rtl #filters fieldset#wg_stars_filter .star, .wego-rtl #filters fieldset#wg_amenity_filter .star, .wego-rtl #filters fieldset .star, .wego-rtl #filters fieldset#wg_brands_and_chains_filter .star, .wego-rtl #filters fieldset#wg_provider_filter .star, .wego-rtl #filters fieldset#wg_districts_filter .star {
+	float:right;
+	margin:6px 3px 0 0
+}
+.wego-rtl #filters fieldset#wg_property_types_filter label input, .wego-rtl #filters fieldset#wg_amenity_filter label input, .wego-rtl #filters fieldset#wg_districts_filter .all_districts label input, .wego-rtl #filters fieldset#wg_brands_and_chains_filter .brands_and_chains label input {
+	float:right
+}
+.wego-rtl #filters .only_filter {
+	float:right;
+	margin:5px 5px 0 0
+}
+#disclaimer {
+	margin:3px 0 0;
+	padding:5px 8px
+}
+#disclaimer h6 {
+	background:transparent;
+	border:0;
+	color:#626262;
+	margin:0 0 8px;
+	padding:0
+}
+#disclaimer p {
+	margin:0 0 8px
+}
+#disclaimer strong {
+	text-transform:uppercase
+}
+#disclaimer .key {
+	color:#f8951d;
+	font-size:16px
+}
+#offers_in_location {
+	border:8px solid #e0f5fd;
+	margin-bottom:8px
+}
+#offers_in_location img {
+	float:left;
+	padding-left:4px
+}
+#offers_in_location ul {
+	border-left:1px solid #cccccc;
+	border-right:1px solid #cccccc;
+	border-bottom:1px solid #cccccc
+}
+#offers_in_location li {
+	font-size:11px;
+	border-bottom:1px dashed #80c35b;
+	margin:0 4px;
+	padding:4px 0 4px 4px
+}
+#offers_in_location li.feature {
+	border:8px solid white;
+	background-color:#eeeeee;
+	text-align:center
+}
+#offers_in_location li a {
+	text-decoration:none
+}
+#offers_in_location li p {
+	background:url(http://www.wego.com/hotels/images/icons/offers/scissors-tab-white.png) no-repeat scroll 0 0 transparent;
+	padding:5px 0 5px 30px
+}
+#offers_in_location .title {
+	background:url(http://www.wego.com/hotels/images/sprites/sprite_historical_bg.gif) repeat-x scroll 0 -25px transparent;
+	color:white;
+	font-weight:bold;
+	padding:5px 0 5px 5px
+}
+#offers_in_location .title a {
+	color:white;
+	text-decoration:none
+}
+#reset_filters {
+	font-size:11px;
+	padding:0 0 8px;
+	text-align:center
+}
+#tooltip.provider_message {
+	width:350px;
+	padding:4px;
+	background-color:#e1fdcd;
+	border-color:#359302;
+	font-size:11px
+}
+#progress_container {
+	display:none
+}
+#satisfaction_hint, #popularity_hint {
+	display:none
+}
+#text_ad_top {
+	padding-bottom:1em
+}
+#text_ad_top a {
+	background:#ffffdd none repeat scroll 0 0;
+	border:1px solid #cccccc;
+	color:#990000;
+	display:block;
+	font-weight:bold;
+	padding:0.5em 0 0.5em 0.5em;
+	text-align:center;
+	text-decoration:underline;
+	font-size:12px
+}
+#facebook_like_button {
+	margin:0 0 8px 0;
+	overflow:hidden;
+	width:215px
+}
+#facebook_like_button div {
+	background:url(http://www.wego.com/hotels/images/wego_facebook_icon.png) no-repeat 0 0;
+	height:32px;
+	padding:0 0 0 40px;
+	width:175px
+}
+#facebook_like_button div a {
+	color:#3b5998;
+	display:block;
+	font-family:"lucida grande", tahoma, verdana, arial, sans-serif;
+	font-size:11px;
+	padding:8px 0 0;
+	text-decoration:none
+}
+#facebook_like_button div a .name {
+	font-size:14px;
+	font-weight:bold;
+	line-height:15px
+}
+#facebook_like_button iframe {
+	margin:8px 0 0
+}
+.ui-tooltip-wego {
+	background-color:white;
+	border-radius:6px;
+	border:1px solid #cccccc;
+	border-bottom-color:#dddddd;
+	-webkit-box-shadow:0 3px 5px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow:0 3px 5px rgba(0, 0, 0, 0.4);
+	box-shadow:0 3px 5px rgba(0, 0, 0, 0.4);
+	max-width:600px
+}
+.ui-tooltip-wego .ui-tooltip-content {
+	border:0;
+	background-color:transparent;
+	padding:10px 5px;
+	text-align:center;
+	color:#666666
+}
+.ui-tooltip-wego .ui-tooltip-content img {
+	vertical-align:bottom
+}
+.ui-tooltip-wego div.hotel-rates {
+	display:block;
+	text-align:left
+}
+.ui-tooltip-wego div.hotel-rates a.wego-popover-close {
+	position:absolute;
+	top:7px;
+	right:6px
+}
+.ui-tooltip-wego div.hotel-rates h6 {
+	border-bottom:1px solid #d3d3d3;
+	font-size:14px;
+	font-weight:normal;
+	line-height:14px;
+	padding:0 25px 5px 5px
+}
+.ui-tooltip-wego div.hotel-rates h6 a {
+	font-size:12px;
+	text-decoration:none
+}
+.ui-tooltip-wego div.hotel-rates table {
+	margin:10px 0 0;
+	text-align:left;
+	width:100%
+}
+.ui-tooltip-wego div.hotel-rates table tbody tr {
+	height:34px
+}
+.ui-tooltip-wego div.hotel-rates table tbody tr:hover {
+	background-color:#dae9d7
+}
+.ui-tooltip-wego div.hotel-rates table tbody tr:hover a.partner img {
+	visibility:visible
+}
+.ui-tooltip-wego div.hotel-rates table tbody tr.highlight {
+	background-color:#feffc8
+}
+.ui-tooltip-wego div.hotel-rates table tbody tr.highlight:hover {
+	background-color:#dae9d7
+}
+.ui-tooltip-wego div.hotel-rates table tbody tr.visited {
+	background-color:#eeeeee
+}
+.ui-tooltip-wego div.hotel-rates table th {
+	font-size:12px;
+	font-weight:bold;
+	padding:5px;
+	text-align:left
+}
+.ui-tooltip-wego div.hotel-rates table th.cost, .ui-tooltip-wego div.hotel-rates table td.cost {
+	text-align:right
+}
+.ui-tooltip-wego div.hotel-rates table th span {
+	background-color:#f3f3f3;
+	border:1px solid #dcdcdc;
+	-webkit-transition:border-color 0.218s;
+	-moz-transition:border 0.218s;
+	-o-transition:border-color 0.218s;
+	transition:border-color 0.218s;
+	cursor:pointer;
+	display:block;
+	padding:4px 8px
+}
+.ui-tooltip-wego div.hotel-rates table th span:hover {
+	border-color:#999999;
+	-moz-box-shadow:0 2px 0 rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow:0 2px 5px rgba(0, 0, 0, 0.2);
+	box-shadow:0 1px 2px rgba(0, 0, 0, 0.15)
+}
+.ui-tooltip-wego div.hotel-rates table th .sort-by-provider.sorted {
+	background-color:#dddddd;
+	border-color:#999999
+}
+.ui-tooltip-wego div.hotel-rates table th .sort-by-price {
+	border-left:solid 1px rgba(255, 255, 255, 0)
+}
+.ui-tooltip-wego div.hotel-rates table th .sort-by-price.sorted {
+	background-color:#dddddd;
+	border-color:#999999
+}
+.ui-tooltip-wego div.hotel-rates table .wego-select {
+	background-color:#ffa513;
+	background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #feb123), color-stop(100%, #ff9a02));
+	background-image:-webkit-linear-gradient(top, #feb123, #ff9a02);
+	background-image:-moz-linear-gradient(top, #feb123, #ff9a02);
+	background-image:-ms-linear-gradient(top, #feb123, #ff9a02);
+	background-image:-o-linear-gradient(top, #feb123, #ff9a02);
+	background-image:linear-gradient(top, #feb123, #ff9a02);
+	-webkit-box-shadow:inset 1px 1px rgba(255, 255, 255, 0.3), 1px 1px 2px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow:inset 1px 1px rgba(255, 255, 255, 0.3), 1px 1px 2px rgba(0, 0, 0, 0.3);
+	box-shadow:inset 1px 1px rgba(255, 255, 255, 0.3), 1px 1px 2px rgba(0, 0, 0, 0.3);
+	-webkit-transition-property:color, border-color;
+	-webkit-transition-duration:0.3s;
+	-moz-transition-property:color, border-color;
+	-moz-transition-duration:0.3s;
+	transition-property:color, border-color;
+	transition-duration:0.3s;
+	border-radius:4px;
+	border:1px solid #dd8605;
+	display:-moz-inline-stack;
+	display:inline-block;
+	width:auto;
+	height:16px;
+	line-height:16px;
+	margin:0 5px;
+	padding:2px 8px;
+	color:white;
+	font-size:12px;
+	font-weight:bold;
+	text-align:center;
+	text-decoration:none;
+	text-shadow:0 1px #888888;
+	zoom:1
+}
+.ui-tooltip-wego div.hotel-rates table a.price {
+	color:#666;
+	font-weight:bold;
+	text-decoration:none
+}
+.ui-tooltip-wego div.hotel-rates table a.price span {
+	font-size:16px;
+	line-height:16px
+}
+.ui-tooltip-wego div.hotel-rates table a.price span.key {
+	color:#f8951d;
+	font-size:12px
+}
+.ui-tooltip-wego div.hotel-rates table a.price span.wego-currency {
+	font-size:13px;
+	vertical-align:top
+}
+.ui-tooltip-wego div.hotel-rates table a.price strong {
+	color:#388a0a;
+	font-size:16;
+	line-height:16px
+}
+.ui-tooltip-wego div.hotel-rates table a.price strong sup {
+	font-size:12px;
+	font-weight:normal;
+	vertical-align:text-top
+}
+.ui-tooltip-wego div.hotel-rates table a.price strong.long_curr {
+	letter-spacing:-2px
+}
+.ui-tooltip-wego div.hotel-rates table a.price:hover {
+	text-decoration:none
+}
+.ui-tooltip-wego div.hotel-rates table a.provider_id {
+	display:block;
+	float:left;
+	margin:0 6px
+}
+.ui-tooltip-wego div.hotel-rates table a.provider_id img {
+	border:1px solid #d3d3d3
+}
+.ui-tooltip-wego div.hotel-rates table span.direct {
+	display:block;
+	float:left;
+	margin:2px 0 0;
+	text-transform:uppercase
+}
+.ui-tooltip-wego div.hotel-rates table a.partner {
+	display:block;
+	float:left;
+	margin:4px 6px 0 0;
+	outline:0
+}
+.ui-tooltip-wego div.hotel-rates table a.partner img {
+	visibility:hidden;
+	height:16px;
+	width:16px
+}
+body.ko div#search_listings .hotel div.rank strong {
+	margin-left:5px
+}
