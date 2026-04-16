@@ -1,0 +1,1030 @@
+@charset "utf-8";
+/* CSS Document */
+body{ border-top:3px solid #242424; margin:0px; padding:0px; font-family:Arial, Helvetica, sans-serif; font-size:12px;}
+img{ border:none;}
+@font-face {
+ font-family:'calibrib';
+ src: url('CALIBRIB.eot');
+ src: local('CALIBRIB'), local('CALIBRIB'), url('CALIBRIB.TTF') format('truetype');
+}
+@font-face {
+ font-family:calibrib;
+ src: url('CALIBRIB.TTF');
+}
+@font-face {
+ font-family:'calibri';
+ src: url('CALIBRI.eot');
+ src: local('CALIBRI'), local('CALIBRI'), url('CALIBRI.TTF') format('truetype');
+}
+@font-face {
+ font-family:calibri;
+ src: url('CALIBRI.TTF');
+}
+
+
+
+
+@font-face {
+ font-family:'MAIAN';
+ src: url('MAIAN.eot');
+ src: local('MAIAN'), local('MAIAN'), url('MAIAN.TTF') format('truetype');
+}
+@font-face {
+ font-family:MAIAN;
+ src: url('MAIAN.TTF');
+}
+@font-face {
+ font-family:'MAIAN';
+ src: url('MAIAN.eot');
+ src: local('MAIAN'), local('MAIAN'), url('MAIAN.TTF') format('truetype');
+}
+@font-face {
+ font-family:MAIAN;
+ src: url('MAIAN.TTF');
+}
+#main_continer{ width:1010px; margin:0px auto; }
+.header{ width:973px; float:left; margin:0 0 0 33px; height:159px; }
+.logo{width:247px; height:139px; float:left; background-image:url(../images/logo.jpg); background-repeat:no-repeat; margin:4px 0 0 0;}	 
+.header_r{ width:700px; float:right; height:159px;}
+.sign_cover{ width:342px; float:right; }
+.sign_bg_L{ width:8px; height:22px; background:url(../images/sign_left.jpg) no-repeat; float:left;}
+.sign_bg_M{ width:325px; height:22px; background-color:#1b232b; float:left; color:#FFF; text-align:center; line-height:16px; 	font-family:calibrib; font-size:13px;}
+.sign_up_link{ text-decoration:none; color:#FFF;}
+a.sign_up_link:hover{ text-decoration:underline; color:#FFF;}
+.sign_bg_R{ width:9px; height:22px; background:url(../images/sign_right.jpg) no-repeat; float:left;}
+.wi251{ width:251px; float:right; height:28px; margin:27px 0 28px 0;}
+.wi40{ width:32px; height:28px; float:left;}
+.wi700{ width:700px; float:left; }
+.meunwi700_r{ width:700px; float:right;}
+.meunwi700{ width:auto; float:right; margin:40px 0 0 0;}
+.wi198_28{ width:180px; float:left; height:28px; font-family:MAIAN; padding:0 0 0 10px;  font-size:25px; color:#000; font-weight:bold; }
+.menu_L_R1{ width:8px; height:48px; float:right; background:url(../images/menU_L.jpg) no-repeat;}
+.menu_M_R1{ padding:0 15px 0 15px; height:48px; float:right; background:url(../images/menu_bg.jpg) repeat-x; line-height:48px; font-family:calibrib; font-size:14px; text-align:center;}
+.menu_L{ width:8px; height:48px; float:left; background:url(../images/menU_L.jpg) no-repeat;}
+.menu_M{ padding:0 10px 0 10px; height:48px; float:left; background:url(../images/menu_bg.jpg) repeat-x; line-height:48px; font-family:calibrib; font-size:14px; text-align:center;}
+.menu_R{ width:8px; height:48px; float:left; background:url(../images/men_R.jpg) no-repeat;}
+.menu_R_rRI{ width:8px; height:48px; float:right; background:url(../images/men_R.jpg) no-repeat;}
+.menu_link{ color:#000; text-decoration:none; font-family:calibrib; font-size:14px; }
+a.menu_link:hover{ color:#404040; text-decoration:none; font-family:calibrib; font-size:14px; }
+.pd10{ padding:0 13px 0 13px;  padding:0 7px 0 7px\9;}
+.banner{ width:1010px; float:left; }
+.search_box{ width:342px; float:left; margin:-390px 0 0 -38px; }
+.search_box h1{ width:342px; float:left; color:#FFF; font-family:MAIAN;  font-size:20px;margin:0px 0 7px 0; padding:0px; text-align:center;}
+.search_box_top{ width:342px; height:50px; background-image:url(../images/search_top.png) ; background-repeat:no-repeat; float:left; }
+.search_box_middile{ width:342px; float:left; background-color:#0ea6ed;  margin:-14px 0 0 0;}
+.SEARCH_BOTOOM{ width:342px; height:44px; background-image:url(../images/search_bottom.png) ; background-repeat:no-repeat;  float:left;}
+.destin{ width:295px; float:left; color:#FFF; margin-left:22px;}
+.destin p{  font-family:MAIAN;  font-size:12PX; width:295px; float:left; color:#FFF;  padding:5px 0 0 0; margin:0px;}
+.TEX_style{ width:292px; height:24px; float:left; border:1px solid #c4c8ca;}
+.check_covers{ width:295px; float:left; color:#FFF; margin-left:22px; margin-top:7px;}
+.check_cover{ width:295px; float:left; color:#FFF; margin-left:22px; /*margin-top:15px;*/ }
+/*.check_coverdd{ width:295px; float:left; color:#FFF; margin-left:22px; margin-top:3px;}*/
+.check_139{ width:139px; float:left;}
+.check_149{ width:149px; float:right; margin:0 13px 3PX 0;}
+/***syed**/
+.ml10 {	margin-left:15px;}
+.check_coverdd{ width:164px; float:right; color:#FFF; margin-left:22px; margin-top:3px;}
+.jumb_25{ width:65px; height:24px; float:right; padding:2px 2px 2px 0; font-size:12px; margin-right:2px;}
+
+.check_139 p{ font-family:MAIAN; width:139px;  float:left; padding:3px 0 0 0; margin:0px;  color:#FFF;}
+.CHECK_TX_BG{ width:134px; height:24px; float:left; background-image:url(../images/check_in_bg%5D.jpg); background-repeat:no-repeat; border:none; padding:0 0 0 5px; font-size:11px; }
+.ml17{ margin:0 0 0 17px;}
+.padding_le{ padding-left:12px;}
+.jump{ width:138px; height:24px; border:1px solid #c4c8ca; padding:3px 2px 3px 2px;}
+/*.jumb_25{ width:65px; height:24px; float:left; padding:2px 2px 2px 0; font-size:12px;}*/
+.jumb_25_for_new{ width:40px; height:24px; float:left; padding:2px 2px 2px 0; font-size:12px;}
+.jumb_25_for_new_1{ width:54px; height:24px; float:left; padding:2px 2px 2px 0; font-size:12px;}
+
+.rooms_left{ width:30px; float: left; color:#FFF; padding:23px 0px 0 0; margin:0 10px 0 0;}
+.AGE_OF{ width:70px; float: left; color:#FFF; padding:12px 0px 0 0; margin:0 -7px 0 0;}
+.AGE_OF2{ width:83px; float: left; color:#0066ff; padding:12px 0px 0 0; margin:0 -7px 0 0; font-size:11px;}
+.wi40{ width:40px; float:left;}
+.wi40 p{ width:40px; float:left; padding:3px 0 0 0; margin:0px;}
+.pl5{ margin:0 5px 0 0px;}
+.search_btn{ width:200px; height:34px; float:left; margin:10px 0 0 70px;}
+.contete_area{ width:960px; float:left; margin:0 0 0 20px; padding:0 0 25px 25px; border-left:1px dotted #858585;  border-right:1px dotted #858585;   border-bottom:1px dotted #858585; }
+.border_dd{ width:948px;  height:3px; background-color:#000; border:1px dotted #3c3c3c; float:left; border-radius:7px; margin:10px 0 0 11px;}
+.footer{ width:980px; float:left; margin:0 0 0 20px;}
+.wi1006{ width:1006px; float:left; padding:10px 0 0 0; color:#454546; text-align:center;}
+.FOOTER_LINK{ padding:0 5PX 0 5PX; font-weight:normal; color:#454546; text-decoration:none; font-family:calibrib; font-weight:normal; font-size:15px; }
+a.FOOTER_LINK:hover{ padding:0 5PX 0 5PX; font-weight:normal; color:#454546; text-decoration:underline; font-family:calibrib; font-size:15px; font-weight:normal;}
+.wi122{ width:150px; float:right;}
+.copy{ width:228px; float:left; margin:0 0 0 350px; color:#444543; padding:25px 0 0 0; font-size:11px;}
+.inner_banner{ width:979px; float:left; height:230px;}
+.left_pannel{ width:230px; float:left; margin:15px 0 15px 0;}
+.left_pannel_head{ width:230px; float:left; background:url(../images/left_pannel_header.jpg) no-repeat; height:87px;}
+.left_pannel_head_inner{ width:171px; float:left;  height:87px;}
+.left_pannel_head_inner h1{ width:171px; float:left;  color:#FFF;  text-align:center; font-size:14px; font-weight:bold; font-family:Arial, Helvetica, sans-serif; margin:10px 0px 0px 0;}
+.left_pannel_head_inner h2{ width:171px; float:left;  color:#FFF;  text-align:center; font-size:34px; font-weight:bold; font-family:Arial, Helvetica, sans-serif; margin:0px;}
+.left_pannel_head_inner p{ width:171px; float:left;  color:#FFF;  text-align:center; font-size:12px;  font-family:Arial, Helvetica, sans-serif; margin:0px;}
+.content_cover{ width:979px; float:left;}
+.left_pannel_body{ width:228px; float:left; border-left:1px dotted #868484;  border-right:1px dotted #868484; border-bottom:1px dotted #868484;}
+/*.left_pannel_head h1{ width:228px; float:left; color:#FFF;  text-align:center; font-size:14px; font-weight:bold; font-family:Arial, Helvetica, sans-serif; margin:10px 0px 0px 0;}
+.left_pannel_head h2{ width:228px; float:left; color:#FFF;  text-align:center; font-size:34px; font-weight:bold; font-family:Arial, Helvetica, sans-serif; margin:0px;}
+.left_pannel_head p{ width:228px; float:left; color:#FFF;  text-align:center; font-size:12px;  font-family:Arial, Helvetica, sans-serif; margin:0px;}*/
+.wi159{ width:217px; float:left; border-bottom:1px dotted #dadada; padding:10px 0 10px 10px;}
+.arrow{ width:217px; float:left; margin:15px 0 5px 0; }
+.arrow_down{ width:9px; height:5px; float:left; background-image:url(../images/arrow_down.jpg) ; background-repeat:no-repeat; margin:5px 0 0 0;}
+.wi120{ width:201px; float:left;  font-weight:bold; padding:0 0 0 5px; color:#0067d9;}
+.price_rate{ width:217px; float:left; color:#4c4c4c; font-size:10px; padding:7px 0 5px 0;}
+.pw7{ padding:0 7px 0 0; float:left;}
+.jq_bg{ width:217px; float:left; height:17px; margin:7px 0 0 3PX;}
+.hotel_cover{ width:217px; float:left; margin:5px 0 7px 0 ;}
+.check_box_cover{ width:15px; height:15px; float:left;}
+.check_box_cover_two{ width:15px; height:15px; float:left; margin:0 7px 0 10px;}
+.hotel_cover47{ width:134px;    color:#666; float:left; padding:0 0 0 8px;}
+.wi56{ width:56px; float:right; text-align:left; color:#3a67d9; font-size:11px;}
+.change_search_pannel{ width:230px; float:left; margin:15px 0 15px 0;}
+.change_pannel_header{ width:230px; float:left; height:50px; background-image:url(../images/change_pannel_header.jpg); background-repeat:no-repeat; color:#FFF; text-align:center; font-family:calibrib; font-size:20px; line-height:50px;}
+.modifi_search{ width:230px; float:left; margin:10px 0 0px 0;}
+.modifi_search p{ width:220px; float:left; margin:0px 0 3px 0; padding:0px 0px 0 10px;  color:#06F; font-weight:normal;}
+.modi_text{ width:200px; float:left; height:25px; border:1px solid #CCC; padding:0 0 0 5px; color:#666;}
+.check_bg_2{ width:202px; height:27px; float:left; background-image:url(../images/check_bg2.jpg); background-repeat:no-repeat; border:none; padding:0 0 0 5px; font-size:11px; color:#666666;}
+.modi_l{ width:100px; float:left; color:#06F; padding:0 0 0 10px;	 line-height:22px;}
+.modi_R{ width:75px; float:right; color:#06F; padding:0 0 0 10px;	}
+.wi138{ width:138px; height:40px; float:left; margin:20px 0 20px 15px;}
+.room_bor_bottom{ border-bottom:1px dotted #999; width:230px; float:left; padding:0 0 15px 0;} 
+.right_pannel{ width:714px; float:left; margin:15px 0 0 25px;}
+.wi714{ width:714px; float:left; }
+.wi584{ width:584px; float:left; font-weight:bold; color:#172841; font-size:20PX;  }
+.wi100{ width:100px; float:right; font-weight:bold; color:#172841; font-size:14PX; padding:10px 0  0 0;  }
+.wi714menu{ width:714px; height:40px; float:left; background-color:#e5e5e5;}
+.wi714menu01{ width:63px; height:40px; float:left; line-height:40px; color:#FFF; background-color:#2d85e7; text-align:center;}
+.search_result_section{ width:714px; float:left; margin:15px 0 0 0;}
+.wei507{ width:507px; float:left; height:40px;}
+
+/* BE SURE TO INCLUDE THE CSS RESET FOUND IN THE DEMO PAGE'S CSS */
+/*------------------------------------*\
+	NAV
+\*------------------------------------*/
+#nav{
+	list-style:none;
+	font-weight:bold;
+	padding:0px; margin:0px;
+	/* Clear floats */
+	float:left;
+	width:381px; 
+	/* Bring the nav above everything else--uncomment if needed.
+	position:relative;
+	z-index:5;
+	*/
+}
+#nav li{
+	float:left; height:30px;
+
+	position:relative;
+}
+#nav a{
+	display:block;height:30px;
+	
+	color:#000; 
+	background:#e5e5e5; padding:10px 10px 0px 10px;
+	text-decoration:none;
+}
+#nav a:hover{
+	color:#fff;
+	background:#2a83e7; padding:10px 10px 0px 10px;
+	text-decoration:underline;
+}
+
+/*--- DROPDOWN ---*/
+#nav ul{
+	background:#fff; /* Adding a background makes the dropdown work properly in IE7+. Make this as close to your page's background as possible (i.e. white page == white background). */
+	background:rgba(255,255,255,0); /* But! Let's make the background fully transparent where we can, we don't actually want to see it if we can help it... */
+	list-style:none;
+	position:absolute;
+	left:-9999px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
+}
+#nav ul li{
+	padding-top:1px; /* Introducing a padding between the li and the a give the illusion spaced items */
+	float:none;
+}
+#nav ul a{
+	white-space:nowrap; /* Stop text wrapping and creating multi-line dropdown items */
+}
+#nav li:hover ul{ /* Display the dropdown on hover */
+	left:0; /* Bring back on-screen when needed */
+}
+#nav li:hover a{ /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+	background:#2a83e7;
+	text-decoration:underline;
+}
+#nav li:hover ul a{ /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+	text-decoration:none;
+}
+#nav li:hover ul li a:hover{ /* Here we define the most explicit hover states--what happens when you hover each individual link. */
+	background:#333;
+}
+/*.pagination{ width:130px; font-size:11px;  color:#000; float:left; text-align:center; line-height:40px;}*/
+.for_loop{ width:698px; background-color:#ececec;  border-right:1px solid #f2f2f2;  border-left:1px solid #f2f2f2;  border-bottom:1px solid #f2f2f2; float:left; padding:14px 0 14px 14px;  background-image:url(../images/for_loop_bg.jpg); background-repeat:repeat-x;}
+.pic108{ width:108px; float:left; height:115px;}
+.wi565{width:565px;float:left; margin:0 0 0 15px;}
+.wi565a{ width:565px; float:left; }
+.wi407{ width:407px; float:left; }
+.sp_pad{float:left; color:#00092b; font-size:16px; font-weight:bold;}
+.fw{ font-weight:bold; color:#2d4f86; }
+.fw01{ font-weight:bold; color:#00001b; }
+.search_news{ width:407px; float:left; color:#898b91; padding:10px 0 10px;} 
+.wi143{ width:143px; height:109px; float:right;}
+.erate{ font-size:22px; width:143px; float:left; font-weight:bold; text-align:center;}
+.erate p{ font-size:12px; width:143px; float:left; font-weight:bold; text-align:center; color:#00a9ef; padding:10px 0 0 0 ; margin:0px;}
+.book_now_btn{ width:118px; float:left; height:38px; margin:10px 0 0 10px;}
+.wi407_bo{ border-bottom:1px solid #e8e8e8; height:25px; width:565px; float:left; line-height:25px;}
+.content_continer{ width:944px; float:left; border-left:1px dotted #868484; border-right:1px dotted #868484;  margin:23px 0 0 0; padding:0 13px 0 13px;}
+.sam_wi944{ width:944px; float:left; }
+.sub_heding_cover{ width:644px; float:left; height:20px; }
+.sub_heding_left_cover{ width:644px; float:left;  }
+.wi5_15{ width:5px; float:left; height:15px; background:url(../images/heading_style_pic.jpg) no-repeat; margin:0 5px 0 0;}
+.wi600{width:327px; float:left; color:#010101; font-family:MAIAN; font-size:15px;  font-weight:bold; }
+.place_pic_cover{ width:670px; height:140px; float:left; margin:20px 0 30px 0;}
+.place_pic{ width:110px; height:138px; float:left;}
+.hotel_container {
+	margin:0px auto;
+	width:970px;
+	/*border:1px solid #CCC;*/
+}
+.hotel_left_panel {
+  float: left;
+    margin: 15px 0;
+    width: 230px;
+}
+.hotel_left_panel_cont_1 {width:230px; float:left; height:50px; background-image:url(../images/change_pannel_header.jpg); background-repeat:no-repeat; color:#FFF; text-align:center; font-family:calibrib; font-size:20px; line-height:50px;
+}
+.hotel_left_panel_cont_1 h2 {
+	color:#FFF; margin:0px; padding:0px;
+}
+.hotel_left_panel_cont_1_in {
+	width:228px; float:left; border-left:1px dotted #868484;  border-right:1px dotted #868484; border-bottom:1px dotted #868484;
+}
+
+/***/
+.hotel_left_panel_cont_2 {
+	  float: left;
+    margin: 15px 0;
+    width: 230px;
+}
+.hotel_left_panel_cont_2 h2 {
+	background:#172842;
+	padding:10px 8px;
+	border-radius:10px 10px 0px 0px;
+	-moz-border-radius:10px 10px 0px 0px;
+	-webkit-border-radius:10px 10px 0px 0px;
+	color:#FFFFFF;
+	font-size:14px;
+	text-align:center;
+}
+.hotel_left_panel_cont_2_in {
+	background:#FFFFFF;
+	color:#212a2b;
+	font-size:11px;
+	text-align:left;
+	padding:10px;
+	border-bottom:1px solid #CCC;
+}
+.hotel_left_panel_cont_2_in div {
+	margin:1px 0px;
+}
+.pic_container img {
+	width:90px;
+	height:70px;
+	margin-right:5px;
+	float:left;
+}
+.hotel_view_right_cont {
+	float:right;
+	font-weight:700; padding:10px 0 0 0;
+	font-size:12px;
+	width:118px;
+}
+.hotel_view_right_cont p {
+	font-size:12px;
+}
+.input_text {
+	border:1px solid #CCC;
+	width:215px;
+	margin:5px 0px;
+	color:#999;
+	outline:none
+}
+.input_text1 {
+	border:1px solid #CCC;
+	width:458px;
+	margin:5px 0px;
+	color:#999;
+	outline:none
+}
+.input_text_sm {
+	border:1px solid #CCC;
+	width:215px;
+	margin:5px 0px;
+	color:#999;
+	outline:none
+}
+
+.clr {
+	clear:both;
+}
+.mt5 {
+	margin-top:5px;
+}
+.room_type_container {
+	float:left;
+	width:225px;
+}
+.room_name {
+	float:left;
+	padding-top:5px;
+}
+.room_select {
+	float:right;
+}
+.room_select input, select {
+	width:46px;
+	outline:none
+}
+.btn {
+	background:#e84c09;
+	padding:10px;
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	color:#FFFFFF;
+	font-weight:700;
+	text-transform:uppercase;
+	font-size:14px;
+	border:1px solid #FFF;
+	box-shadow:1px 1px 5px #000;
+	width:60%;
+}
+.hotel_right_panel {
+	float:right;
+	padding:10px 10px 0 10px; border-left:1px dotted #868484;
+	border-right:1px dotted #868484; border-bottom:1px dotted #868484;
+	width:705px;
+	background:#FFFFFF;
+	margin:20px 0 0 0;
+	
+}
+.hotel_right_panel_header {
+	
+	color: #172841;
+    font-size: 20px;
+    font-weight: bold;
+	float: left;
+	line-height: 22px;
+	float:none;
+	margin:0px 0px 5px 0px;
+}
+.hotel_right_panel_address {
+	color:#3c5e90;
+	font-size:12px;
+	font-weight:700;
+	float:left
+}
+.right_cont_right_panel {
+	float:right;
+	text-align:left
+}
+.search_res {
+}
+.search_res a {
+	text-decoration:none;
+	color:#212a2b;
+	font-weight:700;
+	font-size:12px;
+}
+.right_pic_cont {
+	margin:0 auto;
+	text-align:center
+}
+.right_pic_cont p {
+	text-align:justify;
+	margin-top:15px; margin-right:15px; float:left;
+	color:#212a2b;
+	line-height:18px;
+}
+.right_pic_cont_more {
+	float:left;
+}
+#content {
+}
+.table {
+	overflow:hidden;
+	border:1px solid #d3d3d3;
+	background:#fefefe;
+	width:90%;
+	margin:5% auto 0;
+	
+}
+.table th {
+	padding:10px 28px 10px;
+	text-align:center;
+}
+.table td {
+	padding:18px 28px 18px;
+	text-align:center;
+}
+.table th {
+	padding-top:5px;
+	text-shadow: 1px 1px 1px #fff;
+	background:#e8eaeb;
+}
+.table td {
+	border-top:1px solid #e0e0e0;
+	border-right:1px solid #e0e0e0;
+	text-align:left;
+}
+.table tr.odd-row td {
+	background:#f6f6f6;
+}
+.table td.first, th.first {
+	text-align:left
+}
+.table td.last {
+	border-right:none;
+}
+/*
+	Background gradients are completely unnecessary but a neat effect.
+	*/
+	
+.table td {
+	background: -moz-linear-gradient(100% 25% 90deg, #fefefe, #f9f9f9);
+	background: -webkit-gradient(linear, 0% 0%, 0% 25%, from(#f9f9f9), to(#fefefe));
+}
+.table tr.odd-row td {
+	background: -moz-linear-gradient(100% 25% 90deg, #f6f6f6, #f1f1f1);
+	background: -webkit-gradient(linear, 0% 0%, 0% 25%, from(#f1f1f1), to(#f6f6f6));
+}
+.table th {
+	background: -moz-linear-gradient(100% 20% 90deg, #e8eaeb, #ededed);
+	background: -webkit-gradient(linear, 0% 0%, 0% 20%, from(#ededed), to(#e8eaeb));
+}
+.table tr:first-child th.first {
+	-moz-border-radius-topleft:5px;
+	-webkit-border-top-left-radius:5px; /* Saf3-4 */
+}
+.table tr:first-child th.last {
+	-moz-border-radius-topright:5px;
+	-webkit-border-top-right-radius:5px; /* Saf3-4 */
+}
+.table tr:last-child td.first {
+	-moz-border-radius-bottomleft:5px;
+	-webkit-border-bottom-left-radius:5px; /* Saf3-4 */
+}
+.table tr:last-child td.last {
+	-moz-border-radius-bottomright:5px;
+	-webkit-border-bottom-right-radius:5px; /* Saf3-4 */
+}
+/********************************************/
+
+.field-book-details {
+	/*border:1px solid #CCC;*/
+	width:532px;
+	font-size:10px;
+}
+.field-book-details span {
+	font-weight:normal;
+}
+.left-col {
+	float:left
+}
+.left-col ul {
+	float:left;
+	list-style-type:none;
+	width:250px;
+}
+.row {
+	padding:5px;
+}
+.col {
+	margin-left:0px;
+	font-weight:700
+}
+.label {
+	width:80px;
+	float:left;
+}
+.right-col {
+	float:left;
+	width:260px;
+}
+.right-col ul {
+	list-style-type:none;
+}
+.field-link a {
+	color:#e84c09;
+	text-decoration:none;
+	float:left;
+	margin:10px 0px 0px 12px;
+	text-transform:uppercase;
+	font-weight:700
+}
+.contact_cont {
+	line-height:20px;
+}
+h3 {
+	color:#172841;
+}
+.wid645{ width:645px; float:left;}
+.wi146_139{ width:146px; height:139px; float:left; }
+.mtl_20{ margin:10px 20px 0 0;}
+.mtl_10{ margin:10px 0px 0 0;}
+.wi278_r{ width:278px; float:right; border-left:1px dotted #000;}
+.sub_heding_cover_2{ width:255px; float:left; height:20px;  padding:0 0 0 20px;}
+.wisib_gead{width:191px; float:left; color:#010101; font-family:MAIAN; font-size:15px;  font-weight:bold; }
+.wisib_gead_4th{width:244px; float:left; color:#010101; font-family:MAIAN; font-size:15px;  font-weight:bold; }
+.wisib_gead_second{width:180px; float:left; color:#010101; font-family:MAIAN; font-size:15px;  font-weight:bold; }
+.view_all{ width:46px; float:right; }
+.view_all_link{ color:#c60b0b; font-size:12px; text-decoration:underline; font-family:MAIAN;}
+a.view_all_link:hover{ color:#c60b0b; font-size:12px; text-decoration:none; font-family:MAIAN;}
+.wi253_287{ width:253px; height:287px; float:left; margin:25px 0 0 16px;}
+.view_all_caption{ width:253px; float:left; padding:0 0 0 20px; font-family:MAIAN; line-height:16px;}
+.blue_01{ color:#0ea6ed; font-size:12px; font-variant:small-caps;}
+.news_hotel_cover{ width:946px; float:left; border-top:1px dotted #000; margin:25px 0 0 0; padding:30px 0 0 0;}
+.newhotel_268{ width:268px; float:left; border-right:1px dotted #000;}
+.news_hotel_sub_head{ width:236px; float:left; height:20px; }
+.news_hotel_sub_head_3{ width:318px; float:left; height:20px; }
+.wi235_108{ width:235px; height:105px; float:left; margin:25px 0 25px 0;}
+.news_hotel__caption{ width:250px; float:left;  font-family:MAIAN; color:#0EA6ED;  font-size:14px; }
+.newhotel_268_second{ width:268px; float:left; border-right:1px dotted #000; padding:0 0 0 30px;}
+.newhotel_268_third{ width:340px; float:left; padding:0 0 0 37px;}
+.lond_234{ width:234px; float:left;margin:28px 0 0 0;}
+.lond_234_third{ width:334px; float:left;margin:28px 0 0 0;}
+.plzce_cover{ width:251px; float:left;  margin:0 0 11px 0;}
+.plzce_cover_second{ width:347px; float:left;  margin:0 0 11px 0;}
+.wid173{ width:181px; float:left; color:#504f4f;  font-size:13px; font-weight:bold;  font-family:MAIAN;}
+.wid173_third{ width:266px; float:left; color:#504f4f;  font-size:13px; font-weight:bold;  font-family:MAIAN;}
+.rate_wi70{ width:70px; float:left; color:#000; font-size:13px; font-family:MAIAN; font-weight:bold;}
+.per_96{ width:96px; float:right; color:#515050; font-size:10px ;font-family:MAIAN;  font-variant:small-caps;}
+.wi656{ width:663px; float:left; border-right:1px dotted #000;}
+.one_icon_cover{ width:221px; float:left; margin:30px 0 0 0;}
+.one_icon{ width:24px; height:66px; float:left;}
+.best_rate{ width:182px; float:left; padding:0 0 0 11px; font-family:MAIAN;  }
+.search_wi291{ width:282px; float:right;}
+.search_bg_240{ width:226px; height:67px; float:left; background-image:url(../images/search_bottm_bg.jpg);  background-repeat:no-repeat; margin:13px 0 0 20px; padding:14px 0 0 14px; }
+.search_bg_240 p{ width:226px; float:left; color:#3f474a; font-size:14px; font-weight:bold; font-variant:small-caps; padding:0px; margin:0px;}
+.text_cov{ width:160px; float:left; height:30px; margin:5px 0 0 0 ;}
+.ok_btn{ width:43px; height:35px; float:left; margin:0 0 0 10px;}
+.wi156_126{ width:156px; height:23px; float:left; border:1px solid #c8c8c8;}
+.wi102_0{ width:68px; float:left; margin:0 0 0 10px;}
+.jum_menu_102{ width:65px; font-size:11px; color:#666666; height:20px; float:left; border:1px solid #ccc; padding:0 0 0 1px;}
+.wi102_0 p{ width:68px; float:left; color:#0066ff; padding:0px; margin:0 0px 3px 0;}
+.wi98{ width:98px; float:left; margin:0 0 0 35px; }
+.wi44{ width:44px; float:left; }
+.ml_R10{ margin:0 10px 0 0;}
+.wi44 p{ width:44px; float:left; color:#0066ff; padding:0px; margin:0 0px 3px 0; }
+.home_link{ color:#134da3; text-decoration:none; font-size:12px; font-family:MAIAN; font-weight:bold;}
+a.home_link:hover{ color:#172841; text-decoration:underline; font-size:12px; font-family:MAIAN; font-weight:bold;}
+.gif_animation{ width:50px; height:25px; float:left; padding:25px 0 0 0;}
+.hotel_link_new{ color:#2f87e8; text-decoration:none; font-weight:bold; font-size:12px;}
+a.hotel_link_new:hover{ color:#2f87e8; text-decoration:underline; font-weight:bold; font-size:12px;}
+.wi682s{width:692px; float:left; text-align:left; margin:0 0 15px 0 ;  }
+/*************hotel detile page slider*********************/
+#page { width: 692px; background-color:#388de8; margin: 30px auto; }
+
+#thumbs { float:right; overflow: hidden; width:476px; }
+#thumbs img, #largeImage { padding: 4px; background-color: white; cursor: pointer;  }
+#thumbs img { float: left; margin-right: -1px; margin-bottom:6px; }
+#description { background: black; color: white; position: absolute; bottom: 0; padding: 10px 20px; width: 525px; margin: 5px; }
+#panel { position: relative;  height: 155px;
+    float:left;
+    width: 200px;}
+.table_colom{ width:120px; height:30px; background-image:url(../images/table_br_ng.jpg); background-repeat:repeat-x;}
+.table_colom2{ width:120px; border-right:1px solid #e0e0e0; padding:10px 0 0 0; text-align:center; font-size:12px;}
+.table_colom3{ width:120px; border-right:1px solid #e0e0e0; padding:10px 0 0 0; text-align:center; font-size:12px; background-color:#eceaea;}
+.bg_light_blue{background-color:#eceaea;}
+.hotel_fecil{ width:500px; float:left; color:#172841; font-family:MAIAN; font-size:14px; font-weight:bold; }
+.wi550_cover{ width:550px; float:left; margin:10px 0 0 0; padding:0 0 0 10px;}
+.wi550_c{ width:550px; float:left; padding:0 0 7px 0;}
+.wi550_c_100{ width:130px; float:left; font-weight:bold; color:#172841;}
+.wi550_R_400{ width:420px; float:left; color:#1169c9; font-weight:bold;}
+.book_condition{ color:#fc7700; font-weight:bold; text-decoration:underline;}
+a.book_condition:hover{ color:#fc7700; font-weight:bold; text-decoration:none;}
+.forth_text{ width:700px; float:left; line-height:18px; padding:10px 0 10px 0; text-align:justify; border-bottom:1px dotted #868484; margin:0 0 10px 0;}
+.wid567_cover{ width:567px; float:left; padding:0 0 7px 0; }
+.wid567_c{ width:567px; float:left; margin:0 0 15px 0; line-height:25px; }
+.wi180_C{ width:180px; float:left; color:#172841; font-weight:bold; padding:0 0 0 10px;}
+
+.wi382_C_text_fie{ width:280px; height:25px; border:1px solid #cccccc; }
+.wi382_C_text_fie_area{ width:280px; height:75px; border:1px solid #cccccc; }
+
+
+
+/*****************************css for become agent page************************/
+.registration_wi662{ width:595px; float:left; border-bottom:1px dotted #868484;  border-left:1px dotted #868484; border-right:1px dotted #868484; margin:15px 0 15px 0; padding:0 15px 0 15px ;}
+.agent_profile_head{ width:580px; height:30px;  background-color:#e5e5e5; padding:0 0 0 15px; font-weight:bold; line-height:30px; font-family:calibrib; font-size:14px; margin:0 0 15px 0; float:left;}
+.agent_text_cover{ width:595px; float:left; margin:0 0 15px 0;}
+.agent_text_cover_L{ width:245px; float:left; height:25px;  padding:0 0 0 20px;  line-height:25px;}
+.agent_text_cover_R{ width:328px; float:left; font-weight:bold; }
+.agent_text_cover_txt_feil{ width:300px; float:left; height:25px; border:1px solid #cccccc; padding:0 0 0 5px; font-size:11px;}
+.wiregis_btn{ width:109px; height:35px; float:right; margin:0px 220px  15px 0;}
+.book_condition2{ color:#fc7700; font-weight:normal; text-decoration:none;}
+a.book_condition2:hover{ color:#2780e6; font-weight:normal; text-decoration:none;}
+.registration_right_pannel{ width:294px; float:left; border-bottom:1px dotted #868484;  border-left:1px dotted #868484; border-right:1px dotted #868484; margin:15px 0 15px 20px; padding:0 15px 0 15px ;}
+
+.agentright_pannel_head{ width:279px; height:30px;  background-color:#ff8901; color:#fff; padding:0 0 0 15px; font-weight:bold; line-height:30px; font-family:calibrib; font-size:14px; margin:0 0 15px 0; float:left;}
+.agent_text_cover_right_pannel{ width:291px; float:left; margin:0 0 15px 0;}
+.agent_text_cover_right_pannel_L{ width:90px; float:left; height:25px;  padding:0 0 0 10px;  line-height:25px;}
+.agent_text_cover_right_pannel_R{ width:175px; float:left; }
+.agent_text_cover_right_pannel_txt{ width:185px; float:left; height:25px; border:1px solid #cccccc; padding:0 0 0 5px; font-size:11px;} 
+.agent_text_cover_right_btn{ width:109px; float:right; height:35px;} 
+.wi18_17{ width:18px; height:17px; float:left; margin:3px 0 0 5px;}
+.wi18_17_200txt{ width:250px;  float:left;  padding:0 0 0 10px; line-height:18px; color:#666;}
+
+/***********************************b2b index page css*********************888888888888*/
+.b2b_banner{ width:977px; float:left; height:143px; }
+.account_body{ width:197px; float:left; padding:10px; line-height:24px;}
+.my_bookin_head{ width:930px;     background-color: #E5E5E5;
+    float: left;
+    font-family: calibrib;
+    font-size: 14px;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 0 15px;
+    padding: 0 0 0 15px;}
+	.wi595_cover{ width:595px; float:left; }
+.wi_selec_user{ width:200px; height:20px;}
+.confi_txt_feil{ width:310px; line-height:25px; float:left; height:25px; border:1px solid #cccccc; padding:3px 5px 3px 5px; font-size:11px;}
+.con_wi221{ width:221px; float:left; margin:0 0 10px 0;}
+.wi24_24{ width:24px; height:24px; float:left; margin:10px 0 0 10px;}
+.wi24_24_cont{ width:170px; font-weight:bold; line-height:24px; height:24px; float:left; margin:10px 0 0 10px;}
+.hotel_search_name{ width:690px; font-size:22px; font-family:calibrib; font-weight:bold; padding:0 0 0 15px;}
+.wi600_hot{ width:600px; float:left; padding:0 0 0 40px; }
+.wi_chec_cover{width:120px; float:left;margin:0 0 10px 0;}
+.wichec_01{ width:15px; height:15px; float:left;}
+.wichec_02{ width:90px; height:15px; float:left; padding:2px 0 0 10px;}
+.top_citie{ width:500px; font-weight:bold; color:#227ee5; float:left; margin:10px 0 10px 40px; }
+.wi600_hot_other{ width:600px; float:left; padding:0 0 0 40px; }
+.txte_4445{ width:250px; height:25px; border:1px solid #e5e5e5;}
+
+
+
+#containersse{
+	width: 180px; float:left;
+	position: relative; margin:15px 0 15px 0;
+}
+#containersse ul{
+	list-style: none;
+	list-style-position: outside;
+	width:165px;
+	padding:0px;
+	margin:0px;
+}
+#containersse ul.menu li{
+	float: left;
+	margin: 4px 0px 0px 0px;
+	text-align:left;
+}
+#containersse ul.menu li{
+	display: block;
+	margin-bottom: 0px;
+	position: relative;
+	font-family:calibrib;
+	color:#0c2346; background:url(../images/hand_point_second.jpg) no-repeat; background-position:top left;
+	text-align: left;
+	padding:0px 0 0 20px;
+	width:140px;
+	height:20px; font-size:14px;
+	cursor:pointer;
+	margin-top: 10px;
+	margin-right: 0px;
+	margin-left: 20px;
+
+}
+#containersse ul.menu li.hover{
+	background: #fff;
+	top: 1px; background:url(../images/hand_point_second.jpg) no-repeat; background-position:top left;
+	color: #5f95ef;
+	cursor:pointer;
+
+}
+#containersse ul.menu li.active{
+	top: 1px;
+	color: #5f95ef;
+	 background:url(../images/hand_point_second.jpg) no-repeat; background-position:top left;
+	
+}
+/******* /MENU *******/
+/******* CONTENT *******/
+.content{
+	
+
+
+	float: left;
+
+
+	width:680px;
+
+
+}
+.content h1{
+	line-height: 1em;
+	vertical-align: middle;
+	height: 48px;
+	padding: 10px 10px 10px 52px;
+	font-size: 32px;
+}
+/******* /CONTENT *******/
+/******* NEWS *******/
+
+.content.flights{
+	display: block;
+}
+/******* /NEWS *******/
+/******* TUTORIALS *******/
+.content.hotels h1{
+	background: transparent url(images/tuts.jpg) no-repeat scroll left top;
+}
+.content.hotels{
+	display: none;
+}
+/******* /TUTORIALS *******/
+/******* LINKS *******/
+.content.cars h1{
+	background: transparent url(images/links.jpg) no-repeat scroll left top;
+}
+.content.cars{
+	display: none;
+}
+.content.cars a{
+	color: #5f95ef;
+}
+/******* /LINKS *******/
+/******* /TUTORIALS *******/
+/******* LINKS *******/
+.content.sightseeing h1{
+	background: transparent url(images/links.jpg) no-repeat scroll left top;
+}
+.content.sightseeing{
+	display: none;
+}
+.content.sightseeing a{
+	color: #5f95ef;
+}
+/******* /LINKS *******/
+/******* /TUTORIALS *******/
+/******* LINKS *******/
+.content.packages h1{
+	background: transparent url(images/links.jpg) no-repeat scroll left top;
+}
+.content.packages{
+	display: none;
+}
+.content.packages a{
+	color: #5f95ef;
+}
+/******* /LINKS *******/
+
+/******* LINKS *******/
+.content.CUSTOMER h1{
+	background: transparent url(images/links.jpg) no-repeat scroll left top;
+}
+.content.CUSTOMER{
+	display: none;
+}
+.content.CUSTOMER a{
+	color: #5f95ef;
+}
+/******* /LINKS *******/
+/******* LINKS *******/
+.content.LEDGER h1{
+	background: transparent url(images/links.jpg) no-repeat scroll left top;
+}
+.content.LEDGER{
+	display: none;
+}
+.content.LEDGER a{
+	color: #5f95ef;
+}
+/******* /LINKS *******/
+
+.agent_management {
+    background-color: #E5E5E5;
+    float: left;
+    font-family: calibrib;
+    font-size: 14px;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 0 15px; text-transform:uppercase;
+    padding: 0 0 0 15px; margin:15px 0 0 0; border-bottom:1px solid #fff;
+    width: 685px;
+}
+.wi680_search_branc{ width:680px; float:left; margin:0px 0 15px 0;}
+.tab_second_cover{ width:700px; float:left;}
+
+
+/*.tb_col_01{ width:100px; padding:10px 0 10px 0; color:#FFF; background-color:#499aeb; font-weight:bold; border-right:1px solid #FFF;}
+.tr_col_01{  padding:5px 0 5px 0; color:#000; line-height:18px;  border-right:1px solid #CCC; border-bottom:1px solid #CCC;}
+.tr_col_03{  padding:5px 0 5px 0; color:#000; line-height:18px;  border-right:1px solid #CCC; border-bottom:1px solid #CCC; background-color:#e5e5e5;}
+*/
+
+.tb_col_01{ width:99px; padding:10px 0 10px 0; color:#FFF; background-color:#499aeb; font-weight:bold; border-right:1px solid #FFF; text-align:center; float:left;}
+.tb_col_01_0new{ width:119px; padding:10px 0 10px 0; color:#FFF; background-color:#499aeb; font-weight:bold; border-right:1px solid #FFF; text-align:center; float:left;}
+.tr_col_01{  padding:10px 0 10px 0; color:#000; line-height:18px;  border-right:1px solid #CCC;  font-size:11px; float:left; width:99px; text-align:center; word-wrap: break-word; min-height:40px;}
+.bl_1{  border-bottom:1px solid #ccc;}
+.bl_2{  border-left:1px solid #ccc; border-bottom:1px solid #ccc;}
+.tr_col_03{  padding:5px 0 5px 0; color:#000; line-height:18px;  border-right:1px solid #CCC; border-bottom:1px solid #CCC; background-color:#e5e5e5;}
+/*********************************mt_travels****************/
+
+
+
+
+/* root element for tabs  */
+
+ul.tabs { 
+	list-style:none; 
+	margin:0 !important; 
+	padding:0;	
+	border-bottom:1px solid #fff;	
+	height:30px;
+}
+
+/* single tab */
+ul.tabs li { 
+	float:left;	 
+	text-indent:0;
+	padding:0;
+	margin:0 !important;
+	list-style-image:none !important; 
+}
+
+/* link inside the tab. uses a background image */
+ul.tabs a { 
+	background:url(../images/blue_bg_for_tab.jpg) repeat-x;
+	font-size:11px;
+	display:block;
+	height: 30px;  
+	line-height:30px;
+	width: 156px;
+	border-right:1px solid #FFF;
+	text-align:center;	
+	text-decoration:none;
+	color:#FFF;
+	padding:0px;
+	margin:0px;	
+	position:relative;
+	top:1px;
+	font-family:calibrib; font-size:14px; color:#FFF; font-weight:bold;}
+
+ul.tabs a:active {
+	outline:none;		
+}
+
+/* when mouse enters the tab move the background image */
+ul.tabs a:hover {
+		background:#ff7a01;
+	color:#FFF;	
+}
+
+/* active tab uses a class name "current". its highlight is also done by moving the background image. */
+ul.tabs a.current, ul.tabs a.current:hover, ul.tabs li.current a {
+		background:#ff7a01;
+	cursor:default !important; 
+	color:#FFF !important;
+}
+
+/* Different widths for tabs: use a class name: w1, w2, w3 or w2 */
+
+
+/* width 1 */
+ul.tabs a.s 			{ background-position: -553px 0; width:81px; }
+ul.tabs a.s:hover 	{ background-position: -553px -31px; }
+ul.tabs a.s.current  { background-position: -553px -62px; }
+
+/* width 2 */
+ul.tabs a.l 			{ background-position: -248px -0px; width:174px; }
+ul.tabs a.l:hover 	{ background-position: -248px -31px; }
+ul.tabs a.l.current  { background-position: -248px -62px; }
+
+
+/* width 3 */
+ul.tabs a.xl 			{ background-position: 0 -0px; width:248px; }
+ul.tabs a.xl:hover 	{ background-position: 0 -31px; }
+ul.tabs a.xl.current { background-position: 0 -62px; }
+
+
+/* initially all panes are hidden */ 
+.panes .pane {
+	display:none;		
+}
+.panes div {
+			
+
+	float:left;
+
+
+	
+	
+}
+.title {font-size:16px; color:#000000; font-weight:bold;}
+#containerdount { width:942px; background-color:#fbfbfb; }
+#containerdount table td {padding-left:15px;}
+.my_booking_Head{ width:940px; float:left; font-weight:bold; color:#172841; font-size:20PX;  position:relative; margin:-66px 0 0 0 ; font-family:CALIBRI; line-height:20px; }
+.tab_cover{ width:942px; float:left; margin:25px 0 0 0;}
+.yellow_span{ color:#ff7a01;}
+.small_font_size{ font-size:14px; font-family:Arial, Helvetica, sans-serif;}
+.small_font_size12{ font-size:12px; font-family:Verdana, Geneva, sans-serif; font-weight:normal; }
+.tab_right_section{ width:313px; float:left; border-right:1px dashed #868484; margin:15px 0 0 0; }
+.tab_right_second{ width:313px; float:left;  margin:15px 0 0 0; }
+.my_profile_name{ font-weight:bold;font-family:CALIBRI;  color:#172841;  font-size:14px; padding:0 0 15px 10px;}
+.ma_pro_txt{ width:250px; float:left; height:25px; border:1px solid #cccccc; padding:0 0 0 10px; color:#999;}
+.ma_pro_txt_jumb{ width:263px; float:left; height:25px; border:1px solid #cccccc; padding:0 0 0 10px; color:#999; padding:3px;}
+.wi_for_cancel{ width:900px; float:left;}
+.ma_book_txt_fl{ width:150px; height:25px; border:1px solid #ccc; padding:0 0 0 5px; font-size:11px;}
+.ma_book_txt_fl_jumb{ width:150px; height:25px; border:1px solid #ccc; padding:3px; font-size:11px;}
+
+.my_profile_name_ex_tab{ font-weight:bold;font-family:Arial, Helvetica, sans-serif;  color:#172841;  font-size:12px; padding:10px 10px 10px 10px; border-right:1px solid #ccc; border-bottom:1px solid #ccc; text-align:center; background-color:#499aeb; color:#FFF;}
+
+.my_profile_name_ex_tab_ex{ font-weight:bold;font-family:Arial, Helvetica, sans-serif;  color:#172841;  font-size:12px; padding:10px 10px 10px 10px; border-bottom:1px solid #ccc; text-align:center; background-color:#499aeb; color:#FFF;}
+.my_profile_name_ex_tab_whit{ font-family:Arial, Helvetica, sans-serif;  color:#000; background-color:#FFF;  font-size:12px; padding:10px 10px 10px 10px; border-bottom:1px solid #ccc; text-align:center; border-right:1px solid #ccc;}
+.my_profile_name_ex_tab_whit_ex{ font-family:Arial, Helvetica, sans-serif;  color:#000; background-color:#FFF;  font-size:12px; padding:10px 10px 10px 10px; border-bottom:1px solid #ccc; text-align:center;}
+.my_profile_name_ex_tab_whit_second{ font-family:Arial, Helvetica, sans-serif;  color:#000; background-color:#e5e5e5;  font-size:12px; padding:10px 10px 10px 10px; border-bottom:1px solid #ccc; text-align:center; border-right:1px solid #ccc;}
+.my_profile_name_ex_tab_whit_second_ex{ font-family:Arial, Helvetica, sans-serif;  color:#000; background-color:#e5e5e5;  font-size:12px; padding:10px 10px 10px 10px; border-bottom:1px solid #ccc; text-align:center;}
+
+/********************** voucher page****************/
+
+.hotel_right_panel_header01 {
+    color: #172841;
+    float: none;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 22px;
+    margin: 0 0 15px 0px;
+}
+.print_view_btn{ width:200px; float:right; height:34px; margin:0 10px 25px 0;}
+.hide_cover{ width:700px; float:left; margin:0px 0 15px 0;}
+.travel_bg{ width:280px; float:left; background-color:#eceaea; height:30px; font-size:14px; line-height:30px; font-weight:bold; font-family:calibrib; color:#172841; }
+.travel_bg_cover{ width:280px; float:left; }
+.travel_icon_30_25{ width:30px; height:25px; float:left; margin:3px 10px 0 10px;}
+.travel_bg_body{ width:258px; float:left; border-left:1px dotted #eceaea; border-right:1px dotted #eceaea; border-bottom:1px dotted #eceaea; padding:10px; line-height:25px; min-height:150px; }
+
+.travel_bg_right_cover{ width:382px; float:left; margin:0 0 0 30px;}
+.travel_bg_right{ width:382px; float:left; background-color:#eceaea; height:30px; font-size:14px; line-height:30px; font-weight:bold; font-family:calibrib; color:#172841; }
+.travel_bg_right_body{ width:362px; float:left; border-left:1px dotted #eceaea; border-right:1px dotted #eceaea; border-bottom:1px dotted #eceaea; padding:10px; line-height:25px;  min-height:150px; }
+.widthsp100{ width:100px; float:left;}
+.widthsp200{ width:150px; float:left;}
+.hotel_detile_extra{ width:694px; float:left; margin:15px 0 0 0; }
+.hotel_detile_ex_bg{ width:694px;  background-color:#eceaea; height:30px; font-size:18px; line-height:30px; font-weight:bold; font-family:calibrib; color:#172841;  }
+.hotel_detile_ex_bg_body{ width:692px;   float:left;  border-left:1px dotted #eceaea; border-right:1px dotted #eceaea; border-bottom:1px dotted #eceaea;  }
+.hotel_126_124{ width:126px; height:124px; float:left; margin:15px 0 10px 10px; border:1px solid #CCC;} 
+.wi407_two_in {
+    float: left;
+    width: 551px; margin:10px 0 0 0;
+}
+.wi407_two_in_price {
+    float: right;
+    width: 240px; margin:10px 0 0 0; text-align:right; color:#ff7f00; font-size:22px; font-weight:bold;
+}
+.wi407_two_in_head{
+    float: left; font-weight:bold; font-family:Arial, Helvetica, sans-serif; color:#172841; width: 292px; padding:0 0 0 15px; font-size:20px;
+}
+.wi407_two_in_head_two{
+    float: left; font-weight:bold; font-family:Arial, Helvetica, sans-serif; color:#172841; width: 292px; padding:2px 0 0 15px; font-size:12px;
+}
+.wi407_two_in_head_two_news_body{
+    float: left; font-family:Arial, Helvetica, sans-serif; color:#666666; width: 500px; text-align:justify; padding:10px 0 0 15px; font-size:12px;
+}
+.hoptel_name_raw{ width:694px; float:left;  background-color:#fafafa;}
+.hoptel_name_raw_col{ width:694px; float:left;  }
+.hoptel_name_raw_L{ width:190px; float:left; height:30px; line-height:30px; padding:0 0 0 10px}
+.hoptel_name_raw_R{ width:490px; float:left; padding:10px 0 0 0; font-weight:bold;}
+.wi700has{ width:690px; height:40px; float:left; border-bottom:1px dotted #ccc;}
+.wi700has_L{ width:390px; height:40px; float:left; line-height:40px; padding:0 0 0 10px;}
+.wi700has_r{ width:200px; height:40px; float:right; line-height:40px; padding:0 0 0 10px; font-size:18px; text-align:right; font-weight:bold; padding:0 15px 0 0;}
+.wi700has_tube_less{ width:690px;  float:left;}
+.wi700has_tube_less_L{ width:390px;  float:left; padding:0 0 0 10px;}
+.wi700has_tube_less_R{ width:200px;  float:left; padding:0 0 0 10px;}
+
+/*******************my c panel page css*****************/
+.tb{ border-left:0px solid #CCC; margin:0 0 25px 0; width:700px; float:left;}
+.tb_sample_cover{ width:700px; float:left;}
+.tb_sample_cover_thre{ width:700px; float:left; margin:0 0 20px 0;}
+.tb_sample_cover_thre_L{ width:190px; float:left;  padding:0 0 0 10px; font-weight:bold;}
+.tb_sample_cover_thre_R{ width:390px; float:left;  padding:0 0 0 10px;}
+.tb_sample_cover211{ width:701px; float:left;}
+.add_new_btn{ float:right; width:109px; height:35px; margin:0 0 10px 0;}
+
+
+
+/**************************admin css**********************************/
+.admin_continer{ width:1000px; margin:0 auto;}
+.dash-box { border:1px #e5e5e5 solid; margin:25px 35px 25px 0 ;}
+.pl15{ padding:15px 0 0 15px; line-height:20px;}
+.admin_link{ font-weight:bold; color:#1083b9; text-decoration:underline;}
+a.admin_link:hover{ font-weight:bold; color:#0ea6ed; text-decoration:none;}
+.admin_head{ background:#0ea6ed; height:40px; font-weight:bold; color:#fff; line-height:40px; padding:0 0 0 0px; text-align:center; font-size:18px; font-family:calibrib; text-transform:uppercase;}
+.my_prifile_bg{ padding:0 15px 0 15px; float:left; background-color:#0ea6ed; height:30px; text-decoration:none;  border-right:1px solid #fff; color:#fff; font-weight:bold; font-size:12px; text-align:center; line-height:30px;} 
+a.my_prifile_bg:hover{ padding:0 15px 0 15px; float:left; background-color:#0c99db; height:30px; text-decoration:none;  border-right:1px solid #fff;  color:#fff; font-weight:bold; font-size:12px; text-align:center; line-height:30px;} 
+.left_al{ width:900px; float:left;}
+.pler{ padding:15px 0 0 15px;}
+.pler01{ padding:15px 0 0 15px;}
+.delete_link{ text-decoration:underline; color:#000; font-weight:bold;}
+a.delete_link:hover{ text-decoration:none; color:#000; font-weight:bold;}
+
+.login_view_continer{ width:960px; margin:0 auto; }
+.login_view_continer01{ width:300px; float:left; margin:125px 0 0 350px; background-color:#0ea6ed; box-shadow:2px 5px #999;  border-radius:13px; padding:15px; }
+.login_view_continer01 h1{ width:300px;  font-family:calibrib;  float:left; padding:0px; margin:0px 0 15px 0; text-align:center; color:#FFF; }
+.login_view_continer01 P{  clear:both; width:300px; float:left; padding:5PX 0 15px 5px; line-height:20px; margin:0px;   }
+.admin_text{ width:200px; float:left; height:25px; border:1px solid #ccc; border-radius:7px; font-size:11px; padding:0 0 0 5px;}
