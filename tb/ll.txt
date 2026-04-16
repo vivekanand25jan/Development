@@ -1,0 +1,5 @@
+$ActualBaseFare_val,$Tax_val,$STax_val,$SCharge_val,$TDiscount_val,$TPartnerCommission_val,$TCharge_val,$TMarkup_val,$TSdiscount_val,$AirEquipType_val,$ArrivalAirportCode_val,$ArrivalDateTime_val,$DepartureAirportCode_val,$DepartureDateTime_val,$FlightNumber_val,$OperatingAirlineCode_val,$OperatingAirlineFlightNumber_val,$RPH_val,$StopQuantity_val,$airLineName_val,$imageFileName_val,$viaFlight_val,$Availability_val,$ResBookDesigCode_val,$adultFare_val,$bookingclass_val,$classType_val,$farebasiscode_val,$Rule_val,$adultCommission_val,$childCommission_val,$commissionOnTCharge_val,$Discount_val,$airportTaxChild_val,$airportTaxInfant_val,$adultTaxBreakup_val,$childTaxBreakup_val,$infantTaxBreakup_val,$octax_val,$id_val,$key_val
+
+
+
+

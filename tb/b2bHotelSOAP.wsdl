@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns:typens="urn:b2bHotelSOAP" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns="http://schemas.xmlsoap.org/wsdl/" name="b2bHotelSOAP" targetNamespace="urn:b2bHotelSOAP">
+	<types>
+		<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:b2bHotelSOAP">
+			<!--
+			<import namespace="http://schemas.xmlsoap.org/soap/encoding/" schemaLocation="http://schemas.xmlsoap.org/soap/encoding/"/>
+            -->
+			<complexType name="roomArray">
+				<complexContent>
+					<restriction base="soapenc:Array">
+						<attribute ref="soapenc:arrayType" wsdl:arrayType="typens:paxesArray[]"/>
+					</restriction>
+				</complexContent>
+			</complexType>
+			<complexType name="paxesArray">
+				<complexContent>
+					<restriction base="soapenc:Array">
+						<attribute ref="soapenc:arrayType" wsdl:arrayType="typens:pax[]"/>
+					</restriction>
+				</complexContent>
+			</complexType>
+			<complexType name="pax">
+				<all>
+					<element name="paxType" type="xsd:string" minOccurs="0"/>
+					<element name="age" type="xsd:integer" minOccurs="0"/>
+					<element name="title" type="xsd:string" minOccurs="0"/>
+					<element name="firstName" type="xsd:string" minOccurs="0"/>
+					<element name="lastName" type="xsd:string" minOccurs="0"/>
+				</all>
+			</complexType>
+			<complexType name="leadTraveller">
+				<all>
+					<element name="paxInfo" type="typens:pax" minOccurs="0"/>
+					<element name="nationality" type="xsd:string" minOccurs="0"/>
+					<element name="highRiskCountry" type="xsd:string" minOccurs="0"/>
+					<element name="riskScore" type="xsd:float" minOccurs="0"/>
+					<element name="proxyScore" type="xsd:float" minOccurs="0"/>
+					<element name="ipAddress" type="xsd:string" minOccurs="0"/>
+					<element name="city" type="xsd:string" minOccurs="0"/>
+					<element name="address" type="xsd:string" minOccurs="0"/>
+					<element name="postCode" type="xsd:string" minOccurs="0"/>
+					<element name="phone" type="xsd:string" minOccurs="0"/>
+					<element name="email" type="xsd:string" minOccurs="0"/>
+					<element name="freeEmailStatus" type="xsd:string" minOccurs="0"/>
+					<element name="creditCardInfo" type="typens:creditCard" minOccurs="0"/>
+					<element name="paymentInfo" type="typens:payment" minOccurs="0"/>
+				</all>
+			</complexType>
+			<complexType name="creditCard">
+				<all>
+					<element name="cardNumber" type="xsd:string" minOccurs="0"/>
+					<element name="cardType" type="xsd:string" minOccurs="0"/>
+					<element name="bankName" type="xsd:string" minOccurs="0"/>
+					<element name="cvvNumber" type="xsd:string" minOccurs="0"/>
+					<element name="authCode" type="xsd:string" minOccurs="0"/>
+				</all>
+			</complexType>
+			<complexType name="payment">
+				<all>
+					<element name="binName" type="xsd:string" minOccurs="0"/>
+					<element name="binNameMatch" type="xsd:string" minOccurs="0"/>
+					<element name="binCountry" type="xsd:string" minOccurs="0"/>
+					<element name="amount" type="xsd:float" minOccurs="0"/>
+					<element name="currency" type="xsd:string" minOccurs="0"/>
+				</all>
+			</complexType>
+			
+			
+			<complexType name="bookInfo">
+				<all>
+					<element name="bookingStatus" type="xsd:string" minOccurs="0"/>
+					<element name="confirmationNumber" type="xsd:string" minOccurs="0"/>
+					<element name="supplier" type="xsd:string" minOccurs="0"/>
+					<element name="hotelCode" type="xsd:string" minOccurs="0"/>
+					<element name="checkIn" type="xsd:date" minOccurs="0"/>
+					<element name="checkOut" type="xsd:date" minOccurs="0"/>
+					<element name="totalPrice" type="xsd:float" minOccurs="0"/>
+					<element name="currency" type="xsd:string" minOccurs="0"/>
+					<element name="boardType" type="xsd:string" minOccurs="0"/>
+					<element name="rooms" type="typens:roomResponseArray" minOccurs="0"/>
+					<element name="cancellationPolicy" type="typens:policyArray" minOccurs="0"/>
+					<element name="agencyReferenceNumber" type="xsd:string" minOccurs="0"/>
+					<element name="comments" type="xsd:string" minOccurs="0"/>
+				</all>
+			</complexType>
+			<complexType name="policyArray">
+				<complexContent>
+					<restriction base="soapenc:Array">
+						<attribute ref="soapenc:arrayType" wsdl:arrayType="typens:policy[]"/>
+					</restriction>
+				</complexContent>
+			</complexType>
+			<complexType name="policy">
+				<all>
+					<element name="cancellationDay" type="xsd:integer" minOccurs="0"/>
+					<element name="feeType" type="xsd:string" minOccurs="0"/>
+					<element name="feeAmount" type="xsd:float" minOccurs="0"/>
+					<element name="currency" type="xsd:string" minOccurs="0"/>
+					<element name="remarks" type="xsd:string" minOccurs="0"/>
+				</all>
+			</complexType>
+			<complexType name="filterArray">
+				<complexContent>
+					<restriction base="soapenc:Array">
+						<attribute ref="soapenc:arrayType" wsdl:arrayType="typens:filter[]"/>
+					</restriction>
+				</complexContent>
+			</complexType>
+			<complexType name="filter">
+				<all>
+					<element name="filterType" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+					<element name="filterValue" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+				</all>
+			</complexType>
+			<complexType name="hotelArray">
+				<complexContent>
+					<restriction base="soapenc:Array">
+						<attribute ref="soapenc:arrayType" wsdl:arrayType="typens:hotel[]"/>
+					</restriction>
+				</complexContent>
+			</complexType>
+			<complexType name="hotel">
+				<all>
+					<element name="processId" type="xsd:string" minOccurs="0"/>
+					<element name="hotelCode" type="xsd:string" minOccurs="0"/>
+					<element name="availabilityStatus" type="xsd:string" minOccurs="0"/>
+					<element name="specialDeal" type="xsd:integer" minOccurs="0"/>
+					<element name="totalPrice" type="xsd:float" minOccurs="0"/>
+					<element name="totalTax" type="xsd:float" minOccurs="0"/>
+					<element name="currency" type="xsd:string" minOccurs="0"/>
+					<element name="boardType" type="xsd:string" minOccurs="0"/>
+					<element name="rooms" type="typens:roomResponseArray" minOccurs="0"/>
+				</all>
+			</complexType>
+			<complexType name="roomResponseArray">
+				<complexContent>
+					<restriction base="soapenc:Array">
+						<attribute ref="soapenc:arrayType" wsdl:arrayType="typens:roomResponse[]"/>
+					</restriction>
+				</complexContent>
+			</complexType>
+			<complexType name="roomResponse">
+				<all>
+					<element name="roomCategory" type="xsd:string" minOccurs="0"/>
+					<element name="paxes" type="typens:paxesArray" minOccurs="0"/>
+					<element name="totalRoomRate" type="float" minOccurs="0"/>
+					<element name="ratesPerNight" type="typens:dailyRateArray" minOccurs="0"/>
+				</all>
+			</complexType>
+			<complexType name="dailyRateArray">
+				<complexContent>
+					<restriction base="soapenc:Array">
+						<attribute ref="soapenc:arrayType" wsdl:arrayType="typens:dailyRate[]"/>
+					</restriction>
+				</complexContent>
+			</complexType>
+			<complexType name="dailyRate">
+				<all>
+					<element name="date" type="xsd:date" minOccurs="0"/>
+					<element name="amount" type="xsd:float" minOccurs="0"/>
+				</all>
+			</complexType>
+			<complexType name="getAvailableHotelResponse">
+				<all>
+					<element name="responseId" type="xsd:integer"/>
+					<element name="searchId" type="xsd:string"/>
+					<element name="totalFound" type="xsd:integer"/>
+					<element name="availableHotels" type="typens:hotelArray"/>
+				</all>
+			</complexType>
+			<complexType name="allocateHotelCodeResponse">
+				<all>
+					<element name="responseId" type="xsd:integer"/>
+					<element name="searchId" type="xsd:string"/>
+					<element name="hotelCode" type="xsd:string"/>
+					<element name="availableHotels" type="typens:hotelArray"/>
+				</all>
+			</complexType>
+			<complexType name="makeHotelBookingResponse">
+				<all>
+					<element name="responseId" type="xsd:integer"/>
+					<element name="trackingId" type="xsd:string"/>
+					<element name="hotelBookingInfo" type="typens:bookInfo"/>
+				</all>
+			</complexType>
+			<complexType name="getHotelBookingStatusResponse">
+				<all>
+					<element name="responseId" type="xsd:integer"/>
+					<element name="trackingId" type="xsd:string"/>
+					<element name="agencyReferenceNumber" type="xsd:string"/>
+					<element name="hotelBookingInfo" type="typens:bookInfo"/>
+				</all>
+			</complexType>
+			<complexType name="cancelHotelBookingResponse">
+				<all>
+					<element name="responseId" type="xsd:integer"/>
+					<element name="trackingId" type="xsd:string"/>
+					<element name="agencyReferenceNumber" type="xsd:string"/>
+					<element name="bookingStatus" type="xsd:string"/>
+					<element name="note" type="xsd:string"/>
+				</all>
+			</complexType>
+			<complexType name="getHotelCancellationPolicyResponse">
+				<all>
+					<element name="responseId" type="xsd:integer"/>
+					<element name="trackingId" type="xsd:string"/>
+					<element name="agencyReferenceNumber" type="xsd:string"/>
+					<element name="cancellationPolicy" type="typens:policyArray"/>
+				</all>
+			</complexType>
+			<complexType name="amendHotelBookingResponse">
+				<all>
+					<element name="responseId" type="xsd:integer"/>
+					<element name="trackingId" type="xsd:string"/>
+					<element name="agencyReferenceNumber" type="xsd:string"/>
+					<element name="amendStatus" type="xsd:string"/>
+					<element name="note" type="xsd:string"/>
+				</all>
+			</complexType>
+			<complexType name="getBalanceResponse">
+				<all>
+					<element name="responseId" type="xsd:integer"/>
+					<element name="currency" type="xsd:string"/>
+					<element name="totalDeposit" type="xsd:float"/>
+					<element name="totalBookingAmount" type="xsd:float"/>
+					<element name="currentBalance" type="xsd:float"/>
+				</all>
+			</complexType>
+		</schema>
+	</types>
+	<message name="getAvailableHotelRequest">
+		<part name="apiKey" type="xsd:string"/>
+		<part name="destinationId" type="xsd:string"/>
+		<part name="checkIn" type="xsd:date"/>
+		<part name="checkOut" type="xsd:date"/>
+		<part name="currency" type="xsd:string"/>
+		<part name="clientNationality" type="xsd:string"/>
+		<part name="onRequest" type="xsd:boolean"/>
+		<part name="rooms" type="typens:roomArray"/>
+		<part name="filters" type="typens:filterArray"/>
+	</message>
+	<message name="getAvailableHotelResponse">
+		<part name="return" type="typens:getAvailableHotelResponse"/>
+	</message>
+	<message name="allocateHotelCodeRequest">
+		<part name="apiKey" type="xsd:string"/>
+		<part name="searchId" type="xsd:string"/>
+		<part name="hotelCode" type="xsd:string"/>
+	</message>
+	<message name="allocateHotelCodeResponse">
+		<part name="return" type="typens:allocateHotelCodeResponse"/>
+	</message>
+	<message name="makeHotelBookingRequest">
+		<part name="apiKey" type="xsd:string"/>
+		<part name="processId" type="xsd:string"/>
+		<part name="agencyReferenceNumber" type="xsd:string"/>
+		<part name="leadTravellerInfo" type="typens:leadTraveller"/>
+		<part name="otherTravellerInfo" type="typens:paxesArray"/>
+		<part name="preferences" type="xsd:string"/>
+		<part name="note" type="xsd:string"/>
+	</message>
+	<message name="makeHotelBookingResponse">
+		<part name="return" type="typens:makeHotelBookingResponse"/>
+	</message>
+	<message name="getHotelBookingStatusRequest">
+		<part name="apiKey" type="xsd:string"/>
+		<part name="trackingId" type="xsd:string"/>
+	</message>
+	<message name="getHotelBookingStatusResponse">
+		<part name="return" type="typens:getHotelBookingStatusResponse"/>
+	</message>
+	<message name="cancelHotelBookingRequest">
+		<part name="apiKey" type="xsd:string"/>
+		<part name="trackingId" type="xsd:string"/>
+	</message>
+	<message name="cancelHotelBookingResponse">
+		<part name="return" type="typens:cancelHotelBookingResponse"/>
+	</message>
+	<message name="getHotelCancellationPolicyRequest">
+		<part name="apiKey" type="xsd:string"/>
+		<part name="trackingId" type="xsd:string"/>
+	</message>
+	<message name="getHotelCancellationPolicyResponse">
+		<part name="return" type="typens:getHotelCancellationPolicyResponse"/>
+	</message>
+	<message name="amendHotelBookingRequest">
+		<part name="apiKey" type="xsd:string"/>
+		<part name="trackingId" type="xsd:string"/>
+		<part name="checkIn" type="xsd:date"/>
+		<part name="checkOut" type="xsd:date"/>
+		<part name="leadTravellerInfo" type="typens:leadTraveller"/>
+		<part name="rooms" type="typens:roomArray"/>
+		<part name="preferences" type="xsd:string"/>
+		<part name="note" type="xsd:string"/>
+	</message>
+	<message name="amendHotelBookingResponse">
+		<part name="return" type="typens:amendHotelBookingResponse"/>
+	</message>
+	<message name="getBalanceRequest">
+		<part name="apiKey" type="xsd:string"/>
+	</message>
+	<message name="getBalanceResponse">
+		<part name="return" type="typens:getBalanceResponse"/>
+	</message>	
+	
+	<portType name="b2bHotelSOAPPortType">
+		<operation name="getAvailableHotel">
+			<documentation>Makes hotel search</documentation>
+			<input message="typens:getAvailableHotelRequest"/>
+			<output message="typens:getAvailableHotelResponse"/>
+		</operation>
+		<operation name="allocateHotelCode">
+			<input message="typens:allocateHotelCodeRequest"/>
+			<output message="typens:allocateHotelCodeResponse"/>
+		</operation>
+		<operation name="makeHotelBooking">
+			<input message="typens:makeHotelBookingRequest"/>
+			<output message="typens:makeHotelBookingResponse"/>
+		</operation>
+		<operation name="getHotelBookingStatus">
+			<input message="typens:getHotelBookingStatusRequest"/>
+			<output message="typens:getHotelBookingStatusResponse"/>
+		</operation>
+		<operation name="cancelHotelBooking">
+			<input message="typens:cancelHotelBookingRequest"/>
+			<output message="typens:cancelHotelBookingResponse"/>
+		</operation>
+		<operation name="getHotelCancellationPolicy">
+			<input message="typens:getHotelCancellationPolicyRequest"/>
+			<output message="typens:getHotelCancellationPolicyResponse"/>
+		</operation>
+		<operation name="amendHotelBooking">
+			<input message="typens:amendHotelBookingRequest"/>
+			<output message="typens:amendHotelBookingResponse"/>
+		</operation>
+		<operation name="getBalance">
+			<input message="typens:getBalanceRequest"/>
+			<output message="typens:getBalanceResponse"/>
+		</operation>
+	</portType>
+	<binding name="b2bHotelSOAPBinding" type="typens:b2bHotelSOAPPortType">
+		<soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<operation name="getAvailableHotel">
+			<soap:operation soapAction="urn:b2bHotelSOAPAction"/>
+			<input>
+				<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:b2bHotelSOAP"/>
+			</input>
+			<output>
+				<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:b2bHotelSOAP"/>
+			</output>
+		</operation>
+		<operation name="allocateHotelCode">
+			<soap:operation soapAction="urn:b2bHotelSOAPAction" style="rpc"/>
+			<input>
+				<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:b2bHotelSOAP"/>
+			</input>
+			<output>
+				<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:b2bHotelSOAP"/>
+			</output>
+		</operation>
+		<operation name="makeHotelBooking">
+			<soap:operation soapAction="urn:b2bHotelSOAPAction" style="rpc"/>
+			<input>
+				<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:b2bHotelSOAP"/>
+			</input>
+			<output>
+				<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:b2bHotelSOAP"/>
+			</output>
+		</operation>
+		<operation name="getHotelBookingStatus">
+			<soap:operation soapAction="urn:b2bHotelSOAPAction" style="rpc"/>
+			<input>
+				<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:b2bHotelSOAP"/>
+			</input>
+			<output>
+				<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:b2bHotelSOAP"/>
+			</output>
+		</operation>
+		<operation name="cancelHotelBooking">
+			<soap:operation soapAction="urn:b2bHotelSOAPAction" style="rpc"/>
+			<input>
+				<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:b2bHotelSOAP"/>
+			</input>
+			<output>
+				<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:b2bHotelSOAP"/>
+			</output>
+		</operation>
+		<operation name="getHotelCancellationPolicy">
+			<soap:operation soapAction="urn:b2bHotelSOAPAction" style="rpc"/>
+			<input>
+				<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:b2bHotelSOAP"/>
+			</input>
+			<output>
+				<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:b2bHotelSOAP"/>
+			</output>
+		</operation>
+		<operation name="amendHotelBooking">
+			<soap:operation soapAction="urn:b2bHotelSOAPAction" style="rpc"/>
+			<input>
+				<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:b2bHotelSOAP"/>
+			</input>
+			<output>
+				<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:b2bHotelSOAP"/>
+			</output>
+		</operation>
+		<operation name="getBalance">
+			<soap:operation soapAction="urn:b2bHotelSOAPAction" style="rpc"/>
+			<input>
+				<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:b2bHotelSOAP"/>
+			</input>
+			<output>
+				<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:b2bHotelSOAP"/>
+			</output>
+		</operation>
+	</binding>
+	<service name="b2bHotelSOAPService">
+		<port name="b2bHotelSOAPPort" binding="typens:b2bHotelSOAPBinding">
+			<soap:address location="http://api.hotelspro.com/4.1_test/hotel/b2bHotelSOAP.php"/>
+		</port>
+	</service>
+</definitions>
