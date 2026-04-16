@@ -1,0 +1,401 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link href="css/postion.css" rel="stylesheet" type="text/css" />
+<style >
+ul { list-style: none outside none; }
+li { display: list-item; }
+#login-container {
+	font:normal 12px Arial, Helvetica, sans-serif;
+	color:#5f5f5f;
+	float:left;
+}
+#login-container a {
+	color:#172841;
+	text-decoration:none;
+}
+#login-container a:hover {
+	color:#e84c09;
+	text-decoration:none;
+}
+#login-container .header-curve {
+	background: url('images/sprite_general.png') no-repeat scroll -298px -2173px;
+	width: 835px;
+	height: 12px;
+	display:block;
+	margin:25px 0 0;
+}
+#login-container .content-box {
+	
+	width: 308px;
+
+	display:block;
+
+}
+#login-container .bottom-curve {
+	background: url('images/sprite_general2.png') no-repeat scroll -1499px -2400px;
+	width: 835px;
+	height: 18px;
+	display:block;
+	margin:0 0 25px 0;
+}
+#login-container .content-box .or-box {
+    clear: both;
+    display: inline-block;
+    float: left;
+    left: 384px;
+    position: absolute;
+    top: 398px;
+	background: url('images/sprite_general2.png') no-repeat -828px -2771px;
+	width: 49px;
+	height: 49px;
+}
+#login-container .content-box .or-box .line {
+    clear: both;
+    display: inline-block;
+    float: left;
+    left: 24px;
+    position: absolute;
+    top: -9px;
+	background: url("images/sprite_general2.png") no-repeat scroll -841px -2760px #CCCCCC;
+	width: 1px;
+	height: 240px;
+}
+#login-container .content-box .rightcont {
+    clear: both;
+    display: inline-block;
+    float: right;
+    width: 390px;
+}
+#login-container .content-box .leftcont {
+    min-height: 300px;
+}
+#login-container .content-box .leftcont .inside {
+	width:292px;
+}
+#login-container .content-box .rightcont .inside {
+	width: 296px;
+}
+#login-container .content-box .rightcont h3 {
+    background: url("images/sprite_general2.png") no-repeat scroll -75px -933px transparent;
+    color: #3C5E90;
+    cursor: pointer;
+    font: bold 12px/12px Arial,Helvetica,sans-serif;
+    margin:0 0 9px 0;
+    padding: 10px 0 10px 20px;
+	border-top:1px solid #d8d8d8;
+	display:block;
+}
+#login-container .content-box .rightcont span.normal {
+	display: block;
+	margin:5px 0;
+}
+#login-container .content-box .rightcont span.small {
+	display: block;
+	margin:5px 0;
+	font-size:11px;
+}
+#login-container .content-box .info-wrapper .infos {
+	overflow:hidden;
+	height:0;
+	
+}
+#login-container .content-box .info-wrapper .infos.opened {
+	display:block;
+}
+.info-wrapper h3 {
+    background: url("images/sprite_general2.png") no-repeat scroll -75px -933px transparent;
+    color: #172841;
+    cursor: pointer;
+    font: bold 14px/14px calibrib;
+    margin:0 0 0 0;
+    padding: 10px 0 10px 20px;
+	border-top:1px solid #d8d8d8;
+	display:block;
+}
+.info-wrapper li.opened h3 {
+    background: url("images/sprite_general.png") no-repeat scroll -1564px -2054px transparent;
+    color: #172841;
+    cursor: pointer;
+    font: bold 14px/14px calibrib;
+    margin:0 0 9px 0;
+    padding: 10px 0 0 20px;
+	border-top:1px solid #d8d8d8;
+	display:block;
+}
+.info-wrapper .infosinner {
+	margin:0 0 15px 0;
+	display:block;
+	padding:0 0 10px 0;
+	float:left;
+	width:274px;
+}
+
+.info-wrapper .infosinner input {
+	padding: 9px 15px;
+	border: 1px solid #ccc;
+	color:#ccc;
+	font:12px Arial, Helvetica, sans-serif;
+	margin:5px;
+	width:212px;
+}
+#login-container button {
+    float: right;
+    margin:7px 10px 15px;
+}
+#login-container button {
+    background: url("images/sprite_general.png") no-repeat scroll -1180px -2255px transparent;
+    color: #FFFFFF;
+    display: block;
+/*    float: left;*/
+    font: 19px/30px "FuturaGreekBoldRegular",Gadget,sans-serif;
+    height: 32px;
+    text-align: center;
+    text-decoration: none;
+    width: 126px;
+	border:none;
+	cursor:pointer;
+	padding:0 0 10px 0;
+}
+#login-container button:hover { background: url('images/sprite_general.png') no-repeat -1178px -2175px; }
+.page-login .inner-title {
+    color: #172841;
+    display: inline-block;
+    font-family: Arial;
+    font-size: 19px;
+    font-weight: bold;
+    margin: 0;
+    width: 100%;
+}
+.page-login .title-desc {
+	color:#182841;
+	font:16px Arial, Helvetica, sans-serif;
+}
+
+.login_btn{ width:109px; float:right; margin:10px 25px 0 0; height:35px;}
+.for_loop_second{ width:698px; background-color:#ececec;  border-right:1px solid #f2f2f2;  border-left:1px solid #f2f2f2;  border-bottom:1px solid #f2f2f2; float:left; padding:14px 0 14px 14px;  background-image:url(images/for_loop_bg.jpg); background-repeat:repeat-x; min-height:400px; }
+
+</style>
+<script type="text/javascript">
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+</script>
+<script type="text/javascript" src="scripts/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="scripts/jquery-ui-1.8.18.custom.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.selectbox-1.2.js"></script>
+<script type="text/javascript" src="scripts/jquery.jcarousel.min.js"></script>
+<script type="text/javascript" src="scripts/script-jim.js"></script></head>
+</head>
+
+<body  class=' page-login'>
+		<div id="main_continer">
+   		  <div class="header">
+                	<div class="logo">
+                    	<a href="#"><img src="images/logo.jpg" width="198" height="151" /> </a>
+                    </div>
+                    <div class="header_r">
+<div class="wi700">   		<div class="sign_cover">
+                            		<div class="sign_bg_L"></div>
+                                    <div class="sign_bg_M"><a href="#" class="sign_up_link">SignIn</a> | <a href="#" class="sign_up_link">Register</a> | <a href="#" class="sign_up_link">Customer Support</a> | <a href="#" class="sign_up_link">Feedback</a></div>
+                                    <div class="sign_bg_R"></div>
+                            </div></div>
+             <div class="wi700">   <div class="wi251">
+                         		<div class="wi40"><img src="images/phone.jpg" width="40" height="28" /></div>
+               <div class="wi198_28">240 57 95 145</div>
+                      </div></div>
+                         <div class="meunwi700">
+                         
+                         		<div class="menu_L"></div>
+                           <div class="menu_M"> <a href="#" class="menu_link pd10">HOME</a>      <a href="#" class="menu_link pd10">ABOUT US</a>      <a href="#" class="menu_link pd10">ADVANTAGE</a>       <a href="#" class="menu_link pd10">WHY BOOK ONLINE</a>      <a href="#" class="menu_link pd10">TERMS & CONDITION</a>       <a href="#" class="menu_link pd10">BECOME AGENT</a> 
+</div>
+                           <div class="menu_R"></div>
+                         </div>
+        </div>
+            
+                    <div class="inner_banner"><img src="images/inner_banner.jpg" width="979" height="230" /></div>
+                    <div class="content_cover"><p class="mm"></p>
+                  <p class="big-txxt">Sign Up</p> <div class="wi584"> Welcome to your account
+                                            
+                                 </div>              <p class="blue-txt">Thank you for booking your travel with Airafasttickets. You will receive your confirmation/ invoice in the next few minutes. If you receive no confirmation email in the next few minutes, please contact our service center.</p>
+                      <div class="left_pannel">
+                            		
+                              <div class="add">
+               		  <div class="wi182_bor_bottom">
+                                    		<div class="wi115_bor_bottom">DO YOU 
+NEED HELP ?</div>
+<div class="wi56_47"><img src="images/Contact_pic.jpg" width="56" height="47" /></div>
+                                    </div>
+                                    <div class="wi115_bor_bottom_call"><span style="font-size:16px;">CALL US</span><br/>210 27 18127 1452</div>
+                              </div>
+                              <div class="add">
+               		  <div class="wi182_bor_bottom">
+                                    		<div class="wi115_bor_bottom">DO YOU 
+NEED HELP ?</div>
+<div class="wi56_47"><img src="images/Contact_pic.jpg" width="56" height="47" /></div>
+                                    </div>
+                                    <div class="wi115_bor_bottom_call"><span style="font-size:16px;">CALL US</span><br/>210 27 18127 1452</div>
+                              </div>
+                            </div>      <div class="right_pannel_new">
+                            	
+                                
+  <div class="for_loop_second">
+  <div class="gray">Log In</div>
+  
+                                            
+  <div class="login">
+    
+<div id="login-container">
+    <div class="content-box">
+      
+      
+
+      
+
+      <div class="leftcont">
+
+        <div class="inside">
+
+          <div class="info-wrapper">  
+
+          <ul>
+
+            <li class="opened">
+
+              <h3>Access you Account :</h3>
+
+              <div class="infos one">
+
+                <div class="infosinner"> Already a Member?<br />
+
+                  Just type in your log-in name and password.<br />
+
+                  <form action="formaction.php">
+
+                    <input type="text" value="Email Address" id="email" name="email">
+
+                    <input type="password" value="Password" id="password" name="password">
+
+                  </form>
+                  <div class="login_btn"><a href="#"><img src="images/login_btn.jpg" width="109" height="35" /></a></div>
+
+                  
+
+                </div>
+
+              </div>
+
+            </li>
+
+            <li>
+
+              <h3>Forgot your Log-in Name ? </h3>
+
+              <div class="infos two">
+
+                <div class="infosinner"> We can email your log-in name to your account email address.<br />
+
+                  <form action="formaction.php">
+
+                    <input type="text" value="First Name" id="firstnm" name="firstnm">
+
+                    <input type="text" value="Email Address" id="rirtstnm" name="firstnm">
+
+                    <input type="password" value="Password" id="password" name="password">
+
+                  </form>
+
+<div class="login_btn"><a href="#"><img src="images/send_btn.jpg" width="109" height="35" /></a></div>
+                  
+
+                </div>
+
+              </div>
+
+            </li>
+
+            <li>
+
+              <h3>Forgot your Password ?</h3>
+
+              <div class="infos three">
+
+                <div class="infosinner"> We can email your password to your account email address.<br />
+
+                  <form action="formaction.php">
+
+                    <input type="text" value="Log-in Name" id="loginname" name="loginname">
+
+                  </form>
+<div class="login_btn"><a href="#"><img src="images/send_btn.jpg" width="109" height="35" /></a></div>
+                  
+
+                </div>
+
+              </div>
+
+              </li>
+
+             </ul> 
+
+          </div>
+
+        </div>
+
+
+
+  </div>
+
+    
+
+  </div>
+
+   
+
+</div>
+
+
+
+
+
+  </div>
+  
+  <div class="OR"></div>
+  
+  <div class="login"> <hr />
+  <div class="bul-txxt">Create you Account :	</div>
+  <p class="fl">You will need to create an account to complete your request. It's fast and free.<br />
+ 
+Here are just a few of the benefits you receive as a Travelocity member:<br />
+ 
+Choose free services such as FareWatcher PlusSM, RSS Instant Fare Notification, and Flight Alert Notification. Get Low Fare Alerts and other special travel offers. Enjoy superior customer Care 24/7.<br />
+</p>
+
+<div class="create-butn"><a href="create-form.html"><img src="images/create.jpg" width="109" height="35" /></a></div>
+  </div>
+  
+
+  
+  </div>    
+                            </div>
+                            
+                            
+                    </div>
+          
+          
+          <div class="border_dd"></div>
+          <div class="footer">
+          		<div class="wi1006"> <a href="#" class="FOOTER_LINK">HOME</a>     <a href="#" class="FOOTER_LINK">ABOUT US</a>      <a href="#" class="FOOTER_LINK">ADAVANTAGE</a>      <a href="#" class="FOOTER_LINK">WHY BOOK ONLINE</a>     <a href="#" class="FOOTER_LINK">TERMS & CONDITION</a>      <a href="#" class="FOOTER_LINK">BECOME AGENT </a>
+</div>
+<div class="copy">©2012  stayaway com. All rights reserved</div>
+<div class="wi122"> <img src="images/fb.jpg" width="27" height="27" />&nbsp;
+<img src="images/twitter.jpg" width="27" height="27" />&nbsp;<img src="images/google.jpg" width="27" height="27" />&nbsp;<img src="images/skype.jpg" width="27" height="27" />
+</div>
+          </div>
+        </div>
+        </div>
+</body>
+</html>
