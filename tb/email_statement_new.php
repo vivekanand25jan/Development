@@ -1,7 +1,7 @@
 <?php
 
-$to=mysql_connect("localhost","travelba",'s+WBZNq!&.aR');
-mysql_select_db("travelba_travel_bay",$to);
+$to=mysql_connect("localhost","",'s+!&.aR');
+mysql_select_db("",$to);
 
 //===================================
 
@@ -14,7 +14,7 @@ $previous_month=date("Y-m-d",$date2);
 
 
 
-$from = "noreply@Travel-bay.com";
+$from = "noreply@Travel.com";
                $subject ="Email Account Statement !!";
             //  $body=''; 
               $body="<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
