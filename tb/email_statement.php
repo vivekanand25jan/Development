@@ -1,7 +1,7 @@
 <?php
 
-$to=mysql_connect("localhost","travelba",'s+WBZNq!&.aR');
-mysql_select_db("travelba_travel_bay",$to);
+$to=mysql_connect("localhost","ba",'');
+mysql_select_db("l_bay",$to);
 
 //===================================
 
