@@ -1,0 +1,204 @@
+/****************************************** GALLERY START ******************************************* */
+
+
+.hotel-gallery-info-wrapper #gallery {
+	display: block;
+	float: left;
+	width: 249px; 
+	margin-right:10px;
+	margin-left:21px;
+}
+
+.hotel-gallery-info-wrapper #gallery .slideshow-container {
+	position: relative;
+	clear: both;
+	height: 238px; /* This should be set to be at least the height of the largest image in the slideshow */
+}
+
+.hotel-gallery-info-wrapper #gallery a, .hotel-gallery-info-wrapper #gallery div.navigation a {
+	text-decoration: none;
+	color: #777;
+}
+.hotel-gallery-info-wrapper #gallery a:focus, .hotel-gallery-info-wrapper #gallery a:hover, .hotel-gallery-info-wrapper #gallery a:active {
+	text-decoration: underline;
+}
+.hotel-gallery-info-wrapper #gallery .controls {
+	margin-top: 5px;
+	height: 23px;
+}
+.hotel-gallery-info-wrapper #gallery .controls a {
+	padding: 5px;
+}
+.hotel-gallery-info-wrapper #gallery .ss-controls {
+	float: left;
+}
+.hotel-gallery-info-wrapper #gallery .nav-controls {
+	float: right;
+}
+
+.hotel-gallery-info-wrapper #gallery .loader {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url('loader.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 550px;
+	height: 502px; /* This should be set to be at least the height of the largest image in the slideshow */
+}
+.hotel-gallery-info-wrapper div.slideshow {
+
+}
+.hotel-gallery-info-wrapper div.slideshow span.image-wrapper {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.hotel-gallery-info-wrapper div.slideshow a.advance-link {
+	display: block;
+	width: 249px;
+	height: 238px; /* This should be set to be at least the height of the largest image in the slideshow */
+	/*line-height: 238px;*/ /* This should be set to be at least the height of the largest image in the slideshow */
+	line-height: 0;
+	text-align: center;
+}
+.hotel-gallery-info-wrapper div.slideshow a.advance-link:hover, .hotel-gallery-info-wrapper div.slideshow a.advance-link:active, .hotel-gallery-info-wrapper div.slideshow a.advance-link:visited {
+	text-decoration: none;
+}
+.hotel-gallery-info-wrapper div.slideshow img {
+	vertical-align: middle;
+	border: 1px solid #ccc;
+}
+
+.hotel-gallery-info-wrapper div.caption-container {
+	position: relative;
+	clear: left;
+	height: 75px;
+}
+.hotel-gallery-info-wrapper span.image-caption {
+	display: block;
+	position: absolute;
+	width: 249px;
+	top: 0;
+	left: 0;
+}
+.hotel-gallery-info-wrapper div.caption {
+	padding: 12px;
+}
+.hotel-gallery-info-wrapper div.image-title {
+	font-weight: bold;
+	font-size: 1.4em;
+}
+.hotel-gallery-info-wrapper div.image-desc {
+	line-height: 1.3em;
+	padding-top: 12px;
+}
+.hotel-gallery-info-wrapper div.navigation {
+  float: left;
+  width: 313px;
+}
+.hotel-gallery-info-wrapper ul.thumbs {
+	clear: both;
+	margin: 0;
+	padding: 0;
+}
+.hotel-gallery-info-wrapper ul.thumbs li {
+	float: left;
+	padding: 0;
+	margin: 0 10px 10px 0;
+	list-style: none;
+}
+.hotel-gallery-info-wrapper a.thumb { display: block; }
+
+/*******************/
+.hotel-gallery-info-wrapper a.thumb:hover,
+.hotel-gallery-info-wrapper li.selected a.thumb {
+  border: 3px solid #E84C09;
+  display: block;
+  height: 46px;
+  overflow: hidden;
+  position: relative;
+  width: 46px;
+}
+.hotel-gallery-info-wrapper ul.thumbs li a.thumb:hover img,
+.hotel-gallery-info-wrapper ul.thumbs li.selected a.thumb img { left: -3px; position: absolute; top: -3px; }
+
+
+
+.hotel-gallery-info-wrapper a.thumb:focus {
+	outline: none;
+}
+.hotel-gallery-info-wrapper ul.thumbs img {
+	border: none;
+	display: block;
+}
+.hotel-gallery-info-wrapper div.pagination {
+	clear: both;
+}
+.hotel-gallery-info-wrapper div.navigation div.top {
+	margin-bottom: 12px;
+	height: 11px;
+}
+.hotel-gallery-info-wrapper div.navigation div.bottom {margin-top: 10px; float:right; margin-right:10px; }
+
+.hotel-gallery-info-wrapper div.pagination a { 
+	display:block; 
+	width:10px; 
+	height:16px; 
+	background:url('../images/gallery_pager.png') -16px -20px no-repeat; 
+	text-indent:-9999px; 
+	margin-left: 16px;
+	float: left;
+}
+
+.hotel-gallery-info-wrapper div.pagination a.nextpage:hover {background-position:-16px 0;}
+.hotel-gallery-info-wrapper div.pagination a.prevpage {background-position:0 -20px;}
+.hotel-gallery-info-wrapper div.pagination a.prevpage:hover {background-position:0 0;}
+.hotel-gallery-info-wrapper div.pagination .pagernum {display:none;}
+
+/*
+.hotel-gallery-info-wrapper div.pagination a, .hotel-gallery-info-wrapper div.pagination span.current, .hotel-gallery-info-wrapper div.pagination span.ellipsis 
+.hotel-gallery-info-wrapper div.pagination a:hover 
+.hotel-gallery-info-wrapper div.pagination span.current
+.hotel-gallery-info-wrapper div.pagination span.ellipsis 
+*/
+
+
+/* big gallery */
+.hotel-gallery-info-wrapper.big #gallery {width:437px;}
+.hotel-gallery-info-wrapper.big div.navigation {width:350px;}
+.hotel-gallery-info-wrapper.big a.thumb:hover,
+.hotel-gallery-info-wrapper.big li.selected a.thumb {
+  border: 3px solid #E84C09;
+  height: 54px;
+  width: 54px;
+}
+
+.hotel-gallery-info-wrapper.big div.slideshow img {border:none;}
+.hotel-gallery-info-wrapper #gallery .slideshow-container {height:296px;}
+.hotel-gallery-info-wrapper.big #gallery {margin-left:15px;}
+
+/************************ GALLERY END *******************/
+
+
+#page-header.galleryframe .header-left { margin-left:15px; margin-bottom:20px; }
+#page-header.galleryframe .header-left .hotel-name {font-family:Arial; font-weight:bold; font-size:22px; color:#121f36; float:left; line-height:22px;}
+#page-header.galleryframe .header-left ul.sters { float: left; margin: 5px 0 0 8px; }
+#page-header.galleryframe .header-left .hotel-street-map { clear:both; }
+#page-header.galleryframe .header-left .hotel-street-map .address { font-size:14px; color:#3c5e90; font-family:Arial; font-weight:bold; }
+#page-header.galleryframe .header-left .hotel-street-map .showmap,
+#page-header.galleryframe .header-left .hotel-street-map .showmap a { font-weight:bold; font-family:Arial; font-size:14px; color:#121f36; text-decoration:none;}
+
+#page-header.galleryframe .header-left .hotel-street-map .showmap a:hover {text-decoration: underline;}
+#page-header.galleryframe .header-left ul.sters { float: left; margin: 5px 0 0 8px; }
+
+
+#page-header.galleryframe .header-left ul.sters li {
+  background: url("../images/sprite_general.png") no-repeat scroll -32px -371px transparent;
+  float: left;
+  height: 11px;
+  margin: 0 1px;
+  text-indent: -999999px;
+  width: 11px;
+}

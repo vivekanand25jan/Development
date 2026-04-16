@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link href="jquery.vector-map.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="maps.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="../styles/reset.css" media="screen" rel="stylesheet" type="text/css" />
+<script src="../scripts/jquery-1.4.2.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="../scripts/jquery.autocomplete2.js"></script>
+<script type="text/javascript" src="../scripts/jquery.jscrollpane.js"></script>
+<script type="text/javascript" src="../scripts/jquery.mousewheel.js"></script>
+<script src="jquery.vector-map.js" type="text/javascript"></script>
+<script src="world-en.js" type="text/javascript"></script>
+<script src="europe-en.js" type="text/javascript"></script>
+<script src="africa-en.js" type="text/javascript"></script>
+<script src="asia-en.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+	 
+	 //init the maps
+	 $('.af.map').vectorMap({map: 'africa_en'});
+	
+	 //$('.as.map').vectorMap({map: 'asia_en'});
+	 //$('.cr.map').vectorMap({map: 'africa_en'});
+	 //$('.ca.map').vectorMap({map: 'africa_en'});
+	 $('.eu.map').vectorMap({map: 'europe_en'});
+	
+	 
+	 //$('.na.map').vectorMap({map: 'africa_en'});
+	 //$('.oc.map').vectorMap({map: 'africa_en'});
+	 //$('.sa.map').vectorMap({map: 'africa_en'});
+	 
+	//var mapHtml = $('.af.map').html()
+	//mapHtml = mapHtml.replace(/<g transform="[^"]+/, '<g transform="scale(1.4209999999999998) translate(-313.6101337086557, -160.39408866995075)')
+	//$('.af.map').html(mapHtml)
+	 //setMenu
+	 setMapsMenu()
+	 
+	
+	 
+	
+	
+})
+
+
+$(window).load(function(){
+	//africa
+	var sel = $('.af.map svg g')[0]
+	sel.getAttributeNode('transform').value = "scale(1.4209999999999998) translate(-313.6101337086557, -160.39408866995075)"
+	//europe 
+	var sel = $('.eu.map svg g')[0]
+	sel.getAttributeNode('transform').value = "scale(1.015) translate(-97.14285714285711, -15.17241379310343)"		
+
+})
+/**************** functions ****************/
+function setMapsMenu()
+{
+	$('#airportsByMap .mapMenu li').click(function(){
+		var curRel = $(this).attr('rel')
+		$('#airportsByMap .mapMenu li').removeClass('active')
+		$(this).addClass('active')
+		$('#airportsByMap .mapBody .map').css('display','none')
+		$('#airportsByMap .mapBody .map.'+curRel).fadeIn(200)	
+	
+	
+	})
+} 
+
+
+
+
+
+
+
+</script>
+
+</head>
+
+<body>
+<div id="airportsByMap">
+<div class="mapMenu">
+	<ul>
+    	<li rel="af">Africa</li>
+        <li rel="as">Asia</li>
+        <li rel="cr" class="med">Caribbean</li>
+        <li rel="ca" class="big">Central America</li>
+        <li rel="eu">Europe</li>
+        <li rel="na" class="big">North America</li>
+        <li rel="oc">Oceania</li>
+        <li rel="sa" class="big last">South America</li>
+    </ul>
+</div> <!-- /#mapMenu -->
+<div class="mapBody" class="europe_map">     
+    <div class="leftCol">
+        <div class="af map"></div>
+        <div class="as map"></div>
+        <div class="cr map"></div>
+        <div class="eu map"></div>
+        <div class="na map"></div>
+        <div class="oc map"></div>
+        <div class="sa map"></div>
+    </div>
+    <div class="rightCol">
+        <h3>Europe</h3>
+        <input type="text" autocomplete="off" name="airport" id="airport" rel="eu" />
+        
+        <div id="initRes"> <!-- all the rusults after click of region -->
+        
+        </div>
+    </div>
+</div>
+</div> <!-- / #airportsByMap -->
+ 
+ 
+
+ 
+
+</body>
+</html>

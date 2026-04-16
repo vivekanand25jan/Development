@@ -1,0 +1,277 @@
+/*************** SIGN UP ACTIVATION PAGE **********************/
+
+#signup-activation-container {
+	font:normal 12px Arial, Helvetica, sans-serif;
+	color:#5f5f5f;
+	float:left;
+}
+#signup-activation-container a {
+	color:#172841;
+	text-decoration:none;
+}
+#signup-activation-container a:hover {
+	color:#e84c09;
+	text-decoration:none;
+}
+#signup-activation-container .header-curve {
+	background: url('../images/sprite_general.png') no-repeat scroll -298px -2173px;
+	width: 835px;
+	height: 12px;
+	display:block;
+	margin:25px 0 0;
+}
+#signup-activation-container .content-box {
+	background: url('../images/sprite_general2.png') no-repeat scroll -1633px -1150px #EBEBEB;
+	width: 775px;
+	min-height: 273px;
+	display:block;
+	padding:30px 30px;
+}
+#signup-activation-container .bottom-curve {
+	background: url('../images/sprite_general2.png') no-repeat scroll -1499px -2400px;
+	width: 835px;
+	height: 18px;
+	display:block;
+	margin:0 0 25px 0;
+}
+#signup-activation-container .content-box .or-box {
+    clear: both;
+    display: inline-block;
+    float: left;
+    left: 384px;
+    position: absolute;
+    top: 398px;
+	background: url('../images/sprite_general2.png') no-repeat -828px -2771px;
+	width: 49px;
+	height: 49px;
+}
+
+.signup-activation-title {
+    color: #172841;
+    display: inline-block;
+    font-family: Arial;
+    font-size: 19px;
+    font-weight: bold;
+    margin: 20px 0px -5px;
+    width: 100%;
+}
+
+#signup-activation-container .text-area {
+	display:block;
+	padding:10px 0;
+	width: 770px;
+	height: auto;
+	border-bottom: 1px solid #d8d8d8;
+}
+
+#signup-activation-container .text-area h2 {
+    color: #172841;
+    display: inline-block;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    width: 100%;
+	margin: 10px 0px;
+}
+
+#signup-activation-container .tickbox {
+	display:block;
+	padding:10px 0;
+	width: 770px;
+	height: auto;
+}
+#signup-activation-container .tickbox li {
+	background: url('../images/sprite_general.png') no-repeat -890px -4234px transparent;
+	height: 19px;
+	padding:3px 3px 0 20px;
+}
+
+
+/*************** SIGN UP ACTIVATION COMPLETE PAGE **********************/
+#signup-activation-complete-container {
+	font:normal 12px Arial, Helvetica, sans-serif;
+	color:#5f5f5f;
+	float:left;
+}
+#signup-activation-complete-container a {
+	color:#172841;
+	text-decoration:none;
+}
+#signup-activation-complete-container a:hover {
+	color:#e84c09;
+	text-decoration:none;
+}
+#signup-activation-complete-container .header-curve {
+	background: url('../images/sprite_general.png') no-repeat scroll -298px -2173px;
+	width: 835px;
+	height: 12px;
+	display:block;
+	margin:25px 0 0;
+}
+#signup-activation-complete-container .content-box {
+	background: url('../images/sprite_general2.png') no-repeat scroll -1633px -1150px #EBEBEB;
+	width: 775px;
+	min-height: 273px;
+	display:block;
+	padding:30px 30px;
+}
+#signup-activation-complete-container .bottom-curve {
+	background: url('../images/sprite_general2.png') no-repeat scroll -1499px -2400px;
+	width: 835px;
+	height: 18px;
+	display:block;
+	margin:0 0 25px 0;
+}
+#signup-activation-complete-container .content-box .or-box {
+    clear: both;
+    display: inline-block;
+    float: left;
+    left: 384px;
+    position: absolute;
+    top: 398px;
+	background: url('../images/sprite_general2.png') no-repeat -828px -2771px;
+	width: 49px;
+	height: 49px;
+}
+
+.signup-activation-complete-title {
+    color: #172841;
+    display: inline-block;
+    font-family: Arial;
+    font-size: 19px;
+    font-weight: bold;
+    margin: 20px 0px -5px;
+    width: 100%;
+}
+
+#signup-activation-complete-container .text-area {
+	display:block;
+	padding:10px 0;
+	width: 770px;
+	height: auto;
+	border-bottom: 1px solid #d8d8d8;
+}
+
+#signup-activation-complete-container .text-area h2 {
+    color: #172841;
+    display: inline-block;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    width: 100%;
+	margin: 10px 0px;
+}
+
+#signup-activation-complete-container .tickbox {
+	display:block;
+	padding:10px 0;
+	width: 770px;
+	height: auto;
+}
+#signup-activation-complete-container .tickbox li {
+	background: url('../images/sprite_general.png') no-repeat -890px -4234px transparent;
+	height: 19px;
+	padding:3px 3px 0 20px;
+}
+
+/*************** TRANSACTION SAFETY PAGE **********************/
+
+#transactionsafety-container {
+	font:normal 12px Arial, Helvetica, sans-serif;
+	color:#5f5f5f;
+	float:left;
+}
+#transactionsafety-container a {
+	color:#172841;
+	text-decoration:none;
+}
+#transactionsafety-container a:hover {
+	color:#e84c09;
+	text-decoration:none;
+}
+#transactionsafety-container .header-curve {
+	background: url('../images/sprite_general.png') no-repeat scroll -298px -2173px;
+	width: 835px;
+	height: 12px;
+	display:block;
+	margin:25px 0 0;
+}
+#transactionsafety-container .content-box {
+	background: url('../images/sprite_general2.png') no-repeat scroll -1633px -1150px #EBEBEB;
+	width: 775px;
+	min-height: 273px;
+	display:block;
+	padding:30px 30px;
+}
+#transactionsafety-container .bottom-curve {
+	background: url('../images/sprite_general2.png') no-repeat scroll -1499px -2400px;
+	width: 835px;
+	height: 18px;
+	display:block;
+	margin:0 0 25px 0;
+}
+#transactionsafety-container .content-box .or-box {
+    clear: both;
+    display: inline-block;
+    float: left;
+    left: 384px;
+    position: absolute;
+    top: 398px;
+	background: url('../images/sprite_general2.png') no-repeat -828px -2771px;
+	width: 49px;
+	height: 49px;
+}
+
+.transactionsafety-title {
+    color: #172841;
+    display: inline-block;
+    font-family: Arial;
+    font-size: 19px;
+    font-weight: bold;
+    margin: 20px 0px -5px;
+    width: 100%;
+}
+
+#transactionsafety-container .text-area {
+	display:block;
+	padding:10px 0;
+	width: 770px;
+	height: auto;
+	border-bottom: 1px solid #d8d8d8;
+}
+
+#transactionsafety-container .text-area h2 {
+    color: #172841;
+    display: inline-block;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    width: 100%;
+	margin: 10px 0px;
+}
+
+#transactionsafety-container .tickbox {
+	display:block;
+	padding:10px 0;
+	width: 770px;
+	height: auto;
+}
+#transactionsafety-container .tickbox li {
+	background: url('../images/sprite_general.png') no-repeat -890px -4234px transparent;
+	height: 19px;
+	padding:3px 3px 0 20px;
+}
+
+/*************** TRANSACTION SAFETY BOX RIGHT CORNER **********************/
+
+#right-col .phone-help .header-transactionsafety {
+    background:  #FFFFFF;
+    border-bottom: 1px dotted #121F36;
+    color: #121F36;
+    float: left;
+    font: 18px/14px "FuturaGreekBoldRegular";
+    margin: 9px 11px 0 18px;
+    padding-bottom: 11px;
+    width: 164px;
+    word-spacing: -3px;
+}

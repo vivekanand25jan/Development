@@ -1,0 +1,242 @@
+#airportsByMap
+{
+	width: 852px;
+	height: 586px;
+	
+}
+/** map menu **/
+#airportsByMap .mapMenu
+{
+	padding:15px 35px 15px 15px;
+	height: 32px;
+	width: 802px;
+	background:url('images/map-sprite.png') no-repeat 0 0 #182842;
+}
+
+#airportsByMap .mapMenu li
+{
+	float:left;
+	width:78px;
+	height:30px;
+	text-align:center;
+	background-color:#fff;
+	font:14px/30px Arial, Helvetica, sans-serif;
+	color:#172841;
+	margin-right:3px;
+	cursor:pointer;
+}
+#airportsByMap .mapMenu li.med
+{
+	width:88px;
+}
+#airportsByMap .mapMenu li.big
+{
+	width:126px;
+}
+#airportsByMap .mapMenu li.last
+{
+	margin-right:0;
+}
+#airportsByMap .mapMenu li:hover,
+#airportsByMap .mapMenu li.active
+{
+	background-color:#e84c09;
+	color:#fff;
+}
+/** map body **/ 
+#airportsByMap .mapBody 
+{
+	float:left;
+	clear:both;
+}
+#airportsByMap .mapBody .leftCol
+{
+	background-color:#212121;
+	width:494px;
+	height:495px;
+	padding:15px;
+	float:left;
+}
+#airportsByMap .leftCol .map
+{
+	float:left;
+	width:493px;
+	height:497px;
+	display:none;
+}
+
+
+
+#autoCompleteWrapper .ui-button
+{
+	display:none;
+}
+#countries
+{
+	width:300px;
+}
+ul.ui-autocomplete
+{
+	display:block;
+	width:300px;
+}
+ul.ui-autocomplete 
+{
+	display:block!important;
+	float:left;
+}
+ul.ui-autocomplete li
+{
+	display:block;
+	float:left; 
+	clear:left;
+}
+
+#autoItemsWrapper,
+#autoItemsWrapper2
+{
+	height: 395px;
+	/*width:302px;*/
+	overflow:auto;
+	clear:left;
+	float:left;
+	margin-top:15px;
+}
+#autoItemsWrapper ul.ui-autocomplete,
+#autoItemsWrapper2 ul.ui-autocomplete
+{
+	top:0!important;
+	left:0!important;
+}
+#autoItemsWrapper ul.ui-autocomplete li,
+#autoItemsWrapper2 ul.ui-autocomplete li
+{
+	border-bottom: 1px solid #D0D0D0;
+	clear: left;
+	color: #7F7F7F;
+	cursor: pointer;
+	float: left;
+	font: 12px/19px Arial,Helvetica,sans-serif;
+	min-height: 19px;
+	padding: 5px 10px;
+	width: 264px;
+}
+
+
+#autoItemsWrapper ul.ui-autocomplete li:hover,
+#autoItemsWrapper2 ul.ui-autocomplete li:hover
+{
+	background-color:#172841;
+	color:#fff;
+}
+
+#autoItemsWrapper2 ul.ui-autocomplete li
+{
+	background: url("images/map-sprite.png") no-repeat scroll -62px -117px transparent;
+	padding: 5px 10px 5px 34px;
+	width: 240px;	
+}
+#autoItemsWrapper2 ul.ui-autocomplete li:hover
+{
+	background:url('images/map-sprite.png') no-repeat -89px -117px  #172841;
+}
+
+
+#autoItemsWrapper ul.ui-autocomplete li a
+{
+	width:264px;
+	float:left;
+	display:block;
+	min-height:19px;
+}
+#autoItemsWrapper2 ul.ui-autocomplete li a
+{
+	display: block;
+	float: left;
+	min-height: 19px;
+	width: 240px;
+}
+#autoItemsWrapper .jspContainer,
+#autoItemsWrapper2 .jspContainer
+{
+	overflow: hidden;
+	position: relative;
+}
+#autoItemsWrapper .jspPane,
+#autoItemsWrapper2 .jspPane
+{
+	position: absolute;
+	z-index: 1;
+}
+#autoItemsWrapper .jspVerticalBar,
+#autoItemsWrapper2 .jspVerticalBar
+{
+	background: none repeat scroll 0 0 transparent;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 26px;
+	width: 6px;
+	z-index:9;
+}
+
+#autoItemsWrapper .jspDrag,
+#autoItemsWrapper2 .jspDrag
+{
+	background:url("images/map-sprite.png") no-repeat scroll -27px -79px transparent;
+	cursor: pointer;
+	left: 0;
+	position: relative;
+}
+
+#autoItemsWrapper .jspTrack,
+#autoItemsWrapper2 .jspTrack
+{ 
+	background:url("images/map-sprite.png") no-repeat scroll -8px -80px transparent;
+	position: relative;
+}
+
+.jvectormap-zoomin, .jvectormap-zoomout
+{
+	display:none;
+}
+
+#airportsByMap .leftCol .map
+{
+	cursor:pointer;
+}
+#airportsByMap .rightCol 
+{
+	float:left;
+	width:302px;
+	padding:15px 10px 40px 15px;
+	background-color:#fff;
+}
+#airportsByMap .rightCol  h3
+{
+	font:bold 14px Arial, Helvetica, sans-serif;
+	color:#172841;
+	float:left;
+}	
+#autoCompleteWrapper
+{
+	float:left;
+	clear:left;
+}
+#autoCompleteWrapper .ui-autocomplete-input	
+{
+	background: url("images/map-sprite.png") no-repeat scroll -64px -80px transparent;
+	border: medium none;
+	color: #7F7F7F;
+	font: 12px/34px Arial,Helvetica,sans-serif;
+	height: 33px;
+	padding: 0 10px;
+	width: 270px;
+}
+#autoCompleteWrapper,
+#autoCompleteWrapper2
+{
+	float:left;
+	clear:left;
+	margin-top:	10px;
+}

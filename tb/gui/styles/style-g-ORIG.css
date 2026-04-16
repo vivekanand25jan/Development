@@ -1,0 +1,4231 @@
+body.page-flights #left-col,
+body.page-hotels #left-col {float:left; width:370px; }
+
+
+body.page-flights #left-col .step,
+body.page-flights2 #left-col .step,
+body.page-hotels #left-col .step,
+body.page-hotels2 #left-col .step {
+	float: left;
+}
+
+
+ 
+body.page-flights #left-col .step-info,
+body.page-flights2 #left-col .step-info,
+body.page-hotels #left-col .step-info,
+body.page-hotels2 #left-col .step-info {
+  background: none repeat scroll 0 0 #172841;
+  border-bottom: 1px solid #0B172A;
+  border-top: 1px solid #243959;
+  clear: both;
+  color: #FFFFFF;
+  float: left;
+  padding: 13px 0 13px 12px;
+  width: 149px;
+  position:relative;
+}
+
+body.page-flights #left-col .step.active .step-info,
+body.page-flights2 #left-col .step.active .step-info,
+body.page-hotels #left-col .step.active .step-info,
+body.page-hotels2 #left-col .step.active .step-info {background:#284063;}
+
+body.page-flights #left-col .step-info.step1-info,
+body.page-flights2 #left-col .step-info.step1-info,
+body.page-hotels #left-col .step-info.step1-info,
+body.page-hotels2 #left-col .step-info.step1-info {border-top:none; padding-top:0;}
+
+body.page-flights #left-col .step-elems,
+body.page-flights2 #left-col .step-elems,
+body.page-hotels #left-col .step-elems,
+body.page-hotels2 #left-col .step-elems { 
+	float: left; 
+	padding: 13px 15px; 
+	width: 179px;
+	background:url('../images/search-flight-form-gradient.png') bottom center repeat-x #fff; 
+}
+
+body.page-flights #search-flight-form .step-elems,
+body.page-flights2 #search-flight-form .step-elems,
+body.page-hotels #search-hotel-form .step-elems,
+body.page-hotels2 #search-hotel-form .step-elems { border-bottom:1px solid #ffffff; border-top:1px solid #dadada;} 
+body.page-flights #search-flight-form .step-elems.step1-elems,
+body.page-flights2 #search-flight-form .step-elems.step1-elems,
+body.page-hotels #search-hotel-form .step-elems.step1-elems,
+body.page-hotels2 #search-hotel-form .step-elems.step1-elems {border-top:0;}
+body.page-flights #search-flight-form,
+body.page-flights2 #search-flight-form,
+body.page-hotels #search-hotel-form,
+body.page-hotels2 #search-hotel-form {
+  color: #444444;
+  float: left;
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+body.page-flights #search-flight-form input,
+body.page-flights2 #search-flight-form input,
+body.page-hotels #search-hotel-form input,
+body.page-hotels2 #search-hotel-form input {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 1px solid #D8D8D8;
+  color: #737373;
+  padding: 5px 8px;
+}
+
+
+body.page-flights #search-flight-form input,
+body.page-flights2 #search-flight-form input,
+body.page-hotels #search-hotel-form input,
+body.page-hotels2 #search-hotel-form input {font-family:Arial; font-size:11px;}
+body.page-flights #search-flight-form label,
+body.page-flights2 #search-flight-form label,
+body.page-hotels #search-hotel-form label,
+body.page-hotels2 #search-hotel-form label {font-family:Arial;float: left;padding: 0 8px 8px 20px;}
+body.page-flights #search-flight-form label[for="onemonth"],
+body.page-flights2 #search-flight-form label[for="onemonth"]{float:right;}
+body.page-flights #search-flight-form label[for="oneyear"],
+body.page-flights2 #search-flight-form label[for="oneyear"]{float:right; width:42px;}
+.ie7.page-flights #search-flight-form label[htmlFor="onemonth"],
+.ie7.page-flights2 #search-flight-form label[htmlFor="onemonth"]{float:right;}
+
+.ie7.page-flights #search-flight-form label[htmlFor="oneyear"],
+.ie7.page-flights2 #search-flight-form label[htmlFor="oneyear"]{float:right; width:42px;}
+
+body.page-flights #search-flight-form .step4-elems div,
+body.page-flights2 #search-flight-form .step4-elems div {font-family:Arial;}
+
+
+
+body.page-flights .step h3 {
+    font-family: 'MyriadProBoldCondensed';
+    font-size: 24px;
+    line-height: 24px;
+    padding-top: 2px;
+    padding-bottom:2px;
+    letter-spacing:-0.5px;
+}
+body.page-flights .step .desc { font-size:12px; font-family:Arial; margin:0 12px 0 16px; line-height:14px; font-family:Arial; font-weight:bold;}
+body.page-flights .step2 .desc, body.page-flights .step4 .desc  {margin-right:25px;}
+
+
+body.page-flights #left-col .step1-info, body.page-flights #left-col .step1-elems {height:76px;}
+body.page-flights #left-col .step2-info, body.page-flights #left-col .step2-elems  {height:91px;}
+body.page-flights #left-col .step3-info, body.page-flights #left-col .step3-elems {height:222px;}
+body.page-flights #left-col .step4-info, body.page-flights #left-col .step4-elems {height:103px;}
+body.page-flights #left-col .step5-info, body.page-flights #left-col .step5-elems {height:130px;}
+
+/* step1 */
+body.page-flights #left-col .step1-elems,
+body.page-flights2 #left-col .step1-elems { height: 59px; padding-top: 17px; }
+body.page-flights #left-col .step1-elems .radiob,
+body.page-flights2 #left-col .step1-elems .radiob { float:left; padding:0 8px 8px 0 }
+
+
+/* step2 */
+body.page-flights #left-col .step2-elems label,
+body.page-flights2 #left-col .step2-elems label {color:#4c4c4c;}
+body.page-flights #left-col .step2-elems input,
+body.page-flights2 #left-col .step2-elems input {width:164px; }
+body.page-flights #left-col .step2-elems a.airport-search-from, body.page-flights #left-col .step2-elems a.airport-search-to,
+body.page-flights2 #left-col .step2-elems a.airport-search-from, body.page-flights2 #left-col .step2-elems a.airport-search-to {
+  background: url("../images/sprite_general.png") no-repeat scroll -1317px -50px transparent;
+  color: #4C4C4C;
+  display: inline-block;
+  float: right;
+  height: 15px;
+  padding-left: 14px;
+  font-size:11px;
+  text-decoration: none;
+  font-family:Arial;
+}
+body.page-flights #left-col .step2-elems a.airport-search-from:hover, body.page-flights #left-col .step2-elems a.airport-search-to:hover,
+body.page-flights2 #left-col .step2-elems a.airport-search-from:hover, body.page-flights2 #left-col .step2-elems a.airport-search-to:hover {
+	text-decoration:underline;
+	background: url("../images/sprite_general.png") no-repeat scroll -1317px -15px transparent;
+}
+body.page-flights #left-col .step2-elems .inputf,
+body.page-flights2 #left-col .step2-elems .inputf {margin-bottom:4px;}
+
+
+/* step3 */
+body.page-flights #left-col .step3-elems,
+body.page-flights2 #left-col .step3-elems { padding: 13px 11px 13px 15px; width: 183px; }
+body.page-flights #left-col .step3-elems .radiob,
+body.page-flights2 #left-col .step3-elems .radiob {float:left; margin-bottom:5px;}
+body.page-flights #left-col .step3-elems .radiob input,
+body.page-flights2 #left-col .step3-elems .radiob input { margin:0; }
+body.page-flights #left-col .step3-elems .dptrtn-wrapper,
+body.page-flights2 #left-col .step3-elems .dptrtn-wrapper { clear:both; margin-bottom:4px; position:relative;}
+body.page-flights #left-col .step3-elems .dptrtn-wrapper input,
+body.page-flights2 #left-col .step3-elems .dptrtn-wrapper input { margin-bottom:8px; }
+body.page-flights #left-col .step3-elems .radiob1, body.page-flights #left-col .step3-elems .radiob3,
+body.page-flights2 #left-col .step3-elems .radiob1, body.page-flights2 #left-col .step3-elems .radiob3 { width: 123px; }
+body.page-flights #left-col .step3-elems .dptrtn-wrapper input { width:164px; }	
+body.page-flights #left-col .step3-elems .dptrtn-wrapper input.datepicker { background: url('../images/sprite_general.png') no-repeat -423px -188px #fff; cursor:pointer; }
+body.page-flights #left-col .step3-elems .dptrtn-wrapper input.selectbox { background: url('../images/sprite_general.png') no-repeat -630px -187px #fff; cursor:pointer;  }
+
+
+/* step4 */
+body.page-flights #left-col .step4-elems .adultswrapper, body.page-flights #left-col .step4-elems .childrenwrapper,
+body.page-flights2 #left-col .step4-elems .adultswrapper, body.page-flights2 #left-col .step4-elems .childrenwrapper {float:left; margin-bottom:12px; position:relative;}
+body.page-flights #left-col .step4-elems,
+body.page-flights2 #left-col .step4-elems { padding:13px 7px 13px 15px; width:187px; }
+body.page-flights #left-col .step4-elems .adultswrapper,
+body.page-flights2 #left-col .step4-elems .adultswrapper,
+body.page-hotels #left-col .step3-elems .adultswrapper,
+body.page-hotels2 #left-col .step3-elems .adultswrapper {margin-right:10px;}
+
+body.sf.page-hotels #left-col .step3-elems .adultswrapper,
+body.sf.page-hotels #left-col .step3-elems .childrenwrapper,
+body.sf.page-hotels #left-col .step3-elems .infantswithoutseat-wrapper,
+body.chrome.page-hotels #left-col .step3-elems .adultswrapper,
+body.chrome.page-hotels #left-col .step3-elems .childrenwrapper,
+body.chrome.page-hotels #left-col .step3-elems .infantswithoutseat-wrapper,
+
+body.sf.page-hotels2 #left-col .step3-elems .adultswrapper,
+body.sf.page-hotels2 #left-col .step3-elems .childrenwrapper,
+body.sf.page-hotels2 #left-col .step3-elems .infantswithoutseat-wrapper,
+body.chrome.page-hotels2 #left-col .step3-elems .adultswrapper,
+body.chrome.page-hotels2 #left-col .step3-elems .childrenwrapper,
+body.chrome.page-hotels2 #left-col .step3-elems .infantswithoutseat-wrapper  {width:84px;}
+
+body.sf .have-question a .top-header { padding-bottom:4px; }
+
+
+body.page-flights #left-col .step4-elems input.selectbox,
+body.page-flights2 #left-col .step4-elems input.selectbox { width:49px; background: url('../images/sprite_general.png') no-repeat -744px -187px #fff; cursor:pointer; }
+body.page-flights #left-col .step4-elems a,
+body.page-flights2 #left-col .step4-elems a {
+  background: url("../images/sprite_general.png") no-repeat scroll -1471px -9px transparent;
+  display: inline-block;
+  width: 17px;
+  text-decoration: none;
+}
+
+body.page-flights #left-col .step4-elems a:hover,
+body.page-flights2 #left-col .step4-elems a:hover { background: url("../images/sprite_general.png") no-repeat scroll -1471px -35px transparent; }
+body.page-flights #left-col .step4-elems .personswrapper,
+body.page-flights #left-col .step4-elems .seatwrapper,
+body.page-flights2 #left-col .step4-elems .personswrapper,
+body.page-flights2 #left-col .step4-elems .seatwrapper {clear:both; float:left; }
+body.page-flights #left-col .step4-elems .infantswithoutseat-wrapper,
+body.page-flights2 #left-col .step4-elems .infantswithoutseat-wrapper {margin-bottom:10px; position:relative;}
+body.page-flights #left-col .step4-elems .infantswithseat-wrapper,
+body.page-flights2 #left-col .step4-elems .infantswithseat-wrapper {position:relative; }
+
+/* step5 */
+body.page-flights #left-col .step5-elems  input.selectbox {
+  background: url("../images/sprite_general.png") no-repeat scroll -630px -187px #FFFFFF;
+  cursor: pointer;
+  width:164px;
+}
+body.page-flights #left-col .step5-elems .airlinecomp-wrapper,
+body.page-flights #left-col .step5-elems .seatcateg-wrapper,
+body.page-flights2 #left-col .step5-elems .airlinecomp-wrapper,
+body.page-flights2 #left-col .step5-elems .seatcateg-wrapper {position:relative; margin-bottom:15px;}
+
+
+
+body.page-flights #left-col .button-wrapper,
+body.page-flights2 #left-col .button-wrapper {
+  float: left;
+  height: 50px;
+  padding-left: 5px;
+  padding-top: 10px;
+  width:365px;
+  background:#F2F2F2;
+}
+
+body.page-flights #left-col .bottomformradius,
+body.page-flights2 #left-col .bottomformradius {
+  background:url('../images/sprite_general.png') no-repeat -693px -853px;
+  clear: both;
+  float: left;
+  height: 14px;
+  width: 100%;
+}
+
+body.page-flights.ie7 #left-col .bottomformradius,
+body.page-flights2.ie7 #left-col .bottomformradius {width:370px;}
+
+body.page-flights.ff3 #left-col .button-wrapper button.fsubmit,
+body.page-flights2.ff3 #left-col .button-wrapper button.fsubmit{
+	font-size:22px;
+}
+
+body.page-flights #left-col .button-wrapper button.fsubmit,
+body.page-flights2 #left-col .button-wrapper button.fsubmit { 
+	background: url('../images/sprite_general.png') no-repeat -338px -350px; 
+	width: 159px; 
+	height: 45px;
+	float:left; 
+	color:#fff;
+	cursor:pointer;
+	border:none;
+	font-size:24px;
+	font-family: 'MyriadProBoldCondensed';
+	line-height:21px;
+}
+body.page-flights #left-col .button-wrapper button.fsubmit:hover,
+body.page-flights2 #left-col .button-wrapper button.fsubmit:hover { background: url('../images/sprite_general.png') no-repeat -339px -402px;  }
+body.page-flights #left-col .button-wrapper .button-separator,
+body.page-flights2 #left-col .button-wrapper .button-separator {
+  color: #172841;
+  float: left;
+  font-family: 'MyriadProBoldCondensed';
+  font-size: 24px;
+  margin: 5px 8px 0;
+}
+
+
+
+body.page-flights #left-col .step3-elems  .dptrtn-wrapper .selectbox-wrapper {top:77px;}
+body.page-flights #search-flight-form #directflights,
+body.page-flights2 #search-flight-form #directflights {margin-bottom:7px; }
+
+
+/* selectboxes */
+body.page-flights #search-flight-form input.selectbox,
+body.page-flights2 #search-flight-form input.selectbox {position:relative;}
+body.page-flights #search-flight-form .selectbox-wrapper,
+body.page-flights2 #search-flight-form .selectbox-wrapper
+{
+  background:#fff;
+  border:1px solid #D8D8D8; 
+  padding: 5px 8px;
+  position: absolute;
+  top: 47px;
+  z-index: 4;
+  font-family:Arial;
+  padding:0;
+}
+
+body.page-flights #search-flight-form .selectbox-wrapper {  width:180px !important; }
+
+body.page-flights #left-col .step5-elems .selectbox-wrapper,
+body.page-flights2 #left-col .step5-elems .selectbox-wrapper {top:25px;}
+body.page-flights #left-col .selectbox-wrapper li,
+body.page-flights2 #left-col .selectbox-wrapper li
+{
+  background-color: #FFFFFF;
+  border-top: 1px solid #D8D8D7;
+  clear: left;
+  color: #737373;
+  cursor: pointer;
+  float: left;
+  font: bold 11px/24px Arial,Helvetica,sans-serif;
+  height: 24px;
+  padding: 0 8px;
+  width: 164px;
+}
+
+body.page-flights #left-col .selectbox-wrapper li:hover, 
+body.page-flights2 #left-col .selectbox-wrapper li:hover,
+#frontForm .selectbox-wrapper li:hover,
+body.page-hotels #left-col .selectbox-wrapper li:hover,
+body.page-hotels2 #left-col .selectbox-wrapper li:hover {
+  background-color: #172841;
+  color: #FFFFFF;
+}
+
+
+body.page-flights #left-col #search-flight-form .topformradius,
+body.page-hotels #left-col #search-hotel-form .topformradius,
+body.page-hotels2 #left-col #search-hotel-form .topformradius { width:100%; height:7px; background: url('../images/sprite_general.png') no-repeat -693px -829px; width: 370px; height: 10px; }
+body.page-flights #left-col #search-flight-form .topformradius.active,
+body.page-hotels #left-col #search-hotel-form .topformradius.active,
+body.page-hotels2 #left-col #search-hotel-form .topformradius.active { background: url('../images/sprite_general.png') no-repeat -693px -814px; }
+
+body.page-flights #left-col #search-flight-form .step-info .step-active-arrow,
+body.page-flights2 #left-col #search-flight-form .step-info .step-active-arrow,
+body.page-home #search-home-form .step-info .step-active-arrow {
+  background: url('../images/sprite_general.png') no-repeat -557px -410px;
+  height: 22px;
+  position: absolute;
+  right: -11px;
+  top: 40%;
+  width: 11px;
+}
+
+/*hotels  */
+body.page-hotels #left-col .step2-elems input,
+body.page-hotels #left-col .step3-elems input,
+body.page-hotels2 #left-col .step3-elems input { width:148px; }	
+body.page-hotels #left-col .step2-elems .dptrtn-wrapper,
+body.page-hotels2 #left-col .step2-elems .dptrtn-wrapper {clear:both; margin-bottom:4px; position:relative;}
+body.page-hotels #left-col .step2-elems .dptrtn-wrapper1,
+body.page-hotels2 #left-col .step2-elems .dptrtn-wrapper1 {margin-bottom:15px;}
+body.page-hotels #left-col .step2-elems input.datepicker,
+body.page-hotels2 #left-col .step2-elems input.datepicker { background: url('../images/sprite_general.png') no-repeat -440px -188px #fff; cursor:pointer; margin-bottom:7px;}
+body.page-hotels #left-col .step2-elems input.selectbox,
+body.page-hotels2 #left-col .step2-elems input.selectbox { background: url('../images/sprite_general.png') no-repeat -646px -187px #fff; cursor:pointer;  }
+body.page-hotels #search-hotel-form .selectbox-wrapper,
+body.page-hotels2 #search-hotel-form .selectbox-wrapper {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 1px solid #D8D8D8;
+  font-family: Arial;
+  padding: 0;
+  position: absolute;
+  z-index: 4;
+  width:164px !important;
+  top:74px;
+}
+
+body.page-hotels #left-col .selectbox-wrapper li,
+body.page-hotels2 #left-col .selectbox-wrapper li {
+  background-color: #FFFFFF;
+  border-top: 1px solid #D8D8D7;
+  clear: left;
+  color: #737373;
+  cursor: pointer;
+  float: left;
+  font: bold 11px/24px Arial,Helvetica,sans-serif;
+  height: 24px;
+  padding: 0 8px;
+  width: 148px;
+}
+
+body.page-hotels #left-col .step2-elems .checkWrapper,
+body.page-hotels2 #left-col .step2-elems .checkWrapper {
+  float: left;
+  margin-bottom:17px;
+}
+
+body.page-hotels.ie #left-col .step2-elems .checkWrapper,
+body.page-hotels2.ie #left-col .step2-elems .checkWrapper {
+	margin-bottom:0;
+}
+
+body.page-hotels #left-col .step2-elems .checkWrapper input,
+body.page-hotels2 #left-col .step2-elems .checkWrapper input {
+  float: left;
+  margin: 3px 7px 0 0;
+  width:13px;
+}
+
+body.page-hotels #left-col .step2-elems .checkWrapper label,
+body.page-hotels2 #left-col .step2-elems .checkWrapper label {
+  float: left;
+  margin-top: 2px;
+}
+
+
+body.page-hotels #left-col .step3-elems .personswrapper, body.page-hotels #left-col .step3-elems .seatwrapper,
+body.page-hotels2 #left-col .step3-elems .personswrapper, body.page-hotels2 #left-col .step3-elems .seatwrapper {
+  clear: both;
+  float: left;
+}
+
+
+body.page-hotels.ie #left-col .step3-elems .seatwrapper,
+body.page-hotels2.ie #left-col .step3-elems .seatwrapper {float:none;}
+
+
+body.page-hotels #left-col .step3-elems .adultswrapper, body.page-hotels #left-col .step3-elems .childrenwrapper,
+body.page-hotels2 #left-col .step3-elems .adultswrapper, body.page-hotels2 #left-col .step3-elems .childrenwrapper {
+  float: left;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+body.page-hotels #search-hotel-form .step-info .desc,
+body.page-hotels2 #search-hotel-form .step-info .desc,
+body.page-flights2 #left-col .step-info .desc {
+  clear: left;
+  color: #FFFFFF;
+  float: left;
+  font: bold 12px/14px Arial,Helvetica,sans-serif;
+  padding: 7px 0 0 28px;
+  width: 118px;
+}
+
+body.page-hotels #search-hotel-form .step3-elems div,
+body.page-hotels2 #search-hotel-form .step3-elems div {
+  font-family: Arial;
+}
+
+body.page-hotels #search-hotel-form .step-info h3,
+body.page-hotels2 #search-hotel-form .step-info h3,
+body.page-flights2 #left-col .step-info h3 {
+  color: #FFFFFF;
+  float: left;
+  font: 24px/19px 'MyriadProBoldCondensed';
+  padding-left: 17px;
+  width: 120px;
+}
+
+body.page-hotels #left-col .step3-elems input.selectbox,
+body.page-hotels2 #left-col .step3-elems input.selectbox {
+  background: url("../images/sprite_general.png") no-repeat scroll -749px -187px #FFFFFF;
+  cursor: pointer;
+  float: left;
+  padding: 5px;
+  width: 49px;
+}
+
+
+body.page-hotels #search-hotel-form .stepNum,
+body.page-hotels2 #search-hotel-form .stepNum,
+body.page-flights2 #left-col .stepNum {
+  color: #FFFFFF;
+  display: block;
+  float: left;
+  font: 24px/19px 'MyriadProBoldCondensed';
+}
+
+body.page-hotels #left-col .button-wrapper,
+body.page-hotels2 #left-col .button-wrapper {
+  background: none repeat scroll 0 0 #FFFFFF;
+  float: left;
+  height: 43px;
+  padding-left: 5px;
+  padding-top: 7px;
+  width: 365px;
+}
+
+body.page-hotels #search-hotel-form .step3-elems .selectbox-wrapper,
+body.page-hotels2 #search-hotel-form .step3-elems .selectbox-wrapper { top:42px; width:59px !important; left:0; }
+body.page-hotels #left-col .step3-elems .selectbox-wrapper li,
+body.page-hotels2 #left-col .step3-elems .selectbox-wrapper li { width:43px;}
+
+
+body.page-hotels #left-col .button-wrapper  button,
+body.page-hotels2 #left-col .button-wrapper  button {
+  float: right;
+  background: url("../images/sprite_general.png") no-repeat scroll -289px -2793px transparent;
+  height: 43px;
+  width: 145px;
+  border: medium none;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: 'MyriadProBoldCondensed';
+  font-size: 23px;
+  margin-right:5px;
+  line-height: 21px;
+}
+
+
+body.page-hotels #left-col .button-wrapper  button:hover,
+body.page-hotels2 #left-col .button-wrapper  button:hover { background:url("../images/sprite_general.png") no-repeat scroll -442px -2793px transparent; }
+body.page-hotels #left-col .bottomformradius,
+body.page-hotels2 #left-col .bottomformradius {
+  background: url("../images/sprite_general2.png") no-repeat scroll -1946px -28px transparent;
+  clear: both;
+  float: left;
+  height: 10px;
+  width: 100%;
+}
+
+body.page-hotels.ie #left-col .bottomformradius,
+body.page-hotels2.ie #left-col .bottomformradius  {  overflow:hidden; }
+
+body.page-hotels #search-hotel-form .infoToolTip,
+body.page-hotels2 #search-hotel-form .infoToolTip {
+  background: url("../images/sprite_general.png") no-repeat scroll -1471px -9px transparent;
+  display: block;
+  float: left;
+  height: 17px;
+  margin: 4px 0 0 6px;
+  text-decoration: none;
+  width: 17px;
+}
+
+body.page-hotels #search-hotel-form .infoToolTip a,
+body.page-hotels2 #search-hotel-form .infoToolTip a {
+  display: block;
+  float: left;
+  height: 17px;
+  text-decoration: none;
+  width: 17px;
+}
+
+
+body.page-hotels #left-col .step1-info {height:93px;}
+body.page-hotels #left-col .step1-elems { height:80px; }
+body.page-hotels #left-col .step2-info {height:210px;}
+body.page-hotels #left-col .step2-elems { height:210px; }
+body.page-hotels #left-col .step3-info {height:120px;}
+body.page-hotels #left-col .step3-elems  { height:121px; }
+body.page-hotels #left-col .step3-elems .infantswithoutseat-wrapper,
+body.page-hotels2 #left-col .step3-elems .infantswithoutseat-wrapper {position:relative;}
+
+
+.left-banner {float:left; clear:both; }
+
+
+
+.small-banner.has-left-image {
+  background: url("../images/sprite_general.png") no-repeat scroll -843px -1087px transparent;
+  cursor: pointer;
+  height: 73px;
+  padding-top: 7px;
+  width: 369px;
+  padding-left:0;	
+}
+.small-banner { background: url('../images/sprite_general.png') no-repeat -1224px -1132px; width: 369px; height: 73px; padding-top:7px; padding-left:25px; }
+.small-banner:hover {background: url('../images/sprite_general.png') no-repeat -1224px -1221px;}
+
+
+.small-banner.has-left-image:hover { background: url('../images/sprite_general.png') no-repeat -1156px -1002px; }
+.have-question .left-image {background: url('../images/sprite_general.png') no-repeat -27px -1192px; width: 68px; height: 70px; float:left; margin-right:16px; margin-left:18px;}
+
+
+body.page-flights #left-col .tickets-promise .left-image,
+body.page-flights2 #left-col .tickets-promise .left-image {background: url('../images/sprite_general.png') no-repeat -708px -1189px; width: 64px; height: 64px; float:left; margin-right:19px; margin-left:12px; float:left; }
+
+
+body.page-hotels #left-col .airfast-rewards .left-image,
+#ht2-region2l .airfast-rewards .left-image  {
+  background: url("../images/sprite_general2.png") no-repeat scroll -3265px -412px transparent;
+  float: left;
+  height: 64px;
+  margin-left: 28px;
+  margin-right: 20px;
+  width: 64px;
+}
+
+body.page-hotels #left-col .partners-with-airfast .left-image,
+#ht2-region2l .partners-with-airfast .left-image {
+  background: url("../images/sprite_general2.png") no-repeat scroll -6px -967px transparent;
+  float: left;
+  height: 76px;
+  margin-left: 28px;
+  margin-right: 20px;
+  width: 64px;
+}
+
+body.page-hotels #left-col .left-banner.partners-with-airfast,
+#ht2-region2l .left-banner.partners-with-airfast {
+	background: url('../images/sprite_general2.png') no-repeat -2982px -11px; width: 369px; height: 250px;
+}
+body.page-hotels #left-col .big-banner.partners-with-airfast .left-banner-content,
+#ht2-region2l .big-banner.partners-with-airfast .left-banner-content {width:245px;}
+
+.have-question a,
+body.page-flights #left-col .book-with-us a  { display: block; float: left; text-decoration: none; }
+
+body.page-flights #left-col .book-with-us a,
+body.page-hotels #left-col .book-with-us a {width:292px;}
+
+.have-question a span{font:22px 'FuturaGreekBoldRegular'; color:#FF9B22; display:block; letter-spacing:-1px;}
+body.page-flights #left-col .book-with-us a span,
+body.page-hotels #left-col .book-with-us a span {font-family:'FuturaGreekBoldRegular'; color:#FF9B22; display:block; line-height:22px; letter-spacing:-1px;}
+
+.have-question a .top-header{ font-size:18px; color:#172841; } 
+body.page-flights #left-col .book-with-us a .top-header,
+body.page-hotels #left-col .book-with-us a .top-header {
+	color: #172841;
+	font-size: 20px;
+	line-height: 18px;
+	padding-bottom: 8px;
+	padding-top: 6px;
+}
+body.page-flights #left-col .book-with-us a .desc,
+body.page-hotels #left-col .book-with-us a .desc {
+	 color: #172841;
+    font-family: Arial;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+body.page-flights #left-col  a span.desc, 
+body.page-hotels #left-col  a span.desc {letter-spacing:0;}
+
+.have-question a .med-header {font-size: 17px;letter-spacing: -1px;}
+body.page-flights #left-col .have-question a .med-header,
+body.page-hotels #left-col .have-question a .med-header {line-height: 14px;}
+.have-question a .bottom-header {
+  font-size: 23px;
+  letter-spacing: -1px !important;
+  padding-top: 3px;
+}
+body.page-flights #left-col .have-question a .bottom-header,
+body.page-hotels #left-col .have-question a .bottom-header {line-height: 23px;}
+
+
+body.page-flights #search-flight-form .step2-elems label,
+body.page-flights2 #search-flight-form .step2-elems label,
+body.page-hotels #search-hotel-form .step2-elems label,
+body.page-flights #search-flight-form .step5-elems label,
+body.page-flights2 #search-flight-form .step5-elems label,
+body.page-flights #search-flight-form  .dptrtn-wrapper1 label,
+body.page-flights #search-flight-form  .dptrtn-wrapper2 label,
+body.page-flights2 #search-flight-form  .dptrtn-wrapper1 label,
+body.page-flights2 #search-flight-form  .dptrtn-wrapper2 label,
+body.page-hotels #search-hotel-form  .dptrtn-wrapper1 label,
+body.page-hotels #search-hotel-form  .dptrtn-wrapper2 label,
+body.page-hotels #search-hotel-form  .step1-elems label{
+    float: none;
+    font-family: Arial;
+    padding: 0;
+}
+
+
+body.page-hotels #search-hotel-form  .step1-elems input {
+  border: 1px solid #D8D8D8;
+  clear: both;
+  color: #737373;
+  float: left;
+  font: 12px/31px Arial,Helvetica,sans-serif;
+  height: 26px;
+  margin-top: 5px;
+  padding: 0 9px;
+  width: 148px;
+}
+
+
+body.page-flights #left-col .tickets-promise .left-banner-content-wrapper,
+body.page-flights2 #left-col .tickets-promise .left-banner-content-wrapper {float:left; width:100%; }
+body.page-flights #left-col .big-banner .topradius,
+body.page-hotels #left-col .big-banner .topradius,
+#ht2-region2l .big-banner .topradius { background: url('../images/sprite_general.png') no-repeat -1224px -1090px; width: 369px; height: 13px; float:left; }
+body.page-flights #left-col .big-banner .bottomradius,
+body.page-hotels #left-col .big-banner .bottomradius,
+#ht2-region2l .big-banner .bottomradius  { background: url('../images/sprite_general.png') no-repeat -1224px -1108px; width: 369px; height: 15px; float:left;  }
+body.page-flights #left-col .big-banner .left-banner-content-wrapper,
+body.page-hotels #left-col .big-banner .left-banner-content-wrapper,
+#ht2-region2l .big-banner .left-banner-content-wrapper {
+    width: 369px;
+	float:left;
+	height:231px;
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #ebebeb 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ebebeb)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#ebebeb 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#ebebeb 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#ebebeb 100%); /* IE10+ */
+	background: linear-gradient(top,  #ffffff 0%,#ebebeb 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ebebeb',GradientType=0 ); /* IE6-9 */
+}
+
+
+body.page-flights #left-col .big-banner .left-banner-content,
+body.page-hotels #left-col .big-banner .left-banner-content,
+#ht2-region2l .big-banner .left-banner-content {width:260px; float:left;}
+
+body.page-hotels #left-col .big-banner.airfast-rewards .left-banner-content,
+#ht2-region2l .big-banner.airfast-rewards .left-banner-content {width:245px;}
+body.page-hotels #left-col .big-banner.airfast-rewards .left-banner-content-wrapper,
+ht2-region2l .big-banner.airfast-rewards .left-banner-content-wrapper {height:157px;}
+
+body.page-hotels #left-col .big-banner.partners-with-airfast .left-banner-content-wrapper,
+#ht2-region2l .big-banner.partners-with-airfast .left-banner-content-wrapper {background:none; color:#fff; filter:none;}
+body.page-hotels #left-col .big-banner.partners-with-airfast .left-banner-content .desc,
+#ht2-region2l .big-banner.partners-with-airfast .left-banner-content .desc {color:#fff;}
+body.page-hotels #left-col .big-banner.partners-with-airfast h3,
+#ht2-region2l  .big-banner.partners-with-airfast h3 {color:#fff; padding-top:18px;}
+body.page-hotels #left-col .big-banner.partners-with-airfast .left-banner-content .readmore a,
+#ht2-region2l .big-banner.partners-with-airfast .left-banner-content .readmore a {color:#fff; font-size:14px; font-weight:bold;}
+
+body.page-flights #left-col .big-banner .left-banner-content h3,
+body.page-hotels #left-col .big-banner  h3,
+#ht2-region2l .big-banner  h3 {
+  color: #172841;
+  font:26px/25px 'FuturaGreekBoldRegular'; 
+  letter-spacing:-1px;
+  padding-bottom: 13px;
+}
+body.page-flights #left-col .big-banner .left-banner-content .desc,
+body.page-hotels #left-col .big-banner .left-banner-content .desc,
+#ht2-region2l .big-banner .left-banner-content .desc {font-size:12px; color:#172841; font-family:Arial, Helvetica, sans-serif}
+
+
+
+body.page-hotels #left-col .partners-with-airfast.big-banner .left-banner-content .desc {
+    display: block;
+    max-height: 126px;
+    overflow: hidden;
+}
+
+body.page-hotels #left-col .airfast-rewards.big-banner .left-banner-content .desc {
+    display: block;
+    max-height: 90px;
+    overflow: hidden;
+}
+
+
+
+body.page-flights #left-col .big-banner .left-banner-content .readmore a,
+body.page-hotels #left-col .big-banner .left-banner-content .readmore a,
+#ht2-region2l .big-banner .left-banner-content .readmore a {color:#ff8c00; font-size:12px; font-family:Arial; text-decoration:none; display:block; float:left; margin-top:10px;}
+
+body.page-flights #left-col .big-banner .left-banner-content .readmore a:hover,
+body.page-hotels #left-col .big-banner .left-banner-content .readmore a:hover,
+#ht2-region2l  .big-banner .left-banner-content .readmore a:hover {text-decoration:underline;}
+
+
+ body.page-hotels #left-col .big-banner.airfast-rewards .left-banner-content .readmore a,
+ #ht2-region2l .big-banner.airfast-rewards .left-banner-content .readmore a {font-size:14px; font-weight:bold;}
+  body.page-hotels #left-col .big-banner.airfast-rewards .left-banner-content .readmore a:hover,
+    #ht2-region2l .big-banner.airfast-rewards .left-banner-content .readmore a:hover {text-decoration:underline;}
+body.page-hotels #left-col .big-banner.airfast-rewards h3 {padding-left:40px;}
+body.page-hotels #left-col .big-banner.airfast-rewards h3 span,
+#ht2-region2l .big-banner.airfast-rewards h3 span {color:#ff8c00;}
+
+.left-banner.have-question {margin-bottom:27px;} 
+
+
+body.page-hotels #left-col .left-banner.partners-with-airfast,
+body.page-hotels #left-col .left-banner.airfast-rewards,
+body.page-hotels #left-col .left-banner.banner-ad { margin-bottom: 34px; }
+body.page-flights #left-col .left-banner.tickets-promise {margin-bottom:34px;}
+body.page-flights #left-col .left-banner.book-with-us {margin-bottom:35px;}
+body.page-hotels #left-col .big-banner.banner-ad .left-banner-content-wrapper {
+  height: 251px;
+  padding: 15px 0;
+  text-align: center;
+}
+body.page-hotels #left-col .left-banner.have-question {margin-bottom:33px;}
+
+/* browser compatibility */
+.oo.page-flights #left-col input[type="radio"],
+.oo.page-flights2 #left-col input[type="radio"] { border:none; background:transparent; padding-right:4px;} 
+.mac .above-footer-region .left-col span.blue { margin-right:5px; }
+
+
+
+
+/* homepage right col */ 
+body.page-home #topFrontWrapper { float:left;  }
+body.page-home #topFrontWrapper #frontForm {margin-right:30px; float:left; margin-bottom: 28px;}
+body.page-home #right-col { width:372px; float:left; overflow:hidden;}
+body.page-home #homecontent-bottom { clear:both; }
+.ie7.page-home #homecontent-bottom {margin-top:28px;}
+#right-col .banner-ad {margin-bottom:18px;}
+body.page-home #right-col .banner-ad {height:305px}
+#right-col .travel-deals { float:left; margin-bottom:27px; position:relative;  }
+#homecontent-bottom .deal-alerts,
+#right-col .deal-alerts {float:left; margin-bottom:20px; position:relative;}
+#homecontent-bottom .deal-alerts .advanced-container,
+#right-col .deal-alerts .advanced-container {position:absolute; right:0; top:0;}
+#homecontent-bottom .deal-alerts .advanced-container a ,
+#right-col .deal-alerts .advanced-container a {
+  background: url("../images/sprite_general.png") no-repeat scroll 24px -402px transparent;
+  color: #284063;
+  display: inline-block;
+  font-family: Arial; 
+  font-size: 12px;
+  padding-right: 18px;
+  text-decoration: none;
+}
+#homecontent-bottom .advanced-container a:hover ,
+#right-col .deal-alerts .advanced-container a:hover {text-decoration:underline;}
+#homecontent-bottom .deal-alerts form,
+#right-col .deal-alerts form {
+  float: left;
+  height: 39px;
+  width: 372px;
+}
+
+#right-col .travel-deals .travel-deals-banner,
+body.page-flights .above-footer-region .travel-deals .travel-deals-banner,
+body.page-flights2 .above-footer-region .travel-deals .travel-deals-banner  
+{
+  background: url("../images/sprite_general.png") no-repeat scroll -1212px -1862px transparent;
+  float: left;
+  height: 63px;
+  margin-top: 10px;
+  position: relative;
+  width: 372px;
+}
+
+#right-col .travel-deals .travel-deals-banner{margin-top:15px;}
+
+body.page-flights .above-footer-region .travel-deals .travel-deals-banner,
+body.page-flights2 .above-footer-region .travel-deals .travel-deals-banner {background-position: -724px -2705px; width:354px;}
+
+#right-col .travel-deals-banner a .top-header,
+body.page-flights .above-footer-region .travel-deals .travel-deals-banner a .top-header,
+body.page-flights2 .above-footer-region .travel-deals .travel-deals-banner a .top-header {
+  color: #172841;
+  font-family: 'MyriadProBoldCondensed'; 
+  font-size: 23px !important;
+  letter-spacing:-0.5px;	
+}
+
+body.page-flights .above-footer-region .travel-deals .travel-deals-banner a .top-header {font-size:20px !important;}
+
+#right-col .travel-deals-banner a span{
+	color: #FF9B22;
+	display: block;
+	font: 26px/22px 'MyriadProBoldCondensed';
+	letter-spacing: 0;
+}
+body.page-flights .above-footer-region .travel-deals .travel-deals-banner a span {
+  color: #FF9B22;
+  display: block;
+  font:22px/22px "Arial Black",Arial;
+  letter-spacing:-1px;
+}
+
+
+body.page-flights .above-footer-region .travel-deals .travel-deals-banner a span {font-size:20px; line-height:18px;}
+
+#right-col .travel-deals-banner .left-image,
+body.page-flights .above-footer-region .travel-deals .travel-deals-banner .left-image {
+  background: url("../images/sprite_general.png") no-repeat scroll -1543px -1962px transparent;
+  float: left;
+  height: 70px;
+}
+
+#right-col .travel-deals-banner .left-image,
+body.page-flights .above-footer-region .travel-deals .travel-deals-banner .left-image {
+  margin: 0 0 0 16px !important;
+  width: 49px;
+}
+
+
+#right-col .travel-deals-banner .hours-only,
+body.page-flights .above-footer-region .travel-deals .travel-deals-banner .hours-only {
+  color: #172841;
+  display: block;
+  position: absolute;
+  right: 0;
+  width: 76px;
+  font:bold 14px/12px Arial, Helvetica, sans-serif;
+}
+.oo #right-col .travel-deals-banner .hours-only {width:62px;}
+
+.sf #right-col .travel-deals-banner .hours-only,
+body.sf.page-flights .above-footer-region .travel-deals .travel-deals-banner .hours-only { width: 67px; }
+
+
+
+body.page-flights .above-footer-region .travel-deals .travel-deals-banner .hours-only {top:14px;}
+
+#right-col .travel-deals-banner a,
+body.page-flights .above-footer-region .travel-deals .travel-deals-banner a {
+  display: block;
+  padding-left: 76px;
+  padding-top: 11px;
+}
+
+
+body.page-flights .above-footer-region .travel-deals .travel-deals-banner a {padding-top:16px; }
+#right-col .travel-deals .deals-wrapper {width:372px !important; margin-top:0 !important; height:224px !important;}
+#right-col .travel-deals #nav { width:57px; position:absolute; right:14px; top:80px;}
+.sf #right-col .travel-deals #nav {right:7px;}
+
+
+#right-col .travel-deals #nav a.activeSlide { background-position:-1259px -1367px !important; }
+#right-col .travel-deals .deal .deal-header { width:345px !important; }
+#right-col .travel-deals .deal .deal-countdown {
+  background: url("../images/sprite_general.png") no-repeat scroll -814px -1314px transparent !important;
+  width: 210px !important;
+}
+/*
+#right-col .travel-deals #nav a { 
+	background: url('../images/sprite_general.png') no-repeat -1280px -1367px transparent !important;
+}*/
+
+
+
+body.page-flights #left-col div.infoToolTip,
+body.page-home #left-col div.infoToolTip,
+body.page-hotels #left-col div.infoToolTip  {display:inline;}
+/* flights results */
+
+
+
+
+body.page-flights-results .step-container  { padding:10px 0 20px; }
+body.page-flights-results .step-container .step-count { color:#e84c09; font-family:"FuturaGreekBoldRegular"; font-size:20px; display:inline-block; padding-right:7px;}
+body.page-flights-results .step-container .step-area-info { display:inline-block; color:#172841; font-size:19px; font-family:Arial; font-weight:bold;}
+body.page-flights-results .step-container .step-dates-persons { color:#00aeef; font-size:13px; font-family:Arial; line-height:12px;}
+
+body.page-flights-results #left-col { float:left; width:161px; margin-right:26px; }
+body.page-flights-results #main-col {float:left; width:616px; margin-right:26px;}
+body.page-flights-results #right-col,
+body.page-flights-results-3 #right-col,
+body.page-flights-results-4 #right-col,
+body.page-hotels-results-4 #right-col {float:left; width:194px;}
+
+body.page-flights-results #left-col .flights-starting,
+body.page-hotels-results #left-col .hotels-starting { height:87px; background: url('../images/sprite_general.png') no-repeat -1431px -2451px transparent; float:left; width:161px;}
+body.page-flights-results #left-col .flights-starting .top-header,
+body.page-hotels-results #left-col .hotels-starting .top-header {
+  color: #FFFFFF;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 11px;
+  text-align: center;
+}
+body.page-flights-results #left-col .flights-starting .med-header,
+body.page-hotels-results #left-col .hotels-starting .med-header {
+  color: #FFFFFF;
+  font-family: 'MyriadProBoldCondensed';
+  font-size: 42px;
+  line-height: 32px;
+  text-align: center;
+  padding-top:4px;
+}
+body.page-flights-results #left-col .flights-starting .bottom-header,
+body.page-hotels-results #left-col .hotels-starting .bottom-header {
+  color: #FFFFFF;
+  font: 12px/12px Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+body.page-flights-results #left-col .flights-hotels-starting {
+    font: 10px/14px Arial, Helvetica, sans-serif;
+    height: 40px;
+    color:#fff;
+    padding-top: 15px; float:left; width:161px;
+	background: url('../images/sprite_general.png') no-repeat -380px -3395px;
+}
+body.page-flights-results #left-col #flights-results-left-section1 .flights-hotels-starting .left-col { 
+	float:left;
+	width:69px;
+	padding-left:8px;
+	font-weight:bold;
+}
+
+body.page-flights-results #left-col #flights-results-left-section1 .flights-hotels-starting .right-col { 
+	float:left;
+	width:73px;
+	padding-right:8px;
+	text-align:right;
+}
+
+body.page-flights-results #left-col #flights-results-left-section1 .flights-hotels-starting .right-col .price {
+  font-size: 12px;
+  letter-spacing: -0.8px;
+}
+
+body.page-flights-results #left-col #flights-results-left-section1 .flights-hotels-starting .right-col p.totalpersons { font-size:9px; }
+body.page-flights-results #left-col #flights-results-left-section1 .reset-filters,
+body.page-hotels-results #left-col #hotels-results-left-section1 .reset-filters  {
+  background: none repeat scroll 0 0 #FFFFFF;
+  padding: 11px 0 11px 13px;
+  float:left;
+  width:148px;
+}
+
+body.page-flights-results #left-col #flights-results-left-section1 .reset-filters-top,
+body.page-hotels-results #left-col #hotels-results-left-section1 .reset-filters-top {
+  border-bottom: 1px solid #DADADA;
+  margin-bottom: 17px;
+  padding-bottom: 14px;
+  padding-top: 17px;
+}
+
+body.page-flights-results #left-col #flights-results-left-section1 .reset-filters a,
+body.page-hotels-results #left-col #hotels-results-left-section1 .reset-filters a {
+	color: #3C5E90;
+	font:bold 12px/12px Arial, Helvetica, sans-serif;
+	text-decoration:none;
+}
+body.page-flights-results #left-col #flights-results-left-section1 .reset-filters a:hover,
+body.page-hotels-results #left-col #hotels-results-left-section1 .reset-filters a:hover {
+	text-decoration:underline;
+}
+
+
+body.page-flights-results #left-col #flights-results-left-section1 .filter-results,
+body.page-hotels-results #left-col #hotels-results-left-section1 .filter-results {
+	background: none repeat scroll 0 0 #FFFFFF;
+	border-top: 1px solid #DADADA;
+	color: #121F36;
+	font-family: Arial;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 14px;
+	padding: 17px 0 0 15px;
+}
+
+
+body.page-flights-results #left-col #flight-results-form,
+body.page-hotels-results #left-col #hotels-results-form
+ {
+  background: none repeat scroll 0 0 #FFFFFF;
+  color: #000000;
+  font-size: 11px;
+  float:left;
+  width:161px;
+}
+
+body.page-flights-results #left-col #flight-results-form .step,
+body.page-hotels-results #left-col #hotels-results-form .step {padding: 15px 15px 7px 15px; border-top: 1px solid #DADADA;}
+body.page-flights-results #left-col #flight-results-form .step1,
+body.page-hotels-results #left-col #hotels-results-form .step1 {border:0;}
+body.page-flights-results #left-col #flight-results-form .step2,
+body.page-hotels-results #left-col #hotels-results-form .step2 {padding-top:10px;}
+body.page-flights-results #left-col #flight-results-form .step h3,
+body.page-hotels-results #left-col #hotels-results-form .step h3 {
+  background: url("../images/sprite_general.png") no-repeat scroll -1564px -2065px transparent;
+  color: #3C5E90;
+  font: bold 12px/12px Arial,Helvetica,sans-serif;
+  margin: 5px 0;
+  padding-left: 20px;
+}
+body.page-flights-results #left-col #flight-results-form .step2 h3 {margin-top:0;}
+body.page-flights-results #left-col #flights-results-left-section1 .step1-elems,
+body.page-flights-results #left-col #flights-results-left-section1 .step3-elems {padding-top:14px;}
+body.page-flights-results #left-col #flights-results-left-section1 .step1-elems label,
+body.page-flights-results #left-col #flights-results-left-section1 .step3-elems label {
+	color: #4C4C4C;
+	display: block;
+	font: 11px/14px Arial,Helvetica,sans-serif;
+	margin-bottom: 12px;
+	padding: 0 8px 0 20px;
+}
+
+
+
+
+
+body.page-flights-results #flight-results-form .step2-elems-title {
+  color: #000000;
+  font:12px/12px Arial, Helvetica, sans-serif;
+  padding-top: 9px;
+  margin-left:4px;
+  color:#121f36;
+  margin-bottom:15px;
+  float:left;
+}
+.page-flights-results .ui-slider-horizontal.globalslider,
+.page-hotels-results .ui-slider-horizontal.globalslider {margin:10px 0;}
+body.page-flights-results #flight-results-form .depart-dates-wrapper,
+body.page-hotels-results #hotels-results-form .globalslider-wrapper {padding-bottom:2px;}
+
+body.page-flights-results #flight-results-form .globalslider-wrapper,
+body.page-hotels-results #hotels-results-form .globalslider-wrapper {margin:0; clear:both;}
+
+body.page-flights-results #flight-results-form .globalslider-wrapper label,
+body.page-hotels-results #hotels-results-form .globalslider-wrapper label,
+body.page-flights-results #flight-results-form .globalslider-wrapper .range-txt,
+body.page-hotels-results #hotels-results-form .globalslider-wrapper .range-txt { font:11px/11px Arial, Helvetica, sans-serif; color:#4c4c4c; border: medium none; float:left; height:13px; margin-bottom:11px;}
+
+
+body.page-flights-results #flight-results-form .globalslider-wrapper label,
+body.page-hotels-results #hotels-results-form .globalslider-wrapper label  {width:38px; display:block; padding-top:2px;}
+body.page-flights-results #flight-results-form .globalslider-wrapper .range-txt,
+body.page-hotels-results #hotels-results-form .globalslider-wrapper .range-txt {  width: 91px; }
+body.page-flights-results #flight-results-form .globalslider,
+body.page-hotels-results #hotels-results-form .globalslider {clear:both;}
+
+body.page-flights-results #left-col .reset-filters-bottom {border-top: 1px solid #DADADA;padding: 18px 0 17px 13px !important;}
+body.page-flights-results #left-col .search-history {
+  background: url("../images/sprite_general.png") no-repeat scroll -1431px -2313px transparent;
+  height: 44px;
+  text-align: center;
+  float:left;
+  width:161px;
+}
+body.page-flights-results #left-col .search-history a {
+	color: #FFFFFF;
+	display: block;
+	height: 33px;
+	padding-top: 11px;
+	text-decoration: none;
+	font:bold 14px/22px Arial, Helvetica, sans-serif;
+}
+body.page-flights-results #left-col .search-history a:hover {text-decoration:underline;}
+body.page-flights-results #left-col #flights-results-left-section1,
+body.page-hotels-results #left-col #hotels-results-left-section1 {margin-bottom:10px; float:left;}
+
+
+
+body.page-flights-results #left-col #flights-results-left-section2,
+body.page-hotels-results #left-col #hotels-results-left-section2,
+ #left-col #hotels-results-left-section1 {float:left; margin-bottom:34px;}
+body.page-flights-results #left-col #flights-results-left-section2 .step-elems,
+body.page-hotels-results #left-col #hotels-results-left-section2 .step-elems,
+ #left-col #change-search-hotels-form .step-elems {background:#fff; padding:0 14px; float:left;}
+.ie7.page-flights-results #left-col #flights-results-left-section2 .step3-elems,
+.ie7.page-flights-results #left-col #flights-results-left-section2 .step5-elems{padding-top:7px;}
+
+.page-flights-results #left-col #flights-results-left-section2 .step4-elems{position:relative; z-index:2;}
+.page-flights-results #left-col #flights-results-left-section2 .step5-elems{position:relative; z-index:1;}
+.page-flights-results #left-col #flights-results-left-section2 .step4-elems .adultswrapper{position:relative; z-index:4;}
+.page-flights-results #left-col #flights-results-left-section2 .step4-elems .childrenwrapper{position:relative; z-index:3;}
+.page-flights-results #left-col #flights-results-left-section2 .step4-elems .infantswithseat-wrapper{position:relative; z-index:2;}
+.page-flights-results #left-col #flights-results-left-section2 .step4-elems .infantswithoutseat-wrapper{position:relative; z-index:1;}
+
+
+
+body.page-flights-results #left-col #flights-results-left-section2 .change-your-search,
+body.page-hotels-results #left-col #hotels-results-left-section2 .change-your-search,
+ #left-col #hotels-results-left-section1 .change-your-search,
+ #left-col .myviewedhotels,
+ #left-col .recentlybooked,
+ #left-col .hotelsnearrby  {
+	background: url('../images/sprite_general.png') no-repeat -1431px -2179px; 
+	height: 51px;
+	float:left;
+	width:161px;
+	font:bold 14px/22px Arial, Helvetica, sans-serif;
+}
+body.page-flights-results #left-col #change-search-flight-form,
+body.page-hotels-results #left-col #change-search-hotels-form,
+ #left-col #change-search-hotels-form,
+ #left-col #hotels-results-left-section2 {float:left; width:161px;}
+
+
+
+
+body.page-flights-results #left-col #flights-results-left-section2 .change-your-search p,
+body.page-hotels-results #left-col #hotels-results-left-section2 .change-your-search p,
+ #left-col #hotels-results-left-section1 .change-your-search p,
+ #left-col .myviewedhotels p,
+ #left-col .recentlybooked p,
+ #left-col .hotelsnearrby p {
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 16px;
+  text-align: center;
+}
+
+ #left-col .recentlybooked p
+ {
+  line-height: 18px;
+  padding-left: 10px;
+  padding-top: 9px;
+  text-align: left;
+}
+
+body.page-flights-results #left-col #flights-results-left-section2 .step1-elems .radiob input {
+  color: #4A4A4A;
+  float: left;
+  font: 12px Arial,Helvetica,sans-serif;
+  margin-top: 5px;
+}
+
+body.page-flights-results #left-col #flights-results-left-section2 .step1-elems .radiob label {
+  font-family: Arial;
+  padding: 0 8px 0 18px;
+}
+
+body.page-flights-results #left-col #flights-results-left-section2 .step1-elems {padding: 18px 18px 0 14px; width:129px;}
+
+
+body.page-flights-results #left-col #flights-results-left-section2 .step2-elems  label,
+body.page-flights-results #left-col #flights-results-left-section2 .step3-elems  label,
+body.page-flights-results #left-col #flights-results-left-section2 .personswrapper,
+body.page-flights-results #left-col #flights-results-left-section2 .seatwrapper,
+body.page-hotels-results #left-col #hotels-results-left-section2 .step-elems label,
+body.page-hotels-results #left-col #hotels-results-left-section2 .step4 .label,
+body.page-hotels-results #left-col #hotels-results-left-section2 .step4 input,
+ #left-col #change-search-hotels-form .step-elems label,
+ #left-col #change-search-hotels-form .step4 .label,
+ #left-col #change-search-hotels-form .step4 input {font:11px/11px Arial, Helvetica, sans-serif; color:#4c4c4c; margin-bottom:2px; float:left;}
+
+ #left-col #change-search-hotels-form .step-elems label {width: 129px;}
+
+
+.ie7.page-flights-results #left-col #flights-results-left-section2 .seatwrapper{margin-top:6px;}
+
+
+body.page-flights-results #left-col #flights-results-left-section2 .step4-elems .personswrapper{margin-top:5px; margin-bottom:0;}
+
+
+body.page-flights-results #left-col #flights-results-left-section2  .inputf input,
+body.page-flights-results #left-col #flights-results-left-section2 .dptrtn-wrapper input,
+body.page-hotels-results #left-col #hotels-results-left-section2  .inputf input,
+body.page-hotels-results #left-col #hotels-results-left-section2 .dptrtn-wrapper input,
+ #left-col #change-search-hotels-form   .inputf input,
+ #left-col #change-search-hotels-form  .dptrtn-wrapper input {
+	background: none repeat scroll 0 0 #FFFFFF;
+	border: 1px solid #D8D8D8;
+	color: #737373;
+	font: 11px/19px Arial, Helvetica, sans-serif;
+	height: 19px;
+	margin-bottom: 7px;
+	padding: 0 6px;
+	width: 119px;
+	float:left;
+}
+
+body.page-flights-results #left-col #flights-results-left-section2 input.datepicker,
+body.page-hotels-results #left-col #hotels-results-left-section2 input.datepicker,
+ #left-col #change-search-hotels-form input.datepicker {
+  background: url("../images/sprite_general.png") no-repeat scroll -1366px -2627px transparent;
+  cursor: pointer;
+}
+
+body.page-flights-results #left-col #flights-results-left-section2 .personswrapper label {float:left;}
+body.page-flights-results #left-col #flights-results-left-section2 .personswrapper .label,
+body.page-flights-results #left-col #flights-results-left-section2 .seatwrapper .label,
+body.page-hotels-results #left-col #hotels-results-left-section2 .step4-elems .label,
+ #left-col #change-search-hotels-form .step4-elems .label {width:84px;  float:left; clear:both; font:11px/11px Arial, Helvetica, sans-serif; color:#4c4c4c;}
+
+
+ body.page-flights-results #left-col #flights-results-left-section2 .seatwrapper .infantswithoutseat-wrapper .label {padding-right:10px; width:74px;}
+
+body.page-flights-results #left-col #flights-results-left-section2 .adultswrapper,
+body.page-flights-results #left-col #flights-results-left-section2 .childrenwrapper,
+body.page-flights-results #left-col #flights-results-left-section2 .infantswithoutseat-wrapper,
+body.page-flights-results #left-col #flights-results-left-section2 .infantswithseat-wrapper {position:relative; float:left; margin-bottom:6px;}
+
+body.page-flights-results #left-col #flights-results-left-section2 .step1-elems label {
+	color: #121F36;
+	display: block;
+	font: 11px/13px Arial, Helvetica, sans-serif;
+	margin-bottom: 8px;
+	padding: 0 8px 0 20px;
+}
+
+body.page-flights-results #left-col #flights-results-left-section2 .step4-elems input.selectbox,
+body.page-hotels-results #left-col #hotels-results-left-section2 .step4-elems input.selectbox,
+ #left-col #change-search-hotels-form .step4-elems input.selectbox  {
+  border: 1px solid #D8D8D8;
+  color: #737373;
+  padding: 5px 8px;
+}
+
+body.page-flights-results #left-col #flights-results-left-section2 .step4-elems input.selectbox  {float:left;}
+
+body.page-flights-results #left-col #flights-results-left-section2 .step4-elems input.selectbox,
+body.page-hotels-results #left-col #hotels-results-left-section2 .step4-elems input.selectbox,
+ #left-col #change-search-hotels-form .step4-elems input.selectbox {
+	background: url("../images/sprite_general.png") no-repeat scroll -1550px -2690px #FFFFFF;
+	cursor: pointer;
+	float: left;
+	font: 11px/20px Arial, Helvetica, sans-serif;
+	height: 18px;
+	padding: 0 8px;
+	width: 30px;
+}
+body.page-flights-results #left-col #flights-results-left-section2 #change-search-flight-form .step4-elems .selectbox-wrapper,
+body.page-hotels-results #left-col #hotels-results-left-section2 #change-search-hotels-form .step4-elems .selectbox-wrapper,
+ #left-col #change-search-hotels-form .step4-elems .selectbox-wrapper {
+	background:#fff;
+	border:1px solid #D8D8D8; 
+	padding: 5px 8px;
+	position: absolute;
+	right:1px; 
+	top:19px;
+	z-index: 4;
+	font-family:Arial;
+	padding:0;
+	width:46px!important;
+}
+
+body.page-hotels-results #left-col #hotels-results-left-section2 #change-search-hotels-form .step4-elems .selectbox-wrapper { /*left:0;*/ }
+#frontForm .step4-elems .dptrtn-wrapper input.globaldatepicker {font-family:Arial;}
+
+
+body.page-flights-results #left-col #flights-results-left-section2 #change-search-flight-form .step4-elems .selectbox-wrapper li,
+body.page-hotels-results #left-col #hotels-results-left-section2 #change-search-hotels-form .step4-elems .selectbox-wrapper li,
+ #left-col #change-search-hotels-form .step4-elems .selectbox-wrapper li {
+	background-color: #FFFFFF;
+	border-top: 1px solid #D8D8D7;
+	clear: left;
+	color: #737373;
+	cursor: pointer;
+	float: left;
+	font: bold 11px/20px Arial,Helvetica,sans-serif;
+	height: 20px;
+	padding: 0 8px;
+	width: 29px;
+}
+body.page-flights-results #left-col #flights-results-left-section2 .step5-elems > div{position:relative; float:left;}
+body.page-flights-results #left-col #flights-results-left-section2 .step5-elems > .airlinecomp-wrapper{ position:relative; z-index:2;}
+body.page-flights-results #left-col #flights-results-left-section2 .step5-elems > .seatcateg-wrapper{position:relative; z-index:1;}
+.ie7.page-flights-results #left-col #flights-results-left-section2 .step5-elems > .seatcateg-wrapper{ margin-top:6px;}
+
+body.page-flights-results #left-col #flights-results-left-section2 .step5-elems div div.label{
+	float:left;
+	font:11px/11px Arial, Helvetica, sans-serif;
+	margin-bottom:3px;
+	color:#4c4c4c;
+}
+
+body.page-flights-results #change-search-flight-form .step5-elems .airlinecomp-wrapper input.selectbox,
+body.page-flights-results #change-search-flight-form .step5-elems .seatcateg-wrapper input.selectbox,
+body.page-hotels-results #change-search-hotels-form .step3-elems input.selectbox,
+ #change-search-hotels-form .step3-elems input.selectbox  { 
+	background: url("../images/sprite_general.png") no-repeat scroll -1466px -2690px #FFFFFF; 
+	cursor:pointer; 
+	width:119px; 
+	float:left;
+	clear:both; 
+	margin-bottom:6px;
+	height:16px;
+	padding:2px 6px 0;
+	font:11px/18px Arial, Helvetica, sans-serif;
+	border: 1px solid #D8D8D8;
+	color: #737373;
+}
+
+
+body.page-hotels-results #change-search-hotels-form .step3-elems input.selectbox,
+ #change-search-hotels-form .step3-elems input.selectbox {margin-bottom:0;}
+body.page-flights-results #change-search-flight-form .step5-elems > div .selectbox-wrapper,
+body.page-hotels-results #change-search-hotels-form .step3-elems .selectbox-wrapper,
+ #change-search-hotels-form .step3-elems .selectbox-wrapper  { 
+	background: none repeat scroll 0 0 #FFFFFF;
+	border: 1px solid #D8D8D8;
+	font: 11px/18px Arial,Helvetica,sans-serif;
+	padding:0;
+	position: absolute;
+	right: 0;
+	top: 33px;
+	width: 131px !important;
+	z-index: 4;
+}
+body.page-flights-results #change-search-flight-form .step5-elems > div .selectbox-wrapper li,
+body.page-hotels-results #change-search-hotels-form .step3-elems  .selectbox-wrapper li,
+ #change-search-hotels-form .step3-elems  .selectbox-wrapper li {
+	background-color: #FFFFFF;
+	border-top: 1px solid #D8D8D7;
+	clear: left;
+	color: #737373;
+	cursor: pointer;
+	float: left;
+	font: bold 11px/20px Arial,Helvetica,sans-serif; 
+	height: 20px;
+	padding: 0 8px;
+	width: 115px;
+}
+body.page-flights-results #change-search-flight-form .step5-elems > div .selectbox-wrapper li:hover,
+body.page-hotels-results #change-search-hotels-form .step3-elems .selectbox-wrapper li:hover,
+body.page-hotels-results #left-col #hotels-results-left-section2 #change-search-hotels-form .step4-elems .selectbox-wrapper li:hover,
+ #change-search-hotels-form .step3-elems .selectbox-wrapper li:hover,
+ #left-col  #change-search-hotels-form .step4-elems .selectbox-wrapper li:hover {
+	background:#172841;
+	color:#fff;
+}
+
+body.page-flights-results #change-search-flight-form .step6-elems {
+	padding:6px 15px 10px 14px!important;
+	width: 132px;
+	border-bottom: 1px solid #DADADA;
+}
+body.page-flights-results #change-search-flight-form .step6-elems > div{float:left; clear:both;width: 120px;}
+body.page-flights-results #change-search-flight-form .step6-elems > div > input{float: left; margin: 0 5px 0 0;}
+body.page-flights-results #change-search-flight-form .step6-elems > div > label{ font:11px/13px Arial, Helvetica, sans-serif; color:#4c4c4c; float:left;}
+.ie7.page-flights-results #change-search-flight-form .step6-elems > div > label{margin-top:5px;}
+
+body.page-flights-results #change-search-flight-form .button-wrapper,
+body.page-hotels-results #change-search-hotels-form .button-wrapper,
+ #change-search-hotels-form .button-wrapper{ float:left; background:#fff; padding:7px 0 0 8px; width:153px;}
+
+body.page-flights-results #change-search-flight-form .button-wrapper button.fsubmit.first,
+body.page-hotels-results #change-search-hotels-form .button-wrapper button.fsubmit.first,
+ #change-search-hotels-form .button-wrapper button.fsubmit.first {
+	background: url('../images/sprite_general.png') no-repeat -289px -2793px;
+	width: 145px;
+	height: 43px;
+	border: medium none;
+	color: #FFFFFF;
+	cursor: pointer;
+	font:22px/21px 'MyriadProBoldCondensed';
+	word-wrap: break-word;
+	white-space: pre-wrap;
+}
+
+.ie7.page-flights-results #change-search-flight-form .button-wrapper button.fsubmit.first { padding-top:3px;}
+body.page-flights-results #change-search-flight-form .button-wrapper button.fsubmit.first:hover,
+body.page-hotels-results #change-search-hotels-form .button-wrapper button.fsubmit.first:hover,
+ #change-search-hotels-form .button-wrapper button.fsubmit.first:hover {
+	background: url('../images/sprite_general.png') no-repeat -442px -2793px;
+	color:#fff;
+}
+body.page-flights-results #change-search-flight-form .button-wrapper button.fsubmit.last,
+body.page-hotels-results #change-search-hotels-form .button-wrapper button.fsubmit.last,
+ #change-search-hotels-form .button-wrapper button.fsubmit.last {
+	background: url("../images/sprite_general.png") no-repeat scroll -289px -2793px transparent;
+	width: 145px;
+	height: 43px;
+	border: medium none;
+	color: #FFFFFF;
+	cursor: pointer;
+	font:22px/21px 'MyriadProBoldCondensed';
+}
+body.page-flights-results #change-search-flight-form .button-wrapper button.fsubmit.last:hover,
+body.page-hotels-results #change-search-hotels-form .button-wrapper button.fsubmit.last:hover,
+ #change-search-hotels-form .button-wrapper button.fsubmit.last:hover {
+	background: url("../images/sprite_general.png") no-repeat scroll -442px -2793px transparent;
+	color:#fff;
+}
+body.page-flights-results #change-search-flight-form .button-wrapper .button-separator,
+body.page-hotels-results #change-search-hotels-form .button-wrapper .button-separator,
+ #change-search-hotels-form .button-wrapper .button-separator {
+	text-align:center;
+	font:24px/24px 'MyriadProBoldCondensed';
+	color:#172841;
+	margin:7px 13px 7px 5px;
+}
+body.page-flights-results #change-search-flight-form .form-bottom-curve,
+body.page-hotels-results #left-col .form-bottom-curve,
+ #left-col .form-bottom-curve {
+	background: url('../images/sprite_general.png') no-repeat -1432px -2540px;
+	width: 161px;
+	height: 11px;
+	float:left;
+}
+#hotel-list-wrapper .share-toolbar,
+ #main-col .hotel-gallery-info-wrapper .hotel-top-infotext .share-toolbar {
+  float: left;
+  padding-left: 0px;
+  padding-top:12px;
+}
+
+#tabs-flights-results .ui-tabs-panel .ui-tabs-panel-center .results-list .result .share-toolbar{
+  float: left;
+  padding-left: 26px;
+  padding-top:12px;
+  width:400px;
+}
+.ie7 #tabs-flights-results .ui-tabs-panel .ui-tabs-panel-center .results-list .result .share-toolbar {margin-top:12px;}
+
+#hotel-list-wrapper .addthis_toolbox.addthis_default_style,
+#tabs-flights-results .ui-tabs-panel .ui-tabs-panel-center .results-list .result .addthis_toolbox.addthis_default_style,
+ #main-col .hotel-gallery-info-wrapper .hotel-top-infotext .share-toolbar .addthis_toolbox.addthis_default_style {float:left; padding-top:1px;}
+
+
+
+#hotel-list-wrapper .addthis_toolbox.addthis_default_style span,
+ #main-col .hotel-gallery-info-wrapper .hotel-top-infotext .share-toolbar .addthis_toolbox.addthis_default_style span,
+
+#tabs-flights-results .ui-tabs-panel .ui-tabs-panel-center .results-list .result .addthis_toolbox.addthis_default_style span {
+  background: url("../images/sprite_general.png") no-repeat scroll -1414px -2665px transparent;
+  height: 11px;
+  line-height: 11px;
+  margin-right:0;
+}
+
+#hotel-list-wrapper .share-toolbar a.addthis_button_compact,
+#tabs-flights-results .ui-tabs-panel .ui-tabs-panel-center .results-list .result .share-toolbar a.addthis_button_compact,
+ #main-col .hotel-gallery-info-wrapper .hotel-top-infotext .share-toolbar a.addthis_button_compact {
+  color: #606060;
+  font-family: Arial;
+  font-size: 11px;
+  line-height: 11px;
+  padding: 0;
+  text-decoration:none;
+}
+#hotel-list-wrapper .share-toolbar a.addthis_button_compact:hover,
+#tabs-flights-results .ui-tabs-panel .ui-tabs-panel-center .results-list .result .share-toolbar a.addthis_button_compact:hover,
+ #main-col .hotel-gallery-info-wrapper .hotel-top-infotext .share-toolbar a.addthis_button_compact:hover{text-decoration:underline;}
+#hotel-list-wrapper .share-toolbar .separator,
+#tabs-flights-results .ui-tabs-panel .ui-tabs-panel-center .results-list .result .share-toolbar .separator,
+ #main-col .hotel-gallery-info-wrapper .hotel-top-infotext .share-toolbar .separator{
+  background: url("../images/sprite_general.png") no-repeat scroll -1474px -2662px transparent;
+  float: left;
+  height: 14px;
+  margin: -2px 10px 0 10px;
+  width: 12px;
+}
+#hotel-list-wrapper .share-toolbar .printer-icon,
+#hotel-list-wrapper .share-toolbar .mail-icon,
+#hotel-list-wrapper .share-toolbar .star-icon,
+#tabs-flights-results .ui-tabs-panel .ui-tabs-panel-center .results-list .result .share-toolbar .printer-icon,
+#tabs-flights-results .ui-tabs-panel .ui-tabs-panel-center .results-list .result .share-toolbar .mail-icon,
+#tabs-flights-results .ui-tabs-panel .ui-tabs-panel-center .results-list .result .share-toolbar .star-icon,
+ #main-col .hotel-gallery-info-wrapper .hotel-top-infotext .share-toolbar .printer-icon,
+ #main-col .hotel-gallery-info-wrapper .hotel-top-infotext .share-toolbar .mail-icon,
+ #main-col .hotel-gallery-info-wrapper .hotel-top-infotext .share-toolbar .star-icon  {float:left;} 
+
+
+#tabs-flights-results .ui-tabs-panel .ui-tabs-panel-center .results-list .result .share-toolbar .delete-box{float: left; margin: -2px 9px 0 0;}
+#tabs-flights-results .ui-tabs-panel .ui-tabs-panel-center .results-list .result .share-toolbar .delete-box input {margin:0; float:left;}
+#tabs-flights-results .ui-tabs-panel .ui-tabs-panel-center .results-list .result .share-toolbar .delete-box label {font-size:11px; color:#606060; font-family:Arial; padding-left:4px; float:left;}
+
+#hotel-list-wrapper .share-toolbar .printer-icon a,
+#tabs-flights-results .ui-tabs-panel .ui-tabs-panel-center .results-list .result .share-toolbar .printer-icon a,
+ #main-col .hotel-gallery-info-wrapper .hotel-top-infotext .share-toolbar .printer-icon a {
+	background: url('../images/sprite_general.png') no-repeat -1583px -2662px; width: 14px; height: 14px; margin-right:10px; margin-top:-2px;
+}
+
+#hotel-list-wrapper .share-toolbar .mail-icon a,
+#tabs-flights-results .ui-tabs-panel .ui-tabs-panel-center .results-list .result .share-toolbar .mail-icon a,
+ #main-col .hotel-gallery-info-wrapper .hotel-top-infotext .share-toolbar .mail-icon a{
+background: url('../images/sprite_general.png') no-repeat -1512px -2664px; width: 14px; height: 11px;  margin-right:10px;}
+
+#hotel-list-wrapper .share-toolbar .star-icon a,
+#tabs-flights-results .ui-tabs-panel .ui-tabs-panel-center .results-list .result .share-toolbar .star-icon a,
+ #main-col .hotel-gallery-info-wrapper .hotel-top-infotext .share-toolbar .star-icon a{
+	background: url('../images/sprite_general.png') no-repeat -1553px -2665px; width: 11px; height: 11px; margin-right:10px;
+}
+#hotel-list-wrapper .share-toolbar a,
+#tabs-flights-results .ui-tabs-panel .ui-tabs-panel-center .results-list .result .share-toolbar a,
+ #main-col .hotel-gallery-info-wrapper .hotel-top-infotext .share-toolbar  a
+ { text-decoration:none; display:block;}
+
+
+body.page-flights-results .ac_results.left-col,
+body.page-flights-results .ac_results.right-col { width:220px !important;}
+
+body.page-flights-results .ac_results.left-col ul,
+body.page-flights-results .ac_results.right-col ul {width:220px !important;}
+
+body.page-flights-results .ac_results.left-col .lastLi,
+body.page-flights-results .ac_results.right-col .lastLi {width:220px !important;}
+
+
+body.page-flights-results .globaltabs .ui-tabs-panel .ui-tabs-panel-center {background:transparent;}
+body.page-flights-results #tabs-flights-results #return.ui-tabs-panel .ui-tabs-panel-center .results-list .result {margin-bottom:15px; border:none; overflow:hidden;}
+body.page-flights-results #tabs-flights-results #return.ui-tabs-panel .ui-tabs-panel-center .results-list .result.last {margin-bottom:0;}
+
+
+
+
+.page-flights .globaltabs .ui-tabs-panel-center-left {background:none;}
+.page-flights .globaltabs .ui-tabs-panel-center-right  {margin-left:55px; margin-bottom:10px;}
+.page-flights .globaltabs .ui-tabs-panel-center-right ul li a .price,
+.page-flights2 .globaltabs .ui-tabs-panel-center-right ul li a .price { display:inline-block; margin-left:20px; }
+.page-flights .globaltabs .ui-tabs-panel-center-right ul li,
+.page-flights2 .globaltabs .ui-tabs-panel-center-right ul li {margin-right:29px;}
+
+.page-flights #hot-price.ui-tabs-panel .ui-tabs-panel-center-right ul,
+.page-flights #flights-live.ui-tabs-panel .ui-tabs-panel-center-right ul,
+.page-flights #hot-price-weekend.ui-tabs-panel .ui-tabs-panel-center-right ul {
+	width: 100%;
+	height: 178px;
+	min-height:178px;
+	overflow: auto;
+}
+
+
+body.page-flights .find-out-hot-prices,
+body.page-flights2 .find-out-hot-prices {
+  background: url("../images/sprite_general.png") no-repeat scroll -966px -3258px transparent;
+  clear: left;
+  float: left;
+  height: 212px;
+  margin-bottom: 29px;
+  padding: 0 20px 20px;
+  position: relative;
+  width: 584px;
+}
+
+body.ie7.page-flights .find-out-hot-prices,
+body.ie7.page-flights2 .find-out-hot-prices {margin-top:15px;}
+
+body.page-flights .find-out-hot-prices h2,
+body.page-flights2 .find-out-hot-prices h2 { font-family:"FuturaGreekBoldRegular"; color:#fff; font-size:26px; padding-left:52px; background: url('../images/sprite_general.png') no-repeat -1550px -3118px; padding-top:10px;}
+
+body.page-flights .find-out-hot-prices .find-out-stripe,
+body.page-flights2 .find-out-hot-prices .find-out-stripe {position:absolute; right:-15px; top:-8px; background: url('../images/sprite_general.png') no-repeat -953px -3037px; width:128px; height:126px;}
+
+
+body.page-flights .find-out-hot-prices .yes-hand,
+body.page-flights2 .find-out-hot-prices .yes-hand {position:absolute; right:-92px; top:25px; background: url('../images/sprite_general.png') no-repeat -1225px -3071px; width:70px; height:69px;}
+body.page-flights .find-out-hot-prices ul,
+body.page-flights2 .find-out-hot-prices ul {
+  	float: left;
+ 	margin-left: 32px;
+  	margin-top: 8px;
+  	width: 525px;
+	height: 138px;
+	overflow: auto;
+}
+body.page-flights .find-out-hot-prices ul li,
+body.page-flights2 .find-out-hot-prices ul li { margin-right: 29px; float:left; }
+body.page-flights .find-out-hot-prices ul li a,
+body.page-flights2 .find-out-hot-prices ul li a {
+  border-bottom: 1px solid #404d61;
+  color: #fff;
+  float: left;
+  font: 12px Arial,Helvetica,sans-serif;
+  height: 23px;
+  padding: 5px 0 0;
+  text-align: center;
+  text-decoration: none;
+  width: 226px;
+}
+body.page-flights .find-out-hot-prices ul li a:hover,
+body.page-flights2 .find-out-hot-prices ul li a:hover {
+  background-color: #ff8c00;
+}
+body.page-flights #tabs-flights,
+body.page-flights2 #tabs-flights {margin-bottom:31px;}
+.ie7 .flights-top-banner { float:none; }
+
+
+
+
+body.page-flights-results-3 .discount-newsletter-wrapper {  height:67px; clear:left;}
+body.page-flights-results-3 .discount-newsletter-wrapper .discount-code .deal-alerts,
+body.page-flights-results-3 .discount-newsletter-wrapper .newsletter-sign-up   .deal-alerts,
+
+
+body.page-flights-results-3 .discount-newsletter-wrapper .discount-code  .alert-content,
+body.page-flights-results-3 .discount-newsletter-wrapper .newsletter-sign-up   .alert-content {clear:left; }
+
+body.page-flights-results-3 .discount-newsletter-wrapper .discount-code .alert-label, body.page-flights-results-3 .discount-newsletter-wrapper .newsletter-sign-up .alert-label {
+  display: block;
+  float: left;
+  margin-bottom: 5px;
+}
+
+
+body.page-flights-results-3 .discount-newsletter-wrapper .discount-code {float:left; width:50%;} 
+body.page-flights-results-3 .discount-newsletter-wrapper .discount-code form {
+  background: url("../images/sprite_general.png") no-repeat scroll -11px -3596px transparent;
+  height: 39px;
+  padding: 0 0 0 4px;
+  width: 425px;
+}
+body.page-flights-results-3 .discount-newsletter-wrapper .discount-code input[type="text"],
+body.page-flights-results-3 .discount-newsletter-wrapper .newsletter-sign-up input[type="text"] {
+  float:left;
+  border: medium none;
+  float: left;
+  margin-top: 4px;
+  padding: 8px 5px;
+  width: 314px;
+  font:12px/12px Arial,Helvetica,sans-serif;
+  color:#888F9A;
+}
+
+body.page-flights-results-3 .discount-newsletter-wrapper .newsletter-sign-up input[type="text"] {width:323px; }
+
+body.page-flights-results-3 .discount-newsletter-wrapper .discount-code input.submit,
+body.page-flights-results-3 .discount-newsletter-wrapper .newsletter-sign-up input.submit {
+  background: url("../images/sprite_general.png") no-repeat scroll -12px -3544px transparent;
+  border: medium none;
+  color: #121F36;
+  cursor: pointer;
+  float: left;
+  font: 14px 'FuturaGreekBoldRegular';
+  height: 30px; 
+  margin-top: 4px;
+  width: 92px;
+}
+
+
+
+body.page-flights-results-3 .discount-newsletter-wrapper .newsletter-sign-up input.submit {
+  background: url("../images/sprite_general.png") no-repeat scroll -170px -3546px transparent;
+  height: 27px;
+  margin-top: 6px;
+  padding-bottom: 2px;
+  width: 32px;
+}
+
+body.page-flights-results-3 .discount-newsletter-wrapper .newsletter-sign-up input.submit:hover {
+	background:url("../images/sprite_general.png") no-repeat scroll -416px -3546px transparent;
+	color:#fff;
+}
+
+
+body.page-flights-results-3 .discount-newsletter-wrapper .discount-code input.submit:hover {
+	background:url("../images/sprite_general.png") no-repeat scroll -276px -3544px transparent;
+	color:#fff;
+}
+
+
+body.page-flights-results-3 .discount-newsletter-wrapper .newsletter-sign-up {
+  float: right;
+  width:388px;
+  text-align:right;
+}
+
+body.page-flights-results-3 .discount-newsletter-wrapper .newsletter-sign-up form {    padding: 0 0 0 4px; background: url('../images/sprite_general.png') no-repeat -14px -3667px; width: 375px; height: 39px;}
+body.page-flights-results-3 .passenger-details {
+  clear: both;
+  margin-bottom: 5px;
+  margin-top: 17px;
+}
+body.page-flights-results-3 .passenger-details .header {color:#172841; font-family:Arial; font-weight:bold; font-size:20px;}
+body.page-flights-results-3 .passenger-details .subheader {color:#00aeef; font-size:19px; font-family:Arial; font-weight:normal;}
+
+body.page-flights-results-3 #main-content,
+body.page-flights-results-4 #main-content {float:left; width:806px; margin-bottom:20px; margin-right:24px;}
+
+body.page-flights-results-3 #main-content #search-results-passenger-form {margin-bottom:0; width:805px; /*background:#fff;*/}
+body.page-flights-results-3 #main-content #search-results-passenger-form .step,
+body.page-flights-results-3 #main-content #search-results-passenger-form .form-description {background:#fff; }
+body.page-flights-results-3 #main-content   .topformradius,
+body.page-flights-results-4 #main-content .topformradius { background: url('../images/sprite_general.png') no-repeat -31px -4129px; width: 805px; height: 34px; }
+
+body.page-flights-results-4 #main-content .topformradius {height:13px;}
+
+
+body.page-flights-results-3 #main-content  .bottomformradius,
+body.page-flights-results-4 #main-content  .bottomformradius {background: url('../images/sprite_general.png') no-repeat -19px -4213px; width: 805px; height: 18px; }
+body.page-flights-results-4 #main-content #search-results-services-form .bottomformradius,
+body.page-flights-results-4 #main-content #search-results-payment-form .bottomformradius,
+body.page-flights-results-4 #main-content #search-results-verify-delivery-form .bottomformradius {float:left;}
+
+body.page-flights-results-3 #main-content #search-results-passenger-form .step-header {
+  color: #000000;
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  padding-left: 22px;
+}
+body.page-flights-results-3 #main-content #search-results-passenger-form .step-header span {color:#e84c09;}
+
+body.page-flights-results-3 #main-content #search-results-passenger-form .step2 .step-header,
+body.page-flights-results-3 #main-content #search-results-passenger-form .step3 .step-header { margin-top:10px;}
+
+
+body.page-flights-results-3 #main-content #search-results-passenger-form .genderwrapper, 
+body.page-flights-results-3 #main-content #search-results-passenger-form .inputf, 
+body.page-flights-results-3 #main-content #search-results-passenger-form .documenttypewrapper,
+body.page-flights-results-3 #main-content #search-results-passenger-form .birthdatewrapper,
+body.page-flights-results-3 #main-content #search-results-passenger-form .phonewrapper {
+  float: left;
+  /*margin-bottom: 18px;*/
+  padding: 0 0 0 22px;
+  width: 171px;
+}
+
+body.page-flights-results-3 #main-content #search-results-passenger-form .contact-form .genderwrapper { margin:0 0 18px 0;}
+
+body.page-flights-results-3 #main-content #search-results-passenger-form .phonewrapper .inputf {padding:0;}
+
+body.page-flights-results-3 #main-content #search-results-passenger-form .phonewrapper  {width:180px;}
+body.page-flights-results-3 #main-content #search-results-passenger-form .phonewrapper2 {
+  padding: 0 0 0 16px;
+  width: 170px;
+}
+
+
+body.page-flights-results-3 #main-content #search-results-passenger-form .step1 {margin-top:-54px; background:transparent;}
+body.page-flights-results-3 #main-content #search-results-passenger-form .step2,
+body.page-flights-results-3 #main-content #search-results-passenger-form .step3  {border-top:1px solid black; clear:left; }
+
+
+body.page-flights-results-3 #main-content #search-results-passenger-form .step1-elems {background:#fff;}
+
+body.page-flights-results-3 #main-content #search-results-passenger-form .form-description {
+  background: url("../images/sprite_general.png") no-repeat scroll -13px -5021px #FFFFFF;
+  color: #000000;
+  font-family: Arial;
+  font-size: 14px;
+  height: 164px;
+  padding: 0 20px;
+  width: 765px;
+  margin-top:-8px;
+}
+
+
+body.page-flights-results-3 #main-content #search-results-passenger-form .genderwrapper label,
+body.page-flights-results-3 #main-content #search-results-passenger-form .inputf label,
+body.page-flights-results-3 #main-content #search-results-passenger-form .label,
+body.page-flights-results-3 #main-content #search-results-passenger-form .birthdatewrapper label,
+body.page-flights-results-3 #main-content #search-results-passenger-form .phonewrapper label {display:block; font-size:12px; font-family:Arial; color:#000;}
+
+body.page-flights-results-3 #main-content #search-results-passenger-form .genderwrapper,
+body.page-flights-results-3 #main-content #search-results-passenger-form .documenttypewrapper {position:relative; }
+
+body.page-flights-results-3 #main-content #search-results-passenger-form .genderwrapper input.selectbox,
+body.page-flights-results-3 #main-content #search-results-passenger-form .documenttypewrapper input.selectbox { margin: 4px 0 0; }
+
+body.page-flights-results-3 #main-content #search-results-passenger-form .adultswrapper1, 
+body.page-flights-results-3 #main-content #search-results-passenger-form .adultswrapper2,
+body.page-flights-results-3 #main-content #search-results-passenger-form .childwrapper1, 
+body.page-flights-results-3 #main-content #search-results-passenger-form .childwrapper2,
+body.page-flights-results-3 #main-content #search-results-passenger-form .childwrapper3,
+body.page-flights-results-3 #main-content #search-results-passenger-form .infantwrapper1, 
+body.page-flights-results-3 #main-content #search-results-passenger-form .infantwrapper2,
+body.page-flights-results-3 #main-content #search-results-passenger-form .infantwrapper3 {clear:both; float:left; width:806px; margin-bottom:18px;}
+
+
+body.ie7.page-flights-results-3 #main-content #search-results-passenger-form .adultswrapper1, 
+body.ie7.page-flights-results-3 #main-content #search-results-passenger-form .adultswrapper2,
+body.ie7.page-flights-results-3 #main-content #search-results-passenger-form .childwrapper1, 
+body.ie7.page-flights-results-3 #main-content #search-results-passenger-form .childwrapper2,
+body.ie7.page-flights-results-3 #main-content #search-results-passenger-form .childwrapper3,
+body.ie7.page-flights-results-3 #main-content #search-results-passenger-form .infantwrapper1, 
+body.ie7.page-flights-results-3 #main-content #search-results-passenger-form .infantwrapper2,
+body.ie7.page-flights-results-3 #main-content #search-results-passenger-form .infantwrapper3 {width:800px;}
+
+
+
+body.page-flights-results-3 #main-content #search-results-passenger-form .contactwrapper1,
+body.page-flights-results-3 #main-content #search-results-passenger-form .contactwrapper2,
+body.page-flights-results-3 #main-content #search-results-passenger-form .contactwrapper3 { clear:left;}
+
+body.page-flights-results-3 #main-content #search-results-passenger-form .optionsselectwrapper { clear:left; padding-left:22px; padding-bottom:18px;}
+body.page-flights-results-3 #main-content #search-results-passenger-form .optionsselectwrapper.infant {padding-bottom:0;}
+
+body.page-flights-results-3 #main-content #search-results-passenger-form input.selectbox {
+  background: url("../images/sprite_general.png") no-repeat scroll -646px -184px #FFFFFF;
+  border: 1px solid #D8D8D8;
+  color: #737373;
+  cursor: pointer;
+  margin-top: 7px;
+  padding: 7px 8px;
+  position: relative;
+  width: 149px;
+  display:block;
+}
+
+body.ie7.page-flights-results-3 #main-content #search-results-passenger-form input.selectbox {margin-top:5px;}
+
+body.page-flights-results-3 #main-content #search-results-passenger-form .selectbox-wrapper {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 1px solid #D8D8D8;
+  font-family: Arial;
+  padding: 0;
+  position: absolute;
+  top: 54px;
+  
+  width: 165px !important;
+  z-index: 4;
+}
+
+body.mac.page-flights-results-3 #main-content #search-results-passenger-form .selectbox-wrapper {top:50px;}
+
+body.ie7.page-flights-results-3 #main-content #search-results-passenger-form .selectbox-wrapper { 
+	left:22px;
+}
+
+body.page-flights-results-3 #main-content #search-results-passenger-form .selectbox-wrapper li,
+body.page-flights-results-4 #main-content #search-results-payment-form .creditcardtypewrapper .selectbox-wrapper li {
+  background-color: #FFFFFF;
+  border-top: 1px solid #D8D8D7;
+  clear: left;
+  color: #737373;
+  cursor: pointer;
+  float: left;
+  font: bold 11px/33px Arial,Helvetica,sans-serif;
+  height: 33px;
+  padding: 0 8px;
+  width: 149px;
+}
+
+body.page-flights-results-3 #main-content #search-results-passenger-form .inputf input,
+body.page-flights-results-3 #main-content #search-results-passenger-form .birthdatewrapper input {
+  border: 1px solid #D8D8D8;
+  clear: both;
+  color: #737373;
+  float: left;
+  font: 12px/29px Arial,Helvetica,sans-serif;
+  height: 29px;
+  margin-top: 5px;
+  padding: 0 9px;
+  width:148px;
+  display:block;
+}
+
+
+
+
+body.page-flights-results-3 #main-content #search-results-passenger-form .inputf input#mobilephone-ph-l, body.page-flights-results-3 #main-content #search-results-passenger-form .inputf input#phone-ph-l {
+  padding: 0 2px;
+  width: 28px;
+}
+
+body.page-flights-results-3 #main-content #search-results-passenger-form .inputf input#phone-co, body.page-flights-results-3 #main-content #search-results-passenger-form .inputf input#mobile-co {
+  clear: none;
+  margin-left: 3px;
+  width: 111px;
+}
+
+body.page-flights-results-3 #main-content #search-results-passenger-form .selectbox-wrapper li:hover,
+body.page-flights-results-4 #main-content #search-results-payment-form .creditcardtypewrapper .selectbox-wrapper li:hover {
+  background-color: #172841;
+  color: #FFFFFF;
+}
+
+body.page-flights-results-3 #main-content #search-results-passenger-form  .optionsselectwrapper div {display:inline-block; color:#fff; font-size:16px; font-weight:bold; margin-right:23px; cursor:pointer; font-family:Arial; text-align:center; height:28px; padding-top:4px;}
+
+
+body.ie7.page-flights-results-3 #main-content #search-results-passenger-form  .optionsselectwrapper div {float:left;}
+
+body.page-flights-results-3 #main-content #search-results-passenger-form .optionsselectwrapper div.milescardholder {background: url('../images/sprite_general.png') no-repeat -1415px -3655px; width: 176px;   }
+body.page-flights-results-3 #main-content #search-results-passenger-form .optionsselectwrapper div.milescardholder:hover,
+body.page-flights-results-3 #main-content #search-results-passenger-form .optionsselectwrapper div.milescardholder.active { background: url('../images/sprite_general.png') no-repeat -1415px -3709px; }
+
+
+body.page-flights-results-3 #main-content #search-results-passenger-form .optionsselectwrapper div.preferencesrequests {background: url('../images/sprite_general.png') no-repeat -1350px -3863px; width: 236px;  }
+body.page-flights-results-3 #main-content #search-results-passenger-form .optionsselectwrapper div.preferencesrequests:hover,
+body.page-flights-results-3 #main-content #search-results-passenger-form .optionsselectwrapper div.preferencesrequests.active { background: url('../images/sprite_general.png') no-repeat -1353px -3919px; }
+
+
+body.page-flights-results-3 #main-content #search-results-passenger-form   input.globaldatepicker { background:url("../images/sprite_general.png") no-repeat scroll -439px -185px #FFFFFF; }
+
+
+body.page-flights-results-3 #main-content #search-results-passenger-form .contact-details-header,
+body.page-flights-results-4 #main-content form .form-title { width:400px;font-family:Arial; font-weight:bold; font-size:20px; margin:20px 0 5px 0; color:#172841;}
+
+body.page-flights-results-3 #main-content #search-results-passenger-form .form-description2 {
+  background: none repeat scroll 0 0 #FFFFFF;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: -10px;
+  padding-bottom: 11px;
+  padding-left: 20px;
+  font-family:Arial;
+}
+
+body.page-flights-results-3 #main-content #search-results-passenger-form .step4 .contactwrapper3 {padding-left:20px; padding-top:22px; }
+body.page-flights-results-3 #main-content #search-results-passenger-form .step4 .contactwrapper3 label { font-size:12px; color:#e84c09; font-family:Arial;}
+
+
+/*********************/
+body.page-flights-results-3 #main-content #search-results-passenger-form .adult-milescard-wrapper,
+body.page-flights-results-3 #main-content #search-results-passenger-form .child-milescard-wrapper,
+body.page-flights-results-3 #main-content #search-results-passenger-form .infant-milescard-wrapper,
+body.page-flights-results-3 #main-content #search-results-passenger-form .adult-preferences-wrapper,
+body.page-flights-results-3 #main-content #search-results-passenger-form .child-preferences-wrapper,
+body.page-flights-results-3 #main-content #search-results-passenger-form .infant-preferences-wrapper,
+body.page-flights-results-3 #main-content #search-results-passenger-form .adult-preferences-wrapper .pets-wrapper ,
+body.page-flights-results-3 #main-content #search-results-passenger-form .child-preferences-wrapper .pets-wrapper ,
+body.page-flights-results-3 #main-content #search-results-passenger-form .infant-preferences-wrapper .pets-wrapper { display:none; }
+/*************************/
+
+body.ie7.page-flights-results-3 #main-content #search-results-passenger-form .step,
+body.ie7.page-flights-results-3 #main-content #search-results-passenger-form .adult-preferences-wrapper   {float:left; width:805px; background:#fff;}
+
+body.ie7.page-flights-results-3 #main-content #search-results-passenger-form .step1 {background:none;}
+
+
+body.ie7.page-flights-results-3 #main-content #search-results-passenger-form .adult-milescard-wrapper,
+body.ie7.page-flights-results-3 #main-content #search-results-passenger-form .child-milescard-wrapper,
+body.ie7.page-flights-results-3 #main-content #search-results-passenger-form .infant-milescard-wrapper,
+body.ie7.page-flights-results-3 #main-content #search-results-passenger-form .child-preferences-wrapper,
+body.ie7.page-flights-results-3 #main-content #search-results-passenger-form .infant-preferences-wrapper,
+body.ie7.page-flights-results-3 #main-content #search-results-passenger-form .adult-preferences-wrapper .pets-wrapper ,
+body.ie7.page-flights-results-3 #main-content #search-results-passenger-form .child-preferences-wrapper .pets-wrapper ,
+body.ie7.page-flights-results-3 #main-content #search-results-passenger-form .infant-preferences-wrapper .pets-wrapper,
+body.ie7.page-flights-results-3 #main-content #search-results-passenger-form .adult-preferences-wrapper .preferences-desc,
+body.ie7.page-flights-results-3 #main-content #search-results-passenger-form .adult-preferences-wrapper .preferences-subdesc,
+body.ie7.page-flights-results-3 #main-content #search-results-passenger-form  .preferences-footer-desc
+{float:left; width:785px; background:#fff;}
+
+
+body.ie7.page-flights-results-3 #main-content #search-results-passenger-form .optionsselectwrapper {clear:left; margin-top:10px; width:780px;}
+body.ie7.page-flights-results-3 #main-content #search-results-passenger-form .preferences-footer-desc {margin-top:10px;}
+body.ie7.page-flights-results-3 #main-content #search-results-passenger-form .infant-preferences-wrapper {padding-bottom:15px;}
+body.ie.page-flights-results-3 #main-content #search-results-passenger-form .button-wrapper button {line-height:35px;}
+
+body.ie7.page-flights-results-3 #main-content #search-results-passenger-form .milecardwrapper .selectbox-wrapper {left:0;}
+body.ie7.page-flights-results-3 #main-content #search-results-passenger-form .stepc1  .selectbox-wrapper,
+body.ie7.page-flights-results-3 #main-content #search-results-passenger-form .stepp1  .selectbox-wrapper,
+body.ie7.page-flights-results-3 #main-content #search-results-passenger-form .stepi1  .selectbox-wrapper,
+body.ie7.page-flights-results-3 #main-content #search-results-passenger-form .stepc3  .selectbox-wrapper,
+body.ie7.page-flights-results-3 #main-content #search-results-passenger-form .stepp3  .selectbox-wrapper,
+body.ie7.page-flights-results-3 #main-content #search-results-passenger-form .stepi3  .selectbox-wrapper {left:20px;}
+
+body.page-flights-results-3 #main-content #search-results-passenger-form .adult-milescard-wrapper,
+body.page-flights-results-3 #main-content #search-results-passenger-form .child-milescard-wrapper,
+body.page-flights-results-3 #main-content #search-results-passenger-form .infant-milescard-wrapper {
+  background: none repeat scroll 0 0 #FFFFFF;
+  height: 112px;
+  padding-left: 20px;
+}
+
+
+
+body.page-flights-results-3 #main-content #search-results-passenger-form .adult-preferences-wrapper,
+body.page-flights-results-3 #main-content #search-results-passenger-form .child-preferences-wrapper,
+body.page-flights-results-3 #main-content #search-results-passenger-form .infant-preferences-wrapper {
+ height:230px; 
+}
+
+body.page-flights-results-3 #main-content #search-results-passenger-form .milecardwrapper {
+  float: left;
+  position: relative;
+}
+body.page-flights-results-3 #main-content #search-results-passenger-form .inputf {float:left; width:170px;}
+
+body.page-flights-results-3 #main-content #search-results-passenger-form .milescard-desc,
+body.page-flights-results-3 #main-content #search-results-passenger-form .preferences-desc  {font-size:16px; color:#172841; font-weight:bold; padding-bottom:15px; font-family:Arial;}
+
+
+
+body.page-flights-results-3 #main-content #search-results-passenger-form .preferences-desc  {padding-left:20px;}
+body.page-flights-results-3 #main-content #search-results-passenger-form .preferences-subdesc {
+  color: #172841;
+  font-size: 14px;
+  font-weight: bold;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  font-family:Arial;
+}
+
+
+
+body.page-flights-results-3 #main-content #search-results-passenger-form .step .mealpreferences-wrapper,
+body.page-flights-results-3 #main-content #search-results-passenger-form .step .specialservices-wrapper,
+body.page-flights-results-3 #main-content #search-results-passenger-form  .step .seat-assignment-wrapper,
+body.page-flights-results-3 #main-content #search-results-passenger-form  .step .extra-baggages-wrapper,
+body.page-flights-results-3 #main-content #search-results-passenger-form .step .pet-kind-wrapper,
+body.page-flights-results-3 #main-content #search-results-passenger-form .step .pet-dimensions-wrapper,
+body.page-flights-results-3 #main-content #search-results-passenger-form  .stepp .inputf,
+body.page-flights-results-3 #main-content #search-results-passenger-form  .stepi .inputf,
+body.page-flights-results-3 #main-content #search-results-passenger-form  .stepc .inputf {background:#fff; float:left; padding-left:20px;}
+
+
+
+body.page-flights-results-3 #main-content #search-results-passenger-form  .step .mealpreferences-wrapper,
+body.page-flights-results-3 #main-content #search-results-passenger-form  .step .specialservices-wrapper,
+body.page-flights-results-3 #main-content #search-results-passenger-form  .step .seat-assignment-wrapper,
+body.page-flights-results-3 #main-content #search-results-passenger-form  .step .extra-baggages-wrapper,
+body.page-flights-results-3 #main-content #search-results-passenger-form  .step .pet-kind-wrapper,
+body.page-flights-results-3 #main-content #search-results-passenger-form  .step .pet-dimensions-wrapper {position:relative;}
+
+body.page-flights-results-3 #main-content #search-results-passenger-form .adult-preferences-wrapper .step,
+body.page-flights-results-3 #main-content #search-results-passenger-form .child-preferences-wrapper .step,
+body.page-flights-results-3 #main-content #search-results-passenger-form .infant-preferences-wrapper .step {float:left; clear:left;}
+body.page-flights-results-3 #main-content #search-results-passenger-form .has-pets {padding-left:20px; margin:15px 0 10px; font-family:Arial;}
+body.page-flights-results-3 #main-content #search-results-passenger-form .pets-title {
+  color: #000000;
+  float: left;
+  font-size: 12px;
+  margin-right: 12px;
+}
+
+body.page-flights-results-3 #main-content #search-results-passenger-form .has-pets label {
+  color: #000000;
+  font-size: 12px;
+  margin-right: 10px;
+  padding-left: 19px;
+}
+
+
+body.page-flights-results-3 #main-content #search-results-passenger-form .pets-wrapper .inputf input {width:27px;}
+body.page-flights-results-3 #main-content #search-results-passenger-form .pets-wrapper .inputf span {
+  float: left;
+  font-size: 12px;
+  padding: 10px 0 0 6px;
+  font-family:Arial;
+}
+
+
+body.page-flights-results-3 #main-content #search-results-passenger-form .adult-preferences-wrapper .preferences-footer-desc,
+body.page-flights-results-3 #main-content #search-results-passenger-form .child-preferences-wrapper .preferences-footer-desc,
+body.page-flights-results-3 #main-content #search-results-passenger-form .infant-preferences-wrapper .preferences-footer-desc {     clear: left;
+    float: left;
+    padding-left: 20px; }
+
+
+body.page-flights-results-3 #main-content #search-results-passenger-form .adult-preferences-wrapper .preferences-footer-desc p,
+body.page-flights-results-3 #main-content #search-results-passenger-form .child-preferences-wrapper .preferences-footer-desc p,
+body.page-flights-results-3 #main-content #search-results-passenger-form .infant-preferences-wrapper .preferences-footer-desc p {font-size:12px; color:#e84c09; font-family:Arial;}
+
+body.page-flights-results-3 #main-content #search-results-passenger-form .infant-preferences-wrapper .preferences-desc,
+body.page-flights-results-3 #main-content #search-results-passenger-form .infant-milescard-wrapper .milescard-desc {padding-top:18px;}
+
+
+body.page-flights-results-3 .discount-newsletter-wrapper span.orange,
+body.page-flights-results-3 .discount-newsletter-wrapper span.blue {font-size:22px;}
+body.page-flights-results-3 #main-content #search-results-passenger-form .button-wrapper {text-align:right; margin-top:10px;}
+body.page-flights-results-3 #main-content #search-results-passenger-form .button-wrapper button { 
+	background: url('../images/sprite_general.png') no-repeat -1180px -2255px; 
+	width: 126px; 
+	height: 32px; 
+	border:none;
+	font-size:28px;
+	color:#fff;
+	font-family: 'MyriadProBoldCondensed';
+	cursor:pointer;
+}
+body.page-flights-results-3 #main-content #search-results-passenger-form .button-wrapper button:hover { background: url('../images/sprite_general.png') no-repeat -1178px -2175px; }
+
+body.page-flights-results-3.oo #main-content #search-results-passenger-form .button-wrapper button {line-height:10px;}
+body.ie.page-flights-results-3 .discount-newsletter-wrapper .discount-code input[type="text"],
+body.ie.page-flights-results-3 .discount-newsletter-wrapper .newsletter-sign-up input[type="text"] {padding-top:10px; padding-bottom:6px;}
+
+body.oo.page-flights-results-3.oo #main-content #search-results-passenger-form .button-wrapper button { line-height:28px; }
+
+
+
+body.page-flights-results-4 #search-results-services-form .form-bg-wrapper { background: url("../images/sprite_general.png") no-repeat scroll -13px -5053px #FFFFFF; padding:0 20px;}
+body.page-flights-results-4 #search-results-payment-form .form-bg-wrapper { background: url("../images/sprite_general.png") no-repeat scroll -13px -5053px #FFFFFF; padding:10px 20px 0; width:765px; float:left;}
+
+body.page-flights-results-4 #search-results-services-form .form-bg-wrapper {
+  float: left;
+  height: 114px;
+  width: 765px;
+}
+
+body.page-flights-results-4 #main-content form {float:left; clear:left;}
+
+body.page-flights-results-4 #main-content form .form-desc { font-size:14px; font-family:Arial; color:#172841; }
+body.page-flights-results-4 #search-results-services-form .form-desc {float:left; width:580px; padding-top:9px;}
+body.page-flights-results-4 #search-results-services-form .step1 {float:left;} 
+body.page-flights-results-4 #search-results-services-form .travel-protection-wrapper label { width:100px; display:block; font-size:12px; font-family:Arial; padding-left:20px; float:left; clear:left;}
+body.page-flights-results-4 #search-results-services-form .travel-protection-wrapper label:first-child {
+  margin-bottom: 40px;
+  margin-top: 20px;
+  width:163px;
+}
+
+body.page-flights-results-4 #main-content .rowwrapper1,
+body.page-flights-results-4 #main-content .rowwrapper2,
+body.page-flights-results-4 #main-content .rowwrapper3,
+body.page-flights-results-4 #main-content .rowwrapper4,
+body.page-flights-results-4 #main-content #search-results-payment-form .creditcardtypewrapper,
+body.page-flights-results-4 #main-content form .inputf,
+body.page-flights-results-4 #main-content form .step,
+body.page-flights-results-4 #main-content #search-results-payment-form  .credit-cart-expiration {
+  float: left;
+}
+
+
+
+body.page-flights-results-4 #main-content #search-results-payment-form .step1 { margin-top:20px; }
+
+body.page-flights-results-4 #main-content #search-results-payment-form  .inputf,
+body.page-flights-results-4 #main-content #search-results-payment-form .credit-cart-expiration,
+body.page-flights-results-4 #main-content #search-results-payment-form .creditcardtypewrapper,
+body.page-flights-results-4 #main-content #search-results-payment-form .inputf {padding-right:20px;}
+
+
+body.page-flights-results-4 #main-content #search-results-payment-form .credit-cart-expiration .inputc input[type="text"] {
+  clear: none;
+  float: left;
+  width: 59px;
+}
+
+body.page-flights-results-4 #main-content #search-results-payment-form .credit-cart-expiration #expir1-ad {margin-right:10px;}
+
+body.page-flights-results-4 #main-content .rowwrapper1,
+body.page-flights-results-4 #main-content .rowwrapper2,
+body.page-flights-results-4 #main-content .rowwrapper3,
+body.page-flights-results-4 #main-content .rowwrapper4 {clear:left; width:785px; margin-bottom:15px;}
+
+
+body.page-flights-results-4 #main-content form input[type="text"] {
+  border: 1px solid #D8D8D8;
+  clear: both;
+  color: #737373;
+  float: left;
+  font: 12px/29px Arial,Helvetica,sans-serif;
+  height: 29px;
+  margin-top: 5px;
+  padding: 0 9px;
+  width: 148px;
+}
+
+
+ body.page-flights-results-4 #main-content #search-results-payment-form label,
+  body.page-flights-results-4 #main-content #search-results-payment-form .label {   
+  color: #000000;
+  font-family: Arial;
+  font-size: 12px;
+  }
+
+ body.page-flights-results-4 #main-content #search-results-payment-form .rowwrapper2 .label, 
+ body.page-flights-results-4 #main-content #search-results-payment-form  .rowwrapper2 label,
+  body.page-flights-results-4 #main-content #search-results-payment-form .rowwrapper3 .label, 
+ body.page-flights-results-4 #main-content #search-results-payment-form  .rowwrapper3 label,
+   body.page-flights-results-4 #main-content #search-results-payment-form .rowwrapper1 .label, 
+ body.page-flights-results-4 #main-content #search-results-payment-form  .rowwrapper1 label
+ {
+  display: block;
+}
+
+body.page-flights-results-4 #search-results-payment-form .form-desc { margin-bottom:20px; }
+body.page-flights-results-4 #main-content #search-results-payment-form {position:relative;}
+body.page-flights-results-4 #search-results-payment-form  .button-wrapper {float:left; text-align:right;}
+body.page-flights-results-4 #search-results-payment-form .button-wrapper button, body.page-flights-results-4 #main-content #search-results-verify-delivery-form .button-wrapper button {
+  background: url("../images/sprite_general.png") no-repeat scroll -1362px -5044px transparent;
+  border: medium none;
+  bottom: 24px;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: 'MyriadProBoldCondensed';
+  font-size: 24px;
+  height: 32px;
+  line-height: 30px;
+  position: absolute;
+  right: 15px;
+  width: 226px;
+}
+.page-flights-results-4.ie8 #search-results-payment-form .button-wrapper button,
+.page-flights-results-4.ie8 #main-content #search-results-verify-delivery-form .button-wrapper button,
+.page-flights-results-4.ie9 #search-results-payment-form .button-wrapper button,
+.page-flights-results-4.ie9 #main-content #search-results-verify-delivery-form .button-wrapper button {
+	padding:2px;
+}
+.page-flights-results-4.ie7 #search-results-payment-form .button-wrapper button,
+.page-flights-results-4.ie7 #main-content #search-results-verify-delivery-form .button-wrapper button {
+	padding: 2px 2px 0px 2px;
+}
+body.page-flights-results-4 #main-content #search-results-verify-delivery-form .button-wrapper button {bottom:5px;}
+
+body.page-flights-results-4 #main-content #search-results-payment-form input.selectbox {
+  background: url("../images/sprite_general.png") no-repeat scroll -646px -184px #FFFFFF;
+  border: 1px solid #D8D8D8;
+  color: #737373;
+  cursor: pointer;
+  margin-top: 7px;
+  padding: 0 8px;
+  position: relative;
+  width: 149px;
+}
+
+body.page-flights-results-4 #main-content #search-results-payment-form .creditcardtypewrapper {position:relative;}
+
+body.page-flights-results-4 #main-content #search-results-payment-form .creditcardtypewrapper .selectbox-wrapper {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 1px solid #D8D8D8;
+  font-family: Arial;
+  padding: 0;
+  position: absolute;
+  top: 54px;
+  width: 165px !important;
+  z-index: 4;
+  left:0;
+}
+
+
+body.page-flights-results-4 #search-results-payment-form .button-wrapper button:hover,
+body.page-flights-results-4 #main-content #search-results-verify-delivery-form .button-wrapper button:hover {background: url('../images/sprite_general.png') no-repeat -1362px -5093px;}
+
+
+
+body.page-flights-results-4 #main-content #search-results-verify-delivery-form .button-wrapper button {
+	background:url('../images/sprite_general.png') no-repeat -1341px -5200px;
+	width:251px;
+}
+body.page-flights-results-4 #main-content #search-results-verify-delivery-form .button-wrapper button:hover {background-position:-1342px -5251px;}
+
+body.page-flights-results-4 #main-content #search-results-payment-form .rowwrapper4 label {color:#e84c09;}
+
+
+body.page-flights-results-4 #search-results-verify-delivery-form .form-bg-wrapper {
+  background: url("../images/sprite_general.png") no-repeat scroll -13px -5053px #FFFFFF;
+  float: left;
+  padding: 10px 20px 0;
+  width: 765px;
+}
+
+body.page-flights-results-4 #main-content #search-results-verify-delivery-form .form-desc {padding:10px 0 40px;}
+body.page-flights-results-4 #main-content #search-results-verify-delivery-form .email-confirmation {
+  color: #E84C09;
+  font-size: 14px;
+  padding-bottom: 17px;
+  font-family:Arial;
+}
+
+
+body.page-flights-results-4 #main-content #search-results-verify-delivery-form  .l-checkbox label {font-size:12px; color:#172841; font-family:Arial;}
+body.page-flights-results-4 #main-content #search-results-verify-delivery-form {position:relative; margin-bottom:10px}
+
+body.page-flights-results-4 #main-content #search-results-services-form .form-title { margin-top:0; }
+body.page-flights-results-3 #selected-flights-container,
+body.page-flights-results-4 #selected-flights-container {margin-bottom:18px;}
+
+
+
+/* my travelers */
+
+body.page-mytravelers #mytravelers-tabs ul.ui-tabs-nav li a {
+  display: block;
+  font: 20px/19px 'FuturaGreekBoldRegular';
+  height: 30px;
+  padding: 13px 16px 0 20px;
+  position: relative;
+  background:url("../images/sprite_general.png") no-repeat scroll -10px -4677px transparent;
+}
+
+body.ie.page-mytravelers #mytravelers-tabs ul.ui-tabs-nav li a,
+body.chrome.page-mytravelers #mytravelers-tabs ul.ui-tabs-nav li a,
+body.sf.page-mytravelers #mytravelers-tabs ul.ui-tabs-nav li a,
+body.oo.page-mytravelers #mytravelers-tabs ul.ui-tabs-nav li a { padding: 13px 12px 0 18px; }
+
+body.page-mytravelers #mytravelers-tabs ul.ui-tabs-nav li.ui-tabs-selected a, body.page-mytravelers #mytravelers-tabs ul.ui-tabs-nav  li a:hover {
+  background: url("../images/sprite_general.png") no-repeat scroll -9px -4580px transparent;
+}
+
+body.page-mytravelers #mytravelers-tabs ul.ui-tabs-nav  li {
+  margin: 0 12px 0 0;
+}
+
+body.page-mytravelers #mytravelers-tabs ul.ui-tabs-nav {
+  width: 1023px;
+}
+
+body.page-mytravelers #mytravelers-tabs ul.ui-tabs-nav li.ui-tabs-selected a span, 
+body.page-mytravelers #mytravelers-tabs ul.ui-tabs-nav li a:hover span {
+  background: url("../images/sprite_general.png") no-repeat scroll -25px -4630px transparent;
+}
+
+body.page-mytravelers #mytravelers-tabs ul.ui-tabs-nav li a span {
+  height: 43px;
+  position: absolute;
+  right: -9px;
+  top: 0;
+  width: 9px;
+  background:url("../images/sprite_general.png") no-repeat scroll -11px -4630px transparent;
+}
+
+body.page-mytravelers #mytravelers-tabs {float:left; margin-bottom:30px;}
+body.page-mytravelers #mytravelers-tabs.globaltabs .ui-tabs-panel {width:1020px;}
+body.page-mytravelers #my-profile .topformradius,
+body.page-mytravelers #my-travelers .topformradius,
+body.page-mytravelers #my-bookings .topformradius,
+body.page-mytravelers #billing-info .topformradius,
+body.page-mytravelers #credit-points .topformradius,
+body.page-mytravelers #tools .topformradius  { background: url('../images/sprite_general.png') no-repeat -490px -6100px; width: 1022px; height: 12px;}
+body.page-mytravelers #my-profile .bottomformradius,
+body.page-mytravelers #my-travelers .bottomformradius,
+body.page-mytravelers #my-bookings .bottomformradius,
+body.page-mytravelers #billing-info .bottomformradius,
+body.page-mytravelers #credit-points .bottomformradius,
+body.page-mytravelers #tools .bottomformradius  { background: url('../images/sprite_general.png') no-repeat -490px -6201px; width: 1022px; height: 8px;float:left;}
+body.page-mytravelers #my-profile form,
+body.page-mytravelers #my-travelers #my-travelers-form-edit-account,
+body.page-mytravelers #my-bookings .tab-inner-wrapper,
+body.page-mytravelers #my-travelers #my-travelers-form-see-travelers,
+body.page-mytravelers #billing-info .tab-inner-wrapper,
+body.page-mytravelers #credit-points .tab-inner-wrapper,
+body.page-mytravelers #tools .tab-inner-wrapper  {background:url('../images/travelers_gradient.png') center bottom no-repeat #fff; width:1022px; float:left; min-height:370px;}
+
+body.page-mytravelers #my-profile form .tab-col1,
+body.page-mytravelers #my-profile form .tab-col2,
+body.page-mytravelers #my-profile form .tab-col3,
+body.page-mytravelers #my-travelers form#my-travelers-form-edit-account .tab-col1,
+body.page-mytravelers #my-travelers form#my-travelers-form-edit-account .tab-col2,
+body.page-mytravelers #my-travelers form#my-travelers-form-edit-account .tab-col3  {float:left; padding:0 30px; border-right:1px solid #e2dfdf; width:278px; min-height:340px;}
+
+body.page-mytravelers #my-profile form .tab-col3 ,
+body.page-mytravelers #my-travelers form#my-travelers-form-edit-account .tab-col3  {border-right:none;}
+
+body.page-mytravelers #my-profile form .formend-wrapper,
+body.page-mytravelers #my-travelers form#my-travelers-form-edit-account .formend-wrapper {
+  clear: both;
+  float: left;
+  padding: 0 30px;
+  margin-top:20px;
+  width: 956px;
+}
+
+
+
+
+body.page-mytravelers #my-profile #my-profile-form-edit-account,
+body.page-mytravelers #my-travelers #my-travelers-form-edit-account {padding-bottom:20px; padding-top:10px;}
+
+
+body.page-mytravelers #my-profile form .step,
+body.page-mytravelers #my-profile form .editlinkwrapper,
+body.page-mytravelers #my-profile form .birthdatewrapper,
+body.page-mytravelers #my-profile form .inputf,
+body.page-mytravelers #my-profile form .milescard-wrapper,
+body.page-mytravelers #my-profile form .milescard-holder-wrapper,
+body.page-mytravelers #my-travelers #my-travelers-form-edit-account .step,
+body.page-mytravelers #my-travelers #my-travelers-form-edit-account .editlinkwrapper,
+body.page-mytravelers #my-travelers #my-travelers-form-edit-account .birthdatewrapper,
+body.page-mytravelers #my-travelers #my-travelers-form-edit-account .inputf,
+body.page-mytravelers #my-travelers #my-travelers-form-edit-account .milescard-wrapper,
+body.page-mytravelers #my-travelers #my-travelers-form-edit-account .milescard-holder-wrapper {float:left;}
+
+body.page-mytravelers #my-travelers #my-travelers-form-edit-account .milescard-wrapper {
+	width:200px;
+}
+
+body.page-mytravelers #my-travelers #my-travelers-form-edit-account .step {
+	width:200px;
+}
+
+body.page-mytravelers .main-content {float:left;}
+body.page-mytravelers #right-col {
+  float: left;
+  margin-left: 28px;
+  padding-top: 56px;
+}
+
+body.page-mytravelers #my-profile form  .step1-elems,
+body.page-mytravelers #my-profile form .step-header,
+body.page-mytravelers #my-travelers #my-travelers-form-edit-account  .step1-elems,
+body.page-mytravelers #my-travelers #my-travelers-form-edit-account .step-header,
+body.page-mytravelers #mytravelers-tabs form .inputf label  {
+	color:#4c4c4c; font-family:Arial; font-weight:bold; font-size:14px; padding-bottom:5px; display:block;
+}
+
+body.page-mytravelers #my-profile form .inputf input[type="text"],
+body.page-mytravelers #my-travelers #my-travelers-form-edit-account .inputf input[type="text"] {
+  border: 1px solid #D8D8D8;
+  clear: both;
+  color: #737373;
+  float: left;
+  font: 12px/33px Arial,Helvetica,sans-serif;
+  height: 31px;
+  margin-top: 20px;
+  padding: 0 20px;
+  width: 237px;
+}
+
+body.page-mytravelers #my-profile form .inputf input#login-info-ad,
+body.page-mytravelers #my-profile form input#gendera_input,
+body.page-mytravelers #my-profile form input#mobile-phone-ad,
+body.page-mytravelers #my-profile form input#document-type-ad,
+body.page-mytravelers #my-travelers #my-travelers-form-edit-account .inputf input#login-info-adt,
+body.page-mytravelers #my-travelers #my-travelers-form-edit-account input#gendera_inputt,
+body.page-mytravelers #my-travelers #my-travelers-form-edit-account input#mobile-phone-adt,
+body.page-mytravelers #my-travelers #my-travelers-form-edit-account input#document-type-adt {
+	margin-top:0; 
+	position:relative;
+	width:238px;
+}
+
+body.page-mytravelers #my-profile form .genderwrapper,
+body.page-mytravelers #my-profile form .milescardtypewrapper,
+body.page-mytravelers #my-travelers #my-travelers-form-edit-account .genderwrapper,
+body.page-mytravelers #my-travelers #my-travelers-form-edit-account .milescardtypewrapper {
+	position:relative;
+	width:279px;
+}
+
+
+body.page-mytravelers #my-profile form  input.selectbox,
+body.page-mytravelers #my-travelers #my-travelers-form-edit-account  input.selectbox  {
+  background: url("../images/sprite_general.png") no-repeat scroll 215px -5843px #FFFFFF;
+  border: 1px solid #D8D8D8;
+  color: #737373;
+  cursor: pointer;
+  margin-top: 7px;
+  padding: 9px 20px 8px;
+  font-family:Arial;
+  font-size:12px;
+  position: relative;
+  width: 237px;
+}
+
+body.page-mytravelers #my-profile form .selectbox-wrapper,
+body.page-mytravelers #my-travelers #my-travelers-form-edit-account .selectbox-wrapper {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 1px solid #D8D8D8;
+  font-family: Arial;
+  padding: 0;
+  position: absolute;
+  top: 29px;
+  width: 277px !important;
+  z-index: 4;
+  left:0;
+}
+
+body.page-mytravelers #my-profile form .milescardtypewrapper .selectbox-wrapper,
+body.page-mytravelers  #my-travelers #my-travelers-form-edit-account .milescardtypewrapper .selectbox-wrapper {top:36px;}
+
+body.page-mytravelers #my-profile form .selectbox-wrapper li,
+body.page-mytravelers #my-travelers #my-travelers-form-edit-account .selectbox-wrapper li {
+  background-color: #FFFFFF;
+  border-top: 1px solid #D8D8D7;
+  clear: left;
+  color: #737373;
+  cursor: pointer;
+  float: left;
+  font: bold 11px/33px Arial,Helvetica,sans-serif;
+  height: 33px;
+  padding: 0 8px;
+  width: 261px;
+}
+
+
+body.page-mytravelers #my-profile form .selectbox-wrapper  li:hover,
+body.page-mytravelers #my-travelers #my-travelers-form-edit-account .selectbox-wrapper  li:hover {
+  background-color: #172841;
+  color: #FFFFFF;
+}
+
+body.page-mytravelers #my-profile form input.globaldatepicker, 
+body.page-mytravelers #my-travelers #my-travelers-form-edit-account input.globaldatepicker {
+  background: url("../images/sprite_general.png") no-repeat scroll 240px -4497px #FFFFFF;
+  border: 1px solid #D8D8D8;
+  clear: both;
+  color: #737373;
+  float: left;
+  font: 12px/29px Arial,Helvetica,sans-serif;
+  height: 31px;
+  margin-top: 20px;
+  padding: 0 20px;
+  width: 238px;
+}
+
+
+body.page-mytravelers #my-profile form .editlinkwrapper {
+  text-align: right;
+  width: 279px;
+}
+
+body.page-mytravelers #my-profile form .editlinkwrapper a {
+  color: #FFFFFF;
+  display: block;
+  float: right;
+  font-family: 'FuturaGreekBoldRegular';
+  font-size: 19px;
+  margin-top: 19px;
+  margin-bottom:17px;
+  padding-top: 0;
+  text-align: center;
+  text-decoration: none;
+  background: url('../images/sprite_general.png') no-repeat -1498px -6687px; width: 76px; height: 32px;
+}
+
+body.page-mytravelers #my-profile form .editlinkwrapper a:hover {background-position:-1500px -6804px;}
+
+body.page-mytravelers #my-profile form label.milescardholder-label,
+body.page-mytravelers #my-travelers #my-travelers-form-edit-account label.milescardholder-label { font-size:14px; color:#172841; font-family:Arial; font-weight:bold;}
+
+body.page-mytravelers #my-profile form .milescard-wrapper,
+body.page-mytravelers #my-travelers #my-travelers-form-edit-account .milescard-wrapper  {margin:14px 0 5px;}
+
+body.page-mytravelers #my-profile form .milescard-wrapper { width:279px;}
+
+body.page-mytravelers #my-profile form .formend-wrapper .l-checkboxes-wrapper {width:50%; float:left;}
+body.page-mytravelers #my-profile form .formend-wrapper .button-wrapper {
+  float: left;
+  text-align: right;
+  width: 50%;
+}
+
+body.page-mytravelers #my-travelers #my-travelers-form-edit-account .formend-wrapper .button-wrapper {text-align:right;}
+
+body.page-mytravelers #my-profile form .formend-wrapper .l-checkboxes-wrapper .l-checkbox {font-family:Arial; font-weight:normal; font-size:12px; color:#e84c09;}
+
+body.page-mytravelers #my-profile form .formend-wrapper .button-wrapper .fsubmit,
+body.page-mytravelers #my-travelers #my-travelers-form-edit-account .formend-wrapper .button-wrapper .fsubmit {
+  background: url("../images/sprite_general.png") no-repeat scroll -14px -3741px transparent;
+  border: medium none;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: 'FuturaGreekBoldRegular';
+  font-size: 19px;
+  height: 32px;
+  padding-bottom: 4px;
+  padding-top: 0;
+  width: 126px;
+}
+
+
+
+body.page-mytravelers #my-profile form .formend-wrapper .button-wrapper .fsubmit:hover,
+body.page-mytravelers #my-travelers #my-travelers-form-edit-account .formend-wrapper .button-wrapper .fsubmit:hover {background-position:-16px -3831px}
+body.page-mytravelers #my-profile form .milescard-holder-wrapper,
+body.page-mytravelers #my-travelers #my-travelers-form-edit-account .milescard-holder-wrapper {display:none;}
+
+
+
+body.page-mytravelers #my-profile form .formend-wrapper .button-wrapper .fsubmit.first, body.page-mytravelers #my-travelers #my-travelers-form-edit-account .formend-wrapper .button-wrapper .fsubmit.first {margin-right:10px;}
+
+body.page-mytravelers .page-lead .step-title {
+  color: #E84C09;
+  display: inline-block;
+  font-family: "FuturaGreekBoldRegular";
+  font-size: 26px;
+  padding-right: 7px;
+}
+
+body.page-mytravelers .page-lead .step-greeting {
+}
+
+body.page-mytravelers .page-lead .step-greeting {
+  color: #172841;
+  display: inline-block;
+  font-family: Arial;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+body.page-mytravelers .page-lead .step-description {
+  color: #172841;
+  font-family: Arial;
+  font-size: 16px;
+  padding: 8px 0 13px 3px;
+}
+
+
+body.page-mytravelers .page-lead {
+  padding: 5px 0 20px;
+}
+
+body.page-flights-results-4 .l-checkbox, body.page-flights-results-4 .l-checkbox {
+	width:800px;
+}
+
+
+
+body.page-mytravelers #my-bookings #my-bookings-form-edit-filters,
+body.page-mytravelers #my-bookings #my-bookings-form-edit-filters .bookingcategorywrapper,
+body.page-mytravelers #my-bookings #my-bookings-form-edit-filters .statuswrapper,
+body.page-mytravelers #my-bookings #my-bookings-form-edit-filters .dptrtn-wrapper,
+body.page-mytravelers #my-bookings #my-bookings-form-edit-filters .bsearch-wrapper {float:left;}
+
+
+body.page-mytravelers #my-bookings #my-bookings-form-edit-filters .bookingcategorywrapper,
+body.page-mytravelers #my-bookings #my-bookings-form-edit-filters .statuswrapper,
+body.page-mytravelers #my-bookings #my-bookings-form-edit-filters .dptrtn-wrapper {margin-right:15px;}
+
+body.page-mytravelers #my-bookings #my-bookings-form-edit-filters {padding:0 38px; margin-top:20px;}
+body.page-mytravelers #my-bookings #my-bookings-form-edit-filters label,
+body.page-mytravelers #my-bookings #my-bookings-form-edit-filters .label {display:block; color:#4c4c4c; font-family:Arial; font-size:12px; padding-bottom:4px;}
+
+
+body.page-mytravelers #my-bookings #my-bookings-form-edit-filters .bookingcategorywrapper,
+body.page-mytravelers #my-bookings #my-bookings-form-edit-filters .statuswrapper {position:relative;}
+
+
+
+body.page-mytravelers #my-bookings #my-bookings-form-edit-filters input.globaldatepicker {
+  background: url("../images/sprite_general.png") no-repeat scroll -435px -187px #FFFFFF;
+  border: 1px solid #D8D8D8;
+  clear: both;
+  color: #737373;
+  float: left;
+  font: 12px/29px Arial,Helvetica,sans-serif;
+  height: 25px;
+  margin-top: 0;
+  padding: 1px 10px;
+  width: 150px;
+}
+
+
+body.page-mytravelers #my-bookings #my-bookings-form-edit-filters input.selectbox {
+  background: url("../images/sprite_general.png") no-repeat scroll -640px -186px #FFFFFF;
+  border: 1px solid #D8D8D8;
+  color: #737373;
+  cursor: pointer;
+  font-family: Arial;
+  font-size: 12px;
+  padding: 6px 10px 5px;
+  position: relative;
+  width: 150px;
+}
+
+
+
+body.page-mytravelers #my-bookings #my-bookings-form-edit-filters .selectbox-wrapper {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 1px solid #D8D8D8;
+  font-family: Arial;
+  padding: 0;
+  position: absolute;
+  top: 47px;
+  width: 170px !important;
+  z-index: 4;
+}
+
+
+body.page-mytravelers #my-bookings #my-bookings-form-edit-filters .selectbox-wrapper li {
+  background-color: #FFFFFF;
+  border-top: 1px solid #D8D8D7;
+  clear: left;
+  color: #737373;
+  cursor: pointer;
+  float: left;
+  font: bold 11px/24px Arial,Helvetica,sans-serif;
+  height: 24px;
+  padding: 0 8px;
+  width: 154px;
+}
+
+body.page-mytravelers #my-bookings #my-bookings-form-edit-filters .selectbox-wrapper li:hover {
+  background-color: #172841;
+  color: #FFFFFF;
+}
+
+body.page-mytravelers #my-bookings #my-bookings-form-edit-filters .bsearch-inputs-wrapper {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 1px solid #D8D8D8;
+  float: left;
+  padding: 0;
+  position: relative;
+  width: 196px;
+  height: 27px;
+}
+
+body.page-mytravelers #my-bookings #my-bookings-form-edit-filters .bsearch-wrapper input[type="text"] {
+  background: none repeat scroll 0 0 transparent;
+  border: medium none;
+  color: #737373;
+  font-family: Arial;
+  font-size: 12px;
+  padding: 5px 3px;
+  width: 120px;
+  height:19px;
+}
+
+body.chrome.page-mytravelers #my-bookings #my-bookings-form-edit-filters .bsearch-wrapper input[type="text"],
+body.sf.page-mytravelers #my-bookings #my-bookings-form-edit-filters .bsearch-wrapper input[type="text"]  { padding:4px 3px; }
+body.oo.page-mytravelers #my-bookings #my-bookings-form-edit-filters .bsearch-wrapper input[type="text"] {padding:7px 3px;}
+
+
+body.page-mytravelers #my-bookings #my-bookings-form-edit-filters .bsearch-wrapper .submit {
+  background: url("../images/sprite_general.png") no-repeat scroll -1503px -6412px transparent;
+  border: medium none;
+  cursor: pointer;
+  height: 22px;
+  position: absolute;
+  right: 2px;
+  width: 65px;
+  color:#121f36;
+  font-size:14px;
+  line-height:14px;
+  font-family:"FuturaGreekBoldRegular";
+  padding-bottom:5px;
+  top:3px;
+  padding-bottom:6px;
+}
+body.oo.page-mytravelers #my-bookings #my-bookings-form-edit-filters .bsearch-wrapper .submit {top:3px;}
+body.mac.ff.page-mytravelers #my-bookings #my-bookings-form-edit-filters .bsearch-wrapper .submit {top:1px;}
+
+body.page-mytravelers #my-bookings #my-bookings-form-edit-filters .bsearch-wrapper .submit:hover {background-position:-1506px -6490px; color:#fff;}
+
+
+body.page-mytravelers #my-bookings .mybookings-gentable,
+body.page-mytravelers #my-travelers .mytravelers-gentable {
+  float: left;
+  margin: 25px 38px;
+  width:947px;
+  background:url('../images/travelers_tables_bg.png') no-repeat top center transparent;
+}
+
+body.page-mytravelers #my-bookings .mybookings-gentable th.last,
+body.page-mytravelers #my-travelers .mytravelers-gentable th.last {border-right:none;}
+
+body.page-mytravelers #my-bookings .mybookings-gentable th,
+body.page-mytravelers #my-travelers .mytravelers-gentable th {padding:14px 10px 10px; font-family:Arial; color:#172841; font-weight:bold; font-size:14px; border-right:1px solid #dadada; border-left:1px solid #fff;}
+body.page-mytravelers #my-bookings .mybookings-gentable td,
+body.page-mytravelers #my-travelers .mytravelers-gentable td {border-right:1px solid #dadada; border-left:1px solid #fff; padding:7px 10px; font-family:Arial; color:#172841; font-size:13px;}
+
+
+body.page-mytravelers #my-bookings .mybookings-gentable tr.even td,
+body.page-mytravelers #my-travelers .mytravelers-gentable tr.even td {background:#eceaea;}
+
+
+body.page-mytravelers #my-bookings .mybookings-gentable tr td.td1,
+body.page-mytravelers #my-travelers .mytravelers-gentable tr td.td1,
+body.page-mytravelers #my-bookings .mybookings-gentable  th.td1,
+body.page-mytravelers #my-travelers .mytravelers-gentable  th.td1 {border-left:1px solid #dadada;} 
+
+body.page-mytravelers #my-bookings .mybookings-gentable tr.odd td,
+body.page-mytravelers #my-travelers .mytravelers-gentable tr.odd td {background:#fff;}
+body.page-mytravelers #my-bookings .mybookings-gentable tr.odd.tr1 td,
+body.page-mytravelers #my-travelers .mytravelers-gentable tr.odd.tr1 td {background:none;}
+body.page-mytravelers #my-bookings .mybookings-gentable tr.last td,
+body.page-mytravelers #my-travelers .mybookings-gentable tr.last td {border-bottom:1px solid #dadada;}
+
+body.page-mytravelers #my-travelers .mytravelers-gentable td.td7:hover,
+body.page-mytravelers #my-travelers .mytravelers-gentable tr.odd td.td7:hover {background:#e84c09; color:#fff;}
+body.page-mytravelers #my-travelers .mytravelers-gentable td a {color:#172841; font-size:13px; font-family:Arial; text-decoration:none;}
+body.page-mytravelers #my-travelers .mytravelers-gentable td a:hover {text-decoration:underline;}
+body.page-mytravelers #my-travelers .mytravelers-gentable td:hover a {color:#fff;}
+
+
+body.page-mytravelers #my-travelers #my-travelers-form-see-travelers .formend-wrapper {
+  float: left;
+  padding: 0 28px;
+  text-align: right;
+  width: 966px;
+}
+
+
+body.page-mytravelers #my-travelers #my-travelers-form-see-travelers .formend-wrapper  .button-wrapper {margin-bottom:20px;}
+body.page-mytravelers #my-travelers #my-travelers-form-see-travelers button {
+  border: medium none;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: 'FuturaGreekBoldRegular';
+  font-size: 18px;
+  padding-bottom: 4px;
+
+}
+body.page-mytravelers #my-travelers #my-travelers-form-see-travelers button.fsubmit.last {
+	background: url('../images/sprite_general.png') no-repeat -1341px -5200px; width: 251px; height: 32px;
+	
+}
+body.page-mytravelers #my-travelers #my-travelers-form-see-travelers button.fsubmit.last:hover {
+	background-position: -1342px -5251px;
+}
+
+body.page-mytravelers #my-travelers #my-travelers-form-see-travelers button.fsubmit.first {
+	background: url('../images/sprite_general.png') no-repeat -14px -3741px; width: 126px; height: 32px;
+}
+
+body.page-mytravelers #my-travelers #my-travelers-form-see-travelers button.fsubmit.first:hover {
+	background-position:-16px -3831px;
+}
+
+body.page-mytravelers #my-travelers #my-travelers-form-see-travelers {display:none;}
+
+
+body.page-mytravelers .page-lead.my-bookings-lead,
+body.page-mytravelers .page-lead.my-travelers-add,
+body.page-mytravelers .page-lead.my-travelers-edit {display:none;}
+
+
+body.page-mytravelers .page-lead.my-profile-lead .step-description,
+body.page-mytravelers .page-lead.my-travelers-add .step-description {
+	width:765px;
+}
+
+body.page-mytravelers .page-lead.my-travelers-edit .step-description,
+body.page-mytravelers .page-lead.my-bookings-lead .step-description { width:1000px; }
+
+
+
+
+/* HOTELS RESULTS */
+
+body.page-hotels-results #left-col,
+body.page-hotels-results-2 #left-col,
+body.page-hotels-results-3 #left-col {
+  float: left;
+  margin-right: 26px;
+  width: 161px;
+  margin-top:33px;
+}
+body.page-hotels-results #left-col #hotels-results-form .step {clear:left;}
+
+body.page-hotels-results #left-col #hotels-results-form .step h3 {padding-left:18px;}
+body.page-hotels-results #left-col #hotels-results-form .checkbox-res-wrapper {
+  clear: both;
+  float: left;
+  padding: 2px 0;
+  width:167px;
+}
+body.page-hotels-results #left-col #hotels-results-form .checkbox-res-wrapper .left-reg {float:left; width:94px;}
+body.page-hotels-results #left-col #hotels-results-form .checkbox-res-wrapper .left-reg input,
+body.page-hotels-results #left-col #hotels-results-form .checkbox-res-wrapper .left-reg label { display:inline-block; float:left; margin-top:0; font-family:Arial;}
+body.page-hotels-results #left-col #hotels-results-form .checkbox-res-wrapper .left-reg label {
+  color: #4C4C4C;
+  font-size: 11px;
+  line-height: 13px;
+  width: 74px;
+  margin:3px 0 0 0
+}
+
+body.page-hotels-results #left-col #hotels-results-form .checkbox-res-wrapper .left-reg input {
+	margin: 4px 3px 0 0;	
+}
+
+body.page-hotels-results.ie #left-col #hotels-results-form .checkbox-res-wrapper .left-reg input {
+	margin: 0;	
+}
+
+body.page-hotels-results #left-col #hotels-results-form .checkbox-res-wrapper .right-reg {float:left; font-size:11px; color:#00aeef; font-family:Arial; width:54px; text-align:right; padding-right:3px;}
+
+body.page-hotels-results #left-col .reset-filters-bottom {
+  border-top: 1px solid #DADADA;
+  padding: 18px 0 2px 13px !important;
+}
+body.page-hotels-results #left-col #change-search-hotels-form,
+ #left-col #change-search-hotels-form {background:#fff; padding-top:15px;}
+body.page-hotels-results #left-col #hotels-results-form .step-elems {float:left; padding:10px 0;}
+body.page-hotels-results #hotels-results-form .star-rating-range-wrapper label,
+body.page-hotels-results #hotels-results-form .review-rating-range-wrapper label { width:85px; }
+
+body.page-hotels-results #hotels-results-form .star-rating-range-wrapper input.range-txt,
+body.page-hotels-results #hotels-results-form .review-rating-range-wrapper input.range-txt {width:40px; margin-left:10px;} 
+
+body.page-hotels-results #left-col #hotels-results-left-section2 .step .checkbox-wrapper input,
+body.page-hotels-results #left-col #hotels-results-left-section2 .step .checkbox-wrapper label,
+ #left-col #change-search-hotels-form .step .checkbox-wrapper input,
+ #left-col #change-search-hotels-form .step .checkbox-wrapper label  {float:left;}
+body.page-hotels-results #left-col #hotels-results-left-section2 .step .checkbox-wrapper label,
+ #left-col #change-search-hotels-form .step .checkbox-wrapper label {width:112px;}
+
+body.page-hotels-results #left-col #hotels-results-left-section2 .step3 .checkout-wrapper,
+body.page-hotels-results #left-col #hotels-results-left-section2 .step3 .checkin-wrapper,
+body.page-hotels-results #left-col #hotels-results-left-section2 .step4 .roomsswrapper,
+body.page-hotels-results #left-col #hotels-results-left-section2 .step4 .adultswrapper,
+body.page-hotels-results #left-col #hotels-results-left-section2 .step4 .childrenwrapper,
+ #left-col #change-search-hotels-form .step3 .checkout-wrapper,
+ #left-col #change-search-hotels-form .step3 .checkin-wrapper,
+ #left-col #change-search-hotels-form .step4 .roomsswrapper,
+ #left-col #change-search-hotels-form .step4 .adultswrapper,
+ #left-col #change-search-hotels-form .step4 .childrenwrapper { position:relative; margin:0 0 5px 0; float:left;  }
+ 
+ 
+body.ie #left-col #change-search-hotels-form .step3 .checkout-wrapper,
+body.ie #left-col #change-search-hotels-form .step3 .checkin-wrapper,
+body.ie #left-col #change-search-hotels-form .step4 .roomsswrapper,
+body.ie #left-col #change-search-hotels-form .step4 .adultswrapper,
+body.ie #left-col #change-search-hotels-form .step4 .childrenwrapper  { z-index: 5; }
+
+body.page-hotels-results #change-search-hotels-form .step3-elems .selectbox-wrapper,
+ #change-search-hotels-form .step3-elems .selectbox-wrapper {top:18px;}
+body.page-hotels-results #change-search-hotels-form .button-wrapper,
+ #change-search-hotels-form .button-wrapper { border-top:1px solid #DADADA; }
+body.page-hotels-results #left-col #hotels-results-left-section2 .step2-elems,
+ #left-col #change-search-hotels-form .step2-elems {padding:5px 14px;}
+body.page-hotels-results #left-col .hotels-starting .top-header {padding-top:7px;}
+
+body.page-hotels-results #left-col #hotels-results-left-section2 .step4 .adultswrapper,
+body.page-hotels-results #left-col #hotels-results-left-section2 .step4 .roomsswrapper,
+body.page-hotels-results #left-col #hotels-results-left-section2 .step4 .childrenwrapper,
+ #left-col #change-search-hotels-form .step4 .adultswrapper,
+ #left-col #change-search-hotels-form .step4 .roomsswrapper,
+ #left-col #change-search-hotels-form .step4 .childrenwrapper { width:133px; margin:0 0 5px 0; }
+body.page-hotels-results #left-col #hotels-results-left-section2 .step4 .step-elems > div,
+ #left-col #change-search-hotels-form .step4 .step-elems > div{position:relative;}
+body.page-hotels-results #left-col #hotels-results-left-section2 .step4 .adultswrapper,
+ #left-col #change-search-hotels-form .step4 .adultswrapper { z-index:2;}
+body.page-hotels-results #left-col #hotels-results-left-section2 .step4 .roomsswrapper,
+ #left-col #change-search-hotels-form .step4 .roomsswrapper {z-index:3;}
+body.page-hotels-results #left-col #hotels-results-left-section2 .step4 .childrenwrapper,
+ #left-col #change-search-hotels-form .step4 .childrenwrapper {z-index:1;}
+
+body.page-hotels-results #left-col #hotels-results-left-section2 .step3-elems .dptrtn-wrapper2,
+ #left-col #change-search-hotels-form .step3-elems .dptrtn-wrapper2 { float: left; padding-top: 7px; }
+body.page-hotels-results #left-col #hotels-results-left-section2 .step4-elems,
+ #left-col #change-search-hotels-form .step4-elems {padding:14px 14px 10px;}
+body.page-hotels-results #left-col #hotels-results-left-section1 {margin-bottom:30px;}
+
+
+.ie #left-col #change-search-hotels-form .step3-elems .dptrtn-wrapper2 { margin: 0 0 10px 0; }
+
+body.page-hotels-results #left-col #hotels-results-form .step {
+  padding: 15px 0 7px;
+  float:left;
+  width: 161px;
+}
+body.page-hotels-results #left-col #hotels-results-form .step-info {
+  float: left;
+  padding: 0 15px;
+}
+body.page-hotels-results #left-col #hotels-results-form .step-elems {
+  float: left;
+  padding: 15px 5px 7px;
+  width: 151px;
+}
+
+body.page-hotels-results #hotels-results-form .globalslider-wrapper {padding:0 6px 0 10px;}
+body.page-hotels-results #left-col #hotels-results-form .step1 h3 span {font-size:11px;}
+body.page-hotels-results #hotel-filter-wrapper ul.contents li.filter-label > span { padding:13px 9px 0 13px; }
+body.page-hotels-results .main-content #hotel-list-wrapper .hotel-list-contents > ul.contents > li.row .field span.fullimg {display:none;}
+
+
+body.page-hotels-results #hotels-results-form .star-rating-range-wrapper input.range-txt, body.page-hotels-results #hotels-results-form .review-rating-range-wrapper input.range-txt {width:38px !important;}
+.sf #googleMap .mapItem .rightCol .rate p,
+.oo #googleMap .mapItem .rightCol .rate p {padding:0 7px;}
+
+
+
+body.page-flights-results-2 .step-container .step-dates-persons, 
+body.page-flights-results-3 .step-container .step-dates-persons, 
+body.page-flights-results-4 .step-container .step-dates-persons, 
+body.page-flights-results-5 .step-container .step-dates-persons {float:left;}
+
+body.oo.page-flights-results-4 #search-results-verify-delivery-form .step2 {margin-top:10px;}
+body.page-flights-results-5 #booking-message .message-title {padding-top:10px;}
+.oo #hotel-list-wrapper .hotel-list-header .sorting .selectbox-wrapper, 
+body.oo.page-flights-results-2 .main-content #car-list-wrapper .car-list-header .sorting .selectbox-wrapper {top:24px; left:-1px;}
+
+
+/* HOTELS INDEX */
+/* body.page-hotels #left-col {float:left; width:370px; } */
+body.page-hotels .above-footer,
+h2-above-footer {margin-top:30px;}
+body.page-hotels.ie .above-footer,
+.ie #h2-above-footer {margin-top:0px;}
+body.page-hotels .above-footer-region,
+ #h2-above-footer .above-footer-region{width:991px; padding:0 16px;}
+body.page-hotels .above-footer-region .above-footer-static-banner,
+#h2-static-banner { width: 300px; }
+body.page-hotels .above-footer-region .above-footer-newsletter-area,
+#h2-newsletter-area {
+  background: url("../images/hotels-newsletter-banner.jpg") no-repeat scroll 0 0 transparent;
+  float: left;
+  height: 248px;
+  margin-top: 8px;
+  width: 674px;
+  margin-right:0;
+  margin-left:16px;
+  position:relative;
+}
+
+body.page-hotels .above-footer-region .above-footer-newsletter-area form,
+#h2-newsletter-area form {
+  background: url("../images/sprite_general.png") no-repeat scroll -14px -3667px transparent;
+  bottom: 13px;
+  height: 39px;
+  padding: 0 0 0 4px;
+  position: absolute;
+  right: 12px;
+  width: 375px;
+}
+
+body.page-hotels .above-footer-region .above-footer-newsletter-area form  input[type="text"],
+#h2-newsletter-area form input[type="text"]{
+  width: 323px;
+  border: medium none;
+  color: #888F9A;
+  float: left;
+  font: 12px/12px Arial,Helvetica,sans-serif;
+  margin-top: 4px;
+  padding: 8px 5px;
+}
+
+body.page-hotels .above-footer-region .above-footer-newsletter-area form input.submit,
+#h2-newsletter-area form input.submit {
+  border: medium none;
+  color: #121F36;
+  cursor: pointer;
+  float: left;
+  font: 14px 'FuturaGreekBoldRegular';
+  background: url("../images/sprite_general.png") no-repeat scroll -170px -3546px transparent;
+  height: 27px;
+  margin-top: 6px;
+  padding-bottom: 2px;
+  width: 32px;
+}
+
+body.page-hotels .above-footer-region .above-footer-newsletter-area form  input.submit:hover,
+#h2-newsletter-area form input.submit:hover {
+  background: url("../images/sprite_general.png") no-repeat scroll -416px -3546px transparent;
+  color: #FFFFFF;
+}
+
+
+
+body.page-hotels #left-col .left-banner.banner-ad {margin-bottom:33px;}
+/* hotels results 2 */
+
+ #left-col #hotels-results-left-section1,
+ #left-col #hotels-results-left-section2,
+ #left-col #hotels-results-left-section3,
+ #left-col #hotels-results-left-section4 {float:left; margin-bottom:30px;}
+ 
+ 
+ #left-col ul.hotels-leftul, 
+ #left-col ul.hotels-leftul > li {clear:left; float:left; font-family:Arial; width:140px;}
+ #left-col ul.hotels-leftul > li {padding:11px; border-bottom:1px solid #DADADA; position:relative;}
+ #left-col ul.hotels-leftul > li .field-image {float:left; margin-right:7px; width:53px;}
+ #left-col ul.hotels-leftul > li.row  ul.sters li,
+ #left-col ul.hotels-leftul > li.row  ul.sters li,
+ #page-header .header-left ul.sters li,
+ #main-col #customer-views .hotel-region ul li .section1 ul.sters li {
+  background: url("../images/sprite_general.png") no-repeat scroll -32px -371px transparent;
+  float: left;
+  height: 11px;
+  margin: 0 1px;
+  text-indent: -999999px;
+  width: 11px;
+}
+
+
+ #left-col ul.hotels-leftul { width:162px; }
+
+ #left-col ul.hotels-leftul > li.row  .field-title,
+ #left-col ul.hotels-leftul > li.row  .field-sters  {float:left; width:80px;}
+ #left-col ul.hotels-leftul > li.row  .field-title span a {color:#172841; font-size:14px; font-weight:bold; line-height:17px; text-decoration:none;}
+ #left-col ul.hotels-leftul > li.row  .field-title span a:hover {text-decoration: underline;}
+ #left-col ul.hotels-leftul > li.row .field-latest-book {
+  clear: both;
+  color: #00AEEF;
+  float: left;
+  font-size: 11px;
+  font-weight: normal;
+  padding-top: 10px;
+  width:126px;
+}
+
+ #left-col ul.hotels-leftul > li.row .field-title {padding-top:4px;}
+
+ #left-col ul.hotels-leftul > li.row .field-remove {
+  background: url("../images/sprite_general2.png") no-repeat scroll -11px -940px transparent;
+  cursor: pointer;
+  height: 18px;
+  position: absolute;
+  right: 6px;
+  top: 6px;
+  width: 18px;
+}
+
+ #left-col ul.hotels-leftul,
+ #left-col #my-viewed-hotels  { background: none repeat scroll 0 0 #FFFFFF; padding-top: 5px; }
+
+ #left-col ul.hotels-leftul > li.row .field-remove:hover {background:url("../images/sprite_general2.png") no-repeat scroll -31px -941px transparent;}
+
+ #left-col #hotels-results-left-section2  .compare-hotels-link,
+ #left-col #hotels-results-left-section4 .nearby-hotels-link {background:#fff; float:left; width:100%; padding-top:7px; border-top:1px solid #DADADA; width:162px; }
+ #left-col #hotels-results-left-section2  .compare-hotels-link a,
+ #left-col #hotels-results-left-section4  .nearby-hotels-link a {font-family:Arial; font-weight:bold; text-decoration:none; display:block; margin-left:17px;}
+
+ #left-col #hotels-results-left-section2  .compare-hotels-link a:hover,
+ #left-col #hotels-results-left-section4  .nearby-hotels-link a:hover {text-decoration:underline;}
+
+ #left-col  #hotels-results-left-section2 .compare-hotels-link .compare-link,
+ #left-col  #hotels-results-left-section4 .nearby-hotels-link .show-link {  font-size:12px; color:#3c5e90;  }
+ #left-col  #hotels-results-left-section2 .compare-hotels-link .viewed-hotels-link,
+ #left-col  #hotels-results-left-section4 .nearby-hotels-link .popular-hotels-link  {font-size:14px; color:#172841;}
+
+
+
+ #left-col ul.hotels-leftul > li.row.last {border:none;}
+ #left-col #hotels-nearby > li.row .field-title { width:100% }
+ #left-col #hotels-nearby > li.row .field-latest-book {padding-top:0;}
+ #left-col #hotels-nearby > li {padding:5px 11px;}
+ #left-col #hotels-nearby > li:hover {background:#eceaea;}
+ #left-col #recently-booked-hotels > li.row.last {padding-bottom:0;}
+
+
+/* hotels results 2 main content */
+ body.page-hotels-results-2 #page-header,
+ body.page-hotels-results-2 #main-col,
+  body.page-hotels-results-3 #page-header,
+ body.page-hotels-results-3 #main-col { float: left; width:835px; }
+ body.page-hotels-results-2 #main-col,  body.page-hotels-results-3 #main-col {margin-top:12px;}
+body.page-hotels-results-2  #page-header,
+body.page-hotels-results-3  #page-header {margin-top:33px;}
+ body.page-hotels-results-2 #page-header .header-left,
+  body.page-hotels-results-3 #page-header .header-left {float:left; }
+ body.page-hotels-results-2 #page-header .header-right,
+  body.page-hotels-results-3 #page-header .header-right {float:right; }
+ 
+  #page-header .header-left .hotel-name {font-family:Arial; font-weight:bold; font-size:22px; color:#121f36; float:left; line-height:22px;}
+ #page-header .header-left ul.sters { float: left; margin: 5px 0 0 8px; }
+  #page-header .header-left .hotel-street-map { clear:both; }
+  #page-header .header-left .hotel-street-map .address { font-size:14px; color:#3c5e90; font-family:Arial; font-weight:bold; }
+  #page-header .header-left .hotel-street-map .showmap,
+  #page-header .header-left .hotel-street-map .showmap a { font-weight:bold; font-family:Arial; font-size:14px; color:#121f36; text-decoration:none;}
+  #page-header .header-left .hotel-street-map .showmap a:hover {text-decoration: underline;}
+
+ #page-header .header-right .reviews-results-wrapper {
+  float: left;
+  margin-right: 10px;
+  margin-top: 7px;
+  text-align: right;
+  width: 175px;
+}
+  #page-header .header-right .all-reviews a {font: bold 12px/12px Arial; color:#00aeef; text-decoration:none; }
+ #page-header .header-right .search-results { padding-top:5px; }
+ #page-header .header-right .search-results a {
+  background: url("../images/sprite_general2.png") no-repeat scroll -20px -1503px transparent;
+  color: #121F36;
+  font: bold 14px/14px Arial;
+  padding-left: 12px;
+  text-decoration: none;
+}
+
+ #page-header .header-right .search-results a:hover, 
+  #page-header .header-right .all-reviews a:hover {text-decoration:underline;}
+ #page-header .header-right .booknow-wrapper { float: left; background: url('../images/sprite_general.png') no-repeat -1171px -1794px; margin-top:6px; }
+
+ #page-header .header-right .booknow-wrapper a {
+  background: url("../images/sprite_general.png") no-repeat scroll -14px -3741px transparent;
+  color: #FFFFFF;
+  display: block;
+  font: 19px 'FuturaGreekBoldRegular';
+  height: 32px;
+  margin-left: 29px;
+  text-align: center;
+  text-decoration: none;
+  width: 126px;
+  line-height:30px;
+}
+
+ #page-header .header-right .booknow-wrapper a:hover { background-position:-16px -3831px; }
+
+ #main-col .maincoltopcurve { background: url('../images/sprite_general2.png') no-repeat -1505px -305px; width: 835px; height: 14px; }
+
+ #main-col .maincolbottomcurve { background: url('../images/sprite_general2.png') no-repeat -1505px -378px; width: 835px; height: 10px; margin-bottom:20px;}
+
+ #main-col .hotel-gallery-info-wrapper {
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 70%, #ebebeb 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(70%,#ffffff), color-stop(100%,#ebebeb)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 70%,#ebebeb 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 70%,#ebebeb 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 70%,#ebebeb 100%); /* IE10+ */
+	background: linear-gradient(top,  #ffffff 70%,#ebebeb 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ebebeb',GradientType=0 ); /* IE6-9 */
+  	border-bottom:1px solid #fff;
+  	padding-bottom:12px;
+  	clear: both;
+  	float: left;
+ 	width: 100%;
+}
+
+/****************************************** GALLERY START ******************************************* */
+
+
+.hotel-gallery-info-wrapper #gallery {
+	display: block;
+	float: left;
+	width: 249px; 
+	margin-right:10px;
+	margin-left:21px;
+}
+
+.hotel-gallery-info-wrapper #gallery .slideshow-container {
+	position: relative;
+	clear: both;
+	height: 238px; /* This should be set to be at least the height of the largest image in the slideshow */
+}
+
+.hotel-gallery-info-wrapper #gallery a, .hotel-gallery-info-wrapper #gallery div.navigation a {
+	text-decoration: none;
+	color: #777;
+}
+.hotel-gallery-info-wrapper #gallery a:focus, .hotel-gallery-info-wrapper #gallery a:hover, .hotel-gallery-info-wrapper #gallery a:active {
+	text-decoration: underline;
+}
+.hotel-gallery-info-wrapper #gallery .controls {
+	margin-top: 5px;
+	height: 23px;
+}
+.hotel-gallery-info-wrapper #gallery .controls a {
+	padding: 5px;
+}
+.hotel-gallery-info-wrapper #gallery .ss-controls {
+	float: left;
+}
+.hotel-gallery-info-wrapper #gallery .nav-controls {
+	float: right;
+}
+
+.hotel-gallery-info-wrapper #gallery .loader {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url('loader.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 550px;
+	height: 502px; /* This should be set to be at least the height of the largest image in the slideshow */
+}
+.hotel-gallery-info-wrapper div.slideshow {
+
+}
+.hotel-gallery-info-wrapper div.slideshow span.image-wrapper {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.hotel-gallery-info-wrapper div.slideshow a.advance-link {
+	display: block;
+	width: 249px;
+	height: 238px; /* This should be set to be at least the height of the largest image in the slideshow */
+	/*line-height: 238px;*/ /* This should be set to be at least the height of the largest image in the slideshow */
+	line-height: 0;
+	text-align: center;
+}
+.hotel-gallery-info-wrapper div.slideshow a.advance-link:hover, .hotel-gallery-info-wrapper div.slideshow a.advance-link:active, .hotel-gallery-info-wrapper div.slideshow a.advance-link:visited {
+	text-decoration: none;
+}
+.hotel-gallery-info-wrapper div.slideshow img {
+	vertical-align: middle;
+	border: 1px solid #ccc;
+}
+
+.hotel-gallery-info-wrapper div.caption-container {
+	position: relative;
+	clear: left;
+	height: 75px;
+}
+.hotel-gallery-info-wrapper span.image-caption {
+	display: block;
+	position: absolute;
+	width: 249px;
+	top: 0;
+	left: 0;
+}
+.hotel-gallery-info-wrapper div.caption {
+	padding: 12px;
+}
+.hotel-gallery-info-wrapper div.image-title {
+	font-weight: bold;
+	font-size: 1.4em;
+}
+.hotel-gallery-info-wrapper div.image-desc {
+	line-height: 1.3em;
+	padding-top: 12px;
+}
+.hotel-gallery-info-wrapper div.navigation {
+  float: left;
+  width: 313px;
+}
+.hotel-gallery-info-wrapper ul.thumbs {
+	clear: both;
+	margin: 0;
+	padding: 0;
+}
+.hotel-gallery-info-wrapper ul.thumbs li {
+	float: left;
+	padding: 0;
+	margin: 0 10px 10px 0;
+	list-style: none;
+}
+.hotel-gallery-info-wrapper a.thumb { display: block; }
+
+/*******************/
+.hotel-gallery-info-wrapper a.thumb:hover,
+.hotel-gallery-info-wrapper li.selected a.thumb {
+  border: 3px solid #E84C09;
+  display: block;
+  height: 46px;
+  overflow: hidden;
+  position: relative;
+  width: 46px;
+}
+.hotel-gallery-info-wrapper ul.thumbs li a.thumb:hover img,
+.hotel-gallery-info-wrapper ul.thumbs li.selected a.thumb img { left: -3px; position: absolute; top: -3px; }
+
+
+
+.hotel-gallery-info-wrapper a.thumb:focus {
+	outline: none;
+}
+.hotel-gallery-info-wrapper ul.thumbs img {
+	border: none;
+	display: block;
+}
+.hotel-gallery-info-wrapper div.pagination {
+	clear: both;
+}
+.hotel-gallery-info-wrapper div.navigation div.top {
+	margin-bottom: 12px;
+	height: 11px;
+}
+.hotel-gallery-info-wrapper div.navigation div.bottom {
+	margin-top: 12px;
+}
+.hotel-gallery-info-wrapper div.pagination a, .hotel-gallery-info-wrapper div.pagination span.current, .hotel-gallery-info-wrapper div.pagination span.ellipsis {
+	display: block;
+	float: left;
+	margin-right: 2px;
+	padding: 4px 7px 2px 7px;
+	border: 1px solid #ccc;
+}
+.hotel-gallery-info-wrapper div.pagination a:hover {
+	background-color: #eee;
+	text-decoration: none;
+}
+.hotel-gallery-info-wrapper div.pagination span.current {
+	font-weight: bold;
+	background-color: #000;
+	border-color: #000;
+	color: #fff;
+}
+.hotel-gallery-info-wrapper div.pagination span.ellipsis {
+	border: none;
+	padding: 5px 0 3px 2px;
+}
+/************************ GALLERY END *******************/
+
+
+ #main-col .hotel-gallery-info-wrapper .hotel-review span {
+  color: #121F36;
+  display: block;
+  float: left;
+  font: bold 14px/16px Arial,Helvetica,sans-serif;
+  padding-top: 5px;
+}
+
+
+ #main-col .hotel-gallery-info-wrapper .hotelscore-review-wrapper {
+  float: left;
+  width: 223px;
+}
+
+ #main-col .hotel-gallery-info-wrapper .hotel-review {float:right; text-align:right;}
+
+ #main-col .hotel-gallery-info-wrapper .hotel-review .rating-box {
+  background: url("../images/sprite_general2.png") no-repeat scroll -16px -57px transparent;
+  color: #FFFFFF;
+  display: block;
+  font: bold 16px/16px Arial,Helvetica,sans-serif;
+  height: 15px;
+  margin: -2px 0 0 11px;
+  padding: 7px;
+  width: 24px;
+}
+
+
+ #main-col .hotel-gallery-info-wrapper .hotelscore-review-wrapper .user-review-box {
+	background: url('../images/sprite_general2.png') no-repeat -1522px -6px;
+	clear:right;
+	float:right;
+	width:222px;
+}
+
+ #main-col .hotel-gallery-info-wrapper .hotelscore-review-wrapper .user-review-box .user-review-text {
+
+  font-family: Georgia,serif;
+  font-size: 13px;
+  font-style: italic;
+  height: 113px;
+  line-height: 17px;
+  overflow: hidden;
+  padding: 14px 18px 18px;
+}
+
+ #main-col .hotel-gallery-info-wrapper .hotelscore-review-wrapper .user-review-box .user-wrapper,
+ #main-col #customer-views .hotel-region > ul li .section3 .user-review-box .user-wrapper {
+  background: url("../images/sprite_general2.png") no-repeat scroll 26px -1414px transparent;
+  color: #172841;
+  font: 12px/12px Arial;
+  margin-top: 12px;
+  padding-left: 73px;
+}
+ #main-col #customer-views .hotel-region > ul li .section3 .user-review-box .user-wrapper {background-position:16px -1409px; margin-top:}
+
+ #main-col .hotel-gallery-info-wrapper .hotelscore-review-wrapper .hotel-field-info {
+  color: #3C5E90;
+  float: right;
+  font: bold 11px/14px Arial,Helvetica,sans-serif;
+  margin: 3px 0 12px;
+  width: 143px;
+  text-align:right;
+}
+
+ #main-col .hotel-gallery-info-wrapper .hotel-top-infotext {clear:both; padding:10px 21px 0; }
+ #main-col .hotel-gallery-info-wrapper .hotel-top-infotext p {color:#666; font-family:Arial; font-size:12px; margin-bottom:20px;}
+ #main-col .hotel-gallery-info-wrapper .hotel-top-infotext .hotelrooms {color:#00aeef; font-size:12px; font-family:Arial;}
+
+
+ #main-col #customer-views {
+  border-top: 1px solid #DADADA;
+  clear: both;
+  padding-top: 35px;
+}
+ #main-col #customer-views h2.title {color:#121f36; font-family:Arial; font-size:20px; font-weight:bold;}
+
+ #main-col #customer-views .view-all-hotels {
+  margin-bottom: 17px;
+  margin-top: -16px;
+  text-align: right;
+}
+ #main-col #customer-views .view-all-hotels a { font-family:Arial; font-weight:bold; color:#121f36; font-size:12px; text-decoration:none;}
+ #main-col #customer-views .view-all-hotels a:hover {text-decoration: underline;}
+ #main-col #customer-views .hotel-region {}
+ #main-col #customer-views .hotel-region > ul {
+  background: none repeat scroll 0 0 #E5EAF2;
+  overflow: auto;
+  padding: 10px 25px;
+  width: 740px;
+}
+ #main-col #customer-views .hotel-region > ul li {
+  float: left;
+  margin-right: 31px;
+  width: 226px;
+}
+
+ #main-col #customer-views .hotel-region > ul li .hotel-name {font:bold 20px/20px Arial; color:#121f36; float:left;  margin-right:4px;}
+
+
+ #main-col #customer-views .hotel-region > ul li .section1, 
+ #main-col #customer-views .hotel-region > ul li .section2,
+ #main-col #customer-views .hotel-region > ul li .section3,
+ #main-col #customer-views .hotel-region > ul li .section4 {float:left; clear:left;}
+
+ #main-col #customer-views .hotel-region > ul li .section2 {padding-top:20px; width: 223px;}
+
+ #main-col #customer-views .hotel-region > ul li .section1 ul.sters {float:left;}
+
+ #main-col #customer-views .hotel-region .topcurve { background: url('../images/sprite_general2.png') no-repeat -1505px -477px; width: 790px; height: 13px; }
+ #main-col #customer-views .hotel-region .bottomcurve {background: url('../images/sprite_general2.png') no-repeat -1505px -518px; width: 790px; height: 12px; }
+
+
+ #main-col #customer-views .hotel-region > ul li .hotel-image { padding-top:3px; width:52px;  float:left; position:relative;}
+ #main-col #customer-views .hotel-region > ul li .hotel-image a {float:left;}
+ #main-col #customer-views .hotel-region > ul li .hotel-image a span {
+  background: url("../images/sprite_general2.png") no-repeat scroll -586px -1283px transparent;
+  bottom: 5px;
+  display: block;
+  height: 10px;
+  position: absolute;
+  right: 2px;
+  text-indent: -9999px;
+  width: 10px;
+}
+
+ #main-col #customer-views .hotel-region > ul li .description {
+  color: #666666;
+  float: left;
+  font: 12px/15px Arial;
+  margin-left: 4px;
+  width: 162px;
+}
+ #main-col #customer-views .hotel-region > ul li .recent-booking-time {clear:both; font:11px/11px Arial; color:#00aeef; padding:15px; width:214px;}
+ #main-col #customer-views .hotel-region > ul li.last {margin-right:0;}
+
+
+ #main-col #customer-views .hotel-region > ul li .section3 .user-review-box { 
+	background: url('../images/sprite_general2.png') no-repeat -1165px -8px; width: 187px; padding: 4px 18px 0;
+}
+
+ #main-col #customer-views .hotel-region > ul li .section3 .hotel-review { font-size: 18px; line-height:18px; font-family:Arial; font-weight:bold; color:#121f36;}
+
+ #main-col #customer-views .hotel-region > ul li .section3 .hotel-field-info {  font:11px/11px Arial; color:#3c5e90; }
+
+ #main-col #customer-views .hotel-region > ul li .section3 .user-review-box .user-review-text {
+  font-family: Georgia,serif;
+  font-size: 13px;
+  font-style: italic;
+  height: 115px;
+  line-height: 17px;
+  overflow: hidden;
+  padding-top: 6px;
+}
+
+ #main-col #customer-views .hotel-region > ul li .section3 .user-review-box .user-wrapper {padding-top:7px; padding-left:60px; }
+
+ #main-col #customer-views .hotel-region > ul li .section4 a {
+  background: url("../images/sprite_general2.png") no-repeat scroll -2691px -68px transparent;
+  color: #FFFFFF;
+  display: block;
+  font: 20px/27px 'FuturaGreekBoldRegular';
+  height: 31px;
+  margin-top: 18px;
+  text-align: center;
+  text-decoration: none;
+  width: 224px;
+}
+
+
+ #main-col #customer-views .hotel-region > ul li .section4 a:hover {background-position:-2691px -16px;}
+
+ #main-col .hotel-bottom-container-wrapper .top-link {
+  background: url("../images/sprite_general.png") no-repeat scroll -1507px -2603px transparent;
+  color: #4C4C4C;
+  cursor: pointer;
+  float: right;
+  font: 11px Arial,Helvetica,sans-serif;
+  padding: 21px 39px 0 0;
+}
+ #main-col .hotel-bottom-container-wrapper .top-link:hover {text-decoration: underline;}
+body.google-map-is-opened #fancybox-content {background:#2b2b2b; border-color:#2b2b2b; border-top:30px solid #2B2B2B !important;}
+body.google-map-is-opened #fancybox-close {
+  background: url("../images/sprite_general2.png") no-repeat scroll -3265px -790px transparent;
+  height: 18px;
+  right: 8px;
+  top: 6px;
+  width: 87px;
+}
+
+body.oo.google-map-is-opened #fancybox-content > div {overflow:visible !important;}
+
+
+/* HOTELS2 INDEX */
+body.page-hotels #search-hotel-form .step-info .step-active-arrow,
+body.page-hotels2 #search-hotel-form .step-info .step-active-arrow {
+  background: url("../images/sprite_general.png") no-repeat scroll -557px -410px transparent;
+  height: 22px;
+  position: absolute;
+  right: -11px;
+  top: 40%;
+  width: 11px;
+}
+
+body.page-hotels2 #outer-header {margin-bottom:30px;}
+body.page-hotels2 #left-col  {float:left; width:470px; }
+body.page-hotels2 #left-col .step-info {width:169px;}
+body.page-hotels2 #left-col .step-elems {padding: 17px 25px; width: 238px; }
+body.page-hotels2 #left-col .step1-info {height:85px;}
+body.page-hotels2 #left-col .step1-elems { height:64px; }
+body.page-hotels2 #left-col .step2-info {height:218px;}
+body.page-hotels2 #left-col .step2-elems { height:210px; }
+body.page-hotels2 #left-col .step3-info {height:102px;}
+body.page-hotels2 #left-col .step3-elems  { height:95px; }
+body.page-hotels2 #left-col .step2-elems .checkWrapper {margin-bottom:7px;}
+ body.page-hotels2 #left-col .step2-elems .checkWrapper label {padding-bottom:0;}
+body.page-hotels2 #search-hotel-form label { display: block; float: none; padding: 0 8px 0px 2px; }
+body.page-hotels2 #search-hotel-form input {width:219px; padding:8px; font-size:12px;}
+body.page-hotels2 #left-col .step2-elems input.datepicker { background-position:199px -4498px; }
+body.page-hotels2 #left-col .step2-elems input.selectbox {background-position:196px -4450px;}
+body.page-hotels2 #left-col .step3-elems input.selectbox {width:55px; background-position:-746px -187px;}
+body.page-hotels2 #left-col .step3-elems .adultswrapper {margin-right:20px;}
+body.page-hotels2 #search-hotel-form .selectbox-wrapper { top:88px; width:235px !important; }
+body.page-hotels2 #left-col .selectbox-wrapper li { width:219px; }
+body.page-hotels2 #search-hotel-form .step3-elems .selectbox-wrapper { width:65px !important; }
+body.page-hotels2 #left-col .step3-elems .selectbox-wrapper li { width:49px; }
+body.page-hotels2 #content #main-col {float:left; margin-left:30px;}
+body.page-hotels2 #left-col .step2-elems .dptrtn-wrapper1 { margin-bottom:12px; }
+body.page-hotels2 #left-col #search-hotel-form .topformradius {background: url('../images/sprite_general2.png') no-repeat -930px -319px;width:470px; }
+body.page-hotels2 #left-col #search-hotel-form .topformradius.active { background:url("../images/sprite_general2.png") no-repeat scroll -930px -294px transparent; }
+body.page-hotels2 #left-col .button-wrapper {width:464px;}
+body.page-hotels2 #left-col .bottomformradius { background: url('../images/sprite_general2.png') no-repeat -930px -369px; }
+body.page-hotels2 #hotel-top-destinations {clear:left; background:url('../images/sprite_general2.png') no-repeat -2819px -889px; position:relative;}
+body.page-hotels2 #hotel-top-destinations .jcarouzel-wrapper .jcarousel-container-horizontal { width:431px; }
+body.page-hotels2 #hotel-top-destinations .globaljcarousel .jcarousel-item-horizontal {width:143px;}
+body.page-hotels2 #hotel-top-destinations .hotel-top-destinations-center ul > li > .field-book-info {width:83px;}
+body.page-hotels2 #hotel-top-destinations .hotel-top-destinations-center ul > li > .field-country {width:53px;}
+body.page-hotels2 #hotel-top-destinations .hotel-top-destinations-center ul > li > .field-country span {float:right; display:block;}
+body.page-hotels2 #hotel-top-destinations .hotel-top-destinations-center ul > li > .field-country span.flag-icon {margin-bottom:10px;}
+body.page-hotels2 #hotel-top-destinations .jcarouzel-wrapper .jcarousel-clip-horizontal {width:449px;}
+body.page-hotels2 #hotel-top-destinations .hotel-top-destinations-top .view-all-link a {text-decoration:none;}
+body.page-hotels2 #hotel-top-destinations .hotel-top-destinations-top .view-all-link a:hover {text-decoration:underline;}
+body.page-hotels2 #hotel-top-destinations .hotel-top-destinations-center ul > li > .field-hotels-num {width:143px; margin:-14px 0 5px;}
+body.page-hotels2 #hotel-top-destinations .hotel-top-destinations-center ul > li > .field-image {margin-bottom:11px;}
+body.page-hotels2 .flights-top-banner {margin-bottom:27px;}
+body.page-hotels2 #hotel-top-destinations .hotel-top-destinations-center ul > li > .field-image .book-link-layer.on {width:143px;}
+body.page-hotels2 #hotel-top-destinations .hotel-top-destinations-center ul > li > .field-image .book-link-layer > span {padding:0 15px;}
+body.page-hotels2 #hotel-top-destinations .jcarouzel-wrapper .jcarousel-container-horizontal {padding:0 53px 0 39px;}
+
+
+#tabs-hotels2-top ul.ui-tabs-nav li.flights-live a {
+  background:url("../images/sprite_general.png") no-repeat scroll -1087px -2789px transparent;
+  height: 29px;
+  width: 161px;
+}
+
+#tabs-hotels2-top ul.ui-tabs-nav li.flights-live.ui-tabs-selected a,
+#tabs-hotels2-top ul.ui-tabs-nav li.flights-live a:hover {
+  background: url("../images/sprite_general.png") no-repeat scroll -1087px -2833px transparent;
+  color:#172841;
+}
+
+
+#tabs-hotels2-top ul.ui-tabs-nav li.hot-price-weekend a {
+  height: 29px;
+  width: 223px;
+  background:url("../images/sprite_general.png") no-repeat scroll -632px -2789px transparent;
+}
+
+#tabs-hotels2-top ul.ui-tabs-nav li.hot-price-weekend.ui-tabs-selected a,
+#tabs-hotels2-top ul.ui-tabs-nav li.hot-price-weekend a:hover {
+  background: url("../images/sprite_general.png") no-repeat scroll -632px -2834px transparent;
+  color:#172841;
+}
+
+.hotels2-boxes > div {
+  clear: none;
+  float: left;
+}
+
+.hotels2-boxes .small-banner.has-left-image.package.tools .left-image {background:url("../images/sprite_general.png") no-repeat scroll -315px -1192px transparent; margin-right:30px;}
+#bottom-boxes.hotels2-boxes {margin-bottom:10px;}
+#ht2-region2 .left-col {float:left; width:470px;}
+#ht2-region2l .big-banner.partners-with-airfast .left-banner-content {float:left;}
+#ht2-region2l .big-banner.partners-with-airfast h3 {
+  color: #FFFFFF;
+  padding-top: 18px;
+      font: 26px/25px 'FuturaGreekBoldRegular';
+    letter-spacing: -1px;
+    padding-bottom: 13px;
+}
+/*#ht2-region2l .big-banner.partners-with-airfast .left-banner-content .desc {color:#fff; font-family:Arial,Helvetica,sans-serif; font-size:12px;} */
+#ht2-region2l .big-banner.partners-with-airfast .left-banner-content .desc {
+  color: #FFFFFF;
+  display: block;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 12px;
+  max-height: 128px;
+  overflow: hidden;
+}
+
+#ht2-region2l .big-banner .left-banner-content .desc { 
+    color: #172841;
+    display: block;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    max-height: 131px;
+    overflow: hidden;
+}
+ 
+ 
+#ht2-region2l  .big-banner.partners-with-airfast .left-banner-content .readmore a {
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  float: left;
+  font-family: Arial;
+  margin-top: 10px;
+  text-decoration: none;
+}
+#ht2-region2l  .big-banner.partners-with-airfast .left-banner-content .readmore a:hover {text-decoration: underline;}
+#ht2-region2l .big-banner .left-banner-content-wrapper {height:200px;}
+
+ #ht2-region2l .left-banner.partners-with-airfast {
+  background: url("../images/sprite_general2.png") no-repeat scroll -2865px -1161px transparent;
+  height: 250px;
+  width: 470px;
+}
+
+#ht2-region2l .big-banner .left-banner-content-wrapper {width:470px;}
+#ht2-region2l .big-banner.partners-with-airfast .left-banner-content,
+#ht2-region2l .big-banner.airfast-rewards .left-banner-content {width:335px;}
+#ht2-region2l .big-banner.airfast-rewards {margin:36px 0;}
+
+
+#ht2-region2l .big-banner .topradius {
+	background: url('../images/sprite_general2.png') no-repeat -1495px -722px; width: 469px; height: 12px;
+}
+
+#ht2-region2l .big-banner .bottomradius {
+	background: url('../images/sprite_general2.png') no-repeat -1495px -762px; width: 469px; height: 15px;
+}
+
+#reservation-manager {float:left;}
+
+#reservation-manager .reservation-manager-top {
+  border-bottom: 3px solid #FF8C00;
+  float: left;
+  padding-bottom: 9px;
+  width: 470px;
+}
+
+#reservation-manager .reservation-manager-top-left {
+  color: #172841;
+  float: left;
+  font: 21px/24px 'FuturaGreekBoldRegular';
+  letter-spacing: -1px;
+}
+
+#reservation-manager .reservation-manager-top-right {
+  clear: left;
+  color: #172841;
+  float: left;
+  font: 12px Arial,Helvetica,sans-serif;
+  padding-top: 11px;
+  width: 419px;
+  margin-bottom:3px;
+  
+}
+#reservation-manager .reservation-manager-bottom {
+  clear: left;
+  float: left;
+  margin-top: 17px;
+  position: relative;
+  width: 470px;
+}
+
+body.page-flights2 #reservation-manager .reservation-manager-bottom {width:525px;}
+
+
+#reservation-manager .reservation-manager-bottom .left {
+  float: left;
+  margin-right: 2px;
+}
+
+#reservation-manager .reservation-manager-bottom input[type="text"] {
+  border: 0 none;
+  color: #121F36;
+  font: bold 14px Arial,Helvetica,sans-serif;
+}
+
+body.page-flights2 #reservation-manager .reservation-manager-bottom .left input {
+	width:245px;
+	float:left;
+}
+body.page-flights2 #reservation-manager .reservation-manager-bottom .right input {
+	width:193px;
+	float:left;
+}
+
+body.page-flights2 #reservation-manager .reservation-manager-bottom .left { 
+	background: url('../images/sprite_general2.png') no-repeat -3080px -1545px;
+	width:250px;
+	margin-right:20px;
+	float:left;
+	display:inline-block;
+	height:28px;
+	padding:10px 5px 0px 5px;
+}
+body.page-flights2 #reservation-manager .reservation-manager-bottom .right {
+	background: url('../images/sprite_general2.png') no-repeat -3097px -1462px;
+	width:232px;
+	display:inline-block;
+	height:28px;
+	padding:10px 0px 0px 5px;
+}
+
+.ie8 #reservation-manager .reservation-manager-bottom .right input[type="submit"] {
+	padding: 2px 2px 2px 2px;
+}
+.ie9 #reservation-manager .reservation-manager-bottom .right input[type="submit"] {
+	padding: 2px 2px 2px 2px;
+}
+
+#reservation-manager .reservation-manager-bottom .right input[type="submit"] {
+  background: url("../images/sprite_general.png") no-repeat scroll -170px -3546px transparent;
+  border: medium none;
+  color: #121F36;
+  cursor: pointer;
+  font: 14px 'FuturaGreekBoldRegular';
+  height: 27px;
+  padding-bottom: 2px;
+  position: absolute;
+  right: 12px;
+  top: 5px;
+  width: 32px !important;
+  float:right !important;
+}
+#reservation-manager .reservation-manager-bottom .right input[type="submit"]:hover {
+ 	background: url("../images/sprite_general.png") no-repeat scroll -416px -3546px transparent;
+    color: #FFFFFF;
+}
+
+body.page-hotels2 #ht2-region2r {
+  float: left;
+  margin-left: 25px;
+  width: 525px;
+}
+
+#ht2-region2r #latest-searches {width:525px; margin-bottom:20px;}
+#ht2-region2r #latest-searches .latest-searches-center ul li.row .field-sters {margin-bottom:4px; width:90px;}
+#ht2-region2r #latest-searches .latest-searches-center ul li.row .field-address,
+#ht2-region2r #latest-searches .latest-searches-center ul li.row .field-reviews {width:339px; margin:0 0 4px 0;}
+#ht2-region2r #latest-searches .latest-searches-center ul li.row .field-social-icons
+#ht2-region2r #hotel-tools-container { width:525px !important; background:none;}
+#ht2-region2r #hotel-tools-container .hotel-tools-container-center ul > li > .col.center-col {margin:0;}
+#ht2-region2r #hotel-tools-container .hotel-tools-container-center ul > li > .col {padding:9px 0 9px 12px;}
+#ht2-region2r #hotel-tools-container .hotel-tools-container-center {padding:0;}
+#ht2-region2r #hotel-tools-container .hotel-tools-container-center ul > li > .col.left-col { margin-left:7px !important; }
+
+#ht2-region2r #hotel-tools-container .bottomcurve {
+background: url('../images/sprite_general2.png') no-repeat -1505px -641px; width: 524px; height: 13px; }
+#ht2-region2r #hotel-tools-container .topcurve {background: url('../images/sprite_general2.png') no-repeat -1505px -595px; width: 524px; height: 10px;}
+
+#ht2-region2r #hotel-tools-container .hotel-tools-wrapper
+{
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #F2F2F2 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#F2F2F2)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#F2F2F2 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#F2F2F2 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#F2F2F2 100%); /* IE10+ */
+	background: linear-gradient(top,  #ffffff 0%,#F2F2F2 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#F2F2F2',GradientType=0 ); /* IE6-9 */
+	padding-bottom:10px;
+}
+.page-hotels #hotel-top-destinations {position:relative;}
+#hotel-top-destinations .yes-hand {
+	background: url("../images/sprite_general.png") no-repeat scroll -1225px -3071px transparent;
+    height: 69px;
+    position: absolute;
+    right: -92px;
+    top: 25px;
+    width: 70px;
+}
+ #ht2-region2r #latest-searches .latest-searches-center ul li.row .field-social-icons  {float:right; padding:5px 0;}
+#h2-above-footer  {margin-top:35px;}
+ #ht2-region2r #hotel-tools-container .hotel-tools-container-top {padding:16px 18px;}
+ #ht2-region2l .big-banner.airfast-rewards h3 {padding-left:27px; font:24px/24px 'FuturaGreekBoldRegular';}
+ 
+/* FLIGHTS 2 */
+body.page-flights2 #left-col { float: left; width: 470px;}
+body.page-flights2 #content #main-col { float: left; margin-left: 25px; }
+body.page-flights2 #left-col #search-flight-form .topformradius {
+    background: url("../images/sprite_general2.png") no-repeat scroll -930px -319px transparent;
+    width: 470px;
+    height:12px;
+}
+body.page-flights2 #left-col #search-flight-form .topformradius.active { background:url("../images/sprite_general2.png") no-repeat scroll -930px -294px transparent; }
+
+body.page-flights2 #left-col .bottomformradius {
+    background:url("../images/sprite_general2.png") no-repeat scroll -930px -369px transparent;
+    width: 470px;
+}
+
+body.page-flights2 #left-col .step-info { width:169px; }
+body.page-flights2 #left-col .step-elems { padding: 17px 25px; width: 238px; }
+body.page-flights2 #search-flight-form .step1 label {padding:0 23px 13px 20px;}
+body.page-flights2 #left-col .step2-elems input {padding:7px 10px; width:220px; font-size:12px; cursor:pointer;}
+body.page-flights2 #search-flight-form .step3 label {display:block;}
+
+body.page-flights2 #search-flight-form input.datepicker,
+body.page-flights2 #search-flight-form input.selectbox  {width:223px; padding:8px; font-size:12px; cursor:pointer; float:left;}
+body.page-flights2 #search-flight-form input.datepicker {background:url("../images/sprite_general.png") no-repeat scroll 199px -4498px #fff; }
+
+body.page-flights2 #left-col .step4-elems .adultswrapper {width:118px;}
+body.page-flights2 #left-col .step4-elems .infoToolTip { display: block; float: left; margin-left: 10px; margin-top: 5px; }
+
+.ac_results.flights2 ul {width:240px !important;}
+.ac_results.flights2 .lastLi {width:227px !important;}
+body.page-flights2 #search-flight-form input.selectbox {background:url("../images/sprite_general.png") no-repeat scroll 196px -4450px #fff; }
+body.page-flights2 #left-col .step4-elems input.selectbox { padding:5px 8px; }
+body.page-flights2 #left-col .step5-elems .airlinecomp-wrapper,
+body.page-flights2 #left-col .step5-elems .seatcateg-wrapper {float:left;}
+body.page-flights2 #left-col .button-wrapper { background:#fff; width:465px; }
+body.page-flights2 #left-col .button-wrapper .inner {float:right; margin-right:10px;}
+
+body.page-flights2 #search-flight-form .step3-elems .selectbox-wrapper {top:91px !important; width:239px !important;}
+body.page-flights2 #search-flight-form .step3-elems .selectbox-wrapper  li {width:223px !important;}
+body.page-flights2 #search-flight-form .step4-elems .selectbox-wrapper {top:43px !important; width:65px !important;}
+body.page-flights2 #search-flight-form .step4-elems .selectbox-wrapper  li {width:49px  !important;}
+body.page-flights2 #search-flight-form .step5-elems .selectbox-wrapper {top:32px !important; width:239px !important;}
+body.page-flights2 #search-flight-form .step5-elems .selectbox-wrapper  li {width:223px !important;}
+
+ 
+ 
+body.page-flights2 #left-col .step1-info { height:91px; }
+body.page-flights2 #left-col .step1-elems { height: 56px; padding: 31px 25px 17px; }
+body.page-flights2 #left-col .step2-info { height:100px; }
+body.page-flights2 #left-col .step2-elems { height:92px; }
+body.page-flights2 #left-col .step3-info { height:264px; }
+body.page-flights2 #left-col .step3-elems { height:256px; }
+body.page-flights2 #left-col .step4-info { height:116px; }
+body.page-flights2 #left-col .step4-elems { height:108px; }
+body.page-flights2 #left-col .step5-info { height:157px; }
+body.page-flights2 #left-col .step5-elems { height:149px; }
+
+
+body.page-flights2 .find-out-hot-prices { width:485px; background:url("../images/sprite_general2.png") no-repeat scroll -2819px -889px transparent;}
+body.page-flights2 .find-out-hot-prices ul {width:432px !important; position:relative;}
+body.page-flights2 .find-out-hot-prices ul li {margin-right:19px;}
+body.page-flights2 .find-out-hot-prices ul li a {width:186px !important;}
+
+
+body.page-flights2 #tabs-airlines, 
+body.page-flights2 #tabs-airlines .ui-tabs-nav,
+body.page-flights2 #tabs-airlines .ui-tabs-panel .ui-tabs-panel-top,
+body.page-flights2 #tabs-airlines .ui-tabs-panel .ui-tabs-panel-center,
+body.page-flights2 #tabs-airlines .ui-tabs-panel .ui-tabs-panel-bottom {width:524px;}
+
+
+body.page-flights2 #tabs-airlines .ui-tabs-panel .ui-tabs-panel-bottom {background:url("../images/sprite_general2.png") no-repeat scroll -1505px -641px transparent;}
+body.page-flights2 #tabs-airlines .ui-tabs-panel .ui-tabs-panel-top {background:url("../images/sprite_general.png") no-repeat scroll -106px -912px transparent;}
+body.page-flights2 #tabs-airlines .ui-tabs-panel-center .views-row {width:486px; margin-left:20px;}
+body.page-flights2 #tabs-airlines #flights-airlines .ui-tabs-panel-center .views-row .title {display:block; width:250px}
+body.page-flights2 #tabs-airlines #flights-airlines .ui-tabs-panel-center .views-row.big-row .title {padding-top:10px;}
+
+
+
+
+ 
+
+body.page-flights2 #reservation-manager {clear:left; margin-top:28px;}
+body.page-flights2 #reservation-manager .reservation-manager-top {width:525px;}
+body.page-flights2 #reservation-manager .reservation-manager-top-right {width:287px; float:right; padding-top:0; float:right; clear:none;}
+
+
+.page-flights2 #content { margin-top: 29px; }
+body.page-flights2 #flight-main-banners { width:100%; margin-top:30px;}
+body.page-flights2  .left-banner.have-question,
+body.page-flights2 .maincol-banner.package-savings {margin-right:27px;}
+body.page-flights2  .left-banner.have-question a .top-header {line-height:18px;}
+body.page-flights2  .left-banner.have-question a .med-header {line-height:21px;}
+body.page-flights2  .left-banner.have-question a .bottom-header {line-height:18px;}
+body.page-flights2 #search-flight-form {margin-bottom:0;}
+
+
+#tabs-flights2-top ul.ui-tabs-nav li.top-destinations a,
+#tabs-flights2-top ul.ui-tabs-nav li.air-fast-weekend a {
+  background: url("../images/sprite_general.png") no-repeat scroll -632px -2789px transparent;
+  height: 29px;
+  width: 223px;
+}
+
+#tabs-flights2-top ul.ui-tabs-nav li.top-destinations.ui-tabs-selected a, 
+#tabs-flights2-top ul.ui-tabs-nav li.top-destinations a:hover,
+#tabs-flights2-top ul.ui-tabs-nav li.air-fast-weekend.ui-tabs-selected a, 
+#tabs-flights2-top ul.ui-tabs-nav li.air-fast-weekend a:hover {
+  background: url("../images/sprite_general.png") no-repeat scroll -632px -2834px transparent;
+  color: #172841;
+}
+
+.page-flights2 .globaltabs .ui-tabs-panel-center-left {
+  background: url("../images/sprite_general2.png") no-repeat scroll -3296px -1651px transparent;
+  height: 197px;
+  margin-top: 24px;
+}
+.page-flights2 #hot-price.ui-tabs-panel .ui-tabs-panel-center-right ul,
+.page-flights2 #flights-live.ui-tabs-panel .ui-tabs-panel-center-right ul,
+.page-flights2 #hot-price-weekend.ui-tabs-panel .ui-tabs-panel-center-right ul {min-height:232px;}
+
+.page-flights2 #flights2-bottom-boxes {margin-bottom:28px; float:left;}
+.page-flights2 .left-banner.has-left-image {margin-right:27px; }
+.page-flights2 .small-banner.has-left-image.package.tools .left-image { background: url('../images/sprite_general2.png') no-repeat -2982px -1527px;}
+
+.page-flights2 .smaller-banner.have-question.reward {margin-right:27px;}
+.page-flights2 .smaller-banner.have-question.why-book {margin-right:0; background:url("../images/sprite_general.png") no-repeat scroll -1295px -1646px transparent;}
+.page-flights2 .smaller-banner.have-question.why-book:hover {background:url("../images/sprite_general.png") no-repeat scroll -1295px -1733px transparent; }
+
+.page-flights2 .f2-tickets-promise.small-banner.package .top-header { font:24px/20px 'FuturaGreekBoldRegular'; padding-top:4px; }
+.page-flights2 .f2-tickets-promise.small-banner.package .med-header { font:26px/26px 'FuturaGreekBoldRegular'; }
+
+
+body.page-flights2 .find-out-hot-prices .find-out-stripe {right:-14px;}
+.page-flights2 #flights-tools-more .ui-tabs-panel-center .views-row .item a {width:150px; }
+.page-flights2 #flights-tools-more .ui-tabs-panel-center .views-row .item.col3 a,
+.page-flights2 #flights-tools-more .ui-tabs-panel-center .views-row .item.col2 a,
+.page-flights2 #flights-tools-more .ui-tabs-panel-center .views-row .item.col1 a {
+  float: left;
+  margin-left: 7px;
+  width:152px;
+  font-size:13px;
+}
+
+
+.page-flights2 #flights-tools-more .ui-tabs-panel-center .views-row .item.col1 a {margin-left:0;}
+.page-flights2 #flights-tools-more .ui-tabs-panel-center .views-row .item.col2.big a {width:203px;}
+.page-flights2 #flights-tools-more .ui-tabs-panel-center .views-row .item a:hover { background: url('../images/sprite_general2.png') no-repeat -2691px -141px; }
+.page-flights2 #tabs-flights2-top.tabs-long .ui-tabs-nav {margin-top:0;}
+.page-flights2 .tabs-banner {top:50px;}
+
+
+
+
+ 
+/* HOTELS RESULTS 6 */
+body.page-hotels-results-6 #main-content { float: left; width: 836px; }
+body.page-hotels-results-6 #right-col { float: left; margin: 0 0 0 20px; width:168px;}
+
+body.page-hotels-results-6 #right-col .phone-help .compare-top-curve { background: url('../images/sprite_general2.png') no-repeat -2131px -587px; width: 165px; height: 8px; }
+body.page-hotels-results-6 #right-col .phone-help .compare-bottom-curve { background: url('../images/sprite_general2.png') no-repeat -2131px -637px; width: 165px; height: 10px; }
+body.page-hotels-results-6 #right-col .phone-help .header { width:150px; margin:9px 0 0 11px; background-position:-1028px -1876px;}
+body.page-hotels-results-6 #right-col .phone-help .content {width:165px;}
+body.page-hotels-results-6 #right-col .phone-help .body { padding: 12px 0 12px 11px; width: 150px; }
+body.page-hotels-results-6 #right-col .banner-content {padding-left:3px;}
+.page-hotels-results-6 #hotel-block-step.step-container {
+  display: inline-block;
+  float: left;
+  width: 670px;
+}
+.page-hotels-results-6 .share-toolbar-full {
+  display: inline-block;
+  float: right;
+  margin: 17px 0 0;
+  width: 355px;
+}
+.page-hotels-results-6 #details-print-button {
+  float: right;
+  height: 36px;
+  margin: -22px -8px 0 0;
+  padding: 0 10px;
+}
+.page-hotels-results-6 #booking-details {
+	margin:60px 0 30px 0;
+}
+.page-hotels-results-6 #traveller-details-container {
+	background: url('../images/sprite_general2.png') no-repeat -858px -1885px;
+	width: 327px;
+	height: 242px;
+	padding: 15px 0 0 0;
+	float: left;
+}
+.page-hotels-results-6 #traveller-details-container .top-layer span.component-title { 
+	background: url('../images/sprite_general.png') no-repeat scroll -314px -4694px transparent;
+	height: 28px;
+    clear: both;
+    color: #172841;
+    display: block;
+    font: bold 20px/20px Arial,Helvetica,sans-serif;
+    margin: 0 0 42px 12px;
+    padding: 2px 0 0 42px;
+}
+.page-hotels-results-6 #traveller-details-container .details-wrapper {
+	padding:0 0 0 20px;
+}
+.page-hotels-results-6 #traveller-details-container .content-layer ul li .left-col {
+width: 152px;
+color: #172841;
+font: normal 14px/20px Arial, Helvetica, sans-serif;
+}
+.page-hotels-results-6 #traveller-details-container .content-layer ul li .row-item {
+float: left;
+}
+.page-hotels-results-6 #traveller-details-container .content-layer ul li .right-col {
+width: 137px;
+font: bold 14px/20px Arial, Helvetica, sans-serif;
+}
+.page-hotels-results-6 #reservation-details-container{
+	background: url('../images/sprite_general2.png') no-repeat -855px -1578px;
+	width: 467px;
+	height: 242px;
+	padding: 15px 0 0 0;
+	float:right;
+}
+.page-hotels-results-6 #reservation-details-container .top-layer span.component-title { 
+	background: url('../images/sprite_general.png') no-repeat -317px -4646px;
+	height: 27px;
+	clear: both;
+    color: #172841;
+    display: block;
+    font: bold 20px/20px Arial,Helvetica,sans-serif;
+    margin: 0 0 42px 12px;
+    padding: 2px 0 0 42px;
+}
+.page-hotels-results-6 #reservation-details-container .details-wrapper {
+	padding:0 0 0 20px;
+}
+.page-hotels-results-6 #reservation-details-container .content-layer ul li .left-col {
+width: 160px;
+color: #172841;
+font: normal 14px/20px Arial, Helvetica, sans-serif;
+}
+.page-hotels-results-6 #reservation-details-container .content-layer ul li .row-item {
+float: left;
+}
+.page-hotels-results-6 #reservation-details-container .content-layer ul li .right-col {
+width: 285px;
+font: bold 14px/20px Arial, Helvetica, sans-serif;
+}
+.page-hotels-results-6 #hotel-deal-container {
+	background:none;
+	margin:20px 0 20px 0;
+	display:block;
+	padding: 15px 0 0 0;
+}
+.page-hotels-results-6 #hotel-deal-container .contents { display:block !important; }
+.page-hotels-results-6 #hotel-deal-container .top-layer {
+  background: url("../images/sprite_general.png") no-repeat scroll -6px -6677px transparent;
+  height: 30px;
+  padding: 16px 20px;
+  width: 835px;
+}
+.page-hotels-results-6 #hotel-deal-container .top-layer span.component-title { 
+	background: url('../images/sprite_general2.png') no-repeat -1226px -654px;
+	height: 25px;
+	clear: both;
+    color: #172841;
+    display: block;
+    font: bold 20px/20px Arial,Helvetica,sans-serif;
+    margin: 0 0 42px 12px;
+    padding: 2px 0 0 42px;
+}
+.page-hotels-results-6 #hotel-deal-container .content-layer {
+	background:#fff;
+	margin:0;
+	padding:0;
+	width: 836px;
+}
+.page-hotels-results-6 #hotel-deal-container .content-layer .contents {
+	padding:15px;
+}
+.page-hotels-results-6 #hotel-deal-container .content-layer .field.field-review {
+	float:right;
+	width:auto;
+	max-width:210px;
+}
+.page-hotels-results-6 #hotel-deal-container .content-layer .field-review span {
+	font: 30px 'FuturaGreekBoldRegular';
+	display:block;
+}
+.page-hotels-results-6 #hotel-deal-container .content-layer .field-review .field-info {
+	float:none;
+	width:auto;
+}
+.page-hotels-results-6 #hotel-deal-container .content-layer .field-review .field-info span {
+	color: #3C5E90 !important;
+	font: bold 10px Arial, Helvetica, sans-serif !important;
+	display:block;
+	width:100%;
+	text-align:right;
+}
+.page-hotels-results-6 #hotel-deal-container .content-layer .field-title {
+	display:inline-block;
+	width:auto;
+}
+.page-hotels-results-6 #hotel-deal-container .content-layer .field-city {
+	width:430px;
+}
+.page-hotels-results-6 #hotel-deal-container .content-layer .field-sters {
+	display:inline-block;
+	width:auto;
+	float:none;
+}
+.page-hotels-results-6 .hotel-list-infos {
+	display:block;
+	clear:both;
+	padding: 15px 0 0 0;
+}
+.page-hotels-results-6 #hotel-deal-container .hotel-list-infos ul.list-wrapper li.row-1 {
+  background: none repeat scroll 0 0 #ECEAEA;
+  float:left;
+  width:100%;
+  padding:5px 30px;
+}
+.page-hotels-results-6 #hotel-deal-container .hotel-list-infos ul.list-wrapper li.row-2 {
+  padding:5px 30px;
+  float:left;
+}
+.page-hotels-results-6 #hotel-deal-container .hotel-list-infos ul.list-wrapper li .left-col {
+  font: 14px/20px Arial,Helvetica,sans-serif;
+  width: 136px;
+}
+.page-hotels-results-6 #hotel-deal-container .hotel-list-infos ul.list-wrapper li .row-col {
+  color: #172841;
+  float: left;
+}
+.page-hotels-results-6 #hotel-deal-container .hotel-list-infos ul.list-wrapper li .right-col {
+  font: bold 14px/20px Arial,Helvetica,sans-serif;
+  width: 369px;
+}
+.page-hotels-results-6 #hotel-deal-container .hotel-list-infos ul.list-wrapper li .row-col {
+  color: #172841;
+  float: left;
+}

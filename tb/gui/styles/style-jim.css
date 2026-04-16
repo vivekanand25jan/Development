@@ -1,0 +1,4410 @@
+/****************************************************/
+/***************** Home Page Popup Box **************/
+/****************************************************/
+
+.small-banner.box-animate {
+	position:relative;
+	width:372px;
+}
+.small-banner.box-animate .content {
+	height:67px;
+	padding:0 18px 3px 18px;
+}
+.small-banner.box-animate .content > a {
+	float:left;
+	width:250px;
+}
+.small-banner.box-animate .content.grow-up { background: url('../images/sprite_general.png') no-repeat -3px -3380px; }
+.small-banner.box-animate .content .plus-icon {
+	cursor:pointer;
+	position:absolute;
+	bottom:29px;
+	right:11px;
+	background:#FF0000;
+	width:21px;
+	height:21px;
+	background:url("plus-icon.png") no-repeat;
+}
+.small-banner.box-animate .content .plus-icon.enabled { }
+.small-banner.box-animate .modal-box {
+	background: url('../images/sprite_general.png') no-repeat -3px -2890px;
+no-repeat top;
+	position:absolute;
+	bottom:70px;
+	left:0;
+	width:372px;
+	height:10px;
+	z-index:2;
+	overflow:hidden;
+}
+.small-banner.box-animate .modal-box .modal-box-top-layer { height:11px; }
+.small-banner.box-animate .modal-box .inline-table {
+	height:224px;
+	background: url('../images/sprite_general.png') no-repeat -3px -3150px;
+}
+.small-banner.box-animate .modal-box .inline-table .center-layer {
+	margin:0;
+	padding:5px 5px;
+}
+.small-banner.box-animate .modal-box .inline-table .center-layer ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+.small-banner.box-animate .modal-box .inline-table .center-layer ul li.row {
+	border-bottom:1px solid #d2d2d2;
+	padding:2px 0;
+	overflow:hidden;
+}
+.small-banner.box-animate .modal-box .inline-table .center-layer ul li.row:last-child { border-bottom:none; }
+.small-banner.box-animate .modal-box .inline-table .center-layer ul li.row a.item {
+	text-decoration:none;
+	padding:0 13px;
+	height:32px;
+	font:bold 14px/32px Arial, Helvetica, sans-serif;
+	color:#172841;
+	width:145px;
+	display:block;
+	float:left;
+}
+.small-banner.box-animate .modal-box .inline-table .center-layer ul li.row a.item:hover {
+	background: url('../images/sprite_general.png') no-repeat -384px -2890px;
+	color:#ffffff;
+}
+.small-banner.box-animate .modal-box .modal-box-content { padding:0 10px 12px; }
+/*******************************************************************************/
+/******************************** Flights Step 2********************************/
+/*******************************************************************************/
+/***********************************************/
+/***************** Step Container **************/
+/***********************************************/
+
+body.page-flights-results-2 .step-container, body.page-flights-results-3 .step-container, body.page-flights-results-4 .step-container { padding: 10px 0 20px; }
+body.page-flights-results-2 .step-container .step-count, body.page-flights-results-3 .step-container .step-count, body.page-flights-results-4 .step-container .step-count, body.page-flights-results-5 .step-container .step-count {
+	color: #E84C09;
+	float: left;
+	font-family: "FuturaGreekBoldRegular";
+	font-size: 26px;
+	height: 26px;
+	line-height: 26px;
+	padding-right: 7px;
+	width: 190px;
+}
+body.page-flights-results-2 .step-container .step-area-info, body.page-flights-results-3 .step-container .step-area-info, body.page-flights-results-4 .step-container .step-area-info, body.page-flights-results-4 .step-container .step-area-info {
+	color: #172841;
+	font-family: Arial;
+	font-size: 19px;
+	font-weight: bold;
+	width: 511px;
+	float:left;
+}
+body.page-flights-results-2 .step-container .step-dates-persons, body.page-flights-results-3 .step-container .step-dates-persons, body.page-flights-results-4 .step-container .step-dates-persons, body.page-flights-results-5 .step-container .step-dates-persons {
+	clear: both;
+	color: #00AEEF;
+	font-family: Arial;
+	font-size: 13px;
+	line-height: 12px;
+	margin: 2px 0 0;
+	overflow: hidden;
+	width: 693px;
+}
+.step-container .flight-title-info, #details-print-button {
+	float:right;
+	padding:0 10px;
+	margin:-22px 0 0 0;
+	height:36px;
+}
+.page-flights-results-2 .step-container .flight-title-info { width:310px; }
+.page-flights-results-5 .step-container .flight-title-info { width:235px; }
+.step-container .flight-title-info .left, #details-print-button .left {
+	float:left;
+	background: url('../images/sprite_general.png') no-repeat -864px -6913px;
+	width: 10px;
+	height: 36px;
+}
+.step-container .flight-title-info .right, #details-print-button .right {
+	float:left;
+	background: url('../images/sprite_general.png') no-repeat -880px -6913px;
+	width: 10px;
+	height: 36px;
+}
+.step-container .flight-title-info span, #details-print-button span {
+	background: none repeat scroll 0 0 #172841;
+	color: #FFFFFF;
+	display: block;
+	float: left;
+	font: 28px/37px 'MyriadProBoldCondensed';
+	height: 36px;
+	letter-spacing: -0.7px;
+	text-transform: uppercase;
+}
+.step-container .flight-title-info:hover .left, #details-print-button:hover .left {
+	background: url('../images/sprite_general.png') no-repeat -861px -6830px;
+	width: 10px;
+	height: 36px;
+}
+.step-container .flight-title-info:hover .right, #details-print-button:hover .right {
+	background: url('../images/sprite_general.png') no-repeat -877px -6830px;
+	width: 10px;
+	height: 36px;
+}
+.step-container .flight-title-info:hover span, #details-print-button:hover span { background:#e84c09; }
+/************************************************/
+/***************** Selected Flighs **************/
+/************************************************/
+
+body.page-flights-results-2 #selected-flights-container, body.page-flights-results-3 #selected-flights-container, body.page-flights-results-4 #selected-flights-container {
+	margin:18px 0 24px 0;
+	float:left;
+	clear:both;
+	width:1021px;
+}
+body.page-flights-results-2 #selected-flights-container #left-price-wrapper, body.page-flights-results-3 #selected-flights-container #left-price-wrapper, body.page-flights-results-4 #selected-flights-container #left-price-wrapper {
+	float:left;
+	width:188px;
+}
+body.page-flights-results-2 #selected-flights-container #left-price-wrapper .top-layer, body.page-flights-results-3 #selected-flights-container #left-price-wrapper .top-layer, body.page-flights-results-4 #selected-flights-container #left-price-wrapper .top-layer { background: url('../images/sprite_general.png') no-repeat -393px -3034px; }
+body.page-flights-results-2 #selected-flights-container #left-price-wrapper .content-layer, body.page-flights-results-3 #selected-flights-container #left-price-wrapper .content-layer, body.page-flights-results-4 #selected-flights-container #left-price-wrapper .content-layer {
+	min-height:122px;
+	padding:7px 0 7px 16px;
+	background:url("../images/sprite_general.png") no-repeat scroll -393px -3045px transparent;
+}
+body.page-flights-results-2 #selected-flights-container #left-price-wrapper .content-layer .ticket-price-info, body.page-flights-results-3 #selected-flights-container #left-price-wrapper .content-layer .ticket-price-info, body.page-flights-results-4 #selected-flights-container #left-price-wrapper .content-layer .ticket-price-info {
+	word-spacing:-2px;
+	width:35px;
+	display:block;
+	color:#ffffff;
+	float:left;
+	font:normal 11px/12px Arial, Helvetica, sans-serif;
+	margin:5px 10px 0 0;
+	text-align:right;
+}
+body.page-flights-results-2 #selected-flights-container #left-price-wrapper .content-layer .total-price-info, body.page-flights-results-3 #selected-flights-container #left-price-wrapper .content-layer .total-price-info, body.page-flights-results-4 #selected-flights-container #left-price-wrapper .content-layer .total-price-info {
+	width:110px;
+	display:block;
+	float:left;
+	font: 42px/30px 'MyriadProBoldCondensed';
+	color:#ffffff;
+}
+body.page-flights-results-2 #selected-flights-container #left-price-wrapper .additional-info-layer span, body.page-flights-results-3 #selected-flights-container #left-price-wrapper .additional-info-layer span, body.page-flights-results-4 #selected-flights-container #left-price-wrapper .additional-info-layer span {
+	font:normal 11px/14px Arial, Helvetica, sans-serif;
+	color:#ffffff;
+	padding:0 0 0 8px;
+}
+body.page-flights-results-2 #selected-flights-container #left-price-wrapper .additional-info-layer, body.page-flights-results-3 #selected-flights-container #left-price-wrapper .additional-info-layer, body.page-flights-results-4 #selected-flights-container #left-price-wrapper .additional-info-layer { background:#172841; }
+body.page-flights-results-2 #selected-flights-container #left-price-wrapper .bottom-layer, body.page-flights-results-3 #selected-flights-container #left-price-wrapper .bottom-layer, body.page-flights-results-4 #selected-flights-container #left-price-wrapper .bottom-layer { background: url("../images/sprite_general.png") no-repeat scroll -393px -3217px transparent; }
+/****************************************************/
+/***************** Selected Fligh List **************/
+/****************************************************/
+
+body.page-flights-results-2 #selected-flights-container #selected-flights-list .top-layer, body.page-flights-results-2 #selected-flights-container #left-price-wrapper .top-layer, body.page-flights-results-3 #selected-flights-container #selected-flights-list .top-layer, body.page-flights-results-3 #selected-flights-container #left-price-wrapper .top-layer, body.page-flights-results-4 #selected-flights-container #selected-flights-list .top-layer, body.page-flights-results-4 #selected-flights-container #left-price-wrapper .top-layer { height:11px; }
+body.page-flights-results-2 #selected-flights-container #selected-flights-list .bottom-layer, body.page-flights-results-2 #selected-flights-container #left-price-wrapper .bottom-layer, body.page-flights-results-3 #selected-flights-container #selected-flights-list .bottom-layer, body.page-flights-results-3 #selected-flights-container #left-price-wrapper .bottom-layer, body.page-flights-results-4 #selected-flights-container #selected-flights-list .bottom-layer, body.page-flights-results-4 #selected-flights-container #left-price-wrapper .bottom-layer { height:12px; }
+body.page-flights-results-2 #selected-flights-container #selected-flights-list, body.page-flights-results-3 #selected-flights-container #selected-flights-list, body.page-flights-results-4 #selected-flights-container #selected-flights-list {
+	width:833px;
+	float:left;
+	position:relative;
+}
+body.page-flights-results-2 #selected-flights-container #selected-flights-list .top-layer, body.page-flights-results-3 #selected-flights-container #selected-flights-list .top-layer, body.page-flights-results-4 #selected-flights-container #selected-flights-list .top-layer {
+	background: url('../images/sprite_general.png') no-repeat -407px -1950px;
+	width:833px;
+	clear:both;
+}
+body.page-flights-results-2 #selected-flights-container #selected-flights-list .bottom-layer, body.page-flights-results-3 #selected-flights-container #selected-flights-list .bottom-layer, body.page-flights-results-4 #selected-flights-container #selected-flights-list .bottom-layer {
+	background: url("../images/sprite_general.png") no-repeat scroll -407px -2132px transparent;
+	width:833px;
+	clear:both;
+}
+body.page-flights-results-2 #selected-flights-container #selected-flights-list .content-layer, body.page-flights-results-3 #selected-flights-container #selected-flights-list .content-layer, body.page-flights-results-4 #selected-flights-container #selected-flights-list .content-layer {
+	padding:0 0 0 21px;
+	clear:both;
+	float:left;
+	background: url("../images/sprite_general.png") no-repeat scroll -407px -1959px transparent;
+	width:812px;
+}
+body.page-flights-results-2 #selected-flights-container #selected-flights-list .content-layer .contents-wrapper, body.page-flights-results-3 #selected-flights-container #selected-flights-list .content-layer .contents-wrapper, body.page-flights-results-4 #selected-flights-container #selected-flights-list .content-layer .contents-wrapper { float:left; }
+body.page-flights-results-2 #selected-flights-container #selected-flights-list .content-layer .contents-wrapper li.flight-row, body.page-flights-results-3 #selected-flights-container #selected-flights-list .content-layer .contents-wrapper li.flight-row, body.page-flights-results-4 #selected-flights-container #selected-flights-list .content-layer .contents-wrapper li.flight-row {
+	border-top:1px solid #ebebeb;
+	clear:both;
+	float:left;
+	min-height:32px;
+	padding:11px 0 25px 0;
+	width:795px;
+}
+body.page-flights-results-2 #selected-flights-container #selected-flights-list .content-layer .contents-wrapper li.flight-row.first, body.page-flights-results-3 #selected-flights-container #selected-flights-list .content-layer .contents-wrapper li.flight-row.first, body.page-flights-results-4 #selected-flights-container #selected-flights-list .content-layer .contents-wrapper li.flight-row.first { border-top:none; }
+body.page-flights-results-2 #selected-flights-container #selected-flights-list .content-layer .contents-wrapper li.flight-row.last, body.page-flights-results-3 #selected-flights-container #selected-flights-list .content-layer .contents-wrapper li.flight-row.last, body.page-flights-results-4 #selected-flights-container #selected-flights-list .content-layer .contents-wrapper li.flight-row.last { padding: 11px 0 18px; }
+body.page-flights-results-2 #selected-flights-container #selected-flights-list .content-layer .contents-wrapper li.flight-row .row-cell, body.page-flights-results-3 #selected-flights-container #selected-flights-list .content-layer .contents-wrapper li.flight-row .row-cell, body.page-flights-results-4 #selected-flights-container #selected-flights-list .content-layer .contents-wrapper li.flight-row .row-cell {
+	float:left;
+	min-width:111px;
+}
+body.page-flights-results-2 #selected-flights-container #selected-flights-list .content-layer .contents-wrapper li.flight-row .row-cell span, body.page-flights-results-3 #selected-flights-container #selected-flights-list .content-layer .contents-wrapper li.flight-row .row-cell span, body.page-flights-results-4 #selected-flights-container #selected-flights-list .content-layer .contents-wrapper li.flight-row .row-cell span {
+	float:left;
+	color:#656565;
+	font:normal 12px/14px Arial, Helvetica, sans-serif;
+	display:block;
+}
+body.page-flights-results-2 #selected-flights-container #selected-flights-list .content-layer .contents-wrapper li.flight-row .row-cell span.strong, body.page-flights-results-3 #selected-flights-container #selected-flights-list .content-layer .contents-wrapper li.flight-row .row-cell span.strong, body.page-flights-results-4 #selected-flights-container #selected-flights-list .content-layer .contents-wrapper li.flight-row .row-cell span.strong {
+	font-weight:bold;
+	color:#121f36;
+	font-size:14px;
+}
+body.page-flights-results-2 #selected-flights-container #selected-flights-list .content-layer .contents-wrapper li.flight-row .row-cell span.city, body.page-flights-results-3 #selected-flights-container #selected-flights-list .content-layer .contents-wrapper li.flight-row .row-cell span.city, body.page-flights-results-4 #selected-flights-container #selected-flights-list .content-layer .contents-wrapper li.flight-row .row-cell span.city {
+	clear:both;
+	float:none;
+}
+body.page-flights-results-2 #selected-flights-container #selected-flights-list .content-layer .contents-wrapper li.flight-row .row-cell span.direct, body.page-flights-results-3 #selected-flights-container #selected-flights-list .content-layer .contents-wrapper li.flight-row .row-cell span.direct, body.page-flights-results-4 #selected-flights-container #selected-flights-list .content-layer .contents-wrapper li.flight-row .row-cell span.direct {
+	clear:both;
+	float:none;
+}
+body.page-flights-results-2 #selected-flights-container #selected-flights-list .content-layer .contents-wrapper li.flight-row .row-cell span.city-code, body.page-flights-results-3 #selected-flights-container #selected-flights-list .content-layer .contents-wrapper li.flight-row .row-cell span.city-code, body.page-flights-results-4 #selected-flights-container #selected-flights-list .content-layer .contents-wrapper li.flight-row .row-cell span.city-code { margin:0 0 0 5px; }
+body.page-flights-results-2 #selected-flights-container #selected-flights-list .content-layer .contents-wrapper li.flight-row .row-cell.cell-from-destination, body.page-flights-results-3 #selected-flights-container #selected-flights-list .content-layer .contents-wrapper li.flight-row .row-cell.cell-from-destination, body.page-flights-results-4 #selected-flights-container #selected-flights-list .content-layer .contents-wrapper li.flight-row .row-cell.cell-from-destination { min-width:127px; }
+body.page-flights-results-2 #selected-flights-container #selected-flights-list .content-layer .contents-wrapper li.flight-row .row-cell.cell-arrow-destination, body.page-flights-results-3 #selected-flights-container #selected-flights-list .content-layer .contents-wrapper li.flight-row .row-cell.cell-arrow-destination, body.page-flights-results-4 #selected-flights-container #selected-flights-list .content-layer .contents-wrapper li.flight-row .row-cell.cell-arrow-destination { min-width:41px; }
+body.page-flights-results-2 #selected-flights-container #selected-flights-list .content-layer .contents-wrapper li.flight-row .row-cell.cell-arrow-destination span, body.page-flights-results-3 #selected-flights-container #selected-flights-list .content-layer .contents-wrapper li.flight-row .row-cell.cell-arrow-destination span, body.page-flights-results-4 #selected-flights-container #selected-flights-list .content-layer .contents-wrapper li.flight-row .row-cell.cell-arrow-destination span {
+	display:block;
+	background: url('../images/sprite_general.png') no-repeat -16px -3510px;
+	width: 18px;
+	height: 30px;
+}
+body.page-flights-results-2 #selected-flights-container #selected-flights-list .content-layer .contents-wrapper li.flight-row .row-cell.cell-to-destination, body.page-flights-results-3 #selected-flights-container #selected-flights-list .content-layer .contents-wrapper li.flight-row .row-cell.cell-to-destination, body.page-flights-results-4 #selected-flights-container #selected-flights-list .content-layer .contents-wrapper li.flight-row .row-cell.cell-to-destination { min-width:150px; }
+body.page-flights-results-2 #selected-flights-container #selected-flights-list .content-layer .contents-wrapper li.flight-row .row-cell.cell-company, body.page-flights-results-3 #selected-flights-container #selected-flights-list .content-layer .contents-wrapper li.flight-row .row-cell.cell-company, body.page-flights-results-4 #selected-flights-container #selected-flights-list .content-layer .contents-wrapper li.flight-row .row-cell.cell-company {
+	position:relative;
+	width:140px;
+}
+body.page-flights-results-2 #selected-flights-container #selected-flights-list .content-layer .contents-wrapper li.flight-row .row-cell.cell-company span, body.page-flights-results-3 #selected-flights-container #selected-flights-list .content-layer .contents-wrapper li.flight-row .row-cell.cell-company span, body.page-flights-results-4 #selected-flights-container #selected-flights-list .content-layer .contents-wrapper li.flight-row .row-cell.cell-company span { /* position:absolute; top:0; left:0px;*/ }
+body.page-flights-results-2 #selected-flights-container #selected-flights-list .content-layer .contents-wrapper li.flight-row .row-cell.cell-flight-number span, body.page-flights-results-3 #selected-flights-container #selected-flights-list .content-layer .contents-wrapper li.flight-row .row-cell.cell-flight-number span, body.page-flights-results-4 #selected-flights-container #selected-flights-list .content-layer .contents-wrapper li.flight-row .row-cell.cell-flight-number span {
+	color:#121f36;
+	font:12px Arial, Helvetica, sans-serif;
+	clear:left;
+	padding-left:11px;
+	width:100px;
+	display:block;
+}
+body.page-flights-results-4 #selected-flights-container #selected-flights-list .content-layer .flight-change-link, body.page-flights-results-3 #selected-flights-container #selected-flights-list .content-layer .flight-change-link, body.page-flights-results-2 #selected-flights-container #selected-flights-list .content-layer .flight-change-link {
+	float:left;
+	clear:both;
+	width:200px;
+}
+body.page-flights-results-2 #selected-flights-container #selected-flights-list .content-layer .flight-change-link a, body.page-flights-results-3 #selected-flights-container #selected-flights-list .content-layer .flight-change-link a, body.page-flights-results-4 #selected-flights-container #selected-flights-list .content-layer .flight-change-link a {
+	font:bold 11px/14px Arial, Helvetica, sans-serif;
+	text-decoration:none;
+	color:#3c5e90;
+	background:url("../images/sprite_general.png") no-repeat scroll -1580px -2575px transparent;
+	padding-left:12px;
+	display:block;
+}
+body.page-flights-results-2 #selected-flights-container #selected-flights-list .reduce-price-layer, body.page-flights-results-3 #selected-flights-container #selected-flights-list .reduce-price-layer, body.page-flights-results-4 #selected-flights-container #selected-flights-list .reduce-price-layer {
+	position:absolute;
+	bottom:-47px;
+	right:20px;
+	background: url('../images/sprite_general.png') no-repeat -389px -3249px;
+	width: 160px;
+	height:68px;
+}
+body.page-flights-results-2 #selected-flights-container #selected-flights-list .reduce-price-layer span a, body.page-flights-results-3 #selected-flights-container #selected-flights-list .reduce-price-layer span a, body.page-flights-results-4 #selected-flights-container #selected-flights-list .reduce-price-layer span a {
+	display:block;
+	width:98px;
+	padding:8px 30px;
+	text-align:center;
+	color:#ffffff;
+	font: bold 16px/16px Arial, Helvetica, sans-serif;
+	text-decoration:none;
+}
+body.page-flights-results-2 #selected-flights-container #selected-flights-list .content-layer .contents-wrapper li.flight-row .row-cell.cell-flight-number span.airline, body.page-flights-results-3 #selected-flights-container #selected-flights-list .content-layer .contents-wrapper li.flight-row .row-cell.cell-flight-number span.airline, body.page-flights-results-4 #selected-flights-container #selected-flights-list .content-layer .contents-wrapper li.flight-row .row-cell.cell-flight-number span.airline { float:left; }
+/***********************************************/
+/***************** Main Wrappers ***************/
+/***********************************************/
+
+body.page-flights-results-2 .left-column {
+	float:left;
+	margin:0 28px 0 0
+}
+body.page-flights-results-2 .main-content { float:left; }
+/****************************************/
+/***************** Hotels ***************/
+/****************************************/
+
+.add-hotel-title {
+	color: #172841;
+	font-family: Arial;
+	font-size: 19px;
+	font-weight: bold;
+	clear:both;
+	margin:0 0 25px 0;
+}
+.main-content #hotel-list-wrapper {
+	width: 765px;
+	margin:0 0 20px 0;
+}
+.main-content #hotel-list-wrapper .hotel-list-header {
+	background: url('../images/sprite_general.png') no-repeat -298px -2173px;
+	height: 51px;
+	position:relative;
+	z-index:3;
+}
+.main-content #hotel-list-wrapper .hotel-list-contents > ul.contents > li.row {
+	padding:15px 0 11px;
+	background: url('../images/sprite_general.png') no-repeat -153px -3741px;
+	width: 765px;
+	float:left;
+	clear:both;
+	min-height:216px;
+	position:relative;
+}
+.main-content #hotel-list-wrapper .hotel-list-contents > ul.contents > li.row.is-opened { background: url("../images/sprite_general.png") no-repeat scroll -12px -5422px transparent; }
+.main-content #hotel-list-wrapper .hotel-list-contents > ul.contents > li.row .field-image {
+	padding:0 17px;
+	float:left;
+}
+.main-content #hotel-list-wrapper .hotel-list-contents > ul.contents > li.row .field-title {
+	margin:0 0 9px 0;
+	float:left;
+	width:375px;
+}
+.main-content #hotel-list-wrapper .hotel-list-contents > ul.contents > li.row .field-title .title {
+	margin:0 9px 0 0;
+	float:left;
+	font:bold 22px/16px Arial, Helvetica, sans-serif;
+	color:#121f36;
+}
+.main-content #hotel-list-wrapper .hotel-list-contents > ul.contents > li.row .field-title .sters {
+	float: left;
+	padding: 3px 0 0;
+	width: 258px;
+}
+.main-content #hotel-list-wrapper .hotel-list-contents > ul.contents > li.row .field-title .sters ul li {
+	margin:0 1px;
+	float:left;
+	text-indent:-999999px;
+	background: url('../images/sprite_general.png') no-repeat -32px -371px;
+	width: 11px;
+	height: 11px;
+}
+.main-content #hotel-list-wrapper .hotel-list-contents > ul.contents > li.row .field-city {
+	margin:0 0 17px 0;
+	float:left;
+	width: 395px;
+	font:bold 14px/14px Arial, Helvetica, sans-serif;
+}
+.main-content #hotel-list-wrapper .hotel-list-contents > ul.contents > li.row .field-includes {
+	color: #E84C09;
+	float: left;
+	font: bold 12px/12px Arial, Helvetica, sans-serif;
+	margin: 16px 0 0;
+	text-align: right;
+	width: 175px;
+}
+.main-content #hotel-list-wrapper .hotel-list-contents > ul.contents > li.row .field-city .city-name { color:#3c5e90; }
+.main-content #hotel-list-wrapper .hotel-list-contents > ul.contents > li.row .field-city .map-link {
+	color:#121f36;
+	cursor:pointer;
+}
+.main-content #hotel-list-wrapper .hotel-list-contents > ul.contents > li.row .field-book-review {
+	float: left;
+	text-align: right;
+	width: 193px;
+}
+.main-content #hotel-list-wrapper .hotel-list-contents > ul.contents > li.row .field-book-review span {
+	color: #121F36;
+	font: 30px/27px "FuturaGreekBoldRegular";
+	height: 27px;
+	letter-spacing: -2px;
+}
+.main-content #hotel-list-wrapper .hotel-list-contents > ul.contents > li.row .field-book-button {
+	text-transform:uppercase;
+	background: url('../images/sprite_general.png') no-repeat -16px -3510px;
+	float:left;
+	width:160px;
+	margin:17px 0 0 12px;
+}
+.main-content #hotel-list-wrapper .hotel-list-contents > ul.contents > li.row .field-book-button span {
+	background: url('../images/sprite_general.png') no-repeat -14px -3741px;
+	height:32px;
+	width:104px;
+	font: 17px/31px "FuturaGreekBoldRegular";
+	color:#ffffff;
+	padding:0 11px;
+	margin:0 0 0 33px;
+	display:block;
+	text-align:center;
+	cursor:pointer;
+}
+.main-content #hotel-list-wrapper .hotel-list-contents > ul.contents > li.row .field-book-button span:hover { background: url('../images/sprite_general.png') no-repeat -16px -3831px; }
+.main-content #hotel-list-wrapper .hotel-list-contents > ul.contents > li.row .field-description {
+	margin:0 0 6px 0;
+	font:normal 12px/18px Arial, Helvetica, sans-serif;
+	color:#666666;
+	width:398px;
+	float:left;
+}
+.main-content #hotel-list-wrapper .hotel-list-contents > ul.contents > li.row .field-description .more-link {
+	color:#172841;
+	text-decoration:none;
+}
+.main-content #hotel-list-wrapper .hotel-list-contents > ul.contents > li.row .field-description .more-link:hover { text-decoration:underline; }
+.main-content #hotel-list-wrapper .hotel-list-contents > ul.contents > li.row .field-latest-info {
+	float:left;
+	width:200px;
+	margin:0 0 6px 0;
+	color:#00aeef;
+	font:normal 11px/18px Arial, Helvetica, sans-serif;
+}
+#hotel-list-wrapper .hotel-list-contents-bottom {
+	float:right;
+	width:602px;
+}
+#hotel-list-wrapper .hotel-list-contents-bottom .moretypes {
+	float:right;
+	margin:11px 25px 0 0;
+}
+#hotel-list-wrapper .hotel-list-contents-bottom .moretypes a {
+	display:block;
+	text-decoration:none;
+	color:#3c5e90;
+	font:bold 11px Arial, Helvetica, sans-serif;
+	background:url("../images/sprite_general.png") no-repeat scroll -1580px -2575px transparent;
+	padding-left:12px;
+}
+#hotel-list-wrapper .hotel-list-contents-bottom .moretypes a:hover { text-decoration:underline; }
+#hotel-list-wrapper .hotel-list-contents-bottom .moretypes a.arrow-up { background: url("../images/sprite_general.png") no-repeat scroll -1579px -2623px transparent; }
+.main-content #hotel-list-wrapper .hotel-list-contents > ul.contents > li.row .field.field-moved-background {
+	background: url('../images/sprite_general.png') no-repeat -153px -3850px;
+	height:137px;
+	position:absolute;
+	z-index:0;
+	bottom:0;
+	left:0;
+	width:765px;
+}
+.ie7 .main-content #hotel-list-wrapper .hotel-list-contents > ul.contents > li.row .field.field-moved-background { z-index:-1; }
+.ie8 .main-content #hotel-list-wrapper .hotel-list-contents > ul.contents > li.row .field.field-moved-background { z-index:0; }
+.main-content #hotel-list-wrapper .hotel-list-contents > ul.contents > li.row .field {
+	position:relative;
+	z-index:2;
+	display:block;
+}
+/********************************************************/
+/***************** Hotel Rows Facilities ****************/
+/********************************************************/
+
+.main-content #hotel-list-wrapper .hotel-list-contents > ul.contents > li.row .field-facilities {
+	float: right;
+	width: 602px;
+	overflow:hidden;
+	height:71px;
+}
+.main-content #hotel-list-wrapper .hotel-list-contents > ul.contents > li.row .field-facilities > ul.contents > li.row {
+	padding:4px 0;
+	float:left;
+	clear:both;
+	width:651px;
+	border-bottom:1px solid #dadada;
+}
+.main-content #hotel-list-wrapper .hotel-list-contents > ul.contents > li.row .field-facilities > ul.contents > li.row.first { border-top:1px solid #dadada; }
+.main-content #hotel-list-wrapper .hotel-list-contents > ul.contents > li.row .field-facilities > ul.contents > li.row.hidden {
+	opacity:0;
+	filter:alpha(opacity=0);
+}
+.main-content #hotel-list-wrapper .hotel-list-contents > ul.contents > li.row .field-facilities > ul.contents > li.row .row-field {
+	float:left;
+	font:normal 12px/14px Arial, Helvetica, sans-serif;
+}
+.main-content #hotel-list-wrapper .hotel-list-contents > ul.contents > li.row .field-facilities > ul.contents > li.row .field-room-view { width:355px; }
+.main-content #hotel-list-wrapper .hotel-list-contents > ul.contents > li.row .field-facilities > ul.contents > li.row .field-room-availability { width:131px; }
+.main-content #hotel-list-wrapper .hotel-list-contents > ul.contents > li.row .field-facilities > ul.contents > li.row .field-room-price { width:75px; }
+.main-content #hotel-list-wrapper .hotel-list-contents > ul.contents > li.row .field-facilities > ul.contents > li.row .field-room-package { width:132px; }
+.main-content #hotel-list-wrapper .hotel-list-contents > ul.contents > li.row .field-facilities > ul.contents > li.row .row-field .strong { font-weight:bold; }
+.main-content #hotel-list-wrapper .hotel-list-contents > ul.contents > li.row .field-facilities > ul.contents > li.row .row-field .orange { color:#e84c09; }
+.main-content #hotel-list-wrapper .hotel-list-contents > ul.contents > li.row .field-facilities > ul.contents > li.row .row-field .small { font-size:11px; }
+.main-content #hotel-list-wrapper .bottom-layer {
+	clear: both;
+	background: url('../images/sprite_general.png') no-repeat -10px -4740px;
+	height: 59px;
+}
+/***************************************/
+/***************** Cars ****************/
+/***************************************/
+
+ #car-list-wrapper {
+	margin:0 0 29px 0;
+	width: 835px;
+	float:left;
+}
+#car-list-wrapper .car-list-header {
+	background: url('../images/sprite_general.png') no-repeat -298px -2173px;
+	height: 51px;
+	position:relative;
+	z-index:3;
+}
+#hotel-list-wrapper .hotel-list-header .hotel-page-info, #car-list-wrapper .car-list-header .car-page-info {
+	display:block;
+	float:left;
+	font:11px/14px Arial, Helvetica, sans-serif;
+	color:#4b4b4b;
+	margin:20px 0 0 19px;
+}
+#hotel-list-wrapper .hotel-list-header .hotel-date-info, #car-list-wrapper .car-list-header .car-date-info {
+	display:block;
+	float:left;
+	font:bold 11px/14px Arial, Helvetica, sans-serif;
+	color:#4b4b4b;
+	margin:20px 0 0 175px;
+}
+#hotel-list-wrapper .hotel-list-header span.strong, #car-list-wrapper .car-list-header span.strong { font-weight:bold; }
+#hotel-list-wrapper .hotel-list-header .pagination, #car-list-wrapper .car-list-header .pagination {
+	float:right;
+	margin:20px 26px 0 0;
+}
+#hotel-list-wrapper .hotel-list-header .pagination ul li, #car-list-wrapper .car-list-header .pagination ul li { float:left; }
+#hotel-list-wrapper .hotel-list-header .pagination ul li.current span, #car-list-wrapper .car-list-header .pagination ul li.current span { font-weight:bold; }
+#hotel-list-wrapper .hotel-list-header .pagination ul li span, #hotel-list-wrapper .hotel-list-header .pagination ul li a, #car-list-wrapper .car-list-header .pagination ul li span, #car-list-wrapper .car-list-header .pagination ul li a {
+	border-right:1px solid #616161;
+	height:11px;
+	margin:0;
+	padding: 0 4px;
+	display:block;
+	font:11px/12px Arial, Helvetica, sans-serif;
+	color:#4b4b4b;
+	text-decoration:none;
+}
+.pagination ul li a:hover { text-decoration:underline!important; }
+#car-list-wrapper .car-list-header .pagination ul li.last a, #hotel-list-wrapper .hotel-list-header .pagination ul li.last a {
+	border-right:none!important;
+	padding:0 11px 0 2px!important;
+	background: url("../images/sprite_general.png") no-repeat scroll -1552px -2574px transparent;
+}
+#car-list-wrapper .car-list-header .pagination ul li.first a, #hotel-list-wrapper .hotel-list-header .pagination ul li.first a {
+	padding:0 2px 0 11px!important;
+	background: url("../images/sprite_general.png") no-repeat scroll -1484px -2575px transparent;
+}
+#hotel-list-wrapper .hotel-list-header .sorting, body.page-flights-results-2 .hotel-list-header .sorting, #car-list-wrapper .car-list-header .sorting {
+	float:right;
+	margin:12px 17px 0 0;
+	position: relative;
+	width:166px;
+}
+#hotel-list-wrapper .hotel-list-header .sorting input.selectbox, #car-list-wrapper .car-list-header .sorting input.selectbox {
+	background: url("../images/sprite_general.png") no-repeat scroll -646px -187px #FFFFFF;
+	border: 1px solid #D8D8D8;
+	color: #737373;
+	cursor: pointer;
+	float: right;
+	padding: 5px 8px;
+	width: 149px;
+}
+#hotel-list-wrapper .hotel-list-header .sorting .selectbox-wrapper li, #car-list-wrapper .car-list-header .sorting .selectbox-wrapper li {
+	background-color: #FFFFFF;
+	border-top: 1px solid #D8D8D7;
+	clear: left;
+	color: #737373;
+	cursor: pointer;
+	float: left;
+	font: bold 11px/33px Arial, Helvetica, sans-serif;
+	height: 33px;
+	padding: 0 8px;
+	width: 149px;
+}
+#hotel-list-wrapper .hotel-list-header .sorting .selectbox-wrapper li:hover, #car-list-wrapper .car-list-header .sorting .selectbox-wrapper li:hover {
+	background:#172842;
+	color:#ffffff;
+}
+#hotel-list-wrapper .hotel-list-header .sorting .selectbox-wrapper, #car-list-wrapper .car-list-header .sorting .selectbox-wrapper {
+	background: none repeat scroll 0 0 #FFFFFF;
+	border: 1px solid #D8D8D8;
+	font-family: Arial;
+	padding: 0;
+	position: absolute;
+	left:0;
+	top: 25px;
+	z-index: 99999;
+	width:165px!important;
+}
+/*******************************************/
+/************* Car Content Rows ************/
+/*******************************************/
+
+ #car-list-wrapper .car-list-contents > ul.contents > li.row {
+	padding:15px 22px 15px 0;
+	background: url('../images/sprite_general.png') no-repeat -491px -5805px;
+	width: 813px;
+	float:left;
+	clear:both;
+	min-height: 179px;
+	position:relative;
+}
+#car-list-wrapper .car-list-contents > ul.contents > li.row .field-image {
+	padding:0 17px;
+	float:left;
+}
+#car-list-wrapper .car-list-contents > ul.contents > li.row .field-title {
+	margin:0 0 9px 0;
+	float:left;
+	width:480px;
+	letter-spacing:-0.5px;
+	word-spacing:-3px;
+}
+#car-list-wrapper .car-list-contents > ul.contents > li.row .field-title span {
+	font: 22px/16px Arial, Helvetica, sans-serif;
+	color:#121f36;
+	font-weight:normal;
+}
+#car-list-wrapper .car-list-contents > ul.contents > li.row .field-title .title {
+	margin:0 9px 0 0;
+	float:left;
+	font-weight:bold;
+}
+#car-list-wrapper .car-list-contents > ul.contents > li.row .field-book-price {
+	float:right;
+	width: 135px
+}
+#car-list-wrapper .car-list-contents > ul.contents > li.row .field-book-price span {
+	color: #121F36;
+	display: block;
+	font: 30px/27px "FuturaGreekBoldRegular";
+	height: 27px;
+}
+#car-list-wrapper .car-list-contents > ul.contents > li.row .field-book-button {
+	background: url('../images/sprite_general.png') no-repeat -16px -3510px;
+	float:right;
+	width:160px;
+	margin: -13px 0 5px;
+}
+#car-list-wrapper .car-list-contents > ul.contents > li.row .field-book-button span:hover { background: url('../images/sprite_general.png') no-repeat -16px -3831px; }
+#car-list-wrapper .car-list-contents > ul.contents > li.row .field-book-button span {
+	text-transform:uppercase;
+	background: url('../images/sprite_general.png') no-repeat -14px -3741px;
+	height:32px;
+	width:104px;
+	font: 17px/32px "FuturaGreekBoldRegular";
+	color:#ffffff;
+	padding:0 11px;
+	margin:0 0 0 33px;
+	display:block;
+	text-align:center;
+	cursor:pointer;
+}
+#car-list-wrapper .car-list-contents > ul.contents > li.row .field-category {
+	float:left;
+	width: 413px;
+	margin:0 0 9px 0;
+}
+#car-list-wrapper .car-list-contents > ul.contents > li.row .field-category span { font: bold 16px/14px Arial, Helvetica, sans-serif; }
+#car-list-wrapper .car-list-contents > ul.contents > li.row .field-category .component-title { color:#3c5e90; }
+/*************************************************/
+/************* Car Content Row icons *************/
+/*************************************************/
+
+ #car-list-wrapper .car-list-contents > ul.contents > li.row .field-icons {
+	float:left;
+	width:462px;
+	margin:0 0 16px 0;
+}
+#car-list-wrapper .car-list-contents > ul.contents > li.row .field-icons > ul.contents > li.row-icon {
+	float:left;
+	margin:0 17px 0 0;
+}
+#car-list-wrapper .car-list-contents > ul.contents > li.row .field-icons > ul.contents > li.row-icon span {
+	display:block;
+	height:19px;
+	font:bold 14px/19px Arial, Helvetica, sans-serifl;
+	color:#121f36;
+	padding:0 0 0 26px;
+}
+#car-list-wrapper .car-list-contents > ul.contents > li.row .field-icons > ul.contents > li.row-icon .persons { background: url('../images/sprite_general.png') no-repeat -889px -4137px; }
+#car-list-wrapper .car-list-contents > ul.contents > li.row .field-icons > ul.contents > li.row-icon .doors { background: url('../images/sprite_general.png') no-repeat -889px -4162px; }
+#car-list-wrapper .car-list-contents > ul.contents > li.row .field-icons > ul.contents > li.row-icon .snow { background: url('../images/sprite_general.png') no-repeat -889px -4188px; }
+#car-list-wrapper .car-list-contents > ul.contents > li.row .field-icons > ul.contents > li.row-icon .speed { background: url('../images/sprite_general.png') no-repeat -888px -4213px; }
+/****************************************************/
+/************* Car Content Rows Includes ************/
+/****************************************************/
+
+ #car-list-wrapper .car-list-contents > ul.contents > li.row .field-includes {
+	float:left;
+	width: 497px;
+}
+#car-list-wrapper .car-list-contents > ul.contents > li.row .field-includes .component-title {
+	display:block;
+	clear:both;
+	font: bold 14px/14px Arial, Helvetica, sans-serif;
+	color:#e84c09;
+	margin:0 0 8px 0;
+}
+#car-list-wrapper .car-list-contents > ul.contents > li.row .field-includes .features { overflow:hidden; }
+#car-list-wrapper .car-list-contents > ul.contents > li.row .field-includes .features > ul.contents > li.row {
+	float:left;
+	margin:0 11px 0 0;
+	font: 12px/14px Arial, Helvetica, sans-serif;
+}
+#car-list-wrapper .car-list-contents > ul.contents > li.row .field-includes .features > ul.contents > li.row span {
+	padding:0 0 0 23px;
+	background: url('../images/sprite_general.png') no-repeat -889px -4236px;
+}
+#car-list-wrapper .car-list-contents > ul.contents > li.row .field-includes .features > ul.contents > li.row .feature-title {
+	color:#e84c09;
+	text-transform:uppercase;
+	font-weight:bold;
+}
+#car-list-wrapper .car-list-contents > ul.contents > li.row .field-save {
+	float:right;
+	width:126px;
+	height:32px;
+	background: url('../images/sprite_general.png') no-repeat -698px -4408px;
+	margin: -8px 0 0;
+	cursor:pointer;
+}
+#car-list-wrapper .car-list-contents > ul.contents > li.row .field-save span {
+	display:block;
+	font: bold 14px/14px Arial, Helvetica, sans-serif;
+	color:#ffffff;
+	margin:9px 0 0 36px;
+}
+#car-list-wrapper .car-list-contents > ul.contents > li.row .field-link-term {
+	float:left;
+	margin:20px 0 0 16px;
+}
+#car-list-wrapper .car-list-contents > ul.contents > li.row .field-link-term a {
+	display:block;
+	font:normal 12px/18px Arial, Helvetica, sans-serif;
+	color:#00aeef;
+	text-decoration:none;
+}
+#car-list-wrapper .car-list-contents > ul.contents > li.row .field-link-term a:hover { text-decoration:underline; }
+#car-list-wrapper .car-list-contents > ul.contents > li.row .field-availability {
+	color: #121F36;
+	float: right;
+	font: 12px/18px Arial, Helvetica, sans-serif;
+	margin: -15px 127px 0 0;
+	width: 500px;
+}
+#car-list-wrapper .car-list-contents > ul.contents > li.row .field-availability .strong { font-weight:bold; }
+#car-list-wrapper .car-list-contents > ul.contents > li.row .field-share-icons {
+	float:right;
+	width: 626px;
+}
+#car-list-wrapper .share-toolbar {
+	float: left;
+	padding-left: 0;
+	padding-top: 12px;
+}
+#car-list-wrapper .share-toolbar .separator, #plus-three-days .ui-tabs-panel   .result .share-toolbar .separator {
+	background: url("../images/sprite_general.png") no-repeat scroll -1474px -2662px transparent;
+	float: left;
+	height: 14px;
+	margin: -2px 10px 0;
+	width: 12px;
+}
+#car-list-wrapper .share-toolbar .printer-icon a, #plus-three-days .ui-tabs-panel   .result .share-toolbar .printer-icon a {
+	background: url("../images/sprite_general.png") no-repeat scroll -1583px -2662px transparent;
+	height: 14px;
+	margin-right: 10px;
+	margin-top: -2px;
+	width: 14px;
+}
+#car-list-wrapper .share-toolbar .mail-icon a, #plus-three-days .ui-tabs-panel   .result .share-toolbar .mail-icon a {
+	background: url("../images/sprite_general.png") no-repeat scroll -1512px -2664px transparent;
+	height: 11px;
+	margin-right: 10px;
+	width: 14px;
+}
+#car-list-wrapper .star-icon a, #plus-three-days .ui-tabs-panel   .result .share-toolbar .star-icon a {
+	background: url("../images/sprite_general.png") no-repeat scroll -1553px -2665px transparent;
+	height: 11px;
+	margin-right: 10px;
+	width: 11px;
+}
+#car-list-wrapper .addthis_toolbox.addthis_default_style, #plus-three-days .ui-tabs-panel   .result .addthis_toolbox.addthis_default_style {
+	float: left;
+	padding-top: 1px;
+}
+#car-list-wrapper .share-toolbar a.addthis_button_compact, #plus-three-days .ui-tabs-panel   .result .share-toolbar a.addthis_button_compact {
+	color: #606060;
+	font-family: Arial;
+	font-size: 11px;
+	line-height: 11px;
+	padding: 0;
+	text-decoration: none;
+}
+#car-list-wrapper .addthis_toolbox.addthis_default_style span, #plus-three-days .ui-tabs-panel   .result .addthis_toolbox.addthis_default_style span {
+	background: url("../images/sprite_general.png") no-repeat scroll -1414px -2665px transparent;
+	height: 11px;
+	line-height: 11px;
+	margin-right: 0;
+}
+#car-list-wrapper .share-toolbar .printer-icon, #car-list-wrapper .share-toolbar .mail-icon, #car-list-wrapper .share-toolbar .star-icon, #plus-three-days .ui-tabs-panel   .result .share-toolbar .printer-icon, #plus-three-days .ui-tabs-panel   .result .share-toolbar .mail-icon, #plus-three-days .ui-tabs-panel   .result .share-toolbar .star-icon { float: left; }
+#car-list-wrapper .share-toolbar .printer-icon, #car-list-wrapper .share-toolbar .mail-icon, #car-list-wrapper .share-toolbar .star-icon, #plus-three-days .ui-tabs-panel   .result .share-toolbar .printer-icon, #plus-three-days .ui-tabs-panel   .result .share-toolbar .mail-icon, #plus-three-days .ui-tabs-panel   .result .share-toolbar .star-icon { float: left; }
+#car-list-wrapper .share-toolbar .printer-icon, #car-list-wrapper .share-toolbar .mail-icon, #car-list-wrapper .share-toolbar .star-icon, #plus-three-days .ui-tabs-panel   .result .share-toolbar .printer-icon, #plus-three-days .ui-tabs-panel   .result .share-toolbar .mail-icon, #plus-three-days .ui-tabs-panel   .result .share-toolbar .star-icon { float: left; }
+#car-list-wrapper .share-toolbar a, #plus-three-days .ui-tabs-panel   .result .share-toolbar a {
+	display: block;
+	text-decoration: none;
+}
+/*****************************************************/
+/************* Car Contents Rows Levels **************/
+/*****************************************************/
+
+#car-list-wrapper .car-list-contents > ul.contents > li.row .field-level {
+	position:absolute;
+	left:-8px;
+	bottom:35px;
+	width: 157px;
+	height: 36px;
+	display:block;
+}
+#car-list-wrapper .car-list-contents > ul.contents > li.row .field-level span {
+	display:block;
+	font:bold 14px/14px Arial, Helvetica, sans-serif;
+	color:#ffffff;
+	margin:6px 0 0 32px;
+}
+#car-list-wrapper .car-list-contents > ul.contents > li.row .field-level.excellent { background: url('../images/sprite_general.png') no-repeat -886px -4263px; }
+#car-list-wrapper .car-list-contents > ul.contents > li.row .field-level.top { background: url('../images/sprite_general.png') no-repeat -887px -4307px; }
+#car-list-wrapper .car-list-contents > ul.contents > li.row .field-level.limited { background: url('../images/sprite_general.png') no-repeat -887px -4350px; }
+#car-list-wrapper .car-list-contents > ul.contents > li.row .field-level.treat { background: url('../images/sprite_general.png') no-repeat -887px -4393px; }
+#car-list-wrapper .bottom-layer {
+	clear: both;
+	background: url('../images/sprite_general.png') no-repeat -10px -4740px;
+	height: 59px;
+}
+body.page-flights-results-2 .block { clear:both; }
+/****************************************************/
+/************* Login Area - Ui Tabs  ****************/
+/****************************************************/
+
+#login-area {
+	width: 836px;
+	margin:0 0 34px 0;
+}
+#login-area #flights-step2-tabs ul { width: 836px; }
+#login-area #flights-step2-tabs ul li { margin:0 12px 0 0; }
+#login-area #flights-step2-tabs ul li a {
+	font: 20px/19px 'FuturaGreekBoldRegular';
+	height:33px;
+	padding:10px 30px 0;
+	position:relative;
+	display:block;
+	background: url('../images/sprite_general.png') no-repeat -10px -4677px;
+}
+#login-area #flights-step2-tabs ul li a span {
+	position:absolute;
+	right:-9px;
+	top:0;
+	background: url('../images/sprite_general.png') no-repeat -11px -4630px;
+	width: 9px;
+	height:43px;
+}
+#login-area #flights-step2-tabs ul li.ui-tabs-selected a, #login-area #flights-step2-tabs ul li a:hover { background: url('../images/sprite_general.png') no-repeat -9px -4580px; }
+#login-area #flights-step2-tabs ul li.ui-tabs-selected a span, #login-area #flights-step2-tabs ul li a:hover span { background: url('../images/sprite_general.png') no-repeat -25px -4630px; }
+#login-area #flights-step2-tabs { clear:both; }
+#login-area .contents {
+	/*background: url('../images/sprite_general.png') no-repeat -10px -4808px;*/
+	height: 179px;
+	clear:both;
+}
+#login-area .contents .tab-content { padding:29px 39px; }
+#login-area .contents .tab-content .login-form .form-item {
+	float:left;
+	margin:26px 23px 0 0;
+}
+#login-area .contents .tab-content .component-title {
+	font-size:12px;
+	font-family:Arial;
+	color:#000;
+}
+#login-area .contents .tab-content .login-form .webform-type-textfield .form-item-wrapper {
+	height:33px;
+	border:1px solid #d8d8d8;
+	width:209px;
+	background:#ffffff;
+}
+#login-area .contents .tab-content .login-form .webform-type-submit .form-item-wrapper {
+	cursor:pointer;
+	margin: 24px 0 0;
+	height:33px;
+	width:127px;
+	background: url("../images/sprite_general.png") no-repeat scroll -14px -3741px transparent;
+}
+#login-area .contents .tab-content .login-form .webform-type-submit .form-item-wrapper:hover { background: url('../images/sprite_general.png') no-repeat -16px -3831px; }
+#login-area .contents .tab-content .login-form .form-item label {
+	clear:both;
+	display:block;
+	font:normal 12px/14px Arial, Helvetica, sans-serif;
+	margin:0 0 9px 0;
+}
+#login-area .contents .tab-content .login-form .form-item .input-text {
+	border:medium none;
+	background:none;
+	display:block;
+	padding:9px;
+	width:191px;
+}
+#login-area .contents .tab-content .login-form .form-item .input-submit {
+	border:medium none;
+	background:none;
+	display:block;
+	cursor:pointer;
+	text-transform:uppercase;
+	color:#ffffff;
+	font:19px/19px "FuturaGreekBoldRegular";
+	margin:0 auto;
+}
+#login-area .contents .tab-content .rememberpassword {
+	float:left;
+	clear:both;
+	padding-top:10px;
+}
+#login-area .contents .tab-content .rememberpassword a {
+	font-size:11px;
+	color:#00aeef;
+	font-family:Arial;
+	text-decoration:none;
+}
+#login-area .contents .tab-content .rememberpassword a:hover { text-decoration:underline; }
+/********************************************************************************/
+/******************************** Flights Step 5 ********************************/
+/********************************************************************************/
+/***********************************************/
+/***************** Step Container **************/
+/***********************************************/
+
+#booking-message {
+	width:754px;
+	margin:0 0 25px 0;
+}
+#booking-message .message-title {
+	font:bold 18px/24px Arial, Helvetica, sans-serif;
+	color:#172841;
+}
+#booking-message span { font:normal 16px/24px Arial, Helvetica, sans-serif; }
+#booking-details {
+	overflow:hidden;
+	height:0;
+}
+.flight-title-info { cursor:pointer; }
+body.page-flights-results-5 .step-container { padding: 10px 0 20px; }
+body.page-flights-results-5 .step-container .step-area-info {
+	color: #172841;
+	display: inline-block;
+	font-family: Arial;
+	font-size: 19px;
+	font-weight: bold;
+}
+body.page-flights-results-5 .main-content {
+	float:left;
+	width:836px;
+}
+body.page-flights-results-5 .right-column {
+	float:left;
+	margin:0 0 0 28px
+}
+/***************************************************/
+/***************** Passenger Details **************/
+/**************************************************/
+
+#passenger-details-container {
+	width:397px;
+	float:left;
+}
+#passenger-details-container .top-layer {
+	height:84px; /*background: url('../images/sprite_general.png') no-repeat -860px -4730px;*/
+	padding:17px 16px;
+}
+#passenger-details-container .top-layer .component-title {
+	clear:both;
+	display:block;
+	margin:0 0 44px 0;
+	font:bold 20px/20px Arial, Helvetica, sans-serif;
+	color:#172841;
+	padding:0 0 0 42px;
+	background: url('../images/sprite_general.png') no-repeat -314px -4694px;
+}
+#passenger-details-container .top-layer .label-passengers {
+	color: #172841;
+	display: block;
+	float: left;
+	font: bold 16px/20px Arial, Helvetica, sans-serif;
+	margin: 0 0 0 14px;
+}
+#passenger-details-container .top-layer .num-of-passengers {
+	float:left;
+	font:bold 16px/20px Arial, Helvetica, sans-serif;
+	color:#e84c09;
+}
+#passenger-details-container .content-layer {
+	padding:21px 32px 24px; /*background:#ffffff;*/
+	overflow:hidden;
+}
+#passenger-details-container .content-layer ul li {
+	float:left;
+	width:351px;
+}
+#passenger-details-container .content-layer ul li .row-item { float:left; }
+#passenger-details-container .content-layer ul li .left-col {
+	width:152px;
+	color:#172841;
+	font:normal 14px/20px Arial, Helvetica, sans-serif;
+}
+#passenger-details-container .content-layer ul li .right-col {
+	width:137px;
+	font:bold 14px/20px Arial, Helvetica, sans-serif;
+}
+#passenger-details-container .bottom-layer {
+	background: url("../images/sprite_general.png") no-repeat scroll -860px -4977px transparent;
+	height:10px;
+}
+/***************************************************/
+/********************* Flights ********************/
+/**************************************************/
+
+ #flight-details-container {
+	width:397px;
+	float:right;
+}
+#flight-details-container .top-layer {
+	height:64px; /*background: url('../images/sprite_general.png') no-repeat -860px -4730px;*/
+	padding:17px 16px;
+}
+#flight-details-container .top-layer .component-title {
+	height: 30px;
+	clear:both;
+	display:block;
+	margin:0 0 44px 0;
+	font:bold 20px/20px Arial, Helvetica, sans-serif;
+	color:#172841;
+	padding:0 0 0 42px;
+	background: url('../images/sprite_general.png') no-repeat -317px -4646px;
+}
+#flight-details-container .top-layer .label-passengers {
+	float:left;
+	display:block;
+	font:bold 16px/20px Arial, Helvetica, sans-serif;
+	color:#172841;
+}
+#flight-details-container .top-layer .num-of-passengers {
+	float:left;
+	font:bold 16px/20px Arial, Helvetica, sans-serif;
+	color:#e84c09;
+}
+#flight-details-container .content-layer {
+	padding:0 26px 60px; /*background:#ffffff;*/
+	overflow:hidden;
+}
+#flight-details-container .content-layer ul li {
+	float:left;
+	width:321px;
+	padding:8px 0 8px 29px;
+	background: url("../images/sprite_general.png") no-repeat scroll -31px -4303px transparent
+}
+#flight-details-container .content-layer ul li .row-item { float:left; }
+#flight-details-container .content-layer ul li .row-col {
+	width:327px;
+	color:#172841;
+	font:bold 14px/20px Arial, Helvetica, sans-serif;
+}
+#flight-details-container .bottom-layer {
+	background: url("../images/sprite_general.png") no-repeat scroll -860px -4977px transparent;
+	height:10px;
+}
+#booking-details .flight-info-container {
+	clear:both;
+	margin:43px 0 0 0;
+	width:836px;
+	float: left;
+}
+#booking-details .flight-info-container .top-layer {
+	height:62px;
+	background: url('../images/sprite_general.png') no-repeat -6px -6677px;
+	padding: 20px 0 15px 21px;
+	height:27px;
+}
+#booking-details .flight-info-container .top-layer .component-title {
+	height:30px;
+	display:block;
+	color:#172841;
+	font:bold 20px/20px Arial, Helvetica, sans-serif;
+	padding:2px 0 0 42px;
+	background: url('../images/sprite_general.png') no-repeat -316px -4601px;
+}
+#booking-details .flight-info-container.inbound .top-layer .component-title { background: url('../images/sprite_general.png') no-repeat -307px -4524px; }
+#booking-details .flight-info-container .content-layer {
+	background:#ffffff;
+	padding:17px 0;
+}
+#booking-details .flight-info-container .content-layer ul.list-wrapper { overflow:hidden; }
+#booking-details .flight-info-container .content-layer ul.list-wrapper li {
+	width:804px;
+	float:left;
+	padding:8px 0 8px 32px;
+}
+#booking-details .flight-info-container .content-layer ul.list-wrapper li .row-col {
+	float:left;
+	color:#172841;
+}
+#booking-details .flight-info-container .content-layer ul.list-wrapper li .left-col {
+	width:136px;
+	font:normal 14px/20px Arial, Helvetica, sans-serif;
+}
+#booking-details .flight-info-container .content-layer ul.list-wrapper li .right-col {
+	width:369px;
+	font:bold 14px/20px Arial, Helvetica, sans-serif;
+}
+#booking-details .flight-info-container .content-layer ul.list-wrapper li.row-1 { background:#eceaea; }
+#booking-details .flight-info-container .bottom-layer {
+	background: url("../images/sprite_general.png") no-repeat scroll -6px -6984px transparent;
+	height:10px;
+}
+#booking-details #passenger-details-container, #booking-details #flight-details-container { background:url("../images/sprite_general.png") no-repeat scroll -860px -4730px transparent; }
+#booking-details #passenger-details-container .content-layer { padding:5px 32px 23px; }
+#booking-details #flight-details-container .content-layer { padding:0 26px 42px; }
+/***********************************************/
+/************** Hotel Main Results *************/
+/***********************************************/
+
+body.page-hotels-results .hotel-results-title {
+	margin:25px 0 8px 0;
+	clear:left;
+	overflow: hidden;
+}
+body.page-hotels-results .hotel-results-title span { float:left; }
+body.page-hotels-results .hotel-results-title .component-title {
+	font:bold 19px/18px Arial, Helvetica, sans-serif;
+	display:block;
+	color:#172841;
+	width:650px;
+	padding: 7px 0 0;
+}
+body.page-hotels-results .hotel-results-title #show-hide-map {
+	background: url("../images/sprite_general2.png") no-repeat scroll -241px -99px transparent;
+	font: bold 12px/18px Arial, Helvetica, sans-serif;
+	height: 28px;
+	padding: 9px 0 0 0;
+	text-align: right;
+	width: 99px;
+	cursor:pointer;
+}
+body.page-hotels-results .hotel-results-title #show-hide-map:hover { text-decoration:underline; }
+body.page-hotels-results .main-content { float: right; width:765px }
+body.page-hotels-results .main-content #hotel-list-wrapper {
+	clear: left;
+	float:left;
+	margin:25px 0 0 0;
+}
+body.page-hotels-results .main-content #hotel-list-wrapper .hotel-list-header {
+	height:40px;
+	position:relative;
+}
+body.page-hotels-results #hotel-filter-wrapper ul.contents li.filter-item {
+	float:left;
+	background: url('../images/sprite_general2.png') no-repeat -89px -11px;
+	position:relative;
+}
+body.page-hotels-results #hotel-filter-wrapper ul.contents li.filter-item > span {
+	padding:0 10px;
+	display:block;
+	font:bold 12px/40px Arial, Helvetica, sans-serif;
+	cursor:pointer;
+}
+body.page-hotels-results #hotel-filter-wrapper ul.contents li.filter-item.highlight > span, body.page-hotels-results #hotel-filter-wrapper ul.contents li.filter-item > span:hover {
+	background: url('../images/sprite_general2.png') no-repeat -16px -93px;
+	color:#ffffff;
+}
+body.page-hotels-results #hotel-filter-wrapper ul.contents li.filter-item.highlight > span a, body.page-hotels-results #hotel-filter-wrapper ul.contents li.filter-item > span:hover a { color:#ffffff; }
+body.page-hotels-results #hotel-filter-wrapper ul.contents li.filter-item > span a {
+	background: url("../images/arrow-icon.png") no-repeat scroll right 18px transparent;
+	color: #172841;
+	display: block;
+	padding: 0 20px 0 0;
+	text-decoration: none;
+}
+body.page-hotels-results #hotel-filter-wrapper ul.contents li.filter-item.filter-label {
+	background: url('../images/sprite_general2.png') no-repeat -12px -11px;
+	width:67px;
+	height:39px;
+}
+body.page-hotels-results #hotel-filter-wrapper ul.contents li.filter-label > span {
+	padding: 13px 9px 0 12px;
+	font:normal 11px/14px Arial, Helvetica, sans-serif;
+	color:#ffffff;
+	display:block;
+}
+body.page-hotels-results #hotel-filter-wrapper ul.contents li.filter-item.filter-label > span:hover { background:none; }
+body.page-hotels-results #hotel-filter-wrapper ul.contents li.filter-item .option-list-wrapper {
+	background: none repeat scroll 0 0 #FFFFFF;
+	left: 0;
+	position: absolute;
+	top: 40px;
+	min-width: 258px;
+	z-index: 80;
+	overflow:hidden;
+	height:0;
+}
+body.page-hotels-results #hotel-filter-wrapper ul.contents li.filter-item .option-list-wrapper ul > li > span {
+	color:#3c5e90;
+	font: bold 11px/14px Arial, Helvetica, sans-serif;
+	padding:7px 8px;
+	display:block;
+	border-bottom:1px solid #d8d8d8;
+	border-left:1px solid #d8d8d8;
+	border-right:1px solid #d8d8d8;
+	cursor:pointer;
+	letter-spacing:-0.2px;
+}
+body.page-hotels-results #hotel-filter-wrapper ul.contents li.filter-item .option-list-wrapper ul > li > span:hover {
+	background: none repeat scroll 0 0 #172841;
+	color:#ffffff;
+}
+body.page-hotels-results #hotel-list-wrapper .hotel-list-header .pagination { margin: 10px 26px 0 0; }
+#car-list-wrapper .car-list-header .pagination { }
+#hotel-deal-container {
+	background: url('../images/sprite_general2.png') no-repeat -13px -226px;
+	width: 765px;
+	height: 240px;
+	clear:left;
+	margin:15px 0 0 0;
+		border-radius:15px; -moz-border-radius:15px; -webkit-border-radius:15px; ktml-border-radius:15px;
+}
+#hotel-deal-container .top-layer { padding:10px 20px; }
+#hotel-deal-container .top-layer .deal-status {
+	background: url('../images/sprite_general2.png') no-repeat -15px -137px;
+	font: 23px/16px "MyriadProBoldCondensed";
+	color:#ffffff;
+	text-transform:uppercase;
+	display:block;
+	padding:12px 0 7px 36px;
+	float:left;
+}
+#hotel-deal-container .top-layer .deal-status .orange {
+	color:#ff8c00;
+	font: 23px/16px "FuturaGreekBoldRegular";
+	letter-spacing:-1.3px;
+}
+.deal-time-left {
+	float:right;
+	font: bold 18px/16px Arial, Helvetica, sans-serif;
+	color:#ffffff;
+	padding:8px 0 5px 39px;
+	background: url('../images/sprite_general2.png') no-repeat -51px -184px;
+	height:25px;
+}
+.deal-time-left .small {
+	font-size:12px;
+	font-weight:normal;
+}
+#hotel-deal-container .content-layer {
+	background: url('../images/sprite_general2.png') no-repeat -11px -477px;
+	width: 719px;
+	clear:both;
+	margin:8px 10px;
+	float:left;
+	border-radius:15px; -moz-border-radius:15px; -webkit-border-radius:15px; ktml-border-radius:15px; 
+}
+#hotel-deal-container .content-layer { padding:12px 13px 5px 13px; }
+#hotel-deal-container .content-layer .field-image {
+	float:left;
+	width:150px;
+	margin:0 16px 0 0;
+}
+#hotel-deal-container .content-layer .field-sters {
+	float: left;
+	padding: 3px 0 0;
+	width: 420px;
+}
+#hotel-deal-container .content-layer .field-sters > ul > li {
+	background: url("../images/sprite_general.png") no-repeat scroll -32px -371px transparent;
+	float: left;
+	height: 11px;
+	margin: 0 1px;
+	text-indent: -999999px;
+	width: 11px;
+}
+#hotel-deal-container .content-layer .field-review {
+	width:115px;
+	float:left;
+}
+#hotel-deal-container .content-layer .field-review span {
+	font: bold 14px/16px Arial, Helvetica, sans-serif;
+	color:#121f36;
+	float:left;
+}
+#hotel-deal-container .content-layer .field-review .rating-box {
+	background: url("../images/sprite_general2.png") no-repeat scroll -16px -57px transparent;
+	color: #FFFFFF;
+	display: block;
+	font: bold 16px/16px Arial, Helvetica, sans-serif;
+	height: 15px;
+	margin: -8px 0 0 11px;
+	padding: 7px;
+	width: 25px;
+}
+#hotel-deal-container .content-layer .field-title {
+	color: #121F36;
+	float: left;
+	font: bold 22px/16px Arial, Helvetica, sans-serif;
+	margin: 0px 9px 5px 0;
+	width: 430px;
+}
+#hotel-deal-container .content-layer .field-info {
+	width:143px;
+	float:left;
+	font: bold 11px/14px Arial, Helvetica, sans-serif;
+	color:#3c5e90;
+	margin:0px 0 0 0;
+}
+#hotel-deal-container .content-layer .field-city {
+	color: #121F36;
+	float: left;
+	font: bold 14px/14px Arial, Helvetica, sans-serif;
+	margin: 0 9px 0 0;
+	width: 420px;
+}
+#hotel-deal-container .content-layer .field-city .city-name { color:#3c5e90; }
+#hotel-deal-container .content-layer .field-description {
+	color: #121F36;
+	float: left;
+	font: 12px/18px Arial, Helvetica, sans-serif;
+	margin: 2px 9px 0 0;
+	width: 430px;
+	color: #666666;
+}
+#hotel-deal-container .content-layer .field-price {
+	color: #00aeef;
+	font: 30px/27px "FuturaGreekBoldRegular";
+	height: 27px;
+	letter-spacing: -2px;
+	width:108px;
+	float:left;
+}
+#hotel-deal-container .content-layer .field-deal-button {
+	float: right;
+	text-transform: uppercase;
+	width: 160px;
+}
+#hotel-deal-container .content-layer .field-deal-button span {
+	background: url("../images/sprite_general.png") no-repeat scroll -14px -3741px transparent;
+	color: #FFFFFF;
+	cursor: pointer;
+	display: block;
+	font: 17px/31px "FuturaGreekBoldRegular";
+	height: 32px;
+	margin: 0 0 0 33px;
+	padding: 0 11px;
+	text-align: center;
+	width: 104px;
+}
+#hotel-deal-container .content-layer .field-deal-button span:hover { background: url("../images/sprite_general.png") no-repeat scroll -16px -3831px transparent; }
+#hotel-deal-container .content-layer .field-description .more-link {
+	color: #172841;
+	text-decoration: none;
+}
+#hotel-deal-container .content-layer .field-description .more-link:hover { text-decoration:underline; }
+#preview {
+	position:absolute;
+	border:1px solid #ccc;
+	background:#333;
+	padding:5px;
+	display:none;
+	color:#fff;
+	z-index:99999;
+}
+/**********************************/
+/*********** Hotels Main **********/
+/**********************************/
+
+.page-hotels #content #main-col {
+	float:left;
+	margin-left:30px;
+}
+.page-hotels .globaltabs .ui-tabs-panel-center-right ul {
+	height: 178px;
+	min-height: 178px;
+	overflow: auto;
+	width: 100%;
+}
+.page-hotels .globaltabs .ui-tabs-panel-center-right ul .jspContainer {
+	overflow: hidden;
+	position: relative;
+}
+.page-hotels .globaltabs .ui-tabs-panel-center-right ul .jspPane { position: absolute; }
+.page-hotels .globaltabs .jspTrack {
+	background: url("../images/sprite_general.png") no-repeat scroll -845px -3270px transparent;
+	position:relative;
+}
+.page-hotels .globaltabs .jspDrag {
+	background: url("../images/sprite_general.png") no-repeat scroll -960px -2335px transparent;
+	cursor: pointer;
+	left: 0;
+	position: relative;
+}
+.page-hotels .globaltabs .ui-tabs-panel-center-right ul .jspVerticalBar {
+	background: none repeat scroll 0 0 transparent;
+	height: 100%;
+	position: absolute;
+	right: 6px;
+	top: 0;
+	width: 6px;
+}
+.page-hotels .globaltabs .ui-tabs-panel-center-right {
+	margin-bottom: 10px;
+	margin-left: 55px;
+}
+.page-hotels .globaltabs .ui-tabs-panel-center-right ul li a .price { margin:0 0 0 31px; }
+.page-hotels #outer-header { margin:0 0 30px 0; }
+.page-hotels .clear-block {
+	clear:both;
+	display:block;
+}
+.page-hotels .globaltabs .ui-tabs-panel-center-right ul li { margin-right:20px; }
+.page-hotels #hotel-top-destinations, .page-hotels2 #hotel-top-destinations {
+	height:232px;
+	background: url("../images/sprite_general.png") no-repeat scroll -966px -3258px transparent;
+	margin:0 0 30px 0;
+}
+.page-hotels #hotel-top-destinations .hotel-top-destinations-top, .page-hotels2 #hotel-top-destinations .hotel-top-destinations-top {
+	clear: both;
+	overflow: hidden;
+	padding: 16px 30px;
+}
+.page-hotels #hotel-top-destinations .hotel-top-destinations-top .block-title, .page-hotels2 #hotel-top-destinations .hotel-top-destinations-top .block-title {
+	background: url("../images/sprite_general2.png") no-repeat scroll -15px -722px transparent;
+	color: #FFFFFF;
+	display: block;
+	float: left;
+	font: 26px/24px "FuturaGreekBoldRegular";
+	height: 28px;
+	padding: 0 0 0 41px;
+	text-transform: uppercase;
+	width: 300px;
+}
+.page-hotels #hotel-top-destinations .hotel-top-destinations-top .view-all-link, .page-hotels2 #hotel-top-destinations .hotel-top-destinations-top .view-all-link {
+	float:right;
+	margin: 7px 0 0;
+}
+.page-hotels #hotel-top-destinations .hotel-top-destinations-top .view-all-link a, .page-hotels2 #hotel-top-destinations .hotel-top-destinations-top .view-all-link a {
+	font:normal 11px/14px Arial, Helvetica, sans-serif;
+	color:#ffffff;
+	text-decoration:underline;
+}
+.page-hotels #hotel-top-destinations .jcarouzel-wrapper .jcarousel-container-horizontal, .page-hotels2 #hotel-top-destinations .jcarouzel-wrapper .jcarousel-container-horizontal {
+	padding: 0 47px;
+	width: 530px;
+}
+.page-hotels #hotel-top-destinations .jcarouzel-wrapper .jcarousel-clip-horizontal, .page-hotels2 #hotel-top-destinations .jcarouzel-wrapper .jcarousel-clip-horizontal {
+	height: 160px;
+	width: 540px;
+}
+.page-hotels #hotel-top-destinations .globaljcarousel .jcarousel-item-horizontal, .page-hotels2 #hotel-top-destinations .globaljcarousel .jcarousel-item-horizontal { width: 173px; }
+.page-hotels #hotel-top-destinations .hotel-top-destinations-center ul > li > .field-image, .page-hotels2 #hotel-top-destinations .hotel-top-destinations-center ul > li > .field-image {
+	position:relative;
+	margin:0 0 7px 0;
+}
+.page-hotels #hotel-top-destinations .hotel-top-destinations-center ul > li > .field-image .book-link-layer, .page-hotels2 #hotel-top-destinations .hotel-top-destinations-center ul > li > .field-image .book-link-layer {
+	background: none repeat scroll 0 0 #00AEEF;
+	bottom: 0;
+	height: 31px;
+	left: 0;
+	position: absolute;
+	width: 173px;
+	z-index: 2;
+	display:none;
+}
+.page-hotels #hotel-top-destinations .hotel-top-destinations-center ul > li > .field-image .book-link-layer > span, .page-hotels2 #hotel-top-destinations .hotel-top-destinations-center ul > li > .field-image .book-link-layer > span {
+	padding:0 16px;
+	font: 19px/30px "FuturaGreekBoldRegular";
+	text-transform:uppercase;
+	color:#ffffff;
+}
+.page-hotels #hotel-top-destinations .hotel-top-destinations-center ul > li > .field-image .book-link-layer.on, .page-hotels2 #hotel-top-destinations .hotel-top-destinations-center ul > li > .field-image .book-link-layer.on { display:block; }
+.page-hotels #hotel-top-destinations .hotel-top-destinations-center ul > li > .field-title, .page-hotels2 #hotel-top-destinations .hotel-top-destinations-center ul > li > .field-title {
+	float:left;
+	margin:0 0 4px 0;
+}
+.page-hotels #hotel-top-destinations .hotel-top-destinations-center ul > li > .field-title span, .page-hotels2 #hotel-top-destinations .hotel-top-destinations-center ul > li > .field-title span {
+	font:bold 14px/14px Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color:#ffffff;
+}
+.page-hotels #hotel-top-destinations .hotel-top-destinations-center ul > li > .field-country, .page-hotels2 #hotel-top-destinations .hotel-top-destinations-center ul > li > .field-country { float:right; }
+.page-hotels #hotel-top-destinations .hotel-top-destinations-center ul > li > .field-country span, .page-hotels2 #hotel-top-destinations .hotel-top-destinations-center ul > li > .field-country span {
+	font:normal 12px/14px Arial, Helvetica, sans-serif;
+	color:#ffffff;
+	float:left;
+	margin:0 0 0 10px;
+}
+.page-hotels #hotel-top-destinations .hotel-top-destinations-center ul > li > .field-hotels-num, .page-hotels2 #hotel-top-destinations .hotel-top-destinations-center ul > li > .field-hotels-num {
+	clear:both;
+	float:left;
+	margin:0 0 3px 0;
+	width:173px;
+}
+.page-hotels #hotel-top-destinations .hotel-top-destinations-center ul > li > .field-hotels-num span, .page-hotels2 #hotel-top-destinations .hotel-top-destinations-center ul > li > .field-hotels-num span {
+	font:normal 12px/14px Arial, Helvetica, sans-serif;
+	color:#ffffff;
+}
+.page-hotels #hotel-top-destinations .hotel-top-destinations-center ul > li > .field-book-info, .page-hotels2 #hotel-top-destinations .hotel-top-destinations-center ul > li > .field-book-info {
+	clear:both;
+	float:left;
+	width:173px;
+}
+.page-hotels #hotel-top-destinations .hotel-top-destinations-center ul > li > .field-book-info span, .page-hotels2 #hotel-top-destinations .hotel-top-destinations-center ul > li > .field-book-info span {
+	clear:both;
+	font:normal 11px/14px Arial, Helvetica, sans-serif;
+	color:#00aeef;
+}
+.page-hotels #hotel-tools-container {
+	width:624px;
+	height: 157px;
+	background: url('../images/sprite_general2.png') no-repeat -9px -778px;
+	margin:0 0 27px 0;
+}
+.page-hotels #hotel-tools-container .hotel-tools-container-top { padding: 16px 27px; }
+.page-cars #hotel-tools-container .hotel-tools-container-top .block-title,
+.page-hotels #hotel-tools-container .hotel-tools-container-top .block-title, .page-hotels2 #hotel-tools-container .hotel-tools-container-top .block-title {
+	font: 26px/30px "FuturaGreekBoldRegular";
+	color:#172841;
+	text-transform:uppercase;
+}
+.page-cars #hotel-tools-container .hotel-tools-container-center,
+.page-hotels #hotel-tools-container .hotel-tools-container-center, .page-hotels2 #hotel-tools-container .hotel-tools-container-center {
+	padding:0 24px;
+	overflow:hidden;
+	clear:both;
+}
+.page-cars #hotel-tools-container .hotel-tools-container-center ul > li,
+.page-hotels #hotel-tools-container .hotel-tools-container-center ul > li, .page-hotels2 #hotel-tools-container .hotel-tools-container-center ul > li {
+	clear:both;
+	padding:3px 0;
+	overflow:hidden;
+	border-bottom:1px solid #d4d4d4;
+}
+.page-cars #hotel-tools-container .hotel-tools-container-center ul > li > .col,
+.page-hotels #hotel-tools-container .hotel-tools-container-center ul > li > .col, .page-hotels2 #hotel-tools-container .hotel-tools-container-center ul > li > .col {
+	float:left;
+	width: 159px;
+	padding: 9px 0 9px 12px;
+	cursor:pointer;
+}
+.page-cars #hotel-tools-container .hotel-tools-container-center ul > li > .col:hover,
+.page-hotels #hotel-tools-container .hotel-tools-container-center ul > li > .col:hover, .page-hotels2 #hotel-tools-container .hotel-tools-container-center ul > li > .col:hover { background: url('../images/sprite_general.png') no-repeat -384px -2890px; }
+.page-cars #hotel-tools-container .hotel-tools-container-center ul > li > .col:hover span,
+.page-hotels #hotel-tools-container .hotel-tools-container-center ul > li > .col:hover span, .page-hotels2 #hotel-tools-container .hotel-tools-container-center ul > li > .col:hover span { color:#ffffff; }
+.page-cars #hotel-tools-container .hotel-tools-container-center ul > li > .col span,
+.page-hotels #hotel-tools-container .hotel-tools-container-center ul > li > .col span, .page-hotels2 #hotel-tools-container .hotel-tools-container-center ul > li > .col span {
+	color:#172841;
+	font:bold 14px/14px Arial, Helvetica, sans-serif;
+}
+.page-cars #hotel-tools-container .hotel-tools-container-center ul > li > .col.left-col,
+.page-hotels #hotel-tools-container .hotel-tools-container-center ul > li > .col.left-col, .page-hotels2 #hotel-tools-container .hotel-tools-container-center ul > li > .col.left-col { margin:0!important; }
+.page-cars #hotel-tools-container .hotel-tools-container-center ul > li > .col.center-col,
+.page-hotels #hotel-tools-container .hotel-tools-container-center ul > li > .col.center-col, .page-hotels2 #hotel-tools-container .hotel-tools-container-center ul > li > .col.center-col { margin:0 31px; }
+.page-cars #hotel-tools-container .hotel-tools-container-center ul > li > .col.right-col,
+.page-hotels #hotel-tools-container .hotel-tools-container-center ul > li > .col.right-col, .page-hotels2 #hotel-tools-container .hotel-tools-container-center ul > li > .col.right-col { margin:0!important; }
+.page-cars #latest-searches, .page-hotels2 #latest-searches,
+.page-hotels #latest-searches, .page-hotels2 #latest-searches {
+	width:623px;
+	margin:0 0 30px 0;
+}
+.page-cars #latest-searches .latest-searches-top,
+.page-hotels #latest-searches .latest-searches-top, .page-hotels2 #latest-searches .latest-searches-top {
+	border-bottom:4px solid #ff8c00;
+	padding:0 0 11px 0;
+}
+.page-cars #latest-searches .latest-searches-top .block-title,
+.page-hotels #latest-searches .latest-searches-top .block-title, .page-hotels2 #latest-searches .latest-searches-top .block-title {
+	color: #172841;
+	font: 26px/30px "FuturaGreekBoldRegular";
+	text-transform: uppercase;
+}
+.page-hotels #latest-searches .latest-searches-center, .page-hotels2 #latest-searches .latest-searches-center { }
+.page-cars #latest-searches .latest-searches-center ul li.row,
+.page-hotels #latest-searches .latest-searches-center ul li.row, .page-hotels2 #latest-searches .latest-searches-center ul li.row {
+	padding: 16px 16px 0;
+	overflow:hidden;
+	position:relative;
+	border-bottom:1px solid #cccaca;
+}
+.page-cars #latest-searches .latest-searches-center ul li.row:hover,
+.page-hotels #latest-searches .latest-searches-center ul li.row:hover, .page-hotels2 #latest-searches .latest-searches-center ul li.row:hover { background:#fefefe; }
+.page-cars #latest-searches .latest-searches-center ul li.row .field-image,
+.page-hotels #latest-searches .latest-searches-center ul li.row .field-image, .page-hotels2 #latest-searches .latest-searches-center ul li.row .field-image {
+	float:left;
+	width:133px;
+	margin:0 14px 0 0;
+	height:92px;
+}
+.page-cars #latest-searches .latest-searches-center ul li.row .field-title,
+.page-hotels #latest-searches .latest-searches-center ul li.row .field-title, .page-hotels2 #latest-searches .latest-searches-center ul li.row .field-title {
+	float:left;
+	min-width:131px;
+	font:bold 16px/14px Arial, Helvetica, sans-serif;
+	color:#172841;
+	margin:0 6px 8px 0;
+	text-transform:uppercase;
+}
+.page-cars #latest-searches .latest-searches-center ul li.row .field-sters,
+.page-hotels #latest-searches .latest-searches-center ul li.row .field-sters, .page-hotels2 #latest-searches .latest-searches-center ul li.row .field-sters {
+	float:left;
+	width: 295px;
+}
+.page-cars #latest-searches .latest-searches-center ul li.row .field-sters ul.sters > li.ster,
+.page-hotels #latest-searches .latest-searches-center ul li.row .field-sters ul.sters > li.ster, .page-hotels2 #latest-searches .latest-searches-center ul li.row .field-sters ul.sters > li.ster {
+	background: url("../images/sprite_general.png") no-repeat scroll -32px -371px transparent;
+	float: left;
+	height: 11px;
+	margin: 0 1px;
+	text-indent: -999999px;
+	width: 11px;
+}
+.page-cars #latest-searches .latest-searches-center ul li.row .field-address,
+.page-hotels #latest-searches .latest-searches-center ul li.row .field-address, .page-hotels2 #latest-searches .latest-searches-center ul li.row .field-address {
+	float:left;
+	width:440px;
+	font:normal 12px/16px Arial, Helvetica, sans-serif;
+	color:#172841;
+}
+.page-cars #latest-searches .latest-searches-center ul li.row .field-reviews,
+.page-hotels #latest-searches .latest-searches-center ul li.row .field-reviews, .page-hotels2 #latest-searches .latest-searches-center ul li.row .field-reviews {
+	float:left;
+	width:440px;
+	font:normal 12px/16px Arial, Helvetica, sans-serif;
+	color:#172841;
+	margin:0 0 10px 0;
+}
+.page-cars #latest-searches .latest-searches-center ul li.row .field-latest-book,
+.page-hotels #latest-searches .latest-searches-center ul li.row .field-latest-book, .page-hotels2 #latest-searches .latest-searches-center ul li.row .field-latest-book {
+	float:left;
+	width: 277px;
+	font:normal 11px/14px Arial, Helvetica, sans-serif;
+	color:#00aeef;
+}
+.page-cars #latest-searches .latest-searches-center ul li.row .field-remove,
+.page-hotels #latest-searches .latest-searches-center ul li.row .field-remove, .page-hotels2 #latest-searches .latest-searches-center ul li.row .field-remove {
+	background: url("../images/sprite_general2.png") no-repeat scroll -11px -940px transparent;
+	height: 18px;
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	width: 18px;
+	cursor:pointer;
+}
+.page-cars #latest-searches .latest-searches-center ul li.row .field-remove:hover,
+.page-hotels #latest-searches .latest-searches-center ul li.row .field-remove:hover, .page-hotels2 #latest-searches .latest-searches-center ul li.row .field-remove:hover { background: url('../images/sprite_general2.png') no-repeat -31px -941px; }
+/********************************************/
+/******* Latest Searches Social Icons *******/
+/********************************************/
+
+.page-cars #latest-searches .latest-searches-center ul li.row .field-social-icons,
+.page-hotels #latest-searches .latest-searches-center ul li.row .field-social-icons {
+	float:left;
+	width: 167px;
+}
+.page-cars #latest-searches .latest-searches-center ul li.row .field-social-icons .share-toolbar,
+.page-hotels #latest-searches .latest-searches-center ul li.row .field-social-icons .share-toolbar {
+	float: left;
+	padding-left: 0;
+}
+.page-cars #latest-searches .latest-searches-center ul li.row .field-social-icons .addthis_toolbox.addthis_default_style,
+.page-hotels #latest-searches .latest-searches-center ul li.row .field-social-icons .addthis_toolbox.addthis_default_style, .page-hotels2 #latest-searches .latest-searches-center ul li.row .field-social-icons .addthis_toolbox.addthis_default_style {
+	float: left;
+	padding-top: 1px;
+}
+.page-cars #latest-searches .latest-searches-center ul li.row .field-social-icons .share-toolbar .separator,
+.page-hotels #latest-searches .latest-searches-center ul li.row .field-social-icons .share-toolbar .separator, .page-hotels2 #latest-searches .latest-searches-center ul li.row .field-social-icons .share-toolbar .separator {
+	background: url("../images/sprite_general.png") no-repeat scroll -1474px -2662px transparent;
+	float: left;
+	height: 14px;
+	margin: -2px 10px 0;
+	width: 12px;
+}
+.page-cars #latest-searches .latest-searches-center ul li.row .field-social-icons .addthis_toolbox.addthis_default_style span,
+.page-hotels #latest-searches .latest-searches-center ul li.row .field-social-icons .addthis_toolbox.addthis_default_style span, .page-hotels2 #latest-searches .latest-searches-center ul li.row .field-social-icons .addthis_toolbox.addthis_default_style span {
+	background: url("../images/sprite_general.png") no-repeat scroll -1414px -2665px transparent;
+	height: 11px;
+	line-height: 11px;
+	margin-right: 0;
+}
+.page-cars #latest-searches .latest-searches-center ul li.row .field-social-icons .share-toolbar a.addthis_button_compact,
+.page-hotels #latest-searches .latest-searches-center ul li.row .field-social-icons .share-toolbar a.addthis_button_compact, .page-hotels2 #latest-searches .latest-searches-center ul li.row .field-social-icons .share-toolbar a.addthis_button_compact {
+	color: #606060;
+	font-family: Arial;
+	font-size: 11px;
+	line-height: 11px;
+	padding: 0;
+	text-decoration: none;
+}
+.page-cars #latest-searches .latest-searches-center ul li.row .field-social-icons .share-toolbar .star-icon,
+.page-hotels #latest-searches .latest-searches-center ul li.row .field-social-icons .share-toolbar .star-icon, .page-hotels2 #latest-searches .latest-searches-center ul li.row .field-social-icons .share-toolbar .star-icon { float: left; }
+
+.page-cars #latest-searches .latest-searches-center ul li.row .field-social-icons .share-toolbar .printer-icon, .page-cars #latest-searches .latest-searches-center ul li.row .field-social-icons .share-toolbar .mail-icon, .page-cars #latest-searches .latest-searches-center ul li.row .field-social-icons .share-toolbar .star-icon,
+.page-hotels #latest-searches .latest-searches-center ul li.row .field-social-icons .share-toolbar .printer-icon, .page-hotels #latest-searches .latest-searches-center ul li.row .field-social-icons .share-toolbar .mail-icon, .page-hotels #latest-searches .latest-searches-center ul li.row .field-social-icons .share-toolbar .star-icon, .page-hotels2 #latest-searches .latest-searches-center ul li.row .field-social-icons .share-toolbar .printer-icon, .page-hotels2 #latest-searches .latest-searches-center ul li.row .field-social-icons .share-toolbar .mail-icon, .page-hotels2 #latest-searches .latest-searches-center ul li.row .field-social-icons .share-toolbar .star-icon { float: left; }
+
+.page-cars #latest-searches .latest-searches-center ul li.row .field-social-icons .share-toolbar .printer-icon a,
+.page-hotels #latest-searches .latest-searches-center ul li.row .field-social-icons .share-toolbar .printer-icon a, .page-hotels2 #latest-searches .latest-searches-center ul li.row .field-social-icons .share-toolbar .printer-icon a {
+	background: url("../images/sprite_general.png") no-repeat scroll -1583px -2662px transparent;
+	height: 14px;
+	margin-right: 10px;
+	margin-top: -2px;
+	width: 14px;
+	display:block;
+	text-decoration:none;
+}
+.page-cars #latest-searches .latest-searches-center ul li.row .field-social-icons .share-toolbar .mail-icon a,
+.page-hotels #latest-searches .latest-searches-center ul li.row .field-social-icons .share-toolbar .mail-icon a, .page-hotels2 #latest-searches .latest-searches-center ul li.row .field-social-icons .share-toolbar .mail-icon a {
+	background: url("../images/sprite_general.png") no-repeat scroll -1512px -2664px transparent;
+	height: 11px;
+	margin-right: 10px;
+	width: 14px;
+	display:block;
+	text-decoration:none;
+}
+.page-cars #latest-searches .latest-searches-center ul li.row .field-social-icons .share-toolbar .star-icon a,
+.page-hotels #latest-searches .latest-searches-center ul li.row .field-social-icons .share-toolbar .star-icon a, .page-hotels2 #latest-searches .latest-searches-center ul li.row .field-social-icons .share-toolbar .star-icon a {
+	background: url("../images/sprite_general.png") no-repeat scroll -1553px -2665px transparent;
+	height: 11px;
+	margin-right: 10px;
+	width: 11px;
+	display:block;
+	text-decoration:none;
+}
+/************************************/
+
+.page-hotels .center-banner {
+	background: url('../images/sprite_general2.png') no-repeat -8px -1167px;
+	width: 273px;
+	height: 80px;
+	float: left;
+	margin:0 26px 0 0;
+}
+.page-hotels .center-banner:hover { background: url('../images/sprite_general2.png') no-repeat -312px -1169px; }
+.page-hotels .center-banner .top-header { text-transform:uppercase; }
+.center-banner a .desc {
+	color: #172841;
+	font-family: Arial;
+	font-size: 12px;
+	line-height: 14px;
+}
+.page-hotels .right-banner {
+	background: url('../images/sprite_general2.png') no-repeat -8px -1079px;
+	width: 263px;
+	height: 80px;
+	float:left;
+}
+.page-hotels .right-banner:hover { background: url('../images/sprite_general2.png') no-repeat -303px -1081px; }
+.page-hotels .right-banner .top-header { text-transform:uppercase; }
+/**************************************************/
+/************** Ovveride Banner Widths ************/
+/**************************************************/
+
+.page-hotels .small-banner .left-banner-content { width: 294px; }
+.page-hotels .left-banner.book-with-us { width: 346px; }
+.page-hotels .left-banner.airfast-rewards .left-banner-content { height: 134px; }
+.page-hotels.ie .left-banner.airfast-rewards .readmore a {
+	display:block;
+	line-height:16px;
+}
+.page-hotels.ie .center-banner { margin:0 11px 0 0; }
+/**********************************************/
+/************ Ovveride Ui Tabs widths *********/
+/**********************************************/
+
+.page-hotels .globaltabs .ui-tabs-nav li.hot-price-weekend a {
+	width: 248px;
+	background: url('../images/sprite_general2.png') no-repeat -12px -1267px;
+	color:#ffffff;
+}
+.page-hotels .globaltabs .ui-tabs-nav li.hot-price-weekend a:hover, .page-hotels .globaltabs .ui-tabs-nav li.hot-price-weekend.ui-state-active a {
+	background: url('../images/sprite_general2.png') no-repeat -12px -1316px;
+	color:#172841;
+}
+.page-hotels .globaltabs .ui-tabs-nav li.hot-price a {
+	width:150px;
+	background: url("../images/sprite_general.png") no-repeat scroll -232px -813px transparent;
+	color:#ffffff;
+}
+.page-hotels .globaltabs .ui-tabs-nav li.hot-price a:hover, .page-hotels .globaltabs .ui-tabs-nav li.hot-price.ui-state-active a {
+	background: url('../images/sprite_general.png') no-repeat -233px -750px;
+	color:#172841;
+}
+/*********************************************************/
+/************ Override Selectbox Wrapper For ie **********/
+/*********************************************************/
+
+.page-hotels.ie #left-col .step3-elems .personswrapper {
+	position:relative;
+	z-index:10;
+}
+/****************************************************************/
+/**************** Hotel Results 2 / Inner Page ******************/
+/***************************************************************/
+
+/***************************************************/
+/********************** Fancybox *******************/
+/***************************************************/
+
+.change-dates-box-is-opened #fancybox-overlay {
+	background-color: #000000 !important;
+	opacity: 0.8!important;
+}
+.change-dates-box-is-opened #fancybox-wrap {
+	width:682px!important;
+	height:168px!important;
+	padding:0!important;
+}
+.change-dates-box-is-opened #fancybox-outer { background: url('../images/sprite_general2.png') no-repeat -854px -1146px!important; }
+.change-dates-box-is-opened #fancybox-close {
+	background: url("../images/sprite_general2.png") no-repeat scroll -11px -940px transparent;
+	cursor: pointer;
+	display: none;
+	height: 18px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	width: 18px;
+	z-index: 1103;
+}
+.change-dates-box-is-opened #fancybox-close:hover { background: url('../images/sprite_general2.png') no-repeat -31px -941px; }
+.change-dates-box-is-opened .fancybox-bg {
+	background-image:none!important;
+	display:none!important;
+}
+.change-dates-box-is-opened .fancybox { overflow:visible!important; }
+.change-dates-box-is-opened #fancybox-content {
+	border: 0 none !important;
+	padding: 23px !important;
+	overflow:visible!important;
+	width: 636px !important;
+	height: 123px !important;
+}
+.change-dates-box-is-opened #fancybox-content > div { overflow:visible!important; }
+.change-dates-box-is-opened #fancybox-content #change-dates {
+	width: 636px!important;
+	height: 123px !important;
+}
+.change-dates-box-is-opened #fancybox-content #change-dates .component-title {
+	font:bold 18px/20px Arial, Helvetica, sans-serif;
+	color: #172841;
+	display:block;
+	margin:0 0 22px 0;
+}
+.change-dates-box-is-opened #fancybox-content #change-dates .fieldset {
+	width:193px;
+	float:left;
+}
+.change-dates-box-is-opened #fancybox-content #change-dates .fieldset.form-component-left, .change-dates-box-is-opened #fancybox-content #change-dates .fieldset.form-component-center { margin:0 17px 0 0; }
+.change-dates-box-is-opened #fancybox-content #change-dates .date-input-wrapper { margin:0 0 8px 0; }
+.change-dates-box-is-opened #fancybox-content #change-dates .fieldset label {
+	font:12px/14px Arial, Helvetica, sans-serif;
+	color:#535353;
+	margin:0 0 7px 0;
+	display:block;
+	cursor:default;
+}
+.change-dates-box-is-opened #fancybox-content #change-dates .fieldset .text-calendar {
+	cursor:pointer;
+	background: #ffffff url("../images/sprite_general2.png") no-repeat scroll -306px -1315px;
+	padding:5px;
+	border:1px solid #d8d8d8;
+	width: 180px;
+	font: 11px/14px Arial, Helvetica, sans-serif;
+	color: #737373;
+	display:block;
+}
+.change-dates-box-is-opened #ui-datepicker-div.ui-widget-content { z-index:9999!important; }
+.change-dates-box-is-opened #ckeck-avail {
+	display:block;
+	background: url('../images/sprite_general2.png') no-repeat -265px -1371px;
+	width: 196px;
+	height: 32px;
+	border:0;
+	cursor:pointer;
+	padding:0;
+	margin: 46px 0 0;
+}
+.change-dates-box-is-opened #ckeck-avail:hover { background: url('../images/sprite_general2.png') no-repeat -264px -1411px; }
+.change-dates-box-is-opened #ckeck-avail span {
+	font:19px/12px "FuturaGreekBoldRegular";
+	color:#ffffff;
+	text-transform:uppercase;
+}
+.change-dates-box-is-opened #fancybox-content .selectbox {
+	background: url('../images/sprite_general2.png') no-repeat -413px -676px;
+	width: 192px;
+	height: 26px;
+	cursor: pointer;
+	float: left;
+	font: 11px/26px Arial, Helvetica, sans-serif;
+	padding: 0 8px;
+	border:0;
+	display:block;
+	color:#737373;
+}
+.change-dates-box-is-opened #fancybox-content .selectbox-wrapper { position: relative; }
+.change-dates-box-is-opened #fancybox-content .selectbox-wrapper ul {
+	background: none repeat scroll 0 0 #FFFFFF;
+	border-top: 1px solid #D5D5D5;
+	border-left: 1px solid #D5D5D5;
+	border-right: 1px solid #D5D5D5;
+	height: auto;
+	margin: 0;
+	max-height: 150px;
+	overflow: auto;
+	position: absolute;
+	top: 24px;
+	width: 190px;
+	z-index: 3;
+}
+.ie.change-dates-box-is-opened #fancybox-content .selectbox-wrapper ul { top:0; }
+.change-dates-box-is-opened #fancybox-content .selectbox-wrapper ul li {
+	clear: both;
+	color: #848485;
+	cursor: pointer;
+	padding:4px 8px;
+	border-bottom:1px solid #d8d8d8;
+	font: 11px/16px Arial, Helvetica, sans-serif;
+}
+.change-dates-box-is-opened #fancybox-content .selectbox-wrapper ul li:hover {
+	background:#172841;
+	color:#ffffff;
+}
+/***************************************************/
+
+.page-hotels-results-2 .clear-block { clear:both; }
+.hotel-bottom-container-wrapper {
+	clear:both;
+	padding:30px 21px 42px;
+	background:#ffffff;
+	border-top:1px solid #DADADA;
+}
+.hotel-availability-area-wrapper { clear:both; }
+.hotel-availability-area-wrapper .hotel-availability-area-header {
+	float:left;
+	width:791px;
+	clear:both;
+	margin:0 0 10px 0;
+}
+.hotel-availability-area-wrapper .hotel-availability-area-header .component-title {
+	font:bold 20px/20px Arial, Helvetica, sans-serif;
+	color:#000000;
+	display:block;
+	width:118px;
+	float:left;
+}
+.hotel-availability-area-wrapper .hotel-availability-area-header .hotel-availability-info {
+	float:left;
+	width: 507px;
+	display:block;
+	font:normal 12px/14px Arial, Helvetica, sans-serif;
+	color:#172841;
+}
+.hotel-availability-area-wrapper .hotel-availability-area-header .hotel-availability-info a { color:#e84c09; }
+.hotel-availability-table-wrapper {
+	clear:both;
+	margin:18px 0 0 0;
+}
+.hotel-availability-table-wrapper #hotel-availability-table {
+	border-top:1px solid #dadada;
+	border-right:1px solid #dadada;
+	border-bottom:1px solid #dadada;
+}
+.hotel-availability-table-wrapper #hotel-availability-table tr td.cell { border-left:1px solid #dadada; }
+.hotel-availability-table-wrapper #hotel-availability-table thead.table-header tr td.cell {
+	background: url("../images/sprite_general2.png") no-repeat scroll -854px -1504px transparent;
+	color: #172841;
+	font: bold 14px/12px Arial, Helvetica, sans-serif;
+	padding: 15px 13px;
+}
+.hotel-availability-table-wrapper #hotel-availability-table tbody.table-body tr td.cell { padding: 11px; }
+.hotel-availability-table-wrapper #hotel-availability-table tbody.table-body tr.row-gray td.cell { background: url("../images/sprite_general2.png") no-repeat scroll -853px -1408px transparent; }
+.hotel-availability-table-wrapper #hotel-availability-table tbody.table-body tr td.cell.cell-room-type { width: 209px; }
+.hotel-availability-table-wrapper #hotel-availability-table tbody.table-body tr td.cell.cell-conditions { width: 62px; /*vertical-align:top;*/ }
+.hotel-availability-table-wrapper #hotel-availability-table tbody.table-body tr td.cell.cell-conditions .inner-wrapper { position:relative; }
+.hotel-availability-table-wrapper #hotel-availability-table tbody.table-body tr td.cell.cell-max {
+	width: 45px;
+	vertical-align:top;
+}
+.hotel-availability-table-wrapper #hotel-availability-table tbody.table-body tr td.cell.cell-room-num {
+	vertical-align:top;
+	width:83px;
+}
+.hotel-availability-table-wrapper #hotel-availability-table tbody.table-body tr td.cell.cell-room-num .rooms-type-select { clear:both; }
+/**************************************************/
+/****************** Selectbox *********************/
+/*************************************************/
+
+.hotel-availability-table-wrapper .selectbox {
+	margin:0 0 10px 0;
+	background: url('../images/sprite_general2.png') no-repeat -314px -676px;
+	width: 65px;
+	height: 25px;
+	cursor: pointer;
+	float: left;
+	font: 11px/25px Arial, Helvetica, sans-serif;
+	padding: 0 8px;
+	border:0;
+	display:block;
+	color:#737373;
+}
+.hotel-availability-table-wrapper .selectbox-wrapper { position: relative; }
+.hotel-availability-table-wrapper .selectbox-wrapper ul {
+	background: none repeat scroll 0 0 #FFFFFF;
+	border-top: 1px solid #D5D5D5;
+	border-left: 1px solid #D5D5D5;
+	border-right: 1px solid #D5D5D5;
+	height: auto;
+	margin: 0;
+	max-height: 150px;
+	overflow: auto;
+	position: absolute;
+	top: 24px;
+	width: 63px;
+	z-index: 3;
+}
+.ie .hotel-availability-table-wrapper .selectbox-wrapper ul { top:0; }
+.hotel-availability-table-wrapper .selectbox-wrapper ul li {
+	clear: both;
+	color: #848485;
+	cursor: pointer;
+	padding:4px 8px;
+	border-bottom:1px solid #d8d8d8;
+	font: 11px/16px Arial, Helvetica, sans-serif;
+}
+.hotel-availability-table-wrapper .selectbox-wrapper ul li:hover {
+	background:#172841;
+	color:#ffffff;
+}
+/*********************************************/
+
+.hotel-availability-table-wrapper #hotel-availability-table tbody.table-body tr td.cell.cell-room-num span {
+	font:normal 11px/12px Arial, Helvetica, sans-serifl;
+	color:#172841;
+	clear:both;
+	display:block;
+}
+.hotel-availability-table-wrapper #hotel-availability-table tbody.table-body tr td.cell-price {
+	width: 113px;
+	vertical-align:top;
+	text-align:right;
+}
+.hotel-availability-table-wrapper #hotel-availability-table tbody.table-body tr td.cell.cell-room-type .room-type-item-image {
+	width:52px;
+	margin:0 10px 0 0;
+	height:52px;
+	float:left;
+	position:relative;
+}
+.hotel-availability-table-wrapper #hotel-availability-table tbody.table-body tr td.cell.cell-room-type .room-type-item-image .plus-icon {
+	background: url("../images/sprite_general2.png") no-repeat scroll -586px -1283px transparent;
+	bottom: 4px;
+	display: block;
+	height: 10px;
+	position: absolute;
+	right: 2px;
+	text-indent: -9999px;
+	width: 10px;
+}
+.hotel-availability-table-wrapper #hotel-availability-table tbody.table-body tr td.cell.cell-room-type .room-type-item-title {
+	color: #172841;
+	float: left;
+	font: bold 12px/16px Arial, Helvetica, sans-serif;
+	margin: 0 0 2px;
+	width: 147px;
+}
+.hotel-availability-table-wrapper #hotel-availability-table tbody.table-body tr td.cell .room-type-item-description {
+	color: #172841;
+	float: left;
+	font: 11px/12px Arial, Helvetica, sans-serif;
+	width: 137px;
+}
+.hotel-availability-table-wrapper #hotel-availability-table tbody.table-body tr td.cell.cell-conditions ul {
+	list-style:disc;
+	color: #172841;
+	font: 11px/12px Arial, Helvetica, sans-serif;
+	margin:0 10px 10px;
+}
+.hotel-availability-table-wrapper #hotel-availability-table tbody.table-body tr td.cell-max ul { }
+.hotel-availability-table-wrapper #hotel-availability-table tbody.table-body tr td.cell-max ul li.person {
+	background: url('../images/sprite_general2.png') no-repeat -17px -1453px;
+	width: 14px;
+	height: 15px;
+	float:left;
+}
+.hotel-availability-table-wrapper #hotel-availability-table tbody.table-body tr td.cell-price span {
+	font:bold 14px/12px Arial, Helvetica, sans-serif;
+	color:#172841;
+}
+.hotel-availability-table-wrapper #hotel-availability-table tbody.table-body tr td.cell-price span.old-price { text-decoration:line-through; }
+.hotel-availability-table-wrapper #hotel-availability-table tbody.table-body tr td.cell-price span.new-price {
+	color:#e84c09;
+	margin:0 0 0 13px;
+}
+.hotel-availability-table-wrapper #hotel-availability-table tbody.table-body tr td.cell-reservation .reservation-book-button {
+	background: url("../images/sprite_general2.png") no-repeat scroll -13px -1371px transparent;
+	color: #FFFFFF;
+	cursor: pointer;
+	display: block;
+	font: 18px/28px "FuturaGreekBoldRegular";
+	height: 31px;
+	margin: 0 0 9px;
+	padding: 0 4px;
+	text-transform: uppercase;
+	width: 108px;
+}
+.hotel-availability-table-wrapper #hotel-availability-table tbody.table-body tr td.cell-reservation .reservation-book-button:hover { background: url('../images/sprite_general2.png') no-repeat -140px -1372px; }
+.hotel-availability-table-wrapper #hotel-availability-table tbody.table-body tr td.cell-reservation .reservation-book-desc {
+	font:normal 11px/12px Arial, Helvetica, sans-serif;
+	color:#172841;
+}
+.hotel-availability-table-wrapper #hotel-availability-table tbody.table-body tr td.cell.cell-conditions .condition-icon {
+	background: url("../images/sprite_general2.png") no-repeat scroll -14px -1478px transparent;
+	display: block;
+	height: 17px;
+	right: 0;
+	position: absolute;
+	top: 0;
+	width: 17px;
+}
+.hotel-facilities-area-wrapper {
+	margin: 38px 0;
+	float:left;
+}
+.hotel-facilities-area-wrapper.last { margin: 0 0 38px 0; }
+.hotel-facilities-area-wrapper .component-title, body.page-hotels-results-2 .important-information .component-title {
+	font: bold 20px/14px Arial, Helvetica, sans-serif;
+	color:#000000;
+	margin:0 0 13px 0;
+	display:block;
+	width:700px;
+}
+.hotel-list-facilities-wrapper ul > li.row {
+	clear:both;
+	float:left;
+	width:790px;
+	padding:14px 0;
+	border-bottom:1px solid #dadada;
+	border-top: 1px solid #ffffff;
+}
+.hotel-list-facilities-wrapper ul > li.row.first { border-top:1px solid #dadada; }
+.hotel-list-facilities-wrapper ul > li.row > .field { float:left; }
+.hotel-list-facilities-wrapper ul > li.row > .field.field-label {
+	width:120px;
+	padding:0 0 0 18px;
+	color:#172841;
+	font:bold 14px/20px Arial, Helvetica, sans-serif;
+}
+.hotel-list-facilities-wrapper ul > li.row > .field.field-facilities {
+	width:627px;
+	font:normal 12px/14px Arial, Helvetica, sans-serif;
+	color:#172841;
+}
+.hotel-list-facilities-wrapper ul > li.row.row-gray { background:#eceaea; }
+body.page-hotels-results-2 .important-information .component-title {
+	border-bottom:1px solid #dadada;
+	padding-bottom:15px;
+}
+body.page-hotels-results-2 .important-information .component-description {
+	color: #172841;
+	display: block;
+	font: 12px/12px Arial;
+	margin-bottom: 19px;
+}
+body.page-hotels-results-2 .important-information .component-content .guarantee {
+	color: #172841;
+	display: block;
+	font: bold 14px/14px Arial;
+	padding-bottom: 15px;
+}
+body.page-hotels-results-2 .important-information .component-content .guarantee {
+	font:bold 14px/14px Arial;
+	color:#172841;
+}
+body.page-hotels-results-2 .important-information .component-content ul li {
+	color:#e84c09;
+	font:12px/12px Arial;
+	clear:left;
+	padding:3px 0;
+}
+body.page-hotels-results-2 .important-information .component-content ul { margin-bottom:20px; }
+body.page-hotels-results-2 .important-information .component-content ul li b {
+	color:#172841;
+	font-weight:bold;
+}
+body.page-hotels-results-2 .important-information .component-content ul li .check {
+	background: url("../images/sprite_general.png") no-repeat scroll -1164px -1638px transparent;
+	display: block;
+	float: left;
+	height: 13px;
+	width: 13px;
+	margin-right:10px;
+}
+body.page-hotels-results-2 .important-information .component-content p {
+	font:12px/12px Arial;
+	color:#172841;
+	margin-bottom:20px;
+}
+body.page-hotels-results-2 .important-information .component-content p a {
+	font:12px/12px Arial;
+	color:#e84c09;
+	text-decoration:none;
+}
+body.page-hotels-results-2 .important-information .component-content p a:hover { text-decoration:underline; }
+/**************************************/
+/************* Setp Container *********/
+/**************************************/
+
+#hotel-block-step.step-container { padding: 10px 0 0px; }
+
+/* changed !! */
+#hotel-block-step.step-container .step-count {
+    color: #E84C09;
+    float: left;
+    font-family: "FuturaGreekBoldRegular";
+    font-size: 26px;
+    height: 31px;
+    line-height: 26px;
+    padding-right: 7px;
+    width: 190px;
+}
+
+#hotel-block-step.step-container .step-area-info {
+	color: #172841;
+	float: left;
+	font-family: Arial;
+	font-size: 19px;
+	font-weight: bold;
+	line-height: 23px;
+	padding: 5px 0 0;
+	width: 511px;
+}
+#hotel-block-step.step-container .step-dates-persons {
+	clear: both;
+	color: #00AEEF;
+	font-family: Arial;
+	font-size: 13px;
+	line-height: 12px;
+	margin: 2px 0 0;
+	overflow: hidden;
+	width: 693px;
+}
+/*************************************************************/
+
+#selected-hotel-container {
+	margin:18px 0 24px 0;
+	float:left;
+	clear:both;
+	width:1021px;
+}
+#selected-hotel-container #left-price-wrapper {
+	float:left;
+	width:188px;
+}
+#selected-hotel-container #left-price-wrapper .top-layer {
+	background: url('../images/sprite_general.png') no-repeat -393px -3034px;
+	height: 11px;
+}
+#selected-hotel-container #left-price-wrapper .content-layer {
+	min-height:122px;
+	padding:7px 0 7px 16px;
+	background:url("../images/sprite_general.png") no-repeat scroll -393px -3045px transparent;
+}
+#selected-hotel-container #left-price-wrapper .content-layer .ticket-price-info {
+	word-spacing:-2px;
+	width:35px;
+	display:block;
+	color:#ffffff;
+	float:left;
+	font:normal 11px/12px Arial, Helvetica, sans-serif;
+	margin:5px 10px 0 0;
+	text-align:right;
+}
+#selected-hotel-container #left-price-wrapper .content-layer .total-price-info {
+	width:110px;
+	display:block;
+	height:40px;
+	float:left;
+	font: 42px/40px 'MyriadProBoldCondensed';
+	color:#ffffff;
+	text-align:right;
+}
+#selected-hotel-container #left-price-wrapper .additional-info-layer {
+	background:#172841;
+	text-align:right;
+	padding:10px 0;
+}
+#selected-hotel-container #left-price-wrapper .additional-info-layer span {
+	font:normal 11px/14px Arial, Helvetica, sans-serif;
+	color:#ffffff;
+	padding: 0 10px 0 8px;
+}
+#selected-hotel-container #left-price-wrapper .bottom-layer {
+	background: url("../images/sprite_general.png") no-repeat scroll -393px -3217px transparent;
+	height: 12px;
+}
+#selected-hotel-container #left-price-wrapper .content-layer .total-price-info {
+	color: #FFFFFF;
+	display: block;
+	float: left;
+	font: 42px/30px 'MyriadProBoldCondensed';
+	width: 110px;
+}
+#selected-hotel-container #selected-hotel-wrapper .top-layer { height:11px; }
+#selected-hotel-container #selected-hotel-wrapper .bottom-layer { height:12px; }
+#selected-hotel-container #selected-hotel-wrapper {
+	width:833px;
+	float:left;
+	position:relative;
+}
+#selected-hotel-container #selected-hotel-wrapper .top-layer {
+	background: url('../images/sprite_general.png') no-repeat -407px -1950px;
+	width:833px;
+	clear:both;
+}
+#selected-hotel-container #selected-hotel-wrapper .bottom-layer {
+	background: url("../images/sprite_general.png") no-repeat scroll -407px -2132px transparent;
+	width:833px;
+	clear:both;
+}
+#selected-hotel-container #selected-hotel-wrapper .content-layer {
+	padding:0 0 0 21px;
+	clear:both;
+	float:left;
+	background: url("../images/sprite_general.png") no-repeat scroll -407px -1959px transparent;
+	width:812px;
+}
+/*************************************************************/
+
+#selected-hotel-container #selected-hotel-wrapper .content-layer ul > li > .field-image {
+	float:left;
+	width:128px;
+	margin:0 17px 0 0;
+}
+#selected-hotel-container #selected-hotel-wrapper .content-layer ul > li > .field-hotel-name {
+	float:left;
+	font: bold 18px/14px Arial, Helvetica, sans-serif;
+	min-width:120px;
+	margin:0 17px 10px 0;
+}
+#selected-hotel-container #selected-hotel-wrapper .content-layer ul > li > .field-sters {
+	width:500px;
+	float:left;
+}
+#selected-hotel-container #selected-hotel-wrapper .content-layer ul > li > .field-sters .sters > ul > li {
+	background: url("../images/sprite_general.png") no-repeat scroll -32px -371px transparent;
+	float: left;
+	height: 11px;
+	margin: 0 1px;
+	text-indent: -999999px;
+	width: 11px;
+}
+#selected-hotel-container #selected-hotel-wrapper .content-layer ul > li > .field-city {
+	width:630px;
+	float:left;
+	font: bold 14px/14px Arial, Helvetica, sans-serif;
+	color:#3c5e90;
+	margin:0 0 15px 0;
+}
+#selected-hotel-container #selected-hotel-wrapper .content-layer ul > li > .field-book-details {
+	float:left;
+	width:641px;
+}
+#selected-hotel-container #selected-hotel-wrapper .content-layer ul > li > .field-book-details .left-col {
+	width:340px;
+	float:left;
+}
+#selected-hotel-container #selected-hotel-wrapper .content-layer ul > li > .field-book-details .left-col > ul > li {
+	float:left;
+	clear:both;
+	width:340px;
+	margin:0 0 7px;
+}
+#selected-hotel-container #selected-hotel-wrapper .content-layer ul > li > .field-book-details .left-col > ul > li .col {
+	float:left;
+	width:230px;
+	font: bold 14px/14px Arial, Helvetica, sans-serif;
+}
+#selected-hotel-container #selected-hotel-wrapper .content-layer ul > li > .field-book-details .left-col > ul > li .col.label {
+	width:90px;
+	font: normal 12px/14px Arial, Helvetica, sans-serif;
+	color:#636363;
+}
+#selected-hotel-container #selected-hotel-wrapper .content-layer ul > li > .field-book-details .right-col {
+	width:300px;
+	float:left;
+}
+#selected-hotel-container #selected-hotel-wrapper .content-layer ul > li > .field-book-details .row { margin:0 0 5px 0; }
+#selected-hotel-container #selected-hotel-wrapper .content-layer ul > li > .field-book-details .right-col > ul > li {
+	width:290px;
+	float:left;
+	clear:both;
+}
+#selected-hotel-container #selected-hotel-wrapper .content-layer ul > li > .field-book-details .right-col > ul > li .col { float:left; }
+#selected-hotel-container #selected-hotel-wrapper .content-layer ul > li > .field-book-details .right-col > ul > li .col.label { font: normal 12px/14px Arial, Helvetica, sans-serif; }
+#selected-hotel-container #selected-hotel-wrapper .content-layer ul > li > .field-book-details .right-col > ul > li .col span {
+	display:block;
+	float:left;
+}
+#selected-hotel-container #selected-hotel-wrapper .content-layer ul > li > .field-book-details .right-col > ul > li .col.price {
+	float:right;
+	font: normal 12px/14px Arial, Helvetica, sans-serif;
+}
+#selected-hotel-container #selected-hotel-wrapper .content-layer ul > li > .field-book-details .right-col > ul > li.last .col.label {
+	font: bold 14px/14px Arial, Helvetica, sans-serif;
+	color:#3c5e90;
+}
+#selected-hotel-container #selected-hotel-wrapper .content-layer ul > li > .field-book-details .right-col > ul > li.last .col.price {
+	font: bold 18px/14px Arial, Helvetica, sans-serif;
+	color:#121f36;
+}
+#selected-hotel-container #selected-hotel-wrapper .content-layer ul > li > .field-link {
+	width:668px;
+	float:right;
+	margin:10px 0;
+}
+#selected-hotel-container #selected-hotel-wrapper .content-layer ul > li > .field-link a {
+	display:block;
+	padding:0 0 0 7px;
+	height:14px;
+	background: url("../images/sprite_general2.png") no-repeat scroll -12px -2452px transparent;
+	font:bold 11px/14px Arial, Helvetica, sans-serif;
+	color:#3e577b;
+	text-decoration:none;
+}
+.ie #selected-hotel-container #selected-hotel-wrapper .content-layer ul > li > .field-link { margin:13px 0; }
+booking-conditions #hotel-step-form-fields {
+	float:left;
+	width:1012px;
+	clear:both;
+	height:69px;
+	margin:0 0 21px 0;
+}
+#hotel-step-form-fields .form-component { float:left; }
+#hotel-step-form-fields .form-component.discount {
+	width:426px;
+	margin:0 211px 0 0;
+}
+#hotel-step-form-fields .form-component.discount .form-item-wrapper {
+	background: url("../images/sprite_general2.png") no-repeat scroll -854px -1090px transparent;
+	height: 15px;
+	padding: 12px;
+	width: 401px;
+	position:relative;
+}
+#hotel-step-form-fields .form-component.discount .form-item-wrapper .input-text {
+	border:0;
+	width:308px;
+	font:12px/16px Arial, Helvetica, sans-serif;
+	color:#172841;
+	float:left;
+}
+#hotel-step-form-fields .form-component.discount .form-item-wrapper button {
+	background: url("../images/sprite_general2.png") no-repeat scroll -853px -956px transparent;
+	border: 0 none;
+	cursor: pointer;
+	height: 27px;
+	position: absolute;
+	right: 6px;
+	top: 6px;
+	width: 92px;
+	font: 14px/16px "FuturaGreekBoldRegular";
+	text-transform:uppercase;
+}
+#hotel-step-form-fields .form-component.discount .form-item-wrapper button:hover {
+	background: url('../images/sprite_general2.png') no-repeat -950px -956px;
+	color:#ffffff;
+}
+#hotel-step-form-fields .form-component.discount .label {
+	font: 22px/30px "FuturaGreekBoldRegular";
+	text-transform:uppercase;
+	letter-spacing:-1.1px;
+}
+#hotel-step-form-fields .form-component.discount .label .orange { color:#ff8c00; }
+#hotel-step-form-fields .form-component.newsletter .form-item-wrapper {
+	background: url('../images/sprite_general2.png') no-repeat -854px -1033px;
+	height: 15px;
+	padding: 12px;
+	width: 351px;
+	position:relative;
+}
+#hotel-step-form-fields .form-component.newsletter .form-item-wrapper .input-text {
+	border:0;
+	width:350px;
+	font:12px/16px Arial, Helvetica, sans-serif;
+	color:#172841;
+	display:block;
+}
+#hotel-step-form-fields .form-component.newsletter .form-item-wrapper button {
+	background: url('../images/sprite_general2.png') no-repeat -854px -994px;
+	width: 32px;
+	height: 27px;
+	border: 0 none;
+	cursor: pointer;
+	height: 27px;
+	position: absolute;
+	right: 6px;
+	top: 6px;
+	font: 14px/16px "FuturaGreekBoldRegular";
+	text-transform:uppercase;
+}
+#hotel-step-form-fields .form-component.newsletter .form-item-wrapper button:hover {
+	background: url('../images/sprite_general2.png') no-repeat -890px -994px;
+	color:#ffffff;
+}
+#hotel-step-form-fields .form-component.newsletter .label {
+	font: 22px/30px "FuturaGreekBoldRegular";
+	text-transform:uppercase;
+	letter-spacing:-1.1px;
+}
+#hotel-step-form-fields .form-component.newsletter .label .orange { color:#ff8c00; }
+#hotel-step-main-content {
+	width:823px;
+	clear:both;
+	float:left;
+	margin:0 0px 0 0;
+}
+#step-1-form-container { }
+#step-1-form-container .top-layer {
+	background: url('../images/sprite_general2.png') no-repeat -6px -1548px;
+	height:10px;
+}
+#step-1-form-container .content-layer {
+	background: url("../images/sprite_general2.png") no-repeat scroll -6px -1558px transparent;
+	padding: 10px 25px;
+}
+#step-1-form-container .content-layer .form-info {
+	clear:both;
+	margin:0 0 42px 0;
+}
+#step-1-form-container .content-layer .form-info p {
+	font:normal 14px/20px Arial, Helvetica, sans-serif;
+	color:#172841;
+}
+#step-1-form-container .content-layer .step-form-component .form-component-title {
+	clear: both;
+	color: #172841;
+	float: left;
+	font: bold 16px/14px Arial, Helvetica, sans-serif;
+	margin: 0 0 20px;
+	width: 750px;
+}
+#step-1-form-container .content-layer .step-form-component {
+	overflow:hidden;
+	width: 750px;
+}
+#step-1-form-container .content-layer .step-form-component .fieldset {
+	clear: both;
+	float: left;
+	margin: 0 0 17px;
+	width: 750px;
+}
+#step-1-form-container .content-layer .step-form-component .fieldset .form-item-wrapper {
+	width:192px;
+	float:left;
+	margin:0 27px 0 0;
+}
+#step-1-form-container .content-layer .step-form-component .fieldset label {
+	clear:both;
+	cursor:default;
+	font:normal 12px/20px Arial, Helvetica, sans-serif;
+	color:#172841;
+	display:block;
+	margin:0 0 3px 0;
+}
+#step-1-form-container .content-layer .step-form-component .fieldset .form-item {
+	clear:both;
+	display:block;
+	width:180px;
+	height:22px;
+	font:normal 12px/22px Arial, Helvetica, sans-serif;
+}
+#step-1-form-container .content-layer .step-form-component .fieldset .form-type-text {
+	border:1px solid #d8d8d8;
+	padding:4px;
+}
+#step-1-form-container .content-layer .step-form-component .fieldset .form-type-select { border:0; }
+#step-1-form-container .content-layer .step-form-component .fieldset .form-type-text.date {
+	background: url("../images/sprite_general.png") no-repeat scroll 151px -4497px transparent;
+	cursor:pointer;
+}
+#step-1-form-container .content-layer .step-form-component .fieldset .form-info-wrapper {
+	width:262;
+	float:left;
+}
+#step-1-form-container .content-layer .step-form-component .fieldset .form-info-wrapper .info-inner-wrap {
+	float: left;
+	margin: 0 24px 0 0;
+	width: 102px;
+}
+#step-1-form-container .content-layer .step-form-component .fieldset .form-info-wrapper .info-inner-wrap span {
+	font:normal 12px/22px Arial, Helvetica, sans-serif;
+	color:#172841;
+	display:block;
+}
+#step-1-form-container .content-layer .step-form-component .fieldset .form-info-wrapper .info-inner-wrap span.strong {
+	font:bold 14px/22px Arial, Helvetica, sans-serif;
+	clear:both;
+}
+#step-1-form-container .content-layer .step-form-component .fieldset .form-item-wrapper.form-textarea {
+	width:415px;
+	float:left;
+	margin:0 27px 0 0;
+}
+#step-1-form-container .content-layer .step-form-component .fieldset .form-item-wrapper.form-textarea .form-type-textarea {
+	border:1px solid #d8d8d8;
+	resize:none;
+	width:415px;
+	height:125px;
+	font:normal 12px/22px Arial, Helvetica, sans-serif;
+	padding:4px;
+	overflow:auto;
+}
+#step-1-form-container .content-layer .step-form-component .fieldset .info-icon {
+	float:left;
+	background: url('../images/sprite_general2.png') no-repeat -8px -2414px;
+	width: 22px;
+	height: 22px;
+	cursor:pointer;
+	position:relative;
+}
+#step-1-form-container .content-layer .step-form-component .fieldset.item-date .info-icon { margin: 25px 0 0 -21px; }
+#step-1-form-container .content-layer .step-form-component .fieldset .info-icon .info-box {
+	display:none;
+	left: -38px;
+	position: absolute;
+	top: 25px;
+	z-index: 2;
+	font: 12px/20px Arial, Helvetica, sans-serif;
+}
+#step-1-form-container .content-layer .step-form-component .fieldset .info-icon .info-box.open { display:block; }
+.cluetipTop .content { padding:27px 17px 5px 17px; font: 12px/14px Arial,Helvetica,sans-serif; color: #3C5E90; }
+.hotel-step-component-title {
+	clear:both;
+	width:1012px;
+	float:left;
+	font:bold 20px/18px Arial, Helvetica, sans-serif;
+	color:#172841;
+	margin:15px 0;
+}
+#step-1-form-container .content-layer .step-form-component .fieldset .selectbox {
+	background: url('../images/sprite_general2.png') no-repeat -6px -2367px;
+	width: 191px;
+	height: 33px;
+	border: 0 none;
+	color: #737373;
+	cursor: pointer;
+	display: block;
+	float: left;
+	/*font: 11px/33px Arial, Helvetica, sans-serif;*/
+	font:12px/22px Arial,Helvetica,sans-serif;
+	padding: 0 8px;
+}
+#step-1-form-container .bottom-layer {
+	background: url("../images/sprite_general2.png") no-repeat scroll -6px -2335px transparent;
+	height:10px;
+}
+#step-1-form-container .content-layer .step-form-component .fieldset .selectbox-wrapper { position: relative; }
+#step-1-form-container .content-layer .step-form-component .fieldset .selectbox-wrapper ul {
+	background: none repeat scroll 0 0 #FFFFFF;
+	border-left: 1px solid #D5D5D5;
+	border-right: 1px solid #D5D5D5;
+	border-top: 1px solid #D5D5D5;
+	height: auto;
+	margin: 0;
+	max-height: 150px;
+	overflow: auto;
+	position: absolute;
+	top: 32px;
+	width: 189px;
+	z-index: 3;
+}
+.ie #step-1-form-container .content-layer .step-form-component .fieldset .selectbox-wrapper ul { top: 0; }
+#step-1-form-container .content-layer .step-form-component .fieldset .selectbox-wrapper ul li {
+	border-bottom: 1px solid #D8D8D8;
+	clear: both;
+	color: #848485;
+	cursor: pointer;
+	font: bold 11px/16px Arial, Helvetica, sans-serif;
+	padding: 8px;
+}
+#step-1-form-container .content-layer .step-form-component .fieldset .selectbox-wrapper ul li:hover {
+	background: none repeat scroll 0 0 #172841;
+	color: #FFFFFF;
+}
+
+/*****************************************/
+/***************** Calendar **************/
+/*****************************************/
+
+
+
+#plus-three-days .section-calendar {
+	margin:0 0 20px 0;	
+}
+
+#plus-three-days .section-calendar .content-layer {
+	padding:10px 4px;
+	background:#ffffff;
+	overflow:hidden;
+	clear: both;
+}
+
+#plus-three-days-calendar-container {
+	margin:0 0 20px 0;
+}
+
+#plus-three-days .section-calendar .choosen-flight-container {
+	width:606px;
+	border:1px solid #dadada;
+	float:left;
+	clear:both;
+	background: url('../images/sprite_general2.png') no-repeat -12px -2544px;
+}
+#plus-three-days .section-calendar .choosen-flight-container .chossen-flight-label {
+	width:102px;
+	text-align:right;
+	float:left;
+	padding:17px 0;
+	margin:0 23px 0 0;
+}
+#plus-three-days .section-calendar .choosen-flight-container .chossen-flight-label span {
+	color:#121f36;
+	font:bold 12px/14px Arial, Helvetica, sans-serif;
+}
+#plus-three-days .section-calendar .choosen-flight-container .chossen-flight-list {
+	float:left;
+	padding:7px 0;
+	margin:0 22px 0 0;
+}
+#plus-three-days .section-calendar .choosen-flight-container .chossen-flight-list ul > li {
+	float:left;
+	clear:both;
+	font:normal 12px/18px Arial, Helvetica, sans-serif;
+	color:#4b4b4b;
+	height:17px;
+	padding:0 0 0 23px;
+}
+#plus-three-days .section-calendar .choosen-flight-container .chossen-flight-list ul > li.departure { background: url('../images/sprite_general2.png') no-repeat -266px -1475px; }
+#plus-three-days .section-calendar .choosen-flight-container .chossen-flight-list ul > li.return { background: url('../images/sprite_general2.png') no-repeat -267px -1494px; }
+#plus-three-days .section-calendar .choosen-flight-container .chossen-flight-list ul > li > .field {
+	float:left;
+	padding:0 7px 0 0;
+}
+#plus-three-days .section-calendar .choosen-flight-container .chossen-flight-total-price-wrap {
+	width:101px;
+	float:left;
+	background:#eceaea;
+	text-align:center;
+	padding:10px 0;
+	border-left:1px solid #dadada;
+	background: url('../images/sprite_general2.png') no-repeat -13px -2620px;
+}
+#plus-three-days .section-calendar .choosen-flight-container .chossen-flight-total-price-wrap span {
+	clear:both;
+	font:normal 12px/14px Arial, Helvetica, sans-serif;
+	color:#4b4b4b;
+	display:block;
+}
+#plus-three-days .section-calendar .choosen-flight-container .chossen-flight-total-price-wrap span.chossen-flight-total-price {
+	font:bold 18px/14px Arial, Helvetica, sans-serif;
+	color:#121f36;
+}
+#plus-three-days .calendar-top-label {
+	width:605px;
+	text-align:center;
+	display:block;
+	font: bold 14px/12px Arial, Helvetica, sans-serif;
+	color:#172841;
+	margin:11px 0;
+	float:left;
+	clear:both;
+}
+#return-calendar {
+	background:#ffffff;
+	border-spacing:0;
+	clear:both;
+}
+#return-calendar .row-header { height:55px; }
+#return-calendar .left-column { padding:0 10px 10px 0; }
+#return-calendar .table-left {
+	border-spacing:0;
+	border-right:1px solid #dadada;
+	border-bottom:1px solid #dadada;
+}
+#return-calendar .table-left td {
+	border-top:1px solid #dadada;
+	border-left:1px solid #dadada;
+	padding: 9px 14px;
+	text-align:center;
+	width:74px;
+	background: url('../images/sprite_general2.png') no-repeat -14px -2681px;
+}
+#return-calendar .table-left td span {
+	display:block;
+	font: bold 12px/12px Arial, Helvetica, sans-serif;
+	color:#172841;
+}
+#return-calendar .table-header, #return-calendar .table-results {
+	border-spacing:0;
+	border-right:1px solid #dadada;
+	border-bottom:1px solid #dadada;
+}
+#return-calendar .table-header td { background: url('../images/sprite_general2.png') no-repeat -11px -2477px; }
+#return-calendar td.label-column {
+	vertical-align:bottom;
+	text-align:center;
+}
+#return-calendar td.label-column span {
+	color:#172841;
+	font: bold 14px/12px Arial, Helvetica, sans-serif;
+}
+#return-calendar .table-header td, #return-calendar .table-results td {
+	border-top:1px solid #dadada;
+	border-left:1px solid #dadada;
+	padding:9px 14px;
+}
+
+#return-calendar .table-results td {
+	height: 43px;
+	text-align:center;
+}
+
+#return-calendar .table-results td span {
+	font: bold 14px/12px Arial, Helvetica, sans-serif;
+	color:#121f36;
+}
+
+#return-calendar .table-header td.highlight, #return-calendar .table-left td.highlight, #return-calendar .table-header td.active, #return-calendar .table-left td.active { background:#131f37; }
+#return-calendar .table-header td.highlight span, #return-calendar .table-left td.highlight span, #return-calendar .table-header td.active span, #return-calendar .table-left td.active span { color:#ffffff; }
+#return-calendar .table-results td.active, #return-calendar .table-results td.active:hover  { background:#131f37; }
+#return-calendar .table-results td.active span, #return-calendar .table-results td.active:hover span { color:#ffffff;}
+
+#return-calendar .table-results td:hover { background:#eceaea; }
+#return-calendar .table-header td span {
+	display:block;
+	font: bold 12px/12px Arial, Helvetica, sans-serif;
+	color:#172841;
+}
+#return-calendar td, .table-results td { vertical-align:top; }
+#return-calendar .tabel-right td {
+	width:72px;
+	text-align:center;
+}
+/*********************************/
+.hotel-title-info {
+	float: right;
+	width: 129px;
+	cursor:pointer;
+}
+.hotel-title-info .left {
+	background: url("../images/sprite_general.png") no-repeat scroll -864px -6913px transparent;
+	float: left;
+	height: 36px;
+	width: 10px;
+}
+.hotel-title-info button {
+	background: none repeat scroll 0 0 #172841;
+	color: #FFFFFF;
+	display: block;
+	float: left;
+	font: 28px/37px 'MyriadProBoldCondensed';
+	height: 36px;
+	letter-spacing: -0.7px;
+	border:none;
+	cursor:pointer;
+}
+.hotel-title-info .right {
+	background: url("../images/sprite_general.png") no-repeat scroll -880px -6913px transparent;
+	float: left;
+	height: 36px;
+	width: 10px;
+}
+
+.hotel-title-info:hover .left {background: url('../images/sprite_general.png') no-repeat -861px -6830px;}
+.hotel-title-info:hover button {background:#E84C09;}
+.hotel-title-info:hover .right {background: url('../images/sprite_general.png') no-repeat -877px -6830px;}
+
+.page-flights-results #right-col .why-book .body ul li { font-weight:bold; }
+
+#hotel-step-1-footer {
+	clear: both;
+	float: left;
+	width: 809px;
+	margin:0 0 28px 0;
+}
+#step-1-form-container .content-layer .step-form-component .fieldset.last { height: 177px; }
+
+#return-calendar .table-results td span.price {
+	display:block;
+	clear:both;	
+}
+
+#tabs-flights-results .section-item .three_days_top_curve {  height: 13px; width:616px; background:url('../images/sprite_general2.png') no-repeat -1900px -894px; }
+
+
+#plus-three-days .info-box {
+	display: none;
+    /*left: -10px;
+    position: absolute;
+    top: 22px;*/
+    
+    left: -31px;
+    position: absolute;
+    top: 29px;
+}
+
+#plus-three-days .cell-inner {
+	position:absolute;	
+}
+
+
+#plus-three-days .section-calendar .bottom-layer {
+	background: url("../images/sprite_general2.png") no-repeat scroll -16px -2905px transparent;
+    height: 57px;
+    text-align: right;
+    width: 616px;
+}
+
+#plus-three-days .section-calendar .bottom-layer .show-flights {
+	background: url('../images/sprite_general2.png') no-repeat -208px -2726px;
+    border: medium none;
+    cursor: pointer;
+    height: 43px;
+    margin: 8px 8px 0 0;
+    width: 145px;
+}
+
+#plus-three-days .section-calendar .bottom-layer .show-flights:hover {
+	background: url("../images/sprite_general2.png") no-repeat scroll -208px -2774px transparent;
+	
+}
+
+#plus-three-days .section-calendar .bottom-layer .show-flights span {
+	font: 22px/20px 'MyriadProBoldCondensed';
+	color:#ffffff;
+}
+
+#plus-three-days .filter-bar {
+    background: -moz-linear-gradient(center top , #FFFFFF 0%, #D9D9D9 100%) repeat scroll 0 0 transparent;
+    float: left;
+    height: 44px;
+    width: 616px;
+    z-index: 3;
+}
+
+#plus-three-days .filter-bar .result-count {
+    float: left;
+    margin: 11px 0 0 21px;
+}
+
+#plus-three-days .filter-bar .result-sorting {
+    float: right;
+    margin: 3px 12px 0 0;
+    position: relative;
+    width: 185px;
+    z-index: 10;
+}
+
+#plus-three-days .filter-bar .result-pager {
+    float: left;
+    margin-left: 30px;
+    margin-top: 3px;
+    position: relative;
+    text-align: center;
+    width: 231px;
+}
+
+#plus-three-days .filter-bar .result-sorting input.selectbox {
+    background: url("../images/sprite_general.png") no-repeat scroll -680px -187px white;
+    border: 1px solid #DDDCDC;
+    color: #737373;
+    cursor: pointer;
+    float: left;
+    font: 11px/23px Arial,Helvetica,sans-serif;
+    height: 23px;
+    padding-left: 6px;
+    width: 125px;
+}
+
+#plus-three-days .filter-bar .result-sorting .selectbox-wrapper ul {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #D8D8D8;
+    position: absolute;
+    right: 3px;
+    top: 26px;
+    width: 130px;
+}
+
+#plus-three-days .selectbox-wrapper ul li {
+    background-color: #FFFFFF;
+    border-top: 1px solid #D8D8D7;
+    clear: left;
+    color: #737373;
+    cursor: pointer;
+    float: left;
+    font: bold 11px/24px Arial,Helvetica,sans-serif;
+    height: 24px;
+    padding: 0 8px;
+    width: 114px;
+}
+#plus-three-days .selectbox-wrapper ul li:hover {background-color: #172841; color: #FFFFFF;}
+
+
+#plus-three-days .filter-bar .result-sorting .label {
+	float: left;
+    font: 11px/27px Arial,Helvetica,sans-serif;
+    margin-right: 10px;	
+}
+
+#plus-three-days .result {
+	float:left;
+	width:616px;
+	padding:15px 0 10px;
+	/*border-top:1px solid #dadada;
+	border-bottom:1px solid #fff;*/
+	background: rgb(255,255,255);
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(248,248,248,1) 75%, rgba(235,235,235,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(75%, rgba(248,248,248,1)), color-stop(100%, rgba(235,235,235,1)));
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(248,248,248,1) 75%, rgba(235,235,235,1) 100%);
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(248,248,248,1) 75%, rgba(235,235,235,1) 100%);
+	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(248,248,248,1) 75%, rgba(235,235,235,1) 100%);
+	background: linear-gradient(top, rgba(255,255,255,1) 0%, rgba(248,248,248,1) 75%, rgba(235,235,235,1) 100%);
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ebebeb', GradientType=0 )
+ 
+ ;
+}
+#plus-three-days .result .flight-info {
+	float:left;
+	width:412px;
+	padding-left:24px;
+}
+#plus-three-days .result .flight-info .line {
+	float:left;
+	clear:both;
+}
+#plus-three-days .result .flight-info .line-1 { margin-bottom:15px; }
+#plus-three-days .result .flight-info .line-2 {
+	margin-bottom:19px;
+	width: 380px;
+}
+#plus-three-days .result .flight-info .line-3 { display:none; }
+#plus-three-days .result .flight-info .airline-logo {
+	float:left;
+	width:154px;
+}
+#plus-three-days .result .flight-info .airline-logo span {
+	color:#4c4c4c;
+	font-size:11px;
+	display:block;
+}
+#plus-three-days .result .flight-info .airways-flight-details {
+	float:left;
+	font:12px/12px Arial, Helvetica, sans-serif;
+}
+#plus-three-days .result .flight-info .airways-flight-details .airways-txt { margin-bottom:3px; }
+#plus-three-days .result .flight-info .flight-arrival, #plus-three-days .result .flight-info .flight-departure {
+	float:left;
+	margin-right:24px;
+}
+#plus-three-days .result .flight-info .flight-arrival .arr-place, #plus-three-days .result .flight-info .flight-departure .dep-place {
+	color: #646464;
+	display: block;
+	float: left;
+	font: 12px/14px Arial, Helvetica, sans-serif;
+	margin-bottom: 3px;
+}
+#plus-three-days .result .flight-info .flight-arrival .arr-time, #plus-three-days .result .flight-info .flight-departure .dep-time {
+	float:left;
+	clear:both;
+}
+#plus-three-days .result .ret-flight-info-wrapper {
+	float:left;
+	width:412px;
+}
+#plus-three-days .result .ret-flight-info-wrapper .flight-info {
+	padding-left:0;
+	margin-left:24px;
+}
+#plus-three-days .result .flight-info.ret-flight-to {
+	border-top:2px solid #dadada;
+	padding-top:18px;
+	margin-top:18px;
+	margin-left:24px;
+}
+#plus-three-days .result .flight-info .flight-departure .dep-time, #plus-three-days .result .flight-info .flight-arrival .arr-time {
+	clear: left;
+	display: block;
+	float: left;
+}
+#plus-three-days .result .flight-info .flight-arrival .arr-time { width:110px; }
+#plus-three-days .result .flight-info .flight-duration .duration-time, #plus-three-days .result .flight-info .flight-arrival .arr-time .time, #plus-three-days .result .flight-info .flight-departure .dep-time .time {
+	font:bold 14px/14px Arial, Helvetica, sans-serif;
+	color:#121f36;
+	float:left;
+	display:block;
+	margin-right:4px;
+}
+#plus-three-days .result .flight-info .flight-duration .flight-type, #plus-three-days .result .flight-info .flight-arrival .arr-time .airport, #plus-three-days .result .flight-info .flight-departure .dep-time .airport {
+	font:12px/14px Arial, Helvetica, sans-serif;
+	color:#121f36;
+}
+#plus-three-days .result .flight-info .from-to {
+	float:left;
+	width:18px;
+	height:30px;
+	background: url('../images/sprite_general.png') no-repeat -1171px -1794px;
+	margin-right:24px;
+}
+#plus-three-days .result .flight-info .flight-duration { float:left; }
+#plus-three-days .result .flight-info .flight-more-info {
+	padding-top:19px;
+	float:left;
+	margin-bottom:18px;
+	width:371px;
+}
+#plus-three-days .result .flight-info .airplane-type {
+	float:left;
+	margin:0 26px 8px 0;
+}
+#plus-three-days .result .flight-info .type {
+	float:left;
+	font:11px/12px Arial, Helvetica, sans-serif;
+	display:block;
+	margin-right:3px;
+	color:#4b4b4b;
+}
+#plus-three-days .result .flight-info .plane-num {
+	float:left;
+	font:bold 12px/12px Arial, Helvetica, sans-serif;
+	display:block;
+	color:#4b4b4b;
+}
+#plus-three-days .result .flight-info .availability {
+	font:11px/12px Arial, Helvetica, sans-serif;
+	color:#4b4b4b;
+	margin-bottom:10px;
+}
+#plus-three-days .result .flight-info .travel-time {
+	float:left;
+	margin:1px 20px 8px 0;
+	font:11px/12px Arial, Helvetica, sans-serif;
+	color:#4b4b4b;
+}
+#plus-three-days .result .flight-info .seats-view { float:left; width:100px; }
+#plus-three-days .result .flight-info .seats-view a {
+	float:left;
+	text-decoration:none;
+	color:#121f36;
+	font:bold 12px/12px Arial, Helvetica, sans-serif;
+}
+#plus-three-days .result .flight-info .seats-view a:hover { text-decoration:underline; }
+#plus-three-days .result .flight-info .flight-links {
+	float:left;
+	clear:both;
+}
+#plus-three-days .result .flight-info .flight-links a {
+	font:11px/12px Arial, Helvetica, sans-serif;
+	color:#121f36;
+	text-decoration:none;
+	float:left;
+	display:block;
+}
+#plus-three-days .result .flight-info .flight-links a:hover { text-decoration:underline; }
+#plus-three-days .result .flight-info .flight-links span {
+	font:11px/12px Arial, Helvetica, sans-serif;
+	float:left;
+	display:block;
+	margin:0 4px;
+}
+#plus-three-days .result .price-info {
+	float: right;
+	padding-top: 20px;
+	width: 155px;
+}
+#plus-three-days .result .price-info .total-price {
+	font:26px/28px "FuturaGreekBoldRegular", Gadget, sans-serif;
+	color:#121f36;
+	float:left;
+	margin-bottom:7px;
+}
+#plus-three-days .result .price-info .under-price-label {
+	width: 126px;
+	float:left;
+	clear:both;
+	color:#4c4c4c;
+	font:11px/11px Arial, Helvetica, sans-serif;
+	margin-bottom:12px;
+}
+#plus-three-days .result .price-info .price-details {
+	float:left;
+	clear:both;
+	padding-top:5px;
+	margin-bottom:10px;
+	display:none;
+}
+#plus-three-days .result .price-info .price-details > span {
+	float:left;
+	clear:both;
+	font:11px/11px Arial, Helvetica, sans-serif;
+	color:#4c4c4c;
+	display:block;
+	width: 126px;
+	margin-bottom:8px;
+}
+#plus-three-days .result .price-info .price-details > span > span {
+	display:block;
+	float:left;
+	margin-right:9px;
+}
+#plus-three-days .result .price-info .book-now {
+	float:left;
+	clear:both;
+	margin-bottom:14px;
+}
+#plus-three-days .result .price-info .book-now a {
+	display:block;
+	float:left;
+	text-decoration:none;
+	background: url('../images/sprite_general.png') no-repeat -1180px -2255px;
+	width: 126px;
+	height: 32px;
+	font:19px/30px "FuturaGreekBoldRegular", Gadget, sans-serif;
+	color:#fff;
+	text-align:center;
+}
+#plus-three-days .result .price-info .book-now a:hover { background: url('../images/sprite_general.png') no-repeat -1178px -2175px; }
+#plus-three-days .result .price-info .details-btn {
+	float:left;
+	clear:both;
+	margin-left:20px;
+}
+#plus-three-days .result .price-info .details-btn a, #plus-three-days .result .price-info .details-btn a, #plus-three-days .result .ret-flight-info-wrapper .details-btn a {
+	padding-left:12px;
+	background:url("../images/sprite_general.png") no-repeat scroll -1580px -2575px transparent;
+	text-decoration:none;
+	font:bold 11px/14px Arial, Helvetica, sans-serif;
+	color:#3c5e90;
+	display:block;
+	width:100px;
+}
+#plus-three-days .result .price-info .details-btn a:hover { text-decoration:underline; }
+#plus-three-days .delete-results-info {
+	float:left;
+	background:#fff;
+	padding:13px 0 0 29px;
+	height:26px;
+	width:587px;
+	border-top:1px solid #dadada;
+}
+#plus-three-days .delete-results-info .left-col {
+	width:280px;
+	float:left;
+	font:10px/12px Arial, Helvetica, sans-serif;
+	color:#121f36;
+}
+#plus-three-days .delete-results-info .right-col {
+	float:right;
+	width:130px;
+	margin-right:28px;
+}
+#plus-three-days .delete-results-info .right-col a {
+	float:left;
+	display:block;
+	text-decoration:none;
+	color:#000;
+	font:11px/22px Arial, Helvetica, sans-serif;
+}
+#plus-three-days .delete-results-info .right-col a:hover {
+	color:#e84c09;
+	text-decoration:underline;
+}
+#plus-three-days .delete-results-info .right-col span {
+	float:left;
+	display:block;
+	margin:0 4px;
+	font:11px/22px Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+#tabs-flights-results .flights-results-bottom-curve.three_days_active {background: url('../images/sprite_general.png') no-repeat -294px -2394px;}
+
+
+
+
+
+
+#plus-three-days  .result .share-toolbar{
+  float: left;
+  padding-left: 26px;
+  padding-top:12px;
+  width:400px;
+}
+.ie7 #plus-three-days  .result .share-toolbar {margin-top:12px;}
+
+#hotel-list-wrapper .addthis_toolbox.addthis_default_style,
+#plus-three-days  .result .addthis_toolbox.addthis_default_style,
+ #main-col .hotel-gallery-info-wrapper .hotel-top-infotext .share-toolbar .addthis_toolbox.addthis_default_style {float:left; padding-top:1px;}
+
+
+
+#hotel-list-wrapper .addthis_toolbox.addthis_default_style span,
+ #main-col .hotel-gallery-info-wrapper .hotel-top-infotext .share-toolbar .addthis_toolbox.addthis_default_style span,
+
+#plus-three-days  .result .addthis_toolbox.addthis_default_style span {
+  background: url("../images/sprite_general.png") no-repeat scroll -1414px -2665px transparent;
+  height: 11px;
+  line-height: 11px;
+  margin-right:0;
+}
+
+#hotel-list-wrapper .share-toolbar a.addthis_button_compact,
+#plus-three-days  .result .share-toolbar a.addthis_button_compact,
+ #main-col .hotel-gallery-info-wrapper .hotel-top-infotext .share-toolbar a.addthis_button_compact {
+  color: #606060;
+  font-family: Arial;
+  font-size: 11px;
+  line-height: 11px;
+  padding: 0;
+  text-decoration:none;
+}
+#hotel-list-wrapper .share-toolbar a.addthis_button_compact:hover,
+#plus-three-days  .result .share-toolbar a.addthis_button_compact:hover,
+ #main-col .hotel-gallery-info-wrapper .hotel-top-infotext .share-toolbar a.addthis_button_compact:hover{text-decoration:underline;}
+#hotel-list-wrapper .share-toolbar .separator,
+#plus-three-days  .result .share-toolbar .separator,
+ #main-col .hotel-gallery-info-wrapper .hotel-top-infotext .share-toolbar .separator{
+  background: url("../images/sprite_general.png") no-repeat scroll -1474px -2662px transparent;
+  float: left;
+  height: 14px;
+  margin: -2px 10px 0 10px;
+  width: 12px;
+}
+#hotel-list-wrapper .share-toolbar .printer-icon,
+#hotel-list-wrapper .share-toolbar .mail-icon,
+#hotel-list-wrapper .share-toolbar .star-icon,
+#plus-three-days  .result .share-toolbar .printer-icon,
+#plus-three-days  .result .share-toolbar .mail-icon,
+#plus-three-days  .result .share-toolbar .star-icon,
+ #main-col .hotel-gallery-info-wrapper .hotel-top-infotext .share-toolbar .printer-icon,
+ #main-col .hotel-gallery-info-wrapper .hotel-top-infotext .share-toolbar .mail-icon,
+ #main-col .hotel-gallery-info-wrapper .hotel-top-infotext .share-toolbar .star-icon  {float:left;} 
+
+
+#plus-three-days  .result .share-toolbar .delete-box{float: left; margin: -2px 9px 0 0;}
+#plus-three-days  .result .share-toolbar .delete-box input {margin:0; float:left;}
+#plus-three-days  .result .share-toolbar .delete-box label {font-size:11px; color:#606060; font-family:Arial; padding-left:4px; float:left;}
+
+#hotel-list-wrapper .share-toolbar .printer-icon a,
+#plus-three-days  .result .share-toolbar .printer-icon a,
+ #main-col .hotel-gallery-info-wrapper .hotel-top-infotext .share-toolbar .printer-icon a {
+	background: url('../images/sprite_general.png') no-repeat -1583px -2662px; width: 14px; height: 14px; margin-right:10px; margin-top:-2px;
+}
+
+#hotel-list-wrapper .share-toolbar .mail-icon a,
+#plus-three-days  .result .share-toolbar .mail-icon a,
+ #main-col .hotel-gallery-info-wrapper .hotel-top-infotext .share-toolbar .mail-icon a{
+background: url('../images/sprite_general.png') no-repeat -1512px -2664px; width: 14px; height: 11px;  margin-right:10px;}
+
+#hotel-list-wrapper .share-toolbar .star-icon a,
+#plus-three-days  .result .share-toolbar .star-icon a,
+ #main-col .hotel-gallery-info-wrapper .hotel-top-infotext .share-toolbar .star-icon a{
+	background: url('../images/sprite_general.png') no-repeat -1553px -2665px; width: 11px; height: 11px; margin-right:10px;
+}
+#hotel-list-wrapper .share-toolbar a,
+#plus-three-days  .result .share-toolbar a,
+ #main-col .hotel-gallery-info-wrapper .hotel-top-infotext .share-toolbar  a
+ { text-decoration:none; display:block;}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /* hotels form */
+ 
+body.page-hotels #search-hotel-form .step3-elems .line,
+body.page-hotels2 #search-hotel-form .step3-elems .line,
+#left-col #search-packages-form .step4-elems .line {float:left; clear:left; width:187px; padding-top:10px;}
+
+body.page-hotels2 #search-hotel-form .step3-elems .line,
+#left-col #search-packages-form .step4-elems .line {width:240px;}
+body.page-hotels #search-hotel-form .step3-elems .line label,
+body.page-hotels2 #search-hotel-form .step3-elems .line label,
+#left-col #search-packages-form .step4-elems .line label {padding:0;}
+body.page-hotels #search-hotel-form .step3-elems .line .opWithInfo,
+body.page-hotels2 #search-hotel-form .step3-elems .line .opWithInfo,
+#left-col #search-packages-form .step4-elems .line .opWithInfo {clear:left; margin-left:0;}
+body.page-hotels #left-col .step3-elems .roomswrapper,
+body.page-hotels2 #left-col .step3-elems .roomswrapper,
+#left-col #search-packages-form .step4-elems.roomswrapper {position:relative;}
+body.page-hotels #left-col .step3-elems .infantswithoutseat-wrapper,
+body.page-hotels2 #left-col .step3-elems .infantswithoutseat-wrapper,
+#left-col #search-packages-form .step4-elems .infantswithoutseat-wrapper {float:left;}
+body.page-hotels #left-col .step3-elems  .childrenwrapper,
+body.page-hotels #left-col .step3-elems .adultswrapper,
+body.page-hotels #left-col .step3-elems .infantswithoutseat-wrapper,
+body.page-hotels2 #left-col .step3-elems  .childrenwrapper,
+body.page-hotels2 #left-col .step3-elems .adultswrapper,
+body.page-hotels2 #left-col .step3-elems .infantswithoutseat-wrapper,
+body.page-hotels2 #left-col .step3-elems .infantswithoutseat-wrapper,
+#left-col #search-packages-form .step4-elems  .childrenwrapper,
+#left-col #search-packages-form .step4-elems .adultswrapper,
+#left-col #search-packages-form .step4-elems .infantswithoutseat-wrapper {margin-bottom:0;}
+
+body.page-hotels #search-hotel-form .step3-elems .line3, 
+body.page-hotels #search-hotel-form .step3-elems .line4, 
+body.page-hotels #search-hotel-form .step3-elems .line5,
+body.page-hotels2 #search-hotel-form .step3-elems .line3, 
+body.page-hotels2 #search-hotel-form .step3-elems .line4, 
+body.page-hotels2 #search-hotel-form .step3-elems .line5,
+#left-col #change-search-hotels-form .step4-elems .line3,
+#left-col #change-search-hotels-form .step4-elems .line4,
+#left-col #change-search-hotels-form .step4-elems .line5,
+#left-col #search-packages-form .step4-elems .line3,
+#left-col #search-packages-form .step4-elems .line4,
+#left-col #search-packages-form .step4-elems .line5   { display:none; }
+body.page-hotels #search-hotel-form .step3-elems .line.active,
+body.page-hotels2 #search-hotel-form .step3-elems .line.active,
+#left-col #change-search-hotels-form .step4-elems .line.active,
+#left-col #search-packages-form .step4-elems .line.active {display:block;}
+
+body.page-hotels #search-hotel-form .step3[rel="1"] .step3-info,
+body.page-hotels #search-hotel-form .step3[rel="1"] .step3-elems { height:120px }
+body.page-hotels #search-hotel-form .step3[rel="2"] .step3-info,
+body.page-hotels #search-hotel-form .step3[rel="2"] .step3-elems { height:160px }
+body.page-hotels #search-hotel-form .step3[rel="3"] .step3-info,
+body.page-hotels #search-hotel-form .step3[rel="3"] .step3-elems  {height:205px;}
+body.page-hotels #search-hotel-form .step3[rel="4"] .step3-info,
+body.page-hotels #search-hotel-form .step3[rel="4"] .step3-elems  {height: 260px; }
+
+body.page-hotels2 #search-hotel-form .step3[rel="1"] .step3-info { height:102px }
+body.page-hotels2 #search-hotel-form .step3[rel="1"] .step3-elems { height:95px }
+body.page-hotels2 #search-hotel-form .step3[rel="2"] .step3-info { height:165px }
+body.page-hotels2 #search-hotel-form .step3[rel="2"] .step3-elems { height:159px }
+body.page-hotels2 #search-hotel-form .step3[rel="3"] .step3-info { height:219px }
+body.page-hotels2 #search-hotel-form .step3[rel="3"] .step3-elems  {height:213px;}
+body.page-hotels2 #search-hotel-form .step3[rel="4"] .step3-info { height:270px }
+body.page-hotels2 #search-hotel-form .step3[rel="4"] .step3-elems  {height: 263px; }
+
+
+
+#left-col #change-search-hotels-form .step4 label {float:left; display:block; width:85px;}
+#left-col #change-search-hotels-form .step4-elems .line {
+  border-top: 1px solid #DADADA;
+  float: left;
+/*  padding-bottom: 0;
+  padding-top: 5px; */
+  padding:14px 14px 0 14px;
+}
+
+#left-col #change-search-hotels-form .step4-elems .line1 {padding-top:0;}
+#left-col #change-search-hotels-form .step4-elems .line2 {padding-top:5px;}
+
+#left-col #change-search-hotels-form .step4-elems .line1,
+#left-col #change-search-hotels-form .step4-elems .line2 {border-top:none; }
+#left-col #change-search-hotels-form .step4-elems .line1 .roomswrapper .opWithInfo {float:left;}
+#left-col #change-search-hotels-form .step4-elems .selectbox-wrapper,
+body.page-hotels-results #change-search-hotels-form .step4-elems .selectbox-wrapper {right:0 !important;}
+#left-col #change-search-hotels-form .step4-elems .line1 .roomswrapper .selectbox-wrapper {top:19px !important; right:14px !important;}
+
+body.page-hotels-results #left-col #hotels-results-left-section2 .step4-elems, 
+#left-col #change-search-hotels-form .step4-elems {padding:15px 0 10px;}
+
+body.page-flights-results #left-col #flight-results-form .step-info.closed h3, 
+body.page-hotels-results #left-col #hotels-results-form .step-info.closed h3 { background:url("../images/sprite_general2.png") no-repeat scroll -75px -944px transparent; }
+
+
+
+
+/*cars left col */
+
+
+.page-cars #carsleftform {float:left; }
+.page-cars #carsleftform #frontForm {
+	float: left;
+    margin-bottom: 28px;
+    margin-right: 30px;
+	width:250px;
+}
+
+.page-cars #carsleftform #frontForm  .bookingForm{display:block;}
+.page-cars #carsleftform #frontForm .topFormRadius {
+	display:none;
+}
+
+.page-cars #carsleftform #frontForm #search-home-form-3 .step2-info
+{
+	height:119px;
+	
+}
+.page-cars #carsleftform #frontForm #search-home-form-3 .step2-elems
+{
+	height:126px;
+	padding-top:3px;
+	
+}
+
+.page-cars #carsleftform #frontForm #search-home-form-3 .step2 input.selectbox,
+.page-cars #carsleftform #frontForm #search-home-form-3 .step5 input.selectbox
+{
+	background: url("../images/sprite_general.png") no-repeat scroll 194px -4453px #FFFFFF;
+    cursor: pointer;
+    position: relative;
+    width: 214px;
+}
+.page-cars #carsleftform #frontForm #search-home-form-3 .step2 .selectbox-wrapper li,
+.page-cars #carsleftform #frontForm #search-home-form-3 .step5 .selectbox-wrapper li
+{
+	background-color: #FFFFFF;
+	border-top: 1px solid #D8D8D7;
+	clear: left;
+	color: #737373;
+	cursor: pointer;
+	float: left;
+	font: bold 11px/33px Arial,Helvetica,sans-serif;
+	height: 33px;
+	padding: 0 10px;
+	width: 212px;
+}
+.page-cars #carsleftform #frontForm #search-home-form-3 .step2 .selectbox-wrapper li:hover,
+.page-cars #carsleftform #frontForm #search-home-form-3 .step5 .selectbox-wrapper li:hover
+{
+	background-color: #172841;
+	color: #FFFFFF;
+}
+.page-cars #carsleftform #frontForm #search-home-form-3 .step5 input.selectbox
+{
+	border: 1px solid #D8D8D8;
+	clear: both;
+	color: #737373;
+	float: left;
+	font: 12px/31px Arial,Helvetica,sans-serif;
+	height: 31px;
+	margin-top: 5px;
+	padding: 0 10px;
+	width: 216px;
+}
+.page-cars #carsleftform #frontForm #search-home-form-3  #carPickDrop_container
+{
+	width:232px!important;
+	top:48px;
+}
+.page-cars #carsleftform #frontForm #search-home-form-3  #destProvider_container
+{
+	width:236px!important;
+	top:45px!important;
+}
+.page-cars #carsleftform #frontForm #search-home-form-3  .step5 .destProviderWrapper
+{
+	position:relative;
+}
+
+.page-cars #carsleftform #frontForm #search-home-form-3 .step4 .select-wrapper label
+{
+	float: left;
+	margin-right: 45px;
+	padding-top: 1px;
+}
+.page-cars #carsleftform #frontForm #search-home-form-3 .step4 .select-wrapper input
+{
+ background:url("../images/sprite_general.png") no-repeat scroll -680px -187px #FFFFFF;
+    border: 1px solid #D8D8D8;
+    color: #737373;
+    cursor: pointer;
+    float: left;
+    font: 12px/31px Arial,Helvetica,sans-serif;
+    height: 31px;
+    margin-top: 0px;
+    padding: 0 9px;
+    width: 113px;
+}
+.page-cars #carsleftform #frontForm #search-home-form-3 .step4 .select-wrapper
+{
+	position:relative;
+}
+.page-cars #carsleftform #frontForm #search-home-form-3 #carType_container
+{
+	left: 99px;
+	top: 26px;
+	width: 133px !important;
+	z-index:50;
+}
+.page-cars #carsleftform #frontForm #search-home-form-3 .step4 .select-wrapper .selectbox-wrapper li
+{
+	width: 117px;
+}
+
+
+.page-cars #carsleftform #frontForm #search-home-form-3 .step4 .car-date-wrapper .selectbox-wrapper li
+{
+	width: 218px;
+}
+.page-cars #carsleftform #frontForm #search-home-form-3 .step4 .car-date-wrapper
+{
+	float:left;
+	clear:left;
+	padding-top:8px;
+}
+.page-cars #carsleftform #frontForm #search-home-form-3 .step4 .car-date-wrapper label
+{
+	float:left;
+}
+.page-cars #carsleftform #frontForm #search-home-form-3 .step4 .car-date-wrapper .pickOpWrapper	
+{
+	float:left;
+	clear:left;
+	padding-top:4px;
+	position:relative;
+}
+.page-cars #carsleftform #frontForm #search-home-form-3 .step4 .globaldatepicker 
+{
+	background: url("../images/sprite_general.png") no-repeat scroll -376px -187px #FFFFFF;
+	border: 1px solid #D8D8D8;
+	color: #737373;
+	cursor: pointer;
+	float: left;
+	height: 31px;
+	line-height: 31px;
+	padding: 0 8px;
+	width: 217px;
+}
+.page-cars #carsleftform #frontForm #search-home-form-3 .step4 .car-date-wrapper  .selectbox
+{
+    background:url("../images/sprite_general.png") no-repeat scroll 190px -4453px #FFFFFF;
+    border: 1px solid #D8D8D8;
+    color: #737373;
+    cursor: pointer;
+    float: right;
+    height: 31px;
+    line-height: 31px;
+    margin-left: 0 !important;
+    margin-right: 8px;
+    margin-top: 2px;
+    padding: 0 10px;
+    width: 213px;
+}
+.page-cars #carsleftform #frontForm #search-home-form-3 .step4 .car-date-wrapper  .selectbox-wrapper
+{
+	width:234px!important;
+	top:59px;
+	margin-right:7px;
+}
+.page-cars #carsleftform #frontForm #search-home-form-3 .step5-info
+{
+	height: 77px;
+}
+.page-cars #carsleftform #frontForm #search-home-form-3 .step5-elems
+{
+	height:75px;
+}
+.page-cars #carsleftform #frontForm #search-home-form-3 .advOpWrapper
+{
+	float:left;
+	clear:left;
+	padding:20px 15px 7px 30px;
+	background-color:#fff;
+	width:579px;
+}
+.page-cars #carsleftform #frontForm #search-home-form-3 .advOpWrapper .advOp
+{
+	float:left;
+	padding-top:10px;
+}
+.page-cars #carsleftform #frontForm #search-home-form-3 .advOpWrapper .advOp a
+{
+	font:bold 12px Arial, Helvetica, sans-serif;
+	color:#172841;
+	text-decoration:none;	
+}
+.page-cars #carsleftform #frontForm #search-home-form-3 .advOpWrapper .advOp a:hover
+{
+	text-decoration:underline;
+}
+.page-cars #carsleftform #frontForm #search-home-form-3 .advOpWrapper .button-wrapper
+{
+	float:right;
+}
+.page-cars #carsleftform #frontForm #search-home-form-3 .button-wrapper
+{
+	width:169px;
+	padding-top:0;
+	height:40px;
+}
+.page-cars #carsleftform #frontForm #search-home-form-3 input
+{
+	font: 12px/31px Arial,Helvetica,sans-serif!important;
+	height: 25px!important;
+	padding-top:0;
+	padding-bottom:0;
+}
+.page-cars #carsleftform #frontForm #search-home-form-3 .step4-elems
+{
+	height:229px;
+	
+}
+.page-cars #carsleftform #frontForm #search-home-form-3 .step4-info 
+{
+	height:222px;
+
+}
+.page-cars #carsleftform #frontForm #search-home-form-3 .step-elems
+{
+	
+	width:243px;
+}
+.page-cars #carsleftform #frontForm #search-home-form-3 .step-info 
+{
+
+	width:131px;
+}
+
+
+.page-cars #carsleftform #frontForm
+{
+	width:470px;
+}
+.page-cars #carsleftform #frontForm .topFormRadius
+{
+	background: url("../images/sprite_general2.png") no-repeat scroll -930px -319px transparent;
+    height: 12px;
+    width: 470px;
+	display:block;
+	
+	}
+.page-cars #carsleftform #frontForm .topFormRadius.active
+{
+	background:url("../images/sprite_general2.png") no-repeat scroll -930px -294px transparent;
+	display:block;
+}	
+	
+
+.page-cars #carsleftform #frontForm .topBottomRadius
+{
+	background: url("../images/sprite_general2.png") no-repeat scroll -930px -369px transparent;
+    width: 470px;
+	height:13px;
+	float:left;
+}
+.page-cars #carsleftform #frontForm .step
+{
+	float:left;
+	clear:left;
+	position:relative; 
+}
+.page-cars #carsleftform #frontForm .step-info .step-active-arrow
+{
+	background: url("../images/sprite_general.png") no-repeat scroll -557px -410px transparent;
+	height: 22px;
+	position: absolute;
+	right: -11px;
+	top: 40%;
+	width: 11px;
+}
+
+
+.page-cars #carsleftform #frontForm .step4{z-index:2;}
+.page-cars #carsleftform #frontForm .step5{z-index:1;}
+
+
+.page-cars #carsleftform #frontForm .step1-elems
+{
+	border-top:none!important;
+} 
+				
+.page-cars #carsleftform #frontForm .step-info
+{    
+   
+	width:174px;
+	float:left;
+	border-bottom:1px solid #0b172a;
+	border-top:0px solid #243959;
+	position:relative;	
+	background-color:#172841;
+}
+
+.page-cars #carsleftform #frontForm .step-elems
+{
+	float: left;
+	width: 354px;
+	padding:0 15px 0 30px;
+	border-top:0px solid #d0d0d0;
+	border-bottom:1px solid #fff;
+	background: #ffffff; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlYmViZWIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #ffffff 0%, #ebebeb 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ebebeb)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#ebebeb 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#ebebeb 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#ebebeb 100%); /* IE10+ */
+	background: linear-gradient(top,  #ffffff 0%,#ebebeb 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ebebeb',GradientType=0 ); /* IE6-8 */
+	
+
+}	
+.page-cars #carsleftform #frontForm .step.active  .step-elems
+{
+	background: #fcfcfc; /* Old browsers */
+	background: -moz-linear-gradient(top,  #fcfcfc 0%, #e9e9e9 50%, #d8d8d8 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfcfc), color-stop(50%,#e9e9e9), color-stop(100%,#d8d8d8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #fcfcfc 0%,#e9e9e9 50%,#d8d8d8 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #fcfcfc 0%,#e9e9e9 50%,#d8d8d8 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #fcfcfc 0%,#e9e9e9 50%,#d8d8d8 100%); /* IE10+ */
+	background: linear-gradient(top,  #fcfcfc 0%,#e9e9e9 50%,#d8d8d8 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#d8d8d8',GradientType=0 ); /* IE6-9 */
+}
+
+.page-cars #carsleftform #frontForm .step.active .step-info
+{
+	background-color:#284063;
+	
+}
+.page-cars #carsleftform #frontForm .stepNum
+{
+	display:block;
+	float:left;
+	font:24px/19px 'MyriadProBoldCondensed';
+	color:#ffffff;
+}
+.page-cars #carsleftform #frontForm .step-info h3
+{
+	color: #FFFFFF;
+	float: none;
+	font: 24px/19px 'MyriadProBoldCondensed';
+	padding-left: 17px;
+	width: 131px;
+}
+.page-cars #carsleftform #frontForm .step-info .desc
+{
+    clear: left;
+    color: #FFFFFF;
+    float: left;
+    font: bold 12px/14px Arial,Helvetica,sans-serif; 
+    padding: 7px 0 0 18px;
+	width:139px;
+}
+
+.page-cars #carsleftform #frontForm .radiob
+
+{ 
+	float:left;
+}
+.page-cars #carsleftform#frontForm .step4-elems .radiob-wrapper{float:left; margin-bottom:15px;}
+.page-cars #carsleftform #frontForm .step4-elems .radiob{
+	float:left;
+	width:360px;
+	/*margin-right:10px;*/
+}
+.page-cars #carsleftform #frontForm .step4-elems .dptrtn-wrapper{float:left; position:relative;}
+.page-cars #carsleftform #frontForm .step4-elems .dptrtn-wrapper.first{ z-index:2;}
+.page-cars #carsleftform #frontForm .step4-elems .dptrtn-wrapper.last{ z-index:1;}
+
+.page-cars #carsleftform #frontForm .step4-elems .dptrtn-wrapper label{float:left; width:350px;}
+.page-cars #carsleftform #frontForm .dptrtn-wrapper > label {display: block;float: none;font-family: Arial;padding: 0;width: 300px; margin-bottom:5px;}
+.page-cars #carsleftform #frontForm .step4-elems .dptrtn-wrapper input.globaldatepicker {background: url("../images/sprite_general.png") no-repeat scroll -424px -187px #FFFFFF; cursor: pointer; border:0; width:164px;
+border: 1px solid #D8D8D8;color: #737373;padding: 5px 8px; margin-bottom:10px; float:left;}
+
+.page-cars #carsleftform #frontForm .step2-elems .radiob label{margin-right:18px; width:74px;}
+.page-cars #carsleftform #frontForm .step2-elems .radiob label[for="multiDestR"]{ margin-right:0; width:91px;}
+
+.page-cars #carsleftform #frontForm .step2 .step-elems
+{
+    padding-bottom: 44px;
+    padding-top: 40px;
+}
+
+.page-cars #carsleftform #frontForm .step2 input
+{
+   border: 1px solid #D8D8D8;
+    clear: both;
+    color: #737373;
+    float: left;
+    font: 12px/31px Arial,Helvetica,sans-serif;
+    height: 31px;
+    margin-top: 5px;
+    padding: 0 9px;
+    width: 215px;
+}
+.page-cars #carsleftform #frontForm .step2 .inputf
+{
+	float:left;
+	/*clear:left;*/
+	margin-bottom:9px;
+	width:339px;
+}
+
+.page-cars #carsleftform #frontForm .step2 .step-elems {
+	/*padding-bottom: 41px;
+	padding-top: 40px;
+	height:58px;
+	padding-bottom: 0;
+	padding-top: 38px;*/
+	height: 160px;
+	padding-bottom: 0;
+	padding-top: 20px;
+}
+
+.page-cars #carsleftform #frontForm .step2 .step-info {
+  /*padding: 20px 30px 10px 20px;*/
+	height: 169px;
+	padding: 11px 30px 0 20px;
+}
+
+
+.page-cars #carsleftform #frontForm .step4-elems .radiob-wrapper{float:left; margin-bottom:15px;}
+.page-cars #carsleftform #frontForm .step4-elems .radiob{
+	float:left;
+	width:360px;
+	/*margin-right:10px;*/
+}
+.page-cars #carsleftform #frontForm .step4-elems .dptrtn-wrapper{float:left; position:relative;}
+.page-cars #carsleftform #frontForm .step4-elems .dptrtn-wrapper.first{ z-index:2;}
+.page-cars #carsleftform #frontForm .step4-elems .dptrtn-wrapper.last{ z-index:1;}
+
+.page-cars #carsleftform #frontForm .step4-elems .dptrtn-wrapper label{float:left; width:350px;}
+.page-cars #carsleftform #frontForm .dptrtn-wrapper > label {display: block;float: none;font-family: Arial;padding: 0;width: 300px; margin-bottom:5px;}
+.page-cars #carsleftform #frontForm .step4-elems .dptrtn-wrapper input.globaldatepicker {background: url("../images/sprite_general.png") no-repeat scroll -424px -187px #FFFFFF; cursor: pointer; border:0; width:164px;
+border: 1px solid #D8D8D8;color: #737373;padding: 5px 8px; margin-bottom:10px; float:left;}
+
+.page-cars #carsleftform#frontForm .step4-elems .radiob label{width:50px;}
+.page-cars #carsleftform #frontForm .step4-elems .radiob label[for="exactdates"]{width:67px;}
+.page-cars #carsleftform #frontForm .step4-elems .radiob label[for="onetothreedays"]{width:86px;}
+.page-cars #carsleftform #frontForm .step4-elems .dptrtn-wrapper input.globaldatepicker {
+	background: url("../images/sprite_general.png") no-repeat scroll -456px -184px #FFFFFF;
+	border: 1px solid #D8D8D8;
+	color: #737373;
+	cursor: pointer;
+	float: left;
+	height: 31px;
+	line-height: 31px;
+	margin-bottom: 10px;
+	padding: 0 8px;
+	width: 135px;
+}
+.page-cars #carsleftform #frontForm .step4-elems .selectbox-wrapper {right:0; width:152px !important;}
+.page-cars #carsleftform #frontForm .step4-elems .selectbox-wrapper li {width:149px;}
+.page-cars #carsleftform #frontForm .step5-elems .selectbox-wrapper {width:65px !important}
+.page-cars #carsleftform #frontForm .step4-elems .selectbox-wrapper li
+{
+	background-color: #FFFFFF;
+	border-top: 1px solid #D8D8D7;
+	clear: left;
+	color: #737373;
+	cursor: pointer;
+	float: left;
+	font: bold 11px/31px Arial,Helvetica,sans-serif;
+	height: 31px;
+	padding: 0 8px;
+	width: 136px;
+}
+.page-cars #carsleftform #frontForm .step4-elems .selectbox-wrapper li:hover
+{
+	background-color: #172841;
+	color: #FFFFFF;
+}
+.page-cars #carsleftform #frontForm .step4 .step-info {
+	/*padding:20px 30px 101px 20px;*/
+	height: 156px;
+	padding: 25px 30px 0 20px;
+}
+.page-cars #carsleftform #frontForm .step4-elems {
+	/* padding-bottom: 5px; padding-top: 17px;*/
+	height: 164px;
+	padding-top: 17px;
+}
+.page-cars #carsleftform #frontForm .step4-elems .dptrtn-wrapper input.selectbox {
+	background: url("../images/sprite_general.png") no-repeat scroll -660px -183px #FFFFFF;
+	border: 1px solid #D8D8D8;
+	color: #737373;
+	cursor: pointer;
+	float: right;
+	height: 31px;
+	line-height: 31px;
+	margin-right: 16px;
+	padding: 0 8px;
+	position: relative;
+	width: 135px;
+	font-family:Arial;
+}
+.page-cars #carsleftform #frontForm .step4{z-index:2;}
+.page-cars #carsleftform #frontForm .step5{z-index:1;}
+
+.page-cars #carsleftform #frontForm .step5-elems {
+	height: 68px;
+	padding-top: 17px;
+	min-width:45px;
+}
+.page-cars #carsleftform #frontForm .step5-elems .line1{ z-index:2}
+.page-cars #carsleftform #frontForm .step5-elems .line2{ z-index:1}
+.page-cars #carsleftform #frontForm .step5-elems .options-5{
+	float: left;
+	margin-right: 26px;
+	position: relative;
+	width: 102px;
+}
+.page-cars #carsleftform #frontForm .step5-elems .step-elems-inner
+{
+	/*padding: 15px 0;*/
+	width: 369px;
+}
+.page-cars #carsleftform #frontForm .step5-elems .selectbox
+{
+	background: url("../images/sprite_general.png") no-repeat scroll -744px -187px #FFFFFF;
+	border: 1px solid #D8D8D8;
+	clear: left;
+	color: #737373;
+	cursor: pointer;
+	float: left;
+	font: 12px/25px Arial;
+	height: 25px;
+	margin-top: 5px;
+	padding: 0 8px;
+	position: relative;
+	width: 49px;
+}
+.page-cars #carsleftform #frontForm .step5-elems .selectbox-wrapper
+{
+	border-bottom: 1px solid #D8D8D7;
+	border-left: 1px solid #D8D8D7;
+	border-right: 1px solid #D8D8D7;
+	left: 0;
+	position: absolute;
+	top: 46px;
+	z-index: 4;
+}
+.page-cars #carsleftform #frontForm .step5-elems .selectbox-wrapper li{
+	background-color: #FFFFFF;
+	border-top: 1px solid #D8D8D7;
+	clear: left;
+	color: #737373;
+	cursor: pointer; 
+	float: left;
+	font: bold 11px/24px Arial,Helvetica,sans-serif;
+	height: 24px;
+	padding: 0 8px;
+	width: 49px;
+}
+.page-cars #carsleftform #frontForm .step5-elems .selectbox-wrapper li:hover,
+
+{
+	background-color:#172841;
+	color:#fff;
+}
+.page-cars #carsleftform #frontForm .step5-elems .line2
+{
+	margin-top:12px;
+}
+.page-cars #carsleftform #frontForm .step5-elems .selectbox-wrapper {width:65px !important}
+.page-cars #carsleftform #frontForm .step5 .step-info
+{
+	height: 70px;
+	padding: 16px 30px 0 20px;
+}
+.page-cars #carsleftform #frontForm #search-home-form-3 .advOpWrapper
+{
+	float:left;
+	clear:left;
+	padding:5px 15px 7px 30px;
+	background-color:#fff;
+	width:424px;
+	height:37px;
+}
+.page-cars #carsleftform #frontForm #search-home-form-3 .advOpWrapper .advOp
+{
+	float:left;
+	padding-top:10px;
+}
+.page-cars #carsleftform #frontForm #search-home-form-3 .advOpWrapper .advOp a
+{
+	font:bold 12px Arial, Helvetica, sans-serif;
+	color:#172841;
+	text-decoration:none;	
+}
+.page-cars #carsleftform #frontForm #search-home-form-3 .advOpWrapper .advOp a:hover
+{
+	text-decoration:underline;
+}
+.page-cars #carsleftform #frontForm #search-home-form-3 .advOpWrapper .button-wrapper
+{
+	float:right;
+}
+
+
+.page-cars #carsleftform #frontForm #search-home-form-3 .step5 .selectbox-wrapper li{
+	background-color: #FFFFFF;
+    border-top: 1px solid #D8D8D7;
+    clear: left;
+    color: #737373;
+    cursor: pointer;
+    float: left;
+    font: bold 11px/33px Arial,Helvetica,sans-serif;
+    height: 33px;
+    padding: 0 10px;
+    width: 215px;
+	
+	
+}
+
+
+/****** cross browsing rules ******/
+.ie7 .page-cars #carsleftform #frontForm .step2-elems .radiob label[htmlFor="multiDestR"]{ margin-right:0; width:91px;}
+.ie7 .page-cars #carsleftform #frontForm .step4-elems .radiob label[htmlFor="exactdates"]{width:67px;}
+.ie7 .page-cars #carsleftform #frontForm .step4-elems .radiob label[htmlFor="onetothreedays"]{width:86px;}
+
+/****** cross browsing rules ******/
+.ie .page-cars #carsleftform #frontForm .step
+{
+	width:623px;
+}
+
+
+.ie .page-cars #carsleftform #frontForm .opWithInfo
+{
+	float:left;
+	clear:left;
+	width:120px;
+}
+.ie7 .page-cars #carsleftform #frontForm #search-home-form .step5-elems 
+{
+	width:369px;
+}
+
+.ie7 .page-cars #carsleftform #frontForm #search-home-form .directFlightWrapper .flightOption label
+{
+	margin-top:3px;
+}
+.ie7 .page-cars #carsleftform #frontForm #search-home-form .step6-elems .options-6-2 label
+{
+	width:250px;
+}
+
+.ie7 .page-cars #carsleftform #frontForm #search-home-form .step6-elems .line2
+{
+	z-index:10;
+}
+.ie7 .page-cars #carsleftform #frontForm #search-home-form .step6-elems 
+{
+	z-index:5;
+}
+.ie7 .page-cars #carsleftform #frontForm #search-home-form .step4-elems .dptrtn-wrapper.last
+{
+	margin-top:17px;
+}
+.ie8 #.page-cars #carsleftform #frontForm #s4depart-2_input,
+.ie8 .page-cars #carsleftform #frontForm #s4return-2_input,
+
+{
+	background-position: -660px -183px!important;
+}
+
+
+.ie .page-cars #carsleftform #frontForm #search-home-form .flightOption label,
+{
+	margin-top:3px;
+}
+,
+.ie7 .page-cars #carsleftform #frontForm #search-home-form-3 .car-date-wrapper.last .pickOpWrapper,
+.ie7 .page-cars #carsleftform #frontForm #search-home-form-3 .car-date-wrapper.last 
+{
+	z-index:10;
+}
+
+
+.ie7 .page-cars #carsleftform #frontForm #search-home-form-3 .car-date-wrapper.first .pickOpWrapper,
+.ie7 .page-cars #carsleftform #frontForm #search-home-form-3 .car-date-wrapper.first
+{
+	z-index:20;
+}
+
+
+.ie7 .page-cars #carsleftform #frontForm #search-home-form-3 .step4-elems .select-wrapper
+{
+	z-index:30;
+}
+
+.ie7 .page-cars #carsleftform #frontForm #search-home-form-3 .step2-elems .inputf.first
+{
+	position:relative;
+}
+
+.ie7 .page-cars #carsleftform #frontForm #search-home-form-3 .step2-elems .inputf.first .selectbox-wrapper
+{
+	top:52px!important;
+	left:0;
+}
+.ie7 .page-cars #carsleftform #frontForm #search-home-form-3 .step2
+{
+	z-index:100;
+}
+.ie7 .page-cars #carsleftform #frontForm #search-home-form-3 .step4-elems .pickOpWrapper
+{
+	width:340px;
+}
+.ie7 .page-cars #carsleftform #frontForm #search-home-form-3 .step4-elems .car-date-wrapper.last label
+{
+	width:100px;
+}
+.ie7 .page-cars #carsleftform #frontForm #search-home-form-3 .step4-elems .car-date-wrapper.first
+{
+	padding-top:0;
+} 
+.ie7 .page-cars #carsleftform #frontForm #search-home-form-3 #carType_container
+{
+	top:53px!important;
+	left:100px!important;
+}
+/**************************************/
+.mid_dots{
+    width:710px;
+    height:97px;
+    border-bottom: #929292 solid 1px;
+	clear:both !important;
+}
+.mid_dots_inner{
+    position:relative;
+    width:715px;
+    height:85px;
+    left:15px;
+    top:8px;
+}
+.mid_dots_inner1{
+    width:170px;
+    height:130px;
+    float: left;
+}
+.mid_dots_inner_banner{
+    width:106px;
+    height:22px;
+    float:left;
+    padding:0px 0px 0px 0px;
+}
+
+.mid_dots_inner_banner_new{
+    width:80px;
+    height:22px;
+    float:left;
+    padding:0px 0px 0px 0px;
+} 
+.mid_dots_inner_dive{
+    width:79px;
+
+    float:left;
+}
+.mid_dots_inner_dots{
+    width:20px;
+    height:22px;
+    float:left;
+}
+.dots_text{
+    font-family: Century Gothic, Helvetica, sans-serif;
+    font-size:12px;
+    text-decoration: none;
+    color: #000000;
+}
+.mid_details{
+    width:535px;
+    height: auto;
+    float:left;
+    padding: 0px 0px 20px 0px;
+}
+.mid_details_inner{
+    position:relative;
+    width:508px;
+    height: auto;
+    left:15px;
+    top:16px;
+    float:left;
+    padding: 0px 0px 20px 0px;
+}
+.mid_details_inner_banner{
+    width:194px;
+    height:188px;
+    float:left;
+}
+.mid_details_inner_banner1{
+    width:314px;
+    height:188px;
+    float:left;
+}
+.mid_details_banner_inner_new{
+    width:194px;
+    height:40px;
+    float:left;
+}
+.mid_details_banner_inner{
+    width:194px;
+    height:40px;
+    float:left;
+}
+.mid_details_banner_inner_new_n{
+    width:210px;
+    height:40px;
+    float:left;
+}
+.mid_details_banner_inner1{
+    width:314px;
+    height:40px;
+    float:left;
+}
+.details_text1{
+    font-family: Century Gothic, Helvetica, sans-serif;
+    font-size:12px;
+    text-decoration: none;
+    color: #000000;
+    letter-spacing:1px;
+}
+.mid_details_date{
+    width:56px;
+    height:auto;
+    float:left;
+}
+.area{
+    width:150px;
+    height:25px;
+    font-family: Century Gothic, Helvetica, sans-serif;
+    font-size:12px;
+    text-decoration: none;
+    color: #000000;
+}
+.area_date{
+    width:40px;
+    height:25px;
+    font-family: Century Gothic, Helvetica, sans-serif;
+    font-size:12px;
+    text-decoration: none;
+    color: #000000;
+}
+.area_date123{
+    width:55px;
+    height:18px;
+    font-family: Century Gothic, Helvetica, sans-serif;
+    font-size:12px;
+    text-decoration: none;
+    color: #000000;
+}
+.mid_room_details{
+    position:relative;
+    width:706px;;
+    height: auto;
+    padding-left:10px;
+    float:left;
+}
+.mid_room_details_inner{
+    width:508px;
+    height:26px;
+    float:left;
+}
+.mid_room_details_inner_demo123{
+    width:508px;
+    height: auto;
+    float:left;
+}
+.mid_room_details_inner_diver{
+    width:194px;
+    height: auto;
+    float: left;
+}

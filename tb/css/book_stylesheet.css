@@ -1,0 +1,346 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+    margin:0;
+    padding:0;
+}
+
+.wrapper
+{
+    width:1000px;    
+    margin:0 auto;
+    overflow:hidden;
+}
+.flight_nav
+{
+/*    background:url(../images/nav_bg.png) no-repeat bottom;*/
+    width:630px;
+    height:69px;
+    float:left;
+    margin-top:10px;
+	padding-top:15px;
+	border-left:#999 solid 1px;
+	border-top:#999 solid 1px;
+	border-right:#999 solid 1px;
+}
+.flight_nav ul
+{
+    margin:0 0 0 0px;
+    padding:0;
+    float:left;
+}
+.flight_nav ul li
+{
+    list-style-type:none;
+    float:left;
+    margin:0;
+    padding:0;
+}
+.flight_nav ul li a
+{
+    text-decoration:none;
+    display:block;
+    text-indent:9999px;
+    margin:0;
+    padding:0 0 26px 0;
+}
+.flight_details
+{
+    background:url(../images/flight_det.png) no-repeat;
+    width:186px;
+    height:33px;
+}
+.flight_details:hover
+{
+    background:url(../images/flight_det_h.png) no-repeat;
+    width:186px;
+    height:33px;
+
+}
+.flight_details_active
+{
+    background:url(../images/flight_det_h.png) no-repeat;
+    width:186px;
+    height:33px;
+
+}
+.user_details
+{
+    background:url(../images/user_det.png) no-repeat;
+    width:186px;
+    height:33px;
+}
+.user_details:hover
+{
+    background:url(../images/user_det_h.png) no-repeat;
+    width:186px;
+    height:33px;
+
+}
+.user_details_active
+{
+    background:url(../images/user_det_h.png) no-repeat;
+    width:186px;
+    height:33px;
+
+}
+.conf_user_details
+{
+    background:url(../images/confirm_det.png) no-repeat;
+    width:258px;
+    height:33px;
+}
+.conf_user_details:hover
+{
+    background:url(../images/confirm_det_h.png) no-repeat;
+    width:258px;
+    height:33px;
+
+}
+.conf_user_details_active
+{
+    background:url(../images/confirm_det_h.png) no-repeat;
+    width:258px;
+    height:33px;
+
+}
+.flight_tab_center
+{
+    width:630px;
+    height:auto;
+    float:left;
+	border-bottom:#999 solid 5px;
+	border-left:#999 solid 1px;
+	border-right:#999 solid 1px;
+	padding-bottom:15px;
+}
+/*.flight_tab_bot
+{
+    background:url(../images/flight_round_bot.png) no-repeat;
+    width:830px;
+    float:left;
+    height:16px;
+}*/
+.flight_tab_content
+{
+    width:570px;
+    height:auto;
+    float:left;
+	margin-left:25px;
+}
+.flight_detail_content
+{
+    width:545px;
+    float:left;
+    height:40px;
+    border-bottom:#dcdcdc dotted 1px;
+    margin-left:20px;
+}
+.flight_detail_content h2
+{
+    font-size:16px;
+    color:#2a2a2a;
+    margin:0;
+    padding:0;
+}
+.flight_detail_content p
+{
+
+    font-size:16px;
+    color:#9e9e9e;
+    margin:0;
+    padding:0;
+}
+.logos
+{
+    width:50px;
+    height:45px;
+    float:left;
+}
+.flight_time_content
+{
+    width:545px;
+    float:left;
+    margin-left:20px;
+	margin-top:5px;
+}
+.flight_time_content table
+
+{
+    width:545px;
+    margin:20px 0 0 0;
+    padding:0;
+}
+
+.flight_time_content table h2
+
+{
+
+    font-size:16px;
+    color:#323232;
+    margin:0;
+    padding:0;
+}
+.flight_time_content table p
+{
+
+    font-size:14px;
+    color:#9e9e9e;
+    margin:0;
+    padding:0;
+}
+.flight_date
+{
+    width:231px;
+    float:left;
+    margin-right:15px;
+}
+.flight_date_top
+{
+    /*background:url(../images/inner_round_top.png) no-repeat;*/
+    width:231px;
+    height:15px;
+    float:left;
+}
+.flight_date_center
+{
+    /*background:url(../images/inner_strip_center.png) repeat-y;*/
+    width:450px;
+    float:left;
+    font-size:17px;
+    color:#595d60;
+    text-align:center;
+	position:relative;
+	left:160px;
+	top:-230px;
+
+}
+.flight_date_center p
+
+{
+
+    font-size:20px;
+    color:#369bd4;
+    margin:0;
+    padding:8px 0 0 0;
+    text-align:center;
+}
+
+.flight_date_bot
+{
+    /*background:url(../images/inner_round_bot.png) no-repeat;*/
+    width:231px;
+    height:15px;
+    float:left;
+}
+.submit_box
+{
+    width:231px;
+    height:62px;
+    float:right;
+    margin-right:15px;
+}
+.submit_box a
+{
+    margin:20px 0 0 5px;
+    padding:0;
+    background:url(../images/continue_btn_new.png) no-repeat right;
+    width:221px;
+    height:41px;
+    display:block;
+    text-indent:9999px;
+}
+.passenger_details
+{
+    width:557px;
+    height:58px;
+    float:left;
+    margin:10px 0 0 20px;
+}
+.pass_left
+{
+    /*background:url(../images/pass_round_left.png) no-repeat;*/
+    width:16px;
+    height:58px;
+    float:left;
+}
+.pass_center
+{
+    /*background:url(../images/pass_strip_center.png) repeat-x;*/
+    width:570px;
+    float:left;
+}
+.pass_center p
+
+{
+    
+    font-size:17px;
+    color:#5f5f5f;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+.pass_center span
+
+{
+    
+    font-size:26px;
+    color:#414141;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+.pass_right
+{
+    /*background:url(../images/pass_round_right.png) no-repeat;*/
+    width:16px;
+    height:58px;
+    float:left;
+}
+
+.box2,box3
+{
+    padding:10px;
+}
+
+.box2 input[type='text'],box3 input[type='text']
+{
+    padding: 3px;
+    width: 220px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+}
+
+.box2 .errorMes
+{
+    font-family: arial;
+    font-size: 12px;
+    color:#f00;
+    height: 15px;
+}
+
+.userDetails
+{
+    font-family: arial;
+    font-size: 14px;
+    color: #9E9E9E;
+}
+.box3
+{    
+    padding: 20px;
+}
+
+.box3 table td
+{
+    font-family: arial;
+    font-size: 14px;
+    color: #9E9E9E;
+    width: 220px;
+}
+.flight_3bt { width:975px; border:#999 solid 1px; border-bottom:#999 solid 5px; float:left;}
+.flight_details_to { float:left; width:500px;}
+.flight_banner_rightside { width:300px; float:right; position:relative; top:-75px;}
+
+@font-face{font-family: 'WebRupee';src: url('http://cdn.webrupee.com/WebRupee.V2.0.eot');src: local('WebRupee'), url('http://cdn.webrupee.com/WebRupee.V2.0.ttf') format('truetype'),  url('http://cdn.webrupee.com/WebRupee.V2.0.woff') format('woff'), url('http://cdn.webrupee.com/WebRupee.V2.0.svg') format('svg');font-weight: normal;font-style: normal;}
+.WebRupee{font-family: 'WebRupee';}

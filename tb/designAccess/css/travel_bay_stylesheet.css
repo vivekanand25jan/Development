@@ -1,0 +1,187 @@
+@charset "utf-8";
+/* CSS Document */
+
+body { margin:0; padding:0; font-family:'calibri'; background:url(../images/bg_img1.jpg) repeat;}
+img { border:0px;}
+p { margin:0; padding:0; font-family:'calibri';}
+h1 { margin:0; padding:0; font-family:'calibri'; font-size:18px; color:#243419; text-transform:uppercase;}
+h2 { margin:0; padding:0; font-family:'calibri';}
+a:link {text-decoration: none;}
+a:visited {text-decoration: none;}
+a:hover {text-decoration: none;}
+a:active {text-decoration: none;}
+@font-face { font-family:'calibri'; src: url('calibri.ttf');}
+.wrapper { width:100% }
+.travel_signin { width:1000px; margin:0 auto;}
+.travel_signin p { float:right; padding:10px 10px 5px 10px; font-family:'calibri'; font-size:15px; color:#CCC;}
+.travel_signin p a { color:#CCC;}
+.travel_signin p a:hover { color:#CCC; text-decoration:underline;}
+.travel_signin_space { padding:0px 5px; color:#666;}
+.bodymain { width:1018px; margin:0 auto;}
+.bodymain_top_bg { width:1018px; height:12px; background:url(../images/body_top_bg.png) no-repeat; float:left;}
+.bodymain_middle_bg { width:1018px; float:left; background:url(../images/body_middle_bg.png) repeat-y;}
+.bodymain_bt_bg { width:1018px; height:12px; background:url(../images/body_bt_bg.png) no-repeat;}
+.body1000 { width:1000px; float:left; margin-left:9px;}
+.travel_logo_top { width:970px; float:left; margin-left:15px;  margin-top:15px;}
+.travelbay_logo { width:310px; height:68px; float:left; margin-bottom:15px;}
+.travel_sndiv { width:645px; float:right; margin-top:10px;}
+.travel_sn { width:184px; height:33px; line-height:33px; float:right; margin-top:7px;}
+.travel_sn1 { width:300px; height:33px; float:right; text-align:right; padding-right:50px;}
+.navfull { width:1000px; height:45px; float:left; margin-left:15px;}
+.nav_left { width:8px; height:45px; float:left; background:url(../images/nav_left_img.png) no-repeat;}
+.nav_middle { width:954px; height:45px; float:left; background:url(../images/nav_middle_img.png) repeat-x;}
+.nav_right { width:8px; height:45px; float:left; background:url(../images/nav_right_img.png) no-repeat;}
+
+/*Navigation start here*/
+.nav ul { margin:0; padding:0; font-family:'calibri'; font-size:15px;  list-style-type:none; color:#FFFFFF;}
+.nav ul li { float:left; text-align:center; height:45px; line-height:45px; text-align:center; position:relative;}
+.nav ul li a { text-decoration:none; display:block; list-style-type:none; color:#FFFFFF; padding:0 26px; text-align:center; }
+.nav ul li a:hover { color:#FFF; display:block; position:relative; height:45px; line-height:45px; text-align:center; background:url(../images/nav_hover_bg.jpg) repeat-x;}
+#nav_active { color:#FFF; display:block; position:relative; height:45px; line-height:45px; text-align:center; background:url(../images/nav_hover_bg.jpg) repeat-x;}
+/*Navigation end here*/
+
+.sldier_bg { width:1000px; height:358px; float:left; margin-left:11px; background:url(../images/slider_shadow_bg.jpg) no-repeat; margin-top:15px;}
+
+/*travel bay log in here*/
+.travelbay_login { width:340px; float:left; position:absolute; z-index:999; top:190px; margin-left:50px; margin-top:10px;}
+.travelbay_login_topbg { width:340px; float:left; background:url(../images/login_top_bg.png) no-repeat; height:17px;}
+.travelbay_login_middel { width:320px; float:left; margin-left:10px; background:#243419; height:350px;}
+.travelbay_login_btbg { width:340px; float:left; background:url(../images/login_bt_bg.png) no-repeat; height:19px;}
+.travelbay_login_text { text-align:center; padding:8px; color:#FFF; background:#1c2914;}
+.travelbay_login_box { width:300px; float:left; margin-left:10px; margin-top:15px; margin-bottom:5px;}
+.travelbay_login_email { width:300px; background:url(../images/login_bg.png) no-repeat; height:43px; border:none; padding:0px 10px;}
+.forget_pass {padding:5px 0px 5px 15px; color:#63701e; font-size:14px;}
+.forget_pass:hover { color:#63701e; font-size:14px; text-decoration:underline;}
+/*travel bay log in end*/
+.button_login { width:120px; height:35px; text-align:center; line-height:33px; background:#63701e; border-radius:4px; margin:15px 0px 10px 15px; font-size:20px; font-weight:bold; color:#FFF;}
+.button_login:hover { width:120px; height:33px; text-align:center; line-height:33px; background:#1c2e06; border-radius:4px; border:#63701e solid 1px; }
+.button_login a { color:#FFF;}
+.button_agent { width:240px; height:35px; text-align:center; line-height:33px; background:#63701e; border-radius:4px; margin:15px 0px 10px 15px; font-size:20px; font-weight:bold; color:#FFF;}
+.button_agent:hover { width:240px; height:33px; text-align:center; line-height:33px; background:#1c2e06; border-radius:4px; border:#63701e solid 1px; }
+.button_agent a { color:#FFF;}
+
+.why_travelbay { width:310px; float:left; margin-left:15px; border-right:#999 dotted 1px;}
+.travel_topic ul { margin:0; padding:0; font-family:'calibri'; font-size:16px; color:#000;}
+.travel_topic ul li { font-family:'calibri'; font-size:16px;  color:#000; padding:5px 0px; text-transform:uppercase;}
+.hotdeal_gps { float:right; font-weight:bold;}
+.ads_div { width:970px; float:left; margin-left:15px; border-top:#999 dotted 1px; padding:10px 0px; clear:both; margin-top:15px;}
+.news_letter { width:950px; background:#333;  clear:both; margin-left:15px; margin-bottom:15px; padding:10px 10px 2px 10px;;}
+.news_letter_box { width:330px; height:35px; border-radius:20px; padding:0px 15px; border:none; position:relative; top:-10px;}
+
+
+
+.footer {
+	width:100%;
+	background:url(../images/footer_bg.jpg) repeat-x;
+	height:243px;
+	clear:both;
+	position:relative;
+	top:10px;
+}
+.footertext {
+	width:250px;
+	float:left;
+	margin-top:10px;
+	color:#FFF;
+	margin-left:15px;
+}
+
+.footernav {
+	width:100%;
+	clear:both;
+	height:35px;
+	text-align:center;
+	line-height:35px;
+	color:#9d9d9d;
+	position:relative;
+}
+.footertext_color { padding-top:10px; color:#9d9d9d; font-size:14px;}
+.footer_newbg { width:1000px; float:left; background:url(../images/footer_newbg.png) repeat-y; padding-bottom:15px;}
+
+
+/*box slider start here*/
+.rollBox{width:970px;overflow:hidden;margin:0 auto;}
+.rollBox .Cont{width:850px;overflow:hidden;margin:0 auto;padding-top:20px;}
+.rollBox .ScrCont{width:10000000px;}
+.rollBox .Cont .pic{width:130px;float:left;text-align:center;padding-right:42px;}
+*+html .rollBox .Cont .pic{width:130px;float:left;text-align:center;padding-right:30px;}
+.rollBox .Cont .pic img{padding:4px;display:block;margin:0 auto; width:154px; height:194px;}
+.rollBox .Cont .pic p{ text-align:center;}
+.rollBox .Cont a:link,.rollBox .Cont a:visited{color:#626466;text-decoration:none;}
+.rollBox .Cont a:hover{text-decoration:none;}
+.rollBox #List1,.rollBox #List2{float:left;}
+
+.preferred_hotels { width:970px; float:left; margin-left:15px; background:url(../images/hotel_slider_bg.png) repeat; margin-top:10px; margin-bottom:15px; height:310px;}
+.h1_header { padding:10px 10px;}
+.hotel_img { width:154px; float:left; text-align:center; margin-top:200px;}
+.hotel_header { font-size:15px; color:#243419;  text-align:center; width:154px; font-weight:bold;}
+.hotel_price { /*background:#63701e;*/ /*width:100px; height:28px;*/ color:#000; font-size:12px; /*font-weight:bold; line-height:28px;*/ margin-left:25px; }
+/*box slider end here*/
+
+.login_div { width:970px; float:left; margin-left:15px; margin-top:15px; margin-bottom:10px;}
+.agent_login { width:310px; float:left; height:194px; background:url(../images/agent_bg.jpg) no-repeat;}
+.supplier_login { width:310px; float:left; height:194px; background:url(../images/suppliers_bg.jpg) no-repeat; margin-left:15px;}
+.agent_login_header { width:300px; float:left; height:27px; line-height:27px; font-size:14px; color:#FFF; text-transform:uppercase; padding-left:10px;}
+.forget_password { color:#63701E; font-size:14px;}
+.forget_password:hover { color:#63701E; font-size:14px; text-decoration:underline;}
+.email_pass { color:#CCC; font-size:14px;}
+.email_textbox { width:220px; height:25px; border:#63701e solid 1px; padding:0px 3px;}
+.become_agent { width:318px; float:left; margin-left:15px; border:#CCC solid 1px;}
+.become_agent p { padding:3px 5px; font-size:12px; color:#333;}
+
+#preloading_div{
+ z-index: 4000;
+	width:90%;
+	height:90%;background:#fff;
+	margin: 0 29%;
+    margin: 0 auto;
+    position:fixed;
+    top: 5%;
+	left:5%;
+	vertical-align:middle;
+	}
+
+#preload_logo{left: 40%;
+    position: absolute;
+    top: 32%;}
+	#preload_load{
+    left: 2%;
+    position: relative;
+    top: 43%;
+    }
+	#preload_Msg{
+    left: 2%;
+    position: relative;
+    top: 10%;
+    }
+.check_date{
+	background:#fff url(../images/b2b-calicon.png) 95% 45% no-repeat;
+	cursor:pointer;
+	
+	}
+#small_preloader{
+	
+	z-index: 4000;
+	width:30%;
+	height:5%;
+	position:fixed;
+    top: 50%;
+	left:40%;
+	vertical-align:middle;
+	background:#fff;
+	padding:50px;
+	}
+.hotel_img{
+	float:left;
+	margin:5px;}
+	
+	#black_grid{
+		background:#000;
+		margin: 0 29%;
+    margin: 0 auto;
+    position:fixed;
+    top: 0%;
+    z-index: 3000;
+	height:100%;
+	width:100%;
+	opacity:0.7;}

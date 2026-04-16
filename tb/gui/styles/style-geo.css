@@ -1,0 +1,760 @@
+/*********** flights general ********************/
+.page-flights #content{
+	margin-top:29px;
+} 
+
+/************* flights main general***********************/
+
+.page-flights #content #main-col{
+	float:left;
+	margin-left:30px;
+}
+
+/************* flights main banner***********************/ 
+
+.flights-top-banner {
+	float:left;
+	margin-bottom:30px;	
+	clear:left;
+	height:284px;
+}
+
+
+/******************* flights main tabs *******************/
+
+.globaltabs {
+	
+}
+
+.globaltabs .ui-tabs-hide {
+    display: none !important;
+}
+
+.globaltabs .ui-tabs-nav li {
+    float: left;
+	margin-right:4px;
+}
+
+.globaltabs .ui-tabs-nav  {
+    float: left;
+	width:625px;
+}
+
+.globaltabs .ui-tabs-nav li.med a{ 
+	background: url('../images/sprite_general.png') no-repeat -9px -814px;
+	width: 177px;
+	height: 29px;	
+}
+
+.globaltabs .ui-tabs-nav li.small a{
+	background: url('../images/sprite_general.png') no-repeat -232px -813px;
+	width: 149px;
+	height: 29px;	
+} 
+
+.globaltabs .ui-tabs-nav li.big a{
+	background: url('../images/sprite_general.png') no-repeat -424px -815px;
+	width: 245px;
+	height: 29px;	
+}
+
+.globaltabs .ui-tabs-nav li.hot-price a{
+	background: url('../images/sprite_general.png') no-repeat -632px -2789px;
+	width: 223px; 
+	height: 29px;
+}
+.globaltabs .ui-tabs-nav li.hot-price.ui-tabs-selected a,
+.globaltabs .ui-tabs-nav li.hot-price a:hover{background: url('../images/sprite_general.png') no-repeat -632px -2834px;}
+
+.globaltabs .ui-tabs-nav li.hot-price-weekend a{
+	background: url('../images/sprite_general.png') no-repeat -867px -2789px;
+	width: 213px;
+	height: 29px;
+}
+.globaltabs .ui-tabs-nav li.hot-price-weekend.ui-tabs-selected a,
+.globaltabs .ui-tabs-nav li.hot-price-weekend a:hover{background: url('../images/sprite_general.png') no-repeat -867px -2834px;}
+
+ 
+.globaltabs .ui-tabs-nav li.flights-live a {
+	background: url('../images/sprite_general.png') no-repeat -1087px -2789px;
+	width: 161px;
+	height: 29px;
+}
+.globaltabs .ui-tabs-nav li.flights-live.ui-tabs-selected a,
+.globaltabs .ui-tabs-nav li.flights-live a:hover{background: url('../images/sprite_general.png') no-repeat -1087px -2833px;}
+
+
+
+
+ 
+.globaltabs .ui-tabs-nav li.med.ui-tabs-selected a, .globaltabs .ui-tabs-nav li.med a:hover{
+
+	background: url('../images/sprite_general.png') no-repeat -9px -753px;
+}
+
+.globaltabs .ui-tabs-nav li.small.ui-tabs-selected a, .globaltabs .ui-tabs-nav li.small a:hover{
+	background: url('../images/sprite_general.png') no-repeat -233px -750px;
+
+}
+
+.globaltabs .ui-tabs-nav li.big.ui-tabs-selected a, .globaltabs .ui-tabs-nav li.big a:hover{
+	background: url('../images/sprite_general.png') no-repeat -424px -750px;
+}
+
+.globaltabs .ui-tabs-nav li a{
+	color:#fff;
+	font: 22px/19px 'FuturaGreekBoldRegular';
+	text-decoration:none;	
+	display:block;
+	float:left;
+	text-align:center;
+	padding-top:10px;
+	letter-spacing:-0.5px;
+}
+
+.globaltabs .ui-tabs-nav li.ui-tabs-selected a, .globaltabs .ui-tabs-nav li a:hover{
+	color:#172841;
+}
+
+.globaltabs .ui-tabs-panel {
+    clear: both;
+    float: left;
+    width: 624px;
+}
+
+.globaltabs .ui-tabs-panel .ui-tabs-panel-bottom{
+	background: url('../images/sprite_general.png') no-repeat -9px -889px;
+	width: 624px;
+	height: 12px;	
+	float:left;	
+}
+
+.globaltabs .ui-tabs-panel .ui-tabs-panel-top{
+	background: url('../images/sprite_general.png') no-repeat -8px -912px;
+	width: 624px;
+	height: 12px;	
+	float:left;
+}
+
+.globaltabs .ui-tabs-panel .ui-tabs-panel-center{
+    background: rgb(255,255,255); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(240,240,240,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(240,240,240,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(240,240,240,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(240,240,240,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(240,240,240,1) 100%); /* IE10+ */
+	background: linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(240,240,240,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f0f0f0',GradientType=0 ); /* IE6-9 */
+	width: 624px;
+	float:left;	
+}
+
+.globaltabs .ui-tabs-panel-center-right ul {
+	float:left;
+	min-height:190px;	
+}
+
+.globaltabs .ui-tabs-panel-center-right ul li {
+	float:left;	
+	margin-right:37px;
+}
+
+.globaltabs .ui-tabs-panel-center-right ul li a{
+    border-bottom: 1px solid #CFD3DA;
+    color: #172841;
+    float: left;
+    font: 12px Arial,Helvetica,sans-serif;
+    height: 23px;
+    padding: 5px 0 0;
+    text-align: center;
+    text-decoration: none;
+    width: 226px;
+}
+
+.globaltabs .ui-tabs-panel-center-left {
+    background: url("../images/sprite_general.png") no-repeat scroll -33px -974px transparent;
+    float: left;
+    height: 164px;
+    margin-left: 25px;
+    width: 72px;
+	margin-top: 7px;
+}
+
+.airlines-wrapper .airlines {
+	background:none !important;
+}
+
+.globaltabs .ui-tabs-panel-center-right{
+    float: left;
+    width: 526px;
+}
+
+.globaltabs .ui-tabs-panel-center-right ul li a:hover{
+	background-color:#cfd3da;
+} 
+
+.globaltabs .ui-tabs-panel-center-right ul li a .price{
+	font-weight:bold;	
+}
+
+
+/***************************** flights carouzel ******************/
+
+#flights-top-destinations {
+	width: 624px;
+	float:left;		
+	margin-top:30px;
+	margin-bottom: 30px;
+	clear:left;
+}
+
+#tabs-flights{
+	width: 624px;
+	float:left;		
+	clear:left;
+	margin-bottom:29px;
+}
+
+#flights-top-destinations .flights-top-destinations-top{
+	background: url('../images/sprite_general.png') no-repeat -12px -933px;
+	width: 624px;
+	height: 13px;	
+	float:left;	
+}
+
+
+#flights-top-destinations .flights-top-destinations-center {
+    background: rgb(255,255,255); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(240,240,240,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(240,240,240,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(240,240,240,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(240,240,240,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(240,240,240,1) 100%); /* IE10+ */
+	background: linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(240,240,240,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f0f0f0',GradientType=0 ); /* IE6-9 */
+	width: 624px;
+	float:left;		
+}
+
+#flights-top-destinations .flights-top-destinations-title{
+    background: url("../images/sprite_general.png") no-repeat scroll -556px -356px transparent;
+    color: #121F36;
+    /*font: 20px "Arial Black",Gadget,sans-serif;*/
+    font: 20px/18px 'FuturaGreekBoldRegular';
+    height: 25px;
+    margin-left: 36px;
+    padding-left: 29px;
+    padding-top: 5px;
+    letter-spacing:-1px;
+}
+
+#flights-top-destinations .flights-top-destinations-bottom {
+	background: url('../images/sprite_general.png') no-repeat -9px -889px;
+	width: 624px;
+	height: 12px;	
+	float:left;	
+}
+
+.jcarouzel-wrapper .jcarousel-container-horizontal {
+    padding: 11px 34px;
+    width: 553px;
+}
+.jcarouzel-wrapper .jcarousel-clip {
+    overflow: hidden;
+}
+
+.jcarouzel-wrapper .jcarousel-clip-horizontal {
+    width:  556px;
+    height: 160px;
+}
+
+.globaljcarousel .jcarousel-item {
+    width: 180px;
+    height: 160px;
+}
+
+.globaljcarousel .jcarousel-item-horizontal {
+	margin-left: 0;
+    margin-right: 10px;
+	position:relative;
+	cursor:pointer;
+}
+
+.globaljcarousel .jcarousel-direction-rtl .jcarousel-item-horizontal {
+	margin-left: 10px;
+    margin-right: 0;
+}
+
+.globaljcarousel .jcarousel-item-placeholder {
+    background: #fff;
+    color: #000;
+}
+
+/**
+ *  Horizontal Buttons
+ */
+.jcarouzel-wrapper .jcarousel-next-horizontal {
+    position: absolute;
+    top: 43px;
+    right: 5px;
+    cursor: pointer;
+	background: url('../images/sprite_general.png') no-repeat -1184px -200px;
+	width: 18px;
+	height: 30px;
+}
+
+
+.jcarouzel-wrapper .jcarousel-next-horizontal:hover,
+.jcarouzel-wrapper .jcarousel-next-horizontal:focus {
+background: url('../images/sprite_general.png') no-repeat -1184px -129px;
+	width: 18px;
+	height: 30px;
+}
+
+.jcarouzel-wrapper .jcarousel-prev-horizontal {
+    position: absolute;
+    top: 43px;
+    left: 5px;
+    cursor: pointer;
+	background: url('../images/sprite_general.png') no-repeat -1059px -200px;
+	width: 20px;
+	height: 30px;
+}
+
+
+.jcarouzel-wrapper .jcarousel-prev-horizontal:hover, 
+.jcarouzel-wrapper .jcarousel-prev-horizontal:focus {
+	background: url('../images/sprite_general.png') no-repeat -1058px -129px;
+	width: 20px;
+	height: 30px;
+}
+
+.globaljcarousel .jcarousel-item-horizontal .top-image{
+	float:left;	
+	margin-bottom: 5px;
+}
+
+.globaljcarousel .jcarousel-item-horizontal .top-title, .globaljcarousel .jcarousel-item-horizontal .top-title a{
+	float:left;	
+	color:#121f36;
+	font:bold 14px Arial, Helvetica, sans-serif;
+	width:110px;
+	text-decoration:none;
+}
+
+.globaljcarousel .jcarousel-item-horizontal .top-save{
+	float:left;	
+	color:#121f36;
+	font: 12px Arial, Helvetica, sans-serif;
+	width:110px;
+}
+
+.globaljcarousel .jcarousel-item-horizontal  .top-book-now{
+    background-color: #172841;
+    color: #FFFFFF;
+    display: none;
+    float: left;
+    left: 0;
+    padding: 2px 0 2px 10px;
+    position: absolute;
+  	top: 65px;
+    width: 165px;
+	
+
+float: left;
+/*font: 18px/33px "Arial Black",Gadget,sans-serif;*/
+font: 18px/33px 'FuturaGreekBoldRegular';
+height: 33px;
+
+}
+
+.globaljcarousel .jcarousel-item-horizontal .top-price{
+    color: #FF8C00;
+    float: right;
+    font: bold 18px Arial,Helvetica,sans-serif;
+    margin-right: 5px;
+    margin-top: -10px;
+}
+
+.flights-top-destinations-viewall a{
+    color: #121F36;
+    float: right;
+    font: 11px Arial,Helvetica,sans-serif;
+    margin-right: 37px;
+    margin-top: -18px;
+    text-decoration: none;	
+}
+.flights-top-destinations-viewall a:hover{ text-decoration:underline;}
+
+
+#tabs-airlines .ui-tabs-panel-center .views-row{
+	float:left;
+	width:560px;
+	height:45px;
+	border-bottom: 1px solid #CFD3DA;
+	margin-left:29px;	
+	background:none;
+}
+
+#tabs-airlines  #flights-tools-more .ui-tabs-panel-center .views-row{
+	height: 36px;
+}
+
+#tabs-airlines #flights-airlines  .ui-tabs-panel-center .views-row a{
+	color:#ff8c00;
+	font:bold 14px Arial, Helvetica, sans-serif;
+	text-decoration:none;	
+	float: right;
+	padding-top: 15px;
+}
+#tabs-airlines #flights-airlines  .ui-tabs-panel-center .views-row a:hover{
+	text-decoration:underline;	
+}
+
+#tabs-airlines #flights-airlines .ui-tabs-panel-center .views-row .logo{
+	float:left;
+	padding-top: 3px;
+}
+
+#tabs-airlines #flights-airlines  .ui-tabs-panel-center .views-row .title{
+	color:#121f36;
+	font:bold 14px Arial, Helvetica, sans-serif;
+	float:left;
+	padding-top: 15px;
+}
+
+#flights-airlines  #airlines-nav a.activeSlide {
+    background: url("../images/sprite_general.png") no-repeat scroll -1259px -1369px transparent;
+    height: 9px;
+    padding: 1px;
+    width: 9px;
+}
+
+#flights-airlines  #airlines-nav a {
+    background: url("../images/sprite_general.png") no-repeat scroll -1237px -1367px transparent;
+    display: block;
+    float: left;
+    height: 11px;
+    margin-right: 8px;
+    text-indent: -3000px;
+    width: 11px;
+}
+
+#flights-airlines #airlines-nav {
+    clear: both;
+    float: left;
+     margin-top: 17px;
+    padding-left: 256px;
+}
+#flights-tools-more .ui-tabs-panel-center .views-row .item a:hover{
+    background: url("../images/sprite_general.png") no-repeat scroll -24px -1646px transparent;
+    color: #FFFFFF;
+
+}
+
+#flights-tools-more .ui-tabs-panel-center .views-row .item.big a:hover{
+    background: url("../images/sprite_general.png") no-repeat -248px -1646px;
+	width: 203px;
+	height: 32px;
+}
+
+#flights-tools-more .ui-tabs-panel-center .views-row .item a{
+    color: #172841;
+    display: block;
+    float: left;
+    font: bold 14px Arial,Helvetica,sans-serif;
+    height: 25px;
+    width: 164px;
+    margin-top: 7px;
+    padding: 7px 0 0 5px;
+    text-decoration: none;
+     margin-top: 2px;
+}
+
+#flights-airlines .ui-tabs-panel .ui-tabs-panel-center{
+	padding-bottom:4px;	
+}
+
+#flights-tools-more .ui-tabs-panel .ui-tabs-panel-center{
+	padding-bottom:15px;	
+}
+
+#flights-tools-more .ui-tabs-panel-center .views-row .item.col1 a{
+	width: 168px;
+	float:left;
+}
+
+#flights-tools-more .ui-tabs-panel-center .views-row .item.col2 a{
+    float: left;
+    margin-left: 7px;
+    width: 203px;
+}
+
+#flights-tools-more .ui-tabs-panel-center .views-row .item.col3 a{
+    float: left;
+    width: 166px;
+}
+
+
+#flights-tools-more .ui-tabs-panel-center {
+    padding-bottom:18px;
+}
+
+/******************** departures and arrivals in flights page ***********************/
+
+#tabs-airlines{
+	float:left;
+	width:620px;
+	clear:both;
+	position: relative;
+}
+
+.tabs-airlines-viewall {
+    position: absolute;
+    right: 8px;
+    top: 11px;
+}
+
+.tabs-airlines-viewall a{
+	color: #121F36;
+    font: 11px Arial,Helvetica,sans-serif;
+    text-decoration: none;
+}
+.tabs-airlines-viewall a:hover{ text-decoration:underline;}
+#flights-departures {
+	float:left;
+	width:620px;
+	margin-top:30px;
+	clear:both;
+}
+
+#flights-departures .flights-departures-top{
+	float:left;
+	border-bottom:3px solid #ff8c00;
+	width:620px;	
+	padding-bottom:12px;
+}
+
+#flights-departures .flights-departures-top-left{
+	color:#172841;
+	font: 26px/24px 'FuturaGreekBoldRegular';
+	float:left;
+	letter-spacing:-1px;
+}
+
+#flights-departures .flights-departures-top-right{
+	color:#172841;
+	font:12px Arial, Helvetica, sans-serif;
+	float:right;
+	width:290px;
+	padding-top: 4px;
+}
+
+#flights-departures .flights-departures-bottom {
+	float:left;
+	margin-top:22px;	
+	width:625px;
+}
+#flights-departures .flights-departures-bottom .left #allairlines_input{
+	background: url('../images/sprite_general.png') no-repeat -21px -1568px;
+	width: 292px;
+	height: 36px;
+	float:left;
+	border:0;
+	padding-left:10px;
+	cursor:pointer;
+	line-height:36px;
+	font:bold 14px Arial, Helvetica, sans-serif;
+	color:#121f36;
+}
+
+#flights-departures .flights-departures-bottom .left{
+	float:left;	
+	margin-right: 17px;
+}
+
+#flights-departures .flights-departures-bottom .right{
+	float:left;	
+}
+
+#flights-departures .flights-departures-bottom .right #submit{
+	background: url("../images/sprite_general.png") no-repeat scroll -641px -1568px transparent;
+	border: 0 none;
+	cursor: pointer;
+	height: 36px;
+	width: 40px;
+}
+#flights-departures .flights-departures-bottom .right #submit:hover{
+	background: url("../images/sprite_general.png") no-repeat scroll -685px -1568px transparent;
+}	
+#flights-departures .flights-departures-bottom .right #search-flight{
+	background: url("../images/sprite_general.png") no-repeat scroll -334px -1568px transparent;
+	border: 0 none;
+	color: #121F36;
+	float: left;
+	font: bold 14px Arial,Helvetica,sans-serif;
+	height: 36px;
+	padding-left: 10px;
+	width: 252px;
+}
+
+#allairlines_container ul {
+    background: none repeat scroll 0 0 #fff;
+    list-style: none outside none;
+    position: absolute;
+    top: 36px;
+    width: 299px;
+	left:0px;
+	border:1px solid #d8d8d8;
+}
+
+.search-all-airlines-wrapper{
+	position:relative;
+}
+
+#allairlines_container {
+	position:relative;	
+	cursor:pointer;
+}
+
+#allairlines_container ul li {
+    border-bottom: 1px solid #D8D8D8;
+    color: #3C5E90;
+    cursor: pointer;
+    font: 11px Arial,Helvetica,sans-serif;
+    padding: 6px 10px;
+}
+
+#allairlines_container ul li:hover {
+	color:#fff;
+	background-color:#172841;
+}
+
+
+/************ flights main banners ******************/
+
+
+.maincol-banner.package-savings  {
+	float:left; 
+	background: url('../images/sprite_general.png') no-repeat -1295px -1462px;
+	height:73px;
+	width:272px;
+	 margin-right: 23px;
+	 cursor: pointer;
+}
+
+.maincol-banner.package-savings:hover { 
+	background: url('../images/sprite_general.png') no-repeat -1295px -1558px;
+}
+ 
+.package-savings a { display: block; float: left; text-decoration: none; width:233px;}
+.package-savings a span { display: block; /*font-family: "Arial Black",Arial;*/ font-family:"FuturaGreekBoldRegular"; line-height: 22px; }
+.package-savings a span.desc { color: #172841; font-family: Arial; font-size: 12px; line-height:14px; margin-top:5px; }
+.package-savings a .top-header {color: #172841; font-size: 18px; letter-spacing:-1px;}
+.small-banner.adbanner {background:none; padding:0; float:left; width:272px;}
+
+
+#flight-main-banners {
+	float:left;
+	width:625px;
+    clear: both;
+	margin-top: 37px;
+}
+
+
+.has-js .label_check,
+.has-js .label_radio    {  }
+
+.has-js .label_radio{ 
+	background: url('../images/sprite_general.png') no-repeat -14px -1990px;
+
+}
+	
+.has-js .label_check{ 
+	background: url('../images/sprite_general.png') no-repeat -14px -1990px;
+ 
+}
+
+.has-js label.c_on{ 
+background: url('../images/sprite_general.png') no-repeat -14px -2023px;
+
+}
+
+.has-js label.r_on {
+background: url('../images/sprite_general.png') no-repeat -14px -2023px;
+
+}
+
+.has-js .label_check input,
+.has-js .label_radio input{ 
+	position: absolute; 
+	left: -9999px; 
+}
+
+
+/*********** ie **********/
+
+body.page-flights.ie7 #search-flight-form label.label_radio {
+    padding: 0 2px 8px 20px;
+	margin-right:5px;
+}
+
+
+body.page-flights-results-5 #booking-codes {
+	margin:0 0 33px 0;
+}
+
+
+body.page-flights-results-5 #booking-codes span {
+	clear:both;
+	display:block;
+	font:bold 18px/24px Arial, Helvetica, sans-serif;
+	color:#172841;
+}
+
+body.page-flights-results-5 .flight-info-container.prices .top-layer .component-title {
+	background: url('../images/sprite_general.png') no-repeat -317px -4563px;
+}
+
+body.page-flights-results-5 .flight-info-container .total-price {
+	width:167px;
+	padding:0 0 12px 652px;
+	border-bottom:1px solid #dadada;
+}
+
+body.page-flights-results-5 .flight-info-container .total-price span {
+	font: 22px/24px 'FuturaGreekBoldRegular';
+	height:24px;
+	display:block;
+	color:#121f36;
+}
+
+body.page-flights-results-5 .flight-info-container .price-list-wrapper {
+	width:167px;
+	margin:0 0 0 652px;
+	overflow:hidden;
+}
+
+body.page-flights-results-5 .flight-info-container ul.price-list-wrapper li {
+	width:175px;
+	float:left;
+}
+
+body.page-flights-results-5 .flight-info-container ul.price-list-wrapper li .row-col {
+	float:left;
+	font:normal 14px/14px Arial, Helvetica, sans-serif;
+	color:#172841;
+	padding:6px 0;
+	letter-spacing:-0.1px;
+}
+
+body.page-flights-results-5 .flight-info-container ul.price-list-wrapper li .left-col {
+	width:68px;	
+}
+
+
+
+
+
+
+/***************************************/
