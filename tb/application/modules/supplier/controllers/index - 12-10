@@ -1,0 +1,1364 @@
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+//error_reporting(0);
+session_start();
+
+class Index extends CI_Controller {
+	/**
+	 * Index Page for this controller.
+	 *
+	 * Maps to the following URL
+	 * 		http://example.com/index.php/welcome
+	 *	- or -  
+	 * 		http://example.com/index.php/welcome/index
+	 *	- or -
+	 * Since this controller is set as the default controller in 
+	 * config/routes.php, it's displayed at http://example.com/
+	 *
+	 * So any other public methods not prefixed with an underscore will
+	 * map to /index.php/welcome/<method_name>
+	 * @see http://codeigniter.com/user_guide/general/urls.html
+	 */
+	public function __construct()
+	{
+		parent::__construct();
+		$this->load->database();
+		$this->load->library('session');
+		$this->load->helper(array('url', 'form', 'date'));
+		if(!isset($_SESSION['ses_id']))
+		{
+			$sec_res = session_id();
+	    	$_SESSION['ses_id'] = $sec_res;
+			redirect('supplier/index','refresh');
+			
+		}
+		
+		
+		$this->load->model('Supplier_Model');
+	}
+	/*public function edit_contact_inform()
+	{
+		$supplier_id = $this->uri->segment(3);
+		$sup_inf_id = $this->uri->segment(4);
+		$data['contact_inf']=$this->Supplier_Model->contact_inform_edit($supplier_id,$sup_inf_id);
+		//print_r($data);
+		//exit;
+		$this->load->view('profile/edit_contact_details',$data);
+	
+	}*/
+	public function hotel_view($id)
+	{
+		
+	}
+	public function index()
+	{
+
+		$_SESSION['fav_hotel_detail_new']='';
+		$_SESSION['fav_hotel']='';
+			$sec_res = session_id();
+	    	$_SESSION['ses_id'] = $sec_res;
+			$newdata = array(
+                   'currency_value'  => 1,
+				   'currency'  => 'USD'
+               );
+ $data=array('id'=>'visit','type'=>'supplier','ip'=>'ss');
+			
+		    $this->db->insert('vister',$data);
+		     $this->db->insert_id();
+			 
+		$this->session->set_userdata($newdata);
+		
+		if ($this->session->userdata('supplier_logged_in')) {
+			redirect('index/supplier_page', 'refresh'); 
+		} else {
+			redirect('index/login', 'refresh'); 
+		}
+	}
+	function login()
+	{
+		$newdata = array(
+            'currency_value'  => 1,
+			'currency'  => 'USD'
+        );
+		$this->session->set_userdata($newdata);
+		
+		if ($this->session->userdata('supplier_logged_in')) {
+			redirect('index/supplier_page', 'refresh'); 
+		} else {
+			$this->load->view('login_page');
+		}
+		
+		
+	}
+	function supplier_page()
+	{
+		if (!$this->session->userdata('supplier_logged_in')) {
+			redirect('supplier/login', 'refresh'); 
+		}
+		
+		$supplier_id = $this->session->userdata('supplier_id');
+		
+		$data['result']=$this->Supplier_Model->contact_inform_view($supplier_id);
+		
+		
+		$this->load->view('supplier_index',$data);
+	}
+	function registration_process()
+	{
+		$this->form_validation->set_rules('name', 'Name', 'required');
+		$this->form_validation->set_rules('company_name', 'Company Name', 'required');
+		$this->form_validation->set_rules('address', 'Address', 'required');
+		
+		$this->form_validation->set_rules('country', 'Country', 'required');
+		$this->form_validation->set_rules('city', 'City', 'required');
+		$this->form_validation->set_rules('postal_code', 'Zip Code', 'required');
+		//$this->form_validation->set_rules('office_phone', 'Office Phone', 'required');
+		
+		$this->form_validation->set_rules('mobile_no', 'Mobile', 'required');
+		$this->form_validation->set_rules('currency', 'Currency', 'required');
+		
+		$this->form_validation->set_rules('email', 'Email', 'required|valid_email|is_unique[supplier.email_id]');
+		$this->form_validation->set_rules('password', 'Password', 'required|matches[comform_password]');
+		$this->form_validation->set_rules('comform_password', 'Confirm Password', 'required');
+		$this->form_validation->set_rules('terms', 'Terms & Condition', 'required');
+	
+		if($this->form_validation->run()==FALSE)
+		{
+			$data['exist'] = "";
+			$data['name'] = $this->input->post('name');
+		   $data['company_name'] = $this->input->post('company_name');
+		   $data['address'] = $this->input->post('address');
+		   $data['country'] = $this->input->post('country');
+		   $data['city'] = $this->input->post('city');
+		   $data['postal_code'] = $this->input->post('postal_code');
+		   $data['office_phone'] = $this->input->post('office_phone');
+		   $data['mobile_no'] = $this->input->post('mobile_no');
+		   
+		   $data['currency'] = $this->input->post('currency');
+		   $data['email'] = $this->input->post('email');
+		   
+		   
+			 $this->load->view('login_page',$data);
+		}
+		else
+		{
+			$email = $_POST['email'];
+			
+	/*	$Query="select * from agent where email_id ='".$email."'";
+	 
+		 $query=$this->db->query($Query);
+		
+		if ($query->num_rows() > 0)
+		{
+			$data['exist'] = "Your EmailID Already Registered.";
+				$this->load->view('b2b/login_page',$data);
+		}
+		else
+		{*/
+		   $name = $this->input->post('name');
+		   $company_name = $this->input->post('company_name');
+		   $address = $this->input->post('address');
+		   $country = $this->input->post('country');
+		   $city = $this->input->post('city');
+		   $postal_code = $this->input->post('postal_code');
+		   $office_phone = $this->input->post('office_phone');
+		   $mobile_no = $this->input->post('mobile_no');
+		   
+		   $currency = $this->input->post('currency');
+		   $email = $this->input->post('email');
+		   $password = $this->input->post('password');
+		   
+		   
+			
+			if ($this->Supplier_Model->add_supplier($name, $company_name, $address, $country, $city, $postal_code, $office_phone, $mobile_no,$currency, $email, $password)) {
+			
+				
+		  
+			  //$newdata = array('userid'=> $custid,'username'=>$fname,'lastname'=>$sname,'email'=>$email,'logged_in' => TRUE);
+			  //$this->session->set_userdata($newdata);
+				  
+			
+				  
+			$config['protocol'] = 'smtp';
+				$config['smtp_host'] = 'mail.provab.com';
+				$config['smtp_port'] = 25;
+				$config['smtp_user'] = 'christin@provab.com';
+				$config['smtp_pass'] = 'provab123';
+				$config['wordwrap'] = FALSE;
+				$config['mailtype'] = 'html';
+				$config['charset'] = 'utf-8';
+				$config['crlf'] = "\r\n";
+				$config['newline'] = "\r\n";
+				$this->load->library('email', $config);
+				$this->email->set_newline("\r\n");
+				$msg='';
+				$msg.='<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+</head>
+
+<body><table width="100%" border="0" cellspacing="6" cellpadding="6">
+  <tr>
+    <td>Dear '.ucfirst($name).',<br />
+'.ucfirst($city).', '.ucfirst($country).'</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>Greetings From StayAway,</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><p>Many thanks for your Interest and Submitting Online Supplier Registration using StayAway.com.
+   </p>
+    <p> Your application is under process and will be reviewed for Registration by our team</p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td> Within Next 24 Business Hours; they will get in touch with you on your mentioned email for Login Details along with the Welcome Kit will be emailed to you. </td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tbody>
+        <tr>
+          <td>Please do not hesitate to contact us on <font color="#00CC33">info@stayaway.com</font> for all your Urgent Queries / Reservation or Requirements.</td>
+        </tr>
+       <tr> <td>&nbsp;</td></tr><tr> <td>&nbsp;</td></tr>
+        <tr>
+          <td> 
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tbody>
+                <tr>
+                  <td>Thanking you,</td>
+                </tr>
+                
+                <tr>
+                  <td>Registration &amp; StayAway Team,</td>
+                </tr>
+                <tr>
+                  <td><strong>StayAway.com</strong></td>
+                </tr>
+              </tbody>
+            </table></td>
+        </tr>
+      </tbody>
+    </table></td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
+</body>
+</html>';
+				
+				
+				$from = 'bookings@stayaway.com';
+				$sub = 'Supplier Registration Acknowledgment - StayAway.com ';
+				$this->email->from($from,'Admin - StayAway.com');
+				$to = strip_tags($email);
+				$this->email->to($to);
+				$this->email->subject($sub);
+				$this->email->message($msg);
+
+
+
+				if($this->email->send())
+				{
+				
+					//$data['emailId'] = $email;
+					$this->load->view('registration_conformation');
+					$data['exist'] ='';
+				}
+				else
+				{
+					show_error($this->email->print_debugger());
+				}
+			}
+			else
+			{
+				$data['exist'] = "Error data inserting.";
+				$this->load->view('login_page',$data);
+			}
+		//}
+		}
+	}
+	function user_login()
+	{
+   		$this->form_validation->set_rules('login_password', 'Password', 'required');
+		$this->form_validation->set_rules('login_email', 'Email', 'required|valid_email');
+		if($this->form_validation->run()==FALSE)
+		{
+			$data['status'] = "";
+			 $data['login_email'] = $this->input->post('login_email');
+
+			 $this->load->view('login_page',$data);
+		}
+		else
+		{
+		
+			 $email = $this->input->post('login_email');
+			 $pass = $this->input->post('login_password');
+			
+			 $userValied = $this->Supplier_Model->check_agent_login($email, $pass);
+		
+			 if($userValied)
+			 {
+				/*if ($this->session->userdata('agent_type') == 1) {
+					redirect('/b2b/supplier_page', 'refresh');
+				} else {
+					redirect('/b2b/my_booking', 'refresh');
+				}*/
+				redirect('index/supplier_page', 'refresh');
+				
+			 }
+			 else
+			 {
+				 
+				 $data['status'] = "Invalid Email ID/Password";
+				 
+				 $this->load->view('login_page',$data);
+			 }
+		}
+	
+	}
+	
+	
+	public function profile()
+	{
+		
+		//$supplier_id=1;
+		$supplier_id = $this->session->userdata('supplier_id');
+		//$supplier_id='';
+		$data['result']=$this->Supplier_Model->contact_inform_view($supplier_id);
+		
+		$this->load->view('profile/profile',$data);
+		
+	}
+	
+	
+	
+	
+	//----- Get Supplier's Category List -----/
+	function inventory_category_list()
+	{
+		$data['result'] = $this->Supplier_Model->inventory_category_list();
+		//$this->load->view('supplier_view',$data);
+		$this->load->view('inventory/inventory_view',$data);
+	}
+	
+	//----- Update Supplier's Category Type -----/
+	function update_category_type($id,$status)
+	{
+		$this->Supplier_Model->update_category_type($id,$status);
+		redirect('index/inventory_category_list','refresh');
+	}
+	
+	//----- Get Inventory Category Space Facilities -----/
+	function inventory_category_space_facilities()
+	{
+		$data['result'] = $this->Supplier_Model->inventory_category_space_facilities();
+	}
+	
+	//----- Add New Supplier's Category Type -----/
+	function add_cate_type()
+	{
+		$this->form_validation->set_rules('room_type', 'Room Type', 'required');
+		$this->form_validation->set_rules('rack_rate', 'Rack Rate', 'required');
+		$this->form_validation->set_rules('max_person', 'Maximum Person', 'required');
+		$this->form_validation->set_rules('bath_rooms', 'No of Bathrooms', 'required');
+		$this->form_validation->set_rules('room_zize', 'Room Size', 'required');
+		$this->form_validation->set_rules('bed_rooms', 'No of Bed Rooms', 'required');
+		$this->form_validation->set_rules('floors', 'No of floors', 'required');
+		$this->form_validation->set_rules('charges', 'Additional Charges', 'required');
+		if($this->form_validation->run()==FALSE)
+		{
+			$data['exist'] = "";
+			$data['room_type'] = $this->input->post('room_type');
+			$data['rack_rate'] = $this->input->post('rack_rate');
+			$data['max_person'] = $this->input->post('max_person');
+			$data['bath_rooms'] = $this->input->post('bath_rooms');
+			$data['room_zize'] = $this->input->post('room_zize');
+			$data['bed_rooms'] = $this->input->post('bed_rooms');
+			$data['floors'] = $this->input->post('floors');
+			$data['charges'] = $this->input->post('charges');
+		   
+			$this->load->view('inventory/add_cate_type',$data);
+		}
+		else
+		{
+			$room_type = $this->input->post('room_type');
+			$rack_rate = $this->input->post('rack_rate');
+			$max_person = $this->input->post('max_person');
+			$bath_rooms = $this->input->post('bath_rooms');
+			$room_zize = $this->input->post('room_zize');
+			$bed_rooms = $this->input->post('bed_rooms');
+			$terrace = $this->input->post('terrace');
+			$floors = $this->input->post('floors');
+			$charges = $this->input->post('charges');
+			
+			$this->Supplier_Model->add_cate_type($room_type, $rack_rate, $max_person, $bath_rooms, $room_zize, $bed_rooms, $terrace, $floors, $charges);
+			
+			redirect('index/inventory_category_list','refresh');
+		}
+	}
+	
+	//----- Get Supplier's Category Details -----/
+	function view_cate_details($id)
+	{
+		$data['cat_details'] = $this->Supplier_Model->view_cate_details($id);
+		$data['id'] = $id;
+		$this->load->view('inventory/edit_cate_type',$data);
+	}
+	
+	//----- Edit Supplier's Category Type -----/
+	function edit_cate_type($id)
+	{
+		$this->form_validation->set_rules('room_type', 'Room Type', 'required');
+		$this->form_validation->set_rules('rack_rate', 'Rack Rate', 'required');
+		$this->form_validation->set_rules('max_person', 'Maximum Person', 'required');
+		$this->form_validation->set_rules('bath_rooms', 'No of Bathrooms', 'required');
+		$this->form_validation->set_rules('room_zize', 'Room Size', 'required');
+		$this->form_validation->set_rules('bed_rooms', 'No of Bed Rooms', 'required');
+		$this->form_validation->set_rules('floors', 'No of floors', 'required');
+		$this->form_validation->set_rules('charges', 'Additional Charges', 'required');
+		if($this->form_validation->run()==FALSE)
+		{
+			$data['exist'] = "";
+			$data['room_type'] = $this->input->post('room_type');
+			$data['rack_rate'] = $this->input->post('rack_rate');
+			$data['max_person'] = $this->input->post('max_person');
+			$data['bath_rooms'] = $this->input->post('bath_rooms');
+			$data['room_zize'] = $this->input->post('room_zize');
+			$data['bed_rooms'] = $this->input->post('bed_rooms');
+			$data['floors'] = $this->input->post('floors');
+			$data['charges'] = $this->input->post('charges');
+		   
+			$this->load->view('inventory/edit_cate_type',$data);
+		}
+		else
+		{
+			$room_type = $this->input->post('room_type');
+			$rack_rate = $this->input->post('rack_rate');
+			$max_person = $this->input->post('max_person');
+			$bath_rooms = $this->input->post('bath_rooms');
+			$room_zize = $this->input->post('room_zize');
+			$bed_rooms = $this->input->post('bed_rooms');
+			$terrace = $this->input->post('terrace');
+			$floors = $this->input->post('floors');
+			$charges = $this->input->post('charges');
+			
+			$this->Supplier_Model->edit_cate_type($id, $room_type, $rack_rate, $max_person, $bath_rooms, $room_zize, $bed_rooms, $terrace, $floors, $charges);
+			
+			redirect('index/view_cate_details/'.$id,'refresh');
+		}
+	}
+	
+	
+	//----- Get Supplier's Rate Tactics List -----/
+	function rate_tactics_list()
+	{
+		$data['result'] = $this->Supplier_Model->rate_tactics_list();
+		$this->load->view('inventory/rate_tactics_view',$data);
+	}
+	
+	//----- Update Supplier's Rate Tactics Status -----/
+	function update_rate_tactics($id,$status)
+	{
+		$this->Supplier_Model->update_rate_tactics($id,$status);
+		redirect('index/rate_tactics_list','refresh');
+	}
+	
+	//----- Add New Supplier's Rate Tacticse -----/
+	function add_rate_plan()
+	{
+		$this->form_validation->set_rules('rate_plan_name', 'Rate Plan Name', 'required');
+		$this->form_validation->set_rules('default_avail', 'Default Availability', 'required');
+		$this->form_validation->set_rules('room_plan', 'Room Plan', 'required');
+		$this->form_validation->set_rules('capacity', 'Capacity', 'required');
+		if($this->form_validation->run()==FALSE)
+		{
+			$data['exist'] = "";
+			$data['rate_plan_name'] = $this->input->post('rate_plan_name');
+			$data['default_avail'] = $this->input->post('default_avail');
+			$data['room_plan'] = $this->input->post('room_plan');
+			$data['capacity'] = $this->input->post('capacity');
+		   
+			$this->load->view('inventory/add_rate_plan',$data);
+		}
+		else
+		{
+			$rate_plan_name = $this->input->post('rate_plan_name');
+			$default_avail = $this->input->post('default_avail');
+			$room_plan = $this->input->post('room_plan');
+			$capacity = $this->input->post('capacity');
+			$max_length_stay = $this->input->post('max_length_stay');
+			$min_lenght_stay = $this->input->post('min_lenght_stay');
+			$plan_rate = $this->input->post('plan_rate');
+			$type_of_booking = $this->input->post('type_of_booking');
+			$breakfast = $this->input->post('breakfast');
+			$breakfast_type = $this->input->post('breakfast_type');
+			$breakfast_hrs_from = $this->input->post('breakfast_hrs_from');
+			$breakfast_hrs_to = $this->input->post('breakfast_hrs_to');
+			$cancel_policy = $this->input->post('cancel_policy');
+			if($cancel_policy == '1'){
+				$cancel_policy_hrs = $this->input->post('cancel_policy_hrs');
+				$cancel_policy_time = '';
+			}
+			else if($cancel_policy == '2'){
+				$cancel_policy_hrs = '';
+				$cancel_policy_time = $this->input->post('cancel_policy_time');
+			}
+			else{
+				$cancel_policy_hrs = '';
+				$cancel_policy_time = '';
+			}
+			
+			$cancel_charge = $this->input->post('cancel_charge');
+			if($cancel_charge == '1'){
+				$cancel_charge_percent = $this->input->post('cancel_charge_percent');
+				$cancel_charge_amount = '';
+			}
+			else if($cancel_charge == '2'){
+				$cancel_charge_percent = '';
+				$cancel_charge_amount = $this->input->post('cancel_charge_amount');
+			}
+			else{
+				$cancel_charge_percent = '';
+				$cancel_charge_amount = '';
+			}
+			$cancel_nights = $this->input->post('cancel_nights');
+			$booking_policy = $this->input->post('booking_policy');
+			$cancel_comment = $this->input->post('cancel_comment');
+			$sd = $this->input->post('sd');
+			$sds = explode("-",$sd);
+			$strd = $sds[2].'-'.$sds[1].'-'.$sds[0];
+			
+			$ed = $this->input->post('ed');
+			$eds = explode("-",$ed);
+			$endd = $eds[2].'-'.$eds[1].'-'.$eds[0];
+			
+			$remarks = $this->input->post('remarks');
+			
+			$this->Supplier_Model->add_rate_plan($rate_plan_name, $default_avail, $room_plan, $capacity, $max_length_stay, $min_lenght_stay, $plan_rate, $type_of_booking, $breakfast, $breakfast_type, $breakfast_hrs_from, $breakfast_hrs_to, $cancel_policy, $cancel_policy_hrs, $cancel_policy_time, $cancel_charge, $cancel_charge_percent, $cancel_charge_amount, $cancel_nights, $booking_policy, $cancel_comment, $strd, $endd, $remarks);
+			
+			redirect('index/rate_tactics_list','refresh');
+		}
+	}
+	
+	//----- Get Supplier's Rate Tacticse Details -----/
+	function view_rate_tactics_details($id)
+	{
+		$data['rat_tac_details'] = $this->Supplier_Model->view_rate_tactics_details($id);
+		$data['id'] = $id;
+		$this->load->view('inventory/edit_rate_plan',$data);
+	}
+	
+	//----- Edit Supplier's Rate Tacticse Details -----/
+	function edit_rate_plan($id)
+	{
+		$this->form_validation->set_rules('rate_plan_name', 'Rate Plan Name', 'required');
+		$this->form_validation->set_rules('default_avail', 'Default Availability', 'required');
+		$this->form_validation->set_rules('room_plan', 'Room Plan', 'required');
+		$this->form_validation->set_rules('capacity', 'Capacity', 'required');
+		if($this->form_validation->run()==FALSE)
+		{
+			$data['exist'] = "";
+			$data['rate_plan_name'] = $this->input->post('rate_plan_name');
+			$data['default_avail'] = $this->input->post('default_avail');
+			$data['room_plan'] = $this->input->post('room_plan');
+			$data['capacity'] = $this->input->post('capacity');
+		   
+			$this->load->view('inventory/edit_rate_plan',$data);
+		}
+		else
+		{
+			$rate_plan_name = $this->input->post('rate_plan_name');
+			$default_avail = $this->input->post('default_avail');
+			$room_plan = $this->input->post('room_plan');
+			$capacity = $this->input->post('capacity');
+			$max_length_stay = $this->input->post('max_length_stay');
+			$min_lenght_stay = $this->input->post('min_lenght_stay');
+			$plan_rate = $this->input->post('plan_rate');
+			$type_of_booking = $this->input->post('type_of_booking');
+			$breakfast = $this->input->post('breakfast');
+			$breakfast_type = $this->input->post('breakfast_type');
+			$breakfast_hrs_from = $this->input->post('breakfast_hrs_from');
+			$breakfast_hrs_to = $this->input->post('breakfast_hrs_to');
+			$cancel_policy = $this->input->post('cancel_policy');
+			if($cancel_policy == '1'){
+				$cancel_policy_hrs = $this->input->post('cancel_policy_hrs');
+				$cancel_policy_time = '';
+			}
+			else if($cancel_policy == '2'){
+				$cancel_policy_hrs = '';
+				$cancel_policy_time = $this->input->post('cancel_policy_time');
+			}
+			else{
+				$cancel_policy_hrs = '';
+				$cancel_policy_time = '';
+			}
+			
+			$cancel_charge = $this->input->post('cancel_charge');
+			if($cancel_charge == '1'){
+				$cancel_charge_percent = $this->input->post('cancel_charge_percent');
+				$cancel_charge_amount = '';
+			}
+			else if($cancel_charge == '2'){
+				$cancel_charge_percent = '';
+				$cancel_charge_amount = $this->input->post('cancel_charge_amount');
+			}
+			else{
+				$cancel_charge_percent = '';
+				$cancel_charge_amount = '';
+			}
+			$cancel_nights = $this->input->post('cancel_nights');
+			$booking_policy = $this->input->post('booking_policy');
+			$cancel_comment = $this->input->post('cancel_comment');
+			$sd = $this->input->post('sd');
+			$sds = explode("-",$sd);
+			$strd = $sds[2].'-'.$sds[1].'-'.$sds[0];
+			
+			$ed = $this->input->post('ed');
+			$eds = explode("-",$ed);
+			$endd = $eds[2].'-'.$eds[1].'-'.$eds[0];
+			
+			$remarks = $this->input->post('remarks');
+			
+			$this->Supplier_Model->edit_rate_plan($id, $rate_plan_name, $default_avail, $room_plan, $capacity, $max_length_stay, $min_lenght_stay, $plan_rate, $type_of_booking, $breakfast, $breakfast_type, $breakfast_hrs_from, $breakfast_hrs_to, $cancel_policy, $cancel_policy_hrs, $cancel_policy_time, $cancel_charge, $cancel_charge_percent, $cancel_charge_amount, $cancel_nights, $booking_policy, $cancel_comment, $strd, $endd, $remarks);
+			
+			redirect('index/view_rate_tactics_details/'.$id,'refresh');
+		}
+	}
+	
+	
+	//----- Get Supplier's Category List -----/
+	function maintain_month_list()
+	{
+		$this->load->view('inventory/maintain_month_list');
+	}
+	
+	
+	//------------- Get Supplier's Maintain By Month Dates -------- //
+	function getDates()
+	{
+		 $results = $this->Supplier_Model->getDates();
+	}
+	
+	//----- Get Supplier's Add Maintain Month -----/
+	function add_maintain_month()
+	{
+		$supplier_id = $this->session->userdata('supplier_id');
+		$this->Supplier_Model->add_maintain_month($supplier_id);
+		redirect('index/maintain_month_list','refresh');
+	}
+	
+	//----- Get Supplier's Open / Close Dates -----/
+	function open_close_dates()
+	{
+		//$data['result'] = $this->Supplier_Model->open_close_dates();
+		$this->load->view('inventory/open_close_dates');
+	}
+	
+	//----- Get Supplier's Maintain Month Dates for Open / Close Dates -----/
+	function get_maintain_month_dates()
+	{
+		$data['results'] = $this->Supplier_Model->get_maintain_month_dates();
+		$this->load->view('inventory/open_close_dates',$data);
+	}
+	
+	
+	//----- Get Supplier's Rate Tactics for Open / Close Dates -----/
+	function getRateTactics()
+	{
+		$results = $this->Supplier_Model->getRateTactics();
+	}
+	
+	//----- Get Supplier's House Rules -----/
+	function house_rules()
+	{
+		$property_id = 1;
+		$data['result'] = $this->Supplier_Model->get_house_rules($property_id);
+		$this->load->view('inventory/house_rules',$data);
+	}
+	
+	//----- Set Supplier's House Rules -----/
+	function set_house_rules()
+	{
+		$this->form_validation->set_rules('arrival_time', 'Arrival Time (from)', 'required');
+		$this->form_validation->set_rules('departure_time', 'Departure Time (Before)', 'required');
+		if($this->form_validation->run()==FALSE)
+		{
+			$data['exist'] = "";
+			$data['arrival_time'] = $this->input->post('arrival_time');
+			$data['departure_time'] = $this->input->post('departure_time');
+		   
+			$this->load->view('inventory/house_rules',$data);
+		}
+		else
+		{
+			$supplier_id = $this->session->userdata('supplier_id'); 
+			$arrival_time = $this->input->post('arrival_time');
+			$departure_time = $this->input->post('departure_time');
+			$check_in_time_from = $this->input->post('check_in_time_from');
+			$check_in_extra_cost_from = $this->input->post('check_in_extra_cost_from');
+			$check_in_time_to = $this->input->post('check_in_time_to');
+			$check_in_extra_cost_to = $this->input->post('check_in_extra_cost_to');
+			$check_out_time_from = $this->input->post('check_out_time_from');
+			$check_out_extra_cost_from = $this->input->post('check_out_extra_cost_from');
+			$check_out_time_to = $this->input->post('check_out_time_to');
+			$check_out_extra_cost_to = $this->input->post('check_out_extra_cost_to');
+			$manimum_stay = $this->input->post('manimum_stay');
+			$maximum_stay = $this->input->post('maximum_stay');
+			$rent_amt_percent = $this->input->post('rent_amt_percent');
+			$rent_amt_days = $this->input->post('rent_amt_days');
+			$payment_mode = $this->input->post('payment_mode');
+			$cleaning = $this->input->post('cleaning');
+			$supplies = $this->input->post('supplies');
+			$policy = $this->input->post('policy');
+			
+			$this->Supplier_Model->set_house_rules($supplier_id, $arrival_time, $departure_time, $check_in_time_from, $check_in_extra_cost_from, $check_in_time_to, $check_in_extra_cost_to, $check_out_time_from, $check_out_extra_cost_from, $check_out_time_to, $check_out_extra_cost_to, $manimum_stay, $maximum_stay, $rent_amt_percent, $rent_amt_days, $payment_mode, $cleaning, $supplies, $policy);
+			
+			redirect('index/house_rules','refresh');
+		}
+	}
+	
+	
+	//----- Edit Supplier's House Rules -----/
+	function edit_house_rules($id)
+	{
+		$this->form_validation->set_rules('arrival_time', 'Arrival Time (from)', 'required');
+		$this->form_validation->set_rules('departure_time', 'Departure Time (Before)', 'required');
+		if($this->form_validation->run()==FALSE)
+		{
+			$data['exist'] = "";
+			$data['arrival_time'] = $this->input->post('arrival_time');
+			$data['departure_time'] = $this->input->post('departure_time');
+		   
+			$this->load->view('inventory/house_rules',$data);
+		}
+		else
+		{
+			$supplier_id = $this->session->userdata('supplier_id'); 
+			$arrival_time = $this->input->post('arrival_time');
+			$departure_time = $this->input->post('departure_time');
+			$check_in_time_from = $this->input->post('check_in_time_from');
+			$check_in_extra_cost_from = $this->input->post('check_in_extra_cost_from');
+			$check_in_time_to = $this->input->post('check_in_time_to');
+			$check_in_extra_cost_to = $this->input->post('check_in_extra_cost_to');
+			$check_out_time_from = $this->input->post('check_out_time_from');
+			$check_out_extra_cost_from = $this->input->post('check_out_extra_cost_from');
+			$check_out_time_to = $this->input->post('check_out_time_to');
+			$check_out_extra_cost_to = $this->input->post('check_out_extra_cost_to');
+			$manimum_stay = $this->input->post('manimum_stay');
+			$maximum_stay = $this->input->post('maximum_stay');
+			$rent_amt_percent = $this->input->post('rent_amt_percent');
+			$rent_amt_days = $this->input->post('rent_amt_days');
+			$payment_mode = $this->input->post('payment_mode');
+			$cleaning = $this->input->post('cleaning');
+			$supplies = $this->input->post('supplies');
+			$policy = $this->input->post('policy');
+			
+			
+			$this->Supplier_Model->edit_house_rules($id, $arrival_time, $departure_time, $check_in_time_from, $check_in_extra_cost_from, $check_in_time_to, $check_in_extra_cost_to, $check_out_time_from, $check_out_extra_cost_from, $check_out_time_to, $check_out_extra_cost_to, $manimum_stay, $maximum_stay, $rent_amt_percent, $rent_amt_days, $payment_mode, $cleaning, $supplies, $policy);
+			
+			redirect('index/house_rules','refresh');
+		}
+	}
+	
+	//----- Get Supplier's Extra Services -----/
+	function extra_service()
+	{
+		$property_id = 1;
+		$data['result'] = $this->Supplier_Model->get_extra_service($property_id);
+		$this->load->view('inventory/extra_service',$data);
+		/*$this->load->view('inventory/extra_service');*/
+	}
+	
+	//----- Set Supplier's Extra Services -----/
+	function set_extra_service()
+	{
+		$supplier_id = $this->session->userdata('supplier_id'); 
+		$this->Supplier_Model->set_extra_service($supplier_id);
+		redirect('index/extra_service','refresh');
+	}
+	
+	
+	
+	//----- Edit Supplier's Extra Services -----/
+	function edit_extra_service($id)
+	{
+		$supplier_id = $this->session->userdata('supplier_id'); 
+		$this->Supplier_Model->edit_extra_service($supplier_id,$id);
+		redirect('index/extra_service','refresh');
+	}
+	
+	
+	
+	
+	
+public function contact_inform()
+	{
+		$data['country_list']=$this->Supplier_Model->fetch_country();
+		$data['language_list']=$this->Supplier_Model->fetch_language();
+		
+		$this->load->view('profile/contact_info',$data);
+	}
+	public function add_data()
+	{
+		
+		$this->form_validation->set_rules('city', 'City', 'required');
+		$this->form_validation->set_rules('pro_name', 'Propertyname', 'required');			
+		$this->form_validation->set_rules('main_first_name', 'Firstname', 'required');
+		$this->form_validation->set_rules('main_email', 'Email', 'required');
+
+		
+		if($this->form_validation->run()==FALSE)
+		{
+			$data['exist'] = "";
+			
+			$data['city'] = $this->input->post('city');
+			$data['pro_name'] = $this->input->post('pro_name');
+			$data['main_first_name'] = $this->input->post('main_first_name');
+			$data['main_email'] = $this->input->post('main_email');
+			$data['country_list']=$this->Supplier_Model->fetch_country();
+			$data['language_list']=$this->Supplier_Model->fetch_language();
+			$this->load->view('contact_info',$data);
+			
+		}
+		else
+		{
+			$supplier_id = $this->session->userdata('supplier_id');
+			$supplier_id=$supplier_id!='' ? $supplier_id:'1';
+			$property_id=1;
+			$country_val= $this->input->post('country_val');
+			$city = $this->input->post('city');
+			$pro_name = $this->input->post('pro_name');
+			$lan_val = $this->input->post('lan_val');
+			$main_first_name = $this->input->post('main_first_name');
+			$main_last_name = $this->input->post('main_last_name');
+			$main_email = $this->input->post('main_email');
+			$res_first_name = $this->input->post('res_first_name');
+			$res_last_name = $this->input->post('res_last_name');
+			$res_phone = $this->input->post('res_phone');
+			$res_fax = $this->input->post('res_fax');
+			$res_email = $this->input->post('res_email');
+			$mark_first_name = $this->input->post('mark_first_name');
+			$mark_last_name = $this->input->post('mark_last_name');
+			$mark_phone = $this->input->post('mark_phone');
+			$mark_fax = $this->input->post('mark_fax');
+			$mark_email = $this->input->post('mark_email');
+			$acc_first_name = $this->input->post('acc_first_name');
+			$acc_last_name = $this->input->post('acc_last_name');
+			$acc_phone = $this->input->post('acc_phone');
+			$acc_fax = $this->input->post('acc_fax');
+			$acc_email = $this->input->post('acc_email');
+			$rs_status=$this->Supplier_Model->add_contact_inf($supplier_id, $country_val, $city, $pro_name, $lan_val, $main_first_name, $main_last_name, $main_email, $res_first_name, $res_last_name, $res_phone, $res_fax, $res_email, $mark_first_name, $mark_last_name, $mark_phone, $mark_fax, $mark_email, $acc_first_name, $acc_last_name, $acc_phone,$acc_fax,$acc_email,$property_id  ); 
+			if($rs_status==true)
+			{
+				$this->session->set_flashdata('errmsg','Profile has been inserted successfully');
+			}
+			else
+			{
+				$this->session->set_flashdata('errmsg','Failed');
+	
+			}
+		}
+		redirect('index/edit_contact_inform','refresh');
+		
+	}
+	
+	public function list_contact_inform($id)
+	{
+		//$id = $this->session->userdata('supplier_id');
+		$data['result']=$this->Supplier_Model->contact_inform_view();
+		//$this->load->view('profile/profile', $data);
+		$this->load->view('profile/profile');
+		
+	}
+	
+	public function edit_contact_inform()
+	{
+		$supplier_id = $this->session->userdata('supplier_id');
+		$supplier_id =$supplier_id!='' ? $supplier_id :'1';
+		$property_id=1;
+		
+		$data['contact_inf']=$this->Supplier_Model->contact_inform_edit($supplier_id,$property_id);
+		$data['country_list']=$this->Supplier_Model->fetch_country();
+		$data['language_list']=$this->Supplier_Model->fetch_language();
+		//print_r($data);
+		//exit;
+		$this->load->view('profile/edit_contact_details',$data);
+	
+	}
+		
+	public function update_contact_inform()
+	{
+		/*$this->form_validation->set_rules('country_val', 'Country', 'required');
+		$this->form_validation->set_rules('city', 'City', 'required');
+		$this->form_validation->set_rules('pro_name', 'Propertyname', 'required');			
+		$this->form_validation->set_rules('main_first_name', 'Firstname', 'required');
+		$this->form_validation->set_rules('main_email', 'Email', 'required');
+		if($this->form_validation->run()==FALSE)
+		{
+			$data['exist'] = "";
+			
+			$data['cityl'] = $this->input->post('city');
+			$data['pro_name'] = $this->input->post('pro_name');
+			$data['main_first_name'] = $this->input->post('main_first_name');
+			$data['main_email'] = $this->input->post('main_email');
+			$data['country_list']=$this->Supplier_Model->fetch_country();
+			$data['language_list']=$this->Supplier_Model->fetch_language();
+			//$this->load->view('profile/edit_contact_details',$data);
+			
+		}
+		else
+		{*/
+			$supplier_id=$this->input->post('sup_id');
+			$sup_inf_id=$this->input->post('sup_cont_id');
+			$sup_prop_id=$this->input->post('sup_prop_id');
+			$country_val = $this->input->post('country_val');
+			$city = $this->input->post('city');
+			$pro_name = $this->input->post('pro_name');
+			$lan_val = $this->input->post('lan_val');
+			$main_first_name = $this->input->post('main_first_name');
+			$main_last_name = $this->input->post('main_last_name');
+			$main_email = $this->input->post('main_email');
+			$res_first_name = $this->input->post('res_first_name');
+			$res_last_name = $this->input->post('res_last_name');
+			$res_phone = $this->input->post('res_phone');
+			$res_fax = $this->input->post('res_fax');
+			$res_email = $this->input->post('res_email');
+			$mark_first_name = $this->input->post('mark_first_name');
+			$mark_last_name = $this->input->post('mark_last_name');
+			$mark_phone = $this->input->post('mark_phone');
+			$mark_fax = $this->input->post('mark_fax');
+			$mark_email = $this->input->post('mark_email');
+			$acc_first_name = $this->input->post('acc_first_name');
+			$acc_last_name = $this->input->post('acc_last_name');
+			$acc_phone = $this->input->post('acc_phone');
+			$acc_fax = $this->input->post('acc_fax');
+			$acc_email = $this->input->post('acc_email');
+			$this->Supplier_Model->update_contact_info($country_val, $city, $pro_name, $lan_val, $main_first_name, $main_last_name, $main_email, $res_first_name, $res_last_name, $res_phone, $res_fax, $res_email, $mark_first_name, $mark_last_name, $mark_phone, $mark_fax, $mark_email, $acc_first_name, $acc_last_name, $acc_phone,$acc_fax,$acc_email,$supplier_id,$sup_inf_id); 
+			redirect("index/edit_contact_inform/$supplier_id/$sup_inf_id",'refresh');
+			
+		//}
+			
+			
+	}
+	
+	public function property_inform()
+	{
+		$data['class_type_profile']=$this->Supplier_Model->fetch_class_type();
+		$data['time_zone']=$this->Supplier_Model->fetch_time_zone();
+		$data['currency']=$this->Supplier_Model->fetch_currency_val();
+		$this->load->view('profile/property_info',$data);
+		
+		
+	}
+	public function add_property_inform()
+	{
+		
+		$this->form_validation->set_rules('pro_class_type', 'Class Type', 'required');
+		//$this->form_validation->set_rules('addre', 'Address', 'required');
+		$this->form_validation->set_rules('currency', 'Currency', 'required');
+		//$this->form_validation->set_rules('booking_type', 'Booking Type', 'required');
+		$this->form_validation->set_rules('book_email', 'Booking Email', 'required');
+		if($this->form_validation->run()==FALSE)
+		{
+			$data['exist'] = "";
+			
+			$data['pro_class_type'] = $this->input->post('pro_class_type');
+			//$data['addre'] = $this->input->post('addre');
+			$data['currency'] = $this->input->post('currency');
+			//$data['booking_type'] = $this->input->post('booking_type');
+			$data['book_email'] = $this->input->post('book_email');
+			//print_r($data);
+			//exit;
+			//$data['class_type_profile']=$this->Supplier_Model->fetch_class_type();
+			//$data['time_zone']=$this->Supplier_Model->fetch_time_zone();
+			//$data['currency']=$this->Supplier_Model->fetch_currency_val();
+			$this->load->view('profile/property_info',$data);
+		}
+		else
+		{
+			$hide_contact_id = $this->input->post('hide_contact_id');
+			$supplier_id = $this->session->userdata('supplier_id');
+			$pro_class_type = $this->input->post('pro_class_type');
+			$group_ass = $this->input->post('group_ass');
+			$addre = $this->input->post('addre');
+			$desc = $this->input->post('desc');
+			$time_zone = $this->input->post('time_zone');
+			$star_val = $this->input->post('star_val');
+			$currency = $this->input->post('currency');
+			$web = $this->input->post('web');
+			$booking_type = $this->input->post('booking_type');
+			$book_email = $this->input->post('book_email');
+			$this->Supplier_Model->add_property_info($supplier_id, $pro_class_type, $group_ass, $addre, $desc, $time_zone, $star_val, $currency, $web, $booking_type, $book_email, $hide_contact_id);
+		}
+			
+	}
+	
+	public function edit_property_info()
+	{
+		$supplier_id = $this->session->userdata('supplier_id');
+	// $sup_prop_id = $this->session->userdata($sup_prop_id);exit;
+	    $data['class_type_profile']=$this->Supplier_Model->fetch_class_type();
+		$data['time_zone']=$this->Supplier_Model->fetch_time_zone();
+		$data['currency']=$this->Supplier_Model->fetch_currency_val();
+		//$data['prop_inf']=$this->Supplier_Model->contact_prop_edit();
+		$supplier_id = $supplier_id;
+		$property_id = 1;
+		/*if($property_id)
+		{
+			$num_rec=$this->Supplier_Model->checkContact($property_id);
+			if($num_rec=='0')
+			{
+					redirect("index/property_inform/$contact_inf_id",'refresh');
+					exit;
+			}
+		}*/
+		$data['prop_inf']=$this->Supplier_Model->contact_prop_edit($property_id);
+		
+		
+		$this->load->view('profile/edit_property_info',$data);
+		
+	}
+	public function update_property_inform()
+	{
+			
+			$pro_class_type = $this->input->post('pro_class_type');
+			$supplier_id = $this->session->userdata('supplier_id');
+			$property_id=1;
+			$group_ass = $this->input->post('group_ass');
+			$addre = $this->input->post('addre');
+			$desc = $this->input->post('desc');
+			$time_zone = $this->input->post('time_zone');
+			$star_val = $this->input->post('star_val');
+			$currency = $this->input->post('currency');
+			$web = $this->input->post('web');
+			$booking_type = $this->input->post('booking_type');
+			$book_email = $this->input->post('book_email');
+			$this->Supplier_Model->update_property_info($supplier_id, $pro_class_type, $group_ass, $addre, $desc, $time_zone, $star_val, $currency, $web, $booking_type, $book_email, $property_id);
+			redirect("index/edit_property_info",'refresh');
+	}
+	public function acc_facility()
+	{
+		
+		$val=$this->input->post('add_facility');
+		$sup_prop_id=1;
+		if($val!="")
+		{
+			//$hotel_fac_new_val = $this->input->post('add_facility');
+			$data['new_val'] = $this->Supplier_Model->add_hotel_facility($val);
+		}
+		$room_val=$this->input->post('add_room_facility');
+		if($room_val!="")
+		{
+			//$room_fac_new_val = $this->input->post('add_room_facility');
+			$data['new_val'] = $this->Supplier_Model->add_room_facility($room_val);
+		}
+		$data['facility_iist']= $this->Supplier_Model->fetch_facility();
+		$data['room_fac_list'] = $this->Supplier_Model->fetch_room_facility();
+		$data['selected_facility']=$this->Supplier_Model->selected_facility($sup_prop_id);
+		$this->load->view('profile/acc_facility',$data);
+	}
+	
+	public function insert_facility()
+	{
+		$sup_prop_id = 1;
+		$array_hotel_fac= $this->input->post('hotel_facility');
+		$array_room_fac= $this->input->post('room_facility');
+		//print_r($array_hotel_fac);exit;
+		if($array_hotel_fac || $array_room_fac )
+		{
+				$this-> Supplier_Model->add_acc_facility($array_hotel_fac, $array_room_fac, $sup_prop_id);
+		}
+		//redirect("index/edit_facility/$sup_prop_id",'refresh');
+		
+		$data['id']=$sup_prop_id;
+		$data['facility_iist']= $this->Supplier_Model->fetch_facility();
+		$data['room_fac_list'] = $this->Supplier_Model->fetch_room_facility();
+		if($sup_prop_id)
+		{
+			$num_rec=$this->Supplier_Model->checkContactfac($sup_prop_id);
+			if($num_rec=='0')
+			{
+					redirect("index/acc_facility/$sup_prop_id",'refresh');
+					exit;
+			}
+		}
+		$data['spe_fetch']=$this->Supplier_Model->fetch_fac($sup_prop_id);
+		$data['selected_facility']=$this->Supplier_Model->selected_facility($sup_prop_id);
+		//print_r($data['spe_fetch']);exit;
+		$this->load->view('profile/edit_facility',$data);
+		//$this->load->view("profile/edit_facility",$data);
+		
+	
+	}
+	public function general_settings()
+	{
+		$supplier_id=1;
+		
+		$data['result']=$this->Supplier_Model->get_settings_val($supplier_id);
+		//$data['id'] = $supplier_id;
+		//echo $data;
+		//exit;
+		$this->load->view('profile/general_settings',$data);
+	}
+	
+	public function add_general_set()
+	{
+		$this->form_validation->set_rules('check_in_time_from', 'check_in_time_from', 'required');
+		$this->form_validation->set_rules('check_in_time_to', 'check_in_time_to', 'required');
+		$this->form_validation->set_rules('check_out_time_from', 'check_out_time_from', 'required');
+		$this->form_validation->set_rules('check_out_time_to', 'check_out_time_to', 'required');
+		$this->form_validation->set_rules('state_percentage', 'state_percentage', 'required');
+		$this->form_validation->set_rules('city_percentage', 'city_percentage', 'required');
+		$this->form_validation->set_rules('room_percentage', 'room_percentage', 'required');
+		$this->form_validation->set_rules('vat_percentage', 'vat_percentage', 'required');
+		$this->form_validation->set_rules('service_percentage', 'service_percentage', 'required');
+		if($this->form_validation->run()==FALSE)
+		{
+			$data['exist'] = "";
+			$data['check_in_time_from'] = $this->input->post('check_in_time_from');
+			$data['check_in_time_to'] = $this->input->post('check_in_time_to');
+			$data['check_out_time_from'] = $this->input->post('check_out_time_from');
+			$data['check_out_time_to'] = $this->input->post('check_out_time_to');
+			$data['state_percentage'] = $this->input->post('state_percentage');
+			$data['city_percentage'] = $this->input->post('city_percentage');
+			$data['room_percentage'] = $this->input->post('room_percentage');
+			$data['vat_percentage'] = $this->input->post('vat_percentage');
+			$data['service_percentage'] = $this->input->post('service_percentage');
+			$this->load->view('profile/general_settings',$data);
+		}
+		else
+		{
+		$sup_prop_id = '1';
+		$check_in_time_from = $this->input->post('check_in_time_from');
+		$check_in_time_to = $this->input->post('check_in_time_to');
+		$check_out_time_from = $this->input->post('check_out_time_from');
+		$check_out_time_to = $this->input->post('check_out_time_to');
+		$guest_in_time = $this->input->post('guest_in_time');
+		$guest_out_time = $this->input->post('guest_out_time');
+		$key_col = $this->input->post('key_col');
+		$key_descrip = $this->input->post('key_descrip');
+		$state_tax = $this->input->post('state_tax');
+		$state_percentage = $this->input->post('state_percentage');
+		$state_percentage_val = $this->input->post('state_percentage_val');
+		$state_persons = $this->input->post('state_persons');
+		$state_price = $this->input->post('state_price');
+		$state_percentage = $this->input->post('state_percentage');
+		$city_tax = $this->input->post('city_tax');
+		$city_percentage = $this->input->post('city_percentage');
+		$city_percentage_val = $this->input->post('city_percentage_val');
+		$city_persons = $this->input->post('city_persons');
+		$city_price = $this->input->post('city_price');
+		$room_tax = $this->input->post('room_tax');
+		$room_percentage = $this->input->post('room_percentage');
+		$room_percentage_val = $this->input->post('room_percentage_val');
+		$room_persons = $this->input->post('room_persons');
+		$room_price = $this->input->post('room_price');
+		$vat_tax = $this->input->post('vat_tax');
+		$vat_percentage = $this->input->post('vat_percentage');
+		$vat_percentage_val = $this->input->post('vat_percentage_val');
+		$vat_persons = $this->input->post('vat_persons');
+		$vat_price = $this->input->post('vat_price');
+		$service_tax = $this->input->post('service_tax');
+		$service_percentage = $this->input->post('service_percentage');
+		$service_percentage_val = $this->input->post('service_percentage_val');
+		$service_persons = $this->input->post('service_persons');
+		$service_price = $this->input->post('service_price');
+		$group = $this->input->post('group');
+		$this->Supplier_Model->add_setting_val($sup_prop_id, $check_in_time_from, $check_in_time_to,$check_out_time_from, $check_out_time_to, $guest_in_time, $guest_out_time, $key_col, $key_descrip, $state_tax, $state_percentage, $state_percentage_val, $state_persons, $state_price, $state_percentage, $city_tax, $city_percentage, $city_percentage_val, $city_persons, $city_price, $room_tax, $room_percentage, $room_percentage_val, $room_persons, $room_price, $vat_tax, $vat_percentage, $vat_percentage_val,$vat_persons,$vat_price, $service_tax, $service_percentage, $service_percentage_val, $service_persons, $service_price, $group);
+		
+		$data['result']=$this->Supplier_Model->get_settings_val($sup_prop_id);
+		redirect('index/general_settings','refresh');
+		}
+	}
+	public function edit_general_set($id)
+	{
+		$this->form_validation->set_rules('check_in_time_from', 'check_in_time_from', 'required');
+		$this->form_validation->set_rules('check_in_time_to', 'check_in_time_to', 'required');
+		$this->form_validation->set_rules('check_out_time_from', 'check_out_time_from', 'required');
+		$this->form_validation->set_rules('check_out_time_to', 'check_out_time_to', 'required');
+		$this->form_validation->set_rules('state_percentage', 'state_percentage', 'required');
+		$this->form_validation->set_rules('city_percentage', 'city_percentage', 'required');
+		$this->form_validation->set_rules('room_percentage', 'room_percentage', 'required');
+		$this->form_validation->set_rules('vat_percentage', 'vat_percentage', 'required');
+		$this->form_validation->set_rules('service_percentage', 'service_percentage', 'required');
+		if($this->form_validation->run()==FALSE)
+		{
+			$data['exist'] = "";
+			$data['check_in_time_from'] = $this->input->post('check_in_time_from');
+			$data['check_in_time_to'] = $this->input->post('check_in_time_to');
+			$data['check_out_time_from'] = $this->input->post('check_out_time_from');
+			$data['check_out_time_to'] = $this->input->post('check_out_time_to');
+			$data['state_percentage'] = $this->input->post('state_percentage');
+			$data['city_percentage'] = $this->input->post('city_percentage');
+			$data['room_percentage'] = $this->input->post('room_percentage');
+			$data['vat_percentage'] = $this->input->post('vat_percentage');
+			$data['service_percentage'] = $this->input->post('service_percentage');
+			$this->load->view('profile/general_settings',$data);
+		}
+		else
+		{
+		$sup_prop_id = '1';
+		$check_in_time_from = $this->input->post('check_in_time_from');
+		$check_in_time_to = $this->input->post('check_in_time_to');
+		$check_out_time_from = $this->input->post('check_out_time_from');
+		$check_out_time_to = $this->input->post('check_out_time_to');
+		$guest_in_time = $this->input->post('guest_in_time');
+		$guest_out_time = $this->input->post('guest_out_time');
+		$key_col = $this->input->post('key_col');
+		$key_descrip = $this->input->post('key_descrip');
+		$state_tax = $this->input->post('state_tax');
+		$state_percentage = $this->input->post('state_percentage');
+		$state_percentage_val = $this->input->post('state_percentage_val');
+		$state_persons = $this->input->post('state_persons');
+		$state_price = $this->input->post('state_price');
+		$state_percentage = $this->input->post('state_percentage');
+		$city_tax = $this->input->post('city_tax');
+		$city_percentage = $this->input->post('city_percentage');
+		$city_percentage_val = $this->input->post('city_percentage_val');
+		$city_persons = $this->input->post('city_persons');
+		$city_price = $this->input->post('city_price');
+		$room_tax = $this->input->post('room_tax');
+		$room_percentage = $this->input->post('room_percentage');
+		$room_percentage_val = $this->input->post('room_percentage_val');
+		$room_persons = $this->input->post('room_persons');
+		$room_price = $this->input->post('room_price');
+		$vat_tax = $this->input->post('vat_tax');
+		$vat_percentage = $this->input->post('vat_percentage');
+		$vat_percentage_val = $this->input->post('vat_percentage_val');
+		$vat_persons = $this->input->post('vat_persons');
+		$vat_price = $this->input->post('vat_price');
+		$service_tax = $this->input->post('service_tax');
+		$service_percentage = $this->input->post('service_percentage');
+		$service_percentage_val = $this->input->post('service_percentage_val');
+		$service_persons = $this->input->post('service_persons');
+		$service_price = $this->input->post('service_price');
+		$group = $this->input->post('group');
+		$this->Supplier_Model->edit_setting_val($id, $check_in_time_from, $check_in_time_to,$check_out_time_from, $check_out_time_to, $guest_in_time, $guest_out_time, $key_col, $key_descrip, $state_tax, $state_percentage, $state_percentage_val, $state_persons, $state_price, $state_percentage, $city_tax, $city_percentage, $city_percentage_val, $city_persons, $city_price, $room_tax, $room_percentage, $room_percentage_val, $room_persons, $room_price, $vat_tax, $vat_percentage, $vat_percentage_val,$vat_persons,$vat_price,  $service_tax, $service_percentage, $service_percentage_val, $service_persons, $service_price, $group);
+		redirect('index/general_settings/'.$id,'refresh');
+		}
+	}
+	
+	//----- Get Supplier's Detail Location -----/
+	function detail_location()
+	{
+		$data['result'] = $this->Supplier_Model->detail_location();
+		$this->load->view('profile/detail_location',$data);
+	}
+	
+	//----- Set Supplier's Detail Location -----/
+	function set_detail_location()
+	{
+		$this->form_validation->set_rules('location', 'Location', 'required');
+		$this->form_validation->set_rules('nearby_airport', 'Near By Airport', 'required');
+		$this->form_validation->set_rules('nearby_transport', 'Near By Transport', 'required');
+		$this->form_validation->set_rules('nearby_placeinterest', 'Near By Placeinterest', 'required');
+		if($this->form_validation->run()==FALSE)
+		{
+			$data['exist'] = "";
+			$data['location'] = $this->input->post('location');
+			$data['nearby_airport'] = $this->input->post('nearby_airport');
+			$data['nearby_transport'] = $this->input->post('nearby_transport');
+			$data['nearby_placeinterest'] = $this->input->post('nearby_placeinterest');
+		   
+			$this->load->view('profile/detail_location',$data);
+		}
+		else
+		{
+			$location = $this->input->post('location');
+			$nearby_airport = $this->input->post('nearby_airport');
+			$nearby_transport = $this->input->post('nearby_transport');
+			$nearby_placeinterest = $this->input->post('nearby_placeinterest');
+			
+			$this->Supplier_Model->set_detail_location($location, $nearby_airport, $nearby_transport, $nearby_placeinterest);
+			redirect('index/detail_location','refresh');
+		}
+	}
+	
+	//----- Edit Supplier's Detail Location -----/
+	function edit_detail_location($id)
+	{
+		$this->form_validation->set_rules('location', 'Location', 'required');
+		$this->form_validation->set_rules('nearby_airport', 'Near By Airport', 'required');
+		$this->form_validation->set_rules('nearby_transport', 'Near By Transport', 'required');
+		$this->form_validation->set_rules('nearby_placeinterest', 'Near By Placeinterest', 'required');
+		if($this->form_validation->run()==FALSE)
+		{
+			$data['exist'] = "";
+			$data['location'] = $this->input->post('location');
+			$data['nearby_airport'] = $this->input->post('nearby_airport');
+			$data['nearby_transport'] = $this->input->post('nearby_transport');
+			$data['nearby_placeinterest'] = $this->input->post('nearby_placeinterest');
+		   
+			$this->load->view('profile/detail_location',$data);
+		}
+		else
+		{
+			$location = $this->input->post('location');
+			$nearby_airport = $this->input->post('nearby_airport');
+			$nearby_transport = $this->input->post('nearby_transport');
+			$nearby_placeinterest = $this->input->post('nearby_placeinterest');
+			
+			$this->Supplier_Model->edit_detail_location($id, $location, $nearby_airport, $nearby_transport, $nearby_placeinterest);
+			redirect('index/detail_location/'.$id,'refresh');
+		}
+	}
+	
+	//----- Get Supplier's Accomodation Pictures -----/
+	function accomodation_pictures()
+	{
+		//$data['result'] = $this->Supplier_Model->accomodation_pictures();
+		$this->load->view('profile/accomodation_pictures');
+		//$this->load->view('profile/accomodation_pictures',$data);
+	}
+	
+	//----- Upload Supplier's Accomodation Pictures -----/
+	function uploadify()
+	{
+		$targetFolder = WEB_DIR.'supplier_hotels_images'; //exit;
+		if (!empty($_FILES)) {
+			$fileName	=	$_FILES['Filedata']['name'];
+			$tempFile 	= 	$_FILES['Filedata']['tmp_name'];
+			$targetPath = 	$_SERVER['DOCUMENT_ROOT'] . '/wdm/stayaway_v1/supplier_hotels_images';
+			$targetFile = 	rtrim($targetPath,'/') . '/' . $_FILES['Filedata']['name']; //exit;
+			
+			$fileTypes = array('jpg','jpeg','gif','png'); // File extensions
+			$fileParts = pathinfo($_FILES['Filedata']['name']);
+			
+			if (in_array($fileParts['extension'],$fileTypes)) {
+				$this->Supplier_Model->uploadPhotos($fileName, $tempFile, $targetPath);
+			} 
+		}
+	}
+	
+	
+	//----- Get Supplier's Accomodation Pictures -----/
+	function getImages()
+	{
+		$data['result'] = $this->Supplier_Model->getImages();
+	}
+	
+	
+	//----- Delete Supplier's Accomodation Pictures -----/
+	function delete_picture()
+	{
+		$data['result'] = $this->Supplier_Model->delete_picture();
+	}
+	
+	//----- Set Supplier's Accomodation Pictures -----/
+	function set_acco_pictures()
+	{
+		$data['result'] = $this->Supplier_Model->set_acco_pictures();
+		redirect('index/accomodation_pictures','refresh');
+	}
+	
+	
+	
+}
+
+/* End of file welcome.php */
+/* Location: ./application/controllers/welcome.php */

@@ -1,0 +1,1460 @@
+<?php 
+class Supplier_Model extends CI_Model {
+
+    function __construct()
+    {
+        // Call the Model constructor
+        parent::__construct();
+    }
+		
+   function country_list()
+	{
+
+		$que="select * from  country";
+		
+	
+		$query= $this->db->query($que);
+			if($query->num_rows() ==''){
+				return '';
+			}else{
+				return $query->result();
+			}
+
+	}
+	
+	function get_currecy_detail()
+{
+	$que="select country from  currency_converter";
+		
+		$query= $this->db->query($que);
+			if($query->num_rows() ==''){
+				return '';
+			}else{
+				return $query->result();
+			}
+}
+	/*public function contact_inform_view($supplier_id)
+	{
+		$sql="SELECT a.city_name, a.property_name, a.sup_id, a.sup_contact_inform_id, b.name  
+			FROM sup_contact_inform as a JOIN country as b on a.country_id = b.country_id 
+			WHERE sup_id='$supplier_id'";
+		$rs=$this->db->query($sql);
+		if($rs->num_rows() ==''){
+			return '';
+		}
+		else
+		{
+			return $rs->result();
+		}
+		
+	}*/
+	function check_agent_login($email,$password)
+	{		
+		
+		//$select = "select agent_id, email_id, name, agent_type, branch_id from agent where email_id ='".$email."' AND password  ='".sha1($password)."' AND active = 1";
+		
+		$select = "select * from supplier where email_id = ? AND password  = ? AND active = 1";
+	 
+		 $query=$this->db->query($select, array($email, $password));
+		 
+		// echo $this->db->last_query(); exit;
+		if ($query->num_rows() > 0)
+		{
+		   foreach ($query->result() as $row)
+		   {
+				
+			  $sessionUserInfo = array(
+                   'supplier_id'  => $row->agent_id,
+				   'email_id'  => $row->email_id,
+				   'name'  => $row->name,
+				  'markup' => $row->markup,
+				  'address' => $row->address,
+				  'city' => $row->city,
+				  'postal_code' => $row->postal_code,
+				  'mobile' => $row->mobile
+               );
+			   
+			 
+					$sessionUserInfo['supplier_logged_in'] = TRUE;
+			   
+			   
+			   //print_r($sessionUserInfo); exit;
+
+				$this->session->set_userdata($sessionUserInfo);
+				
+				
+			  
+		   }
+		   return true;
+		   
+		} 
+		else
+		{
+			return false;
+		}
+	}
+
+    function add_supplier($name, $company_name, $address, $country, $city, $postal_code, $office_phone, $mobile_no,$currency, $email_id, $password)
+	{
+	
+		$data = array(
+			'email_id' => $email_id,
+			'password' => $password,
+			'name' => $name,
+			'company_name' => $company_name,
+			'address' => $address,
+			'country' => $country,
+			'city' => $city,
+			'postal_code' => $postal_code,
+			'office_phone' => $office_phone,
+			'mobile' => $mobile_no,
+			'currency_type' => $currency,
+			'active' => 0,
+			'last_visit' => ''
+			
+			);
+			
+			$this->db->set('register_date', 'NOW()', FALSE); 
+		
+		$this->db->insert('supplier', $data);
+		$id = $this->db->insert_id();
+	
+			return true;
+		
+
+	}
+	
+	
+	//----- Get Supplier's Category List -----/
+	function inventory_category_list()
+	{		
+		$select = "SELECT * FROM sup_inv_cate_type";
+		$query=$this->db->query($select);
+		if ($query->num_rows() > 0)
+		{
+			return $query->result();
+		} else {
+			return false;	
+		}
+	}
+	
+	//----- Update Supplier's Category Type -----/
+	function update_category_type($id,$status)
+	{
+		if($status == 2)
+		{
+			$where2 = "sup_inv_cate_type_id = $id";
+			if ($this->db->delete('sup_inv_cate_type', $where2)) {
+				return true;
+			} else {
+				return false;
+			}
+		}
+		else
+		{
+			$where = "sup_inv_cate_type_id = $id";
+			$data = array(
+				'status' => $status
+			);
+			if ($this->db->update('sup_inv_cate_type', $data, $where)) {
+				return true;
+			} else {
+				return false;
+			}
+		}
+	}
+	
+	
+	//----- Get Inventory Category Space Facilities -----/
+	function inventory_category_space_facilities()
+	{		
+		$select = "SELECT * FROM inv_cate_space_fac where space_fac_status = 1 and space_fac_added_by = 1";
+		$query=$this->db->query($select);
+		if ($query->num_rows() > 0)
+		{
+			return $query->result();
+		} else {
+			return false;	
+		}
+	}
+	
+	//----- Add New Supplier's Category Type -----/
+	function add_cate_type($room_type, $rack_rate, $max_person, $bath_rooms, $room_zize, $bed_rooms, $terrace, $floors, $charges)
+	{
+		//print_r($_REQUEST['space_faci']); exit;
+		$data = array(
+			'sup_id' => 1,
+			'property_id' => 1,
+			'room_type' => $room_type,
+			'rack_rate' => $rack_rate,
+			'max_person' => $max_person,
+			'bath_rooms' => $bath_rooms,
+			'room_size' => $room_zize,
+			'bed_rooms' => $bed_rooms,
+			'building_terrace' => $terrace,
+			'floors' => $floors,
+			'additional_charges' => $charges,
+			'status' => 1
+			);
+			
+		$this->db->set('date', 'NOW()', FALSE); 
+		
+		$this->db->insert('sup_inv_cate_type', $data);
+		$id = $this->db->insert_id();
+		if(!empty($id)) {
+			$checkbox1 = $_REQUEST['space_faci'];
+			for($i=0; $i<sizeof($checkbox1); $i++)
+			{
+				$qry = "INSERT INTO `sup_inv_cate_space_fac` ( 
+						`sup_inv_cate_id` ,
+						`sup_space_fac_id`
+						)
+						VALUES ( '$id',  '".$checkbox1[$i]."')";
+				$query=$this->db->query($qry);
+			}
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
+	
+	//----- Get Supplier's Category Details -----/
+	function view_cate_details($id)
+	{		
+		$select = "SELECT * FROM sup_inv_cate_type where sup_inv_cate_type_id = '$id'";
+		$query=$this->db->query($select);
+		if ($query->num_rows() > 0)
+		{
+			return $query->row();
+		} else {
+			return false;	
+		}
+	}
+	
+	//----- Get Supplier's Category Details -----/
+	function supplier_space_facilities($id, $space_faci)
+	{		
+	 	$select = "SELECT * FROM sup_inv_cate_space_fac where sup_inv_cate_id = ".$id." and sup_space_fac_id = ".$space_faci."";
+		$query=$this->db->query($select);
+		if ($query->num_rows() > 0)
+		{
+			return $query->result();
+		} else {
+			return false;	
+		}
+	}
+	
+	//----- Edit Supplier's Category Type -----/
+	function edit_cate_type($id, $room_type, $rack_rate, $max_person, $bath_rooms, $room_zize, $bed_rooms, $terrace, $floors, $charges)
+	{
+		$this->db->query("UPDATE sup_inv_cate_type SET room_type='$room_type', rack_rate='$rack_rate', max_person='$max_person', bath_rooms='$bath_rooms', room_size='$room_zize', bed_rooms='$bed_rooms', building_terrace='$terrace', floors='$floors', additional_charges='$charges', status='1' WHERE sup_inv_cate_type_id='$id'");
+		$delqry = "DELETE FROM sup_inv_cate_space_fac WHERE sup_inv_cate_id = ".$id.""; //exit;
+		$query=$this->db->query($delqry);
+
+		if(!empty($id)) {
+			$checkbox1 = $_REQUEST['space_faci'];
+			for($i=0; $i<sizeof($checkbox1); $i++)
+			{
+				$qry = "INSERT INTO `sup_inv_cate_space_fac` ( 
+						`sup_inv_cate_id` ,
+						`sup_space_fac_id`
+						)
+						VALUES ( '$id',  '".$checkbox1[$i]."')";
+				$query=$this->db->query($qry);
+			}
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
+	
+	//----- Get Supplier's Rate Tactics List -----/
+	function rate_tactics_list()
+	{		
+		$select = "SELECT * FROM sup_rate_tactics";
+		$query=$this->db->query($select);
+		if ($query->num_rows() > 0)
+		{
+			return $query->result();
+		} else {
+			return false;	
+		}
+	}
+	
+	//----- Update Supplier's Rate Tactics Status -----/
+	function update_rate_tactics($id,$status)
+	{
+		if($status == 2)
+		{
+			$where2 = "sup_rate_tactics_id = $id";
+			if ($this->db->delete('sup_rate_tactics', $where2)) {
+				return true;
+			} else {
+				return false;
+			}
+		}
+		else
+		{
+			$where = "sup_rate_tactics_id = $id";
+			$data = array(
+				'status' => $status
+			);
+			if ($this->db->update('sup_rate_tactics', $data, $where)) {
+				return true;
+			} else {
+				return false;
+			}
+		}
+	}
+	
+	//----- Update Supplier's Inventory Category Type -----/
+	function inventory_cate_type()
+	{
+		$que="select * from sup_inv_cate_type";
+		$query= $this->db->query($que);
+		if($query->num_rows() ==''){
+			return '';
+		}else{
+			return $query->result();
+		}
+	}
+	
+	//----- Add New Supplier's Rate Tacticse -----/
+	function add_rate_plan($rate_plan_name, $default_avail, $room_plan, $capacity, $max_length_stay, $min_lenght_stay, $plan_rate, $type_of_booking, $breakfast, $breakfast_type, $breakfast_hrs_from, $breakfast_hrs_to, $cancel_policy, $cancel_policy_hrs, $cancel_policy_time, $cancel_charge, $cancel_charge_percent, $cancel_charge_amount, $cancel_nights, $booking_policy, $cancel_comment, $sd, $ed, $remarks)
+	{
+		$data = array(
+			'sup_id' => 1,
+			'property_id' => 1,
+			'rate_plan_name' => $rate_plan_name,
+			'default_avail' => $default_avail,
+			'rate_of_room_plan' => $room_plan,
+			'capacity' => $capacity,
+			'max_length_stay' => $max_length_stay,
+			'min_lenght_stay' => $min_lenght_stay,
+			'plan_rate' => $plan_rate,
+			'type_of_booking' => $type_of_booking,
+			'breakfast' => $breakfast,
+			'breakfast_type' => $breakfast_type,
+			'breakfast_hrs_from' => $breakfast_hrs_from,
+			'breakfast_hrs_to' => $breakfast_hrs_to,
+			'cancelpolicy' => $cancel_policy,
+			'cancelpolicy_hrs' => $cancel_policy_hrs,
+			'cancelpolicy_arr_date_before' => $cancel_policy_time,
+			'cancelpolicy_charge' => $cancel_charge,
+			'cancelpolicy_charge_percent' => $cancel_charge_percent,
+			'cancelpolicy_charge_value' => $cancel_charge_amount,
+			'cancelpolicy_charge_nights' => $cancel_nights,
+			'booking_policy' => $booking_policy,
+			'cancel_comment' => $cancel_comment,
+			'date_range_from' => $sd,
+			'date_range_to' => $ed,
+			'remarks' => $remarks,
+			'status' => 1
+			);
+			
+		$this->db->set('created_date', 'NOW()', FALSE); 
+		
+		$this->db->insert('sup_rate_tactics', $data);
+		$id = $this->db->insert_id();
+		if(!empty($id)) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
+	
+	//----- Get Supplier's Rate Tacticse Details -----/
+	function view_rate_tactics_details($id)
+	{		
+		$select = "SELECT * FROM sup_rate_tactics where sup_rate_tactics_id = '$id'";
+		$query=$this->db->query($select);
+		if ($query->num_rows() > 0)
+		{
+			return $query->row();
+		} else {
+			return false;	
+		}
+	}
+	
+	//----- Edit Supplier's Rate Tacticse Details -----/
+	function edit_rate_plan($id, $rate_plan_name, $default_avail, $room_plan, $capacity, $max_length_stay, $min_lenght_stay, $plan_rate, $type_of_booking, $breakfast, $breakfast_type, $breakfast_hrs_from, $breakfast_hrs_to, $cancel_policy, $cancel_policy_hrs, $cancel_policy_time, $cancel_charge, $cancel_charge_percent, $cancel_charge_amount, $cancel_nights, $booking_policy, $cancel_comment, $sd, $ed, $remarks)
+	{
+		$this->db->query("UPDATE sup_rate_tactics SET rate_plan_name='$rate_plan_name', default_avail='$default_avail', rate_of_room_plan='$room_plan', capacity='$capacity', max_length_stay='$max_length_stay', min_lenght_stay='$min_lenght_stay', plan_rate='$plan_rate', type_of_booking='$type_of_booking', breakfast='$breakfast', breakfast_type='$breakfast_type', breakfast_hrs_from='$breakfast_hrs_from', breakfast_hrs_to='$breakfast_hrs_to', cancelpolicy='$cancel_policy', cancelpolicy_hrs='$cancel_policy_hrs', cancelpolicy_arr_date_before='$cancel_policy_time', cancelpolicy_charge='$cancel_charge', cancelpolicy_charge_percent='$cancel_charge_percent', cancelpolicy_charge_value='$cancel_charge_amount', cancelpolicy_charge_nights='$cancel_nights', booking_policy='$booking_policy', cancel_comment='$cancel_comment', date_range_from='$sd', date_range_to='$ed', remarks='$remarks' WHERE sup_rate_tactics_id='$id'");
+		if(!empty($id)) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	//----- Set Supplier's House Rules -----/
+	function set_house_rules($supplier_id, $arrival_time, $departure_time, $check_in_time_from, $check_in_extra_cost_from, $check_in_time_to, $check_in_extra_cost_to, $check_out_time_from, $check_out_extra_cost_from, $check_out_time_to, $check_out_extra_cost_to, $manimum_stay, $maximum_stay, $rent_amt_percent, $rent_amt_days, $payment_mode, $cleaning, $supplies, $policy)
+	{
+		$data = array(
+			'sup_id' => $supplier_id,
+			'property_id' => 1,
+			'arrivaltime_from' => $arrival_time,
+			'departtime_before' => $departure_time,
+			'checkin_time1' => $check_in_time_from,
+			'checkin_time2' => $check_in_time_to,
+			'checkout_time1' => $check_out_time_from,
+			'checkout_time2' => $check_out_time_to,
+			'checkin_extracost1' => $check_in_extra_cost_from,
+			'checkin_extracost2' => $check_in_extra_cost_to,
+			'checkout_extracost2' => $check_out_extra_cost_from,
+			'checkout_extracost1' => $check_out_extra_cost_to,
+			'mini_stay' => $manimum_stay,
+			'max_stay' => $maximum_stay,
+			'rent_amount' => $rent_amt_percent,
+			'rent_amount_days' => $rent_amt_days,
+			'payment_mode' => $payment_mode,
+			'pets_allowed' => '',
+			'cleaning' => $cleaning,
+			'supplies' => $supplies,
+			'policy' => $policy
+			);
+
+		$this->db->insert('sup_apart_houserules', $data);
+		$id = $this->db->insert_id();
+		if(!empty($id)) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
+	
+	//----- Edit Supplier's House Rules -----/
+	function edit_house_rules($id, $arrival_time, $departure_time, $check_in_time_from, $check_in_extra_cost_from, $check_in_time_to, $check_in_extra_cost_to, $check_out_time_from, $check_out_extra_cost_from, $check_out_time_to, $check_out_extra_cost_to, $manimum_stay, $maximum_stay, $rent_amt_percent, $rent_amt_days, $payment_mode, $cleaning, $supplies, $policy)
+	{
+
+		$query = $this->db->query("UPDATE sup_apart_houserules SET arrivaltime_from='$arrival_time', departtime_before='$departure_time', checkin_time1='$check_in_time_from', checkin_time2='$check_in_time_to', checkout_time1='$check_out_time_from', checkout_time2='$check_out_time_to', checkin_extracost1='$check_in_extra_cost_from', checkin_extracost2='$check_in_extra_cost_to', checkout_extracost2='$check_out_extra_cost_from', checkout_extracost1='$check_out_extra_cost_to', mini_stay='$manimum_stay', max_stay='$maximum_stay', rent_amount='$rent_amt_percent', rent_amount_days='$rent_amt_days', payment_mode='$payment_mode', cleaning='$cleaning', supplies='$supplies', policy='$policy' WHERE sup_apart_houserules_id='$id'"); //exit;
+		if(!empty($id)) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
+	//----- Get Supplier's House Rules -----/
+	function get_house_rules($id)
+	{		
+		$select = "SELECT * FROM sup_apart_houserules where property_id = '$id'";
+		$query=$this->db->query($select);
+		if ($query->num_rows() > 0)
+		{
+			return $query->row();
+		} else {
+			return false;	
+		}
+	}
+	
+	//----- Set Supplier's Extra Services -----/
+	function set_extra_service($supplier_id)
+	{
+		$service = $_REQUEST['service'];
+		$mode = $_REQUEST['mode'];
+		$cost = $_REQUEST['cost'];
+		for($i=0; $i<sizeof($service); $i++)
+		{
+			$qry = "INSERT INTO `sup_apart_extraservice` ( 
+					`sup_id` ,
+					`sup_apart_list_id` ,
+					`extraservice` ,
+					`mode` ,
+					`cost`
+					)
+					VALUES ( '$supplier_id',  '1',  '".$service[$i]."',  '".$mode[$i]."',  '".$cost[$i]."')";
+			$query=$this->db->query($qry);
+		}
+	}
+	
+	//----- Edit Supplier's Extra Services -----/
+	function edit_extra_service($supplier_id,$id)
+	{
+		$delqry = "DELETE FROM sup_apart_extraservice WHERE sup_apart_list_id = ".$id
+		.""; //exit;
+		$query=$this->db->query($delqry);
+
+		$service = $_REQUEST['service'];
+		$mode = $_REQUEST['mode'];
+		$cost = $_REQUEST['cost'];
+		for($i=0; $i<sizeof($service); $i++)
+		{
+			$qry = "INSERT INTO `sup_apart_extraservice` ( 
+					`sup_id` ,
+					`sup_apart_list_id` ,
+					`extraservice` ,
+					`mode` ,
+					`cost`
+					)
+					VALUES ( '$supplier_id',  '1',  '".$service[$i]."',  '".$mode[$i]."',  '".$cost[$i]."')";
+			$query=$this->db->query($qry);
+		}
+	}
+	
+	//----- Get Supplier's Extra Services -----/
+	function get_extra_service($id)
+	{		
+		$select = "SELECT * FROM sup_apart_extraservice where sup_apart_list_id = '$id'"; 
+		$query=$this->db->query($select);
+		if ($query->num_rows() > 0)
+		{
+			return $query->result();
+		} else {
+			return false;	
+		}
+	}
+	
+	//----- Get Supplier's Room Rate Plan from Cate Table -----/
+	function get_rate_of_room_plan($id)
+	{
+		$select = "SELECT * FROM sup_inv_cate_type where sup_inv_cate_type_id = '$id'"; 
+		$query=$this->db->query($select);
+		if ($query->num_rows() > 0)
+		{
+			return $query->row();
+		} else {
+			return false;	
+		}
+		
+	}
+	
+	
+	//------------- Get Supplier's Maintain By Month Dates -------- //
+	function getDates()
+	{
+		$sds = explode("-",$_REQUEST['sd']);
+		$fromDate = $sds[2].'/'.$sds[1].'/'.$sds[0];
+		
+		$eds = explode("-",$_REQUEST['ed']);
+		$toDate = $eds[1].'/'.$eds[0].'/'.$eds[2];
+		
+		$dateMonthYearArr = array();
+		$fromDateTS = strtotime($fromDate);
+		$toDateTS = strtotime($toDate);
+		
+		for ($currentDateTS = $fromDateTS; $currentDateTS <= $toDateTS; $currentDateTS += (60 * 60 * 24)) {
+		$currentDateStr = date("d-m-Y",$currentDateTS);
+		$dateMonthYearArr[] = $currentDateStr;
+		}
+		$this->output->set_content_type('application/json');
+		$this->output->set_output(json_encode(array('dates'=>$dateMonthYearArr)));
+		
+		$select = "SELECT * FROM sup_rate_tactics where sup_rate_tactics_id = ".$_REQUEST['room_plan']."";
+		$query	= $this->db->query($select); 
+		if($query->result()){
+			$room_plan 	= $query->result();
+			$this->output->set_content_type('application/json');
+			$this->output->set_output(json_encode(array('dates'=>$dateMonthYearArr,'room_plan'=>$room_plan)));
+		}
+		else{
+			return array();
+		}
+	}
+	
+	//----- Get Supplier's Room Rate Plan from Cate Table -----/
+	function getRateTactics()
+	{
+		$select = "SELECT sup_rate_tactics_id, rate_plan_name, rate_of_room_plan
+					FROM sup_rate_tactics 
+					WHERE rate_of_room_plan = '".$_REQUEST['invCateTypeId']."'"; 
+		$query=$this->db->query($select);
+		if($query->result()){
+			$rate_tactics= $query->result();
+			$this->output->set_content_type('application/json');
+			$this->output->set_output(json_encode(array('rate_tactics'=>$rate_tactics)));
+		}
+		else{
+			return array();
+		}
+		
+	}
+	
+	
+	//----- Get Supplier's Add Maintain Month -----/
+	function add_maintain_month($supplier_id)
+	{
+		//print_r($_REQUEST); exit;
+		$dates = $_REQUEST['dates'];
+		$price = $_REQUEST['price'];
+		$avail = $_REQUEST['avail'];
+		$min_stay = $_REQUEST['min_stay'];
+		$max_stay = $_REQUEST['max_stay'];
+		if(isset($_REQUEST['on_req_checked_val'])){
+		$on_req_checked_val = $_REQUEST['on_req_checked_val'];
+		}
+		if(isset($_REQUEST['on_arr_checked_val'])){
+		$on_arr_checked_val = $_REQUEST['on_arr_checked_val'];
+		}
+		if(isset($_REQUEST['on_blk_checked_val'])){
+		$on_blk_checked_val = $_REQUEST['on_blk_checked_val'];
+		}
+		for($i=0; $i<sizeof($dates); $i++)
+		{
+			$day  = explode("-",$dates[$i]);
+			$date = $day[2].'-'.$day[1].'-'.$day[0];
+			
+			/*$dates = date_create($date);
+			$day = date_format($dates, 'D'); 
+			$month = date_format($dates, 'M');*/
+			
+			if(isset($on_req_checked_val[$i])){
+				$on_req_checked_val[$i] = $on_req_checked_val[$i];
+			}else $on_req_checked_val[$i] = '';
+			
+			if(isset($on_arr_checked_val[$i])){
+				$on_arr_checked_val[$i] = $on_arr_checked_val[$i];
+			}else $on_arr_checked_val[$i] = '';
+			
+			if(isset($on_blk_checked_val[$i])){
+				$on_blk_checked_val[$i] = $on_blk_checked_val[$i];
+			}else $on_blk_checked_val[$i] = '';
+			
+			$qry = "INSERT INTO `sup_apart_maintain_month` ( 
+					`sup_id` ,`sup_rate_tactics_id` ,`property_id` ,`date` ,`day` ,`month` ,`year` ,`rate` ,`available` ,`capacity` ,`min_stay` ,`maxi_stay` ,`on_request` ,`block_arrival` ,`block_departure` ,`status`
+					)
+					VALUES ( '$supplier_id', '".$_REQUEST['room_id']."', '1', '".$date."', '".$day[0]."', '".$day[1]."', '".$day[2]."', '".$price[$i]."', '".$avail[$i]."', '".$_REQUEST['capacity']."', '".$min_stay[$i]."', '".$max_stay[$i]."', '".$on_req_checked_val[$i]."', '".$on_arr_checked_val[$i]."', '".$on_blk_checked_val[$i]."', '1')";
+			$query=$this->db->query($qry);
+		}
+	}
+	
+	
+	//----- Get Supplier's Maintain Months -----/
+	function get_maintain_month()
+	{		
+		$select = "select DATE_FORMAT(date, '%b') AS month,
+							DATE_FORMAT(date, '%m') AS months,
+							DATE_FORMAT(date, '%Y') AS year, 
+							count(*) as value 
+					from sup_apart_maintain_month 
+					GROUP BY month ORDER BY date ASC"; 
+		$query=$this->db->query($select);
+		if ($query->num_rows() > 0)
+		{
+			return $query->result();
+		} else {
+			return false;	
+		}
+	}
+	
+	//----- Get Supplier's Maintain Month Dates for Open / Close Dates -----/
+	function get_maintain_month_dates()
+	{		
+		/*$select = "SELECT sup_apart_maintain_month_id, sup_rate_tactics_id, property_id, date, day, status FROM sup_apart_maintain_month 
+					WHERE DATE_FORMAT(date, '%b-%Y') = '".$_REQUEST['maintain_month']."' 
+					ORDER BY date ASC"; 
+		$query=$this->db->query($select);
+		if($query->result()){
+			$dates 	= $query->result();
+			$this->output->set_content_type('application/json');
+			$this->output->set_output(json_encode(array('dates'=>$num)));
+		}
+		else{
+			return array();
+		}*/
+		$dates = explode("-",$_REQUEST['maintain_month']);
+		$num = cal_days_in_month(CAL_GREGORIAN, $dates[0], $dates[1]); 
+		
+		$fromDate = $dates[1].'/'.$dates[0].'/'.'1';
+		$toDate = $dates[1].'/'.$dates[0].'/'.$num;;
+		
+		$dateMonthYearArr = array();
+		$fromDateTS = strtotime($fromDate);
+		$toDateTS = strtotime($toDate);
+		
+		for ($currentDateTS = $fromDateTS; $currentDateTS <= $toDateTS; $currentDateTS += (60 * 60 * 24)) {
+		$currentDateStr = date("d",$currentDateTS);
+		$dateMonthYearArr[] = $currentDateStr;
+		}
+		return count($dateMonthYearArr);
+		/*$select = "SELECT a.sup_inv_cate_type_id, a.room_type, b.sup_rate_tactics_id, b.rate_plan_name, c.month, c.year, c.sup_rate_tactics_id, count(*) AS count
+					FROM sup_inv_cate_type a LEFT JOIN sup_rate_tactics b 
+					ON a.sup_inv_cate_type_id = b.rate_of_room_plan
+					LEFT JOIN sup_apart_maintain_month c
+					ON b.sup_rate_tactics_id = c.sup_rate_tactics_id
+					WHERE c.month = '$dates[0]' AND c.year = '$dates[1]'
+					GROUP BY b.sup_rate_tactics_id ORDER BY room_type ASC"; //exit;
+		$select = "SELECT sup_inv_cate_type_id, room_type
+					FROM sup_inv_cate_type 
+					ORDER BY room_type ASC"; 
+		$query=$this->db->query($select);
+		if($query->result()){
+			$cate_types 	= $query->result();
+			$this->output->set_content_type('application/json');
+			$this->output->set_output(json_encode(array('dates'=>$dateMonthYearArr,'cate_types'=>$cate_types)));
+		}
+		else{
+			return array();
+		}*/
+	}
+	
+	
+	//----- Get Supplier's Maintain Month Dates for Open / Close Dates -----/
+	function get_rate_plan_details($dates)
+	{		
+		$dates = explode("-",$dates);
+		$select = "SELECT a.sup_inv_cate_type_id, a.room_type, b.sup_rate_tactics_id, b.rate_plan_name, c.month, c.year, c.sup_rate_tactics_id, count(*) AS count
+					FROM sup_inv_cate_type a LEFT JOIN sup_rate_tactics b 
+					ON a.sup_inv_cate_type_id = b.rate_of_room_plan
+					LEFT JOIN sup_apart_maintain_month c
+					ON b.sup_rate_tactics_id = c.sup_rate_tactics_id
+					WHERE c.month = '$dates[0]' AND c.year = '$dates[1]'
+					GROUP BY b.sup_rate_tactics_id ORDER BY room_type ASC"; //exit;
+		$query=$this->db->query($select);
+		if ($query->num_rows() > 0)
+		{
+			return $query->result();
+		} else {
+			return false;	
+		}
+	}
+	
+	
+	public function fetch_country()
+	{
+		$sql="SELECT * FROM country";
+		$rs=$this->db->query($sql);
+		if($rs->num_rows() ==''){
+			return '';
+		}
+		else
+		{
+			return $rs->result();
+		}
+		
+	}
+	public function fetch_language()
+	{
+		$sql="SELECT * FROM language";
+		$rs=$this->db->query($sql);
+		if($rs->num_rows() ==''){
+			return '';
+		}
+		else
+		{
+			return $rs->result();
+		}
+		
+	}
+	// Adding General and contact information to the sup_contact_inform  table
+	public function add_contact_inf($supplier_id, $country_val, $city, $pro_name, $lan_val, $main_first_name, $main_last_name, $main_email, $res_first_name, $res_last_name, $res_phone, $res_fax, $res_email, $mark_first_name, $mark_last_name, $mark_phone, $mark_fax, $mark_email, $acc_first_name, $acc_last_name, $acc_phone,$acc_fax, $acc_email,$property_id)
+	{
+		$sql="INSERT INTO sup_contact_inform (sup_id, country_id, city_name, property_name, language_id, main_first_name, main_last_name, main_email, res_first_name, res_last_name, res_phone, res_fax, res_email, mar_first_name, mar_last_name, mar_phone, mar_fax, mar_email, acc_first_name, acc_last_name, acc_phone, acc_fax, acc_email,sup_property_id)
+				VALUES('$supplier_id', '$country_val', '$city', '$pro_name', '$lan_val', '$main_first_name', '$main_last_name', '$main_email', '$res_first_name', '$res_last_name', '$res_phone', '$res_fax', '$res_email', '$mark_first_name', '$mark_last_name', '$mark_phone', '$mark_fax', '$mark_email', '$acc_first_name', '$acc_last_name', '$acc_phone', '$acc_fax', '$acc_email','$property_id')";
+		
+		$this->db->set('date', 'NOW()', FALSE); 
+		$rs=$this->db->query($sql);
+		if($rs)
+		{
+			$flg=true;
+		}
+		else
+		{
+			$flg=false;
+		}
+		return $flg;
+	}
+	
+	//Listing the suppliers general information
+	public function contact_inform_view($supplier_id)
+	{
+		$sql="SELECT a.city_name, a.property_name, a.sup_id, a.sup_contact_inform_id, b.name  
+			FROM sup_contact_inform as a JOIN country as b on a.country_id = b.country_id 
+			WHERE sup_id='$supplier_id'";
+		$rs=$this->db->query($sql);
+		if($rs->num_rows() ==''){
+			return '';
+		}
+		else
+		{
+			return $rs->result();
+		}
+		
+	}
+	
+	
+	public function contact_inform_edit($supplier_id,$property_id)
+	{
+		 $sql="SELECT * FROM sup_contact_inform JOIN country ON sup_contact_inform.country_id =country.country_id 
+			  JOIN language ON sup_contact_inform.language_id = language.language_id 
+			  WHERE sup_id='$supplier_id' AND sup_property_id='$property_id'";
+		//echo $sql;exit;
+		$rs=$this->db->query($sql);
+		return $rs->row();
+		
+	}
+	public function update_contact_info($country_val, $city, $pro_name, $lan_val,$main_first_name, $main_last_name, $main_email, $res_first_name, $res_last_name, $res_phone, $res_fax, $res_email, $mark_first_name, $mark_last_name, $mark_phone, $mark_fax, $mark_email, $acc_first_name, $acc_last_name, $acc_phone,$acc_fax,$acc_email,$supplier_id,$sup_inf_id)
+		{
+			
+			$sql="UPDATE sup_contact_inform SET country_id='$country_val', city_name = '$city', property_name = '$pro_name', language_id ='$lan_val', main_first_name='$main_first_name', main_last_name='$main_last_name',main_email='$main_email', res_first_name='$res_first_name', res_last_name='$res_last_name', res_phone='$res_phone', res_email='$res_email', mar_first_name='$mark_first_name',mar_last_name='$mark_last_name', mar_phone='$mark_phone', mar_fax='$mark_fax',mar_email='$mark_email', acc_first_name='$acc_first_name', acc_last_name='$acc_last_name', acc_phone='$acc_phone', acc_fax='$acc_fax', acc_email='$acc_email' WHERE sup_id='$supplier_id' AND sup_contact_inform_id='$sup_inf_id'";
+				//echo $sql;exit;
+			$rs=$this->db->query($sql);
+			if($rs)
+			{
+				$flg=true;
+			}
+			else
+			{
+				$flg=false;
+			}
+			return $flg;
+		}
+	
+	public function fetch_class_type()
+	{
+		$sql="SELECT * FROM sup_class_type";
+		$rs=$this->db->query($sql);
+		if($rs->num_rows() ==''){
+			return '';
+		}
+		else
+		{
+			return $rs->result();
+		}
+	}
+	public function fetch_time_zone()
+	{
+		$sql="SELECT * FROM sup_apart_timezone_list";
+		$rs=$this->db->query($sql);
+		
+		if($rs->num_rows() ==''){
+			return '';
+		}
+		else
+		{
+			return $rs->result();
+		}
+	}
+	public function fetch_currency_val()
+	{
+		$sql="SELECT country,cur_id FROM currency_converter";
+		$rs=$this->db->query($sql);
+		
+		if($rs->num_rows() ==''){
+			return '';
+		}
+		else
+		{
+			return $rs->result();
+		}
+	}
+	
+	public function add_property_info($supplier_id,$pro_class_type, $group_ass, $addre, $desc, $time_zone, $star_val, $currency, $web, $booking_type, $book_email, $hide_contact_id)
+	{
+		$sql="INSERT INTO sup_property(sup_id, class_type_id, group_val, address, descrip, timezone_id, star, currency_id, website, book_type, email, sup_contact_inform_id) 
+		VALUES('$supplier_id', '$pro_class_type', '$group_ass', '$addre', '$desc', '$time_zone', '$star_val', '$currency', '$web', '$booking_type', '$book_email', '$hide_contact_id')";
+		$rs=$this->db->query($sql);
+	}
+	
+	public function contact_prop_edit($property_id)
+	{
+		/*$sql="SELECT * FROM sup_property AS a JOIN sup_class_type AS b ON a.class_type_id = b.sup_class_id 
+		JOIN sup_apart_timezone_list AS c ON a.timezone_id = c.sup_apart_timezone_list_id
+		JOIN currency_converter AS d ON a.currency_id = d.cur_id WHERE a.sup_prop_id = '$property_id'";*/
+		$sql="SELECT * FROM sup_property WHERE sup_prop_id = '$property_id'";
+		//echo $sql;exit;
+		
+		$rs=$this->db->query($sql);
+		if($rs->num_rows()==0){
+			$sql_ins="INSERT INTO sup_property(sup_prop_id) values('$property_id')";
+			$rs_ins=$this->db->query($sql_ins);
+			$sql="SELECT * FROM sup_property WHERE sup_prop_id = '$property_id'";
+		//echo $sql;exit;
+		
+		$rs=$this->db->query($sql);
+		return $rs->row();
+		
+		}
+		else
+		{
+			return $rs->row();
+		}
+	}
+	
+	public function update_property_info($supplier_id, $pro_class_type, $group_ass, $addre, $desc, $time_zone, $star_val, $currency, $web, $booking_type, $book_email, $property_id)
+	{
+		$sql="UPDATE sup_property SET class_type_id='$pro_class_type', group_val='$group_ass', address='$addre', descrip='$desc', timezone_id='$time_zone', star='$star_val', currency_id='$currency', website='$web', book_type='$booking_type', email='$book_email' WHERE sup_prop_id ='$property_id'";
+		//echo $sql;exit;
+		$rs=$this->db->query($sql);
+	}
+	
+	public function fetch_facility()
+	{
+		$sql="SELECT * FROM  sup_facility";
+		$rs=$this->db->query($sql);
+		
+		if($rs->num_rows() ==''){
+			return '';
+		}
+		else
+		{
+			return $rs->result();
+		}
+		
+	}
+	
+	public function selected_facility($property_id)
+	{
+		$sql=" SELECT  facility  FROM sup_acc_facility WHERE sup_prop_id='$property_id'";
+		$query=$this->db->query($sql);
+		$arr=array();
+		while($row=$query->_fetch_assoc())
+		{	extract($row);
+			$arr[]=$facility;		
+		}
+		return $arr;
+	}
+	public function checkContact($contact_id)
+	{
+		$sql="SELECT * FROM sup_property WHERE sup_contact_inform_id = '$contact_id'";
+		//echo $sql;exit;
+		$rs=$this->db->query($sql);
+		$num_of_rec=$rs->num_rows();
+		return  $num_of_rec;
+	}
+	
+	public function add_hotel_facility($value)
+	{
+		$sql="INSERT INTO  sup_facility(facility_name) VALUES('$value')";
+		$rs=$this->db->query($sql);
+		
+	}
+	
+	public function fetch_room_facility()
+	{
+		$sql="SELECT * FROM  inv_cate_space_fac";
+		$rs=$this->db->query($sql);
+		
+		if($rs->num_rows() ==''){
+			return '';
+		}
+		else
+		{
+			return $rs->result();
+		}
+		
+	}
+	
+	public function add_room_facility($value)
+	{
+		$sql="INSERT INTO  inv_cate_space_fac(space_fac_name) VALUES('$value')";
+		$rs=$this->db->query($sql);
+		
+	}
+	
+	public function add_acc_facility($fac_val, $array_room_fac, $sup_prop_id)
+	{
+		//echo "welcome";
+		$sql_del="DELETE FROM sup_acc_facility WHERE sup_prop_id='$sup_prop_id'";
+		$rs_del=$this->db->query($sql_del);
+		$count_hotel=sizeof($fac_val);
+		if($count_hotel>0)
+		{
+			for($i=0;$i<$count_hotel;$i++)
+			{
+				$sql="INSERT INTO sup_acc_facility(hotel_or_room, facility, sup_prop_id) VALUES('1', '$fac_val[$i]', '$sup_prop_id')";
+				$rs=$this->db->query($sql);
+			}
+		}
+		$count_room=sizeof($array_room_fac);
+		if($count_room>0)
+		{
+			for($i=0;$i<$count_room;$i++)
+			{
+				$sql="INSERT INTO sup_acc_facility(hotel_or_room, facility, sup_prop_id) VALUES('0', '$array_room_fac[$i]', '$sup_prop_id')";
+				$rs=$this->db->query($sql);
+			}
+		}
+		
+	}
+	
+	public function fetch_fac($sup_prop_id)
+	{
+		$sql="SELECT * FROM sup_acc_facility WHERE sup_prop_id='$sup_prop_id'";
+		$rs=$this->db->query($sql);
+		if($rs->num_rows() ==''){
+			return '';
+		}
+		else
+		{
+			return $rs->result();
+		}
+	}
+	
+	public function checkContactfac($sup_prop_id)
+	{
+		$sql="SELECT * FROM sup_acc_facility WHERE sup_prop_id='$sup_prop_id'";
+		$rs=$this->db->query($sql);
+		$num_of_rec=$rs->num_rows();
+		return  $num_of_rec;
+	}
+	
+	public function checkGeneralset()
+	{
+		$sql="SELECT * FROM sup_apart_generalsettings";
+		$rs=$this->db->query($sql);
+		$num_of_rec=$rs->num_rows();
+		return  $num_of_rec;
+	}
+	
+	public function get_settings_val($supplier_id)
+	{
+		$select = "SELECT * FROM sup_apart_generalsettings JOIN sup_apart_taxes ON sup_apart_generalsettings.sup_apart_generalsettings_id = sup_apart_taxes.sup_apart_list_id WHERE sup_id='$supplier_id'";
+		$query=$this->db->query($select);
+		if ($query->num_rows() > 0)
+		{
+			return $query->row();
+		} else {
+			return false;	
+		}
+	}
+	
+	public function add_setting_val($sup_prop_id, $check_in_time_from, $check_in_time_to,$check_out_time_from, $check_out_time_to, $guest_in_time, $guest_out_time, $key_col, $key_descrip, $state_tax, $state_percentage, $state_percentage_val, $state_persons, $state_price, $state_percentage, $city_tax, $city_percentage, $city_percentage_val, $city_persons, $city_price, $room_tax, $room_percentage, $room_percentage_val, $room_persons, $room_price, $vat_tax, $vat_percentage, $vat_percentage_val,$vat_persons,$vat_price, $service_tax, $service_percentage, $service_percentage_val, $service_persons, $service_price, $group)
+	{
+		$sql="INSERT INTO sup_apart_generalsettings(sup_id,checkinfrom, checkoutfrom, checkinto, checkoutto, checkin_after, checkout_after, key_collection, key_collection_desc, grp_reservation)
+				VALUES('$sup_prop_id', '$check_in_time_from', '$check_out_time_from', '$check_in_time_to', '$check_out_time_to', '$guest_in_time', '$guest_out_time', '$key_col', '$key_descrip', '$group')";
+		//echo "welcome".$sql;exit;
+		$rs=$this->db->query($sql);
+		$last_ins_id = $this->db->insert_id();
+		if($last_ins_id > 0)
+		{
+			
+			if($state_percentage == "1")
+			{
+				$state_persons = "0";
+				$state_price = "0";
+				$state_totalstay_flag = "1";
+				$state_fixedprice_flag = "0";
+				
+
+
+			}
+			elseif($state_percentage == "2")
+			{
+				$state_percentage_val = "0";
+				$state_totalstay_flag = "0";
+				$state_fixedprice_flag = "1";
+			}
+			else
+			{
+				$state_persons = "0";
+				$state_price = "0";
+				$state_totalstay_flag = "0";
+				$state_percentage_val = "0";
+				$state_fixedprice_flag = "0";
+			}
+			if($city_percentage == "1")
+			{
+				$city_persons = "0";
+				$city_price = "0";
+				$city_totalstay_flag = "1";
+				$city_fixedprice_flag = "0";
+			}
+			elseif($city_percentage == "2")
+			{
+				$city_percentage_val = "0";
+				$city_totalstay_flag = "0";
+				$city_fixedprice_flag = "1";
+			}
+			else
+			{
+				$city_persons = "0";
+				$city_price = "0";
+				$city_totalstay_flag = "0";
+				$city_percentage_val = "0";
+				$city_fixedprice_flag = "0";
+			}
+			if($room_percentage == "1")
+			{
+				$room_persons = "0";
+				$room_price = "0";
+				$room_totalstay_flag = "1";
+				$room_fixedprice_flag = "0";
+
+			}
+			elseif($room_percentage == "2")
+			{
+				$room_percentage_val = "0";
+				$room_totalstay_flag = "0";
+				$room_fixedprice_flag = "1";
+			}
+			else
+			{
+				$room_persons = "0";
+				$room_price = "0";
+				$room_totalstay_flag = "0";
+				$room_percentage_val = "0";
+				$room_fixedprice_flag = "0";
+			}
+			if($vat_percentage == "1")
+			{
+				$vat_persons = "0";
+				$vat_price = "0";
+				$vat_totalstay_flag = "1";
+				$var_fixedprice_flag = "0";
+			}
+			elseif($vat_percentage == "2")
+			{
+				$vat_percentage_val = "0";
+				$vat_totalstay_flag = "0";
+				$var_fixedprice_flag = "1";
+			}
+			else
+			{
+				$vat_persons = "0";
+				$vat_price = "0";
+				$vat_totalstay_flag = "0";
+				$vat_percentage_val = "0";
+				$vat_fixedprice_flag = "0";
+
+			}
+			if($service_percentage == "1")
+			{
+				$service_persons = "0";
+				$service_price = "0";
+				$service_totalstay_flag = "1";
+				$service_fixedprice_flag = "0";
+			}
+			elseif($room_percentage == "2")
+			{
+				$service_percentage_val = "0";
+				$service_totalstay_flag = "0";
+				$service_fixedprice_flag = "1";
+			}
+			else
+			{
+				$service_persons = "0";
+				$service_price = "0";
+				$service_totalstay_flag = "0";
+				$service_percentage_val = "0";
+				$service_fixedprice_flag = "0";
+			}
+		$sql="INSERT INTO sup_apart_taxes(sup_apart_list_id, state_tax, state_totalstay_flag, state_totalstay_percent, state_fixedprice_flag, state_per_person, state_fixedprice, city_tax, city_totalstay_flag, city_totalstay_percent, city_fixedprice_flag, city_per_person, city_fixedprice, room_tax, room_totalstay_flag, room_totalstay_percent, room_fixedprice_flag, room_per_person, room_fixedprice, vat_tax, vat_totalstay_flag, vat_totalstay_percent, vat_fixedprice_flag, vat_per_person, vat_fixedprice, service_tax, service_totalstay_flag, service_totalstay_percent, service_fixedprice_flag, service_per_person, service_fixedprice )
+				VALUES('$last_ins_id', '$state_tax', '$state_totalstay_flag', '$state_percentage_val', '$state_fixedprice_flag', '$state_persons', '$state_price', '$city_tax', '$city_totalstay_flag', '$city_percentage_val', '$city_fixedprice_flag', '$city_persons', '$city_price', '$room_tax', '$room_totalstay_flag', '$room_percentage_val', '$room_fixedprice_flag', '$room_persons', '$room_price', '$vat_tax', '$vat_totalstay_flag', '$vat_percentage_val', '$vat_fixedprice_flag', '$vat_persons', '$vat_price', '$service_tax', 'service_totalstay_flag', '$service_percentage_val', '$service_fixedprice_flag', '$service_persons', '$service_price')";
+			//echo $sql;exit;
+			$rs=$this->db->query($sql);
+		}
+		
+	}
+	
+	public function edit_setting_val($id, $check_in_time_from, $check_in_time_to,$check_out_time_from, $check_out_time_to, $guest_in_time, $guest_out_time, $key_col, $key_descrip, $state_tax, $state_percentage, $state_percentage_val, $state_persons, $state_price, $state_percentage, $city_tax, $city_percentage, $city_percentage_val, $city_persons, $city_price, $room_tax, $room_percentage, $room_percentage_val, $room_persons, $room_price, $vat_tax, $vat_percentage, $vat_percentage_val,$vat_persons,$vat_price, $service_tax, $service_percentage, $service_percentage_val, $service_persons, $service_price, $group)
+	{
+		$sql="UPDATE sup_apart_generalsettings SET
+			checkinfrom = '$check_in_time_from',
+			checkoutfrom = '$check_out_time_from',
+			checkinto = '$check_in_time_to',
+			checkoutto = '$check_out_time_to',
+			checkin_after = '$guest_in_time', 
+			checkout_after = '$guest_out_time',
+			key_collection = '$key_col',
+			key_collection_desc = '$key_descrip', 
+			grp_reservation = '$group' WHERE sup_apart_generalsettings_id = '$id'";
+		$rs=$this->db->query($sql);
+		$last_ins_id = $this->db->insert_id();
+		if($last_ins_id == '$id')
+		{
+			if($state_percentage == "1")
+			{
+				$state_persons = "0";
+				$state_price = "0";
+				$state_totalstay_flag = "1";
+				$state_fixedprice_flag = "0";
+				
+
+
+			}
+			elseif($state_percentage == "2")
+			{
+				$state_percentage_val = "0";
+				$state_totalstay_flag = "0";
+				$state_fixedprice_flag = "1";
+			}
+			else
+			{
+				$state_persons = "0";
+				$state_price = "0";
+				$state_totalstay_flag = "0";
+				$state_percentage_val = "0";
+				$state_fixedprice_flag = "0";
+			}
+			if($city_percentage == "1")
+			{
+				$city_persons = "0";
+				$city_price = "0";
+				$city_totalstay_flag = "1";
+				$city_fixedprice_flag = "0";
+			}
+			elseif($city_percentage == "2")
+			{
+				$city_percentage_val = "0";
+				$city_totalstay_flag = "0";
+				$city_fixedprice_flag = "1";
+			}
+			else
+			{
+				$city_persons = "0";
+				$city_price = "0";
+				$city_totalstay_flag = "0";
+				$city_percentage_val = "0";
+				$city_fixedprice_flag = "0";
+			}
+			if($room_percentage == "1")
+			{
+				$room_persons = "0";
+				$room_price = "0";
+				$room_totalstay_flag = "1";
+				$room_fixedprice_flag = "0";
+
+			}
+			elseif($room_percentage == "2")
+			{
+				$room_percentage_val = "0";
+				$room_totalstay_flag = "0";
+				$room_fixedprice_flag = "1";
+			}
+			else
+			{
+				$room_persons = "0";
+				$room_price = "0";
+				$room_totalstay_flag = "0";
+				$room_percentage_val = "0";
+				$room_fixedprice_flag = "0";
+			}
+			if($vat_percentage == "1")
+			{
+				$vat_persons = "0";
+				$vat_price = "0";
+				$vat_totalstay_flag = "1";
+				$vat_fixedprice_flag = "0";
+			}
+			elseif($vat_percentage == "2")
+			{
+				$vat_percentage_val = "0";
+				$vat_totalstay_flag = "0";
+				$vat_fixedprice_flag = "1";
+			}
+			else
+			{
+				$vat_persons = "0";
+				$vat_price = "0";
+				$vat_totalstay_flag = "0";
+				$vat_percentage_val = "0";
+				$vat_fixedprice_flag = "0";
+
+			}
+			if($service_percentage == "1")
+			{
+				$service_persons = "0";
+				$service_price = "0";
+				$service_totalstay_flag = "1";
+				$service_fixedprice_flag = "0";
+			}
+			elseif($room_percentage == "2")
+			{
+				$service_percentage_val = "0";
+				$service_totalstay_flag = "0";
+				$service_fixedprice_flag = "1";
+			}
+			else
+			{
+				$service_persons = "0";
+				$service_price = "0";
+				$service_totalstay_flag = "0";
+				$service_percentage_val = "0";
+				$service_fixedprice_flag = "0";
+			}
+		
+			if($rs)
+			{
+				$sql="UPDATE sup_apart_taxes SET
+					sup_apart_list_id = '$id',
+					state_tax='$state_tax', 
+					state_totalstay_flag = '$state_totalstay_flag',
+					state_totalstay_percent = '$state_percentage_val',
+					state_fixedprice_flag = '$state_fixedprice_flag',
+					state_per_person = '$state_persons',
+					state_fixedprice = '$state_price',
+					city_tax = '$city_tax', 
+					city_totalstay_flag = '$city_totalstay_flag',
+					city_totalstay_percent = '$city_percentage_val', 
+					city_fixedprice_flag = '$city_fixedprice_flag', 
+					city_per_person = '$city_persons',
+					city_fixedprice = '$city_price',
+					room_tax = '$room_tax', 
+					room_totalstay_flag = '$room_totalstay_flag',
+					room_totalstay_percent = '$room_percentage_val',
+					room_fixedprice_flag = '$room_fixedprice_flag',
+					room_per_person = '$room_persons', 
+					room_fixedprice = '$room_price',
+					vat_tax = '$vat_tax', 
+					vat_totalstay_flag = '$vat_totalstay_flag',
+					vat_totalstay_percent = '$vat_percentage_val', 
+					vat_fixedprice_flag = '$vat_fixedprice_flag',
+					vat_per_person = '$vat_persons',
+					vat_fixedprice = '$vat_price',
+					service_tax = '$service_tax', 
+					service_totalstay_flag = 'service_totalstay_flag',
+					service_totalstay_percent = '$service_percentage_val',
+					service_fixedprice_flag = '$service_fixedprice_flag',
+					service_per_person = '$service_persons', 
+					service_fixedprice = '$service_price' WHERE sup_apart_list_id = '$id'";
+				$rs=$this->db->query($sql);
+			}
+		}
+		
+	
+	
+	}
+	//----- Get Supplier's Detail Location -----/
+	function detail_location()
+	{		
+		$select = "SELECT * FROM sup_detailedlocation";
+		$query=$this->db->query($select);
+		if ($query->num_rows() > 0)
+		{
+			return $query->result();
+		} else {
+			return false;	
+		}
+	}
+	
+	//----- Set Supplier's Detail Location -----/
+	function set_detail_location($location, $nearby_airport, $nearby_transport, $nearby_placeinterest)
+	{
+		$data = array(
+			'sup_list_id' => 1,
+			'location' => $password,
+			'nearby_airport' => $name,
+			'nearby_transport' => $company_name,
+			'nearby_placeinterest' => $address
+			);
+		$this->db->insert('sup_detailedlocation', $data);
+		$id = $this->db->insert_id();
+		return true;
+	}
+	
+	//----- Edit Supplier's Detail Location -----/
+	function edit_detail_location($id, $location, $nearby_airport, $nearby_transport, $nearby_placeinterest)
+	{
+		$this->db->query("UPDATE sup_detailedlocation SET sup_list_id='$id', location='$location', nearby_airport='$nearby_airport', nearby_transport='$nearby_transport', nearby_placeinterest ='$nearby_placeinterest' WHERE sup_detailedlocation_id='$id'");
+		if(!empty($id)) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
+	//========================= Get Image Extension ==================
+	function getExtension($str) 
+	{
+		$i = strrpos($str,".");
+		if (!$i) { return ""; }
+		$l = strlen($str) - $i;
+		$ext = substr($str,$i+1,$l);
+		return $ext;
+	}
+	
+	//==================== Upload Photos ===============================
+	function uploadPhotos($fileName,$tempFile,$targetPath)
+	{
+		$image =$fileName;
+		$uploadedfile = $tempFile;
+ 
+		if($fileName) 
+		{
+			$fileName = stripslashes($fileName);
+		
+			$extension = $this->getExtension($fileName);
+			$extension = strtolower($extension);
+			$size=filesize($tempFile);
+			if($extension=="jpg" || $extension=="jpeg")	{
+				$src = imagecreatefromjpeg($tempFile);
+			}
+			else if($extension=="png")	{
+				$src = imagecreatefrompng($tempFile);
+			}
+			else	{
+				$src = imagecreatefromgif($tempFile);
+			}
+				
+			list($width,$height)=getimagesize($tempFile);
+				
+			$newWidth=	170;	$newHeight=	173;
+			$tmp=imagecreatetruecolor($newWidth,$newHeight);
+			imagecopyresampled($tmp,$src,0,0,0,0,$newWidth,$newHeight,$width,$height);
+		 	$fileName  = rtrim($targetPath,'/') . '/' . $image; 
+			imagejpeg($tmp,$fileName,100);
+			imagedestroy($src);
+			imagedestroy($tmp);
+			
+			$data = array(
+			'sup_list_id' => 1,
+			'image_name' => $image,
+			'status' => 1
+			);
+			$this->db->insert('sup_accomodation_pictures', $data);
+			$id = $this->db->insert_id();
+			return true;
+		}	
+	}
+	
+	
+	//----- Get Supplier's Accomodation Pictures -----/
+	function getImages()
+	{		
+		$select = "SELECT * FROM sup_accomodation_pictures WHERE status = 1";
+		$query=$this->db->query($select);
+		if($query->result()){
+			$acc_images= $query->result();
+			$this->output->set_content_type('application/json');
+			$this->output->set_output(json_encode(array('acc_images'=>$acc_images)));
+		}
+		else{
+			return array();
+		}
+	}
+	
+	
+	//----- Delete Supplier's Accomodation Pictures -----/
+	function delete_picture()
+	{
+		$picId = $_REQUEST['picId'];
+		$where = "sup_accomodation_pictures_id = $picId";
+		if ($this->db->delete('sup_accomodation_pictures', $where)) {
+			//return true;
+			echo 'success';
+		} else {
+			return false;
+		}
+	}
+	
+	
+	
+	//----- Delete Supplier's Accomodation Pictures -----/
+	function set_acco_pictures()
+	{
+		$imgact = $_REQUEST['imgact'];
+		for($i=0; $i<sizeof($imgact); $i++)
+		{
+		$this->db->query("UPDATE sup_accomodation_pictures SET status='0' WHERE sup_accomodation_pictures_id='".$imgact[$i]."'");
+		if(!empty($id)) {
+			return true;
+		} else {
+			return false;
+		}
+		}
+	}
+}
+
+?>
